@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Evidence Library : Web</title>
+<link rel="stylesheet" href="css/app.css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic" />
+<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+<link href="css/jquery.qtip.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/test.css" />
+<link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
+<script src="js/modernizr.js"></script>
+<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {filter: none;}
+	  </style>
+	<![endif]-->
+
+</head>
+<body>
+<section class="main-section row-offcanvas clearfix fix-header search-icon-hidden"> <a class="exit-off-canvas"></a>
+  <header id="header" class="">
+    <nav class="tab-bar" data-topbar>
+      <section class="middle tab-bar-section">
+        <h1 class="title"><a href="javascript:void(0);"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
+      </section>
+      <section class="right-small show-for-medium-down"> <a class="right-offcanvas-toggle menu-icon" href="javascript:void(0);"><i class="fa fa-bars fa-lg"></i></a> </section>
+    </nav>
+  </header>
+  <!-- end header #head.class_name -->
+  
+  <nav class="nav-bar menu-sidebar-offcanvas offcanvas-sidebar">
+    <section class="nav-bar-section clearfix">
+      <h3 class="show-for-medium-down">Main Menu</h3>
+      
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><a href="index.html">Events</a></li>
+        <li class="active"><a href="cases.html">Cases</a></li>
+        <!--li><a href="event-exports.html">Event Exports <span class="label round">1</span></a></li>
+	                <li><a href="case-exports.html">Case Exports <span class="label round">2</span></a></li-->
+        <li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
+        <li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
+        <li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+          <ul class="dropdown">
+				<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
+				<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
+              	<li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
+			
+            <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+            <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+            <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+          </ul>
+        </li>
+        <li class="user-profile has-dropdown"> <a href="javascript:void(0);"> <img src="images/avatar-icon.png" class="user-avatar" alt="" />My Profile</a>
+          <ul class="dropdown">
+            
+            <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+  <div id="content-outer-wrapper" class="no-sidebar">
+    <div class="row collapse" id="content-wrapper">
+      <div class="small-12 medium-12 large-12 columns">
+        <div id="fixed-header">
+          <div class="row" id="content-header">
+            <div class="small-12 medium-12 large-8 columns">
+              <div class="left-controls"> <a href="javascript:void(0);" onclick="javascript:alert('need to implement Durandal history function to go back one page: https://groups.google.com/d/msg/durandaljs/D9lZfnZBu8k/cc5o_hQJiAUJ')" id="" class="button gray-gradient back-button"><i class="fa fa-long-arrow-left"></i> Back</a> </div>
+              <!-- end div.left-controls --> 
+            </div>
+            <!-- end columns -->
+            <div class="small-12 medium-12 large-4 columns">
+              <div class="right-controls clearfix">
+                <div class="button-bar right">
+                  <ul class="inline-list">
+                    <li><a class="icon-link" href="exports.html"><i class="fa fa-upload"></i>Export</a></li>
+                    <li><a class="icon-link" href="javascript:void(0);"><i class="fa fa-share-alt"></i>Share</a></li>
+                    <li><a class="icon-link" href="javascript:void(0);"><i class="fa fa-times-circle"></i>Delete Case</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end div.right --> 
+            </div>
+            <!-- end columns --> 
+          </div>
+          <!-- end row --> 
+          
+        </div>
+        <!-- end div#fixed-header -->
+        
+        <div class="row collapse" id="case-recap">
+          <div class="small-12 medium-12 large-12 columns">
+            <div class="panel radius">
+              <section id="" class="item-details-section">
+                <h4 class="panel-top-title dark-title"><i class="fa fa-briefcase"></i> Case #:
+                  <input type="text"  class="copy-text" value="5148521-APD-320141254" tabindex="" readonly />
+                </h4>
+                <div class="panel radius">
+                  <div class="row">
+                    <div class="small-4 medium-3 large-2 columns">
+                      <label for="" class="inline">Created On:</label>
+                    </div>
+                    <!-- end columns -->
+                    <div class="small-8 medium-9 large-4 columns">
+                      <p>Weds. 03/27/2014 09:38:17 (7 months ago)</p>
+                    </div>
+                    <!-- end columns -->
+                    <div class="small-4 medium-3 large-2 columns medium-left">
+                      <label for="" class="inline">Created By:</label>
+                    </div>
+                    <!-- end columns -->
+                    <div class="small-8 medium-9 large-4 columns">
+                      <p>Officer Goodman, Harry</p>
+                    </div>
+                    <!-- end columns --> 
+                  </div>
+                  <!-- end row -->
+
+                  <div class="row">
+                    <div class="small-4 medium-3 large-2 columns">
+                      <label for="" class="inline">Modified On:</label>
+                    </div>
+                    <!-- end columns -->
+                    <div class="small-8 medium-9 large-4 columns">
+                      <p>Weds. 05/13/2014 11:37:44 (5 months ago)</p>
+                    </div>
+                    <!-- end columns -->
+                    <div class="small-4 medium-3 large-2 columns medium-left">
+                      <label for="" class="inline">Modified By:</label>
+                    </div>
+                    <!-- end columns -->
+                    <div class="small-8 medium-9 large-4 columns">
+                      <p>Officer Braudrick, Wayne</p>
+                    </div>
+                    <!-- end columns --> 
+                  </div>
+                  <!-- end row -->
+
+
+
+				<div class="row">
+				    <div class="small-4 medium-3 large-2 columns">
+				        <label class="inline">Total Size:</label>
+				    </div><!-- end columns -->
+				    <div class="small-8 medium-9 large-4 columns">
+				        <p>TBD</p>
+				    </div><!-- end columns -->
+
+				    <div class="small-4 medium-3 large-2 columns">
+				        <label class="inline">Event Size:</label>
+				    </div><!-- end columns -->
+				    <div class="small-8 medium-9 large-4 columns">
+				        <p>TBD</p>
+				    </div><!-- end columns -->
+
+				</div><!-- end row -->
+
+                  <div class="row">
+                    <div class="small-12 medium-12 large-12 columns">
+                      <label for="" class="">Case Notes:</label>
+                      <textarea name="notes" id="notes" class="auto-height right-buttons">Here is an example of a note left by an officer.</textarea>
+                      <div class="attachment-note-buttons"> <a href="javascript:void(0);" class="button secondary no-margin">Cancel</a> <a href="javascript:void(0);" class="button success no-margin">Save Note</a> </div>
+                      <!-- end columns --> 
+                      
+                    </div>
+                    <!-- end columns --> 
+                  </div>
+                  <!-- end row --> 
+                  
+                </div>
+                <!-- end div.panel radius --> 
+              </section>
+              <!-- end section #.item-details-section --> 
+              
+            </div>
+            <!-- end div.panel radius --> 
+          </div>
+          <!-- end columns --> 
+        </div>
+        <!-- end row -->
+        
+        <div id="item-details-tabs">
+          <div class="row collapse">
+            <div class="small-12 medium-12 large-12 columns">
+              <dl class="tabs" data-tab>
+                <dd class="active"><a href="#case-items">Attachments</a></dd>
+                <dd><a href="#case-workers">Case Workers</a></dd>
+                
+                <!-- DO NOT INCLUDE AUDIT LOG INTO CASE DETAILS DEVELOPMENT --> 
+                <!--dd><a href="#case-audit">Audit Log</a></dd-->
+              </dl>
+              <div class="tabs-content">
+                <div class="content active" id="case-items" >
+                  <div class="row">
+                    <div class="small-6 medium-6 large-6 columns">
+                      <h4>4 Attachments</h4>
+                    </div>
+                    <!-- end columns -->
+                    <div class="small-6 medium-6 large-6 columns"> <a href="javascript:void(0);" class="button tiny no-margin gray-gradient right" data-reveal-id="add-case-item-modal">Add New Attachment</a> </div>
+                    <!-- end columns --> 
+                  </div>
+                  <!-- end row -->
+                  
+                  <div class="item event-item">
+                    <label for="item-select" class="item-select"> </label>
+                    <a class="item-thumb" href="event-details.html">
+                    <div class="thumb-overlay">Duration: 00:01:01</div>
+                    <!-- end div.thumb-overlay -->
+                    <div class="thumb-mask"><i class="fa fa-play-circle fa-3x"></i></div>
+                    <!-- end div.thumb-mask --> 
+                    <img src="images/event.jpg" class="" alt="" /> </a> 
+                    <!-- end div.item-thumb -->
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns">
+                        <ul class="item-list">
+                          <li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+                          <li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+                          <li><span>Vehicle: </span><strong>Crown Victoria 4213</strong></li>
+                          <li><span>Category: </span><strong>DUI</strong></li>
+                          <li class="hide-for-large-thumbs"><span>Duration: </span><strong>00:16:28</strong></li>
+                          <li class="hide-for-large-thumbs"><span>Badge #: </span><strong>#3948</strong></li>
+                          <li class="hide-for-large-thumbs"><span>Filesize: </span><strong>198.74MB</strong></li>
+                          <li><span>Event ID: </span><strong>2406a6178a6747a59b75d93fca2c8a17</strong></li>
+                        </ul>
+                      </div>
+                      <!-- end columns --> 
+                    </div>
+                    <!-- end row --> 
+                    <a href="javascript:void(0);" data-options="align:left" data-dropdown="drop1" class="button action radius" id=""><i class="fa fa-cog"></i></a>
+                    <ul id="drop1" data-dropdown-content class="f-dropdown action-dropdown">
+                      <li><a href="event-details.html"><i class="fa fa-play-circle"></i> Playback Event</a></li>
+                      <li><a href="event-details.html#event-details-tabs" class="bottom-hr"><i class="fa fa-list"></i> Event Details</a></li>
+                      <li><a href="javascript:void(0);"><i class="fa fa-upload"></i> Export Event</a></li>
+                      <li><a href="javascript:void(0);"><i class="fa fa-link"></i> Share Case</a></li>
+                      <li><a href="javascript:void(0);" class="bottom-hr add-to-case" data-reveal-id="add-to-case-modal"><i class="fa fa-briefcase"></i> Add to Case</a></li>
+                      <li><a href="javascript:void(0);" class="archive-event"><i class="fa fa-archive"></i> Archive Event</a></li>
+                      <li><a href="javascript:void(0);" class="top-hr delete-attached-case"><i class="fa fa-times"></i> Delete Attachment</a></li>
+                    </ul>
+                    <a href="javascript:void(0);" data-options="align:left" data-dropdown="drop11" class="button action cases radius"><i class="fa fa-briefcase"></i></a>
+                    <ul id="drop11" data-dropdown-content class="f-dropdown">
+                      <li><a href="javascript:void(0);">Case # 45352452345</a></li>
+                      <li><a href="javascript:void(0);">Case # 65965168468</a></li>
+                      <li><a href="javascript:void(0);">Case # 74695123683</a></li>
+                    </ul>
+                    <div class="data-icon-group">
+                      <div class="data-icon has-tip tip-top" data-tooltip title="3 Cameras Captured"><i class="fa fa-video-camera"></i> <span>3</span></div>
+                      <div class="data-icon has-tip tip-top" data-tooltip title="Badge #3948"><i class="fa fa-shield"></i> <span>#3948</span></div>
+                      <div class="data-icon has-tip tip-top" data-tooltip title="Imported on: 01/09/2014"><i class="fa fa-calendar"></i> <span>Imported: 01/09/2014 11:03:40</span></div>
+                      <div class="data-icon has-tip tip-top" data-tooltip title="Filesize: 198.74MB">198.74MB</div>
+                      <div class="data-icon has-tip tip-top" data-tooltip title="Restricted File: YES"><i class="fa fa-lock"></i></div>
+                      <div class="data-icon has-tip tip-top" data-tooltip title="Keep Online: No"><i class="fa fa-archive"></i></div>
+                      <div class="data-icon has-tip tip-top" data-tooltip title="Event Tags <br/>Tag: Value<br/>Tag: Value<br/>Tag: Value<br/>"><i class="fa fa-tags"></i></div>
+                      <a href="#" onclick="alert('Pop modal with complete Notes content')" class="data-icon has-tip tip-top" data-tooltip title="Comments: Here is where the comment for this event would be displayed, or you can view them in the Event Detail page."><i class="fa fa-comment"></i></a> </div>
+                    <!-- end div.data-icon-group --> 
+                  </div>
+                  <!-- end event --> 
+                  
+                  <!-- attachment note :: must be placed right AFTER .item it belongs to -->
+                  <div class="attachment-note">
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns">
+                        <label for="" class="">Attachment Note:</label>
+                        <textarea name="notes" id="notes" class="auto-height" disabled>This textarea has an attribute of 'disabled' applied, so the cancel/save buttons are hidden via CSS</textarea>
+                        <div class="attachment-note-buttons"> <a href="javascript:void(0);" class="button secondary no-margin">Cancel</a> <a href="javascript:void(0);" class="button success no-margin">Save Note</a> </div>
+                        <!-- end columns --> 
+                        
+                      </div>
+                      <!-- end columns --> 
+                    </div>
+                    <!-- end row --> 
+                  </div>
+                  <!-- end div.attachment-note --> 
+                  <!-- / attachment note -->
+                  
+                  <div class="item link-item">
+                    <label for="item-select2" class="item-select"> </label>
+                    <a class="item-thumb" href="javascript:alert('open link in new window');"> <i class="fa fa-link"></i> </a><!-- end div.item-thumb -->
+                    
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns">
+                        <h3 class="case-title">Link: <a href="javascript:void(0);" id="" class="">google.com</a></h3>
+                        <ul class="no-bullet list-columns">
+                          <li><span>Added By: </span><strong>Matthew Sells</strong></li>
+                          <li><span>Added On: </span><strong>01/09/14 11:03</strong></li>
+                          <li><span>Modified By: </span><strong>James Brown</strong></li>
+                          <li><span>Modified On: </span><strong>01/09/14 12:28</strong></li>
+                        </ul>
+                      </div>
+                      <!-- end columns --> 
+                    </div>
+                    <!-- end row --> 
+                    <a href="javascript:void(0);" data-options="align:left" data-dropdown="drop3" class="button action radius"><i class="fa fa-cog"></i></a>
+                    <ul id="drop3" data-dropdown-content class="f-dropdown">
+                      <li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-link"></i> Open Link</a></li>
+                      <li><a href="javascript:void(0);" class="delete-attached-case"><i class="fa fa-times"></i> Delete Attachment</a></li>
+                    </ul>
+                  </div>
+                  <!-- end event --> 
+                  <!-- attachment note -->
+                  <div class="attachment-note">
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns">
+                        <label for="" class="">Attachment Note:</label>
+                        <textarea name="notes" id="notes" class="auto-height">Here is an example of a note left by an officer.</textarea>
+                        <div class="attachment-note-buttons"> <a href="javascript:void(0);" class="button secondary no-margin">Cancel</a> <a href="javascript:void(0);" class="button success no-margin">Save Note</a> </div>
+                        <!-- end columns --> 
+                        
+                      </div>
+                      <!-- end columns --> 
+                    </div>
+                    <!-- end row --> 
+                  </div>
+                  <!-- end div.attachment-note --> 
+                  <!-- / attachment note -->
+                  
+                  <div class="item file-item">
+                    <label for="item-select2" class="item-select"> </label>
+                    <a class="item-thumb" href="javascript:alert('Download file');"> <i class="fa fa-file"></i> </a><!-- end div.item-thumb -->
+                    
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns">
+                        <h3 class="case-title">File: screenshot_name-10-30-2014.jpg</h3>
+                        <ul class="no-bullet list-columns">
+                          <li><span>Added By: </span><strong>Matthew Sells</strong></li>
+                          <li><span>Added On: </span><strong>01/09/14 11:03</strong></li>
+                        </ul>
+                      </div>
+                      <!-- end columns --> 
+                    </div>
+                    <!-- end row --> 
+                    <a href="javascript:void(0);" data-options="align:left" data-dropdown="drop4" class="button action radius"><i class="fa fa-cog"></i></a>
+                    <ul id="drop4" data-dropdown-content class="f-dropdown">
+                      <li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-paperclip"></i> View Attachment</a></li>
+                      <li><a href="javascript:void(0);" class="delete-attached-case"><i class="fa fa-times"></i> Delete Attachment</a></li>
+                    </ul>
+                  </div>
+                  <!-- end event --> 
+                  <!-- attachment note -->
+                  <div class="attachment-note">
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns">
+                        <label for="" class="">Attachment Note:</label>
+                        <textarea name="notes" id="notes" class="auto-height">Here is an example of a note left by an officer.</textarea>
+                        <div class="attachment-note-buttons"> <a href="javascript:void(0);" class="button secondary no-margin">Cancel</a> <a href="javascript:void(0);" class="button success no-margin">Save Note</a> </div>
+                        <!-- end columns --> 
+                        
+                      </div>
+                      <!-- end columns --> 
+                    </div>
+                    <!-- end row --> 
+                  </div>
+                  <!-- end div.attachment-note --> 
+                  <!-- / attachment note -->
+                  
+                  <div class="item file-item">
+                    <label for="item-select2" class="item-select"> </label>
+                    <a class="item-thumb" href="javascript:alert('Download file');"> <i class="fa fa-file"></i> </a><!-- end div.item-thumb -->
+                    
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns">
+                        <h3 class="case-title">File: court_notes.doc</h3>
+                        <ul class="no-bullet list-columns">
+                          <li><span>Added By: </span><strong>Matthew Sells</strong></li>
+                          <li><span>Added On: </span><strong>01/09/14 11:03</strong></li>
+                        </ul>
+                      </div>
+                      <!-- end columns --> 
+                    </div>
+                    <!-- end row --> 
+                    <a href="javascript:void(0);" data-options="align:left" data-dropdown="drop5" class="button action radius"><i class="fa fa-cog"></i></a>
+                    <ul id="drop5" data-dropdown-content class="f-dropdown">
+                      <li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-paperclip"></i> View Attachment</a></li>
+                      <li><a href="javascript:void(0);" class="delete-attached-case"><i class="fa fa-times"></i> Delete Attachment</a></li>
+                    </ul>
+                  </div>
+                  <!-- end event --> 
+                  <!-- attachment note -->
+                  <div class="attachment-note">
+                    <div class="row">
+                      <div class="small-12 medium-12 large-12 columns">
+                        <label for="" class="">Attachment Note:</label>
+                        <textarea name="notes" id="notes" class="auto-height">Here is an example of a note left by an officer.</textarea>
+                        <div class="attachment-note-buttons"> <a href="javascript:void(0);" class="button secondary no-margin">Cancel</a> <a href="javascript:void(0);" class="button success no-margin">Save Note</a> </div>
+                        <!-- end columns --> 
+                        
+                      </div>
+                      <!-- end columns --> 
+                    </div>
+                    <!-- end row --> 
+                  </div>
+                  <!-- end div.attachment-note --> 
+                  <!-- / attachment note --> 
+                  
+                </div>
+                <!-- end case-items -->
+                
+                <div class="content" id="case-workers">
+                  <div class="row">
+                    <div class="small-12 medium-12 large-12 columns"> <a href="javascript:void(0);" class="button tiny no-margin gray-gradient right" data-reveal-id="add-case-worker-modal">Add Case Workers</a> </div>
+                    <!-- end columns --> 
+                  </div>
+                  <!-- end row -->
+                  
+                  <section id="" class="item-details-section">
+                    <h4 class="panel-top-title dark-title"><i class="fa fa-users"></i> Assigned Case Workers</h4>
+                    <div class="panel radius">
+                      <div class="row">
+                        <div class="small-12 medium-12 large-12 columns">
+                          <ul id="case-worker-list">
+                            
+                            <!-- example of LOCKED Case Worker System assigned, and not user removable -->
+                            
+                            <li class="case-worker locked">
+                              <div class="case-worker-name"> Officer Washington, Denzel </div>
+                              <!-- end div.case-worker-name -->
+                              <div class="case-worker-perms"> Full Access </div>
+                              <!-- end div.case-worker-perms --> 
+                              <i class="fa fa-lock"></i> </li>
+                            <!-- end div.case-worker --> 
+                            
+                            <!-- END LOCKED CASE WORKER EXAMPLE -->
+                            
+                            <li class="case-worker locked">
+                              <div class="case-worker-name"> Officer Newman, Paul Leonard </div>
+                              <!-- end div.case-worker-name -->
+                              <div class="case-worker-perms"> Full Access </div>
+                              <!-- end div.case-worker-perms --> 
+                              <i class="fa fa-lock"></i> </li>
+                            <!-- end div.case-worker -->
+                            
+                            <li class="case-worker locked">
+                              <div class="case-worker-name"> Officer Goodman, Harry </div>
+                              <!-- end div.case-worker-name -->
+                              <div class="case-worker-perms"> Full Access </div>
+                              <!-- end div.case-worker-perms --> 
+                              <i class="fa fa-lock"></i> </li>
+                            <!-- end div.case-worker -->
+                            
+                            <li class="case-worker">
+                              <div class="case-worker-name"> Sheriff Matthews, James </div>
+                              <!-- end div.case-worker-name -->
+                              <div class="case-worker-perms"> Full Access </div>
+                              <!-- end div.case-worker-perms --> 
+                              <a href="javascript:void(0);"  class="edit-case-worker"><i class="fa fa-pencil"></i></a>
+                              <a href="javascript:void(0);"  class="delete-case-worker"><i class="fa fa-times"></i></a>
+							</li>
+                            <!-- end div.case-worker -->
+                            
+                            <li class="case-worker">
+                              <div class="case-worker-name"> Detective Bond, James </div>
+                              <!-- end div.case-worker-name -->
+                              <div class="case-worker-perms"> Full Access </div>
+                              <!-- end div.case-worker-perms --> 
+                              <a href="javascript:void(0);"  class="edit-case-worker"><i class="fa fa-pencil"></i></a>
+                              <a href="javascript:void(0);"  class="delete-case-worker"><i class="fa fa-times"></i></a>
+							</li>
+                            <!-- end div.case-worker -->
+                            
+                            <li class="case-worker">
+                              <div class="case-worker-name"> Officer Pacino, Al </div>
+                              <!-- end div.case-worker-name -->
+                              <div class="case-worker-perms"> Full Access </div>
+                              <!-- end div.case-worker-perms --> 
+                              <a href="javascript:void(0);"  class="edit-case-worker"><i class="fa fa-pencil"></i></a>
+                              <a href="javascript:void(0);"  class="delete-case-worker"><i class="fa fa-times"></i></a>
+							</li>
+                            <!-- end div.case-worker -->
+                            
+                            <li class="case-worker">
+                              <div class="case-worker-name"> Officer Hoffman, Dustin </div>
+                              <!-- end div.case-worker-name -->
+                              <div class="case-worker-perms"> Full Access </div>
+                              <!-- end div.case-worker-perms --> 
+                              <a href="javascript:void(0);"  class="edit-case-worker"><i class="fa fa-pencil"></i></a>
+                              <a href="javascript:void(0);"  class="delete-case-worker"><i class="fa fa-times"></i></a>
+							</li>
+                            <!-- end div.case-worker -->
+                            
+                          </ul>
+                          <!-- end div#case-worker-list --> 
+                          
+                        </div>
+                        <!-- end columns --> 
+                      </div>
+                      <!-- end row --> 
+                    </div>
+                    <!-- end div.panel radius --> 
+                  </section>
+                  <!-- end section #.item-details-section --> 
+                </div>
+                <!-- end #case-workers tab --> 
+                
+                <!-- DO NOT INCLUDE AUDIT LOG INTO CASE DETAILS DEVELOPMENT --> 
+                
+              </div>
+              <!-- end #tabs-content --> 
+              
+            </div>
+            <!-- end columns --> 
+          </div>
+          <!-- end row --> 
+          
+        </div>
+        <!-- end div#item-details-tabs --> 
+        
+      </div>
+      <!-- end columns --> 
+    </div>
+    <!-- end main row #content-wrapper --> 
+  </div>
+  <!-- end div#content-outer-wrapper -->
+  <footer>
+    <div class="row">
+      <div class="small-12 medium-3 large-4 columns show-for-medium-up">
+        <p class="muted">VersionNumber: 4.0.1</p>
+      </div>
+      <!-- end columns -->
+      <div class="small-12 medium-6 large-4 columns">
+        <p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>
+      </div>
+      <!-- end columns -->
+      <div class="small-12 medium-3 large-4 columns show-for-medium-up">
+        <p class="muted">BuildNumber: 1.248</p>
+      </div>
+      <!-- end columns --> 
+    </div>
+    <!-- end row --> 
+    
+  </footer>
+</section>
+<!-- end main section --> 
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/foundation.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script> 
+<script type="text/javascript" src="js/chosen.jquery.js"></script> 
+<script type="text/javascript" src="js/jquery.qtip.js"></script> 
+<script type="text/javascript" src="js/app.js"></script> 
+
+<!-- Add to case modal -->
+<div id="add-case-item-modal" class="reveal-modal small show-footer" data-reveal>
+  <div class="modal-header">
+    <div class="modal-title">Add Case Item</div>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <select class="select new-item-type-select">
+          <option disabled selected>-- Select Attachment Type --</option>
+          <option value="upload">File</option>
+          <option value="link">Link</option>
+        </select>
+      </div>
+      <!-- end columns -->
+      <div class="small-12 medium-12 large-12 columns">
+        <div class="new-item-type new-item-type-upload">
+          <label for="new_item_upload">Upload File</label>
+          <div class="file-upload-form">
+            <input id="new_item_upload" class="" type="file" />
+            <a href="javascript:void(0);" id="" class="button gray-gradient file-upload-trigger">Select File(s) to Upload</a> </div>
+          <!-- end div.file-upload-form --> 
+          
+        </div>
+        <!-- end div#new-item-type-upload -->
+        <div class="new-item-type new-item-type-link">
+          <label for="new_item_link">Link URL</label>
+          <input id="new_item_link" class="" type="text" placeholder="http://" />
+        </div>
+        <!-- end div#new-item-type-link --> 
+      </div>
+      <!-- end columns --> 
+    </div>
+    <!-- end row --> 
+  </div>
+  <div class="modal-footer">
+    <button class="button secondary" data-dismiss="modal" id="cancel" aria-hidden="true">Close</button>
+    <button class="button success modalsave">Save</button>
+  </div>
+  <a class="close-reveal-modal">×</a> </div>
+
+<!-- add case worker modal -->
+
+<div id="add-case-worker-modal" class="reveal-modal small show-footer" data-reveal>
+  <div class="modal-header">
+    <div class="modal-title">Add Case Item</div>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="small-12 medium-6 large-6 columns">
+        <label for="new_case_item_name">Select Case Worker</label>
+        <select class="select select-searchable case-worker-select">
+          <option disabled selected>-- Select Case Workers --</option>
+          <option value="" disabled>Officer Goodman, Harry</option>
+          <option value="">Captain Gordon, Daniel</option>
+          <option value="" disabled>Sheriff Matthews, James</option>
+          <option value="" disabled>Detective Bond, James</option>
+          <option value="">Officer Begood, Johnny</option>
+          <option value="">Officer Nicholson, Jack</option>
+          <option value="">Officer De Niro, Robert</option>
+          <option value="" disabled>Officer Pacino, Al</option>
+          <option value="" disabled>Officer Hoffman, Dustin</option>
+          <option value="">Officer Hanks, Thomas Jeffrey</option>
+          <option value="">Officer Hopkins, Anthony</option>
+          <option value="">Officer Newman, Paul Leonard</option>
+          <option value="">Officer Washington, Denzel</option>
+          <option value="">Officer Tracy, Spencer</option>
+          <option value="">Officer Olivier, Laurence</option>
+        </select>
+      </div>
+      <!-- end columns -->
+      <div class="small-12 medium-6 large-6 columns">
+        <label for="new_case_imte-upload">Assign Permissions</label>
+        <select class="select case-worker-perms-select">
+          <option value="">Full Access</option>
+          <option value="">Read Only</option>
+          <option value="">Other ?</option>
+        </select>
+      </div>
+      <!-- end columns --> 
+    </div>
+    <!-- end row --> 
+  </div>
+  <div class="modal-footer">
+    <button class="button secondary" data-dismiss="modal" id="cancel" aria-hidden="true">Cancel</button>
+    <button class="button success modalsave">Add Case Worker</button>
+  </div>
+  <a class="close-reveal-modal">×</a>
+</div>
+
+<!-- simulation modal - likely replaced with Durandals modal, this one allows control of title, button txt, classes and ID's based on the triggering links data-attributes -->
+<div id="oo-modal" class="reveal-modal" data-reveal>
+  <div class="modal-header">
+    <div class="modal-title">Information</div>
+  </div>
+  <div class="modal-body"></div>
+  <div class="modal-footer">
+    <button class="button secondary" data-dismiss="modal" id="cancel" aria-hidden="true">Close</button>
+    <button class="button success modalsave">Save</button>
+  </div>
+  <a class="close-reveal-modal">×</a> </div>
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){																																												
+			$('.edit-panel-section, .edit-buttons, #save-editing').on('click', function(){				
+				var parent = $(this).closest('.item-details-section').find('.panel'),
+					inputs = parent.find('.editable');	
+					parent.toggleClass('editing');			
+				$(inputs).each(function(){
+					$(this).prop("disabled", !$(this).prop("disabled")).trigger("chosen:updated");
+		        });
+			});
+
+			$('.right-offcanvas-toggle').click(function(){
+				$('.row-offcanvas').toggleClass('menu-active');		
+			});
+			$('.exit-off-canvas').click(function(){
+				$('.row-offcanvas').removeClass('menu-active search-active');		
+			});
+			
+			$('#audit-filter').change(function() {
+				var filtered = $(this).find('option:selected').val();
+				    if(filtered == "ALL"){
+						$(".audit-event").removeClass('active').show();
+					} else {
+						$(".audit-event").removeClass('active').show();						
+						$(".audit-event").not('.'+filtered).hide();
+					}
+			}).change();
+			
+		});  // end docready
+		
+	</script>
+</body>
+</html>

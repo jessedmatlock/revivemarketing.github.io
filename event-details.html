@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+    <title>Evidence Library : Web</title>
+    <link rel="stylesheet" href="css/app.css" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/css/jquery-ui.css" />
+    <link href="css/jquery.qtip.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/test.css" />
+	<link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
+    <script src="js/modernizr.js"></script>
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {filter: none;}
+	  </style>
+	<![endif]-->
+
+  </head>
+  <body>	
+	<section class="main-section row-offcanvas clearfix fix-header search-icon-hidden">
+	
+		<header id="header" class="">
+		    <nav class="tab-bar" data-topbar>
+
+		        <section class="middle tab-bar-section">
+		            <h1 class="title"><a href="javascript:void(0);"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
+		        </section>
+
+		        <section class="right-small show-for-medium-down">
+		            <a class="right-offcanvas-toggle menu-icon" href="javascript:void(0);"><i class="fa fa-bars fa-lg"></i></a>
+		        </section>
+		    </nav>
+		</header><!-- end header #head.class_name -->
+
+
+	    <nav class="nav-bar menu-sidebar-offcanvas offcanvas-sidebar">
+	        <section class="nav-bar-section clearfix">
+	            <h3 class="show-for-medium-down">Main Menu</h3>
+
+	            <!-- Right Nav Section -->
+	            <ul class="right">
+	                <li class="active"><a href="index.html">Events</a></li>
+	                <li><a href="cases.html">Cases</a></li>
+	                <!--li><a href="event-exports.html">Event Exports <span class="label round">1</span></a></li>
+	                <li><a href="case-exports.html">Case Exports <span class="label round">2</span></a></li-->
+	                <li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
+	                <li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
+
+	                <li class="has-dropdown">
+	                    <a href="javascript:void(0);">Admin</a>
+	                    <ul class="dropdown">
+							<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
+							<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
+	                        <li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
+							
+	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
+	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
+	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
+	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
+	                    </ul>
+	                </li>
+	                <li class="user-profile has-dropdown">
+	                    <a href="javascript:void(0);">
+	                        <img src="images/avatar-icon.png" class="user-avatar" alt="" />My Profile</a>
+	                    <ul class="dropdown">
+	                        
+	                        <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </section>
+	    </nav>
+
+	    <div id="content-outer-wrapper" class="no-sidebar">
+	  <a class="exit-off-canvas"></a>
+
+			<!-- ADD / REMOVE the video-trim or video-playback class to control the layout -->
+			
+			
+	        <div class="row collapse" id="content-wrapper">
+	            <div class="small-12 medium-12 large-12 columns">
+		
+					<div id="fixed-header">
+		
+						<div class="row" id="content-header">
+	                          <div class="small-12 medium-12 large-8 columns">
+	                              <div class="left-controls">
+									<a href="javascript:void(0);" onclick="javascript:alert('need to implement Durandal history function to go back one page: https://groups.google.com/d/msg/durandaljs/D9lZfnZBu8k/cc5o_hQJiAUJ')" id="" class="button gray-gradient back-button"><i class="fa fa-long-arrow-left"></i> Back</a>
+	                               <h1 class="recap-title">03/27/13 9:38 <span class="vert-seperator-small"></span> Car 54 <span class="vert-seperator-small"></span> Andy Williams Bellefleur <span class="vert-seperator-small"></span> Drug Seizure / Arrest</h1>
+
+	                              </div><!-- end div.left-controls -->
+	                          </div><!-- end columns -->
+	                          <div class="small-12 medium-12 large-4 columns">
+	                              <div class="right-controls clearfix">
+	                                  <div class="button-bar right">
+									<ul class="inline-list">
+							        <li><a class="icon-link" href="exports.html"><i class="fa fa-upload"></i>Export</a></li>
+							        <li><a class="icon-link" href="javascript:void(0);" data-reveal-id="add-to-case-modal"><i class="fa fa-briefcase"></i>Add to Case</a></li>
+							        <li><a class="icon-link archive-event" href="javascript:void(0);"><i class="fa fa-archive"></i>Archive Event</a></li>
+							      </ul>
+						      
+	                                  </div>
+	                              </div><!-- end div.right -->
+	                          </div><!-- end columns -->
+	                      </div><!-- end row -->
+
+					</div><!-- end div#fixed-header -->
+
+
+					<div class="row collapse" id="video-header">
+					    <div class="small-12 medium-6 large-6 columns">
+					        <h2>Front Camera HD: 4:32</h2>
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-6 large-6 columns">
+					
+					        <a href="javascript:void(0);" class="playlist-button" data-options="align:left" data-dropdown="playlist-drop"><i class="fa fa-video-camera"></i> Camera Views</a>
+							<ul id="playlist-drop" class="f-dropdown" data-dropdown-content>
+
+								<!-- FOREACH camera views -->
+							  <li>
+								  <a class="item-thumb playing" href="javascript:void(0);">
+                                      <div class="thumb-mask"><i class="fa fa-play-circle fa-2x"></i></div>
+                                      <img src="images/camera-views-thumb1.png" class="" alt="" />
+                                  </a>
+                                  <!-- end div.item-thumb -->
+								 <div class="event-desc">
+					               <h3>Front Camera HD</h3>
+					               <span class="time-desc">04:32</span>
+					               <a class="button secondary" href="#">Trim</a>
+					               </div>
+							  </li>
+
+							<!-- END FOREACH camera views -->
+							
+							  <li>
+								  <a class="item-thumb" href="javascript:void(0);">
+                                      <div class="thumb-mask"><i class="fa fa-play-circle fa-2x"></i></div>
+                                      <img src="images/camera-views-thumb2.png" class="" alt="" />
+                                  </a>
+                                  <!-- end div.item-thumb -->
+								 <div class="event-desc">
+					               <h3>Front Camera HD</h3>
+					               <span class="time-desc">04:32</span>
+					               <a class="button secondary" href="#">Trim</a>
+					               </div>
+							  </li>
+							  <li>
+								  <a class="item-thumb" href="javascript:void(0);">
+                                      <div class="thumb-mask"><i class="fa fa-play-circle fa-2x"></i></div>
+                                      <img src="images/camera-views-thumb3.png" class="" alt="" />
+                                  </a>
+                                  <!-- end div.item-thumb -->
+								 <div class="event-desc">
+					               <h3>Front Camera HD</h3>
+					               <span class="time-desc">04:32</span>
+					               <a class="button secondary" href="#">Trim</a>
+					               </div>
+							  </li>
+							  	<li class="linked-streams">																
+								 <div class="linked-streams-title"><span class="linked-stream-count">2</span> Linked Events</div>
+								</li>
+								<li class="linked-event">
+									<a class="item-thumb" href="javascript:void(0);">
+                                      <div class="thumb-mask"><i class="fa fa-play-circle fa-2x"></i></div>
+                                      <img src="images/camera-views-thumb3.png" class="" alt="" />
+                                  </a>								  
+									<div class="link-desc">
+										<div><strong>Stuczynski, Jason</strong></div>
+										<div>Public Disturbance </div>
+										<div>03/27/13 9:42</div>
+										<div>Jason's Car</div>
+									</div><!-- end div.linked-event-title -->
+									<a href="event-details.html"  class="button gray-gradient tiny no-margin unlink-event">Unlink</a>
+									
+								</li><!-- end div.linked-event -->
+								<li class="linked-event">
+									<a class="item-thumb" href="javascript:void(0);">
+                                      <div class="thumb-mask"><i class="fa fa-play-circle fa-2x"></i></div>
+                                      <img src="images/camera-views-thumb3.png" class="" alt="" />
+                                  </a>
+								  
+									<div class="link-desc">										
+										<div><strong>Stuczynski, Jason</strong></div>
+										<div>DUI </span>
+										<div>03/27/13 9:42</div>
+										<div>Jason's Car</div>
+										
+									</div><!-- end div.linked-event-title -->
+									<a href="event-details.html"  class="button gray-gradient tiny no-margin unlink-event">Unlink</a>
+									
+								</li><!-- end div.linked-event -->											
+							
+							</ul>		
+						    																			
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					
+				
+					<div id="video-wrapper" class="row video-playback">
+					    <div class="small-12 medium-12 large-6 columns">
+					        <div id="event-video"></div>
+					    </div><!-- end columns -->
+					
+								<!-- trim meta data - different format/layout than playback -->
+								<div class="small-12 medium-12 large-6 columns" id="meta-data">
+									<div class="row" id="meta-data-top">
+									    <div class="small-6 medium-6 large-6 columns">
+									        <p>07/23/2013 01:23:07</p>
+											<p>N33 06’ 03” W96 38’ 23”</p>								
+									    </div><!-- end columns -->
+									    <div class="small-6 medium-6 large-6 columns text-right">
+									        <p>WatchGuardVideo</p>
+											<p>Stuczynski, Jason <span>Jason's Car</span></p>
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+									<div class="row" id="meta-data-speeds">
+									    <div class="small-4 medium-4 large-4 columns text-left">
+											<p>GPS: 68 MPH</p>
+									    </div><!-- end columns -->
+									    <div class="small-4 medium-4 large-4 columns text-center">
+											<p>Target: 68 MPH</p>
+									    </div><!-- end columns -->
+									    <div class="small-4 medium-4 large-4 columns text-right">
+											<p>Locked: 68 MPH</p>
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+									<div class="row collapse meta-data-bottom">
+									    <div class="small-12 medium-12 large-12 columns">
+											<ul id="meta-data-indicators" class="">
+												<li class="active"><i class="fa fa-circle"></i> Mic 1</li>
+												<li class="active"><i class="fa fa-circle"></i> Brakes</li>
+												<li class="active"><i class="fa fa-circle"></i> Lights</li>
+											</ul>
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+
+									<div class="row equal-height-parent" id="trim-controls-wrapper">
+									    <div class="small-12 medium-4 large-4 columns equal-height-target">
+
+									        <h4 class="trim-controls-title">Trim Details</h4>
+											<div class="trim-detail-data">
+												<p class="orig-duration">Orig. Duration: 00:03:59.4</p>
+												<p class="trim-duration">Trim Duration: 00:02:30.0</p>
+												<p class="orig-filesize">Orig. File size: 161 MB </p>
+												<p class="trim-filesize">Trim File size: 126 MB</p>
+											</div><!-- end div.trim-detail-data- -->
+
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-8 large-8 columns equal-height-target">
+
+											<h4 class="trim-controls-title">Trim Controls</h4>	
+
+											<div class="row collapse">
+											    <div class="small-12 medium-6 large-6 columns trim-control-point">
+													<div class="trim-control-thumb">
+														<img src="http://placeimg.com/172/106/technology"  class="" alt="" />
+													</div><!-- end div.trim-control-thumb -->
+													 <label for="spinner1">Start Point:</label>
+													<input class="timespinner" value="2013/10/27 09:01:00" name="spinner1" id="spinner1" readonly>
+											    </div><!-- end columns -->
+											    <div class="small-12 medium-6 large-6 columns trim-control-point">
+													<div class="trim-control-thumb">
+														<img src="http://placeimg.com/172/106/technology"  class="" alt="" />											
+													</div><!-- end div.trim-control-thumb -->
+													 <label for="spinner2">End Point:</label>
+													<input class="timespinner" value="2013/10/27 10:08:00" name="spinner2" id="spinner2" readonly>
+											    </div><!-- end columns -->
+											</div><!-- end row -->
+
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+								</div><!-- playback meta data -->
+			
+					</div><!-- end div#video-wrapper -->
+
+					<div id="playhead-controls" class="video-playback">
+						<div id="left-controls-wrapper">
+							<a href="javascript:void(0);" id="meta-data-graph-toggle" class="button gray-gradient"><i class="fa fa-bar-chart-o"></i></a>
+							<a href="javascript:void(0);" id="" class="button gray-gradient"><i class="fa fa-camera"></i></a>
+							<a href="javascript:void(0);" id="" class="button gray-gradient hide-for-trim has-tip tip-top" data-tooltip title="Closed Captioning"><i class="fa fa-cc"></i></a>
+						</div><!-- end div#left-controls-wrapper -->
+						<div id="fader-wrapper" class="show-for-large-up">
+							<div class="slider-wrap">
+						        <div class="slider-prefix active">
+						            Wireless <i class="fa fa-volume-off fa-rotate-180"></i>
+						        </div>
+
+						        <div id="fader"></div>
+
+						        <div class="slider-postfix active">
+						            <i class="fa fa-volume-off"></i> Cabin
+						        </div>						
+						    </div>
+							<div id="slider-dots">
+						        <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i>
+						    </div>
+						    
+						</div><!-- end div#name -->
+						<div id="right-controls-wrapper">
+							<a href="javascript:void(0);" id="trim-video" class="button yellow-gradient hide-for-trim"><i class="fa fa-scissors"></i> Trim</a>
+
+							<a href="javascript:void(0);" id="cancel-trim" class="button red-gradient hide-for-playback">Cancel Trim</a>
+							<a href="javascript:void(0);" id="" class="button green-gradient hide-for-playback">Play Selection</a>
+							<a href="javascript:void(0);" id="" class="button blue-gradient hide-for-playback">Export Video</a>
+							
+						</div><!-- end div#right-controls-wrapper -->
+					</div><!-- end div#playhead-controls -->
+				
+				
+					<div id="meta-data-graph-container">
+						<div id="meta-data-graph-wrapper">
+							<div id="meta-data-graph"></div>
+							<div id="slider"></div>							
+						</div><!-- end div#meta-data-graph-wrapper -->
+						<p id="slider-value"></p>
+						<p id="click-value"></p>
+						<p id="report"></p>
+					</div><!-- end div#meta-data-graph-container -->
+					
+					<div id="item-details-tabs">
+						<div class="row collapse">
+						    <div class="small-12 medium-12 large-12 columns">
+						        <dl class="tabs" data-tab> 
+									<dd class="active"><a href="#event-properties">Event Properties</a></dd>
+									<dd><a href="#linked-events">Linked Events</a></dd>
+									<dd><a href="#event-cases">Cases</a></dd>
+									<dd><a href="#event-audit">Audit Log</a></dd>
+								</dl>
+								<div class="tabs-content">
+
+									<div class="content active" id="event-properties">
+											<section id="" class="item-details-section">
+												<h4 class="panel-top-title dark-title"><i class="fa fa-list"></i> Event ID:<input type="text"  class="copy-text" value="00:1d:96:00:0a:3e-375865" tabindex="" readonly /></h4>											
+												<div class="panel radius">																								        
+													<div class="row">
+													    <div class="small-4 medium-3 large-2 columns">
+													        <label for="" class="inline">Date</label>
+													    </div><!-- end columns -->
+													    <div class="small-8 medium-9 large-4 columns">
+													        <p>Weds. 03/27/2013 09:38:17 (3 months ago)</p>
+													    </div><!-- end columns -->
+													    <div class="small-4 medium-3 large-2 columns medium-left">
+													        <label for="" class="inline">Officer</label>
+													    </div><!-- end columns -->
+													    <div class="small-8 medium-9 large-4 columns">
+													        <select class="select select-searchable editable" disabled>
+																<option disabled>- Select an Officer -</option>
+																<option value="" selected>Officer Goodman, Harry</option>
+														        <option value="">Captain Gordon, Daniel</option>
+														        <option value="">Sheriff Matthews, James</option>
+														        <option value="">Detective Bond, James</option>
+														        <option value="">Officer Begood, Johnny</option>
+														        <option value="">Officer Nicholson, Jack</option>
+														        <option value="">Officer De Niro, Robert</option>
+														        <option value="">Officer Pacino, Al</option>
+														        <option value="">Officer Hoffman, Dustin</option>
+														        <option value="">Officer Hanks, Thomas Jeffrey</option>
+														        <option value="">Officer Hopkins, Anthony</option>
+														        <option value="">Officer Newman, Paul Leonard</option>
+														        <option value="">Officer Washington, Denzel</option>
+														        <option value="">Officer Tracy, Spencer</option>
+														        <option value="">Officer Olivier, Laurence</option>
+											                </select>
+											                
+													    </div><!-- end columns -->
+													</div><!-- end row -->
+													
+													<div class="row">
+													    <div class="small-4 medium-3 large-2 columns">
+													        <label for="" class="inline">Vehicle</label>
+													    </div><!-- end columns -->
+													    <div class="small-8 medium-9 large-4 columns">
+													        <select class="select select-searchable editable" disabled>
+																<option disabled>- Select a Vehicle -</option>
+																<option value="" selected>Car 54</option>
+														        <option value="">Caprice 453</option>
+														        <option value="">Challenger 293</option>
+											                </select>
+													    </div><!-- end columns -->
+													    <div class="small-4 medium-3 large-2 columns medium-left">
+													        <label for="" class="inline">Category</label>
+													    </div><!-- end columns -->
+													    <div class="small-8 medium-9 large-4 columns">
+													        <select class="select editable" disabled>
+																<option disabled>- Select a Category -</option>
+																<option value="" selected>Traffic Warning</option>
+														        <option value="">Traffic Citation</option>
+														        <option value="">Traffic Accident</option>
+														        <option value="">Assault</option>
+														        <option value="">Domestic</option>
+														        <option value="">Drug Charge/Seizure</option>
+														        <option value="">D.U.I.</option>
+														        <option value="">Evading</option>
+														        <option value="">Motorist Assist</option>
+														        <option value="">Suspicious Behavior</option>
+											                </select>
+													    </div><!-- end columns -->
+													</div><!-- end row -->
+																										
+													<div class="row">
+													    <div class="small-4 medium-3 large-2 columns">
+													        <label for="" class="inline">Prevent Archive?
+																<a href="javascript:void(0);" class="has-tip icon-tip tip-right" data-tooltip title="Enabling this option allows the Data Cleanup process to archive this event when the recorded event's retention period is reached.">
+																	<i class="fa fa-info-circle"></i>
+																</a>
+																
+															</label>
+													    </div><!-- end columns -->
+													    <div class="small-8 medium-9 large-4 columns">															  
+															
+															<label class="onoffswitch alert-yes" for="preventArchive">
+															    <input type="checkbox" name="preventArchive" class="onoffswitch-checkbox editable" id="preventArchive" disabled />
+																<div class="onoffswitch-container">
+																	<div class="onoffswitch-slide">
+																        <span class="onoffswitch-active">Yes</span>
+																        <span class="onoffswitch-switch"></span>
+																        <span class="onoffswitch-inactive">No</span>
+																	</div><!-- end div.onoffswitch-slide -->
+																</div><!-- end div.onoffswitch-container -->
+																<div class="toggle-alert"><i class="fa fa-exclamation-triangle"></i> Protected!</div>																															
+														    </label>
+														    
+															
+													    </div><!-- end columns -->
+													    <div class="small-4 medium-3 large-2 columns medium-left">
+														    <label for="" class="inline">Restrict Access? 
+																<a href="javascript:void(0);" class="has-tip icon-tip tip-right" data-tooltip title="If enabled, Restricted Access prevents users without the appropriate permissions from reviewing the recorded event.">
+																	<i class="fa fa-info-circle"></i>
+																</a>
+															</label>
+													    
+													    </div><!-- end columns -->
+													    <div class="small-8 medium-9 large-4 columns">	
+															<label class="onoffswitch alert-yes" for="restricted">
+															    <input type="checkbox" name="restricted" class="onoffswitch-checkbox editable" id="restricted" disabled />
+																<div class="onoffswitch-container">
+																	<div class="onoffswitch-slide">
+																        <span class="onoffswitch-active">Yes</span>
+																        <span class="onoffswitch-switch"></span>
+																        <span class="onoffswitch-inactive">No</span>
+																	</div><!-- end div.onoffswitch-slide -->
+																</div><!-- end div.onoffswitch-container -->
+																<div class="toggle-alert"><i class="fa fa-exclamation-triangle"></i> Restricted!</div>																															
+														    </label>
+															
+															
+													    </div><!-- end columns -->
+													</div><!-- end row -->
+													
+													<div class="row">
+													    <div class="small-4 medium-3 large-2 columns">
+													        <label for="" class="inline">Prevent Purge?
+																<a href="javascript:void(0);" class="has-tip icon-tip tip-right" data-tooltip title="Enabling this option allows the recorded event to be purged from the online storage when the recorded event's retention period is reached.<strong></strong>">
+																	<i class="fa fa-info-circle"></i>
+																</a>
+																
+															</label>
+													        
+
+													    </div><!-- end columns -->
+													    <div class="small-8 medium-9 large-4 columns">
+															<label class="onoffswitch alert-yes" for="preventPurge">
+															    <input type="checkbox" name="preventPurge" class="onoffswitch-checkbox editable" id="preventPurge" disabled />
+																<div class="onoffswitch-container">
+																	<div class="onoffswitch-slide">
+																        <span class="onoffswitch-active">Yes</span>
+																        <span class="onoffswitch-switch"></span>
+																        <span class="onoffswitch-inactive">No</span>
+																	</div><!-- end div.onoffswitch-slide -->
+																</div><!-- end div.onoffswitch-container -->
+																<div class="toggle-alert"><i class="fa fa-exclamation-triangle"></i> Protected!</div>																															
+														    </label>
+													    </div><!-- end columns -->
+													    <div class="small-4 medium-3 large-2 columns medium-left">
+
+													    </div><!-- end columns -->
+													    <div class="small-8 medium-9 large-4 columns">															  															
+
+													    </div><!-- end columns -->
+													
+													</div><!-- end row -->		
+													
+													<h4 class="item-details-subtitle">Secondary Event Tags</h4>
+													
+													<div class="row">
+													    <div class="small-12 medium-3 large-3 columns">
+														    <label for="" class="inline">Secondary Tag</label>
+													    </div><!-- end columns -->
+													    <div class="small-12 medium-3 large-3 columns">
+													        <select class="select editable" disabled>
+																<option disabled value="0">- Select an Option -</option>
+																<option value="" selected>Event Tag Option</option>
+																<option value="">Event Tag Option</option>
+																<option value="">Event Tag Option</option>
+																<option value="">Event Tag Option</option>
+																<option value="">Event Tag Option</option>
+																<option value="">Event Tag Option</option>
+											                </select>													        
+													    </div><!-- end columns -->
+
+													    <div class="small-12 medium-3 large-3 columns">
+														    <label for="" class="inline">Incident Number</label>
+													    </div><!-- end columns -->
+													    <div class="small-12 medium-3 large-3 columns">
+													        <input type="text" placeholder="Enter Tag Value" value="" class="editable" disabled>																												
+													    </div><!-- end columns -->
+													</div><!-- end row -->
+
+													<div class="row">
+													    <div class="small-12 medium-3 large-3 columns">
+														    <label for="" class="inline">Case Number</label>
+													    </div><!-- end columns -->
+													    <div class="small-12 medium-3 large-3 columns">
+													        <input type="text" placeholder="Enter Tag Value" value="" class="editable" disabled>																												
+													    </div><!-- end columns -->
+													    <div class="small-12 medium-3 large-3 columns">
+														    <label for="" class="inline">Gender</label>
+													    </div><!-- end columns -->
+													    <div class="small-12 medium-3 large-3 columns">
+													        <select class="select editable" disabled>
+																<option disabled value="0">- Select an Option -</option>
+																<option value="" selected>Male</option>
+																<option value="">Female</option>
+																<option value="">Unknown</option>
+											                </select>													        
+													    </div><!-- end columns -->
+													
+													</div><!-- end row -->
+																										
+													
+													<div class="row">
+													    <div class="small-12 medium-12 large-12 columns text-right">
+															<a href="javascript:void(0);" class="edit-panel-section button gray-gradient no-margin"><i class="fa fa-pencil"></i> Edit Details</a>
+														
+													        <a href="javascript:void(0);" class="button secondary edit-buttons no-margin">Cancel</a>											                	
+															<a href="javascript:void(0);" class="button success edit-buttons no-margin" id="save-editing">Save Changes</a>											                	
+													    </div><!-- end columns -->
+													</div><!-- end row -->
+												</div><!-- end div.panel radius -->
+											</section><!-- end section #.item-details-section -->
+											
+											
+											
+											<section id="" class="item-details-section">
+												<h4 class="panel-top-title dark-title"><i class="fa fa-comment"></i> Event Notes</h4>												
+												<div class="panel radius">													
+													<div class="row">
+													    <div class="small-12 medium-12 large-12 columns">
+														<textarea name="notes" id="notes" class="auto-height right-buttons">Here is an example of a note left by an officer.</textarea>
+														<div class="attachment-note-buttons">											
+													        <a href="javascript:void(0);" class="button secondary no-margin">Cancel</a>											                	
+															<a href="javascript:void(0);" class="button success no-margin" id="save-notes" data-original="Save Notes" data-active="Saving">Save Notes</a>											                	
+													    </div><!-- end columns -->
+														
+													    </div><!-- end columns -->
+													</div><!-- end row -->													
+												</div><!-- end div.panel radius -->
+											</section><!-- end section #.item-details-section -->
+
+
+
+
+
+											<section id="" class="item-details-section">
+												<h4 class="panel-top-title"><i class="fa fa-database"></i> Import Properties</h4>
+												
+												<div class="panel radius">													
+													<ul class="no-bullet list-columns three-columns">
+									                  <li>Import Date: <strong>Sat, March 27, 2013 09:38:17 (3 months ago)</strong></li>
+									                  <li>Import Details: <strong>Auto-imported</strong></li>
+									                  <li>Imported By: <strong>Importer System</strong></li>
+									                  <li>Source: <strong>Wireless [DVR Ver. 1.1.0.44]</strong></li>
+									                  <li>Metadata: <strong>Imported Successfully</strong></li>
+									                  <li>Tick Range: <strong>375865...384667 (8803 - 1:13:21)</strong></li>
+									                  <li>Event ID: <strong>00:1d:96:00:0a:3e-375865</strong></li>
+									                  <li>Size on disk: <strong>1.24 GB</strong></li>
+									                  <li>Location on disk: <strong></strong><input type="text" class="copy-text" value="\\WGV12\SalesVideo\WatchGuardVideo\d1e1554926f14337bc4bd55161831e4c" readonly /></li>
+									
+									              </ul>
+												</div><!-- end div.panel radius -->								
+											</section><!-- end section #.item-details-section -->
+									</div>
+									
+									<div id="linked-events" class="content">
+										<div class="row">
+										    <div class="small-12 columns">
+										        <h4>2 Linked Events</h4>
+										    </div><!-- end columns -->
+										</div><!-- end row -->
+										
+										<div class="item event-item">
+											<label class="item-select"></label>
+											<a class="item-thumb" href="event-details.html">
+												<img src="images/default.png" class="" alt="" />
+											</a> 
+											<!-- end div.item-thumb -->
+
+											<div class="row">
+												<div class="small-12 medium-12 large-12 columns">
+													<ul class="item-list">
+														<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+														<li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+														<li><span>Vehicle: </span><strong>Crown Victoria 4213</strong></li>
+														<li><span>Category: </span><strong>DUI</strong></li>
+													</ul>
+												</div>
+												<!-- end columns --> 
+												<a href="javascript:void(0);" data-options="align:left" data-dropdown="drop2" class="button action radius"><i class="fa fa-cog"></i></a>
+												<ul id="drop2" data-dropdown-content class="f-dropdown action-dropdown">
+													<li><a href="event-details.html"><i class="fa fa-play-circle"></i> Playback Event</a></li>
+													<li><a href="event-details.html#event-details-tabs" class="bottom-hr"><i class="fa fa-list"></i> Event Details</a></li>
+													<li><a href="javascript:void(0);"><i class="fa fa-link"></i> Unlink This Event</a></li>
+												</ul>
+											</div>
+											<!-- end row -->
+										</div>
+										<!-- end event -->
+
+										<div class="item event-item">
+											<label class="item-select"></label>
+											<a class="item-thumb" href="event-details.html">
+												<img src="images/event.jpg" class="" alt="" />
+											</a> 
+											<!-- end div.item-thumb -->
+
+											<div class="row">
+												<div class="small-12 medium-12 large-12 columns">
+													<ul class="item-list">
+														<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+														<li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+														<li><span>Vehicle: </span><strong>Crown Victoria 4213</strong></li>
+														<li><span>Category: </span><strong>DUI</strong></li>
+													</ul>
+												</div>
+												<!-- end columns --> 
+												<a href="javascript:void(0);" data-options="align:left" data-dropdown="drop3" class="button action radius"><i class="fa fa-cog"></i></a>
+												<ul id="drop3" data-dropdown-content class="f-dropdown action-dropdown">
+													<li><a href="event-details.html"><i class="fa fa-play-circle"></i> Playback Event</a></li>
+													<li><a href="event-details.html#event-details-tabs" class="bottom-hr"><i class="fa fa-list"></i> Event Details</a></li>
+													<li><a href="javascript:void(0);"><i class="fa fa-link"></i> Unlink This Event</a></li>
+												</ul>
+											</div>
+											<!-- end row -->
+										</div>
+										<!-- end event -->
+										
+									</div><!-- end div #linked-events.content -->
+									
+									<div class="content" id="event-cases" >
+										<div class="row">
+										    <div class="small-6 medium-6 large-6 columns">
+										        <h4>2 Associated Cases</h4>
+										    </div><!-- end columns -->
+										    <div class="small-6 medium-6 large-6 columns">
+												<a href="javascript:void(0);" class="button tiny gray-gradient right" data-reveal-id="add-to-case-modal">Add to Case</a>
+										    </div><!-- end columns -->
+										</div><!-- end row -->
+										
+											<div class="item case-item">
+												<label for="item-select" class="item-select">
+
+										    	</label>
+												<a class="item-thumb" href="case-details.html">
+													<i class="fa fa-briefcase"></i>
+												</a><!-- end div.item-thumb -->
+
+												<div class="row">
+												    <div class="small-12 medium-12 large-12 columns">
+														<h3 class="case-title">Case: 126456-0977</h3>
+														<ul class="inline-item-list">
+															<li><span>Date: </span><strong>01/09/14 11:03</strong></li>
+															<li><span>Modified: </span><strong>03/27/14 9:38</strong></li>
+															<li><span>Total Size: </span><strong>263.3 MB</strong></li>															
+															<li><span>Created By: </span><strong>Johnny B. Good</strong></li>
+														</ul>																								
+												    </div><!-- end columns -->
+												</div><!-- end row -->
+											    <a href="javascript:void(0);" data-options="align:left"  data-dropdown="drop1" class="button action radius" ><i class="fa fa-cog"></i></a>	
+												<ul id="drop1" data-dropdown-content class="f-dropdown">
+													<li><a href="case-details.html" class="bottom-hr"><i class="fa fa-briefcase"></i> View Case</a></li>										
+													<li><a href="javascript:void(0);" class="delete-attached-case"><i class="fa fa-times"></i> Delete Case</a></li>																																										
+												</ul>							   
+												<div class="data-icon-group">
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Video Events attached"><i class="fa fa-film"></i> <span>6</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Images attached"><i class="fa fa-picture-o"></i> <span>1</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Links attached"><i class="fa fa-link"></i> <span>5</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Files attached"><i class="fa fa-file"></i> <span>0</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Notes">Notes: <span>Here are the notes for this case and the attached items.</span></div>	
+												</div><!-- end div.data-icon-group -->
+											</div><!-- end event -->
+											
+											
+											<div class="item case-item">
+												<label for="item-select2" class="item-select">
+
+										    	</label>
+												<a class="item-thumb" href="case-details.html">
+													<i class="fa fa-briefcase"></i>
+												</a><!-- end div.item-thumb -->
+
+												<div class="row">
+												    <div class="small-12 medium-12 large-12 columns">
+														<h3 class="case-title">Case: 126456-0977</h3>
+													
+														<ul class="inline-item-list">
+															<li><span>Date: </span><strong>01/09/14 11:03</strong></li>
+															<li><span>Modified: </span><strong>03/27/14 9:38</strong></li>
+															<li><span>Total Size: </span><strong>263.3 MB</strong></li>															
+															<li><span>Created By: </span><strong>Matthew Sells</strong></li>
+														</ul>																								
+												    </div><!-- end columns -->
+												</div><!-- end row -->
+											    <a href="javascript:void(0);" data-options="align:left" data-dropdown="drop2" class="button action radius"><i class="fa fa-cog"></i></a>	
+												<ul id="drop2" data-dropdown-content class="f-dropdown">
+													<li><a href="case-details.html" class="bottom-hr"><i class="fa fa-briefcase"></i> View Case</a></li>										
+													<li><a href="javascript:void(0);" class="delete-attached-case"><i class="fa fa-times"></i> Delete Case</a></li>																																										
+												</ul>							   
+
+												<div class="data-icon-group">
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Video Events attached"><i class="fa fa-film"></i> <span>3</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Images attached"><i class="fa fa-picture-o"></i> <span>1</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Links attached"><i class="fa fa-link"></i> <span>5</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Files attached"><i class="fa fa-file"></i> <span>0</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Notes">Notes: <span>Here are the notes for this case and the attached items.</span></div>	
+												</div><!-- end div.data-icon-group -->
+
+											</div><!-- end event -->
+											
+											
+											
+											<div class="item case-item">
+												<label for="item-select3" class="item-select">
+
+										    	</label>
+												<a class="item-thumb" href="case-details.html">
+													<i class="fa fa-briefcase"></i>
+												</a><!-- end div.item-thumb -->
+
+												<div class="row">
+												    <div class="small-12 medium-12 large-12 columns">
+														<h3 class="case-title">Case: 126456-0977</h3>
+													
+														<ul class="inline-item-list">
+															<li><span>Date: </span><strong>01/09/14 11:03</strong></li>
+															<li><span>Modified: </span><strong>03/27/14 9:38</strong></li>
+															<li><span>Total Size: </span><strong>263.3 MB</strong></li>															
+															<li><span>Created By: </span><strong>Matthew Sells</strong></li>
+														</ul>																								
+												    </div><!-- end columns -->
+												</div><!-- end row -->
+											    <a href="javascript:void(0);" data-options="align:left" data-dropdown="drop3" class="button action radius"><i class="fa fa-cog"></i></a>	
+												<ul id="drop3" data-dropdown-content class="f-dropdown">
+													<li><a href="case-details.html" class="bottom-hr"><i class="fa fa-briefcase"></i> View Case</a></li>										
+													<li><a href="javascript:void(0);" class="delete-attached-case"><i class="fa fa-times"></i> Delete Case</a></li>																																										
+												</ul>							   
+
+												<div class="data-icon-group">
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Video Events attached"><i class="fa fa-film"></i> <span>3</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Images attached"><i class="fa fa-picture-o"></i> <span>1</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Links attached"><i class="fa fa-link"></i> <span>5</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Files attached"><i class="fa fa-file"></i> <span>0</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Notes">Notes: <span>Here are the notes for this case and the attached items.</span></div>	
+												</div><!-- end div.data-icon-group -->
+
+											</div><!-- end event -->
+											
+											
+											
+											
+											<div class="item case-item">
+												<label for="item-select4" class="item-select">
+
+										    	</label>
+												<a class="item-thumb" href="case-details.html">
+													<i class="fa fa-briefcase"></i>
+												</a><!-- end div.item-thumb -->
+
+												<div class="row">
+												    <div class="small-12 medium-12 large-12 columns">
+														<h3 class="case-title">Case: 126456-0977</h3>
+													
+														<ul class="inline-item-list">
+															<li><span>Date: </span><strong>01/09/14 11:03</strong></li>
+															<li><span>Modified: </span><strong>03/27/14 9:38</strong></li>
+															<li><span>Total Size: </span><strong>263.3 MB</strong></li>															
+															<li><span>Created By: </span><strong>Matthew Sells</strong></li>
+														</ul>																								
+												    </div><!-- end columns -->
+												</div><!-- end row -->
+											    <a href="javascript:void(0);" data-options="align:left" data-dropdown="drop4" class="button action radius"><i class="fa fa-cog"></i></a>	
+												<ul id="drop4" data-dropdown-content class="f-dropdown">
+													<li><a href="case-details.html" class="bottom-hr"><i class="fa fa-briefcase"></i> View Case</a></li>										
+													<li><a href="javascript:void(0);" class="delete-attached-case"><i class="fa fa-times"></i> Delete Case</a></li>																																										
+												</ul>							   
+
+												<div class="data-icon-group">
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Video Events attached"><i class="fa fa-film"></i> <span>3</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Images attached"><i class="fa fa-picture-o"></i> <span>1</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Links attached"><i class="fa fa-link"></i> <span>5</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Files attached"><i class="fa fa-file"></i> <span>0</span></div>	
+													<div class="secondary data-icon has-tip tip-top" data-tooltip title="Notes">Notes: <span>Here are the notes for this case and the attached items.</span></div>	
+												</div><!-- end div.data-icon-group -->
+
+											</div><!-- end event -->
+											
+										    
+										    
+									</div>
+									<div class="content" id="event-audit" >
+										<div class="row collapse">
+										    <div class="small-12 medium-12 large-12 columns">
+										        <select class="select margin-bottom" id="audit-filter">
+	                                                <option value="ALL" selected disabled>Filter By:</option>
+	                                                <option value="ALL">ALL</option>
+	                                                <option value="upload">Uploaded</option>
+	                                                <option value="imported">Imported</option>
+	                                                <option value="played">Played</option>
+	                                                <option value="modified">Modified</option>
+	                                                <option value="trimmed">Trimmed</option>
+	                                                <option value="exported">Exported</option>
+	                                                <option value="shared">Shared</option>
+	                                                <option value="archived">Archived</option>
+	                                                <option value="purged">Purged</option>
+	                                                <option value="restored">Restored</option>
+	                                            </select>
+	
+												<a href="javascript:void(0);" onclick="window.print(); return false;" class="button right secondary"><i class="fa fa-print"></i></a> 
+										    </div><!-- end columns -->
+										</div><!-- end row -->
+																				
+										<div class="panel radius">													
+											<ul class="no-bullet list-columns three-columns">
+												<li>Event Date: <strong>3/25/2011  12:28:00 AM</strong></li>
+												<li>Officer: <strong>Robert Vanman</strong></li>
+												<li>Vehicle: <strong>Unit-21</strong></li>
+												<li>Category: <strong>Suspicious Vehicle/Behavior</strong></li>																
+												<li>Event ID: <strong>00:1d:96:00:09:9c-2548261</strong></li>	
+												<li>File Size: <strong>602.54 MB</strong></li>	
+												<li>REID: <strong>97f923a0-92f3-44fd-89e2-6d7afa0f9e57</strong></li>
+												<li>Cameras: <strong>1</strong></li>
+																								
+							              </ul>
+										</div><!-- end div.panel radius -->								
+										
+											<ul class="audit-timeline">
+												
+												<li class="audit-event has-audit-details created">
+													<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+													<div class="audit-type"><i class="fa fa-video-camera"></i></div>
+													<div class="audit-date"><span>12 Jun</span><span>2014</span></div>
+													<div class="content-perspective">
+														<div class="content">
+															<h3>Created</h3>
+															
+															<ul class="audit-detail clearfix">
+																<li>Username: <strong>System</strong></li>
+																<li>Entry Date: <strong>3/26/2011  9:30:00 AM</strong></li>
+																<li>Source: <strong>DVR Serial Here</strong></li>																
+															</ul><!-- end div.audit-detail -->
+															<ul class="audit-detail-list clearfix">
+																<li>Officer: <strong>DVR2-003439</strong></li>
+																<li>Start Time: <strong>2011-03-25T00:28:00</strong></li>
+																<li>Stop Time: <strong>2011-03-25T00:37:43</strong></li>
+																<li>File Size: <strong>620.39 MB</strong></li>
+																<li>Camera: <strong>3</strong></li>
+																<li>Source Name: <strong>DVR2-003439</strong></li>
+																<li>Source IP: <strong>10.1.100.20</strong></li>
+																<li>Source Type: <strong>DVR</strong></li>
+																<li>Completed: <strong>Yes</strong></li>
+															</ul>
+															<div class="audit-section">
+																<h4>Files Uploaded:</h4>
+																<table class="audit-table">
+																  <thead>
+																    <tr>
+																      <th style="width:50px;">Stream</th>
+																      <th>File</th>
+																      <th>Hashcode</th>
+																      <th>Verified</th>
+																    </tr>
+																  </thead>
+																  <tbody>
+																    <tr>
+																      <td>1</td>
+																      <td>tick2548141-tick2548760-video2.ts</td>
+																      <td>f7bf6f8b401689eb14628f6469b9366f</td>
+																      <td>YES</td>
+																    </tr>
+																    <tr>
+																      <td>2</td>
+																      <td>tick2548760-tick2549415-video2.ts</td>
+																      <td>75ce315c7267f2c3ed134279b44d1ed3</td>
+																      <td>YES</td>
+																    </tr>
+																    <tr>
+																      <td>3</td>
+																      <td>tick2549415-tick2549425-video2.ts</td>
+																      <td>7dc744517bdcc240240f91ca3afda86e</td>
+																      <td>YES</td>
+																    </tr>
+																  </tbody>
+																</table>
+															</div><!-- audit-section-->
+															
+														</div><!-- content -->
+													</div><!-- content-perspective -->
+												</li><!-- audit-event -->
+												
+
+												<li class="audit-event has-audit-details upload">
+													<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+													<div class="audit-type"><i class="fa fa-upload"></i></div>
+													<div class="audit-date"><span>12 Jun</span><span>2014</span></div>
+													<div class="content-perspective">
+														<div class="content">
+															<h3>Uploaded</h3>
+															
+															<ul class="audit-detail clearfix">
+																<li>Username: <strong>System</strong></li>
+																<li>Entry Date: <strong>3/26/2011  9:50:00 AM</strong></li>
+																<li>Source: <strong>DVR Serial Here</strong></li>																
+															</ul><!-- end div.audit-detail -->
+															<ul class="audit-detail-list clearfix">
+																<li>Source: <strong>DVR2-003439</strong></li>
+																<li>Source IP: <strong>192.168.2.203</strong></li>
+																<li>Source Type: <strong>DVR</strong></li>
+																<li>Destination: <strong>WGUpload</strong></li>
+																<li>Dest. IP: <strong>172.16.16.52</strong></li>
+																<li>Dest. Type: <strong>DVR Communications Service</strong></li>																																																
+																<li>Complete: <strong>Yes</strong></li>
+																<li>Retention: <strong>90 Days</strong></li>
+															</ul>
+															<div class="audit-section">
+																<h4>Files Uploaded:</h4>
+																<table class="audit-table">
+																  <thead>
+																    <tr>
+																      <th style="width:50px;">Stream</th>
+																      <th>File</th>
+																      <th>Hashcode</th>
+																      <th>Verified</th>
+																    </tr>
+																  </thead>
+																  <tbody>
+																    <tr>
+																      <td>1</td>
+																      <td>tick2548141-tick2548760-video2.ts</td>
+																      <td>f7bf6f8b401689eb14628f6469b9366f</td>
+																      <td>YES</td>
+																    </tr>
+																    <tr>
+																      <td>2</td>
+																      <td>tick2548760-tick2549415-video2.ts</td>
+																      <td>75ce315c7267f2c3ed134279b44d1ed3</td>
+																      <td>YES</td>
+																    </tr>
+																    <tr>
+																      <td>3</td>
+																      <td>tick2549415-tick2549425-video2.ts</td>
+																      <td>7dc744517bdcc240240f91ca3afda86e</td>
+																      <td>YES</td>
+																    </tr>
+																  </tbody>
+																</table>
+															</div><!-- audit-section-->
+															
+														</div><!-- content -->
+													</div><!-- content-perspective -->
+												</li><!-- audit-event -->
+
+												
+												<li class="audit-event has-audit-details imported">
+													<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+													<div class="audit-type"><i class="fa fa-cloud-upload"></i></div>
+													<div class="audit-date"><span>13 Jun</span><span>2014</span></div>
+													<div class="content-perspective">
+														<div class="content">
+															<h3>Imported</h3>
+															
+															<ul class="audit-detail clearfix">
+																<li>Username: <strong>System</strong></li>
+																<li>Entry Date: <strong>3/26/2011  9:52:00 AM</strong></li>
+																<li>Destination: <strong>storage location</strong></li>
+																
+															</ul><!-- end ul.audit-detail -->
+															<ul class="audit-detail-list clearfix">
+																
+																<li>Source: <strong>WGV14</strong></li>
+																<li>Source IP: <strong>172.16.16.53</strong></li>
+																<li>Source Type: <strong>DVR</strong></li>
+																<li>Destination: <strong>\\WGV12\VideoStorage$\97f923a092f344fd89e26d7afa0f9e57</strong></li>
+																<li>Dest. IP: <strong>172.16.16.54</strong></li>
+																<li>Dest. Type: <strong>Final Storage</strong></li>																																																
+																<li>Complete: <strong>Yes</strong></li>
+																<li>Retention: <strong>120 Days</strong></li>
+															</ul>
+															<div class="audit-section">
+																<h4>Files Imported:</h4>
+																	<table class="audit-table">
+																	  <thead>
+																	    <tr>
+																	      <th style="width:50px;">Stream</th>
+																	      <th>File</th>
+																	      <th>Hashcode</th>
+																	      <th>Verified</th>
+																	    </tr>
+																	  </thead>
+																	  <tbody>
+																	    <tr>
+																	      <td>1</td>
+																	      <td>tick2548141-tick2548760-video2.ts</td>
+																	      <td>f7bf6f8b401689eb14628f6469b9366f</td>
+																	      <td>YES</td>
+																	    </tr>
+																	    <tr>
+																	      <td>2</td>
+																	      <td>tick2548760-tick2549415-video2.ts</td>
+																	      <td>75ce315c7267f2c3ed134279b44d1ed3</td>
+																	      <td>YES</td>
+																	    </tr>
+																	    <tr>
+																	      <td>3</td>
+																	      <td>tick2549415-tick2549425-video2.ts</td>
+																	      <td>7dc744517bdcc240240f91ca3afda86e</td>
+																	      <td>YES</td>
+																	    </tr>
+																	  </tbody>
+																	</table>
+																
+																
+															</div><!-- audit-section-->
+														</div><!-- content -->
+													</div><!-- content-perspective -->
+												</li><!-- audit-event -->
+												
+												<li class="audit-event has-audit-details played">
+													<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+													<div class="audit-type"><i class="fa fa-play-circle"></i></div>
+													<div class="audit-date"><span>13 Jun</span><span>2014</span></div>
+													<div class="content-perspective">
+														<div class="content">
+															<h3>Played</h3>
+															
+															<ul class="audit-detail clearfix">
+																<li>Username: <strong>joevanschuyver</strong></li>
+																<li>Entry Date: <strong>3/26/2011  9:52:00 AM</strong></li>
+																<li>Destination: <strong>My Computer</strong></li>
+																
+															</ul><!-- end ul.audit-detail -->
+															<ul class="audit-detail-list clearfix">
+																
+																<li>Source: <strong>WGV14</strong></li>
+																<li>Source IP: <strong>172.16.16.53</strong></li>
+																<li>Source Type: <strong>Host Service</strong></li>
+																<li>Destination: <strong>JoeVLap1</strong></li>
+																<li>Dest. IP: <strong>172.16.16.134</strong></li>
+																<li>Dest. Type: <strong>Client</strong></li>																																																
+															</ul>
+														</div><!-- content -->
+													</div><!-- content-perspective -->
+												</li><!-- audit-event -->
+												
+												
+												
+												<li class="audit-event has-audit-details modified">
+													<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+													<div class="audit-type"><i class="fa fa-pencil-square"></i></div>
+													<div class="audit-date"><span>13 Jun</span><span>2014</span></div>
+													<div class="content-perspective">
+														<div class="content">
+															<h3>Modified</h3>
+															
+															<ul class="audit-detail clearfix">
+																<li>Username: <strong>joevanschuyver</strong></li>
+																<li>Entry Date: <strong>3/29/2011  9:52:00 AM</strong></li>
+																<li>Source: <strong>JoeVLap1</strong></li>
+																
+															</ul><!-- end ul.audit-detail -->
+															<ul class="audit-detail-list clearfix">
+																<li>Source IP: <strong>172.16.16.134</strong></li>
+																<li>Source Type: <strong>Clent</strong></li>
+															</ul>
+															<div class="audit-section">
+																<h4>Modified Values:</h4>
+																<table class="audit-table">
+																  <thead>
+																    <tr>
+																      <th style="width:50px;">Property</th>
+																      <th>Orig. Value</th>
+																      <th>Modified Value</th>
+																    </tr>
+																  </thead>
+																  <tbody>
+																    <tr>
+																      <td>Officer</td>
+																      <td>Robert Vanman</td>
+																      <td>Joe VanSchuyver</td>
+																    </tr>
+																    <tr>
+																      <td>Restricted</td>
+																      <td>No</td>
+																      <td>Yes</td>
+																    </tr>
+																    <tr>
+																      <td>KeepOnline</td>
+																      <td>No</td>
+																      <td>Yes</td>
+																    </tr>
+																  </tbody>
+																</table>
+																
+																
+															</div><!-- audit-section-->
+														</div><!-- content -->
+													</div><!-- content-perspective -->
+												</li><!-- audit-event -->
+
+
+												<li class="audit-event has-audit-details trimmed">
+													<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+													<div class="audit-type"><i class="fa fa-cut"></i></div>
+													<div class="audit-date"><span>13 Jun</span><span>2014</span></div>
+													<div class="content-perspective">
+														<div class="content">
+															<h3>Trimmed Export</h3>
+															
+															<ul class="audit-detail clearfix">
+																<li>Username: <strong>joevanschuyver</strong></li>
+																<li>Entry Date: <strong>3/26/2011  9:50:00 AM</strong></li>
+																<li>Stream: <strong>Front HD</strong></li>
+															</ul><!-- end ul.audit-detail -->
+															<ul class="audit-detail-list clearfix">																																
+																<li>Source: <strong>WGUpload1</strong></li>
+																<li>Source IP: <strong>172.16.16.52</strong></li>
+																<li>Source Type: <strong>DVR Communications Service</strong></li>
+																<li>Exported: <strong>Yes</strong></li>
+																<li>Retention: <strong>90 Days</strong></li>
+															</ul>
+														<div class="audit-section">
+															<h4>Files Trimmed:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Stream</th>
+															      <th>File</th>
+															      <th>Hashcode</th>
+															      <th>Verified</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548141-tick2548760-video2.ts</td>
+															      <td>f7bf6f8b401689eb14628f6469b9366f</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548760-tick2549415-video2.ts</td>
+															      <td>75ce315c7267f2c3ed134279b44d1ed3</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2549415-tick2549425-video2.ts</td>
+															      <td>7dc744517bdcc240240f91ca3afda86e</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>Front</td>
+															      <td>Joe VanSchuyver_20110325_00_28_0000_Traffic Warning_13904547.ts</td>
+															      <td>57ce815c7267f2c3eed134979b44d3ad</td>
+															      <td>-</td>
+															    </tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+														<div class="audit-section">
+															<h4>Modified Values:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Property</th>
+															      <th>Orig. Value</th>
+															      <th>Modified Value</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>Length</td>
+															      <td>0:39:26</td>
+															      <td>0:15:20</td>
+															    </tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+													</div><!-- content -->
+												</div><!-- content-perspective -->
+											</li><!-- audit-event -->
+												
+											<li class="audit-event has-audit-details exported">
+												<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+												<div class="audit-type"><i class="fa fa-cloud-download"></i></div>
+												<div class="audit-date"><span>14 Jun</span><span>2014</span></div>
+												<div class="content-perspective">
+													<div class="content">
+														<h3>Exported</h3>
+														
+														<ul class="audit-detail clearfix">
+															<li>Username: <strong>joevanschuyver</strong></li>
+															<li>Entry Date: <strong>3/26/2011  9:50:00 AM</strong></li>
+															<li>Destination: <strong>JoeVLap1</strong></li>
+														</ul><!-- end ul.audit-detail -->
+														<ul class="audit-detail-list clearfix">
+															<li>Source: <strong>WGV14</strong></li>
+															<li>Source IP: <strong>10172.16.16.53</strong></li>
+															<li>Source Type: <strong>Host Service</strong></li>
+															<li>Dest. IP: <strong>172.16.16.134</strong></li>
+															<li>Dest. Type: <strong>Clent</strong></li>																																																
+															<li>Complete: <strong>Yes</strong></li>
+															<li>Recipient: <strong>DA Request 1234564</strong></li>															
+															<li>Trimmed: <strong>Yes</strong></li>
+															<li>Copies Made: <strong>2</strong></li>
+															<li>Hash Verified: <strong>Success</strong></li>
+														</ul>
+														<div class="audit-section">
+															<h4>Files Exported:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Stream</th>
+															      <th>File</th>
+															      <th>Hashcode</th>
+															      <th>Verified</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548141-tick2548760-video2.ts</td>
+															      <td>f7bf6f8b401689eb14628f6469b9366f</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548760-tick2549415-video2.ts</td>
+															      <td>75ce315c7267f2c3ed134279b44d1ed3</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2549415-tick2549425-video2.ts</td>
+															      <td>7dc744517bdcc240240f91ca3afda86e</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>Front</td>
+															      <td>???</td>
+															      <td>???</td>
+															      <td>-</td>
+															    </tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+														<div class="audit-section">
+															<h4>Modified Values:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Property</th>
+															      <th>Orig. Value</th>
+															      <th>Modified Value</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>Format</td>
+															      <td>Original</td>
+															      <td>DVD Video</td>
+															    </tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+													</div><!-- content -->
+												</div><!-- content-perspective -->
+											</li><!-- audit-event -->
+											
+											
+											<li class="audit-event has-audit-details exported">
+												<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+												<div class="audit-type"><i class="fa fa-cloud-download"></i></div>
+												<div class="audit-date"><span>14 Jun</span><span>2014</span></div>
+												<div class="content-perspective">
+													<div class="content">
+														<h3>Exported</h3>
+														
+														<ul class="audit-detail clearfix">
+															<li>Username: <strong>joevanschuyver</strong></li>
+															<li>Entry Date: <strong>3/26/2011  9:50:00 AM</strong></li>
+															<li>Destination: <strong>DMZSVR01.watchguardvideo.com</strong></li>
+														</ul><!-- end ul.audit-detail -->
+														<ul class="audit-detail-list clearfix">
+															<li>Source: <strong>JoeVLap1</strong></li>
+															<li>Source IP: <strong>172.16.16.134</strong></li>
+															<li>Source Type: <strong>Clent</strong></li>
+															<li>Dest. IP: <strong>165.16.24.32</strong></li>
+															<li>Dest. Type: <strong>EL Sharing Service</strong></li>																																																
+															<li>Complete: <strong>Yes</strong></li>
+															<li>Recipient: <strong>johnda@county.org; Julyda@county.org</strong></li>															
+															<li>Copies Made: <strong>1</strong></li>
+														</ul>
+														<div class="audit-section">
+															<h4>Files Exported:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Stream</th>
+															      <th>File</th>
+															      <th>Hashcode</th>
+															      <th>Verified</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548141-tick2548760-video2.ts</td>
+															      <td>f7bf6f8b401689eb14628f6469b9366f</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548760-tick2549415-video2.ts</td>
+															      <td>75ce315c7267f2c3ed134279b44d1ed3</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2549415-tick2549425-video2.ts</td>
+															      <td>7dc744517bdcc240240f91ca3afda86e</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>Front</td>
+															      <td>???</td>
+															      <td>???</td>
+															      <td>-</td>
+															    </tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+														<div class="audit-section">
+															<h4>Modified Values:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Property</th>
+															      <th>Orig. Value</th>
+															      <th>Modified Value</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>Format</td>
+															      <td>Original</td>
+															      <td>DVD Video</td>
+															    </tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+													</div><!-- content -->
+												</div><!-- content-perspective -->
+											</li><!-- audit-event -->
+											
+												
+											<li class="audit-event has-audit-details shared">
+												<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+												<div class="audit-type"><i class="fa fa-share-alt-square"></i></div>
+												<div class="audit-date"><span>14 Jun</span><span>2014</span></div>
+												<div class="content-perspective">
+													<div class="content">
+														<h3>Shared</h3>
+														
+														<ul class="audit-detail clearfix">
+															<li>Username: <strong>Officer Sonny Crocket</strong></li>
+															<li>Entry Date: <strong>01/09/2014 11:03:42</strong></li>
+															<li>Copies Made: <strong>1</strong></li>																														
+														</ul><!-- end ul.audit-detail -->
+														<ul class="audit-detail-list clearfix">																															
+															<li>Source: <strong>DVR Serial Here</strong></li>
+															<li>Source IP: <strong>10.10.10.10</strong></li>
+															<li>Source Type: <strong>DVR</strong></li>
+															<li>Destination: <strong>storage location</strong></li>
+															<li>Dest. IP: <strong>192.168.0.1</strong></li>
+															<li>Dest. Type: <strong>File System</strong></li>																																																
+															<li>Complete: <strong>Yes</strong></li>
+															<li>Trimmed: <strong>Yes</strong></li>
+														</ul>
+														
+														<div class="audit-section">
+															<h4>Files Shared:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Stream</th>
+															      <th>File</th>
+															      <th>Hashcode</th>
+															      <th>Verified</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548141-tick2548760-video2.ts</td>
+															      <td>f7bf6f8b401689eb14628f6469b9366f</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548760-tick2549415-video2.ts</td>
+															      <td>75ce315c7267f2c3ed134279b44d1ed3</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2549415-tick2549425-video2.ts</td>
+															      <td>7dc744517bdcc240240f91ca3afda86e</td>
+															      <td>YES</td>
+															    </tr>
+																<tr>
+															      <td>Front</td>
+															      <td>Joe VanSchuyver_20110325_00_28_0000_Traffic Warning_13904547.MP4</td>
+															      <td>7dc744517bdcc240240f91ca3afda86e</td>
+															      <td>-</td>
+																</tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+														<div class="audit-section">
+															<h4>Share Details:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th>Recipient</th>
+															      <th>Recipient Email</th>
+															      <th>Downloads</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>Ricardo Tubbs</td>
+															      <td>tella-tubby@miami.com</td>
+															      <td>1</td>
+															    </tr>
+															    <tr>
+															      <td>Marty Castillo</td>
+															      <td>martin-castillo@miami.com</td>
+															      <td>1</td>
+															    </tr>
+															    <tr>
+															      <td>Gina Calabrese</td>
+															      <td>gnc@miami.com</td>
+															      <td>3</td>
+															    </tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+														
+														<div class="audit-section">
+															<h4>Modified Values:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Property</th>
+															      <th>Orig. Value</th>
+															      <th>Modified Value</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>Format</td>
+															      <td>Original</td>
+															      <td>MP4</td>
+															    </tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+													</div><!-- content -->
+												</div><!-- content-perspective -->
+											</li><!-- audit-event -->
+											
+											<li class="audit-event has-audit-details archived">
+												<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+												<div class="audit-type"><i class="fa fa-archive"></i></div>
+												<div class="audit-date"><span>15 Jun</span><span>2014</span></div>
+												<div class="content-perspective">
+													<div class="content">
+														<h3>Archived</h3>
+														
+														<ul class="audit-detail clearfix">
+															<li>Username: <strong>System</strong></li>
+															<li>Entry Date: <strong>5/26/2011  12:52:00 AM</strong></li>
+															<li>Trigger: <strong>Auto Archive Policy</strong></li>
+														</ul><!-- end ul.audit-detail -->
+														<ul class="audit-detail-list clearfix">
+															<li>Source: <strong>WGV14</strong></li>
+															<li>Source IP: <strong>172.16.16.53</strong></li>
+															<li>Source Type: <strong>Host Service</strong></li>
+															<li>Destination: <strong>\\WGV12\ArchiveStorage$\97f923a092f344fd89e26d7afa0f9e57</strong></li>
+															<li>Dest. IP: <strong>172.16.16.54</strong></li>
+															<li>Dest. Type: <strong>Archive</strong></li>																																																
+															<li>Complete: <strong>Yes</strong></li>
+															<li>Retention: <strong>90 Days</strong></li>															
+														</ul>
+														<div class="audit-section">
+															<h4>Files Archived:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Stream</th>
+															      <th>File</th>
+															      <th>Hashcode</th>
+															      <th>Verified</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548141-tick2548760-video2.ts</td>
+															      <td>f7bf6f8b401689eb14628f6469b9366f</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548760-tick2549415-video2.ts</td>
+															      <td>75ce315c7267f2c3ed134279b44d1ed3</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2549415-tick2549425-video2.ts</td>
+															      <td>7dc744517bdcc240240f91ca3afda86e</td>
+															      <td>YES</td>
+															    </tr>
+															  </tbody>
+															</table>
+														</div><!-- audit-section-->
+														
+													</div><!-- content -->
+												</div><!-- content-perspective -->
+											</li><!-- audit-event -->
+											
+											
+											
+											
+												<li class="audit-event has-audit-details deleted">
+													<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+													<div class="audit-type"><i class="fa fa-times-circle"></i></div>
+													<div class="audit-date"><span>15 Jun</span><span>2014</span></div>
+													<div class="content-perspective">
+														<div class="content">
+															<h3>Deleted</h3>
+															
+															<ul class="audit-detail clearfix">
+																<li>Username: <strong>joevanschuyver</strong></li>
+																<li>Entry Date: <strong>5/26/2011  12:52:00 AM</strong></li>
+																<li>Trigger: <strong>Manual</strong></li>
+															</ul><!-- end ul.audit-detail -->
+															<ul class="audit-detail-list clearfix">
+																<li>Start Time: <strong>2011-03-25T00:28:00</strong></li>
+																<li>Stop Time: <strong>2011-03-25T00:37:43</strong></li>																
+																<li>Cameras: <strong>1</strong></li>
+															</ul>
+													</div><!-- content -->
+												</div><!-- content-perspective -->
+											</li><!-- audit-event -->
+											
+											
+											
+											<li class="audit-event has-audit-details restored">
+												<div class="audit-toggle"><i class="fa fa-plus-circle"></i></div>
+												<div class="audit-type"><i class="fa fa-undo"></i></div>
+												<div class="audit-date"><span>15 Jun</span><span>2014</span></div>
+												<div class="content-perspective">
+													<div class="content">
+														<h3>Restored</h3>
+														
+														<ul class="audit-detail clearfix">
+															<li>Username: <strong>joevanschuyver</strong></li>
+															<li>Entry Date: <strong>5/26/2011  12:52:00 AM</strong></li>
+															<li>Retention: <strong>90 Days</strong></li>																														
+														</ul><!-- end ul.audit-detail -->
+														<ul class="audit-detail-list clearfix">
+															<li>Start Time: <strong>2011-03-25T00:28:00</strong></li>
+															<li>Stop Time: <strong>2011-03-25T00:37:43</strong></li>
+															<li>Cameras: <strong>1</strong></li>
+															<li>Source: <strong>\\WGV12\ArchiveStorage$\97f923a092f344fd89e26d7afa0f9e57</strong></li>
+															<li>Source IP: <strong>172.16.16.54</strong></li>
+															<li>Source Type: <strong>Archive</strong></li>
+															<li>Destination: <strong>\\WGV12\VideoStorage$\97f923a092f344fd89e26d7afa0f9e57</strong></li>
+															<li>Dest. IP: <strong>172.16.16.54</strong></li>
+															<li>Dest. Type: <strong>Final Storage</strong></li>																																																
+															<li>Complete: <strong>Yes</strong></li>
+														</ul>
+													<div class="audit-section">
+														<h4>Files Restored:</h4>
+															<table class="audit-table">
+															  <thead>
+															    <tr>
+															      <th style="width:50px;">Stream</th>
+															      <th>File</th>
+															      <th>Hashcode</th>
+															      <th>Verified</th>
+															    </tr>
+															  </thead>
+															  <tbody>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548141-tick2548760-video2.ts</td>
+															      <td>f7bf6f8b401689eb14628f6469b9366f</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2548760-tick2549415-video2.ts</td>
+															      <td>75ce315c7267f2c3ed134279b44d1ed3</td>
+															      <td>YES</td>
+															    </tr>
+															    <tr>
+															      <td>1</td>
+															      <td>tick2549415-tick2549425-video2.ts</td>
+															      <td>7dc744517bdcc240240f91ca3afda86e</td>
+															      <td>YES</td>
+															    </tr>
+															  </tbody>
+															</table>
+													</div><!-- audit-section-->
+												</div><!-- content -->
+											</div><!-- content-perspective -->
+										</li><!-- audit-event -->
+												
+												
+												
+
+
+										</ul>
+									</div><!-- end #event-audit -->
+									
+								</div><!-- end #tabs-content -->
+								
+						    </div><!-- end columns -->
+						</div><!-- end row -->
+						
+					</div><!-- end div#item-details-tabs -->
+
+
+	            </div><!-- end columns -->
+	        </div><!-- end main row #content-wrapper -->
+	    </div><!-- end div#content-outer-wrapper -->
+		<footer>
+			
+			<div class="row">
+			    <div class="small-12 medium-3 large-4 columns show-for-medium-up">
+			        <p class="muted">VersionNumber: 4.0.1</p>
+			    </div><!-- end columns -->
+			    <div class="small-12 medium-6 large-4 columns">			
+			        <p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>			
+			    </div><!-- end columns -->
+			    <div class="small-12 medium-3 large-4 columns show-for-medium-up">
+			        <p class="muted">BuildNumber: 1.248</p>
+			    </div><!-- end columns -->
+			</div><!-- end row -->
+			
+		</footer>	
+	</section><!-- end main section -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/chosen.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.qtip.js"></script>
+
+    <script src="http://code.highcharts.com/stock/highstock.js"></script>
+	<script src="http://code.highcharts.com/highcharts-more.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="http://revivemarketing.github.io/js/highcharts-dark.js"></script>
+
+	<script src="js/meta-data-graph.js"></script>
+    
+	<script type="text/javascript" src="js/app.js"></script>
+
+	<!-- Add to case modal -->
+	<div id="add-to-case-modal" class="reveal-modal small tabbed-modal show-footer" data-reveal>
+		<div class="modal-header">
+			<div class="modal-title">Add to Case</div>		    
+		</div>
+	    <div class="modal-body">
+		<div class="tab-wrapper">
+			<dl class="tabs" data-tab> 
+				<dd class="active"><a href="#new-case">New Case</a></dd>
+				<dd><a href="#existing-case">Existing Case</a></dd>
+			</dl>
+			<div class="tabs-content">
+				<div class="content active" id="new-case">
+
+					<div class="row collapse">
+					    <div class="small-12 medium-12 large-12 columns">
+							<label for="new_case_num">Case Number</label>																																				
+							<input id="new_case_num" class="form_input" type="text" placeholder="" />
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-12 large-12 columns">
+							<label for="new_case_notes">Case Notes</label>																								
+							<textarea id="new_case_notes" placeholder="Notes" rows="4"></textarea>
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+
+
+				</div>
+				<div class="content" id="existing-case">
+					<label>Case Number</label>
+			        <select class="select select-searchable">
+		              <optgroup label="Recent Cases">
+		                <option value="">123456-907</option>
+		                <option value="">133749-908</option>
+		                <option value="">123958-909</option>
+		              </optgroup>
+		              <optgroup label="All Cases">
+			              <!-- ko foreach: casenumber -->
+			              <option value="123345-017" data-bind="value: $data, text: $data ">123345-017</option>
+			              <option value="123459-018" data-bind="value: $data, text: $data ">123459-018</option>
+			              <option value="123454-019" data-bind="value: $data, text: $data ">123454-019</option>
+			              <option value="125498-020" data-bind="value: $data, text: $data ">125498-020</option>
+			              <option value="133289-021" data-bind="value: $data, text: $data ">133289-021</option>
+			              <option value="124458-022" data-bind="value: $data, text: $data ">124458-022</option>
+			              <option value="143356-023" data-bind="value: $data, text: $data ">143356-023</option>
+			              <option value="176542-024" data-bind="value: $data, text: $data ">176542-024</option>
+			              <option value="123456-099" data-bind="value: $data, text: $data ">123456-099</option>
+			              <option value="123445-254" data-bind="value: $data, text: $data ">123445-254</option>
+			              <option value="123876-099" data-bind="value: $data, text: $data ">123876-099</option>
+			              <!-- /ko -->
+		              </optgroup>
+                    </select>
+				</div>
+			</div>										
+			
+		</div><!-- end div.tab-wrapper -->
+		</div>
+	    <div class="modal-footer"> 
+		    <button class="button secondary" data-dismiss="modal" id="cancel" aria-hidden="true">Close</button>
+	        <button class="button success modalsave">Save</button>
+	    </div>
+	  	<a class="close-reveal-modal">×</a>
+	</div>
+
+
+	<!-- simulation modal - likely replaced with Durandals modal, this one allows control of title, button txt, classes and ID's based on the triggering links data-attributes -->
+	<div id="oo-modal" class="reveal-modal" data-reveal>
+		<div class="modal-header">
+			<div class="modal-title">Information</div>		    
+		</div>
+	    <div class="modal-body"></div>
+	    <div class="modal-footer"> 
+		    <button class="button secondary" data-dismiss="modal" id="cancel" aria-hidden="true">Close</button>
+	        <button class="button success modalsave">Save</button>
+	    </div>
+	  	<a class="close-reveal-modal">×</a>
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		jQuery(document).ready(function($){
+																																												
+			$('.edit-panel-section, .edit-buttons, #save-editing').on('click', function(){				
+				var parent = $(this).closest('.item-details-section').find('.panel'),
+					inputs = parent.find('.editable');	
+					parent.toggleClass('editing');			
+				$(inputs).each(function(){
+					$(this).prop("disabled", !$(this).prop("disabled")).trigger("chosen:updated");
+		        });
+			});
+			
+			// init the jQuery UI slider - we'll sync this with player playhead.. 
+			// show the value of the slider
+			$("#slider").slider({
+		      value: 0,
+		      min: Date.UTC(2013, 9, 27, 9, 1, 00),
+		      max: Date.UTC(2013, 9, 27, 10, 08, 00),
+		      step: 0.0001,
+		      slide: function(event, ui) {
+		          $("#slider-value").html(Highcharts.dateFormat('%m/%d/%Y at %H:%M:%S', ui.value));
+		      }
+		  }).find('.ui-slider-handle').append('<div class="line"></div>');
+		    
+			// toggle meta data graph on button click
+			$('#meta-data-graph-toggle').click(function(){
+				setSizes(); 
+				var showGraph = $(this).hasClass('active');
+				if(showGraph){
+					$(this).removeClass('active');
+					$('#meta-data-graph-container').hide();
+				} else {
+					$(this).addClass('active');
+					$('#meta-data-graph-container').show();
+					$('#meta-data-graph').highcharts().reflow()
+					
+				}
+			});
+			
+			// simulate changing page layout to Trim and back to Playback
+			$('#trim-video').click(function(){
+				$('#video-wrapper, #playhead-controls').removeClass('video-playback').addClass('video-trim');
+				if(!$('#meta-data-graph-toggle').hasClass('active')){
+					$('#meta-data-graph-toggle').trigger('click');					
+				}
+				// global equal heights function
+				$('.equal-height-parent').find('.equal-height-target').matchHeight();
+			  		// simulate maintaining aspect ratio - native in JW Player
+				$("#video-wrapper").css('min-height',Math.round(($("#event-video").width()/16)*9)+ 15 +'px');
+			  	
+			});
+			$('#cancel-trim').click(function(){
+				$('#video-wrapper, #playhead-controls').removeClass('video-trim').addClass('video-playback');
+				if($('#meta-data-graph-toggle').hasClass('active')){
+					$('#meta-data-graph-toggle').trigger('click');					
+				}
+				
+			});
+			
+
+			$('.right-offcanvas-toggle').click(function(){
+				$('.row-offcanvas').toggleClass('menu-active');		
+			});
+			$('.exit-off-canvas').click(function(){
+				$('.row-offcanvas').removeClass('menu-active search-active');		
+			});
+			
+			$('#audit-filter').change(function() {
+				var filtered = $(this).find('option:selected').val();
+				    if(filtered == "ALL"){
+						$(".audit-event").removeClass('active').show();
+					} else {
+						$(".audit-event").removeClass('active').show();						
+						$(".audit-event").not('.'+filtered).hide();
+					}
+			}).change();
+			
+			$('#save-notes').click(function(){
+			
+				var button = $(this),
+					original = $(this).data('original'),
+					active = $(this).data('active');
+				
+				button.html('<i class="fa fa-refresh fa-spin"></i> '+ active);
+				
+				setTimeout(function() {
+					button.html('').html(original);
+				}, 2000);
+			});
+			
+			
+			$("#fader").slider({
+			    value: 50,
+			    min: 0,
+			    max: 100,
+			    step: 50,
+		     	animate:true,
+			    change: function (event, ui) {
+					if(ui.value == $( this ).slider( "option", "min" )){
+			            $(".slider-prefix").addClass('active');
+			            $(".slider-postfix").removeClass('active');
+			        } else if(ui.value == $( this ).slider( "option", "max" )){
+			            $(".slider-prefix").removeClass('active');
+			            $(".slider-postfix").addClass('active');
+			        } else {
+			            $(".slider-prefix").addClass('active');
+			            $(".slider-postfix").addClass('active');
+			        }			        
+			    }
+			});
+			
+			// let's set the fader to 0 or 100% depending on the label clicked
+			$('#fader-wrapper .slider-prefix').click(function(){
+			    $( "#fader" ).slider( "value", $( "#fader" ).slider( "option", "min" ));
+			});
+
+			$('#fader-wrapper .slider-postfix').click(function(){
+			    $( "#fader" ).slider( "value", $( "#fader" ).slider( "option", "max" ));
+			});
+			
+		});  // end docready	
+	</script>
+	
+	
+	<script  type="text/javascript" src="js/jwplayer/jwplayer.js"></script>
+	<script>jwplayer.key="Rq0HSMVcOKOiHL3dorxmmTWTRzKxfM8XbTVZOA==";</script>
+	
+	<script type="text/javascript">	
+	    jwplayer("event-video").setup({
+			controlbar: "bottom",
+	        file: "images/metadata3.mp4",
+	        image: "images/metadata3.jpg",
+			width: "100%",
+	      	aspectratio: "16:9"
+
+	      //  file: "images/hydra.mp4",
+		//	file: "images/tick343355323-tick343355727-video2.mp4",
+	    //    image: "images/hydra.png",
+//			width: "100%",
+//			height: 240,
+	      	//aspectratio: "16:3",
+			//skin: "js/jwplayer/six/six.xml"
+	    });
+	</script>
+	
+  </body>
+</html>

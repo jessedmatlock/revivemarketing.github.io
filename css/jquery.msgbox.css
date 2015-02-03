@@ -1,0 +1,142 @@
+/* @override 
+	http://www.local.mygiftie.com/css/jquery.msgbox.css */
+
+.jquery-msgbox {
+  background:url(images/background.png) repeat-x left bottom;
+  padding-bottom:55px;
+  font-style:normal;
+  color: #333;
+}
+.jquery-msgbox .fa:before {
+    color: #333;
+    content: "\f059";
+}
+.jquery-msgbox form {
+    margin: 0;
+}
+.jquery-msgbox-wrapper {
+    font: normal 1em/1.3em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    padding:20px 20px 20px 80px;
+    border-radius: 5px 5px 0 0;
+}
+.jquery-msgbox-wrapper i {
+    clear: #000;
+    font-size: 4em;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.jquery-msgbox.alert {}
+.jquery-msgbox-alert {
+    background: orange;
+    color: #fff;
+} 
+.jquery-msgbox .fa-alert:before {
+  content: "\f071";
+  font-size: .75em;
+  color: #fff;
+}
+.jquery-msgbox.alert .jquery-msgbox-button-submit {
+    background: #ffa500;
+    border-color: #e28e12;
+    color: #fff;
+}
+
+
+.jquery-msgbox.confirm {}
+.jquery-msgbox-confirm {
+    color: #fff;
+    background: #3D8AF7;
+}
+.jquery-msgbox.confirm .jquery-msgbox-button-submit {
+    background: #3889CF;
+    text-shadow: 0 1px 0 #216CA9;	
+    color: #fff;
+    border-color: #216CA9;
+}
+.jquery-msgbox .fa-confirm:before {
+  content: "\f059";
+  color: #fff;
+}
+
+
+.jquery-msgbox.info {}
+.jquery-msgbox-info {
+    color: #fff;
+    background: #3D8AF7;
+}
+.jquery-msgbox.info .jquery-msgbox-button-submit {
+    background: #3889CF;
+    text-shadow: 0 1px 0 #216CA9;	
+    color: #fff;
+    border-color: #216CA9;
+	text-transform: uppercase;
+}
+
+.jquery-msgbox .fa-info:before {
+   content: "\f05a";
+   color: #fff;
+}
+
+
+.jquery-msgbox.error {
+    padding: 0;
+}
+.jquery-msgbox-error {
+    color: #fff;
+    background: #A50202;
+    border-radius: 5px;
+}
+.jquery-msgbox.error .jquery-msgbox-button-submit {
+    background: #c60f13;
+    border-color: #970b0e;
+}
+.jquery-msgbox .fa-error:before {
+   content: "\f05c";
+   color: #fff;
+}
+
+
+
+.jquery-msgbox.prompt {}
+.jquery-msgbox-prompt {
+    color: #fff;
+    background: #2c3239;
+}
+.jquery-msgbox.prompt .jquery-msgbox-button-submit {
+    background: #3889CF;
+    text-shadow: 0 1px 0 #216CA9;	
+    color: #fff;
+    border-color: #216CA9;
+}
+.jquery-msgbox .fa-prompt:before {
+  content: "\f14b";
+  color: #fff;
+}
+
+
+.jquery-msgbox-buttons {
+  padding:15px;
+  text-align:right;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+.jquery-msgbox-buttons button,
+.jquery-msgbox-buttons input {
+  margin:0 0 0 10px;
+  cursor:pointer;
+  min-width: 80px;
+  padding: .5em 1em;
+  background-color: #aaa;
+  text-shadow: 0 1px 0 #777;	
+  border-bottom: 2px solid #999;
+  color: white; 
+  
+}
+.jquery-msgbox-label {
+  font-weight:bold;
+  font-size:11px;
+}

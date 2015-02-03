@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Evidence Library : Web</title>
+<link rel="stylesheet" href="css/app.css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic" />
+<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+<link href="http://cdn.kendostatic.com/2014.1.416/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="http://cdn.kendostatic.com/2014.1.416/styles/kendo.black.min.css" rel="stylesheet" />
+<link href="css/jquery.qtip.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/test.css" />
+<link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
+<script src="js/modernizr.js"></script>
+<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {filter: none;}
+	  </style>
+	<![endif]-->
+
+</head>
+<body>
+<section class="main-section row-offcanvas clearfix fix-header"> <a class="exit-off-canvas"></a>
+	<header id="header" class="">
+		<nav class="tab-bar" data-topbar>
+			<section class="left-small show-for-medium-down"> <a class="left-offcanvas-toggle" href="javascript:void(0);"><i class="fa fa-search fa-lg"></i></a> </section>
+			<section class="middle tab-bar-section">
+				<h1 class="title"><a href="javascript:void(0);"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
+			</section>
+			<section class="right-small show-for-medium-down"> <a class="right-offcanvas-toggle menu-icon" href="javascript:void(0);"><i class="fa fa-bars fa-lg"></i></a> </section>
+		</nav>
+	</header>
+	<!-- end header #head.class_name -->
+	
+	<nav class="nav-bar menu-sidebar-offcanvas offcanvas-sidebar">
+		<section class="nav-bar-section clearfix">
+			<h3 class="show-for-medium-down">Main Menu</h3>
+			
+			<!-- Right Nav Section -->
+			<ul class="right">
+				<li><a href="index.html">Events</a></li>
+				<li class="active"><a href="cases.html">Cases</a></li>
+				<!--li><a href="event-exports.html">Event Exports <span class="label round">1</span></a></li>
+	                <li><a href="case-exports.html">Case Exports <span class="label round">2</span></a></li-->
+				<li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
+				<li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
+				<li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+					<ul class="dropdown">
+						<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
+						<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
+                        <li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
+						
+						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+					</ul>
+				</li>
+				<li class="user-profile has-dropdown"> <a href="javascript:void(0);"> <img src="images/avatar-icon.png" class="user-avatar" alt="" />My Profile</a>
+					<ul class="dropdown">						
+						<li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</nav>
+	<div id="content-outer-wrapper" class="">
+		<div class="search-sidebar-offcanvas offcanvas-sidebar">
+			<h3 class="show-for-medium-down">Case Search</h3>
+			<div id="saved-search"> 
+				<!-- do disable a dropdown, like this saved search example, remove the  data-dropdown="saved-searches" and .dropdown class --> 
+				<a href="javascript:void(0);" class="button dark-gradient text-left">No Saved Searches</a>
+			</div>
+			<!-- end div#saved-search -->
+			
+			<div class="sidebar-form"> <a href="javascript:void(0);" class="button gray-gradient radius" data-reveal-id="new-case-modal">Create New Case</a>
+				<h3 class="show-for-large-up">Case Search</h3>
+				<label>Case Number</label>
+				<input type="text" name="case-number"  id="case-number" value="" tabindex="" placeholder="Example: Error Styling" class="dark-style error"/>
+				<label>Date</label>
+				<select class="select select-searchable dark-style">
+					<option value="">All Dates</option>
+					<option value="">Date Range</option>
+					<option value="">Single Date</option>
+					
+					<option value="">Today</option>
+					<option value="">Yesterday</option>
+					<option value="">Last 7 Days</option>
+					<option value="">Last 14 Days</option>
+					<option value="">Last 30 Days</option>
+					<option value="">Last 60 Days</option>
+					<option value="">Last 90 Days</option>
+					<option value="">Past Year</option>
+				</select>
+				<label>Created By</label>
+				<select class="select select-searchable dark-style">
+					<option value="">All Users</option>
+					<option value="">Other options..</option>
+				</select>
+				<label>Case Worker</label>
+				<select class="select select-searchable dark-style">
+					<option value="">All Case Workers</option>
+					<option value="">Other options..</option>
+				</select>
+				<label>Record Event ID</label>
+				<input type="text" name="record-event-id"  id="record-event-id" value="" placeholder="" class="dark-style" />
+				<label>Case Notes</label>
+				<input type="text" name="case-number"  id="case-number" value="" tabindex="" placeholder="" class="dark-style" />
+			</div>
+			<div class="form-controls">
+				<div class="form-controls-group clearfix">
+					<label for="checkbox1" class="left">
+						<input id="checkbox1" type="checkbox">
+						Auto Update</label>
+					<a href="javascript:void(0);" class="right">Reset</a> </div>
+				<!-- end div.form-controls-group --> 
+				<a href="javascript:void(0);" class="button primary large radius">Search</a> <a href="javascript:void(0);" 
+							class="open-modal button small action radius"
+							data-target-url=""
+							data-modal-title="Edit Saved Search"
+							data-modal-class="medium"
+							data-button-txt="Save"
+							data-modal-msg="<label>Saved Search Title</label><input type='text' placeholder='Enter Search Name' id='save-search-input'/>">Save This Search</a> </div>
+			<!-- end div#form-controls -->
+			<div class="sidebar-footer"></div>
+		</div>
+		<!-- end search-sidebar-offcanvas -->
+		
+		<div class="row view-large-thumbs" id="content-wrapper">
+			<div class="small-12 medium-12 large-12 columns">
+				<div class="row">
+					<div class="small-12 medium-12 large-12 columns">
+						<div id="fixed-header">
+							<div class="row clearfix" id="content-header">
+								<div id="system-msg">This is just an example notification message.</div>
+								<!-- end div#error-msg -->
+								
+								<div class="small-12 medium-8 large-6 columns">
+									<h3 class="">Found 238 Cases <span class="select-records-count">- 6 records selected</span></h3>
+								</div>
+								<!-- end columns -->
+								<div class="small-12 medium-4 large-6 columns">
+									<select class="select dark-style right bulk-icon" disabled id="bulkActions">
+										<option value="">Group Actions</option>
+										<option value="">Export Selected Cases</option>
+										<option value="">Share Selected Cases</option>
+										<option value="">Delete Selected Cases</option>
+									</select>
+								</div>
+								<!-- end columns --> 
+							</div>
+							<!-- end row -->
+							<div class="row" id="content-filter">
+								<div class="small-12 medium-12 large-7 columns">
+									
+									<div class="controls">
+										<div class="control labeled">
+											<label for="select-all" class="hide-for-small-only">
+												<input id="select-all" type="checkbox">
+												Select All </label>
+											
+										</div><!-- end div.control -->
+										<div class="control labeled">
+											<label class="">View:</label>
+											<select class="select case-data" id="view_control">
+												<option value="large-thumbs" selected>Large View</option>
+												<option value="table">Table</option>
+											</select>
+											
+										</div><!-- end div.control -->
+										<div class="control labeled">
+											<label>Sort By: </label>
+											<select class="select data-options">
+												<option value="2" data-icon1="sort-numeric-asc" data-icon2="sort-numeric-desc">Case #</option>
+												<option value="1" data-icon1="sort-alpha-asc" data-icon2="sort-alpha-desc">Create By</option>
+												<option value="3" data-icon1="sort-numeric-asc" data-icon2="sort-numeric-desc">Create On</option>
+												<option value="3" data-icon1="sort-numeric-asc" data-icon2="sort-numeric-desc">Modified On</option>
+											</select>
+											
+										</div><!-- end div.control -->
+										<div class="control">
+											<ul class="button-group radius bordered hide-for-table select-data-options">
+												<li><a href="javascript:void(0);" data-tooltip class="has-tip button secondary" title="Sort Ascending" disabled><i class="fa fa-sort-numeric-asc"></i></a></li>
+												<li><a href="javascript:void(0);" data-tooltip class="has-tip button secondary" title="Sort Descending"><i class="fa fa-sort-numeric-desc"></i></a></li>
+											</ul>
+											
+										</div><!-- end div.control -->
+										
+									</div><!-- end div.controls -->
+									
+
+								</div><!-- end columns -->
+								<div class="small-12 medium-12 large-5 columns">
+									<div class="controls right-controls">
+										<div class="control">
+											<select class="select">
+												<option value="25">25 per page</option>
+												<option value="50">50 per page</option>
+												<option value="100">100 per page</option>
+												<option value="all">All</option>
+											</select>
+											
+										</div><!-- end div.control -->
+										<div class="control">
+											<ul class="button-group radius bordered">
+												<li><button class="button secondary"><i class="fa fa-caret-left"></i></button></li>
+												<li><button class="button secondary" disabled><i class="fa fa-caret-right"></i></button></li>
+											</ul>
+											
+										</div><!-- end div.control -->
+										<div class="control labeled">
+											<div class="row collapse light-gradient-wrapper">
+												<div class="small-6 large-6 columns">
+													<input type="text" placeholder="">
+												</div>
+												<div class="small-6 large-6 columns "> <span class="postfix"><span class="fancy">of</span> 14</span> </div>
+											</div>
+										</div><!-- end div.control -->
+									</div><!-- end div.controls -->
+									
+								</div><!-- end columns --> 
+							</div><!-- end row --> 
+						</div><!-- end div#fixed-header -->
+						
+						<div class="row" id="main-content">
+							<div class="small-12 medium-12 large-12 columns"> 
+								
+								<!--  EVENT table -->
+								<div id="grid"></div>
+								<div class="item case-item">
+									<label for="item-select0" class="item-select">
+										<input type="checkbox" class="item-select-checkbox" name="item-select"  id="item-select0" value="" tabindex="1" />
+									</label>
+									<a class="item-thumb" href="case-details.html"> <i class="fa fa-briefcase"></i> </a><!-- end div.item-thumb -->
+									
+									<div class="row">
+										<div class="small-12 medium-12 large-12 columns">
+											<ul class="item-list">
+												<li><span>Case #: </span><strong>65468751</strong></li>
+												<li><span>Created By: </span><strong>Johnny B. Good</strong></li>
+												<li><span>Created On: </span><strong>01/09/2014 11:03:40</strong></li>
+												<li><span>Modified On: </span><strong>01/09/2014 11:03:40</strong></li>
+											</ul>
+										</div>
+										<!-- end columns --> 
+									</div>
+									<!-- end row --> 
+									<a href="javascript:void(0);" data-options="align:left"  data-dropdown="drop0" class="button action radius" ><i class="fa fa-cog"></i></a>
+									<ul id="drop0" data-dropdown-content class="f-dropdown">
+										<li><a href="case-details.html" class="bottom-hr"><i class="fa fa-briefcase"></i> View Case</a></li>
+										<li><a href="exports.html"><i class="fa fa-upload"></i> Export Case</a></li>
+										<li><a href="exports.html" class="bottom-hr"><i class="fa fa-share"></i> Share Case</a></li>
+										<li><a href="javascript:void(0);" class="delete-event"><i class="fa fa-times"></i> Delete Case</a></li>
+									</ul>
+									<div class="data-icon-group">
+										<div class="data-icon has-tip tip-top" data-tooltip title="Video Events attached"><i class="fa fa-film"></i> <span>6</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Links attached"><i class="fa fa-link"></i> <span>5</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Files attached"><i class="fa fa-file"></i> <span>0</span></div>
+										<a href="#" onclick="alert('Pop modal with complete Notes content')" class="data-icon has-tip tip-top" data-tooltip title="NOTES: Here is where the note for this case would be displayed, or you can view them in the Event Detail page."><i class="fa fa-comment"></i></a> </div>
+									<!-- end div.data-icon-group --> 
+								</div>
+								<!-- end event -->
+								
+								<div class="item case-item">
+									<label for="item-select" class="item-select">
+										<input type="checkbox" class="item-select-checkbox" name="item-select"  id="item-select" value="" tabindex="1" />
+									</label>
+									<a class="item-thumb" href="case-details.html"> <i class="fa fa-briefcase"></i> </a><!-- end div.item-thumb -->
+									
+									<div class="row">
+										<div class="small-12 medium-12 large-12 columns">
+											<ul class="item-list">
+												<li><span>Case #: </span><strong>268465133</strong></li>
+												<li><span>Created By: </span><strong>Johnny B. Good</strong></li>
+												<li><span>Created On: </span><strong>01/09/2014 11:03:40</strong></li>
+												<li><span>Modified On: </span><strong>01/09/2014 11:03:40</strong></li>
+											</ul>
+										</div>
+										<!-- end columns --> 
+									</div>
+									<!-- end row --> 
+									<a href="javascript:void(0);" data-options="align:left"  data-dropdown="drop1" class="button action radius" ><i class="fa fa-cog"></i></a>
+									<ul id="drop1" data-dropdown-content class="f-dropdown">
+										<li><a href="case-details.html" class="bottom-hr"><i class="fa fa-briefcase"></i> View Case</a></li>
+										<li><a href="exports.html"><i class="fa fa-upload"></i> Export Case</a></li>
+										<li><a href="exports.html" class="bottom-hr"><i class="fa fa-share"></i> Share Case</a></li>
+										<li><a href="javascript:void(0);" class="delete-event"><i class="fa fa-times"></i> Delete Case</a></li>
+									</ul>
+									<div class="data-icon-group">
+										<div class="data-icon has-tip tip-top" data-tooltip title="Video Events attached"><i class="fa fa-film"></i> <span>6</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Links attached"><i class="fa fa-link"></i> <span>5</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Files attached"><i class="fa fa-file"></i> <span>0</span></div>
+										<a href="#" onclick="alert('Pop modal with complete Notes content')" class="data-icon has-tip tip-top" data-tooltip title="NOTES: Here is where the note for this case would be displayed, or you can view them in the Event Detail page."><i class="fa fa-comment"></i></a> </div>
+									<!-- end div.data-icon-group --> 
+								</div>
+								<!-- end event -->
+								
+								<div class="item case-item">
+									<label for="item-select2" class="item-select">
+										<input type="checkbox" class="item-select-checkbox" name="item-select2"  id="item-select2" value="" tabindex="1" />
+									</label>
+									<a class="item-thumb" href="case-details.html"> <i class="fa fa-briefcase"></i> </a><!-- end div.item-thumb -->
+									
+									<div class="row">
+										<div class="small-12 medium-12 large-12 columns">
+											<ul class="item-list">
+												<li><span>Case #: </span><strong>84651354</strong></li>
+												<li><span>Created By: </span><strong>Johnny B. Good</strong></li>
+												<li><span>Created On: </span><strong>01/09/2014 11:03:40</strong></li>
+												<li><span>Modified On: </span><strong>01/09/2014 11:03:40</strong></li>
+											</ul>
+										</div>
+										<!-- end columns --> 
+									</div>
+									<!-- end row --> 
+									<a href="javascript:void(0);" data-options="align:left"  data-dropdown="drop2" class="button action radius"><i class="fa fa-cog"></i></a>
+									<ul id="drop2" data-dropdown-content class="f-dropdown">
+										<li><a href="case-details.html" class="bottom-hr"><i class="fa fa-briefcase"></i> View Case</a></li>
+										<li><a href="exports.html"><i class="fa fa-upload"></i> Export Case</a></li>
+										<li><a href="exports.html" class="bottom-hr"><i class="fa fa-share"></i> Share Case</a></li>
+										<li><a href="javascript:void(0);" class="delete-event"><i class="fa fa-times"></i> Delete Case</a></li>
+									</ul>
+									<div class="data-icon-group">
+										<div class="data-icon has-tip tip-top" data-tooltip title="Video Events attached"><i class="fa fa-film"></i> <span>3</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Links attached"><i class="fa fa-link"></i> <span>5</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Files attached"><i class="fa fa-file"></i> <span>0</span></div>
+										<a href="#" onclick="alert('Pop modal with complete Notes content')" class="data-icon has-tip tip-top" data-tooltip title="NOTES: Here is where the note for this case would be displayed, or you can view them in the Event Detail page."><i class="fa fa-comment"></i></a> </div>
+									<!-- end div.data-icon-group --> 
+									
+								</div>
+								<!-- end event -->
+								<div class="item case-item">
+									<label for="item-select3" class="item-select">
+										<input type="checkbox" class="item-select-checkbox" name="item-select3"  id="item-select3" value="" tabindex="1" />
+									</label>
+									<a class="item-thumb" href="case-details.html"> <i class="fa fa-briefcase"></i> </a><!-- end div.item-thumb -->
+									
+									<div class="row">
+										<div class="small-12 medium-12 large-12 columns">
+											<ul class="item-list">
+												<li><span>Case #: </span><strong>123581351</strong></li>
+												<li><span>Created By: </span><strong>Johnny B. Good</strong></li>
+												<li><span>Created On: </span><strong>01/09/2014 11:03:40</strong></li>
+												<li><span>Modified On: </span><strong>01/09/2014 11:03:40</strong></li>
+											</ul>
+										</div>
+										<!-- end columns --> 
+									</div>
+									<!-- end row --> 
+									<a href="javascript:void(0);" data-options="align:left"  data-dropdown="drop3" class="button action radius"><i class="fa fa-cog"></i></a>
+									<ul id="drop3" data-dropdown-content class="f-dropdown">
+										<li><a href="case-details.html" class="bottom-hr"><i class="fa fa-briefcase"></i> View Case</a></li>
+										<li><a href="exports.html"><i class="fa fa-upload"></i> Export Case</a></li>
+										<li><a href="exports.html" class="bottom-hr"><i class="fa fa-share"></i> Share Case</a></li>
+										<li><a href="javascript:void(0);" class="delete-event"><i class="fa fa-times"></i> Delete Case</a></li>
+									</ul>
+									<div class="data-icon-group">
+										<div class="data-icon has-tip tip-top" data-tooltip title="Video Events attached"><i class="fa fa-film"></i> <span>3</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Links attached"><i class="fa fa-link"></i> <span>5</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Files attached"><i class="fa fa-file"></i> <span>0</span></div>
+										<a href="#" onclick="alert('Pop modal with complete Notes content')" class="data-icon has-tip tip-top" data-tooltip title="NOTES: Here is where the note for this case would be displayed, or you can view them in the Event Detail page."><i class="fa fa-comment"></i></a> </div>
+									<!-- end div.data-icon-group --> 
+									
+								</div>
+								<!-- end event -->
+								<div class="item case-item">
+									<label for="item-select4" class="item-select">
+										<input type="checkbox" class="item-select-checkbox" name="item-select4"  id="item-select4" value="" tabindex="1" />
+									</label>
+									<a class="item-thumb" href="case-details.html"> <i class="fa fa-briefcase"></i> </a><!-- end div.item-thumb -->
+									
+									<div class="row">
+										<div class="small-12 medium-12 large-12 columns">
+											<ul class="item-list">
+												<li><span>Case #: </span><strong>46228920</strong></li>
+												<li><span>Created By: </span><strong>Johnny B. Good</strong></li>
+												<li><span>Created On: </span><strong>01/09/2014 11:03:40</strong></li>
+												<li><span>Modified On: </span><strong>01/09/2014 11:03:40</strong></li>
+											</ul>
+										</div>
+										<!-- end columns --> 
+									</div>
+									<!-- end row --> 
+									<a href="javascript:void(0);" data-options="align:left"  data-dropdown="drop4" class="button action radius"><i class="fa fa-cog"></i></a>
+									<ul id="drop4" data-dropdown-content class="f-dropdown">
+										<li><a href="case-details.html" class="bottom-hr"><i class="fa fa-briefcase"></i> View Case</a></li>
+										<li><a href="exports.html"><i class="fa fa-upload"></i> Export Case</a></li>
+										<li><a href="exports.html" class="bottom-hr"><i class="fa fa-share"></i> Share Case</a></li>
+										<li><a href="javascript:void(0);" class="delete-event"><i class="fa fa-times"></i> Delete Case</a></li>
+									</ul>
+									<div class="data-icon-group">
+										<div class="data-icon has-tip tip-top" data-tooltip title="Video Events attached"><i class="fa fa-film"></i> <span>3</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Links attached"><i class="fa fa-link"></i> <span>5</span></div>
+										<div class="data-icon has-tip tip-top" data-tooltip title="Files attached"><i class="fa fa-file"></i> <span>0</span></div>
+										<a href="#" onclick="alert('Pop modal with complete Notes content')" class="data-icon has-tip tip-top" data-tooltip title="NOTES: Here is where the note for this case would be displayed, or you can view them in the Event Detail page."><i class="fa fa-comment"></i></a> </div>
+									<!-- end div.data-icon-group --> 
+									
+								</div>
+								<!-- end event --> 
+								
+								<!-- END FOREACH not:table --> 
+								
+							</div>
+							<!-- end columns --> 
+						</div>
+						<!-- end row --> 
+					</div>
+				</div>
+				<!-- end row --> 
+			</div>
+			<!-- end main columns --> 
+		</div>
+		<!-- end main row --> 
+	</div>
+	<!-- end div#content-outer-wrapper -->
+	<footer>
+		<div class="row">
+			<div class="small-12 medium-3 large-4 columns show-for-medium-up">
+				<p class="muted">VersionNumber: 4.0.1</p>
+			</div>
+			<!-- end columns -->
+			<div class="small-12 medium-6 large-4 columns">
+				<p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>
+			</div>
+			<!-- end columns -->
+			<div class="small-12 medium-3 large-4 columns show-for-medium-up">
+				<p class="muted">BuildNumber: 1.248</p>
+			</div>
+			<!-- end columns --> 
+		</div>
+		<!-- end row --> 
+		
+	</footer>
+</section>
+<!-- end main section --> 
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/foundation.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script> 
+<script type="text/javascript" src="js/chosen.jquery.js"></script> 
+<script type="text/javascript" src="js/jquery.qtip.js"></script> 
+<script type="text/javascript" src="js/app.js"></script> 
+<script src="http://cdn.kendostatic.com/2014.1.416/js/kendo.all.min.js"></script> 
+<!-- we're using this kendo-template for the actions button on each row of the table - called in the app.js file --> 
+<script id="command-template" type="text/x-kendo-template">
+		<a href="\#" data-options="align:left" class="button action radius"><i class="fa fa-cog"></i></a>	
+	</script> 
+
+<!-- Add to case modal -->
+<div id="new-case-modal" class="reveal-modal medium tabbed-modal show-footer" data-reveal>
+	<div class="modal-header">
+		<div class="modal-title">Create New Case</div>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="small-12 medium-12 large-12 columns">
+				<label for="new_case_num">Case Number</label>
+				<input id="new_case_num" class="form_input" type="text" placeholder="">
+				</input>
+			</div>
+			<!-- end columns -->
+			<div class="small-12 medium-12 large-12 columns">
+				<label for="new_case_comments">Case Notes:</label>
+				<textarea id="new_case_comments" placeholder="Enter notes here" class="error auto-height"></textarea>
+					<small class="error">Add error feedback by placing a &lt;small class="error"&gt;&lt;/small&gt; directly under the input containing your error message</small>
+			</div>
+			<!-- end columns --> 
+		</div>
+		<!-- end row --> 
+	</div>
+	<div class="modal-footer">
+		<button class="button secondary" data-dismiss="modal" id="cancel" aria-hidden="true">Close</button>
+		<button class="button success modalsave">Save</button>
+	</div>
+	<a class="close-reveal-modal">×</a> </div>
+
+<!-- simulation modal - likely replaced with Durandals modal, this one allows control of title, button txt, classes and ID's based on the triggering links data-attributes -->
+<div id="oo-modal" class="reveal-modal" data-reveal>
+	<div class="modal-header">
+		<div class="modal-title">Information</div>
+	</div>
+	<div class="modal-body"></div>
+	<div class="modal-footer">
+		<button class="button secondary" data-dismiss="modal" id="" aria-hidden="true">Close</button>
+		<button class="button success modalsave">Save</button>
+	</div>
+	<a class="close-reveal-modal">×</a> </div>
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$('.left-offcanvas-toggle').click(function(){
+				$('.row-offcanvas').toggleClass('search-active');				
+			});
+			$('.right-offcanvas-toggle').click(function(){
+				$('.row-offcanvas').toggleClass('menu-active');		
+			});
+			$('.exit-off-canvas').click(function(){
+				$('.row-offcanvas').removeClass('menu-active search-active');		
+			});
+			
+			
+			var fixedHeaderTop = $('#fixed-header').offset().top,
+				windowHeight = $(window).height(),
+				windowWidth = $(window).width(),
+				sidebarHeight = $('.search-sidebar-offcanvas').outerHeight() + 200;
+
+				var fixedHeader = function(){  
+					// STICKY HEADER & SIDEBAR
+					var	scrollTop = $(window).scrollTop();  
+
+					if (scrollTop >= fixedHeaderTop && windowWidth > "1024") {   
+					    $('#content-wrapper').addClass('sticky'); 
+					 	if(windowHeight > sidebarHeight){
+							$('.search-sidebar-offcanvas').addClass('sticky'); 	
+						}
+					} else {  
+					    $('#content-wrapper').removeClass('sticky');   
+					    $('.search-sidebar-offcanvas').removeClass('sticky');   
+					}  
+				};  
+
+			fixedHeader();  
+
+			$(window).scroll(function() {  
+			    fixedHeader();  
+			});  
+			
+		});  // end docready
+		
+	</script>
+</body>
+</html>

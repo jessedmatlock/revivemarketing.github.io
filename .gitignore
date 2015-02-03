@@ -1,0 +1,11 @@
+/scss/**
+scss/**
+*.scssc
+*.mp4
+*.scssc
+.htaccess
+*.codekit
+*.tmproj
+*.svn
+svn
+*.msbuild

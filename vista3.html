@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Evidence Library : Web</title>
+<link rel="stylesheet" href="css/app.css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic" />
+<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+
+<link href="css/jquery.qtip.css" rel="stylesheet" />
+<link href="css/dateRangePicker.css" rel="stylesheet" />
+
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/test.css" />
+<link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
+<script src="js/modernizr.js"></script>
+<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {filter: none;}
+	  </style>
+	<![endif]-->
+
+</head>
+<body>
+<section class="main-section row-offcanvas clearfix fix-header search-icon-hidden"> <a class="exit-off-canvas"></a>
+	<header id="header" class="">
+		<nav class="tab-bar" data-topbar>
+			<section class="middle tab-bar-section">
+				<h1 class="title"><a href="javascript:void(0);"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
+			</section>
+			<section class="right-small show-for-medium-down"> <a class="right-offcanvas-toggle menu-icon" href="javascript:void(0);"><i class="fa fa-bars fa-lg"></i></a> </section>
+		</nav>
+	</header>
+	<!-- end header #head.class_name -->
+	
+	<nav class="nav-bar menu-sidebar-offcanvas offcanvas-sidebar">
+		<section class="nav-bar-section clearfix">
+			<h3 class="show-for-medium-down">Main Menu</h3>
+			
+			<!-- Right Nav Section -->
+			<ul class="right">
+				<li><a href="index.html">Events</a></li>
+				<li><a href="cases.html">Cases</a></li>
+				<!--li><a href="event-javascript:void(0);">Event Exports <span class="label round">1</span></a></li>
+	                <li><a href="case-javascript:void(0);">Case Exports <span class="label round">2</span></a></li-->
+				<li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
+				<li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
+				<li  class="active has-dropdown"> <a href="javascript:void(0);">Admin</a>
+					<ul class="dropdown">
+						<li  class="active"><a href="javascript:void(0);"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
+						<li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
+                        
+						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+					</ul>
+				</li>
+				<li class="user-profile has-dropdown"> <a href="javascript:void(0);"> <img src="images/avatar-icon.png" class="user-avatar" alt="" />My Profile</a>
+					<ul class="dropdown">						
+						<li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</nav>
+    <div id="content-outer-wrapper" class="no-sidebar checkered-background">
+		<div class="row" id="content-wrapper">
+			<div class="small-12 medium-12 large-12 columns">
+				<div id="fixed-header">
+					<div class="row" id="content-filter">
+						<div class="small-12 medium-12 large-8 columns">
+							<div class="left-controls">
+
+								<div class="labeled-control">
+									<label for="grid-sort">Sort By:</label>									
+									<select class="select data-options" id="grid-sort">
+										<option value="name" data-icon1="sort-alpha-asc" data-icon2="sort-alpha-desc">Device Name</option>
+										<option value="charge" data-icon1="sort-numeric-asc" data-icon2="sort-numeric-desc">Charge Level</option>
+										<option value="number" data-icon1="sort-numeric-asc" data-icon2="sort-numeric-desc">Device #</option>
+										<option value="officer" data-icon1="sort-alpha-asc" data-icon2="sort-alpha-desc">Officer</option>
+										<option value="date" data-icon1="sort-numeric-asc" data-icon2="sort-numeric-desc">Date</option>
+										<option value="status" data-icon1="sort-amount-asc" data-icon2="sort-amount-desc">Status</option>
+									</select>
+								</div>
+								<!-- end div.labeled-control -->
+								
+								<ul class="button-group radius bordered hide-for-table select-data-options">
+									<li><a href="javascript:void(0);" data-tooltip class="has-tip button secondary" title="Sort Ascending" data-sort="true" disabled><i class="fa fa-sort-alpha-asc"></i></a></li>
+									<li><a href="javascript:void(0);" data-tooltip class="has-tip button secondary" title="Sort Descending"  data-sort="false"><i class="fa fa-sort-alpha-desc"></i></a></li>
+								</ul>
+								
+									<div class="labeled-control">
+									
+									<label for="filter-devices">Filter By:</label>
+									<select class="select" id="filter-devices">
+										<option value="*">Show All</option>
+										<optgroup label="Building 1">
+											<option value=".bldg1">All Bldg. 1</option>											
+											<option value=".rm211">Room 211</option>
+											<option value=".rm212">Room 212</option>
+											<option value=".rm213">Room 213</option>
+										</optgroup>
+										<optgroup label="Building 2">
+											<option value=".bldg2">All Bldg. 2</option>											
+											<option value=".rm220">Room 220</option>
+											<option value=".rm221">Room 221</option>
+										</optgroup>
+										<optgroup label="Device Status">
+											<option value=".waiting">Waiting</option>
+											<option value=".importing">Importing</option>
+											<option value=".assigned">Assigned</option>
+											<option value=".error">Error</option>											
+										</optgroup>										
+									</select>
+									</div>
+								
+							</div><!-- end div.left-controls --> 
+						</div>
+						<!-- end columns -->
+						<div class="small-12 medium-12 large-4 columns">
+							<a href="javascript:void(0);" id="checkout-report" class="button secondary">Checkout Report</a>
+							
+								<ul class="button-group radius bordered right" id="display-devices">							
+									<li><a href="javascript:void(0);" id="hide-usb" class="button secondary" disabled>Gang Station</a></li>
+									<li><a href="javascript:void(0);" id="hide-gang" class="button secondary">USB Devices</a></li>
+								</ul>
+						</div>
+						<!-- end columns --> 
+					</div>
+					<!-- end row --> 
+				</div>
+				<!-- end div#fixed-header -->
+				
+				<div class="row" id="main-content">
+					<div class="small-12 medium-12 large-12 columns">
+						 
+                        
+						<div id="usb-devices" class="clearfix">
+							<h3 class="dark-section-title"><i class="fa fa-desktop"></i> <strong>USB</strong> Connected Devices</h3>
+							
+							<div class="row collapse">
+							    <div class="small-12 medium-6 large-6 columns">
+																		
+									
+							        <div class="usb-device waiting type-4re">
+										<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb1" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+										<ul id="usb1" data-dropdown-content class="f-dropdown dark-dropdown">
+											<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
+											<li><a href="javascript:void(0);" class="eject-device"><i class="fa fa-eject"></i> Eject Device</a></li>
+										</ul>
+
+										<ul class="device-info-list clearfix">
+											<li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+											<li><span>Video: </span><strong>891MB</strong></li>
+										</ul>									
+										<div class="device-status-wrapper">
+											<div class="device-import-progress clearfix" data-percent="80">
+												<div class="progress-wrapper">
+													<i class="fa fa-clock-o "></i>	
+													<div class="progress-msg">Waiting for Import</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+
+									</div><!-- end div.device-item vista -->
+									
+									
+									
+									
+									
+									
+									<div class="usb-device processing type-4re">
+										<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb2" class="button secondary gear-button radius" >
+											<i class="fa fa-circle-o-notch fa-spin"></i>
+										</a>
+										<ul id="usb2" data-dropdown-content class="f-dropdown dark-dropdown">
+											<li><a href="javascript:void(0);"><i class="fa fa-times-circle"></i> Cancel Import</a></li>									
+										</ul>
+
+										<ul class="device-info-list clearfix">
+											<li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+											<li><span>Video: </span><strong>891MB</strong></li>
+										</ul>									
+										<div class="device-status-wrapper">
+											<div class="device-import-progress clearfix" data-percent="80">
+												<div class="progress-wrapper">
+													<i class="fa fa-file fa-large"></i>	
+													<div class="progress-bar">
+														<div class="progress-bar-fill"></div><!-- end div.progress-bar-fill -->
+													</div><!-- end div.progress-bar -->
+													<div class="progress-msg">Importing</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+
+									</div><!-- end div.device-item vista -->
+									
+									
+									
+									
+									<div class="usb-device complete type-4re">
+										<a href="javascript:void(0);" class="button secondary gear-button radius" ><i class="fa fa-eject"></i></a>
+										<ul class="device-info-list clearfix">
+											<li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+											<li><span>Video: </span><strong>891MB</strong></li>
+										</ul>									
+										<div class="device-status-wrapper">
+											<div class="device-import-progress clearfix" data-percent="67">
+												<div class="progress-wrapper">
+												<i class="fa fa-thumbs-up "></i>	
+														<div class="progress-msg">Import Successful</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+
+									</div><!-- end div.device-item vista -->
+									
+									
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-6 large-6 columns">
+								
+								
+								
+							        <div class="usb-device type-vista waiting">
+										<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb5" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+										<ul id="usb5" data-dropdown-content class="f-dropdown dark-dropdown">
+											<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>											
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a></li>
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a></li>
+											<li><a href="javascript:void(0);" class="eject-device"><i class="fa fa-eject"></i> Eject Device</a></li>																				
+										</ul>
+
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+											<li><span>Device ID: </span><strong>546846541681</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+										</ul>		
+										<div class="device-status-wrapper">
+											<div class="status-title">Recorded Events: <span class="status-title-data">12</span></div><!-- end div.status-title -->
+											
+											<div class="device-import-progress clearfix" data-percent="80">
+												<div class="progress-wrapper">
+													<i class="fa fa-clock-o "></i>	
+													<div class="progress-msg">Waiting for Import</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+																	
+
+									</div><!-- end div.usb-device -->
+									<div class="usb-device type-vista processing">
+										<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb6" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+										<ul id="usb6" data-dropdown-content class="f-dropdown dark-dropdown">
+											<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>											
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a></li>
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a></li>
+											<li><a href="javascript:void(0);" class="eject-device"><i class="fa fa-eject"></i> Eject Device</a></li>																				
+										</ul>
+
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+											<li><span>Device ID: </span><strong>546846541681</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+										</ul>			
+										<div class="device-status-wrapper">
+											<div class="status-title">Importing Events: <span class="status-title-data"><span>3</span>/12</span></div><!-- end div.status-title -->
+											
+											<div class="device-import-progress clearfix" data-percent="80">
+												<div class="progress-wrapper">
+													<i class="fa fa-file fa-large"></i>	
+													<div class="progress-bar">
+														<div class="progress-bar-fill"></div><!-- end div.progress-bar-fill -->
+													</div><!-- end div.progress-bar -->
+													<div class="progress-msg">Importing</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+																
+
+									</div><!-- end div.usb-device -->
+									<div class="usb-device type-vista complete">
+										<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb7" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+										<ul id="usb7" data-dropdown-content class="f-dropdown dark-dropdown">
+											<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>											
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a></li>
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a></li>					
+											<li><a href="javascript:void(0);" class="eject-device"><i class="fa fa-eject"></i> Eject Device</a></li>															
+										</ul>
+
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+											<li><span>Device ID: </span><strong>546846541681</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+										</ul>	
+										
+										<div class="device-status-wrapper">
+											<div class="status-title">Imported Events: <span class="status-title-data">12/12</span></div><!-- end div.status-title -->
+											
+											<div class="device-import-progress clearfix" data-percent="67">
+												<div class="progress-wrapper">
+												<i class="fa fa-thumbs-up "></i>	
+														<div class="progress-msg">Import Successful</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+
+									</div><!-- end div.usb-device -->
+									
+									
+									
+									<div class="usb-device type-vista assigned">
+										<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb8" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+										<ul id="usb8" data-dropdown-content class="f-dropdown dark-dropdown">
+											<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>											
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a></li>
+											<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a></li>					
+											<li><a href="javascript:void(0);" class="eject-device"><i class="fa fa-eject"></i> Eject Device</a></li>															
+										</ul>
+
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+											<li><span>Device ID: </span><strong>546846541681</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+										</ul>	
+										<div class="device-status-wrapper">
+											<div class="status-title">Assigned To: <span class="status-title-data">James T. Kirk</span></div><!-- end div.status-title -->
+											<div class="device-import-progress clearfix" data-percent="13">
+												<div class="progress-wrapper">
+												<i class="fa fa-user "></i>	
+													<div class="progress-msg">Assigned to User</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+
+									</div><!-- end div.usb-device -->
+									
+									
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+							
+						</div><!-- end div #usb-devices. -->
+						<div id="gang-devices">
+							<h3 class="dark-section-title">
+								<i class="fa fa-exchange"></i> <strong>Gang</strong> Station Devices
+								<a href="javascript:void(0);" id="" class="button gray-gradient right" data-reveal-id="rapid-checkout-modal">Checkout</a>
+								
+								<div class="labeled-control">
+									<select class="select gray-gradient" id="rapid-config">
+										<option value="">Select Config</option>
+											<option value="">Config. 1</option>											
+											<option value="">Config. 2</option>
+											<option value="">Config. 3</option>
+									</select>
+								</div><!-- end div.labeled-control -->
+								<div class="labeled-control">
+									<label for="rapid-officer">Assign To:</label>									
+									<input type="text" name="rapid-officer"  id="rapid-officer" value="" tabindex="" class="dark-style" />
+								</div><!-- end div.labeled-control -->
+
+									<div class="labeled-control">
+										<label for="rapid-loc">Rapid Checkout:</label>									
+										<select class="select gray-gradient" id="rapid-loc">
+											<option value="">Location</option>
+											<optgroup label="Building 1">
+												<option value="">All Bldg. 1</option>											
+												<option value="">Room 211</option>
+												<option value="">Room 212</option>
+												<option value="">Room 213</option>
+											</optgroup>
+											<optgroup label="Building 2">
+												<option value="">All Bldg. 2</option>											
+												<option value="">Room 220</option>
+												<option value="">Room 221</option>
+											</optgroup>
+										</select>
+									</div><!-- end div.labeled-control -->
+									
+									
+								
+								</h3>
+						
+						<div id="device-grid" class="clearfix">
+							
+
+							<div class="device-item wearable waiting bldg1 rm211"><!-- available statuses: docked, importing, complete and assigned -->
+								<a href="javascript:void(0);" data-options="align:left" data-dropdown="device1" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+								<ul id="device1" data-dropdown-content class="f-dropdown dark-dropdown">
+									<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a></li>
+									<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>									
+									<li><a href="javascript:void(0);" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a></li>
+								</ul>
+								
+								<div class="row">
+								    <div class="small-12 medium-12 large-12 columns">
+								        <div class="device-title"><span class="number">Device Name 1</span> - #<span class="number">280</span></div>
+										<div class="device-location"><span>Bldg. 1 Rm. 211, Gang #: 2</span></div>
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+											<li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+											<li><span>Video: </span><strong>891MB</strong></li>
+											<li><span>Firmware: </span><strong>10.5.14</strong></li>
+										</ul>									
+										</div><!-- end columns -->								    
+									</div><!-- end row -->
+								<div class="row">						
+								    <div class="small-12 medium-12 large-12 columns">
+										<div class="device-status-wrapper">
+											<div class="status-title">Battery Level: 
+												<div class="charge-wrapper"><div class="charge-level" data-charge-level="4"><div class="level"></div></div></div>
+											</div><!-- end div.status-title -->
+									        <!--Device Upload Status -->
+											<div class="status-title">Recorded Events: <span class="status-title-data">12</span></div><!-- end div.status-title -->
+											<div class="device-import-progress clearfix" data-percent="80">
+												<div class="progress-wrapper">
+													<i class="fa fa-clock-o "></i>	
+													<div class="progress-msg">Waiting for Import</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+										
+									</div><!-- end columns -->								    
+								</div><!-- end row -->
+							</div><!-- end div.device-item vista -->
+
+
+							<div class="device-item wearable processing bldg1 rm212"><!-- available statuses: docked, importing, complete and assigned -->
+								<a href="javascript:void(0);" data-options="align:left" data-dropdown="device2" class="button secondary gear-button radius"><i class="fa fa-circle-o-notch fa-spin"></i></a>
+								<ul id="device2" data-dropdown-content class="f-dropdown dark-dropdown">
+									<li><a href="javascript:void(0);"><i class="fa fa-times-circle"></i> Cancel Import</a></li>									
+								</ul>
+								
+								
+								
+								<div class="row">
+								    <div class="small-12 medium-12 large-12 columns">
+								        <div class="device-title"><span class="number">Device Name 2</span> - #<span class="number">281</span></div>
+										<div class="device-location"><span>Bldg. 1 Rm. 212, Gang #: 1</span></div>										
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+											<li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+											<li><span>Video: </span><strong>891MB</strong></li>
+											<li><span>Firmware: </span><strong>10.5.14</strong></li>
+										</ul>									
+											</div><!-- end columns -->								    
+										</div><!-- end row -->
+									<div class="row">						
+									    <div class="small-12 medium-12 large-12 columns">
+										<div class="device-status-wrapper">
+											<div class="status-title">Battery Level: 
+												<div class="charge-wrapper"><div class="charge-level" data-charge-level="1"><div class="level"></div></div></div>
+											</div><!-- end div.status-title -->
+									        <!--Device Upload Status -->
+											<div class="status-title">Importing Events: <span class="status-title-data"><span>3</span>/12</span></div><!-- end div.status-title -->
+											<div class="device-import-progress clearfix" data-percent="67">
+												<div class="progress-wrapper">
+													<i class="fa fa-file fa-large"></i>	
+													<div class="progress-bar">
+														<div class="progress-bar-fill"></div><!-- end div.progress-bar-fill -->
+													</div><!-- end div.progress-bar -->
+													<div class="progress-msg">Importing</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+										
+									</div><!-- end columns -->								    
+								</div><!-- end row -->
+							</div><!-- end div.device-item vista -->
+
+							
+							
+							<div class="device-item wearable complete bldg1 rm213"><!-- available statuses: docked, importing, complete and assigned -->
+								<a href="javascript:void(0);" data-options="align:left" data-dropdown="device3" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+								<ul id="device3" data-dropdown-content class="f-dropdown dark-dropdown">
+									<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a></li>
+									<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>									
+									<li><a href="javascript:void(0);" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a></li>
+								</ul>
+								
+								<div class="row">
+								    <div class="small-12 medium-12 large-12 columns">
+								        <div class="device-title"><span class="number">Device Name 3</span> - #<span class="number">282</span></div>
+										<div class="device-location"><span>Bldg. 1 Rm. 213, Gang #: 8</span></div>
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+											<li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+											<li><span>Video: </span><strong>891MB</strong></li>
+											<li><span>Firmware: </span><strong>10.5.14</strong></li>
+										</ul>									
+											</div><!-- end columns -->								    
+										</div><!-- end row -->
+									<div class="row">						
+									    <div class="small-12 medium-12 large-12 columns">
+										<div class="device-status-wrapper">
+											<div class="status-title">Battery Level: 
+												<div class="charge-wrapper"><div class="charge-level" data-charge-level="3"><div class="level"></div></div></div>
+											</div><!-- end div.status-title -->
+									        <!--Device Upload Status -->
+											<div class="status-title">Imported Events: <span class="status-title-data">12/12</span></div><!-- end div.status-title -->
+											<div class="device-import-progress clearfix" data-percent="67">
+												<div class="progress-wrapper">
+												<i class="fa fa-thumbs-up "></i>	
+														<div class="progress-msg">Import Successful</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+												<a href="javascript:void(0);" id="" class="device-button button success">Checkout</a>
+												
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+										
+									</div><!-- end columns -->								    
+								</div><!-- end row -->
+							</div><!-- end div.device-item vista -->
+							
+							
+							
+							
+							<div class="device-item wearable assigned bldg1 rm213"><!-- available statuses: docked, importing, complete and assigned -->
+								<a href="javascript:void(0);" data-options="align:left" data-dropdown="device4" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+								<ul id="device4" data-dropdown-content class="f-dropdown dark-dropdown">
+									<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Re-assign Device</a></li>
+									<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>									
+									<li><a href="javascript:void(0);" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a></li>
+								</ul>
+								
+								<div class="row">
+								    <div class="small-12 medium-12 large-12 columns">
+								        <div class="device-title"><span class="number">Device Name 4</span> - #<span class="number">283</span></div>
+										<div class="device-location"><span>Bldg. 1 Rm. 213, Gang #: 7</span></div>
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>01/09/2014 11:03:40</strong></li>
+											<li><span>Officer: </span><strong>Johnny B. Good</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+											<li><span>Video: </span><strong>891MB</strong></li>
+											<li><span>Firmware: </span><strong>10.5.14</strong></li>
+										</ul>									
+											</div><!-- end columns -->								    
+										</div><!-- end row -->
+									<div class="row">						
+									    <div class="small-12 medium-12 large-12 columns">
+										<div class="device-status-wrapper">
+											<div class="status-title">Battery Level: 
+												<div class="charge-wrapper"><div class="charge-level" data-charge-level="2"><div class="level"></div></div></div>
+											</div><!-- end div.status-title -->
+									        <!--Device Upload Status -->
+											<div class="status-title">Assigned To: <span class="status-title-data">James T. Kirk</span></div><!-- end div.status-title -->
+											<div class="device-import-progress clearfix" data-percent="13">
+												<div class="progress-wrapper">
+												<i class="fa fa-user "></i>	
+													<div class="progress-msg">Assigned to User</div><!-- end div.progress-msg -->
+												</div><!-- end div.progress-wrapper -->
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+										
+									</div><!-- end columns -->								    
+								</div><!-- end row -->
+							</div><!-- end div.device-item vista -->
+							
+
+							<div class="device-item wearable error bldg2 rm220"><!-- available statuses: docked, importing, complete and assigned -->
+								<a href="javascript:void(0);" data-options="align:left" data-dropdown="device5" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+								<ul id="device5" data-dropdown-content class="f-dropdown dark-dropdown">
+									<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-user"></i> View Error</a></li>
+									<li><a href="javascript:void(0);" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a></li>
+								</ul>
+								
+								<div class="row">
+								    <div class="small-12 medium-12 large-12 columns">
+								        <div class="device-title"><span class="number">Device Name</span> - #<span class="number">284</span></div>
+										<div class="device-location"><span>Bldg. 2 Rm. 220, Gang #: 1</span></div>
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>02/10/2014 01:16:20</strong></li>
+											<li><span>Officer: </span><strong>James T. Kirk</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+											<li><span>Video: </span><strong>891MB</strong></li>
+											<li><span>Firmware: </span><strong>10.5.14</strong></li>
+										</ul>									
+											</div><!-- end columns -->								    
+										</div><!-- end row -->
+									<div class="row">						
+									    <div class="small-12 medium-12 large-12 columns">
+										<div class="device-status-wrapper">
+											<div class="status-title">Battery Level: 
+												<div class="charge-wrapper"><div class="charge-level" data-charge-level="2"><div class="level"></div></div></div>
+											</div><!-- end div.status-title -->
+									        <!--Device Upload Status -->
+											<div class="status-title">Assigned To: <span class="status-title-data">James T. Kirk</span></div><!-- end div.status-title -->
+											<div class="device-import-progress clearfix" data-percent="13">
+												<div class="progress-wrapper">
+												<i class="fa fa-warning "></i>	
+													<div class="progress-msg">System Error Message</div><!-- end div.progress-msg -->													
+												</div><!-- end div.progress-wrapper -->
+												<a href="javascript:void(0);" id="" class="device-button button alert">View Error</a>
+												
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+										
+									</div><!-- end columns -->								    
+								</div><!-- end row -->
+							</div><!-- end div.device-item vista -->
+							
+							<div class="device-item wearable info bldg2 rm221"><!-- available statuses: docked, importing, complete and assigned -->
+								<a href="javascript:void(0);" data-options="align:left" data-dropdown="device6" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+								<ul id="device6" data-dropdown-content class="f-dropdown dark-dropdown">
+									<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-user"></i> View Message</a></li>
+									<li><a href="javascript:void(0);" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a></li>
+								</ul>
+								
+								<div class="row">
+								    <div class="small-12 medium-12 large-12 columns">
+								        <div class="device-title"><span class="number">Device Name</span> - #<span class="number">285</span></div>
+										<div class="device-location"><span>Bldg. 2 Rm. 221, Gang #: 1</span></div>
+										<ul class="device-info-list clearfix">
+											<li><span>Date: </span><strong>02/10/2014 01:16:20</strong></li>
+											<li><span>Officer: </span><strong>James T. Kirk</strong></li>
+											<li><span>Events: </span><strong>12</strong></li>
+											<li><span>Video: </span><strong>891MB</strong></li>
+											<li><span>Firmware: </span><strong>10.5.14</strong></li>
+										</ul>									
+											</div><!-- end columns -->								    
+										</div><!-- end row -->
+									<div class="row">						
+									    <div class="small-12 medium-12 large-12 columns">
+										<div class="device-status-wrapper">
+											<div class="status-title">Battery Level: 
+												<div class="charge-wrapper"><div class="charge-level" data-charge-level="2"><div class="level"></div></div></div>
+											</div><!-- end div.status-title -->
+									        <!--Device Upload Status -->
+											<div class="status-title">Assigned To: <span class="status-title-data">James T. Kirk</span></div><!-- end div.status-title -->
+											<div class="device-import-progress clearfix" data-percent="13">
+												<div class="progress-wrapper">
+												<i class="fa fa-info-circle "></i>	
+													<div class="progress-msg">System Message</div><!-- end div.progress-msg -->													
+												</div><!-- end div.progress-wrapper -->
+												<a href="javascript:void(0);" id="" class="device-button button info-button">View Message</a>
+												
+											</div><!--End  -->
+										</div><!-- end device-status-wrapper -->
+										
+									</div><!-- end columns -->								    
+								</div><!-- end row -->
+							</div><!-- end div.device-item vista -->
+							
+
+						</div><!-- end div#gang-devices -->
+
+						</div><!-- end div#device-grid -->
+					</div>
+					<!-- end columns --> 
+				</div>
+				<!-- end row --> 
+			</div>
+		</div>
+		<!-- end row --> 
+	</div>
+	<!-- end div#content-outer-wrapper -->
+	<footer>
+		<div class="row">
+			<div class="small-12 medium-3 large-4 columns show-for-medium-up">
+				<p class="muted">VersionNumber: 4.0.1</p>
+			</div>
+			<!-- end columns -->
+			<div class="small-12 medium-6 large-4 columns">
+				<p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>
+			</div>
+			<!-- end columns -->
+			<div class="small-12 medium-3 large-4 columns show-for-medium-up">
+				<p class="muted">BuildNumber: 1.248</p>
+			</div>
+			<!-- end columns --> 
+		</div>
+		<!-- end row --> 
+		
+	</footer>
+</section>
+<!-- end main section --> 
+
+<div id="windows-error">	
+</div><!-- end div#windows-error -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/foundation.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script> 
+<script type="text/javascript" src="js/chosen.jquery.js"></script> 
+<script type="text/javascript" src="js/jquery.qtip.js"></script> 
+<script type="text/javascript" src="js/moment.js"></script> 
+<script type="text/javascript" src="js/jquery.daterangepicker.js"></script> 
+<script type="text/javascript" src="js/isotope.pkgd.js"></script> 
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js" charset="utf-8"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script> 
+
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			// Let's create some animation for our Device Upload donut, graph, gauge thingy
+			var deviceUpload = $('.device-import-progress'),
+				percent = parseInt(deviceUpload.data('percent'), 2);
+				$('.device-import-progress .progress').html(percent+'%');
+	      			
+			var $container = $('#device-grid');
+			
+			$container.isotope({
+				itemSelector: '.device-item',
+				layoutMode: 'fitRows',
+				getSortData: {
+			      	officer: '.officer',
+			      	number: '.number parseInt',
+			      	category: '.category',
+					name: '.name',
+			      	charge: function( itemElem ) {
+						var chargeLevel = $( itemElem ).find('.charge-level').attr('data-charge-level');
+						return parseInt(chargeLevel, 2);
+					}
+		    	},
+				sortBy: name
+			}).isotope('bindResize');
+			
+			// sort items on button click
+			$('#grid-sort').on('change', function(){
+			  var sortByValue = $(this).find('option:selected').val();
+			 // alert(sortByValue);
+			  $container.isotope({ sortBy: sortByValue });
+				if(sortByValue === 'status'){
+					alert('Christina, this is for you.');
+					$('#windows-error').show();
+				} else {
+					$('#windows-error').hide();				
+				}
+			});
+			
+			$('#filter-devices').on('change', function() {
+					//alert(this.value);
+		    	$container.isotope({ filter: this.value });
+		  });		  
+			
+			$('.select-data-options a').on('click', function(){		
+				var button = $(this).closest('ul').find('[disabled]').removeAttr('disabled'),
+					sorting = $(this).data('sort');
+					
+				$(this).attr('disabled', true);
+				// alert(sorting);
+				$container.isotope({ sortAscending: sorting });
+			});
+			
+			$('.charge-level').click(function(){
+				var chargeLevel = $(this).attr('data-charge-level');
+				
+				if( chargeLevel === '1'){
+					$(this).attr('data-charge-level', '2');
+				} else if(chargeLevel === '2') {
+					$(this).attr('data-charge-level', '3');
+				} else if(chargeLevel === '3') {
+					$(this).attr('data-charge-level', '4');
+				} else {
+					$(this).attr('data-charge-level', '1');
+				}
+				
+			});
+			
+			$('.button-group .button').click(function(){
+				$(this).closest('.button-group').find('.button').attr('disabled', false);
+				$(this).attr('disabled', true);
+			});
+			
+			$('#display-devices .button').click(function(){
+				var id = $(this).attr('id');
+				if(id === 'show-all'){
+					$('#usb-devices, #gang-devices').show();
+				} else if(id === 'hide-usb'){
+					$('#usb-devices').hide();
+					$('#gang-devices').show();
+					
+				} else if(id === 'hide-gang') {
+					$('#gang-devices').hide();
+					$('#usb-devices').show();					
+				}
+			});
+
+			$(document).on( 'click', '.undock-device', function() {
+				var item = $(this).closest('.device-item');
+				$container.isotope( 'remove', item ).isotope('layout');
+			});
+			
+			$('.right-offcanvas-toggle').click(function(){
+				$('.row-offcanvas').toggleClass('menu-active');		
+			});
+			$('.exit-off-canvas').click(function(){
+				$('.row-offcanvas').removeClass('menu-active search-active');		
+			});
+			
+			var fixedHeaderTop = $('#fixed-header').offset().top,
+				windowHeight = $(window).height(),
+				windowWidth = $(window).width(),
+				sidebarHeight = $('.search-sidebar-offcanvas').outerHeight() + 200;
+
+				var fixedHeader = function(){  
+					// STICKY HEADER & SIDEBAR
+					var	scrollTop = $(window).scrollTop();  
+
+					if (scrollTop >= fixedHeaderTop && windowWidth > "1024") {   
+					    $('#content-wrapper').addClass('sticky'); 
+					 	if(windowHeight > sidebarHeight){
+							$('.search-sidebar-offcanvas').addClass('sticky'); 	
+						}
+					} else {  
+					    $('#content-wrapper').removeClass('sticky');   
+					    $('.search-sidebar-offcanvas').removeClass('sticky');   
+					}  
+				};  
+
+			fixedHeader();  
+
+			$(window).scroll(function() {  
+			    fixedHeader();  
+			});  			
+			
+			$('#change-config').on('click', function(){
+				$(this).toggleClass('change');
+			});
+			
+			$('.eject-device').on('click', function(){
+				var device = $(this).closest('.usb-device');
+				$(this).html('<i class="fa fa-refresh fa-spin"></i> Ejecting Device</a>');
+				setTimeout(function(){
+					device.fadeOut('1000', function(){ 
+						device.hide();
+					});
+				}, 2000);
+			});
+			
+			
+			$('#ratf-range').dateRangePicker({
+				startOfWeek: 'monday',
+				separator : ' ~ ',
+				format: 'DD/MM/YYYY HH:mm',
+				autoClose: false,
+				time: {
+					enabled: true
+				},    
+				shortcuts: {
+				        'prev-days': [1,3,5,7],
+				        'next-days': false,
+				        'prev' : ['week','month','year'],
+				        'next' : false
+				    },
+			}).bind('datepicker-change',function(event,obj)	{
+					//console.log(obj['date1']);
+					var a = moment(obj['date2']);
+					var b = moment(obj['date1']);
+					a.diff(b);
+					
+					// simulates change of export size based on date range selection 
+					$('#ratf-size, #ratf-confirm-size').html(a.diff(b)/1000000 );
+					// obj will be something like this:
+					// {
+					// 		date1: (Date object of the earlier date),
+					// 		date2: (Date object of the later date),
+					//	 	value: "2013-06-05 to 2013-06-07"
+					// }
+				});
+
+				// toggle secondary tags
+				$('.import-toggle-button').click(function(){
+					$(this).closest('.import-item').find('.import-toggle').toggle();
+				});
+
+				// This one is important, many browsers don't reset scroll on refreshes
+				// Reset all scrollable panes to (0,0)				
+				//$(window).scrollTo( 0 );
+				// Reset the screen to (0,0)
+				//$.scrollTo( 0 );
+				
+				// show event preview and scroll selected import-item to top of list
+				$('.import-thumb-wrapper').click(function(){
+					item = $(this);
+					// clear .showing class from all others, apply to clicked - provides styling target for selected item
+					$(this).closest('#import-list').find('.import-item').removeClass('showing');
+					$(this).closest('.import-item').addClass('showing');
+					setTimeout(function() {
+						$('#import-list').stop().scrollTo( item , 250, {offset: -20} );
+					}, 250);					
+
+					// add the .preview class to the modal for CSS control of other elements			
+					$('#import-modal').addClass('preview');
+					// init fotorama image slider and slide down the parent element to reveal it
+					$('#import-slideshow-wrapper').slideDown('fast', function(){
+						$('#import-slideshow').on('fotorama:ready', function (e, fotorama) {
+							$(this).show();
+						}).fotorama({
+					        autoplay: true,
+					        arrows: 'always',
+					      	nav: 'thumbs',
+					        thumbheight: '75px',
+					        transition: 'crossfade',
+					        transitionduration: 100,
+						    width: '100%',
+						    maxwidth: '1080'
+					      });								
+					});														
+				});
+				$('#import-slideshow-close').click(function(){
+					$('#import-slideshow-wrapper').slideUp('fast', function(){
+						$('#import-list').find('.import-item').removeClass('showing');
+						$('#import-modal').removeClass('preview');	
+//						$('#import-slideshow').fotorama('destroy');					
+					});
+				});
+				
+				$('#checkout-report').on('click', function(){
+					openWindowReport();
+				});
+				
+		});// end docready
+		var windowReport = null; // global variable
+
+		function openWindowReport() {
+		  if(windowReport == null || windowReport.closed) {
+		    windowReport = window.open('checkout-report.html', '_blank', 'toolbar=0,titlebar=0,status=0,location=0,menubar=0,height=640,width=640');
+		  } else {
+		    windowReport.focus();
+		  };
+		}
+		
+	</script>
+	
+	<div id="import-modal" class="reveal-modal fixed-modal large show-footer" data-reveal>
+	  <div class="modal-header">
+	    <div class="modal-title">Import Events</div>
+	  </div>
+	  <div class="modal-body">
+			<!--div data-alert class="alert-box alert radius">
+			  Required categorization is missing from one or more Events below.
+			  <a href="#" class="close">&times;</a>
+			</div-->
+		
+			<div class="row collapse" id="import-topbar">
+			    <div class="small-12 medium-4 large-4 columns">
+			        <label for="select-all" class="hide-for-small-only">
+						<input id="select-all" type="checkbox">
+						Select All </label>
+				
+			    </div><!-- end columns -->
+			    <div class="small-12 medium-4 large-4 columns">						
+					<div id="import-count">
+						Importing 1 of 4 Events
+					</div><!-- end div#import-count -->
+			    </div><!-- end columns -->
+			    <div class="small-12 medium-4 large-4 columns">
+			        <div id="import-size-wrapper">
+						6.81GB
+						<div id="import-size-title">
+							<span>Total</span>
+							<span>Import Size</span>
+						</div>							
+					</div><!-- end div#import-size-wrapper -->
+				
+			    </div><!-- end columns -->
+			</div><!-- end row -->
+			<div id="import-slideshow-wrapper" class="">
+				<div id="import-slideshow-close">Close Preview <i class="fa fa-times-circle"></i></div>
+				<div id="import-caption">Use your mouse to click &amp; drag the thumbnails above to the left/right</div>
+				  <div id="import-slideshow">
+					<img src="images/video-preivew.jpg" class="first">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				    <img src="images/video-preivew.jpg">
+				</div>
+			</div><!-- end div #import-slideshow-wrapper. -->
+			
+			<div class="row">
+		      <div class="small-12 medium-12 large-12 columns">
+				
+					<div id="import-list">
+					
+						<div class="import-item" id="item1">
+						
+							<label for="checkbox1" class="import-select">
+								<input type="checkbox" name="checkbox1"  id="checkbox1" value="" />
+								<i class="import-processing fa fa-circle-o-notch fa-spin"></i>							
+							
+							</label>
+						
+							<a href="javascript:void(0);" class="import-thumb-wrapper">
+								<div class="import-thumb-overlay">
+									<div class="import-thumb-preview">Preview</div>
+								</div><!-- end div.import-thumb-overlay -->
+								<img src="images/default.png"  class="import-thumb" id=""  alt="" />							
+							</a><!-- end div.import-thumb-wrapper -->	
+						
+							<div class="import-options">
+								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+							</div><!-- end div.import-options -->
+						
+							<div class="import-content clearfix">
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+								        <select name="" id="" class="select error" >
+								        	<option value="option1">UNCATEGORIZED</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+										<p>Recorded on 09/15/2014 08:00</p>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+								        <span class="import-meta">00:49:35</span>
+								        <span class="import-meta">624MB</span>
+								        <span class="import-meta">VISTA</span>	
+								        <span class="import-meta">WB122025423</span>								        
+								    </div><!-- end columns -->
+								</div><!-- end row -->		
+																								
+							</div><!-- end div.import-content -->			
+							<div class="import-toggle">
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.import-toggle- -->
+						</div><!-- end div.import-item -->
+										
+						<div class="import-item"  id="item2">
+						
+							<label for="checkbox2" class="import-select">
+								<input type="checkbox" name="checkbox2"  id="checkbox2" value="" />
+								<i class="import-processing fa fa-circle-o-notch fa-spin"></i>							
+							
+							</label>
+						
+							<a href="javascript:void(0);" class="import-thumb-wrapper">
+								<div class="import-thumb-overlay">
+									<div class="import-thumb-preview">Preview</div>
+								</div><!-- end div.import-thumb-overlay -->
+								<img src="images/default.png"  class="import-thumb" id=""  alt="" />							
+							</a><!-- end div.import-thumb-wrapper -->	
+						
+							<div class="import-options">
+								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+							</div><!-- end div.import-options -->
+						
+							<div class="import-content clearfix">
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+								        <select name="" id="" class="select error" >
+								        	<option value="option1">UNCATEGORIZED</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+										<p>Recorded on 09/15/2014 08:00</p>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+								        <span class="import-meta">00:49:35</span>
+								        <span class="import-meta">624MB</span>
+								        <span class="import-meta">VISTA</span>	
+								        <span class="import-meta">WB122025423</span>								        
+								    </div><!-- end columns -->
+								</div><!-- end row -->		
+																								
+							</div><!-- end div.import-content -->			
+							<div class="import-toggle">
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.import-toggle- -->
+						</div><!-- end div.import-item -->
+								
+						<div class="import-item" id="item3">
+						
+							<label for="checkbox3" class="import-select">
+								<input type="checkbox" name="checkbox3"  id="checkbox3" value="" />
+								<i class="import-processing fa fa-circle-o-notch fa-spin"></i>							
+							
+							</label>
+						
+							<a href="javascript:void(0);" class="import-thumb-wrapper">
+								<div class="import-thumb-overlay">
+									<div class="import-thumb-preview">Preview</div>
+								</div><!-- end div.import-thumb-overlay -->
+								<img src="images/default.png"  class="import-thumb" id=""  alt="" />							
+							</a><!-- end div.import-thumb-wrapper -->	
+						
+							<div class="import-options">
+								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+							</div><!-- end div.import-options -->
+						
+							<div class="import-content clearfix">
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+										<p>Recorded on 09/15/2014 08:00</p>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+								        <span class="import-meta">00:49:35</span>
+								        <span class="import-meta">624MB</span>
+								        <span class="import-meta">VISTA</span>	
+								        <span class="import-meta">WB122025423</span>								        
+								    </div><!-- end columns -->
+								</div><!-- end row -->		
+																								
+							</div><!-- end div.import-content -->			
+							<div class="import-toggle">
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.import-toggle- -->
+						</div><!-- end div.import-item -->
+							
+						<div class="import-item" id="item4">
+						
+							<label for="checkbox4" class="import-select">
+								<input type="checkbox" name="checkbox4"  id="checkbox4" value="" />
+								<i class="import-processing fa fa-circle-o-notch fa-spin"></i>							
+							
+							</label>
+						
+							<a href="javascript:void(0);" class="import-thumb-wrapper">
+								<div class="import-thumb-overlay">
+									<div class="import-thumb-preview">Preview</div>
+								</div><!-- end div.import-thumb-overlay -->
+								<img src="images/default.png"  class="import-thumb" id=""  alt="" />							
+							</a><!-- end div.import-thumb-wrapper -->	
+						
+							<div class="import-options">
+								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+							</div><!-- end div.import-options -->
+						
+							<div class="import-content clearfix">
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+										<p>Recorded on 09/15/2014 08:00</p>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+								        <span class="import-meta">00:49:35</span>
+								        <span class="import-meta">624MB</span>
+								        <span class="import-meta">VISTA</span>	
+								        <span class="import-meta">WB122025423</span>								        
+								    </div><!-- end columns -->
+								</div><!-- end row -->		
+																								
+							</div><!-- end div.import-content -->			
+							<div class="import-toggle">
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.import-toggle- -->
+						</div><!-- end div.import-item -->
+	
+						<div class="import-item" id="item5">
+						
+							<label for="checkbox5" class="import-select">
+								<input type="checkbox" name="checkbox5"  id="checkbox5" value="" />
+								<i class="import-processing fa fa-circle-o-notch fa-spin"></i>							
+							
+							</label>
+						
+							<a href="javascript:void(0);" class="import-thumb-wrapper">
+								<div class="import-thumb-overlay">
+									<div class="import-thumb-preview">Preview</div>
+								</div><!-- end div.import-thumb-overlay -->
+								<img src="images/default.png"  class="import-thumb" id=""  alt="" />							
+							</a><!-- end div.import-thumb-wrapper -->	
+
+							<div class="import-options">
+								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+							</div><!-- end div.import-options -->
+						
+							<div class="import-content clearfix">
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+										<p>Recorded on 09/15/2014 08:00</p>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+								        <span class="import-meta">00:49:35</span>
+								        <span class="import-meta">624MB</span>
+								        <span class="import-meta">VISTA</span>	
+								        <span class="import-meta">WB122025423</span>								        
+								    </div><!-- end columns -->
+								</div><!-- end row -->		
+																								
+							</div><!-- end div.import-content -->			
+							<div class="import-toggle">
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.import-toggle- -->
+						</div><!-- end div.import-item -->
+
+						<div class="import-item" id="item6">
+						
+							<label for="checkbox6" class="import-select">
+								<input type="checkbox" name="checkbox6"  id="checkbox6" value="" />
+								<i class="import-processing fa fa-circle-o-notch fa-spin"></i>							
+							
+							</label>
+						
+							<a href="javascript:void(0);" class="import-thumb-wrapper">
+								<div class="import-thumb-overlay">
+									<div class="import-thumb-preview">Preview</div>
+								</div><!-- end div.import-thumb-overlay -->
+								<img src="images/default.png"  class="import-thumb" id=""  alt="" />							
+							</a><!-- end div.import-thumb-wrapper -->	
+						
+							<div class="import-options">
+								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+							</div><!-- end div.import-options -->
+						
+							<div class="import-content clearfix">
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+										<p>Recorded on 09/15/2014 08:00</p>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+								        <span class="import-meta">00:49:35</span>
+								        <span class="import-meta">624MB</span>
+								        <span class="import-meta">VISTA</span>	
+								        <span class="import-meta">WB122025423</span>								        
+								    </div><!-- end columns -->
+								</div><!-- end row -->		
+																								
+							</div><!-- end div.import-content -->			
+							<div class="import-toggle">
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.import-toggle- -->
+						</div><!-- end div.import-item -->
+					
+						<div class="import-item" id="item7">
+						
+							<label for="checkbox7" class="import-select">
+								<input type="checkbox" name="checkbox7"  id="checkbox7" value="" />
+								<i class="import-processing fa fa-circle-o-notch fa-spin"></i>							
+							
+							</label>
+						
+							<a href="javascript:void(0);" class="import-thumb-wrapper">
+								<div class="import-thumb-overlay">
+									<div class="import-thumb-preview">Preview</div>
+								</div><!-- end div.import-thumb-overlay -->
+								<img src="images/default.png"  class="import-thumb" id=""  alt="" />							
+							</a><!-- end div.import-thumb-wrapper -->	
+													
+							<div class="import-options">
+								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+							</div><!-- end div.import-options -->
+							
+						
+							<div class="import-content clearfix">
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+										<p>Recorded on 09/15/2014 08:00</p>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-6 columns">
+								        <span class="import-meta">00:49:35</span>
+								        <span class="import-meta">624MB</span>
+								        <span class="import-meta">VISTA</span>	
+								        <span class="import-meta">WB122025423</span>								        
+								    </div><!-- end columns -->
+								</div><!-- end row -->		
+																								
+							</div><!-- end div.import-content -->			
+							<div class="import-toggle">
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+										<input type="text" name=""  id="" value="" placeholder="tag value" />
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-2 columns">
+								        <label for="" class="right inline">Tag Name</label>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-3 large-4 columns">
+								        <select name="" id="" class="select" >
+								        	<option value="option1">option1</option>
+								        	<option value="option2">option2</option>
+								        </select>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.import-toggle- -->
+						</div><!-- end div.import-item -->
+									
+					</div><!-- end div#import-list -->
+			
+		    </div>
+		    <!-- end row --> 
+	    
+	  </div>
+	  <div class="modal-footer shaded-footer">
+	    <button class="button secondary close-modal">Close</button>
+	    <button class="button success modalsave close-modal">Import Events</button>
+	  </div>
+	  <a class="close-reveal-modal">×</a>
+	</div>
+		
+	
+	<div id="checkout-modal" class="reveal-modal fixed-modal medium show-footer" data-reveal>
+	  <div class="modal-header">
+	    <div class="modal-title">Checkout Device</div>
+	  </div>
+	  <div class="modal-body">
+	    <div class="row">
+	      <div class="small-12 medium-12 large-12 columns">
+				<div class="row">
+				    <div class="small-12 medium-6 large-6 columns">
+		    	        <label for="" class="">Select an Officer</label>
+						<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field" class="" />
+				    </div><!-- end columns -->
+				    <div class="small-12 medium-6 large-6 columns">
+		    	        <label for="" class="">Camera Setting</label>
+						<select class="select select-searchable" id="">
+							<option value="">Default</option>
+							<option value="1">K9 Unit</option>
+							<option value="2">Drug Task Force</option>
+							<option value="3">Night Patrol</option>
+						</select>				    	
+				    </div><!-- end columns -->
+				</div><!-- end row -->				
+
+				<a href="javascript:void(0);" id="change-config">Change Officer Preferences</a>
+			    <div id="checkout-config">				
+			    	
+			    	<div class="row">
+			    	    <div class="small-12 medium-5 large-4 columns">
+			    	        <label for="" class="right inline">Device ID</label>
+			    	    </div><!-- end columns -->
+			    	    <div class="small-12 medium-7 large-8 columns">
+			    	        <input type="text" value="WGPD-01">
+			    	    </div><!-- end columns -->
+			    	</div><!-- end row -->
+			    	
+			    	<div class="row">
+			    	    <div class="small-12 medium-5 large-4 columns">
+			    	        <label for="" class="right inline">Serial Number</label>
+			    	    </div><!-- end columns -->
+			    	    <div class="small-12 medium-7 large-8 columns">
+			    	        <input type="text" value="510056" disabled>
+			    	    </div><!-- end columns -->
+			    	</div><!-- end row -->
+			    	
+			    	<div class="row">
+			    	    <div class="small-12 medium-5 large-4 columns">
+			    	        <label for="" class="right inline">LED Brightness</label>
+			    	    </div><!-- end columns -->
+			    	    <div class="small-12 medium-7 large-8 columns">
+							<select class="select">
+								<option value="">Dim</option>								
+								<option value="" selected>Normal</option>
+								<option value="">Bright</option>
+							</select>
+			    	    </div><!-- end columns -->
+			    	</div><!-- end row -->
+			    	
+			    	<div class="row">
+			    	    <div class="small-12 medium-5 large-4 columns">
+			    	        <label for="" class="right inline">Alert Notifications</label>
+			    	    </div><!-- end columns -->
+			    	    <div class="small-12 medium-7 large-8 columns">
+							<select class="select">
+								<option value="">Audio &amp; Vibration</option>								
+								<option value="">Audio Only</option>
+								<option value="">Vibration Only</option>
+							</select>
+			    	    </div><!-- end columns -->
+			    	</div><!-- end row -->
+			    	
+			    	<div class="row">
+			    	    <div class="small-12 medium-7 medium-push-5 large-8 large-push-4 columns">
+			    	        <label for="auto-reduce" class="inline"><input type="checkbox" name="auto-reduce"  id="auto-reduce" value="" /><small>Auto reduce LED brightness between 8pm - 8am</small></label>
+			    	    </div><!-- end columns -->
+			    	</div><!-- end row -->
+			    	
+			    	<div class="row">
+			    	    <div class="small-12 medium-5 large-4 columns">
+			    	        <label for="" class="right inline">Audio Alert Levels</label>
+			    	    </div><!-- end columns -->
+			    	    <div class="small-12 medium-7 large-8 columns">
+							<select class="select">
+								<option value="">Low</option>								
+								<option value="" selected>Normal</option>
+								<option value="">High</option>
+							</select>
+			    	    </div><!-- end columns -->
+			    	</div><!-- end row -->			    				    	
+			    </div><!-- end div#checkout-config -->
+			
+	    	</div><!-- end row --> 
+	  </div>
+	  <div class="modal-footer shaded-footer">
+	    <button class="button secondary close-modal">Cancel</button>
+	    <button class="button success modalsave"  data-reveal-id="rapid-checkout-modal">Checkout Device</button>
+	  </div>
+	  <a class="close-reveal-modal">×</a>
+	</div>
+	
+	
+	<div id="rapid-checkout-modal" class="reveal-modal fixed-modal small show-footer" data-reveal>
+	  <div class="modal-header">
+	    <div class="modal-title">Checkout Device</div>
+	  </div>
+	  <div class="modal-body">
+	    <div class="row">
+	      <div class="small-12 medium-12 large-12 columns">
+			You have assigned <strong> Officer Pitcher, Matthew</strong> to the device in <strong>Slot 3</strong> of Gang Station <strong>B21</strong>
+	    </div>
+	    <!-- end row --> 
+	  </div>
+	  <div class="modal-footer shaded-footer">
+	    <button class="button secondary close-modal">Close</button>
+	    <button class="button success modalsave close-modal">Done</button>
+	  </div>
+	  <a class="close-reveal-modal">×</a>
+	</div>
+	
+	
+	<div id="ratf-modal" class="reveal-modal fixed-modal large show-footer" data-reveal>
+	  <div class="modal-header">
+	    <div class="modal-title">Record After The Fact</div>
+	  </div>
+	  <div class="modal-body">
+	    <div class="row">
+	      <div class="small-12 medium-12 large-12 columns">
+			<h4 class="panel-top-title">Available Date / Time Range</h4>			
+		
+			<div class="panel radius">
+				<div class="row">
+				    <div class="small-12 medium-4 large-4 columns">
+				        <strong>From:</strong> 11/23/14 21:46:05
+				    </div><!-- end columns -->
+				    <div class="small-12 medium-4 large-4 columns">
+				        <strong>To:</strong> 11/24/14 06:48:16
+				    </div><!-- end columns -->
+				    <div class="small-12 medium-4 large-4 columns">
+				        <strong>Duration:</strong> 9:02:11
+				    </div><!-- end columns -->
+				</div><!-- end row -->
+			</div><!-- end panel -->
+			
+			<h4 class="panel-top-title">Set Event Duration</h4>			
+			<div class="panel radius">
+				<div class="row">
+				    <div class="small-12 medium-6 large-6 columns">					
+						<input class="" id="ratf-range" placeholder="mm/dd/yyyy" type="text">
+				    </div><!-- end columns -->
+				    <div class="small-12 medium-6 large-6 columns text-right">					
+						Estimate Size: <strong><span id="ratf-size">398</span>MB</strong>
+				    </div><!-- end columns -->
+				</div><!-- end row -->
+				
+			</div><!-- end div.panel radius -->
+	    </div>
+	  </div><!-- end row --> 
+	  <div class="modal-footer shaded-footer">
+	    <button class="button secondary close-modal">Cancel</button>
+	    <button class="button success modalsave"  data-reveal-id="ratf-confirm-modal">Create Event</button>
+	  </div>
+	  <a class="close-reveal-modal">×</a>
+	</div>
+		
+	
+	<div id="ratf-confirm-modal" class="reveal-modal fixed-modal small show-footer" data-reveal>
+	  <div class="modal-header">
+	    <div class="modal-title">Create Record After The Fact Event</div>
+	  </div>
+	  <div class="modal-body">
+	    <div class="row">
+	      <div class="small-12 medium-12 large-12 columns">
+			<p>The requested event will be <strong>1h 10m 03s</strong> in length and <strong><span id="ratf-confirm-size"></span>MB</strong> in size.</p>
+			<p>Would you like to create this recording?</p>
+			<div class="alert-box info radius"><strong>NOTE:</strong> You must remove the device from it's dock <strong>after</strong> clicking yes below.</div>
+			
+	    </div>
+	    <!-- end row --> 
+	  </div>
+	  <div class="modal-footer shaded-footer">
+	    <button class="button secondary close-modal">No</button>
+	    <button class="button success modalsave close-modal">Yes</button>
+
+	  </div>
+	  <a class="close-reveal-modal">×</a>
+	</div>
+	
+	
+	<div id="firmware-modal" class="reveal-modal fixed-modal small show-footer" data-reveal>
+	  <div class="modal-header">
+	    <div class="modal-title">Manage Device Firmware</div>
+	  </div>
+	  <div class="modal-body">
+	    <div class="row">
+		      <div class="small-12 medium-6 large-6 columns">
+			<label for="current-firmware">Current Firmware</label>
+			<input type="text" name="current-firmware"  id="current-firmware" value="5.0.156" disabled />
+				
+		    </div>
+		      <div class="small-12 medium-6 large-6 columns">
+				<label for="available-firmware">Available Firmware</label>
+				<select class="select" id="available-firmware">
+					<option value="">5.0.100</option>								
+					<option value="">5.0.149</option>								
+					<option value="">5.0.153</option>								
+					<option value="" selected>5.0.156</option>								
+					<option value="">5.1.0</option>
+					<option value="">...</option>
+				</select>
+                
+		    </div>
+	    <!-- end row --> 
+	  </div>
+	  <div class="modal-footer shaded-footer">
+	    <button class="button secondary close-modal">Cancel</button>
+	    <button class="button success modalsave close-modal">Save Changes</button>
+
+	  </div>
+	  <a class="close-reveal-modal">×</a>
+	</div>
+	
+</body>
+</html>

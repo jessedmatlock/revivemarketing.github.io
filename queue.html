@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Evidence Library : Web</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic" />
+	<link href="css/jquery-ui-1.10.4.custom.min.css" type="text/css" rel="stylesheet" media="all" />
+
+	<link href="css/jquery.qtip.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/test.css" />
+	<link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
+    <script src="js/modernizr.js"></script>
+    <!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {filter: none;}
+	  </style>
+	<![endif]-->
+</head>
+
+<body>
+	<section class="main-section row-offcanvas clearfix fix-header search-icon-hidden"> <a class="exit-off-canvas"></a>
+        
+        <header id="header">
+            <nav class="tab-bar" data-topbar>
+                <section class="middle tab-bar-section">
+                    <h1 class="title"><a href="javascript:void(0);"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
+                </section>
+                <section class="right-small show-for-medium-down"> <a class="right-offcanvas-toggle menu-icon" href="javascript:void(0);" title=""><i class="fa fa-bars fa-lg"></i></a>
+                </section>
+            </nav>
+        </header>
+        <!-- end header #head.class_name -->
+        <nav class="nav-bar menu-sidebar-offcanvas offcanvas-sidebar">
+            <section class="nav-bar-section clearfix">
+                <h3 class="show-for-medium-down">Main Menu</h3>
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><a href="index.html">Events</a>
+                    </li>
+                    <li><a href="cases.html">Cases</a>
+                    </li>
+                    <!--li><a href="event-exports.html">Event Exports <span class="label round">1</span></a></li>
+	                <li><a href="case-exports.html">Case Exports <span class="label round">2</span></a></li-->
+                    <li><a href="exports.html">Export Worksheet <span class="label round">2</span></a>
+                    </li>
+                    <li class="active"><a href="queue.html">My Exports <span class="label round">2</span></a>
+                    </li>
+                    <li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+                        <ul class="dropdown">
+							<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
+							<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
+	                        <li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
+							
+	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
+	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
+	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
+                        </ul>
+                    </li>
+                    <li class="user-profile has-dropdown">
+                        <a href="javascript:void(0);">
+                            <img src="images/avatar-icon.png" class="user-avatar" alt="" />My Profile</a>
+                        <ul class="dropdown">
+                            <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        <div id="content-outer-wrapper" class="no-sidebar checkered-background">
+            <div class="row" id="content-wrapper">
+                <div class="small-12 medium-12 large-12 columns">
+                    <div id="fixed-header">
+                        <div class="row" id="content-header">
+                            <div class="small-12 medium-8 large-6 columns">
+	                            <h3><i class="fa fa-desktop"></i> <strong>Exported</strong> Evidence Queue</h3>
+                            </div>
+							<div class="small-12 medium-4 large-6 columns">
+								<select class="select dark-style right bulk-icon" disabled id="bulkActions">
+									<option value="0">Group Actions</option>
+									<option value="1">Remove Selected from Queue</option>
+								</select>
+							</div>
+							<!-- end columns --> 
+                        </div>
+                        <!-- end row -->
+                        <div class="row" id="content-filter">
+                            <div class="small-12 medium-6 large-7 columns">
+								<div class="controls">
+									<div class="control labeled">
+										<label for="select-all" class="hide-for-small-only">
+											<input id="select-all" type="checkbox">
+											Select All </label>										
+									</div><!-- end div.control labeled -->
+									<div class="control labeled">
+										<a href="javascript:void(0);" id="" class="button secondary has-tip tip-right" title="only show when Kendo filter is invoked (and remove this tooltip)">Clear Filters</a>										
+									</div><!-- end div.control labeled -->
+								</div><!-- end div.controls -->
+	
+		
+                            </div>
+                            <!-- end columns -->
+                            <div class="small-12 medium-6 large-5 columns">
+								<div class="controls right-controls">
+									<div class="control">
+										<select class="select">
+                                            <option value="24h">Today</option>
+                                            <option value="5d">Last 2 Days</option>
+                                            <option value="14d">Last 5 Days</option>
+                                            <option value="30d">Last 7 Days</option>
+                                            <option value="60d">Last 14 Days</option>
+	                                        <option value="all">Show All</option>    
+                                        </select>
+                                       
+									</div><!-- end div.control -->
+								</div><!-- end div.control -->
+                            </div>
+                            <!-- end columns -->
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end div#fixed-header -->
+                    <div class="row export-queue" id="main-content">
+                        <div class="small-12 medium-12 large-12 columns">
+
+										<table id="export-table" class="responsive">
+									        <thead>
+												<tr>
+									            <th class="columns-actions-col" colspan="2">&nbsp;</th>
+												<th title="Export Priority" class="width125">Priority <i class="fa fa-sort"></i></th>																		            
+												<th title="Export Status" class="width200">Status <i class="fa fa-sort"></i></th>																		            
+												<th title="Export Recipient">Recipient <i class="fa fa-sort"></i></th>																		            
+									            <th title="Export To">Exported To <i class="fa fa-sort"></i></th>
+									            <th title="Export Size">Total Size <i class="fa fa-sort"></i></th>
+									            <th title="Export Type">Export Type <i class="fa fa-sort"></i></th>
+									            <th title="Exported On">Submitted On <i class="fa fa-sort"></i></th>
+									            <th title="Exported By">Submitted By <i class="fa fa-sort"></i></th>
+									        </tr>
+										</thead>
+										<tbody>
+									        <tr class="export-item cancelled">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox00">
+									                	<input id="item-select-checkbox00" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop" class="button action radius" ><i class="fa fa-cog"></i></a>
+													<ul id="drop" data-dropdown-content class="f-dropdown dark-dropdown">
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Remove Job from Queue</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>														
+													</ul>
+									            </td>
+												<td>High</td>
+									            <td><i class="fa fa-times status-icon"></i> Cancelled</td>																		
+									            <td>REID: 2406a6178a6747a59b75</td>																		
+									            <td><i class="fa fa-download"></i> Local Export</td>									
+									            <td>198.8 MB</td>									
+									            <td><i class="fa fa-film"></i> Event(s)</td>
+									            <td>01/09/14 10:13:12</td>
+									            <td>James Abernathy</td>									
+									        </tr>
+
+									        <tr class="export-item waiting">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox0">
+									                	<input id="item-select-checkbox0" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop1" class="button action radius" ><i class="fa fa-cog"></i></a>
+													<ul id="drop1" data-dropdown-content class="f-dropdown dark-dropdown">
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-arrow-up"></i> Increase Priority</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-arrow-down"></i> Decrease Priority</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Cancel Export Job</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>														
+													</ul>
+									            </td>
+												<td>High</td>
+									            <td><i class="fa fa-clock-o status-icon"></i> Waiting</td>																		
+									            <td>REID: 2406a6178a6747a59b75</td>																		
+									            <td><i class="fa fa-download"></i> Local Export</td>									
+									            <td>198.8 MB</td>									
+									            <td><i class="fa fa-film"></i> Event(s)</td>
+									            <td>01/09/14 10:13:12</td>
+									            <td>James Abernathy</td>									
+									        </tr>
+
+									        <tr class="export-item processing">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox2">
+									                	<input id="item-select-checkbox2" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop2" class="button action radius"><i class="fa fa-cog"></i></a>
+													<ul id="drop2" data-dropdown-content class="f-dropdown dark-dropdown">
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Cancel Export Job</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>
+														
+													</ul>
+									            </td>
+												<td>Normal</td>
+									            <td><i class="fa fa-refresh fa-spin status-icon"></i> Exporting</td>																											
+									            <td>REID: 2406a6178a6747a59b75</td>																		
+									            <td><i class="fa fa-dot-circle-o"></i> CD</td>									
+									            <td>198.8 MB</td>									
+									            <td><i class="fa fa-film"></i> Event(s)</td>
+									            <td>01/09/14 10:13:12</td>
+									            <td>Jonathan Woods</td>
+									
+									        </tr>	
+
+									        <tr class="export-item complete">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox1">
+									                	<input id="item-select-checkbox1" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop3" class="button action radius" ><i class="fa fa-cog"></i></a>
+													<ul id="drop3" data-dropdown-content class="f-dropdown dark-dropdown">
+														<li><a href="javascript:void(0);"><i class="fa fa-download"></i> Download .iso 1 </a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-download"></i> Download .iso 2 </a></li>														
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Cancel Export Job</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>
+														
+													</ul>
+									            </td>
+												<td>Normal</td>
+									            <td><i class="fa fa-thumbs-up status-icon"></i> Ready for Download</td>																																				
+									            <td>REID: 2406a6178a6747a59b75</td>																		
+									            <td><i class="fa fa-download"></i> Local Export</td>									
+									            <td>198.8 MB</td>									
+									            <td><i class="fa fa-film"></i> Event(s)</td>
+									            <td>01/09/14 10:13:12</td>
+									            <td>James Abernathy</td>									
+									        </tr>
+
+
+											<tr class="export-item complete">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox3">
+									                	<input id="item-select-checkbox3" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop4" class="button action radius" ><i class="fa fa-cog"></i></a>
+													<ul id="drop4" data-dropdown-content class="f-dropdown dark-dropdown">
+														<li><a href="javascript:void(0);"><i class="fa fa-download"></i> Download .iso 1 </a></li>
+														<li><a href="javascript:void(0);"><i class="fa fa-download"></i> Download .iso 2 </a></li>
+														<li><a href="javascript:void(0);"><i class="fa fa-download"></i> Download .iso 3</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-download"></i> Download .iso 4</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Cancel Export Job</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>
+														
+													</ul>
+										
+									            </td>
+												<td>Normal</td>
+									            <td><i class="fa fa-download status-icon"></i> Download to Burn</td>																																				
+									            <td>Ex: No Tray App</td>																		
+									            <td><i class="fa fa-dot-circle-o"></i> CD</td>									
+									            <td>198.8 MB</td>									
+									            <td><i class="fa fa-briefcase"></i> Case(s)</td>
+												<td>01/09/14 10:13:12</td>
+									            <td>Silvia Carlson</td>
+									        </tr>
+
+											<tr class="export-item complete">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox3">
+									                	<input id="item-select-checkbox3" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop5" class="button action radius" ><i class="fa fa-cog"></i></a>
+													<ul id="drop5" data-dropdown-content class="f-dropdown dark-dropdown">
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-dot-circle-o"></i> Cancel Download/Burn - OR -</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Cancel Export Job</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>
+													</ul>
+									            </td>
+												<td>Normal</td>
+									            <td><i class="fa fa-refresh fa-spin status-icon"></i> Preparing to Burn Export</td>																																				
+									            <td>Ex: W/ Tray App</td>																		
+									            <td><i class="fa fa-dot-circle-o"></i> DVD</td>									
+									            <td>198.8 MB</td>									
+									            <td><i class="fa fa-briefcase"></i> Case(s)</td>
+												<td>01/09/14 10:13:12</td>
+									            <td>Silvia Carlson</td>
+									        </tr>
+
+
+
+											<tr class="export-item complete">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox3">
+									                	<input id="item-select-checkbox3" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop6" class="button action radius" ><i class="fa fa-cog"></i></a>
+													<ul id="drop6" data-dropdown-content class="f-dropdown dark-dropdown">
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-dot-circle-o"></i> Burn To Disc </a></li>
+														<li><a href="javascript:void(0);"><i class="fa fa-download"></i> Download .iso 1 </a></li>
+														<li><a href="javascript:void(0);"><i class="fa fa-download"></i> Download .iso 2 </a></li>
+														<li><a href="javascript:void(0);"><i class="fa fa-download"></i> Download .iso 3</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-download"></i> Download .iso 4</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Cancel Export Job</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>
+													</ul>
+										
+									            </td>
+												<td>Normal</td>
+									            <td><i class="fa fa-check status-icon"></i> Successful Burn</td>																																													
+									            <td>Ex: W/ Tray App Burned To Disc/Downloaded</td>																		
+									            <td><i class="fa fa-dot-circle-o"></i> DVD</td>									
+									            <td>198.8 MB</td>									
+									            <td><i class="fa fa-briefcase"></i> Case(s)</td>
+												<td>01/09/14 10:13:12</td>
+									            <td>Silvia Carlson</td>
+									        </tr>
+
+											<tr class="export-item complete">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox3">
+									                	<input id="item-select-checkbox3" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop7" class="button action radius" ><i class="fa fa-database"></i></a>
+													<ul id="drop7" data-dropdown-content class="f-dropdown dark-dropdown">
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-arrow-up"></i> Increase Priority</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-arrow-down"></i> Decrease Priority</a></li>														
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Cancel Export Job</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>
+													</ul>
+										
+									            </td>
+												<td>Normal</td>
+									            <td><i class="fa fa-database status-icon"></i> In Robot Queue</td>																																																						
+									            <td>Ex: of Robot Job</td>																		
+									            <td><i class="fa fa-database"></i> Mr. Roboto</td>									
+									            <td>198.8 MB</td>									
+									            <td><i class="fa fa-briefcase"></i> Case(s)</td>
+												<td>01/09/14 10:13:12</td>
+									            <td>Silvia Carlson</td>
+									        </tr>
+
+
+									        <!--tr class="export-item info">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox4">
+									                	<input id="item-select-checkbox4" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop7" class="button action radius"><i class="fa fa-info-circle"></i></a>
+													<ul id="drop7" data-dropdown-content class="f-dropdown dark-dropdown content">
+														<p>Message to be displayed here...</p>
+													</ul>
+										
+									            </td>
+									            <td>
+													<span class="fa-stack fa-lg has-tip tip-right" title="System Message">
+													  <i class="fa fa-circle fa-stack-2x"></i>
+													  <i class="fa fa-info-circle fa-stack-1x fa-inverse"></i>
+													</span>
+												</td>																											            																		
+									            <td>Case #: 21453547</td>																		
+									            <td><i class="fa fa-database"></i> Mr. Roboto</td>									
+									            <td>198.8 MB</td>									
+									            <td><i class="fa fa-briefcase"></i> Case(s)</td>
+									            <td>01/09/14 10:13:12</td>
+									            <td>Sam Rueben</td>									
+									        </tr-->
+									
+									
+									        <tr class="export-item error">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox5">
+									                	<input id="item-select-checkbox5" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop8" class="button action radius"><i class="fa fa-warning"></i></a>
+													<ul id="drop8" data-dropdown-content class="f-dropdown dark-dropdown content">
+														<p>Message to be displayed here...</p>
+													</ul>
+									            </td>
+												<td>Normal</td>
+												<td><i class="fa fa-warning status-icon"></i> System Error</td>																																																																								            
+									            <td>REID: 2406a6178a6747a59b75</td>																		
+									            <td><i class="fa fa-download"></i> Local Export</td>									
+									            <td>198.8 MB</td>									
+								            <td><i class="fa fa-film"></i> Event(s)</td>
+								            <td>01/09/14 10:13:12</td>
+								            <td>Tricia Connelly</td>						
+									        </tr>
+										</tbody>
+									</table>
+									
+                        </div>
+                        <!-- end columns -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end main columns -->
+            </div>
+            <!-- end main row -->
+        </div>
+        <!-- end div#content-outer-wrapper -->
+        <footer>
+            <div class="row">
+                <div class="small-12 medium-3 large-4 columns show-for-medium-up">
+                    <p class="muted">VersionNumber: 4.0.1</p>
+                </div>
+                <!-- end columns -->
+                <div class="small-12 medium-6 large-4 columns">
+                    <p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>
+                </div>
+                <!-- end columns -->
+                <div class="small-12 medium-3 large-4 columns show-for-medium-up">
+                    <p class="muted">BuildNumber: 1.248</p>
+                </div>
+                <!-- end columns -->
+            </div>
+            <!-- end row -->
+        </footer>
+    </section><!-- end main section -->
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/chosen.jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.qtip.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+	<script src="js/kendo.all.min.js"></script> 
+	
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+
+
+            $('.item-select-checkbox').on('change',function() {
+				$(this).closest('tr').toggleClass('selected', this.checked);
+            }).change();
+            // toggle Export Destination Options for #export-destination
+            $('#export-destination').on('change', function() {
+                var exportDestination = $(this).find("option:selected").val();
+                $('.select-records-count').text(exportDestination);
+                if (exportDestination > 0) {
+                    $('.export-destination-option').hide();
+                    $('#export-destination-options').find('.option' + exportDestination).show();
+                }
+                else {
+                    $('.export-destination-option').hide();
+                }
+            }).change();
+            // let's simulate the loading/in-progress indicator for items in queue
+            //setTimeout(function() {
+            //    $('.item-select.in-progress').removeClass('in-progress').find('.fa-refresh').removeClass('fa-refresh fa-spin').addClass('fa-check-circle success');
+            //}, 6000);
+			$('.right-offcanvas-toggle').click(function(){
+				$('.row-offcanvas').toggleClass('menu-active');		
+			});
+			$('.exit-off-canvas').click(function(){
+				$('.row-offcanvas').removeClass('menu-active search-active');		
+			});
+			
+
+        }); // end docready
+    </script>
+
+	<div id="exported-items-modal" class="reveal-modal fixed-modal large show-footer" data-reveal>
+	  <div class="modal-header">
+	    <div class="modal-title">View Exported Items</div>
+	  </div>
+	  <div class="modal-body">
+	    <div class="row">
+	      <div class="small-12 medium-12 large-12 columns">
+			<ul id="" class="exported-items-list">
+				<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213</li>
+				<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213
+					<ul>
+						<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213</li>
+						<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213</li>
+						<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213</li>
+					</ul>
+				</li>
+				<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213</li>
+				<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213
+					<ul>
+						<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213</li>
+						<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213</li>
+						<li><strong>Johnny B. GoodVehicle</strong> - 01/09/2014 11:03:40 - DUI - Crown Victoria 4213</li>
+					</ul>
+				</li>
+			</ul>
+	    </div>
+	    <!-- end row --> 
+	  </div>
+	  <div class="modal-footer shaded-footer">
+	    <button class="button secondary close-modal">Close</button>
+	  </div>
+	  <a class="close-reveal-modal">×</a>
+	</div>
+
+</body>
+
+</html>

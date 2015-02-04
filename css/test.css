@@ -6002,7 +6002,13 @@ section.main-section {
 
 
 
-
+.nav-bar-section ul li.user-profile,
+.nav-bar-section ul li.user-logout a,
+.nav-bar-section ul li.user-profile a,
+.nav-bar-section ul li.user-profile a:hover,
+.nav-bar-section ul li.user-profile a:focus {
+	background: transparent !important;
+}
 
 
 

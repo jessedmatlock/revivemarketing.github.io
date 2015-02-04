@@ -5007,7 +5007,7 @@ dialog[open] {
 /* Tooltips */
 /* line 38, ../scss/components/_tooltips.scss */
 .has-tip {
-  border-bottom: dotted 1px #CCCCCC;
+  border-bottom: none;
   cursor: help;
   font-weight: bold;
   color: #333333;
@@ -8101,7 +8101,7 @@ button.med-button, button.med-gradient,
   height: auto;
   line-height: 2.8125rem;
   position: relative;
-  border-bottom: 6px solid #161617 !important;
+  border-bottom: 6px solid #262b31 !important;
   overflow: visible;
 }
 /* line 446, ../scss/app.scss */

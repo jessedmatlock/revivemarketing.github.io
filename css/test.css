@@ -5631,18 +5631,17 @@ add .alert-yes or .alert-no to display .toggle-alert for specific checkbox state
 #exported-items-modal .exported-items-list strong {
 	color: #333;
 }
+
+#exported-items-modal .exported-items-list > li {
+	margin: 0 0 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
 #exported-items-modal .exported-items-list ul {
 	list-style: lower-alpha;
 	list-style-position: inside;
 	margin: 0;
-}
-#exported-items-modal .exported-items-list > li {
-	margin: 0 0 15px 0;
-	border-bottom: 1px solid #eee;
-	
-}
-#exported-items-modal .exported-items-list ul {
-	margin: 0 0 0px 0px;
+	margin: 5px 0px 0px 0px;
 	background: #fafafa;
 	padding: 5px 5px 5px 10px;
 	border-top: 1px solid #eee;
@@ -6009,8 +6008,11 @@ section.main-section {
 .nav-bar-section ul li.user-profile a:focus {
 	background: transparent !important;
 }
-
-
+/*.nav-bar-section ul li.user-logout a {
+	height: 38px;
+	line-height: 36px;
+}
+*/
 
 
 /*

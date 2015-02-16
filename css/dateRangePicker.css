@@ -78,6 +78,7 @@
 	line-height:14px;
 	margin : 0px;
 	padding : 0px;
+	height: auto;
 }
 .date-picker-wrapper .month-wrapper table .day
 {
@@ -160,8 +161,8 @@
 }
 .date-picker-wrapper .drp_top-bar
 {
-	line-height:40px;
-	height:40px;
+	line-height:30px;
+	height:30px;
 	position:relative;
 }
 .date-picker-wrapper .drp_top-bar .error-top { display:none; }
@@ -178,7 +179,7 @@
 {
 	position:absolute;
 	right: 0px; 
-	top: 6px;
+	top: 2px;
 	padding:3px 5px;
 	margin:0;
 	font-size:12px;

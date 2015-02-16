@@ -684,31 +684,72 @@ $(document).on("click","#select_officer_search_chosen li.result-selected",functi
 			    field: "CaseNumber",
 			    title: "Case Number",
 			    width: 100,
+			    filterable: {
+			        cell: {
+			            showOperators: true
+			        }
+			    }
 			    //format: "{0:MM/dd/yyyy}"
 			}, {
 			    field: "CreatedBy",
 			    title: "Created By",
-			    width: 125
+			    width: 125,
+			    filterable: {
+			        cell: {
+			            showOperators: true
+			        }
+			    }
+			    
 			}, {
 			    field: "CreatedOn",
 			    title: "Created On",
-			    width: 125
+			    width: 125,
+			    filterable: {
+			        cell: {
+			            showOperators: true
+			        }
+			    }
+			    
 			}, {
 			    field: "ModifiedOn",
 			    title: "Modified On",
-			    width: 125
+			    width: 125,
+			    filterable: {
+			        cell: {
+			            showOperators: true
+			        }
+			    }
+			    
 			}, {
 			    field: "Events",
 			    title: "Events",
-			    width: 60
+			    width: 60,
+			    filterable: {
+			        cell: {
+			            showOperators: true
+			        }
+			    }
+			    
 			}, {
 			    field: "Links",
 			    title: "Links",
-			    width: 60
+			    width: 60,
+			    filterable: {
+			        cell: {
+			            showOperators: true
+			        }
+			    }
+			    
 			}, {
 			    field: "Files",
 			    title: "Files",
-			    width: 60
+			    width: 60,
+			    filterable: {
+			        cell: {
+			            showOperators: true
+			        }
+			    }
+			    
 			}, {
 			    command: [{
 			        name: 'action',
@@ -1210,7 +1251,8 @@ $(document).on("click","#select_officer_search_chosen li.result-selected",functi
 		
 			var grid = $("#grid").kendoGrid({
 			    dataSource: {
-data: dataSet,
+			    	data: dataSet,
+			    	serverFiltering: true,			    	
 			        schema: {
 			            model: {
 			                fields: {   
@@ -1237,30 +1279,35 @@ data: dataSet,
 			            }
 			        }
 			    },
-			    columnResizeHandleWidth: 12,			    
+//			    columnResizeHandleWidth: 16,			    
 			    height: $(document).height() - 400,
+			    serverFiltering: true,			    
+				filterable: {
+				    mode: "row"
+				},
 				sortable: {
 				    mode: "single"
-				},				    
-				columnMenu: {
-					sortable: false,
-					messages: {
-					  columns: "Choose columns"
-					}
-				},
-			    reorderable: true,
-			    resizable: true,
-			    pageable: {
-			    	pageSize: 25,			    	
-			        refresh: true,
-			        pageSizes: [25,50,100],
-			        buttonCount: 5,
-			        input: true,
-			       	messages: {
-			       	  itemsPerPage: "Events per page"
-			       	} 
-			       
-			    },
+				},	
+//				columnMenu: {
+//					sortable: false,
+//					messages: {
+//					  columns: "Choose columns"
+//					}
+//				},
+//			    reorderable: true,
+//			    resizable: true,
+			    pageable: false,
+//			    pageable: {
+//			    	pageSize: 25,			    	
+//			        refresh: true,
+//			        pageSizes: [25,50,100],
+//			        buttonCount: 5,
+//			        input: true,
+//			       	messages: {
+//			       	  itemsPerPage: "Events per page"
+//			       	} 
+//			       
+//			    },
   				dataBound: onDataBound,
 			    columns: columns
 			}).data("kendoGrid");  

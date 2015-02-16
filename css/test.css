@@ -910,7 +910,7 @@ table .info .status-icon,
 
 
 /* IMPORT MODAL */
-#import-modal.reveal-modal.fixed-modal {
+.reveal-modal.fixed-modal {
 	top: 5px !important;
 }
 
@@ -1181,6 +1181,9 @@ table .info .status-icon,
 
 
 /* CHECKOUT REPORT*/
+#checkout-report-wrapper {
+	display: none;
+}
 #checkout-report-details {
 	padding: 0 20px 20px;
 }
@@ -1190,9 +1193,27 @@ table .info .status-icon,
 	margin: 10px auto;
 }
 #checkout-report-details .checkout-report-detail {
-	border-bottom: 1px solid #ccc;
+
 	overflow: hidden;
 	height: 40px;
+}
+
+#checkout-report-details .checkout-report-detail-header,
+#checkout-report-details .checkout-report-detail-header .checkout-assignee,
+#checkout-report-details .checkout-report-detail-header .checkout-device-location,
+#checkout-report-details .checkout-report-detail-header .checkout-device-name ,
+#checkout-report-details .checkout-report-detail-header .checkout-device-config {
+	background: #999;
+	border-color: #999;	
+	color: #fff;	
+	font-weight: bold;
+}
+
+.modal-body #checkout-report-details {
+	border: 1px solid #999;
+	padding: 0;
+	max-height: 400px;
+	overflow-y: auto;
 }
 
 #checkout-report-details .checkout-report-detail:nth-child(even) {
@@ -1200,7 +1221,7 @@ table .info .status-icon,
 }
 #checkout-report-details .checkout-assignee,
 #checkout-report-details .checkout-device-name,
-#checkout-report-details .checkout-device-location,#checkout-report-details .checkout-device-time {
+#checkout-report-details .checkout-device-location,#checkout-report-details .checkout-device-config {
 	padding: 5px 10px;
 	float: left;
 	height: 40px;
@@ -1219,11 +1240,11 @@ table .info .status-icon,
 }
 #checkout-report-details .checkout-device-name {
 	width: 20%;
-	border-right: 1px solid #ddd;
 }
 
-#checkout-report-details .checkout-device-time {
+#checkout-report-details .checkout-device-config {
 	width: 20%;
+	border-right: 1px solid #ddd;
 }
 
 .device-import-progress .device-button {
@@ -2422,6 +2443,13 @@ input.copy-text::-o-selection {
   border-color: transparent transparent transparent #3F454B;
 }
 
+.f-dropdown.dark-dropdown.drop-top:after {
+  border-color: #333 transparent transparent transparent;
+}
+.f-dropdown.dark-dropdown.drop-top:before {
+  border-color: #3F454B  transparent transparent transparent;
+}
+
 
 .f-dropdown.content {
     padding: 1rem;
@@ -3254,6 +3282,9 @@ box-shadow: none;
 	position: relative;
 	overflow: hidden;
 }
+#main-content .k-header {
+	cursor: pointer;
+}
 #main-content .k-header,
 #main-content .k-grid-header,
 #main-content .k-toolbar,
@@ -3295,8 +3326,6 @@ box-shadow: none;
     letter-spacing: 1px;
     font: bold 12px/1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     text-transform: uppercase;
-    
-    
 }
 #main-content .k-grid-header-wrap,
 #main-content .k-grid-header {
@@ -3326,6 +3355,32 @@ box-shadow: none;
     background: #06c !important;
     border-color: #06c !important;
 }
+.k-picker-wrap .k-select {
+	line-height: 30px !important;
+}
+
+.k-calendar .k-header,
+.k-calendar .k-footer .k-link {
+	background-color:#333 !important;
+	color: #eee;
+}
+
+.k-calendar .k-header .k-state-hover{
+	background-color:#444 !important;
+}
+.k-calendar td.k-state-selected,
+.k-calendar td.k-state-focused  {
+	background-color: #0066CC !important;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	border-radius: 2px !important;	
+}
+.k-calendar .k-link.k-state-hover,
+.k-calendar td.k-state-hover {
+	border-radius: 2px !important;
+}
+
+
 table .k-state-active {
 	color: #fff;
 	background: #333 !important;
@@ -3374,6 +3429,7 @@ table .k-state-active {
 	border-left: 1px solid #eee;
 	border-top: 1px solid #eee;
 	border-right: 1px solid #eee;
+	overflow: visible;
 }
 
 
@@ -3851,8 +3907,8 @@ table caption {
 
 table thead { background: whitesmoke }
 
-table thead th,
-table tfoot th {
+table:not(.k-content) thead th,
+table:not(.k-content) tfoot th {
 	position: relative;
 	height: 45px;
 	padding: 0 0.5em;
@@ -3877,29 +3933,29 @@ table tfoot th {
 	
 }
 
-table thead th:not(:first-child) .fa,
-table tfoot td .fa {
+table:not(.k-content) thead th:not(:first-child) .fa,
+table:not(.k-content) tfoot td .fa {
 	font-size: 1em;
 	margin-left: 5px;
 }
 
-table thead tr td {
+table:not(.k-content) thead tr td {
     padding: 0.5em;
     font-size: 1rem;
     font-weight: normal;
     color: #555;
 }
 
-table tfoot { background: whitesmoke }
+table:not(.k-content) tfoot { background: whitesmoke }
 
-table tfoot tr th,
-table tfoot tr td {
+table:not(.k-content) tfoot tr th,
+table:not(.k-content) tfoot tr td {
     padding: 0.5em;
     color: #222222;
     
 }
-table tfoot tr th .button,
-table tfoot tr td  .button {
+table:not(.k-content) tfoot tr th .button,
+table:not(.k-content) tfoot tr td  .button {
 	margin: 0;
 	text-transform: capitalize;
 	font-size: 0.85rem;
@@ -3937,7 +3993,7 @@ table .width50 {
 	width: 50px;
 }
 
-table tr td {
+table:not(.k-content) tr td {
     padding: 1em 0.5em;
     font-size: 0.9em;
     color: #333;
@@ -3947,40 +4003,40 @@ table tr td {
 	border-right: 1px solid #eee;
 }
 
-table tr.exluded td {
+table:not(.k-content) tr.exluded td {
 	color: #888 !important; 
 	background: #eee ;
 }
-table tr.exluded td input[type=checkbox] {
+table:not(.k-content) tr.exluded td input[type=checkbox] {
 	opacity: 0.5;	
 }
 
-table tr.even td,
-table tr.alt td,
-table tr:nth-of-type(even) td { 
+table:not(.k-content) tr.even td,
+table:not(.k-content) tr.alt td,
+table:not(.k-content) tr:nth-of-type(even) td { 
 	background: #f9f9f9;
 	box-shadow: none !important;
 	 }
 
 
-table tr.selected td {
+table:not(.k-content) tr.selected td {
 	background: #BDDFFD !important;
 	border-bottom: 1px solid #608AD1;
 }
 
-table tr td.table-row-selection,
-table tr td.item-actions,
-table tr th.columns-actions-col {
+table:not(.k-content) tr td.table-row-selection,
+table:not(.k-content) tr td.item-actions,
+table:not(.k-content) tr th.columns-actions-col {
 	text-align: center;
 	padding: 0;
 	width: 40px;
 }
 
-table tr td input {
+table:not(.k-content) tr td input {
 	margin: 0 !important;
 }
 
-table tr td label {
+table:not(.k-content) tr td label {
 	display: block;
 	min-height: 50px;
 	line-height: 48px;
@@ -3990,17 +4046,17 @@ table tr td label {
 	text-align: center;
 	
 }
-table tr td .fa-stack {
+table:not(.k-content) tr td .fa-stack {
 	font-size: 18px;
 	color: #aaa;
 	text-align: center;
 	vertical-align: bottom;
 }
-table tr td.item-actions {
+table:not(.k-content) tr td.item-actions {
 	width: 60px;
 }
 
-table tr.export-item td:nth-child(1) {
+table:not(.k-content) tr.export-item td:nth-child(1) {
 	width: 45px;
 	text-align: center;
 }
@@ -4023,15 +4079,15 @@ table tr td.item-actions .button {
 	text-align: center;
 	text-indent: 0;
 }
-table tr td .button {
+table:not(.k-content) tr td .button {
 	margin: 0;
 }
-table tr td.item-actions .button .fa {
+table:not(.k-content) tr td.item-actions .button .fa {
 	color: #eee;
 }
 
 
-table tr.event:hover {
+table:not(.k-content) tr.event:hover {
 	background: #fff;
 }
 
@@ -6250,6 +6306,8 @@ section.main-section {
 	vertical-align: middle;
 	padding-bottom: 0;
 	padding-top: 0;
+	border-left: 1px solid;
+	border-color: #ccc;
 }
 @media screen and (max-width: 1024px) {
 	.controls  {

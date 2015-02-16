@@ -81,40 +81,8 @@
 						<div class="large-9 hide-for-medium-down columns">
 							<div class="controls right-controls">
 								<div class="control labeled">
-									<a href="javascript:void(0);" id="" class="button" data-reveal-id="rapid-checkout-modal">Checkout</a>									
+									<a href="javascript:void(0);" id="" class="button" data-reveal-id="rapid-checkout-modal">Rapid Checkout</a>									
 								</div><!-- end div.control labeled -->
-								<div class="control labeled">
-									<select class="select" id="rapid-config">
-										<option value="">Select Config</option>
-											<option value="">Config. 1</option>											
-											<option value="">Config. 2</option>
-											<option value="">Config. 3</option>
-									</select>									
-								</div><!-- end div.control labeled -->
-
-								<div class="control labeled">
-									<label for="rapid-officer">Officer:</label>									
-									<input type="text" name="rapid-officer"  id="rapid-officer" value="" tabindex="" class="" />									
-								</div><!-- end div.control labeled -->
-
-								<div class="control labeled">
-									<label for="rapid-loc">Rapid Checkout:</label>									
-									<select class="select" id="rapid-loc">
-										<option value="">Location</option>
-										<optgroup label="Building 1">
-											<option value="">All Bldg. 1</option>											
-											<option value="">Room 211</option>
-											<option value="">Room 212</option>
-											<option value="">Room 213</option>
-										</optgroup>
-										<optgroup label="Building 2">
-											<option value="">All Bldg. 2</option>											
-											<option value="">Room 220</option>
-											<option value="">Room 221</option>
-										</optgroup>
-									</select>									
-								</div><!-- end div.control labeled -->
-
 							</div><!-- end div.controls right-controls -->
 						</div>
 						<!-- end columns --> 
@@ -347,7 +315,16 @@
 								</tbody>
 								<tfoot>
 									<tr>
-										<th colspan="10"><a href="javascript:void(0);" id="checkout-report" class="button gray-gradient right">Checkout Report</a></th>
+										<th colspan="10">
+											<a href="javascript:void(0);" data-options="align:top" data-dropdown="print" aria-controls="print" aria-expanded="false" class="button gray-gradient right dropdown">Checkout Report</a>
+											<ul id="print" data-dropdown-content class="f-dropdown dark-dropdown" aria-hidden="true" tabindex="-1">
+												<li><a href="#" class="checkout-report">Print Last 6 Hours</a></li>
+												<li><a href="#" class="checkout-report">Print Last 8 Hours</a></li>
+												<li><a href="#" class="checkout-report">Print Last 10 Hours</a></li>
+												<li><a href="#" class="checkout-report">Print Last 12 Hours</a></li>
+												<li><a href="#" class="checkout-report">Print Last 24 Hours</a></li>
+											</ul>
+										</th>
 									</tr>
 								</tfoot>
 							</table>
@@ -485,13 +462,23 @@
 					// }
 				});
 
-				$('#checkout-report').on('click', function(){
+				$('.checkout-report').on('click', function(){
 					openWindowReport();
+				});
+				$('#rapid-assign-device').on('click', function(){
+					$('#checkout-report-wrapper').show();
+					var assignment = '<div class="checkout-report-detail">'+
+						'<div class="checkout-assignee">Johnny B. Good</div>'+
+						'<div class="checkout-device-config">Config. 1</div>'+						
+						'<div class="checkout-device-location">Building 1, Gang 2/3</div>'+
+						'<div class="checkout-device-name">Vista VL-168</div>'+
+					'</div>';					
+					$('#checkout-report-details').append(assignment);
+					$('#rapid-officer').focus();
 				});
 				
 		});// end docready
 		var windowReport = null; // global variable
-
 		function openWindowReport() {
 		  if(windowReport == null || windowReport.closed) {
 		    windowReport = window.open('checkout-report.html', '_blank', 'toolbar=0,titlebar=0,status=0,location=0,menubar=0,height=640,width=640');
@@ -499,7 +486,6 @@
 		    windowReport.focus();
 		  };
 		}
-		
 	</script>
 	
 	<div id="import-modal" class="reveal-modal fixed-modal large show-footer" data-reveal>
@@ -511,13 +497,11 @@
 			  Required categorization is missing from one or more Events below.
 			  <a href="#" class="close">&times;</a>
 			</div-->
-		
 			<div class="row collapse" id="import-topbar">
 			    <div class="small-12 medium-4 large-4 columns">
 			        <label for="select-all" class="hide-for-small-only">
 						<input id="select-all" type="checkbox">
 						Select All </label>
-				
 			    </div><!-- end columns -->
 			    <div class="small-12 medium-4 large-4 columns">						
 					<div id="import-count">
@@ -532,7 +516,6 @@
 							<span>Import Size</span>
 						</div>							
 					</div><!-- end div#import-size-wrapper -->
-				
 			    </div><!-- end columns -->
 			</div><!-- end row -->
 			<div id="import-slideshow-wrapper" class="">
@@ -565,30 +548,24 @@
 			</div><!-- end div #import-slideshow-wrapper. -->
 			
 			<div class="row">
-		      <div class="small-12 medium-12 large-12 columns">
-				
-					<div id="import-list">
-					
-						<div class="import-item" id="item1">
-						
+		      <div class="small-12 medium-12 large-12 columns">			
+					<div id="import-list">					
+						<div class="import-item" id="item1">						
 							<label for="checkbox1" class="import-select">
 								<input type="checkbox" name="checkbox1"  id="checkbox1" value="" />
 								<i class="import-processing fa fa-circle-o-notch fa-spin"></i>							
 							
-							</label>
-						
+							</label>						
 							<a href="javascript:void(0);" class="import-thumb-wrapper">
 								<div class="import-thumb-overlay">
 									<div class="import-thumb-preview">Preview</div>
 								</div><!-- end div.import-thumb-overlay -->
 								<img src="images/default.png"  class="import-thumb" id=""  alt="" />							
-							</a><!-- end div.import-thumb-wrapper -->	
-						
+							</a><!-- end div.import-thumb-wrapper -->							
 							<div class="import-options">
 								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
 								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
-							</div><!-- end div.import-options -->
-						
+							</div><!-- end div.import-options -->						
 							<div class="import-content clearfix">
 								<div class="row">
 								    <div class="small-12 medium-6 large-6 columns">
@@ -1272,19 +1249,65 @@
 	</div>
 	
 	
-	<div id="rapid-checkout-modal" class="reveal-modal fixed-modal small show-footer" data-reveal>
+	<div id="rapid-checkout-modal" class="reveal-modal fixed-modal large show-footer" data-reveal>
 	  <div class="modal-header">
 	    <div class="modal-title">Checkout Device</div>
 	  </div>
 	  <div class="modal-body">
-	    <div class="row">
+		<div class="row">
+		    <div class="small-12 medium-6 large-6 columns">
+		        <select class="select" id="rapid-loc" tabindex="1" >
+					<option value="">Location</option>
+					<optgroup label="Building 1">
+						<option value="">All Bldg. 1</option>											
+						<option value="">Gang 1</option>
+						<option value="">Gang 2</option>
+						<option value="">Gang 3</option>
+					</optgroup>
+					<optgroup label="Building 2">
+						<option value="">All Bldg. 2</option>											
+						<option value="">Gang 4</option>
+						<option value="">Gang 5</option>
+					</optgroup>
+				</select>									
+				
+		    </div><!-- end columns -->
+		    <div class="small-12 medium-6 large-6 columns">
+				<input type="text" name="rapid-officer"  id="rapid-officer" tabindex="2" class="" placeholder="Officer Name" />									
+		    </div><!-- end columns -->
+		</div><!-- end row -->
+
+		<div class="row">
+		    <div class="small-12 medium-6 large-6 columns">
+		        <select class="select" id="rapid-config" tabindex="3" >
+					<option value="">Select Config</option>
+					<option value="">Config. 1</option>											
+					<option value="">Config. 2</option>
+					<option value="">Config. 3</option>
+				</select>									
+		    </div><!-- end columns -->
+		    <div class="small-12 medium-6 large-6 columns">
+		        <button id="rapid-assign-device" class="button secondary block-button" tabindex="4">Assign Device</button>									
+		    </div><!-- end columns -->
+		</div><!-- end row -->
+		
+	    <div class="row" id="checkout-report-wrapper">
 	      <div class="small-12 medium-12 large-12 columns">
-			You have assigned <strong> Officer Pitcher, Matthew</strong> to the device in <strong>Slot 3</strong> of Gang Station <strong>B21</strong>
+			<div id="checkout-report-details">
+				<div class="checkout-report-detail checkout-report-detail-header">
+					<div class="checkout-assignee">Officer Name</div>
+					<div class="checkout-device-config">Config.</div>					
+					<div class="checkout-device-location">Location, Gang Station/Slot</div>
+					<div class="checkout-device-name">Device Name</div>		
+				</div>
+			
+			</div><!-- end div#report-checkout-list -->
 	    </div>
 	    <!-- end row --> 
 	  </div>
 	  <div class="modal-footer shaded-footer">
-	    <button class="button secondary close-modal">Close</button>
+	    <button class="button secondary close-modal" tabindex="6">Close</button>
+	    <button class="button success modalsave checkout-report" tabindex="5">Print Checkout Report</button>
 	  </div>
 	  <a class="close-reveal-modal">×</a>
 	</div>

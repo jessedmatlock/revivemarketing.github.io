@@ -4173,9 +4173,11 @@ table:not(.k-content) tr.event:hover {
 }
 #export-video-options {
 	min-height: 300px;
-	padding: 0 10px 0px;
+	padding: 15px 10px 0px;
 }
-
+#export-video-options .alert-box {
+	color: #333;	
+}
 #export-video-options > .row > .columns {
 	padding-bottom: 10px;
 }

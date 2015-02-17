@@ -465,16 +465,25 @@
 				$('.checkout-report').on('click', function(){
 					openWindowReport();
 				});
+				var count='1', gang='1';
 				$('#rapid-assign-device').on('click', function(){
 					$('#checkout-report-wrapper').show();
 					var assignment = '<div class="checkout-report-detail">'+
 						'<div class="checkout-assignee">Johnny B. Good</div>'+
 						'<div class="checkout-device-config">Config. 1</div>'+						
-						'<div class="checkout-device-location">Building 1, Gang 2/3</div>'+
+						'<div class="checkout-device-location">Building 1, Gang '+gang+'/'+count+'</div>'+
 						'<div class="checkout-device-name">Vista VL-168</div>'+
-					'</div>';					
+					'</div>';
+					
+					
 					$('#checkout-report-details').append(assignment);
 					$('#rapid-officer').focus();
+					if(count < 8){
+						count++;						
+					} else {
+						count = '1';
+						gang = '2';
+					}
 				});
 				
 		});// end docready

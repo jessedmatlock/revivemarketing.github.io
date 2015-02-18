@@ -667,7 +667,7 @@
 	font-family: 'FontAwesome';
 	position: absolute;
 	top: 0;
-	bottom: 0;;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -1964,7 +1964,6 @@ a#change-config.change + #checkout-config {
 	padding-bottom: 10px;
 }
 #meta-data-graph-container {
-    *zoom:1;
 	background: #3F454B;
     position:relative;
     padding:10px;
@@ -3753,8 +3752,7 @@ label input[type=radio] {
 	color: #555;
 	position: relative;
 }
-#media-types a .default-device,
-#media-types a .disc-count {
+#media-types a .default-device {
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -3773,8 +3771,7 @@ label input[type=radio] {
 	color: #333;
 	box-shadow: 0px 0px 2px 0px #777 inset;
 }
-#media-types a:hover .default-device,
-#media-types a:hover .disc-count {
+#media-types a:hover .default-device {
 	background: #888;
 	color: #fff;
 }
@@ -3814,9 +3811,24 @@ label input[type=radio] {
 	color: #777;
 	font-size: 14px;
 }
+#media-types a .export-disc-title {
+	border-top: 1px solid #eee;
+	color: #777;
+	font-size: 14px;	
+}
+#media-types a:hover .export-disc-title {
+		border-color: #aaa;
+	
+}
+#media-types a.active .export-disc-title {
+	border-color: #3680C1;
+	color: #fff;
+	background-color: #3680C1;
+	
+}
 #media-types a.active:hover .disc-size,
 #media-types a.active .disc-size {
-	border-color: #3680C1;
+	border-color: #fff;
 	color: #3680C1;
 }
 #media-types a img {
@@ -4742,7 +4754,7 @@ body.login:before,
 body.kiosk:before {
 	content: "";
 	display: block;
-	height: 10px;'
+	height: 10px;
 	width: 100%;
     background: #2D2D2D url(../images/header-decor.png) 0 0 repeat-x;
 	position: absolute;

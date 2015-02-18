@@ -1,22 +1,12 @@
 /*!
- * jQuery MsgBox - for jQuery 1.3+
- * http://codecanyon.net/item/jquery-msgbox/92626?ref=aeroalquimia
- *
- * Copyright (c) 2013, Eduardo Daniel Sada
- * Released under CodeCanyon Regular License.
- * http://codecanyon.net/licenses/regular
- *
  * Version: 1.3.6 (Mar 02 2013)
  */
-(function ($) {
-
-    var ie6 = !$.support.opacity;
-
+(function($) {
     if ($.proxy === undefined) {
         $.extend({
-            proxy: function (fn, thisObject) {
+            proxy: function(fn, thisObject) {
                 if (fn) {
-                    proxy = function () {
+                    proxy = function() {
                         return fn.apply(thisObject || this, arguments);
                     };
                 }
@@ -25,15 +15,9 @@
         });
     }
 
-    $.extend($.easing, {
-        easeOutBackMin: function (x, t, b, c, d, s) {
-            if (s === undefined) s = 1;
-            return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
-        }
-    });
 
     $.extend($.expr[':'], {
-        value: function (a) {
+        value: function(a) {
             return $(a).val();
         }
     });
@@ -54,12 +38,6 @@
                 showDuration: 200,
                 closeDuration: 100,
                 moveDuration: 550,
-                shake: {
-                    'distance': 10,
-                    'duration': 100,
-                    'transition': 'easeOutBackMin',
-                    'loops': 2
-                },
                 form: {
                     'active': false,
                     'action': '#',
@@ -68,22 +46,21 @@
                 emergefrom: 'top'
             },
             options: {},
-            esqueleto: {
+            skeleton: {
                 msgbox: [],
                 wrapper: [],
                 form: [],
                 buttons: [],
-                inputs: []
             },
             visible: false,
             i: 0,
             animation: false,
 
-            config: function (options) {
+            config: function(options) {
                 this.options = $.extend(true, this.options, options);
                 this.overlay.element.css(this.options.overlay);
                 this.overlay.options.hideOnClick = !this.options.modal;
-                this.esqueleto.msgbox.css({
+                this.skeleton.msgbox.css({
                     'width': this.options.width,
                     'height': this.options.height,
                     'background-color': this.options.background
@@ -92,9 +69,9 @@
             },
 
             overlay: {
-                create: function (options) {
+                create: function(options) {
                     this.options = options;
-                    this.element = $('<div id="' + new Date().getTime() + '"></div>');
+                    this.element = $('<div id="msgbox-' + new Date().getTime() + '"></div>');
                     this.element.css($.extend({}, {
                         'position': 'fixed',
                         'top': 0,
@@ -104,7 +81,7 @@
                         'z-index': this.options.zIndex
                     }, this.options.style));
 
-                    this.element.click($.proxy(function (event) {
+                    this.element.click($.proxy(function(event) {
                         if (this.options.hideOnClick) {
                             if ($.isFunction(this.options.callback)) {
                                 this.options.callback();
@@ -120,53 +97,13 @@
                     return this;
                 },
 
-                inject: function () {
+                inject: function() {
                     this.target = $(document.body);
                     this.target.append(this.element);
 
-                    if (ie6) {
-                        this.element.css({
-                            'position': 'absolute'
-                        });
-                        var zIndex = parseInt(this.element.css('zIndex'));
-                        if (!zIndex) {
-                            zIndex = 1;
-                            var pos = this.element.css('position');
-                            if (pos == 'static' || !pos) {
-                                this.element.css({
-                                    'position': 'relative'
-                                });
-                            }
-                            this.element.css({
-                                'zIndex': zIndex
-                            });
-                        }
-                        zIndex = ( !! (this.options.zIndex || this.options.zIndex === 0) && zIndex > this.options.zIndex) ? this.options.zIndex : zIndex - 1;
-                        if (zIndex < 0) {
-                            zIndex = 1;
-                        }
-                        this.shim = $('<iframe id="IF_' + new Date().getTime() + '" scrolling="no" frameborder=0 src=""></div>');
-                        this.shim.css({
-                            zIndex: zIndex,
-                            position: 'absolute',
-                            top: 0,
-                            left: 0,
-                            border: 'none',
-                            width: 0,
-                            height: 0,
-                            opacity: 0
-                        });
-                        this.shim.insertAfter(this.element);
-                        $('html, body').css({
-                            'height': '100%',
-                            'width': '100%',
-                            'margin-left': 0,
-                            'margin-right': 0
-                        });
-                    }
                 },
 
-                resize: function (x, y) {
+                resize: function(x, y) {
                     this.element.css({
                         'height': 0,
                         'width': 0
@@ -202,7 +139,7 @@
                     return this;
                 },
 
-                show: function () {
+                show: function() {
                     if (!this.hidden) return this;
                     if (this.transition) this.transition.stop();
                     this.target.bind('resize', $.proxy(this.resize, this));
@@ -212,7 +149,7 @@
                     });
                     this.hidden = false;
 
-                    this.transition = this.element.fadeIn(this.options.showDuration, $.proxy(function () {
+                    this.transition = this.element.fadeIn(this.options.showDuration, $.proxy(function() {
                         this.element.trigger('show');
 
                     }, this));
@@ -221,7 +158,7 @@
 
                 },
 
-                hide: function () {
+                hide: function() {
                     if (this.hidden) return this;
                     if (this.transition) this.transition.stop();
                     this.target.unbind('resize');
@@ -230,7 +167,7 @@
                     });
                     this.hidden = true;
 
-                    this.transition = this.element.fadeOut(this.options.closeDuration, $.proxy(function () {
+                    this.transition = this.element.fadeOut(this.options.closeDuration, $.proxy(function() {
                         this.element.trigger('hide');
                         this.element.css({
                             'height': 0,
@@ -242,7 +179,7 @@
                 }
             },
 
-            create: function () {
+            create: function() {
                 this.options = $.extend(true, this.defaults, this.options);
 
                 this.overlay.create({
@@ -253,85 +190,68 @@
                     closeDuration: this.options.closeDuration
                 });
 
-                this.esqueleto.msgbox = $('<div class="' + this.options.name + '"></div>');
-                this.esqueleto.msgbox.css({
-                    'display': 'none',
-                    'position': 'absolute',
-                    'top': 0,
-                    'left': 0,
+                this.skeleton.msgbox = $('<div class="' + this.options.name + '"></div>');
+                this.skeleton.msgbox.css({
                     'width': this.options.width,
                     'height': this.options.height,
                     'z-index': this.options.zIndex,
-                    'word-wrap': 'break-word',
-                    '-moz-box-shadow': '0 0 15px rgba(0, 0, 0, 0.5)',
-                    '-webkit-box-shadow': '0 0 15px rgba(0, 0, 0, 0.5)',
-                    'box-shadow': '0 0 15px rgba(0, 0, 0, 0.5)',
-                    '-moz-border-radius': '6px',
-                    '-webkit-border-radius': '6px',
-                    'border-radius': '6px',
                     'background-color': this.options.background
                 });
 
-                this.esqueleto.wrapper = $('<div class="' + this.options.name + '-wrapper"><i class="fa"></i></div>');
-                this.esqueleto.msgbox.append(this.esqueleto.wrapper);
+                this.skeleton.wrapper = $('<div class="' + this.options.name + '-wrapper"><i class="fa"></i></div>');
+                this.skeleton.msgbox.append(this.skeleton.wrapper);
 
-                this.esqueleto.form = $('<form action="' + this.options.formaction + '" method="post"></form>');
-                this.esqueleto.wrapper.append(this.esqueleto.form);
+                this.skeleton.form = $('<form action="' + this.options.formaction + '" method="post"></form>');
+                this.skeleton.wrapper.append(this.skeleton.form);
 
 
-                this.esqueleto.wrapper.css({
-                    height: (ie6 ? 80 : 'auto'),
-                    'min-height': 80,
-                    'zoom': 1
-                });
-
-                $('body').append(this.esqueleto.msgbox);
+                $('body').append(this.skeleton.msgbox);
 
                 this.addevents();
-                return this.esqueleto.msgbox;
+                return this.skeleton.msgbox;
             },
 
-            addevents: function () {
-                $(window).bind('resize', $.proxy(function () {
+            addevents: function() {
+                $(window).bind('resize', $.proxy(function() {
                     if (this.visible) {
                         this.overlay.resize();
                         this.moveBox();
                     }
                 }, this));
 
-                $(window).bind('scroll', $.proxy(function () {
+                $(window).bind('scroll', $.proxy(function() {
                     if (this.visible) {
                         this.moveBox();
                     }
                 }, this));
 
-                this.esqueleto.msgbox.bind('keydown', $.proxy(function (event) {
+                this.skeleton.msgbox.bind('keydown', $.proxy(function(event) {
                     if (event.keyCode == 27) {
                         this.close(false);
                     }
                 }, this));
 
-                this.esqueleto.form.bind('submit', $.proxy(function (event) {
-                    $('input[type=submit]:first, button[type=submit]:first, button:first', this.esqueleto.form).trigger('click');
+                this.skeleton.form.bind('submit', $.proxy(function(event) {
+                    $('button[type=submit]:first, button:first', this.skeleton.form).trigger('click');
                     if (!options.form.active) {
                         event.preventDefault();
                     }
                 }, this));
 
                 // heredamos los eventos, desde el overlay:
-                this.overlay.element.bind('show', $.proxy(function () {
+                this.overlay.element.bind('show', $.proxy(function() {
                     $(this).triggerHandler('show');
                 }, this));
-                this.overlay.element.bind('hide', $.proxy(function () {
+                this.overlay.element.bind('hide', $.proxy(function() {
                     $(this).triggerHandler('close');
                 }, this));
 
             },
 
-            show: function (txt, options, callback) {
-                var types = ['alert', 'info', 'error', 'prompt', 'confirm'];
+            show: function(txt, options, callback) {
+                var types = ['alert', 'info', 'error', 'confirm'];
 
-                this.esqueleto.msgbox.queue(this.options.name, $.proxy(function (next) {
+                this.skeleton.msgbox.queue(this.options.name, $.proxy(function(next) {
 
                     options = $.extend(true, {
                         type: 'alert',
@@ -341,7 +261,7 @@
                     }, options || {});
 
                     if (typeof options.buttons === "undefined") {
-                        if (options.type == 'confirm' || options.type == 'prompt') {
+                        if (options.type === 'confirm') {
                             var buttons = [{
                                 type: 'submit',
                                 value: 'Ok'
@@ -349,129 +269,77 @@
                                 type: 'cancel',
                                 value: 'Cancel'
                             }];
-                        } else if (options.type == 'error') {
-														buttons = [];
-                        } else {
+                        } else if (options.type !== 'confirm') {
+                            //buttons = [];
                             buttons = [{
                                 type: 'submit',
                                 value: 'Ok'
                             }];
+
                         }
                     } else {
                         buttons = options.buttons;
                     }
 
-                    if (typeof options.inputs === "undefined" && options.type == 'prompt') {
-                        var inputs = [{
-                            type: 'text',
-                            name: 'prompt',
-                            value: ''
-                        }];
-                    } else {
-                        inputs = options.inputs;
-                    }
 
-                    this.callback = $.isFunction(callback) ? callback : function (e) {};
 
-                    if (typeof inputs !== "undefined") {
-                        this.esqueleto.inputs = $('<div class="' + this.options.name + '-inputs"></div>');
-                        this.esqueleto.form.append(this.esqueleto.inputs);
+                    this.callback = $.isFunction(callback) ? callback : function(e) {};
 
-                        $.each(inputs, $.proxy(function (i, input) {
-                            if (input.type == 'checkbox') {
-                                iLabel = input.label ? '<label class="' + this.options.name + '-label">' : '';
-                                fLabel = input.label ? input.label + '</label>' : '';
-                                input.value = input.value === undefined ? '1' : input.value;
-                                iName = input.name === undefined ? this.options.name + '-label-' + i : input.name;
-                                this.esqueleto.inputs.append($(iLabel + '<input type="' + input.type + '" style="display:inline; width:auto;" name="' + iName + '" value="' + input.value + '" autocomplete="off"/> ' + fLabel));
-                            } else {
-                                iLabel = input.label ? '<label class="' + this.options.name + '-label">' + input.label : '';
-                                fLabel = input.label ? '</label>' : '';
-                                input.value = input.value === undefined ? '' : input.value;
-                                iRequired = input.required === undefined || input.required === false ? '' : 'required="true"';
-                                iName = input.name === undefined ? this.options.name + '-label-' + i : input.name;
-                                this.esqueleto.inputs.append($(iLabel + '<input type="' + input.type + '" name="' + iName + '" value="' + input.value + '" autocomplete="off" ' + iRequired + '/>' + fLabel));
-                            }
-                        }, this));
-                    }
 
-                    this.esqueleto.buttons = $('<div class="' + this.options.name + '-buttons"></div>');
-                    this.esqueleto.form.append(this.esqueleto.buttons);
+
+                    this.skeleton.buttons = $('<div class="' + this.options.name + '-buttons"></div>');
+                    this.skeleton.form.append(this.skeleton.buttons);
 
                     if (options.form.active) {
-                        this.esqueleto.form.attr('action', options.form.action === undefined ? '#' : options.form.action);
-                        this.esqueleto.form.attr('method', options.form.method === undefined ? 'post' : options.form.method);
+                        this.skeleton.form.attr('action', options.form.action === undefined ? '#' : options.form.action);
+                        this.skeleton.form.attr('method', options.form.method === undefined ? 'post' : options.form.method);
                         this.options.form.active = true;
                     } else {
-                        this.esqueleto.form.attr('action', '#');
-                        this.esqueleto.form.attr('method', 'post');
+                        this.skeleton.form.attr('action', '#');
+                        this.skeleton.form.attr('method', 'post');
                         this.options.form.active = false;
                     }
 
-                    if (options.type != 'prompt') {
-                        $.each(buttons, $.proxy(function (i, button) {
-                            if (button.type == 'submit') {
-                                this.esqueleto.buttons.append($('<button type="submit" class="' + this.options.name + '-button-submit ' + (button["class"] || "") + '">' + button.value + '</button>').bind('click', $.proxy(function (e) {
+                        $.each(buttons, $.proxy(function(i, button) {
+                            if (button.type === 'submit') {
+                                this.skeleton.buttons.append($('<button type="submit" class="' + this.options.name + '-button-submit ' + (button["class"] || "") + '">' + button.value + '</button>').bind('click', $.proxy(function(e) {
                                     this.close(button.value);
                                     e.preventDefault();
                                 }, this)));
-                            } else if (button.type == 'cancel') {
-                                this.esqueleto.buttons.append($('<button type="button" class="' + this.options.name + '-button-cancel ' + (button["class"] || "") + '">' + button.value + '</button>').bind('click', $.proxy(function (e) {
+                            } else if (button.type === 'cancel') {
+                                this.skeleton.buttons.append($('<button type="button" class="' + this.options.name + '-button-cancel ' + (button["class"] || "") + '">' + button.value + '</button>').bind('click', $.proxy(function(e) {
                                     this.close(false);
                                     e.preventDefault();
                                 }, this)));
                             }
                         }, this));
-                    } else if (options.type == 'prompt') {
-                        $.each(buttons, $.proxy(function (i, button) {
-                            if (button.type == 'submit') {
-                                this.esqueleto.buttons.append($('<button type="submit" class="' + this.options.name + '-button-submit ' + (button["class"] || "") + '">' + button.value + '</button>').bind('click', $.proxy(function (e) {
-                                    if ($('input[required="true"]:not(:value)').length > 0) {
-                                        $('input[required="true"]:not(:value):first').focus();
-                                        this.shake();
-                                    } else if (this.options.form.active) {
-                                        return true;
-                                    } else {
-                                        this.close(this.toArguments($('input', this.esqueleto.inputs)));
-                                    }
+                        
+                    this.skeleton.wrapper.prepend('<div class="' + this.options.name + '-text">' + txt + '</div>');
 
-                                    e.preventDefault();
-                                }, this)));
-                            } else if (button.type == 'cancel') {
-                                this.esqueleto.buttons.append($('<button type="button" class="' + this.options.name + '-button-cancel ' + (button["class"] || "") + '">' + button.value + '</button>').bind('click', $.proxy(function (e) {
-                                    this.close(false);
-                                    e.preventDefault();
-                                }, this)));
-                            }
-                        }, this));
-                    }
-
-                    this.esqueleto.form.prepend(txt);
-
-                    $.each(types, $.proxy(function (i, e) {
-                        this.esqueleto.msgbox.removeClass('error', 'alert', 'prompt', 'confirm', 'info');
-                        this.esqueleto.wrapper.removeClass(this.options.name + '-' + e);
-                        this.esqueleto.wrapper.find('.fa').removeClass('fa-' + options.type);
+                    $.each(types, $.proxy(function(i, e) {
+                        this.skeleton.msgbox.removeClass('error alert confirm info');
+//                        this.skeleton.wrapper.removeClass(this.options.name + '-' + e);
+                        this.skeleton.wrapper.find('.fa').removeClass('fa-' + options.type);
                     }, this));
 
-                    this.esqueleto.msgbox.addClass(options.type);
-                    this.esqueleto.wrapper.addClass(this.options.name + '-' + options.type);
-                    this.esqueleto.wrapper.find('.fa').addClass('fa-' + options.type);
+                    this.skeleton.msgbox.addClass(options.type);
+//                    this.skeleton.wrapper.addClass(this.options.name + '-' + options.type);
+                    this.skeleton.wrapper.find('.fa').addClass('fa-' + options.type);
 
                     this.moveBox(); // set initial position
 
                     this.visible = true;
                     this.overlay.show();
 
-                    this.esqueleto.msgbox.css({
-                        display: 'block',
+
+                    this.skeleton.msgbox.css({
                         left: (($(document).width() - this.options.width) / 2)
                     });
 
                     this.moveBox();
 
-                    setTimeout($.proxy(function () {
-                        var b = $('input, button', this.esqueleto.msgbox);
+                    setTimeout($.proxy(function() {
+                        var b = $('button', this.skeleton.msgbox);
                         if (b.length) {
                             b.get(0).focus();
                         }
@@ -482,18 +350,18 @@
                 this.i++;
 
                 if (this.i == 1) {
-                    this.esqueleto.msgbox.dequeue(this.options.name);
+                    this.skeleton.msgbox.dequeue(this.options.name);
                 }
 
             },
 
-            toArguments: function (array) {
-                return $.map(array, function (a) {
+            toArguments: function(array) {
+                return $.map(array, function(a) {
                     return $(a).val();
                 });
             },
 
-            moveBox: function () {
+            moveBox: function() {
                 var size = {
                     x: $(window).width(),
                     y: $(window).height()
@@ -502,7 +370,7 @@
                     x: $(window).scrollLeft(),
                     y: $(window).scrollTop()
                 };
-                var height = this.esqueleto.msgbox.outerHeight();
+                var height = this.skeleton.msgbox.outerHeight();
                 var y = 0;
                 var x = 0;
 
@@ -516,34 +384,16 @@
                     x = (scroll.y - height) - 80;
                 }
 
-                if (this.visible) {
+				this.skeleton.msgbox.addClass('show');
+                this.skeleton.msgbox.css({
+                    left: y,
+                    top: scroll.y + ((size.y - height) / 2)
+                });
 
-                    if (this.animation) {
-                        this.animation.stop();
-                    }
-
-                    this.animation = this.esqueleto.msgbox.animate({
-                        left: y,
-                        top: scroll.y + ((size.y - height) / 2)
-                    }, {
-                        duration: this.options.moveDuration,
-                        queue: false,
-                        easing: 'easeOutBackMin'
-                    });
-
-                } else {
-                    this.esqueleto.msgbox.css({
-                        top: x,
-                        left: y
-                    });
-                }
             },
 
-            close: function (param) {
-                this.esqueleto.msgbox.css({
-                    display: 'none',
-                    top: 0
-                });
+            close: function(param) {
+
 
                 this.visible = false;
 
@@ -551,9 +401,9 @@
                     this.callback.apply(this, $.makeArray(param));
                 }
 
-                setTimeout($.proxy(function () {
+                setTimeout($.proxy(function() {
                     this.i--;
-                    this.esqueleto.msgbox.dequeue(this.options.name);
+                    this.skeleton.msgbox.dequeue(this.options.name);
                 }, this), this.options.closeDuration);
 
                 if (this.i == 1) {
@@ -561,38 +411,19 @@
                 }
 
                 this.moveBox();
-
-                this.esqueleto.form.empty();
+                this.skeleton.form.empty();
+				this.skeleton.wrapper.find('.' + this.options.name + '-text').empty();
+				this.skeleton.msgbox.css({
+				    top : 0,
+				    left : 0
+				});
+                this.skeleton.msgbox.removeClass('show error alert confirm info');
+                
             },
-
-            shake: function () {
-                var x = this.options.shake.distance;
-                var d = this.options.shake.duration;
-                var t = this.options.shake.transition;
-                var o = this.options.shake.loops;
-                var l = this.esqueleto.msgbox.position().left;
-                var e = this.esqueleto.msgbox;
-
-                for (i = 0; i < o; i++) {
-                    e.animate({
-                        left: l + x
-                    }, d, t);
-                    e.animate({
-                        left: l - x
-                    }, d, t);
-                }
-
-                e.animate({
-                    left: l + x
-                }, d, t);
-                e.animate({
-                    left: l
-                }, d, t);
-            }
 
         },
 
-        msgbox: function (txt, options, callback) {
+        msgbox: function(txt, options, callback) {
             if (typeof txt == "object") {
                 $.MsgBoxObject.config(txt);
             } else {
@@ -602,13 +433,7 @@
 
     });
 
-    $(function () {
-        if (parseFloat($.fn.jquery) > 1.0) {
+    $(function() {
             $.MsgBoxObject.create();
-        } else {
-            //$.MsgBoxObject.create();
-
-            throw "The jQuery version that was loaded is too old. MsgBox requires jQuery 1.3+";
-        }
     });
 })(jQuery);

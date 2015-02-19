@@ -55,7 +55,7 @@
 }
 .jquery-msgbox.alert {}
 .jquery-msgbox.alert .jquery-msgbox-wrapper {
-    background: orange;
+    background: #EBA018;
     color: #fff;
 } 
 .jquery-msgbox.alert .jquery-msgbox-wrapper  .fa-alert:before {
@@ -64,39 +64,38 @@
   color: #fff;
 }
 .jquery-msgbox.alert .jquery-msgbox-wrapper .jquery-msgbox-button-submit {
-    background: #ffa500;
-    border-color: #e28e12;
+    background: #EBA018;
+    border-color: #E69C17;
     color: #fff;
 }
-
 
 .jquery-msgbox.confirm {}
 .jquery-msgbox.confirm .jquery-msgbox-wrapper  {
     color: #fff;
-    background: #3D8AF7;
+    background: #285E8E;
 }
 .jquery-msgbox.confirm .jquery-msgbox-wrapper  .jquery-msgbox-button-submit {
-    background: #3889CF;
-    text-shadow: 0 1px 0 #216CA9;	
-    color: #fff;
-    border-color: #216CA9;
+	background: #285E8E;
+	text-shadow: 0 1px 0 #216CA9;	
+	color: #fff;
+	border-color: #1c4970;
+	text-transform: uppercase;
 }
 .jquery-msgbox.confirm .jquery-msgbox-wrapper  .fa-confirm:before {
   content: "\f059";
   color: #fff;
 }
 
-
 .jquery-msgbox.info {}
 .jquery-msgbox.info .jquery-msgbox-wrapper  {
     color: #fff;
-    background: #3D8AF7;
+    background: #285E8E;
 }
 .jquery-msgbox.info .jquery-msgbox-wrapper .jquery-msgbox-button-submit {
-    background: #3889CF;
+    background: #285E8E;
     text-shadow: 0 1px 0 #216CA9;	
     color: #fff;
-    border-color: #216CA9;
+    border-color: #1c4970;
 	text-transform: uppercase;
 }
 .jquery-msgbox.info .jquery-msgbox-wrapper .fa-info:before {
@@ -112,8 +111,8 @@
 
 
 .jquery-msgbox.error .jquery-msgbox-wrapper .jquery-msgbox-button-submit {
-    background: #c60f13;
-    border-color: #970b0e;
+    background: #A50202;
+    border-color: #7a0101;
     color: #fff;
 }
 .jquery-msgbox.error .jquery-msgbox-wrapper .fa-error:before {

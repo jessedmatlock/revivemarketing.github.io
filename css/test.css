@@ -3428,11 +3428,14 @@ table .k-state-active {
 	border-left: 1px solid #eee;
 	border-top: 1px solid #eee;
 	border-right: 1px solid #eee;
+}
+.k-grid td:nth-child(1),
+.k-grid td:nth-child(2) {
 	overflow: visible;
 }
 
-
-#grid table tr.k-state-selected td {
+#grid table tr.k-state-selected td > * {
+	color: #fff !important;
 }
 
 .k-link {

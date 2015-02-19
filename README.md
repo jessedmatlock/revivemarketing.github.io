@@ -9,29 +9,6 @@ Pull this repo to view the current state of the new EL Web User Interface.
   
 # GENERAL:
 
-## Messaging:
-To fire the jquery msgbox call the function like:
-
-				// this will show an error message with an OK button
-				// buttons are configured by default, per message type
-				$.msgbox('MESSAGE HERE', {type:"error"}); 
-				
-				// To define your own buttons or a callback:
-				$.msgbox("MESSAGE HERE", {
-					type: "confirm", // info, confirm, alert or error
-					buttons : [ // array of buttons if any
-						{type: "submit", value: "Yes"},
-						{type: "submit", value: "No"},
-						{type: "cancel", value: "Cancel"}
-						]
-					},
-				function(result) {
-					// callback fired here
-				});
-
-
-
-
 ## Tooltips:
 Any element you want to display a tooltip for needs these classes/attributes applied:
 * .has-tip to init JS to fire tooltip

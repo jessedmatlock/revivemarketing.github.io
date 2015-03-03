@@ -8590,10 +8590,20 @@ button.secondary:focus, button.secondary:active,
 .button.secondary:focus,
 .button.secondary:active {
   background: #ececec;
+  border-color: #ccc;
+  color: #333;
+}
+/* line 718, ../scss/app.scss */
+.reveal-modal button.secondary:focus, dialog button.secondary:focus, .reveal-modal button.secondary:active, dialog button.secondary:active, .reveal-modal
+.button.secondary:focus, dialog
+.button.secondary:focus, .reveal-modal
+.button.secondary:active, dialog
+.button.secondary:active {
+  background: #ececec;
   border-color: #5897fb;
   color: #333;
 }
-/* line 719, ../scss/app.scss */
+/* line 722, ../scss/app.scss */
 button.alert,
 .button.alert {
   background: #cc5555;
@@ -8611,20 +8621,20 @@ button.alert,
   text-shadow: 0px 1px 0 #9c2f2f;
   color: #fff;
 }
-/* line 725, ../scss/app.scss */
+/* line 728, ../scss/app.scss */
 button.alert:hover,
 .button.alert:hover {
   background: #b23535;
   color: #fff;
 }
-/* line 726, ../scss/app.scss */
+/* line 729, ../scss/app.scss */
 button.alert:focus, button.alert:active,
 .button.alert:focus,
 .button.alert:active {
   background: #cc5555;
   color: #fff;
 }
-/* line 728, ../scss/app.scss */
+/* line 731, ../scss/app.scss */
 button.success, .joyride-content-wrapper button,
 .button.success, .joyride-content-wrapper
 .button {
@@ -8643,14 +8653,14 @@ button.success, .joyride-content-wrapper button,
   text-shadow: 0px 1px 0 #628a2b !important;
   color: #fff;
 }
-/* line 735, ../scss/app.scss */
+/* line 738, ../scss/app.scss */
 button.success:hover, .joyride-content-wrapper button:hover,
 .button.success:hover, .joyride-content-wrapper
 .button:hover {
   background: #709d31;
   color: #fff;
 }
-/* line 736, ../scss/app.scss */
+/* line 739, ../scss/app.scss */
 button.success:focus, button.success:active, .joyride-content-wrapper button:focus, .joyride-content-wrapper button:active,
 .button.success:focus,
 .button.success:active, .joyride-content-wrapper
@@ -8659,13 +8669,13 @@ button.success:focus, button.success:active, .joyride-content-wrapper button:foc
   background: #8CC33F;
   color: #fff;
 }
-/* line 737, ../scss/app.scss */
+/* line 740, ../scss/app.scss */
 button.success .fa, .joyride-content-wrapper button .fa,
 .button.success .fa, .joyride-content-wrapper
 .button .fa {
   color: #fff;
 }
-/* line 741, ../scss/app.scss */
+/* line 744, ../scss/app.scss */
 button.control,
 .button.control {
   background: #6F7073;
@@ -8683,7 +8693,7 @@ button.control,
   text-shadow: 0px 1px 0 #595a5c;
   color: #fff;
 }
-/* line 747, ../scss/app.scss */
+/* line 750, ../scss/app.scss */
 button.control:hover, button.control:focus, button.control:active,
 .button.control:hover,
 .button.control:focus,
@@ -8691,7 +8701,7 @@ button.control:hover, button.control:focus, button.control:active,
   background: #595a5c;
   color: #fff;
 }
-/* line 751, ../scss/app.scss */
+/* line 754, ../scss/app.scss */
 button.large,
 .button.large {
   padding-top: 0.6875rem;
@@ -8699,7 +8709,7 @@ button.large,
   padding-bottom: 0.75rem;
   padding-left: 1.375rem;
 }
-/* line 752, ../scss/app.scss */
+/* line 755, ../scss/app.scss */
 button.small,
 .button.small {
   padding-top: 0.375rem;
@@ -8707,19 +8717,19 @@ button.small,
   padding-bottom: 0.4375rem;
   padding-left: 0.75rem;
 }
-/* line 753, ../scss/app.scss */
+/* line 756, ../scss/app.scss */
 button.tiny,
 .button.tiny {
   padding: .25rem .5rem !important;
 }
-/* line 754, ../scss/app.scss */
+/* line 757, ../scss/app.scss */
 button.expand,
 .button.expand {
   padding-right: 0;
   padding-left: 0;
   width: 100%;
 }
-/* line 756, ../scss/app.scss */
+/* line 759, ../scss/app.scss */
 button.soft-alert,
 .button.soft-alert {
   background: #f1f1f1;
@@ -8736,7 +8746,7 @@ button.soft-alert,
   color: #333;
   text-shadow: 0 1px 0 #fff;
 }
-/* line 760, ../scss/app.scss */
+/* line 763, ../scss/app.scss */
 button.soft-alert:hover, button.soft-alert:focus, button.soft-alert:active,
 .button.soft-alert:hover,
 .button.soft-alert:focus,
@@ -8756,7 +8766,7 @@ button.soft-alert:hover, button.soft-alert:focus, button.soft-alert:active,
   text-shadow: 0px 1px 0 #9c2f2f !important;
   color: #fff !important;
 }
-/* line 770, ../scss/app.scss */
+/* line 773, ../scss/app.scss */
 button[disabled], button.disabled,
 .button[disabled],
 .button.disabled {
@@ -8765,7 +8775,7 @@ button[disabled], button.disabled,
   text-shadow: none !important;
   border-color: #ccc !important;
 }
-/* line 775, ../scss/app.scss */
+/* line 778, ../scss/app.scss */
 button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.disabled:focus,
 .button[disabled]:hover,
 .button[disabled]:focus,
@@ -8773,19 +8783,19 @@ button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.di
 .button.disabled:focus {
   background: #ddd !important;
 }
-/* line 776, ../scss/app.scss */
+/* line 779, ../scss/app.scss */
 button[disabled] .fa, button.disabled .fa,
 .button[disabled] .fa,
 .button.disabled .fa {
   color: #aaa !important;
 }
-/* line 779, ../scss/app.scss */
+/* line 782, ../scss/app.scss */
 #content-filter button .fa, #content-filter
 .button .fa {
   position: relative;
 }
 
-/* line 788, ../scss/app.scss */
+/* line 791, ../scss/app.scss */
 .offcanvas-sidebar .sidebar-footer,
 .oncanvas-sidebar .sidebar-footer {
   display: block;
@@ -8794,20 +8804,20 @@ button[disabled] .fa, button.disabled .fa,
   padding: 5px 10px 0;
   height: 80px;
 }
-/* line 795, ../scss/app.scss */
+/* line 798, ../scss/app.scss */
 .offcanvas-sidebar .form-controls label,
 .oncanvas-sidebar .form-controls label {
   margin: 0;
   font-size: 1em;
   color: #aaa;
 }
-/* line 800, ../scss/app.scss */
+/* line 803, ../scss/app.scss */
 .offcanvas-sidebar .form-controls-group,
 .oncanvas-sidebar .form-controls-group {
   float: none;
   clear: both;
 }
-/* line 805, ../scss/app.scss */
+/* line 808, ../scss/app.scss */
 .offcanvas-sidebar .button,
 .oncanvas-sidebar .button {
   margin: 5px auto 10px;
@@ -8815,13 +8825,13 @@ button[disabled] .fa, button.disabled .fa,
   border-color: #000;
 }
 
-/* line 817, ../scss/app.scss */
+/* line 820, ../scss/app.scss */
 .offcanvas-sidebar,
 .oncanvas-sidebar {
   font-size: .75em;
   -webkit-overflow-scrolling: touch;
 }
-/* line 821, ../scss/app.scss */
+/* line 824, ../scss/app.scss */
 .offcanvas-sidebar label,
 .oncanvas-sidebar label {
   color: #ccc;
@@ -8830,7 +8840,7 @@ button[disabled] .fa, button.disabled .fa,
   line-height: 1.3em;
   position: relative;
 }
-/* line 827, ../scss/app.scss */
+/* line 830, ../scss/app.scss */
 .offcanvas-sidebar label .clear-search-param,
 .offcanvas-sidebar label .edit-search-param,
 .oncanvas-sidebar label .clear-search-param,
@@ -8842,35 +8852,35 @@ button[disabled] .fa, button.disabled .fa,
   right: 0;
   top: 2px;
 }
-/* line 836, ../scss/app.scss */
+/* line 839, ../scss/app.scss */
 .offcanvas-sidebar label .clear-search-param:hover,
 .offcanvas-sidebar label .edit-search-param:hover,
 .oncanvas-sidebar label .clear-search-param:hover,
 .oncanvas-sidebar label .edit-search-param:hover {
   text-decoration: underline;
 }
-/* line 838, ../scss/app.scss */
+/* line 841, ../scss/app.scss */
 .offcanvas-sidebar label .edit-search-param,
 .oncanvas-sidebar label .edit-search-param {
   right: 40px;
 }
-/* line 839, ../scss/app.scss */
+/* line 842, ../scss/app.scss */
 .offcanvas-sidebar label.inline,
 .oncanvas-sidebar label.inline {
   margin: 0;
 }
-/* line 840, ../scss/app.scss */
+/* line 843, ../scss/app.scss */
 .offcanvas-sidebar label input[type=checkbox],
 .oncanvas-sidebar label input[type=checkbox] {
   margin: 0 5px 0 0;
 }
-/* line 842, ../scss/app.scss */
+/* line 845, ../scss/app.scss */
 .offcanvas-sidebar .search-form,
 .oncanvas-sidebar .search-form {
   padding: 10px 10px 20px;
   background: #161617;
 }
-/* line 846, ../scss/app.scss */
+/* line 849, ../scss/app.scss */
 .offcanvas-sidebar .form-controls,
 .oncanvas-sidebar .form-controls {
   margin: 0;
@@ -8882,7 +8892,7 @@ button[disabled] .fa, button.disabled .fa,
   border-bottom: 1px solid #000;
   font-size: 12px;
 }
-/* line 855, ../scss/app.scss */
+/* line 858, ../scss/app.scss */
 .offcanvas-sidebar .form-controls a:not(.button),
 .oncanvas-sidebar .form-controls a:not(.button) {
   color: #aaa;
@@ -8890,12 +8900,12 @@ button[disabled] .fa, button.disabled .fa,
   text-decoration: underline;
   display: inline-block;
 }
-/* line 860, ../scss/app.scss */
+/* line 863, ../scss/app.scss */
 .offcanvas-sidebar .form-controls a:not(.button):hover,
 .oncanvas-sidebar .form-controls a:not(.button):hover {
   color: #fff;
 }
-/* line 867, ../scss/app.scss */
+/* line 870, ../scss/app.scss */
 .offcanvas-sidebar .sidebar-form,
 .oncanvas-sidebar .sidebar-form {
   padding: 10px 10px 10px;
@@ -8903,7 +8913,7 @@ button[disabled] .fa, button.disabled .fa,
   background: #161617;
   min-height: 308px;
 }
-/* line 872, ../scss/app.scss */
+/* line 875, ../scss/app.scss */
 .offcanvas-sidebar .sidebar-form input[type=text],
 .oncanvas-sidebar .sidebar-form input[type=text] {
   font-size: 1.2em;
@@ -8911,7 +8921,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #555;
   margin: 2px 0 0;
 }
-/* line 879, ../scss/app.scss */
+/* line 882, ../scss/app.scss */
 .offcanvas-sidebar .sidebar-form input.dark-style,
 .oncanvas-sidebar .sidebar-form input.dark-style {
   background: #2d2d2d;
@@ -8933,7 +8943,7 @@ button[disabled] .fa, button.disabled .fa,
   box-shadow: 0 0 0px 1px #494B4F inset;
   margin: 2px 0 0;
 }
-/* line 888, ../scss/app.scss */
+/* line 891, ../scss/app.scss */
 .offcanvas-sidebar .sidebar-form input.dark-style[readonly],
 .oncanvas-sidebar .sidebar-form input.dark-style[readonly] {
   background: #222;
@@ -8941,14 +8951,14 @@ button[disabled] .fa, button.disabled .fa,
   box-shadow: none;
   color: #888;
 }
-/* line 890, ../scss/app.scss */
+/* line 893, ../scss/app.scss */
 .offcanvas-sidebar .sidebar-form .select,
 .oncanvas-sidebar .sidebar-form .select {
   display: block;
   width: 100% !important;
   line-height: 1.8rem;
 }
-/* line 892, ../scss/app.scss */
+/* line 895, ../scss/app.scss */
 .offcanvas-sidebar h3,
 .oncanvas-sidebar h3 {
   font: bold 1rem/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -8960,12 +8970,12 @@ button[disabled] .fa, button.disabled .fa,
   border-bottom-color: #252525 !important;
   padding: 0.25rem .5rem .25rem  0.9375rem;
 }
-/* line 902, ../scss/app.scss */
+/* line 905, ../scss/app.scss */
 .offcanvas-sidebar h3.padded-title,
 .oncanvas-sidebar h3.padded-title {
   padding-left: 15px;
 }
-/* line 905, ../scss/app.scss */
+/* line 908, ../scss/app.scss */
 .offcanvas-sidebar h4,
 .oncanvas-sidebar h4 {
   letter-spacing: 1px;
@@ -8980,17 +8990,17 @@ button[disabled] .fa, button.disabled .fa,
   height: 2.5em;
   padding: 0 10px;
 }
-/* line 917, ../scss/app.scss */
+/* line 920, ../scss/app.scss */
 .offcanvas-sidebar h4:first-child,
 .oncanvas-sidebar h4:first-child {
   margin-top: 0;
 }
-/* line 918, ../scss/app.scss */
+/* line 921, ../scss/app.scss */
 .offcanvas-sidebar h4 + .row > .columns > label,
 .oncanvas-sidebar h4 + .row > .columns > label {
   margin-top: 0;
 }
-/* line 920, ../scss/app.scss */
+/* line 923, ../scss/app.scss */
 .offcanvas-sidebar > h3.show-for-medium-down,
 .oncanvas-sidebar > h3.show-for-medium-down {
   font: bold 1.2rem/46px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -8998,17 +9008,17 @@ button[disabled] .fa, button.disabled .fa,
   padding: 0 10px;
   height: 46px;
 }
-/* line 927, ../scss/app.scss */
+/* line 930, ../scss/app.scss */
 .offcanvas-sidebar .accordion,
 .oncanvas-sidebar .accordion {
   margin: 0px 0 0;
 }
-/* line 931, ../scss/app.scss */
+/* line 934, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd > .content.open,
 .oncanvas-sidebar .accordion > dd > .content.open {
   background: #4f5155;
 }
-/* line 935, ../scss/app.scss */
+/* line 938, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd > a,
 .oncanvas-sidebar .accordion > dd > a {
   padding: 1rem;
@@ -9034,7 +9044,7 @@ button[disabled] .fa, button.disabled .fa,
   border-top: 1px solid #6A6C72;
   border-bottom: 1px solid #313336;
 }
-/* line 951, ../scss/app.scss */
+/* line 954, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd > a:hover,
 .oncanvas-sidebar .accordion > dd > a:hover {
   background: #393b3f;
@@ -9042,7 +9052,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #bbb;
   text-shadow: 0 1px 0px #000;
 }
-/* line 960, ../scss/app.scss */
+/* line 963, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd input[type=text],
 .oncanvas-sidebar .accordion > dd input[type=text] {
   font-size: 1.2em;
@@ -9050,7 +9060,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #555;
   margin: 2px 0 0;
 }
-/* line 967, ../scss/app.scss */
+/* line 970, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd input.dark-style,
 .oncanvas-sidebar .accordion > dd input.dark-style {
   background: #2d2d2d;
@@ -9072,7 +9082,7 @@ button[disabled] .fa, button.disabled .fa,
   box-shadow: 0 0 0px 1px #494B4F inset;
   margin: 0 0 2px;
 }
-/* line 978, ../scss/app.scss */
+/* line 981, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd > label.inline,
 .oncanvas-sidebar .accordion > dd > label.inline {
   background: #333;
@@ -9087,17 +9097,17 @@ button[disabled] .fa, button.disabled .fa,
   padding: 0 5px;
   font-weight: normal;
 }
-/* line 992, ../scss/app.scss */
+/* line 995, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd .select,
 .oncanvas-sidebar .accordion > dd .select {
   margin: 0 0 2px;
 }
-/* line 996, ../scss/app.scss */
+/* line 999, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd > a,
 .oncanvas-sidebar .accordion > dd > a {
   padding: 0.44445rem 2rem 0.44445rem 0.88889rem;
 }
-/* line 999, ../scss/app.scss */
+/* line 1002, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd > a .fa,
 .oncanvas-sidebar .accordion > dd > a .fa {
   display: block;
@@ -9106,30 +9116,30 @@ button[disabled] .fa, button.disabled .fa,
   right: 10px;
   margin-top: -7px;
 }
-/* line 1007, ../scss/app.scss */
+/* line 1010, ../scss/app.scss */
 .offcanvas-sidebar .accordion > dd.open > a .fa,
 .oncanvas-sidebar .accordion > dd.open > a .fa {
   color: #fff;
 }
-/* line 1011, ../scss/app.scss */
+/* line 1014, ../scss/app.scss */
 .offcanvas-sidebar .accordion .content,
 .oncanvas-sidebar .accordion .content {
   display: none;
   padding: 0.75rem 0.75rem 1rem;
 }
-/* line 1014, ../scss/app.scss */
+/* line 1017, ../scss/app.scss */
 .offcanvas-sidebar .accordion .content.open,
 .oncanvas-sidebar .accordion .content.open {
   display: block;
   font-size: .75em;
 }
-/* line 1017, ../scss/app.scss */
+/* line 1020, ../scss/app.scss */
 .offcanvas-sidebar .accordion .content.open .chosen-container,
 .oncanvas-sidebar .accordion .content.open .chosen-container {
   width: 100% !important;
   display: block !important;
 }
-/* line 1022, ../scss/app.scss */
+/* line 1025, ../scss/app.scss */
 .offcanvas-sidebar .accordion .content.open .collapsible-checkbox-item,
 .oncanvas-sidebar .accordion .content.open .collapsible-checkbox-item {
   border-radius: 2px;
@@ -9148,24 +9158,24 @@ button[disabled] .fa, button.disabled .fa,
   color: #2d2d2d;
   display: none;
 }
-/* line 1040, ../scss/app.scss */
+/* line 1043, ../scss/app.scss */
 .offcanvas-sidebar .accordion .content.open .collapsible-checkbox-item.active,
 .oncanvas-sidebar .accordion .content.open .collapsible-checkbox-item.active {
   display: block;
   margin-top: 5px;
 }
-/* line 1041, ../scss/app.scss */
+/* line 1044, ../scss/app.scss */
 .offcanvas-sidebar .accordion .content.open > label,
 .oncanvas-sidebar .accordion .content.open > label {
   font-weight: bold;
   text-shadow: 0 1px #222;
 }
-/* line 1044, ../scss/app.scss */
+/* line 1047, ../scss/app.scss */
 .offcanvas-sidebar .accordion .content.open > label:first-child,
 .oncanvas-sidebar .accordion .content.open > label:first-child {
   margin-top: 0;
 }
-/* line 1050, ../scss/app.scss */
+/* line 1053, ../scss/app.scss */
 .offcanvas-sidebar .accordion .open > a,
 .oncanvas-sidebar .accordion .open > a {
   background: #4f5155 !important;
@@ -9174,14 +9184,14 @@ button[disabled] .fa, button.disabled .fa,
   color: #fff;
 }
 
-/* line 1061, ../scss/app.scss */
+/* line 1064, ../scss/app.scss */
 .reveal-modal, dialog {
   padding: 40px 20px 20px 20px;
   border: none;
   border-radius: 4px;
   z-index: 1005;
 }
-/* line 1067, ../scss/app.scss */
+/* line 1070, ../scss/app.scss */
 .reveal-modal.open .modal-header, dialog.open .modal-header {
   background: #222;
   margin: -40px -20px 15px -20px;
@@ -9189,36 +9199,36 @@ button[disabled] .fa, button.disabled .fa,
   border-radius: 3px 3px 0 0;
   height: 40px;
 }
-/* line 1073, ../scss/app.scss */
+/* line 1076, ../scss/app.scss */
 .reveal-modal.open .modal-header .modal-title, dialog.open .modal-header .modal-title {
   color: #fff;
   margin: 0;
   padding: 0;
   font: normal 1.2em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-/* line 1081, ../scss/app.scss */
+/* line 1084, ../scss/app.scss */
 .reveal-modal.open .modal-body, dialog.open .modal-body {
   min-height: 20px;
   height: auto;
 }
-/* line 1086, ../scss/app.scss */
+/* line 1089, ../scss/app.scss */
 .reveal-modal.open .modal-footer, dialog.open .modal-footer {
   display: none;
 }
-/* line 1088, ../scss/app.scss */
+/* line 1091, ../scss/app.scss */
 .reveal-modal.open .modal-footer .button, dialog.open .modal-footer .button {
   margin: 0;
   border-radius: 3px;
 }
-/* line 1091, ../scss/app.scss */
+/* line 1094, ../scss/app.scss */
 .reveal-modal.open .modal-footer .button.modalsave, dialog.open .modal-footer .button.modalsave {
   float: right;
 }
-/* line 1096, ../scss/app.scss */
+/* line 1099, ../scss/app.scss */
 .reveal-modal.open.show-footer, dialog.open.show-footer {
   padding-bottom: 70px;
 }
-/* line 1098, ../scss/app.scss */
+/* line 1101, ../scss/app.scss */
 .reveal-modal.open.show-footer .modal-footer, dialog.open.show-footer .modal-footer {
   display: block;
   position: absolute;
@@ -9231,41 +9241,41 @@ button[disabled] .fa, button.disabled .fa,
   border-radius: 0 0 3px 3px;
   border-top: 1px solid #e5e5e5;
 }
-/* line 1109, ../scss/app.scss */
+/* line 1112, ../scss/app.scss */
 .reveal-modal.open.show-footer .modal-footer.shaded-footer, dialog.open.show-footer .modal-footer.shaded-footer {
   background: #eee;
 }
-/* line 1113, ../scss/app.scss */
+/* line 1116, ../scss/app.scss */
 .reveal-modal .close-reveal-modal, dialog .close-reveal-modal {
   color: #fff;
 }
-/* line 1117, ../scss/app.scss */
+/* line 1120, ../scss/app.scss */
 .reveal-modal.fixed-modal, dialog.fixed-modal {
   z-index: 1005;
   max-width: 100%;
 }
-/* line 1121, ../scss/app.scss */
+/* line 1124, ../scss/app.scss */
 .reveal-modal.fixed-modal.small, dialog.fixed-modal.small {
   width: 480px;
   max-width: 100%;
   left: 50%;
   margin-left: -240px;
 }
-/* line 1127, ../scss/app.scss */
+/* line 1130, ../scss/app.scss */
 .reveal-modal.fixed-modal.medium, dialog.fixed-modal.medium {
   width: 640px;
   max-width: 100%;
   left: 50%;
   margin-left: -320px;
 }
-/* line 1133, ../scss/app.scss */
+/* line 1136, ../scss/app.scss */
 .reveal-modal.fixed-modal.large, dialog.fixed-modal.large {
   width: 768px;
   max-width: 100%;
   left: 50%;
   margin-left: -384px;
 }
-/* line 1139, ../scss/app.scss */
+/* line 1142, ../scss/app.scss */
 .reveal-modal.fixed-modal.xlarge, dialog.fixed-modal.xlarge {
   width: 1024px;
   max-width: 100%;
@@ -9274,7 +9284,7 @@ button[disabled] .fa, button.disabled .fa,
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 1150, ../scss/app.scss */
+  /* line 1153, ../scss/app.scss */
   .reveal-modal.fixed-modal.small, dialog.fixed-modal.small {
     width: 98% !important;
     left: 1% !important;
@@ -9282,7 +9292,7 @@ button[disabled] .fa, button.disabled .fa,
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 1158, ../scss/app.scss */
+  /* line 1161, ../scss/app.scss */
   .reveal-modal.fixed-modal.medium, dialog.fixed-modal.medium {
     width: 98% !important;
     left: 1% !important;
@@ -9290,7 +9300,7 @@ button[disabled] .fa, button.disabled .fa,
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 1166, ../scss/app.scss */
+  /* line 1169, ../scss/app.scss */
   .reveal-modal.fixed-modal.large, dialog.fixed-modal.large {
     width: 98% !important;
     left: 1% !important;
@@ -9298,14 +9308,14 @@ button[disabled] .fa, button.disabled .fa,
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 1174, ../scss/app.scss */
+  /* line 1177, ../scss/app.scss */
   .reveal-modal.fixed-modal.xlarge, dialog.fixed-modal.xlarge {
     width: 98% !important;
     left: 1% !important;
     margin-left: 0% !important;
   }
 }
-/* line 1184, ../scss/app.scss */
+/* line 1187, ../scss/app.scss */
 .nav-bar {
   height: 44px;
   line-height: 44px;
@@ -9315,23 +9325,23 @@ button[disabled] .fa, button.disabled .fa,
   background: transparent;
   z-index: 2;
 }
-/* line 1192, ../scss/app.scss */
+/* line 1195, ../scss/app.scss */
 .nav-bar ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 1197, ../scss/app.scss */
+/* line 1200, ../scss/app.scss */
 .nav-bar .row {
   max-width: none;
 }
-/* line 1200, ../scss/app.scss */
+/* line 1203, ../scss/app.scss */
 .nav-bar .nav-bar-section {
   position: relative;
   width: auto;
   transition: left 300ms ease-out;
 }
-/* line 1204, ../scss/app.scss */
+/* line 1207, ../scss/app.scss */
 .nav-bar .nav-bar-section > h3 {
   font: bold 1.2rem/46px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   text-transform: uppercase;
@@ -9342,7 +9352,7 @@ button[disabled] .fa, button.disabled .fa,
   padding: 0 10px;
   height: 46px;
 }
-/* line 1214, ../scss/app.scss */
+/* line 1217, ../scss/app.scss */
 .nav-bar .nav-bar-section ul {
   width: 100%;
   height: auto;
@@ -9351,7 +9361,7 @@ button[disabled] .fa, button.disabled .fa,
   font-size: 16px;
   margin: 0;
 }
-/* line 1222, ../scss/app.scss */
+/* line 1225, ../scss/app.scss */
 .nav-bar .nav-bar-section ul li a {
   display: block;
   width: 100%;
@@ -9364,17 +9374,17 @@ button[disabled] .fa, button.disabled .fa,
   border-radius: 0;
   background: #262b31 !important;
 }
-/* line 1233, ../scss/app.scss */
+/* line 1236, ../scss/app.scss */
 .nav-bar .nav-bar-section ul li a:hover, .nav-bar .nav-bar-section ul li a:focus {
   background: #000 !important;
   color: #fff !important;
 }
-/* line 1241, ../scss/app.scss */
+/* line 1244, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li {
   float: left;
   margin-left: 5px;
 }
-/* line 1244, ../scss/app.scss */
+/* line 1247, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li.user-profile .user-avatar {
   display: inline-block;
   margin-right: 10px;
@@ -9382,7 +9392,7 @@ button[disabled] .fa, button.disabled .fa,
   height: 22px;
   opacity: 0.75;
 }
-/* line 1251, ../scss/app.scss */
+/* line 1254, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li > a {
   color: #ccc;
   font-size: .90rem;
@@ -9390,7 +9400,7 @@ button[disabled] .fa, button.disabled .fa,
   background-color: #3F454B;
   border-radius: 3px;
 }
-/* line 1257, ../scss/app.scss */
+/* line 1260, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li > a .label {
   background: #e69c17;
   color: #333;
@@ -9399,11 +9409,11 @@ button[disabled] .fa, button.disabled .fa,
   text-align: center;
   text-shadow: 0 1px 0 #efba5b;
 }
-/* line 1265, ../scss/app.scss */
+/* line 1268, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li > a:hover {
   background: #262b31;
 }
-/* line 1269, ../scss/app.scss */
+/* line 1272, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li.active > a {
   background: #1d1d1d;
   background: -webkit-gradient(linear, left top, left bottom, from(#393b3f), to(#161617));
@@ -9420,7 +9430,7 @@ button[disabled] .fa, button.disabled .fa,
   box-shadow: 0 1px 0px 0px #596069 inset;
   border-radius: 3px 3px 0 0;
 }
-/* line 1285, ../scss/app.scss */
+/* line 1288, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li.active2 > a {
   background: #FBDC00;
   background: -webkit-gradient(linear, left top, left bottom, from(#FBDC00), to(#E29E00));
@@ -9441,15 +9451,15 @@ button[disabled] .fa, button.disabled .fa,
   box-shadow: 0 1px 0px 0px #F7E8C3 inset;
   border-radius: 3px 3px 0 0;
 }
-/* line 1296, ../scss/app.scss */
+/* line 1299, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown {
   position: relative;
 }
-/* line 1298, ../scss/app.scss */
+/* line 1301, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > a {
   padding-right: 42px !important;
 }
-/* line 1300, ../scss/app.scss */
+/* line 1303, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > a:after {
   content: "";
   display: block;
@@ -9464,17 +9474,17 @@ button[disabled] .fa, button.disabled .fa,
   top: 24px;
   right: 0;
 }
-/* line 1315, ../scss/app.scss */
+/* line 1318, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown a .fa {
   margin-right: 10px;
 }
-/* line 1318, ../scss/app.scss */
+/* line 1321, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown:hover > a {
   background: #262b31;
   color: #eee;
   border-radius: 3px 3px 0 0;
 }
-/* line 1323, ../scss/app.scss */
+/* line 1326, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown {
   position: absolute;
   left: 100%;
@@ -9487,7 +9497,7 @@ button[disabled] .fa, button.disabled .fa,
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 1334, ../scss/app.scss */
+/* line 1337, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown li {
   display: block;
   position: relative;
@@ -9496,7 +9506,7 @@ button[disabled] .fa, button.disabled .fa,
   margin: 0;
   float: none;
 }
-/* line 1341, ../scss/app.scss */
+/* line 1344, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown li a {
   font-weight: normal;
   padding: 0 22px 0 12px;
@@ -9506,17 +9516,17 @@ button[disabled] .fa, button.disabled .fa,
   float: none;
   width: 100%;
 }
-/* line 1350, ../scss/app.scss */
+/* line 1353, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown li:last-child a {
   border-radius: 0 0 3px 3px;
   overflow: hidden;
 }
-/* line 1354, ../scss/app.scss */
+/* line 1357, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown li.active a {
   background: #000 !important;
   color: #e69c17 !important;
 }
-/* line 1361, ../scss/app.scss */
+/* line 1364, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown:hover > .dropdown {
   display: block;
   position: static !important;
@@ -9532,13 +9542,13 @@ button[disabled] .fa, button.disabled .fa,
   background: transparent;
 }
 
-/* line 1382, ../scss/app.scss */
+/* line 1385, ../scss/app.scss */
 #main-content {
   min-height: 60vh;
   background: #999;
 }
 
-/* line 1387, ../scss/app.scss */
+/* line 1390, ../scss/app.scss */
 #main-content,
 #event-cases,
 #case-items,
@@ -9546,7 +9556,7 @@ button[disabled] .fa, button.disabled .fa,
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
-/* line 1393, ../scss/app.scss */
+/* line 1396, ../scss/app.scss */
 #main-content .item,
 #event-cases .item,
 #case-items .item,
@@ -9560,7 +9570,7 @@ button[disabled] .fa, button.disabled .fa,
   position: relative;
   padding-left: 160px;
 }
-/* line 1402, ../scss/app.scss */
+/* line 1405, ../scss/app.scss */
 #main-content .item.case-item,
 #event-cases .item.case-item,
 #case-items .item.case-item,
@@ -9568,7 +9578,7 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 130px;
 }
 @media screen and (max-width: 640px) {
-  /* line 1393, ../scss/app.scss */
+  /* line 1396, ../scss/app.scss */
   #main-content .item,
   #event-cases .item,
   #case-items .item,
@@ -9577,7 +9587,7 @@ button[disabled] .fa, button.disabled .fa,
     padding-bottom: 10px !important;
   }
 }
-/* line 1409, ../scss/app.scss */
+/* line 1412, ../scss/app.scss */
 #main-content .item .case-title,
 #event-cases .item .case-title,
 #case-items .item .case-title,
@@ -9587,7 +9597,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #555;
   margin: 0 0 10px;
 }
-/* line 1416, ../scss/app.scss */
+/* line 1419, ../scss/app.scss */
 #main-content .item .inline-item-list,
 #event-cases .item .inline-item-list,
 #case-items .item .inline-item-list,
@@ -9600,7 +9610,7 @@ button[disabled] .fa, button.disabled .fa,
   float: none;
   clear: both;
 }
-/* line 1424, ../scss/app.scss */
+/* line 1427, ../scss/app.scss */
 #main-content .item .inline-item-list li,
 #event-cases .item .inline-item-list li,
 #case-items .item .inline-item-list li,
@@ -9614,7 +9624,7 @@ button[disabled] .fa, button.disabled .fa,
   white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
-  /* line 1434, ../scss/app.scss */
+  /* line 1437, ../scss/app.scss */
   #main-content .item .inline-item-list li,
   #event-cases .item .inline-item-list li,
   #case-items .item .inline-item-list li,
@@ -9626,7 +9636,7 @@ button[disabled] .fa, button.disabled .fa,
     width: 24%;
   }
 }
-/* line 1443, ../scss/app.scss */
+/* line 1446, ../scss/app.scss */
 #main-content .item .item-list,
 #event-cases .item .item-list,
 #case-items .item .item-list,
@@ -9639,7 +9649,7 @@ button[disabled] .fa, button.disabled .fa,
   float: none;
   clear: both;
 }
-/* line 1451, ../scss/app.scss */
+/* line 1454, ../scss/app.scss */
 #main-content .item .item-list > li,
 #event-cases .item .item-list > li,
 #case-items .item .item-list > li,
@@ -9654,7 +9664,7 @@ button[disabled] .fa, button.disabled .fa,
   line-height: 1.75;
   white-space: nowrap;
 }
-/* line 1461, ../scss/app.scss */
+/* line 1464, ../scss/app.scss */
 #main-content .item .item-list > li.br,
 #event-cases .item .item-list > li.br,
 #case-items .item .item-list > li.br,
@@ -9663,14 +9673,14 @@ button[disabled] .fa, button.disabled .fa,
   float: none;
   clear: both;
 }
-/* line 1465, ../scss/app.scss */
+/* line 1468, ../scss/app.scss */
 #main-content .item .item-list > li span,
 #event-cases .item .item-list > li span,
 #case-items .item .item-list > li span,
 #linked-events .item .item-list > li span {
   display: inline;
 }
-/* line 1468, ../scss/app.scss */
+/* line 1471, ../scss/app.scss */
 #main-content .item .item-list > li strong,
 #event-cases .item .item-list > li strong,
 #case-items .item .item-list > li strong,
@@ -9680,7 +9690,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-left: 5px;
 }
 @media screen and (max-width: 768px) {
-  /* line 1475, ../scss/app.scss */
+  /* line 1478, ../scss/app.scss */
   #main-content .item .item-list > li,
   #event-cases .item .item-list > li,
   #case-items .item .item-list > li,
@@ -9689,7 +9699,7 @@ button[disabled] .fa, button.disabled .fa,
     width: 99%;
   }
 }
-/* line 1482, ../scss/app.scss */
+/* line 1485, ../scss/app.scss */
 #main-content .item .item-thumb,
 #event-cases .item .item-thumb,
 #case-items .item .item-thumb,
@@ -9704,7 +9714,7 @@ button[disabled] .fa, button.disabled .fa,
   background: #ddd;
 }
 @media screen and (max-width: 640px) {
-  /* line 1482, ../scss/app.scss */
+  /* line 1485, ../scss/app.scss */
   #main-content .item .item-thumb,
   #event-cases .item .item-thumb,
   #case-items .item .item-thumb,
@@ -9712,7 +9722,7 @@ button[disabled] .fa, button.disabled .fa,
     display: none !important;
   }
 }
-/* line 1495, ../scss/app.scss */
+/* line 1498, ../scss/app.scss */
 #main-content .item .item-thumb img,
 #event-cases .item .item-thumb img,
 #case-items .item .item-thumb img,
@@ -9722,7 +9732,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 100%;
   height: 100%;
 }
-/* line 1501, ../scss/app.scss */
+/* line 1504, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-overlay,
 #event-cases .item .item-thumb .thumb-overlay,
 #case-items .item .item-thumb .thumb-overlay,
@@ -9742,7 +9752,7 @@ button[disabled] .fa, button.disabled .fa,
   font-weight: bold;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 1518, ../scss/app.scss */
+/* line 1521, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask,
 #event-cases .item .item-thumb .thumb-mask,
 #case-items .item .item-thumb .thumb-mask,
@@ -9764,7 +9774,7 @@ button[disabled] .fa, button.disabled .fa,
   opacity: 0;
   z-index: 111;
 }
-/* line 1535, ../scss/app.scss */
+/* line 1538, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask > .fa,
 #event-cases .item .item-thumb .thumb-mask > .fa,
 #case-items .item .item-thumb .thumb-mask > .fa,
@@ -9774,7 +9784,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: 1.25rem;
   font-size: 60px;
 }
-/* line 1541, ../scss/app.scss */
+/* line 1544, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon,
 #case-items .item .item-thumb .thumb-mask .thumb-icon,
@@ -9786,14 +9796,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 4em;
   display: block;
 }
-/* line 1548, ../scss/app.scss */
+/* line 1551, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.play-icon,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.play-icon,
 #case-items .item .item-thumb .thumb-mask .thumb-icon.play-icon,
 #linked-events .item .item-thumb .thumb-mask .thumb-icon.play-icon {
   left: 1.25em;
 }
-/* line 1550, ../scss/app.scss */
+/* line 1553, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa,
 #case-items .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa,
@@ -9801,7 +9811,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 1553, ../scss/app.scss */
+/* line 1556, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:hover, #main-content .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:focus,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:hover,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:focus,
@@ -9811,14 +9821,14 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:focus {
   color: #7bca23;
 }
-/* line 1556, ../scss/app.scss */
+/* line 1559, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.details-icon,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.details-icon,
 #case-items .item .item-thumb .thumb-mask .thumb-icon.details-icon,
 #linked-events .item .item-thumb .thumb-mask .thumb-icon.details-icon {
   right: 1.25em;
 }
-/* line 1558, ../scss/app.scss */
+/* line 1561, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa,
 #case-items .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa,
@@ -9826,7 +9836,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 1561, ../scss/app.scss */
+/* line 1564, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:hover, #main-content .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:focus,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:hover,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:focus,
@@ -9836,14 +9846,14 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:focus {
   color: #7bca23;
 }
-/* line 1566, ../scss/app.scss */
+/* line 1569, ../scss/app.scss */
 #main-content .item .item-thumb:hover,
 #event-cases .item .item-thumb:hover,
 #case-items .item .item-thumb:hover,
 #linked-events .item .item-thumb:hover {
   border-color: #333;
 }
-/* line 1568, ../scss/app.scss */
+/* line 1571, ../scss/app.scss */
 #main-content .item .item-thumb:hover .thumb-mask,
 #event-cases .item .item-thumb:hover .thumb-mask,
 #case-items .item .item-thumb:hover .thumb-mask,
@@ -9851,14 +9861,14 @@ button[disabled] .fa, button.disabled .fa,
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.90;
 }
-/* line 1575, ../scss/app.scss */
+/* line 1578, ../scss/app.scss */
 #main-content .item.event-item,
 #event-cases .item.event-item,
 #case-items .item.event-item,
 #linked-events .item.event-item {
   padding-left: 250px;
 }
-/* line 1578, ../scss/app.scss */
+/* line 1581, ../scss/app.scss */
 #main-content .item.archived-item,
 #event-cases .item.archived-item,
 #case-items .item.archived-item,
@@ -9867,7 +9877,7 @@ button[disabled] .fa, button.disabled .fa,
   background-position: 0 0;
   background-repeat: repeat;
 }
-/* line 1583, ../scss/app.scss */
+/* line 1586, ../scss/app.scss */
 #main-content .item.archived-item .item-thumb img,
 #event-cases .item.archived-item .item-thumb img,
 #case-items .item.archived-item .item-thumb img,
@@ -9875,14 +9885,14 @@ button[disabled] .fa, button.disabled .fa,
   display: block;
   margin: 0 auto 0;
 }
-/* line 1587, ../scss/app.scss */
+/* line 1590, ../scss/app.scss */
 #main-content .item.archived-item .item-thumb .thumb-mask .fa:before,
 #event-cases .item.archived-item .item-thumb .thumb-mask .fa:before,
 #case-items .item.archived-item .item-thumb .thumb-mask .fa:before,
 #linked-events .item.archived-item .item-thumb .thumb-mask .fa:before {
   display: none;
 }
-/* line 1591, ../scss/app.scss */
+/* line 1594, ../scss/app.scss */
 #main-content .item.archived-item .item-thumb:hover .thumb-mask,
 #event-cases .item.archived-item .item-thumb:hover .thumb-mask,
 #case-items .item.archived-item .item-thumb:hover .thumb-mask,
@@ -9891,14 +9901,14 @@ button[disabled] .fa, button.disabled .fa,
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: .5;
 }
-/* line 1601, ../scss/app.scss */
+/* line 1604, ../scss/app.scss */
 #main-content .item.archived-item.selected .item-thumb:before,
 #event-cases .item.archived-item.selected .item-thumb:before,
 #case-items .item.archived-item.selected .item-thumb:before,
 #linked-events .item.archived-item.selected .item-thumb:before {
   color: #31599d;
 }
-/* line 1609, ../scss/app.scss */
+/* line 1612, ../scss/app.scss */
 #main-content .item.shared-item .item-select .count-wrap,
 #event-cases .item.shared-item .item-select .count-wrap,
 #case-items .item.shared-item .item-select .count-wrap,
@@ -9906,14 +9916,14 @@ button[disabled] .fa, button.disabled .fa,
   text-shadow: 0 1px 0 #5b8225 !important;
   color: #fff;
 }
-/* line 1613, ../scss/app.scss */
+/* line 1616, ../scss/app.scss */
 #main-content .item.shared-item.expired .item-select .count-wrap,
 #event-cases .item.shared-item.expired .item-select .count-wrap,
 #case-items .item.shared-item.expired .item-select .count-wrap,
 #linked-events .item.shared-item.expired .item-select .count-wrap {
   text-shadow: 0 1px 0 #cc0000 !important;
 }
-/* line 1618, ../scss/app.scss */
+/* line 1621, ../scss/app.scss */
 #main-content .item .item-select,
 #event-cases .item .item-select,
 #case-items .item .item-select,
@@ -9930,7 +9940,7 @@ button[disabled] .fa, button.disabled .fa,
   bottom: 0;
   z-index: 2;
 }
-/* line 1630, ../scss/app.scss */
+/* line 1633, ../scss/app.scss */
 #main-content .item .item-select .fa,
 #event-cases .item .item-select .fa,
 #case-items .item .item-select .fa,
@@ -9943,7 +9953,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #fff;
   z-index: 1;
 }
-/* line 1638, ../scss/app.scss */
+/* line 1641, ../scss/app.scss */
 #main-content .item .item-select .fa.success,
 #event-cases .item .item-select .fa.success,
 #case-items .item .item-select .fa.success,
@@ -9951,35 +9961,35 @@ button[disabled] .fa, button.disabled .fa,
   color: #6e9f2a;
   font-size: 1.9em;
 }
-/* line 1639, ../scss/app.scss */
+/* line 1642, ../scss/app.scss */
 #main-content .item .item-select .fa.error,
 #event-cases .item .item-select .fa.error,
 #case-items .item .item-select .fa.error,
 #linked-events .item .item-select .fa.error {
   color: #aaa;
 }
-/* line 1640, ../scss/app.scss */
+/* line 1643, ../scss/app.scss */
 #main-content .item .item-select .fa.error:hover,
 #event-cases .item .item-select .fa.error:hover,
 #case-items .item .item-select .fa.error:hover,
 #linked-events .item .item-select .fa.error:hover {
   color: #B23535;
 }
-/* line 1644, ../scss/app.scss */
+/* line 1647, ../scss/app.scss */
 #main-content .item .item-select .linked-events-delete .fa.error,
 #event-cases .item .item-select .linked-events-delete .fa.error,
 #case-items .item .item-select .linked-events-delete .fa.error,
 #linked-events .item .item-select .linked-events-delete .fa.error {
   color: #aaa;
 }
-/* line 1647, ../scss/app.scss */
+/* line 1650, ../scss/app.scss */
 #main-content .item .item-select .linked-events-delete:hover .fa.error,
 #event-cases .item .item-select .linked-events-delete:hover .fa.error,
 #case-items .item .item-select .linked-events-delete:hover .fa.error,
 #linked-events .item .item-select .linked-events-delete:hover .fa.error {
   color: #B23535;
 }
-/* line 1651, ../scss/app.scss */
+/* line 1654, ../scss/app.scss */
 #main-content .item .item-select input,
 #event-cases .item .item-select input,
 #case-items .item .item-select input,
@@ -9989,7 +9999,7 @@ button[disabled] .fa, button.disabled .fa,
   margin: -5px 0 0 -5px;
   left: 50%;
 }
-/* line 1657, ../scss/app.scss */
+/* line 1660, ../scss/app.scss */
 #main-content .item .item-select .count-wrap,
 #event-cases .item .item-select .count-wrap,
 #case-items .item .item-select .count-wrap,
@@ -10006,14 +10016,14 @@ button[disabled] .fa, button.disabled .fa,
   color: #555;
   text-shadow: 0 1px 0 #fff !important;
 }
-/* line 1669, ../scss/app.scss */
+/* line 1672, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-select .count-wrap, .view-small-thumbs
 #event-cases .item .item-select .count-wrap, .view-small-thumbs
 #case-items .item .item-select .count-wrap, .view-small-thumbs
 #linked-events .item .item-select .count-wrap {
   display: none !important;
 }
-/* line 1675, ../scss/app.scss */
+/* line 1678, ../scss/app.scss */
 #main-content .item .action,
 #event-cases .item .action,
 #case-items .item .action,
@@ -10023,7 +10033,7 @@ button[disabled] .fa, button.disabled .fa,
   right: 10px;
   margin: 0;
 }
-/* line 1680, ../scss/app.scss */
+/* line 1683, ../scss/app.scss */
 #main-content .item .action.links,
 #event-cases .item .action.links,
 #case-items .item .action.links,
@@ -10032,7 +10042,7 @@ button[disabled] .fa, button.disabled .fa,
   right: 50px;
   font-size: .85em;
 }
-/* line 1685, ../scss/app.scss */
+/* line 1688, ../scss/app.scss */
 #main-content .item .action.cases,
 #event-cases .item .action.cases,
 #case-items .item .action.cases,
@@ -10041,7 +10051,7 @@ button[disabled] .fa, button.disabled .fa,
   right: 50px;
   font-size: .85em;
 }
-/* line 1689, ../scss/app.scss */
+/* line 1692, ../scss/app.scss */
 #main-content .item .action.cases + ul + .action.links,
 #event-cases .item .action.cases + ul + .action.links,
 #case-items .item .action.cases + ul + .action.links,
@@ -10050,7 +10060,7 @@ button[disabled] .fa, button.disabled .fa,
   right: 95px;
   font-size: .85em;
 }
-/* line 1696, ../scss/app.scss */
+/* line 1699, ../scss/app.scss */
 #main-content .item .data-icon-group,
 #event-cases .item .data-icon-group,
 #case-items .item .data-icon-group,
@@ -10078,7 +10088,7 @@ button[disabled] .fa, button.disabled .fa,
   padding: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 1696, ../scss/app.scss */
+  /* line 1699, ../scss/app.scss */
   #main-content .item .data-icon-group,
   #event-cases .item .data-icon-group,
   #case-items .item .data-icon-group,
@@ -10087,7 +10097,7 @@ button[disabled] .fa, button.disabled .fa,
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 1696, ../scss/app.scss */
+  /* line 1699, ../scss/app.scss */
   #main-content .item .data-icon-group,
   #event-cases .item .data-icon-group,
   #case-items .item .data-icon-group,
@@ -10095,7 +10105,7 @@ button[disabled] .fa, button.disabled .fa,
     display: none;
   }
 }
-/* line 1714, ../scss/app.scss */
+/* line 1717, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon,
 #event-cases .item .data-icon-group .data-icon,
 #case-items .item .data-icon-group .data-icon,
@@ -10112,7 +10122,7 @@ button[disabled] .fa, button.disabled .fa,
   height: 29px;
   border-radius: 0;
 }
-/* line 1726, ../scss/app.scss */
+/* line 1729, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon strong,
 #main-content .item .data-icon-group .data-icon > span,
 #event-cases .item .data-icon-group .data-icon strong,
@@ -10123,14 +10133,14 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item .data-icon-group .data-icon > span {
   display: inline-block;
 }
-/* line 1728, ../scss/app.scss */
+/* line 1731, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon > span[data-dropdown],
 #event-cases .item .data-icon-group .data-icon > span[data-dropdown],
 #case-items .item .data-icon-group .data-icon > span[data-dropdown],
 #linked-events .item .data-icon-group .data-icon > span[data-dropdown] {
   cursor: pointer;
 }
-/* line 1731, ../scss/app.scss */
+/* line 1734, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon .data-icon-drop,
 #event-cases .item .data-icon-group .data-icon .data-icon-drop,
 #case-items .item .data-icon-group .data-icon .data-icon-drop,
@@ -10139,14 +10149,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 20px;
   color: #000;
 }
-/* line 1736, ../scss/app.scss */
+/* line 1739, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon:not(.button),
 #event-cases .item .data-icon-group .data-icon:not(.button),
 #case-items .item .data-icon-group .data-icon:not(.button),
 #linked-events .item .data-icon-group .data-icon:not(.button) {
   color: #555;
 }
-/* line 1738, ../scss/app.scss */
+/* line 1741, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon:not(.button):hover,
 #event-cases .item .data-icon-group .data-icon:not(.button):hover,
 #case-items .item .data-icon-group .data-icon:not(.button):hover,
@@ -10154,14 +10164,14 @@ button[disabled] .fa, button.disabled .fa,
   color: #222;
   background: #fff;
 }
-/* line 1746, ../scss/app.scss */
+/* line 1749, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon .fa,
 #event-cases .item .data-icon-group .data-icon .fa,
 #case-items .item .data-icon-group .data-icon .fa,
 #linked-events .item .data-icon-group .data-icon .fa {
   font-size: 14px;
 }
-/* line 1748, ../scss/app.scss */
+/* line 1751, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon.linked-toggle,
 #event-cases .item .data-icon-group .data-icon.linked-toggle,
 #case-items .item .data-icon-group .data-icon.linked-toggle,
@@ -10169,7 +10179,7 @@ button[disabled] .fa, button.disabled .fa,
   border-bottom: none;
   border-left: none;
 }
-/* line 1754, ../scss/app.scss */
+/* line 1757, ../scss/app.scss */
 #main-content .item.case-item .item-thumb,
 #event-cases .item.case-item .item-thumb,
 #case-items .item.case-item .item-thumb,
@@ -10178,7 +10188,7 @@ button[disabled] .fa, button.disabled .fa,
   opacity: .5;
   background: transparent;
 }
-/* line 1759, ../scss/app.scss */
+/* line 1762, ../scss/app.scss */
 #main-content .item.case-item .item-thumb:hover,
 #event-cases .item.case-item .item-thumb:hover,
 #case-items .item.case-item .item-thumb:hover,
@@ -10186,7 +10196,7 @@ button[disabled] .fa, button.disabled .fa,
   opacity: 1;
   background: transparent;
 }
-/* line 1763, ../scss/app.scss */
+/* line 1766, ../scss/app.scss */
 #main-content .item.case-item .item-thumb > .fa,
 #event-cases .item.case-item .item-thumb > .fa,
 #case-items .item.case-item .item-thumb > .fa,
@@ -10196,7 +10206,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: .75rem;
   font-size: 60px;
 }
-/* line 1772, ../scss/app.scss */
+/* line 1775, ../scss/app.scss */
 #main-content .item.event-item .data-icon-group,
 #event-cases .item.event-item .data-icon-group,
 #case-items .item.event-item .data-icon-group,
@@ -10205,7 +10215,7 @@ button[disabled] .fa, button.disabled .fa,
   border-radius: 3px 0 0 0;
   border-left: 1px solid #ddd;
 }
-/* line 1777, ../scss/app.scss */
+/* line 1780, ../scss/app.scss */
 #main-content .item.event-item .item-thumb,
 #event-cases .item.event-item .item-thumb,
 #case-items .item.event-item .item-thumb,
@@ -10215,7 +10225,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 180px;
   height: 120px;
 }
-/* line 1786, ../scss/app.scss */
+/* line 1789, ../scss/app.scss */
 #main-content .item.export-item .data-icon-group,
 #event-cases .item.export-item .data-icon-group,
 #case-items .item.export-item .data-icon-group,
@@ -10224,7 +10234,7 @@ button[disabled] .fa, button.disabled .fa,
   border-radius: 3px 0 0 0;
   border-left: 1px solid #ddd;
 }
-/* line 1791, ../scss/app.scss */
+/* line 1794, ../scss/app.scss */
 #main-content .item.export-item .item-thumb,
 #event-cases .item.export-item .item-thumb,
 #case-items .item.export-item .item-thumb,
@@ -10234,7 +10244,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 180px;
   height: 120px;
 }
-/* line 1796, ../scss/app.scss */
+/* line 1799, ../scss/app.scss */
 #main-content .item.export-item .item-thumb > .fa,
 #event-cases .item.export-item .item-thumb > .fa,
 #case-items .item.export-item .item-thumb > .fa,
@@ -10244,7 +10254,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: .25rem;
   font-size: 60px;
 }
-/* line 1806, ../scss/app.scss */
+/* line 1809, ../scss/app.scss */
 #main-content .item.selected .item-select,
 #event-cases .item.selected .item-select,
 #case-items .item.selected .item-select,
@@ -10252,14 +10262,43 @@ button[disabled] .fa, button.disabled .fa,
   background-color: #a3d2fb;
   border-color: #3573dc !important;
 }
-/* line 1809, ../scss/app.scss */
+/* line 1812, ../scss/app.scss */
 #main-content .item.selected .item-select .count-wrap,
 #event-cases .item.selected .item-select .count-wrap,
 #case-items .item.selected .item-select .count-wrap,
 #linked-events .item.selected .item-select .count-wrap {
   color: #31599d !important;
 }
-/* line 1814, ../scss/app.scss */
+/* line 1819, ../scss/app.scss */
+#main-content .item.item-error .item-select,
+#event-cases .item.item-error .item-select,
+#case-items .item.item-error .item-select,
+#linked-events .item.item-error .item-select {
+  background-color: #cc5555 !important;
+}
+/* line 1821, ../scss/app.scss */
+#main-content .item.item-error .item-select:before,
+#event-cases .item.item-error .item-select:before,
+#case-items .item.item-error .item-select:before,
+#linked-events .item.item-error .item-select:before {
+  display: block;
+  position: absolute;
+  content: "\f071";
+  font-family: 'FontAwesome';
+  color: #fff;
+  left: 10px;
+  bottom: 10px;
+  font-weight: normal;
+}
+/* line 1831, ../scss/app.scss */
+#main-content .item.item-error .item-select .count-wrap,
+#event-cases .item.item-error .item-select .count-wrap,
+#case-items .item.item-error .item-select .count-wrap,
+#linked-events .item.item-error .item-select .count-wrap {
+  color: #fff !important;
+  text-shadow: none !important;
+}
+/* line 1837, ../scss/app.scss */
 #main-content .item.selected:not(.export-item),
 #event-cases .item.selected:not(.export-item),
 #case-items .item.selected:not(.export-item),
@@ -10274,7 +10313,7 @@ button[disabled] .fa, button.disabled .fa,
   				}				
   			}*/
 }
-/* line 1817, ../scss/app.scss */
+/* line 1840, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon-group,
 #event-cases .item.selected:not(.export-item) .data-icon-group,
 #case-items .item.selected:not(.export-item) .data-icon-group,
@@ -10282,7 +10321,7 @@ button[disabled] .fa, button.disabled .fa,
   background: #a3d2fb !important;
   border-color: #80abf3 !important;
 }
-/* line 1821, ../scss/app.scss */
+/* line 1844, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon:not(.button),
 #event-cases .item.selected:not(.export-item) .data-icon:not(.button),
 #case-items .item.selected:not(.export-item) .data-icon:not(.button),
@@ -10292,14 +10331,14 @@ button[disabled] .fa, button.disabled .fa,
   color: #31599d !important;
   text-shadow: none;
 }
-/* line 1826, ../scss/app.scss */
+/* line 1849, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon:not(.button):hover,
 #event-cases .item.selected:not(.export-item) .data-icon:not(.button):hover,
 #case-items .item.selected:not(.export-item) .data-icon:not(.button):hover,
 #linked-events .item.selected:not(.export-item) .data-icon:not(.button):hover {
   background: #BDDFFD	!important;
 }
-/* line 1830, ../scss/app.scss */
+/* line 1853, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon.button,
 #event-cases .item.selected:not(.export-item) .data-icon.button,
 #case-items .item.selected:not(.export-item) .data-icon.button,
@@ -10309,7 +10348,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #e5eefd;
   text-shadow: none;
 }
-/* line 1836, ../scss/app.scss */
+/* line 1859, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon.button:hover, #main-content .item.selected:not(.export-item) .data-icon.button:focus,
 #event-cases .item.selected:not(.export-item) .data-icon.button:hover,
 #event-cases .item.selected:not(.export-item) .data-icon.button:focus,
@@ -10321,7 +10360,7 @@ button[disabled] .fa, button.disabled .fa,
   border-color: #31599d !important;
   color: #e5eefd;
 }
-/* line 1850, ../scss/app.scss */
+/* line 1873, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .item-thumb,
 #event-cases .item.selected:not(.export-item) .item-thumb,
 #case-items .item.selected:not(.export-item) .item-thumb,
@@ -10329,21 +10368,21 @@ button[disabled] .fa, button.disabled .fa,
   background-color: #BDDFFD;
   border-color: #80abf3;
 }
-/* line 1853, ../scss/app.scss */
+/* line 1876, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .item-thumb > i.fa,
 #event-cases .item.selected:not(.export-item) .item-thumb > i.fa,
 #case-items .item.selected:not(.export-item) .item-thumb > i.fa,
 #linked-events .item.selected:not(.export-item) .item-thumb > i.fa {
   color: #31599d;
 }
-/* line 1857, ../scss/app.scss */
+/* line 1880, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .item-list li,
 #event-cases .item.selected:not(.export-item) .item-list li,
 #case-items .item.selected:not(.export-item) .item-list li,
 #linked-events .item.selected:not(.export-item) .item-list li {
   color: #24395c;
 }
-/* line 1860, ../scss/app.scss */
+/* line 1883, ../scss/app.scss */
 #main-content .item.selected:not(.export-item):hover,
 #event-cases .item.selected:not(.export-item):hover,
 #case-items .item.selected:not(.export-item):hover,
@@ -10351,7 +10390,7 @@ button[disabled] .fa, button.disabled .fa,
   background-color: #BDDFFD;
   border-color: #3573dc;
 }
-/* line 1866, ../scss/app.scss */
+/* line 1889, ../scss/app.scss */
 #main-content .item:hover,
 #event-cases .item:hover,
 #case-items .item:hover,
@@ -10361,7 +10400,7 @@ button[disabled] .fa, button.disabled .fa,
   -webkit-box-shadow: 0px 1px 8px #222;
   box-shadow: 0px 1px 8px #222;
 }
-/* line 1873, ../scss/app.scss */
+/* line 1896, ../scss/app.scss */
 .view-medium-thumbs #main-content .item, .view-medium-thumbs
 #event-cases .item, .view-medium-thumbs
 #case-items .item, .view-medium-thumbs
@@ -10371,14 +10410,14 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 100px;
   margin: 10px 0;
 }
-/* line 1878, ../scss/app.scss */
+/* line 1901, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .data-icon-group, .view-medium-thumbs
 #event-cases .item .data-icon-group, .view-medium-thumbs
 #case-items .item .data-icon-group, .view-medium-thumbs
 #linked-events .item .data-icon-group {
   display: none;
 }
-/* line 1881, ../scss/app.scss */
+/* line 1904, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item, .view-medium-thumbs
 #event-cases .item.event-item, .view-medium-thumbs
 #case-items .item.event-item, .view-medium-thumbs
@@ -10387,7 +10426,7 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 90px;
   position: relative;
 }
-/* line 1885, ../scss/app.scss */
+/* line 1908, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb, .view-medium-thumbs
 #case-items .item.event-item .item-thumb, .view-medium-thumbs
@@ -10395,7 +10434,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 100px;
   height: 67px;
 }
-/* line 1890, ../scss/app.scss */
+/* line 1913, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask > .fa, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask > .fa, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask > .fa, .view-medium-thumbs
@@ -10405,7 +10444,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: .75rem;
   font-size: 40px;
 }
-/* line 1896, ../scss/app.scss */
+/* line 1919, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-medium-thumbs
@@ -10416,7 +10455,7 @@ button[disabled] .fa, button.disabled .fa,
   display: block;
   width: auto;
 }
-/* line 1902, ../scss/app.scss */
+/* line 1925, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-medium-thumbs
@@ -10425,7 +10464,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 1906, ../scss/app.scss */
+/* line 1929, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:hover, .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:hover, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus, .view-medium-thumbs
@@ -10435,21 +10474,21 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus {
   color: #7bca23;
 }
-/* line 1908, ../scss/app.scss */
+/* line 1931, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-medium-thumbs
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon {
   left: .75em;
 }
-/* line 1911, ../scss/app.scss */
+/* line 1934, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-medium-thumbs
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon {
   right: .75em;
 }
-/* line 1917, ../scss/app.scss */
+/* line 1940, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb img, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb img, .view-medium-thumbs
 #case-items .item.event-item .item-thumb img, .view-medium-thumbs
@@ -10457,21 +10496,21 @@ button[disabled] .fa, button.disabled .fa,
   width: 100%;
   height: 100%;
 }
-/* line 1923, ../scss/app.scss */
+/* line 1946, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.archived-item .item-thumb img, .view-medium-thumbs
 #event-cases .item.archived-item .item-thumb img, .view-medium-thumbs
 #case-items .item.archived-item .item-thumb img, .view-medium-thumbs
 #linked-events .item.archived-item .item-thumb img {
   margin: 0px auto;
 }
-/* line 1926, ../scss/app.scss */
+/* line 1949, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .item-list, .view-medium-thumbs
 #event-cases .item .item-list, .view-medium-thumbs
 #case-items .item .item-list, .view-medium-thumbs
 #linked-events .item .item-list {
   margin-right: 50px;
 }
-/* line 1928, ../scss/app.scss */
+/* line 1951, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .item-list li, .view-medium-thumbs
 #event-cases .item .item-list li, .view-medium-thumbs
 #case-items .item .item-list li, .view-medium-thumbs
@@ -10479,7 +10518,7 @@ button[disabled] .fa, button.disabled .fa,
   font-size: .75em;
   line-height: 1.5;
 }
-/* line 1934, ../scss/app.scss */
+/* line 1957, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .item-thumb,
 .view-medium-thumbs #main-content .item .item-thumb img, .view-medium-thumbs
 #event-cases .item .item-thumb,
@@ -10494,14 +10533,14 @@ button[disabled] .fa, button.disabled .fa,
   height: 75px;
   width: 75px;
 }
-/* line 1939, ../scss/app.scss */
+/* line 1962, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .thumb-overlay, .view-medium-thumbs
 #event-cases .item .thumb-overlay, .view-medium-thumbs
 #case-items .item .thumb-overlay, .view-medium-thumbs
 #linked-events .item .thumb-overlay {
   display: none;
 }
-/* line 1943, ../scss/app.scss */
+/* line 1966, ../scss/app.scss */
 .view-small-thumbs #main-content .item, .view-small-thumbs
 #event-cases .item, .view-small-thumbs
 #case-items .item, .view-small-thumbs
@@ -10510,14 +10549,14 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 60px;
   margin: 5px 0;
 }
-/* line 1947, ../scss/app.scss */
+/* line 1970, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item, .view-small-thumbs
 #event-cases .item.event-item, .view-small-thumbs
 #case-items .item.event-item, .view-small-thumbs
 #linked-events .item.event-item {
   padding-left: 130px;
 }
-/* line 1949, ../scss/app.scss */
+/* line 1972, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb, .view-small-thumbs
 #event-cases .item.event-item .item-thumb, .view-small-thumbs
 #case-items .item.event-item .item-thumb, .view-small-thumbs
@@ -10525,7 +10564,7 @@ button[disabled] .fa, button.disabled .fa,
   height: 40px;
   width: 60px;
 }
-/* line 1953, ../scss/app.scss */
+/* line 1976, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask > .fa, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask > .fa, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask > .fa, .view-small-thumbs
@@ -10535,7 +10574,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: 3px;
   font-size: 30px;
 }
-/* line 1959, ../scss/app.scss */
+/* line 1982, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-small-thumbs
@@ -10546,7 +10585,7 @@ button[disabled] .fa, button.disabled .fa,
   display: block;
   width: auto;
 }
-/* line 1965, ../scss/app.scss */
+/* line 1988, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-small-thumbs
@@ -10555,7 +10594,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 1969, ../scss/app.scss */
+/* line 1992, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:hover, .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:hover, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus, .view-small-thumbs
@@ -10565,21 +10604,21 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus {
   color: #7bca23;
 }
-/* line 1971, ../scss/app.scss */
+/* line 1994, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-small-thumbs
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon {
   left: .25em;
 }
-/* line 1974, ../scss/app.scss */
+/* line 1997, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-small-thumbs
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon {
   right: .25em;
 }
-/* line 1979, ../scss/app.scss */
+/* line 2002, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb img, .view-small-thumbs
 #event-cases .item.event-item .item-thumb img, .view-small-thumbs
 #case-items .item.event-item .item-thumb img, .view-small-thumbs
@@ -10587,28 +10626,28 @@ button[disabled] .fa, button.disabled .fa,
   height: 100%;
   width: 100%;
 }
-/* line 1985, ../scss/app.scss */
+/* line 2008, ../scss/app.scss */
 .view-small-thumbs #main-content .item.archived-item .item-thumb img, .view-small-thumbs
 #event-cases .item.archived-item .item-thumb img, .view-small-thumbs
 #case-items .item.archived-item .item-thumb img, .view-small-thumbs
 #linked-events .item.archived-item .item-thumb img {
   margin: 0 auto;
 }
-/* line 1989, ../scss/app.scss */
+/* line 2012, ../scss/app.scss */
 .view-small-thumbs #main-content .item .data-icon-group, .view-small-thumbs
 #event-cases .item .data-icon-group, .view-small-thumbs
 #case-items .item .data-icon-group, .view-small-thumbs
 #linked-events .item .data-icon-group {
   display: none;
 }
-/* line 1992, ../scss/app.scss */
+/* line 2015, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-list, .view-small-thumbs
 #event-cases .item .item-list, .view-small-thumbs
 #case-items .item .item-list, .view-small-thumbs
 #linked-events .item .item-list {
   margin-right: 50px;
 }
-/* line 1994, ../scss/app.scss */
+/* line 2017, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-list li, .view-small-thumbs
 #event-cases .item .item-list li, .view-small-thumbs
 #case-items .item .item-list li, .view-small-thumbs
@@ -10617,7 +10656,7 @@ button[disabled] .fa, button.disabled .fa,
   line-height: 1.4;
   width: 32%;
 }
-/* line 2007, ../scss/app.scss */
+/* line 2030, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-thumb,
 .view-small-thumbs #main-content .item .item-thumb img, .view-small-thumbs
 #event-cases .item .item-thumb,
@@ -10633,7 +10672,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 40px;
   top: 8px;
 }
-/* line 2015, ../scss/app.scss */
+/* line 2038, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-thumb .thumb-overlay,
 .view-small-thumbs #main-content .item .item-thumb img .thumb-overlay, .view-small-thumbs
 #event-cases .item .item-thumb .thumb-overlay,
@@ -10647,7 +10686,7 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item .item-thumb img .thumb-overlay {
   display: none;
 }
-/* line 2019, ../scss/app.scss */
+/* line 2042, ../scss/app.scss */
 .view-small-thumbs #main-content .item.case-item .item-thumb, .view-small-thumbs
 #event-cases .item.case-item .item-thumb, .view-small-thumbs
 #case-items .item.case-item .item-thumb, .view-small-thumbs
@@ -10655,14 +10694,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 60px;
   left: 45px;
 }
-/* line 2022, ../scss/app.scss */
+/* line 2045, ../scss/app.scss */
 .view-small-thumbs #main-content .item.case-item .item-thumb .fa, .view-small-thumbs
 #event-cases .item.case-item .item-thumb .fa, .view-small-thumbs
 #case-items .item.case-item .item-thumb .fa, .view-small-thumbs
 #linked-events .item.case-item .item-thumb .fa {
   font-size: 40px !important;
 }
-/* line 2028, ../scss/app.scss */
+/* line 2051, ../scss/app.scss */
 .export-page-wrapper #main-content .item, .export-page-wrapper
 #event-cases .item, .export-page-wrapper
 #case-items .item, .export-page-wrapper
@@ -10672,7 +10711,7 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 120px;
   margin: 10px 0;
 }
-/* line 2033, ../scss/app.scss */
+/* line 2056, ../scss/app.scss */
 .export-page-wrapper #main-content .item .data-icon-group, .export-page-wrapper
 #event-cases .item .data-icon-group, .export-page-wrapper
 #case-items .item .data-icon-group, .export-page-wrapper
@@ -10682,7 +10721,7 @@ button[disabled] .fa, button.disabled .fa,
   border-radius: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 2033, ../scss/app.scss */
+  /* line 2056, ../scss/app.scss */
   .export-page-wrapper #main-content .item .data-icon-group, .export-page-wrapper
   #event-cases .item .data-icon-group, .export-page-wrapper
   #case-items .item .data-icon-group, .export-page-wrapper
@@ -10690,7 +10729,7 @@ button[disabled] .fa, button.disabled .fa,
     display: none;
   }
 }
-/* line 2041, ../scss/app.scss */
+/* line 2064, ../scss/app.scss */
 .export-page-wrapper #main-content .item.export-item, .export-page-wrapper
 #event-cases .item.export-item, .export-page-wrapper
 #case-items .item.export-item, .export-page-wrapper
@@ -10698,7 +10737,7 @@ button[disabled] .fa, button.disabled .fa,
   padding-left: 165px;
   min-height: 120px;
 }
-/* line 2044, ../scss/app.scss */
+/* line 2067, ../scss/app.scss */
 .export-page-wrapper #main-content .item.export-item .item-thumb, .export-page-wrapper
 #event-cases .item.export-item .item-thumb, .export-page-wrapper
 #case-items .item.export-item .item-thumb, .export-page-wrapper
@@ -10706,7 +10745,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 100px;
   height: 67px;
 }
-/* line 2047, ../scss/app.scss */
+/* line 2070, ../scss/app.scss */
 .export-page-wrapper #main-content .item.export-item .item-thumb .thumb-mask .fa, .export-page-wrapper
 #event-cases .item.export-item .item-thumb .thumb-mask .fa, .export-page-wrapper
 #case-items .item.export-item .item-thumb .thumb-mask .fa, .export-page-wrapper
@@ -10714,7 +10753,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 2052, ../scss/app.scss */
+/* line 2075, ../scss/app.scss */
 .export-page-wrapper #main-content .item.export-item .item-thumb img, .export-page-wrapper
 #event-cases .item.export-item .item-thumb img, .export-page-wrapper
 #case-items .item.export-item .item-thumb img, .export-page-wrapper
@@ -10722,14 +10761,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 100px;
   height: 67px;
 }
-/* line 2058, ../scss/app.scss */
+/* line 2081, ../scss/app.scss */
 .export-page-wrapper #main-content .item .item-list, .export-page-wrapper
 #event-cases .item .item-list, .export-page-wrapper
 #case-items .item .item-list, .export-page-wrapper
 #linked-events .item .item-list {
   margin-right: 50px;
 }
-/* line 2060, ../scss/app.scss */
+/* line 2083, ../scss/app.scss */
 .export-page-wrapper #main-content .item .item-list li, .export-page-wrapper
 #event-cases .item .item-list li, .export-page-wrapper
 #case-items .item .item-list li, .export-page-wrapper
@@ -10738,7 +10777,7 @@ button[disabled] .fa, button.disabled .fa,
   line-height: 1.5;
   width: 32%;
 }
-/* line 2068, ../scss/app.scss */
+/* line 2091, ../scss/app.scss */
 .export-page-wrapper #main-content .item .item-thumb,
 .export-page-wrapper #main-content .item .item-thumb img, .export-page-wrapper
 #event-cases .item .item-thumb,
@@ -10754,14 +10793,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 75px;
   margin: 0;
 }
-/* line 2074, ../scss/app.scss */
+/* line 2097, ../scss/app.scss */
 .export-page-wrapper #main-content .item .thumb-overlay, .export-page-wrapper
 #event-cases .item .thumb-overlay, .export-page-wrapper
 #case-items .item .thumb-overlay, .export-page-wrapper
 #linked-events .item .thumb-overlay {
   display: none;
 }
-/* line 2080, ../scss/app.scss */
+/* line 2103, ../scss/app.scss */
 #main-content.export-queue .item,
 #event-cases.export-queue .item,
 #case-items.export-queue .item,
@@ -10771,7 +10810,7 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 110px;
 }
 @media screen and (min-width: 1025px) {
-  /* line 2086, ../scss/app.scss */
+  /* line 2109, ../scss/app.scss */
   #main-content.export-queue .item.export-item:nth-child(even),
   #event-cases.export-queue .item.export-item:nth-child(even),
   #case-items.export-queue .item.export-item:nth-child(even),
@@ -10780,7 +10819,7 @@ button[disabled] .fa, button.disabled .fa,
     margin: 10px 1% 10px 0 !important;
     float: left !important;
   }
-  /* line 2091, ../scss/app.scss */
+  /* line 2114, ../scss/app.scss */
   #main-content.export-queue .item.export-item:nth-child(odd),
   #event-cases.export-queue .item.export-item:nth-child(odd),
   #case-items.export-queue .item.export-item:nth-child(odd),
@@ -10791,12 +10830,12 @@ button[disabled] .fa, button.disabled .fa,
   }
 }
 
-/* line 2100, ../scss/app.scss */
+/* line 2123, ../scss/app.scss */
 #case-items .item-thumb {
   background: none !important;
 }
 
-/* line 2104, ../scss/app.scss */
+/* line 2127, ../scss/app.scss */
 .view-table #main-content > .columns > .item,
 .show-for-large-thumbs,
 .show-for-medium-thumbs,
@@ -10814,7 +10853,7 @@ button[disabled] .fa, button.disabled .fa,
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 2122, ../scss/app.scss */
+/* line 2145, ../scss/app.scss */
 .view-large-thumbs .show-for-large-thumbs,
 .view-medium-thumbs .show-for-medium-thumbs,
 .view-small-thumbs .show-for-small-thumbs,
@@ -10830,12 +10869,12 @@ button[disabled] .fa, button.disabled .fa,
   clip: auto;
 }
 
-/* line 2137, ../scss/app.scss */
+/* line 2160, ../scss/app.scss */
 #grid {
   display: none;
 }
 
-/* line 2140, ../scss/app.scss */
+/* line 2163, ../scss/app.scss */
 .view-table #grid {
   display: block;
   width: 100%;
@@ -10843,7 +10882,7 @@ button[disabled] .fa, button.disabled .fa,
   background: #fff;
 }
 
-/* line 2147, ../scss/app.scss */
+/* line 2170, ../scss/app.scss */
 form.k-filter-menu input.k-textbox {
   background: #2d2d2d;
   background: -webkit-gradient(linear, left top, left bottom, from(#2d2d2d), to(#393b3f));
@@ -10866,7 +10905,7 @@ form.k-filter-menu input.k-textbox {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 2159, ../scss/app.scss */
+  /* line 2182, ../scss/app.scss */
   #main-content div.item .item-list li {
     font-size: .75em;
     margin: 0 0.5%;
@@ -10874,7 +10913,7 @@ form.k-filter-menu input.k-textbox {
     float: none;
   }
 
-  /* line 2165, ../scss/app.scss */
+  /* line 2188, ../scss/app.scss */
   .export-page-wrapper #main-content div.item .item-list li {
     margin: 0 1% 0 0;
     width: 48% !important;
@@ -10882,7 +10921,7 @@ form.k-filter-menu input.k-textbox {
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 2172, ../scss/app.scss */
+  /* line 2195, ../scss/app.scss */
   .export-page-wrapper #main-content div.item .item-list li {
     font-size: .75em;
     margin: 0 0.5%;
@@ -10891,7 +10930,7 @@ form.k-filter-menu input.k-textbox {
   }
 }
 @media screen and (min-width: 1921px) {
-  /* line 2181, ../scss/app.scss */
+  /* line 2204, ../scss/app.scss */
   #main-content div.item:not(.export-item),
   #event-cases div.item:not(.export-item) {
     width: 49%;
@@ -10899,19 +10938,19 @@ form.k-filter-menu input.k-textbox {
     float: left;
   }
 
-  /* line 2187, ../scss/app.scss */
+  /* line 2210, ../scss/app.scss */
   #main-content div.item .show-for-large-up {
     display: none !important;
   }
 
-  /* line 2190, ../scss/app.scss */
+  /* line 2213, ../scss/app.scss */
   #main-content div.item .item-list li {
     font-size: 12px;
     margin: 0 1% 0 0;
     width: 48% !important;
   }
 }
-/* line 2200, ../scss/app.scss */
+/* line 2223, ../scss/app.scss */
 .main-section {
   position: relative;
   min-height: auto !important;
@@ -10926,13 +10965,13 @@ form.k-filter-menu input.k-textbox {
   clear: both;
 }
 
-/* line 2206, ../scss/app.scss */
+/* line 2229, ../scss/app.scss */
 .page-host,
 .durandal-wrapper {
   height: auto;
 }
 
-/* line 2213, ../scss/app.scss */
+/* line 2236, ../scss/app.scss */
 .search-active .exit-off-canvas,
 .menu-active .exit-off-canvas {
   -webkit-backface-visibility: hidden;
@@ -10949,13 +10988,13 @@ form.k-filter-menu input.k-textbox {
   z-index: 99;
   -webkit-tap-highlight-color: transparent;
 }
-/* line 2228, ../scss/app.scss */
+/* line 2251, ../scss/app.scss */
 .search-active .exit-off-canvas:hover,
 .menu-active .exit-off-canvas:hover {
   background: rgba(0, 0, 0, 0.05) !important;
 }
 
-/* line 2235, ../scss/app.scss */
+/* line 2258, ../scss/app.scss */
 #content-outer-wrapper {
   position: relative;
   height: 100%;
@@ -10973,12 +11012,12 @@ form.k-filter-menu input.k-textbox {
 #content-outer-wrapper:after {
   clear: both;
 }
-/* line 2244, ../scss/app.scss */
+/* line 2267, ../scss/app.scss */
 #content-outer-wrapper.wide-sidebar-oncanvas {
   padding-left: 300px;
 }
 
-/* line 2253, ../scss/app.scss */
+/* line 2276, ../scss/app.scss */
 #content-wrapper {
   position: relative;
   z-index: 1;
@@ -11001,39 +11040,39 @@ form.k-filter-menu input.k-textbox {
   clear: both;
 }
 
-/* line 2266, ../scss/app.scss */
+/* line 2289, ../scss/app.scss */
 .wide-sidebar #content-wrapper {
   margin-left: 300px;
 }
 
-/* line 2269, ../scss/app.scss */
+/* line 2292, ../scss/app.scss */
 .wide-sidebar-oncanvas #content-wrapper {
   margin-left: 0px;
 }
 
-/* line 2273, ../scss/app.scss */
+/* line 2296, ../scss/app.scss */
 .no-sidebar #content-wrapper {
   margin-left: 0 !important;
   background: #303030;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 2279, ../scss/app.scss */
+  /* line 2302, ../scss/app.scss */
   #content-wrapper {
     margin: auto !important;
   }
 }
-/* line 2284, ../scss/app.scss */
+/* line 2307, ../scss/app.scss */
 .row-offcanvas .offcanvas-sidebar {
   float: left;
 }
 
-/* line 2287, ../scss/app.scss */
+/* line 2310, ../scss/app.scss */
 .row-offcanvas .search-sidebar-offcanvas {
   width: 225px;
 }
 
-/* line 2290, ../scss/app.scss */
+/* line 2313, ../scss/app.scss */
 .row-offcanvas .wide-sidebar-oncanvas {
   width: 300px;
   position: absolute;
@@ -11043,7 +11082,7 @@ form.k-filter-menu input.k-textbox {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 2299, ../scss/app.scss */
+  /* line 2322, ../scss/app.scss */
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
@@ -11052,7 +11091,7 @@ form.k-filter-menu input.k-textbox {
     float: none;
     overflow-x: hidden;
   }
-  /* line 2306, ../scss/app.scss */
+  /* line 2329, ../scss/app.scss */
   .row-offcanvas .offcanvas-sidebar {
     position: absolute !important;
     top: 0 !important;
@@ -11060,80 +11099,80 @@ form.k-filter-menu input.k-textbox {
     min-height: 100vh;
     background: #303030;
   }
-  /* line 2313, ../scss/app.scss */
+  /* line 2336, ../scss/app.scss */
   .row-offcanvas .menu-sidebar-offcanvas {
     width: 250px !important;
     right: -250px;
   }
-  /* line 2317, ../scss/app.scss */
+  /* line 2340, ../scss/app.scss */
   .row-offcanvas .search-sidebar-offcanvas {
     top: -60px !important;
     left: -225px;
     width: 225px !important;
   }
-  /* line 2328, ../scss/app.scss */
+  /* line 2351, ../scss/app.scss */
   .row-offcanvas .wide-sidebar-oncanvas {
     top: -60px !important;
     left: -300px;
     width: 300px !important;
   }
-  /* line 2333, ../scss/app.scss */
+  /* line 2356, ../scss/app.scss */
   .row-offcanvas.search-active #content-outer-wrapper {
     left: 225px;
     overflow: visible;
   }
-  /* line 2336, ../scss/app.scss */
+  /* line 2359, ../scss/app.scss */
   .row-offcanvas.search-active #content-outer-wrapper.wide-sidebar {
     left: 300px;
   }
-  /* line 2341, ../scss/app.scss */
+  /* line 2364, ../scss/app.scss */
   .row-offcanvas.menu-active {
     right: 250px;
     overflow: visible;
   }
-  /* line 2344, ../scss/app.scss */
+  /* line 2367, ../scss/app.scss */
   .row-offcanvas.menu-active #content-outer-wrapper {
     overflow-x: hidden;
   }
 
-  /* line 2356, ../scss/app.scss */
+  /* line 2379, ../scss/app.scss */
   .nav-bar .nav-bar-section {
     left: 0;
   }
-  /* line 2359, ../scss/app.scss */
+  /* line 2382, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul ul li a {
     padding: 0.66667rem;
     color: white;
     border-bottom: 1px solid #393b3f;
     transition: background 300ms ease;
   }
-  /* line 2367, ../scss/app.scss */
+  /* line 2390, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li {
     display: block;
     float: none;
     margin: 0;
   }
-  /* line 2371, ../scss/app.scss */
+  /* line 2394, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li > a {
     border-radius: 0;
     border-bottom: 1px solid #393b3f;
     border-top: 1px solid #555;
     color: #eee;
   }
-  /* line 2376, ../scss/app.scss */
+  /* line 2399, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li > a:hover {
     border-color: #000;
   }
-  /* line 2379, ../scss/app.scss */
+  /* line 2402, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown > a {
     background: #3F454B !important;
     border-bottom-color: #000;
   }
-  /* line 2383, ../scss/app.scss */
+  /* line 2406, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown .fa {
     margin-right: 10px;
   }
-  /* line 2386, ../scss/app.scss */
+  /* line 2409, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown > .dropdown {
     height: auto;
     width: auto;
@@ -11146,7 +11185,7 @@ form.k-filter-menu input.k-textbox {
     min-width: 100%;
     background: transparent;
   }
-  /* line 2397, ../scss/app.scss */
+  /* line 2420, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown > .dropdown li {
     display: block;
     position: relative;
@@ -11154,14 +11193,14 @@ form.k-filter-menu input.k-textbox {
     margin: 0;
     float: none;
   }
-  /* line 2403, ../scss/app.scss */
+  /* line 2426, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown > .dropdown li a {
     font-weight: normal;
     padding: 0 22px 0 42px;
     display: block;
     float: none;
   }
-  /* line 2412, ../scss/app.scss */
+  /* line 2435, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown:hover > .dropdown {
     display: block;
     height: auto;
@@ -11175,7 +11214,7 @@ form.k-filter-menu input.k-textbox {
     min-width: 100%;
     background: transparent;
   }
-  /* line 2427, ../scss/app.scss */
+  /* line 2450, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.active > a {
     background: #000;
     color: #e69c17;
@@ -11185,7 +11224,7 @@ form.k-filter-menu input.k-textbox {
     border-radius: 0;
   }
 }
-/* line 2443, ../scss/app.scss */
+/* line 2466, ../scss/app.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -11212,12 +11251,12 @@ footer:after {
   clear: both;
 }
 
-/* line 2467, ../scss/app.scss */
+/* line 2490, ../scss/app.scss */
 label.error {
   color: #ff5555 !important;
 }
 
-/* line 2471, ../scss/app.scss */
+/* line 2494, ../scss/app.scss */
 textarea.error,
 input[type=text].error,
 .select.error .chosen-single {
@@ -11226,45 +11265,45 @@ input[type=text].error,
   background: rgba(255, 85, 85, 0.125);
   margin-bottom: 1rem;
 }
-/* line 2478, ../scss/app.scss */
+/* line 2501, ../scss/app.scss */
 textarea.error[placeholder],
 input[type=text].error[placeholder],
 .select.error .chosen-single[placeholder] {
   color: #ff5555;
 }
-/* line 2481, ../scss/app.scss */
+/* line 2504, ../scss/app.scss */
 textarea.error::-webkit-input-placeholder,
 input[type=text].error::-webkit-input-placeholder,
 .select.error .chosen-single::-webkit-input-placeholder {
   color: #ff5555;
 }
-/* line 2485, ../scss/app.scss */
+/* line 2508, ../scss/app.scss */
 textarea.error:-moz-placeholder,
 input[type=text].error:-moz-placeholder,
 .select.error .chosen-single:-moz-placeholder {
   /* Firefox 18- */
   color: #ff5555;
 }
-/* line 2489, ../scss/app.scss */
+/* line 2512, ../scss/app.scss */
 textarea.error::-moz-placeholder,
 input[type=text].error::-moz-placeholder,
 .select.error .chosen-single::-moz-placeholder {
   /* Firefox 19+ */
   color: #ff5555;
 }
-/* line 2493, ../scss/app.scss */
+/* line 2516, ../scss/app.scss */
 textarea.error:-ms-input-placeholder,
 input[type=text].error:-ms-input-placeholder,
 .select.error .chosen-single:-ms-input-placeholder {
   color: #ff5555;
 }
-/* line 2496, ../scss/app.scss */
+/* line 2519, ../scss/app.scss */
 .sidebar-form textarea.error, .sidebar-form
 input[type=text].error, .sidebar-form
 .select.error .chosen-single {
   color: #ff5555 !important;
 }
-/* line 2499, ../scss/app.scss */
+/* line 2522, ../scss/app.scss */
 textarea.error + small.error,
 input[type=text].error + small.error,
 .select.error .chosen-single + small.error {
@@ -11272,11 +11311,11 @@ input[type=text].error + small.error,
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 2503, ../scss/app.scss */
+  /* line 2526, ../scss/app.scss */
   #content-wrapper.sticky {
     padding-top: 55px;
   }
-  /* line 2505, ../scss/app.scss */
+  /* line 2528, ../scss/app.scss */
   #content-wrapper.sticky #fixed-header {
     position: fixed;
     left: 236px;
@@ -11284,17 +11323,17 @@ input[type=text].error + small.error,
     top: 0;
     z-index: 10;
   }
-  /* line 2511, ../scss/app.scss */
+  /* line 2534, ../scss/app.scss */
   .no-sidebar #content-wrapper.sticky #fixed-header {
     left: 0;
     right: 0;
   }
-  /* line 2515, ../scss/app.scss */
+  /* line 2538, ../scss/app.scss */
   .wide-sidebar #content-wrapper.sticky #fixed-header {
     left: 310px;
   }
 
-  /* line 2521, ../scss/app.scss */
+  /* line 2544, ../scss/app.scss */
   .search-sidebar-offcanvas.sticky {
     position: fixed !important;
     left: 0px;
@@ -11302,7 +11341,7 @@ input[type=text].error + small.error,
     z-index: 10;
   }
 }
-/* line 2528, ../scss/app.scss */
+/* line 2551, ../scss/app.scss */
 .panel-top-title {
   margin: 10px 0 0px 0 !important;
   padding: 10px 15px;
@@ -11313,19 +11352,19 @@ input[type=text].error + small.error,
   box-shadow: none;
   color: #444;
 }
-/* line 2537, ../scss/app.scss */
+/* line 2560, ../scss/app.scss */
 .modal-body .panel-top-title {
   font-size: 16px;
   padding: 8px 10px;
   font-weight: bold;
 }
-/* line 2542, ../scss/app.scss */
+/* line 2565, ../scss/app.scss */
 .panel-top-title ~ .panel {
   border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 2547, ../scss/app.scss */
+/* line 2570, ../scss/app.scss */
 .panel-top-title.dark-title {
   -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 13px inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 13px inset;
@@ -11346,14 +11385,14 @@ input[type=text].error + small.error,
   text-shadow: 0 -1px 0px #000;
 }
 
-/* line 2570, ../scss/app.scss */
+/* line 2593, ../scss/app.scss */
 .preloader {
   background: #fff url(../images/bg_diagonal_noise.png) 0 0 repeat !important;
   position: relative;
   height: 100vh;
   margin: 0 !important;
 }
-/* line 2575, ../scss/app.scss */
+/* line 2598, ../scss/app.scss */
 .preloader img {
   display: block;
   position: absolute;
@@ -11361,7 +11400,7 @@ input[type=text].error + small.error,
   left: 50%;
   margin: -32px 0 0 -32px;
 }
-/* line 2582, ../scss/app.scss */
+/* line 2605, ../scss/app.scss */
 .preloader p {
   text-align: center;
   display: block;

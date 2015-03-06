@@ -8,7 +8,9 @@
 	<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
 	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/jquery.msgbox.css" />
-	<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
+	<link rel="stylesheet" href="css/kendo-theme.css" />
+<link rel="stylesheet" href="css/app.css" />
 
 	<script src="js/modernizr.js"></script>
 
@@ -55,13 +57,14 @@
 				</ul-->
 			</section>
 		</nav>	
+		<div id="user-inbox"></div><!-- end div#user-inbox -->
 		
 		<div class="row" id="content">
 		    <div class="small-12 medium-12 large-12 columns">
-
 		    </div><!-- end columns -->
 		</div><!-- end row -->
 	</section><!-- end main section --> 
+
 
 	<footer id="footer">
 		<div class="row">
@@ -70,6 +73,9 @@
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>
+	<script id="command-template" type="text/x-kendo-template">
+			<a href="\#" data-options="align:left" class="button action radius"><i class="fa fa-cog"></i></a>	
+		</script>
 
 	<script type="text/javascript" src="js/jquery.js"></script> 
 	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script> 
@@ -77,7 +83,9 @@
 	<script type="text/javascript" src="js/kendo.all.min.js"></script> 
 	<script type="text/javascript" src="js/foundation.min.js"></script> 
 	<script type="text/javascript" src="js/chosen.jquery.js"></script> 
+	<script type="text/javascript" src="tables/user-inbox.js"></script> 
 
 	<script type="text/javascript" src="js/app.js"></script>
+	<!-- we're using this kendo-template for the actions button on each row of the table - called in the app.js file --> 
 </body>
 </html>

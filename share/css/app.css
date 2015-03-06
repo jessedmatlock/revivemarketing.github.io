@@ -47,7 +47,6 @@ html * {
   outline: none;
 }
 
-
 *,
 *:before,
 *:after {
@@ -63,6 +62,8 @@ body {
 	height: 100%;
 	position: relative;
 	background: #303030;
+	background: #303030 url('../images/checkered-bg.jpg') repeat left top;
+	
 }
 
 html {
@@ -830,7 +831,7 @@ button, .button {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.25rem;
+  margin: 0 0 10px;
   position: relative;
   text-decoration: none;
   text-align: center;
@@ -844,6 +845,7 @@ button, .button {
   font-size: 1rem;
   transition: background-color 300ms ease-out;
   border-radius: 3px;
+  
   background: #8CC33F;
   background: -webkit-gradient(linear, left top, left bottom, from(#3C89B6), to(#204b72));
   background: -moz-linear-gradient(center top, #3C89B6 0%, #204b72 100%);
@@ -859,15 +861,21 @@ button, .button {
   color: #fff;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus, 
+.button:hover {
   background: #204b72;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   color: #FFFFFF;
 }
 
-button.secondary, .button.secondary {
+button.secondary,
+.button.secondary {
   background: #b9b9b9;
   background: -webkit-gradient(linear, left top, left bottom, from(#e7e7e7), to(#b9b9b9));
   background: -moz-linear-gradient(center top, #e7e7e7 0%, #b9b9b9 100%);
@@ -883,11 +891,11 @@ button.secondary, .button.secondary {
   color: #555;
 }
 
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-  background-color: #b9b9b9;
+button.secondary:hover, button.secondary:focus, .button.secondary:hover {
+  background: #b9b9b9;
 }
 
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover, button.secondary:focus, .button.secondary:hover {
   color: #333333;
 }
 
@@ -912,7 +920,7 @@ button.success,
   color: #fff;
 }
 
-button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+button.success:hover, button.success:focus, .button.success:hover {
   background: #709d31;
 }
 
@@ -994,19 +1002,21 @@ button.large, .button.large {
 }
 
 button.small, .button.small {
-  padding-top: 0.875rem;
-  padding-right: 1.75rem;
-  padding-bottom: 0.9375rem;
-  padding-left: 1.75rem;
+padding-top: 0.45rem;
+padding-right: 1.0rem;
+padding-bottom: .55rem;
+padding-left: 1.0rem;
   font-size: 0.8125rem;
 }
 
 button.tiny, .button.tiny {
-  padding-top: 0.625rem;
-  padding-right: 1.25rem;
-  padding-bottom: 0.6875rem;
-  padding-left: 1.25rem;
   font-size: 0.6875rem;
+  
+  padding-top: 0.225rem;
+  padding-right: .5rem;
+  padding-bottom: .235rem;
+  padding-left: .5rem;
+  
 }
 
 button.expand, .button.expand {
@@ -1193,8 +1203,6 @@ button::-moz-focus-inner {
 }
 
 .button-group > li > button, .button-group > li .button {
-  border-left: 1px solid;
-  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .button-group > li:first-child button, .button-group > li:first-child .button {
@@ -7886,8 +7894,8 @@ body.login .logo {
   margin: 60px auto 40px;
 }
 body.login .main-section {
-	background: #222 url(../images/login-bg.png) 0 0 repeat;
-	
+	background: transparent	!important;
+	box-shadow: none !important;
 }
 
 #login-wrapper {
@@ -7920,16 +7928,33 @@ body.login .main-section {
   text-shadow: 0 -1px 0px #000;
   padding: 10px 0 0;
 }
-
-
+#content-header {
+  height: 50px;
+  line-height: 48px;
+  background: #eaeaea url(../images/header-bg.jpg) 0 0 repeat-x;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 5px 20px;
+  position: relative;
+  width: 1094px;
+  margin: 0 auto;
+}
 .main-section {
 	min-height: 100vh;
 	height: auto;
-	background: #333 url('../images/checkered-bg.jpg') repeat left top;
-	
+	background: #eaeaea url(../images/header-bg.jpg) 0 0 repeat-x;
+	max-width: 100%;
+	width: 1094px;
+	margin: 0 auto;
 }
 
-
+.table-wrapper {
+	max-width: 1024px;
+	margin: 0 auto 20px;
+	padding-top: 10px;
+}
+.table-wrapper .table-title {
+	color: #555;
+}
 
 /* FOOTER STYLING */ 
 footer {

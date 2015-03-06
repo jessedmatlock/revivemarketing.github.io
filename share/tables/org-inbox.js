@@ -13,32 +13,123 @@
 
 
 $(document).ready(function() {
-	var inboxData = [{
+	var orgInboxData = [{
 	    ShareID: "654789123",
-	    From: "John B. Good",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/14 10:13:12",
-	    ExpOn: "01/09/14 10:13:12",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789124",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/14 10:13:12",
-	    ExpOn: "01/09/14 10:13:12",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789125",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/14 10:13:12",
-	    ExpOn: "01/09/14 10:13:12",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789126",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789127",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789128",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789129",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789130",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789131",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789132",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789133",
+	    From: "Orgization Name",
+		To: "Patrick Mills",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -47,47 +138,18 @@ $(document).ready(function() {
 	
     $("#org-inbox").kendoGrid({
         dataSource: {
-			data: inboxData
+			data: orgInboxData,
 //            type: "odata",
 //            transport: {
 //               read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Orders"
 //           },
 //            pageSize: 20,
 //            serverPaging: true,
+			sortable: {
+			    mode: "single",
+			    allowUnsort: false
+			},
             serverFiltering: true,
-            schema: {
-                model: {
-                    fields: {
-                        ShareID: {
-                            type: "number"
-                        },
-                        From: {
-                            type: "string"
-                        },
-                        ExportLabel: {
-                            type: "string"
-                        },
-                        SentOn: {
-                            type: "date"
-                        },
-                        ExpOn: {
-                            type: "date"
-                        },
-                        Size: {
-                            type: "number"
-                        },
-                        Type: {
-                            type: "string"
-                        },
-                        Forwarded: {
-                            type: "string"
-                        },
-                        Downloads: {
-                            type: "string"
-                        }
-                    }
-                }
-            }
         },
         height: 550,
 		filterable: {
@@ -99,10 +161,17 @@ $(document).ready(function() {
         pageable: true,
         columns: [{
 		    template: "<input type='checkbox' class='checkbox' />",
-		    width: 20
+		    width: 30,
+		    title: "<input type='checkbox' class='checkbox' />",
+		    filterable: false
+		},{
+		    template: kendo.template($("#command-template").html()),
+			width: 50,
+			title: " ",
+			filterable: false
 		},{
             field: "ShareID",
-            width: 100,
+            width: 120,
             title: "Share ID",
             filterable: {
                 cell: {
@@ -116,13 +185,22 @@ $(document).ready(function() {
             width: 150,
             filterable: {
                 cell: {
-                    showOperators: false
+                    showOperators: true
+                }
+            }
+        },{
+            field: "To",
+            title: "To",
+            width: 150,
+            filterable: {
+                cell: {
+                    showOperators: true
                 }
             }
         }, {
             field: "ExportLabel",
             title: "Export Label",
-            width: 160,
+            width: 120,
             filterable: {
                 cell: {
                     operator: "gte"
@@ -131,23 +209,26 @@ $(document).ready(function() {
         }, {
             field: "SentOn",
             title: "Sent On",
-            format: "{0:MM/dd/yyyy}"
+    		format: "{0: MM/dd/yy HH:mm}",
+			width: 150
         }, {
             field: "ExpOn",
             title: "Expires On",
-            format: "{0:MM/dd/yyyy}"
+    		format: "{0: MM/dd/yy HH:mm}",
+			width: 150
         }, {
             field: "Size",
-            width: 50,
+            width: 80,
             filterable: {
                 cell: {
-                    operator: "gte"
+                    operator: "gte",
+                    showOperators: false
                 }
             }
         }, {
             field: "Type",
             title: "Type",
-            width: 50,
+            width: 80,
             filterable: {
                 cell: {
                     showOperators: false,
@@ -156,24 +237,26 @@ $(document).ready(function() {
             }
         }, {
             field: "Forwarded",
-            width: 50,
+            width: 80,
             title: "Forwarded",
             filterable: {
                 cell: {
-                    showOperators: false,
-                    operator: "contains"
+                    operator: "gte",
+                    showOperators: false
                 }
             }
         }, {
            field: "Downloads",
-           width: 50,
+           width: 80,
            title: "Downloads",
            filterable: {
                cell: {
-                   showOperators: false,
-                   operator: "contains"
+                   operator: "gte",
+                   showOperators: false
                }
            }
-       }]
-    });
+		}]
+		
+    }).data("kendoGrid");  
+	//bind click event to the checkbox
 });

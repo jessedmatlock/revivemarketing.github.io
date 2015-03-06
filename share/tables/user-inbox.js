@@ -15,7 +15,7 @@
 $(document).ready(function() {
 	var inboxData = [{
 	    ShareID: "654789123",
-	    From: "John B. Good",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -24,8 +24,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789124",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -34,8 +34,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789125",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -44,8 +44,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789126",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -54,8 +54,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789127",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -64,8 +64,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789128",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -74,8 +74,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789129",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -84,8 +84,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789130",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -94,8 +94,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789131",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -104,8 +104,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789132",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -114,8 +114,8 @@ $(document).ready(function() {
 	    Forwarded: "1",
 	    Downloads: "4"
 	},{
-	    ShareID: "654789123",
-	    From: "John B. Good",
+	    ShareID: "654789133",
+	    From: "Orgization Name",
 	    ExportLabel: "Case-1234",
 	    SentOn: "01/09/2014 12:51",
 	    ExpOn: "01/09/2014 12:51",
@@ -151,11 +151,16 @@ $(document).ready(function() {
         columns: [{
 		    template: "<input type='checkbox' class='checkbox' />",
 		    width: 30,
-		    title: " ",
+		    title: "<input type='checkbox' class='checkbox' />",
 		    filterable: false
 		},{
+		    template: kendo.template($("#command-template").html()),
+			width: 50,
+			title: " ",
+			filterable: false
+		},{
             field: "ShareID",
-            width: 150,
+            width: 120,
             title: "Share ID",
             filterable: {
                 cell: {
@@ -184,12 +189,12 @@ $(document).ready(function() {
         }, {
             field: "SentOn",
             title: "Sent On",
-    		format: "{0: MM/dd/yyyy HH:mm}",
+    		format: "{0: MM/dd/yy HH:mm}",
 			width: 150
         }, {
             field: "ExpOn",
             title: "Expires On",
-    		format: "{0: MM/dd/yyyy HH:mm}",
+    		format: "{0: MM/dd/yy HH:mm}",
 			width: 150
         }, {
             field: "Size",
@@ -230,28 +235,8 @@ $(document).ready(function() {
                    showOperators: false
                }
            }
-		},{
-		    template: kendo.template($("#command-template").html()),
-			width: 30,
-			title: " ",
-			filterable: false
 		}]
 		
     }).data("kendoGrid");  
 	//bind click event to the checkbox
 });
-/*
-command: [{
-    name: 'action',
-    template: kendo.template($("#command-template").html()),
-	title: " ",
-	width: "40px", 
-    click: function(e) {
-        //e.preventDefault();
-        alert('Dropdown to be implemented in LIVE APP');
-    }
-}],
-title: " ",
-filterable: false,
-width: 50
-*/

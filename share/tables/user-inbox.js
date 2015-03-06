@@ -17,8 +17,8 @@ $(document).ready(function() {
 	    ShareID: "654789123",
 	    From: "John B. Good",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014",
-	    ExpOn: "01/09/2014",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -27,8 +27,8 @@ $(document).ready(function() {
 	    ShareID: "654789123",
 	    From: "John B. Good",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014",
-	    ExpOn: "01/09/2014",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -37,8 +37,88 @@ $(document).ready(function() {
 	    ShareID: "654789123",
 	    From: "John B. Good",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014",
-	    ExpOn: "01/09/2014",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789123",
+	    From: "John B. Good",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789123",
+	    From: "John B. Good",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789123",
+	    From: "John B. Good",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789123",
+	    From: "John B. Good",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789123",
+	    From: "John B. Good",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789123",
+	    From: "John B. Good",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789123",
+	    From: "John B. Good",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
+	    Size: "892MB",
+	    Type: "Secure",
+	    Forwarded: "1",
+	    Downloads: "4"
+	},{
+	    ShareID: "654789123",
+	    From: "John B. Good",
+	    ExportLabel: "Case-1234",
+	    SentOn: "01/09/2014 12:51",
+	    ExpOn: "01/09/2014 12:51",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -54,44 +134,11 @@ $(document).ready(function() {
 //           },
 //            pageSize: 20,
 //            serverPaging: true,
+			sortable: {
+			    mode: "single",
+			    allowUnsort: false
+			},
             serverFiltering: true,
-            schema: {
-                model: {
-                    fields: {
-		                Action: {
-		                	editable: false,
-		                	nullable: true
-		                },                      	
-                        ShareID: {
-                            type: "number"
-                        },
-                        From: {
-                            type: "string"
-                        },
-                        ExportLabel: {
-                            type: "string"
-                        },
-                        SentOn: {
-                            type: "date"
-                        },
-                        ExpOn: {
-                            type: "date"
-                        },
-                        Size: {
-                            type: "number"
-                        },
-                        Type: {
-                            type: "string"
-                        },
-                        Forwarded: {
-                            type: "string"
-                        },
-                        Downloads: {
-                            type: "string"
-                        }
-                    }
-                }
-            }
         },
         height: 550,
 		filterable: {
@@ -106,7 +153,6 @@ $(document).ready(function() {
 		    width: 30,
 		    title: " ",
 		    filterable: false
-        
 		},{
             field: "ShareID",
             width: 150,
@@ -129,7 +175,7 @@ $(document).ready(function() {
         }, {
             field: "ExportLabel",
             title: "Export Label",
-            width: 160,
+            width: 120,
             filterable: {
                 cell: {
                     operator: "gte"
@@ -138,14 +184,16 @@ $(document).ready(function() {
         }, {
             field: "SentOn",
             title: "Sent On",
-            format: "{0:MM/dd/yyyy}"
+    		format: "{0: MM/dd/yyyy HH:mm}",
+			width: 150
         }, {
             field: "ExpOn",
             title: "Expires On",
-            format: "{0:MM/dd/yyyy}"
+    		format: "{0: MM/dd/yyyy HH:mm}",
+			width: 150
         }, {
             field: "Size",
-            width: 150,
+            width: 80,
             filterable: {
                 cell: {
                     operator: "gte",
@@ -155,7 +203,7 @@ $(document).ready(function() {
         }, {
             field: "Type",
             title: "Type",
-            width: 100,
+            width: 80,
             filterable: {
                 cell: {
                     showOperators: false,
@@ -164,7 +212,7 @@ $(document).ready(function() {
             }
         }, {
             field: "Forwarded",
-            width: 100,
+            width: 80,
             title: "Forwarded",
             filterable: {
                 cell: {
@@ -174,7 +222,7 @@ $(document).ready(function() {
             }
         }, {
            field: "Downloads",
-           width: 100,
+           width: 80,
            title: "Downloads",
            filterable: {
                cell: {
@@ -183,19 +231,27 @@ $(document).ready(function() {
                }
            }
 		},{
-		    command: [{
-		        name: 'action',
-		        template: kendo.template($("#command-template").html()),
-		        click: function(e) {
-		            //e.preventDefault();
-		            alert('Dropdown to be implemented in LIVE APP');
-		        }
-		    }],
-		    title: " ",
-		    filterable: false,
-		    width: 50
+		    template: kendo.template($("#command-template").html()),
+			width: 30,
+			title: " ",
+			filterable: false
 		}]
 		
     }).data("kendoGrid");  
 	//bind click event to the checkbox
 });
+/*
+command: [{
+    name: 'action',
+    template: kendo.template($("#command-template").html()),
+	title: " ",
+	width: "40px", 
+    click: function(e) {
+        //e.preventDefault();
+        alert('Dropdown to be implemented in LIVE APP');
+    }
+}],
+title: " ",
+filterable: false,
+width: 50
+*/

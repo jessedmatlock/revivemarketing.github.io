@@ -7994,6 +7994,11 @@ body.login #main-section {
 #share-header h4 {
 	color: #eee;
 }
+@media screen and (max-width: 1023px) {
+	#share-header h4 {
+		text-align: center !important;
+	}
+}
 #share-player {
 	background: #1C2022;
 	padding: 20px;
@@ -8010,13 +8015,23 @@ body.login #main-section {
 	display: inline-block;
 	width: 33%;
 	font-size: 20px;
+	line-height: 1.5;
+}
+@media screen and (max-width:1023px) {
+	#share-details .detail-item {
+		width: 100%;
+		font-size: 20px;
+		text-align: center !important;
+	}
 }
 #share-details .detail-item span {
 	color: #ccc;
 	margin-right: 5px;
 }
-#share-details .detail-item:nth-child(3n) {
-	text-align: right;
+@media screen and (max-width:1024px) {
+	#share-details .detail-item:nth-child(3n) {
+		text-align: right;
+	}	
 }
 
 #share-items {
@@ -8053,10 +8068,20 @@ body.login #main-section {
 	display: block;
 	float: left;
 	width: 50%;
-	font-size: 20px;	
+	font-size: 20px;
+	line-height: 1.5;	
 	color: #414A50;
 	padding-left: 15px;
 }
+@media screen and (max-width:1023px) {
+	#share-items  .detail-item {
+		width: 100%;
+		font-size: 20px;
+		text-align: center !important;
+	}
+	
+}
+
 #share-items .detail-item span {
 	color: #515D64;
 }

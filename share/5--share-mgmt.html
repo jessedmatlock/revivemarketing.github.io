@@ -35,7 +35,7 @@
 
 			<section class="top-bar-section">
 				<ul class="right">
-					<li class="active"><a href="javascript:void(0);">Page</a></li>
+					<li class=""><a href="4-share-inbox.html">Inbox</a></li>
 					<li><a href="javascript:void(0);">Page <span class="label round">2</span></a></li>
 					<li class="has-dropdown"> <a href="javascript:void(0);">Page</a>
 						<ul class="dropdown">
@@ -59,7 +59,7 @@
 						</ul>
 					</li>
 		            <li class="user-profile">
-		                <a href="javascript:void(0);" data-reveal-id="UserProfileModal"><img src="images/avatar-icon.png" class="user-avatar"/>Username</a>
+		                <a href="javascript:void(0);" data-reveal-id="user-profile-modal"><img src="images/avatar-icon.png" class="user-avatar"/>Username</a>
 		            </li>
 		            <li class="user-logout"><a href="2-login.html" class="has-tip tip-top" title="Logout"><i class="fa fa-power-off fa-lg"></i></a></li>
 				</ul>
@@ -71,32 +71,60 @@
 			</section>
 		</nav>	
 	</header><!-- end header #header. -->
-	<div class="clearfix" id="content-header">						
-		<h3 class="">Share Management</h3>
+	
+	<div class="clearfix" id="content-header">	
+		<div class="row">
+		    <div class="small-12 medium-12 large-12 columns">
+		        <h3 class="">Share Management</h3>				
+		    </div><!-- end columns -->
+		</div><!-- end row -->							
 	</div><!-- end #content-header -->
 	
-	<section class="main-section clearfix">
-		
-		<div class="table-wrapper">
-			<h4 class="table-title">Org. Inbox</h4>
-			<a href="#" class="button small secondary"><i class="fa fa-cloud-download"></i> Download Selected</a>
-			<a href="#" class="button small secondary"><i class="fa fa-trash"></i> Remove Selected</a>
-			<div id="org-inbox"></div><!-- end div#org-inbox -->		
-		</div><!-- end div.table-wrapper -->
-		<div class="table-wrapper">
-			<h4 class="table-title">Org. Outbox</h4>
-			<a href="#" class="button small secondary"><i class="fa fa-cloud-download"></i> Download Selected</a>
-			<a href="#" class="button small secondary"><i class="fa fa-trash"></i> Remove Selected</a>
-			
-			<div id="org-outbox"></div><!-- end div#org-outbox -->					
-		</div><!-- end div.table-wrapper -->
-		<div class="table-wrapper">
-			<h4 class="table-title">Your Inbox</h4>
-			<a href="#" class="button small secondary"><i class="fa fa-cloud-download"></i> Download Selected</a>
-			<a href="#" class="button small secondary"><i class="fa fa-trash"></i> Remove Selected</a>
-			
-			<div id="user-inbox"></div><!-- end div#user-inbox -->		
-		</div><!-- end div.table-wrapper -->
+	<section id="main-section" class="clearfix">
+		<div class="row">
+		    <div class="small-12 medium-12 large-12 columns">
+		        
+				<div class="table-wrapper">
+					<div class="row">
+					    <div class="small-12 medium-6 large-6 columns">
+					        <div class="table-title">Org. Inbox</div>
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-6 large-6 columns table-actions">
+					        <a href="#" class="button small"><i class="fa fa-cloud-download"></i> Download Selected</a>
+							<a href="#" class="button small"><i class="fa fa-trash"></i> Remove Selected</a>														
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					<div id="org-inbox"></div><!-- end div#org-inbox -->		
+				</div><!-- end div.table-wrapper -->
+				<div class="table-wrapper">
+					<div class="row">
+					    <div class="small-12 medium-6 large-6 columns">
+					        <div class="table-title">Org. Outbox</div>
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-6 large-6 columns table-actions">
+					        <a href="#" class="button small"><i class="fa fa-cloud-download"></i> Download Selected</a>
+							<a href="#" class="button small"><i class="fa fa-trash"></i> Remove Selected</a>														
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+
+					<div id="org-outbox"></div><!-- end div#org-outbox -->					
+				</div><!-- end div.table-wrapper -->
+				<div class="table-wrapper">
+					<div class="row">
+					    <div class="small-12 medium-6 large-6 columns">
+					        <div class="table-title">Your Inbox</div>
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-6 large-6 columns table-actions">
+					        <a href="#" class="button small"><i class="fa fa-cloud-download"></i> Download Selected</a>
+							<a href="#" class="button small"><i class="fa fa-trash"></i> Remove Selected</a>														
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+
+					<div id="user-inbox"></div><!-- end div#user-inbox -->		
+				</div><!-- end div.table-wrapper -->
+
+		    </div><!-- end columns -->
+		</div><!-- end row -->
 
 
 		
@@ -105,6 +133,7 @@
 
 		    </div><!-- end columns -->
 		</div><!-- end row -->
+		
 	</section><!-- end main section --> 
 
 	<footer id="footer">
@@ -114,9 +143,38 @@
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>
-	<script id="command-template" type="text/x-kendo-template">
-		<a href="\#" data-options="align:left" class="button action radius"><i class="fa fa-cog"></i></a>	
+	<script id="org-inbox-template" type="text/x-kendo-template">
+		<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
+		<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+		  <li><a href="javascript:void(0);">Download</a></li>
+		  <li><a href="6-share-details.html">View Details</a></li>
+		  <li><a href="javascript:void(0);" data-reveal-id="forward-share-modal"class="bottom-hr">Forward this Share</a></li>
+		  <li><a href="javascript:void(0);">Remove from All</a></li>
+		</ul>		
 	</script>
+	
+	<script id="org-outbox-template" type="text/x-kendo-template">
+		<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
+		<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+		  <li><a href="javascript:void(0);">Download</a></li>
+		  <li><a href="6-share-details.html">View Details</a></li>
+		  <li><a href="javascript:void(0);" data-reveal-id="manage-recipient-modal">Manage Recipient(s)</a></li>
+		  <li><a href="javascript:void(0);" data-reveal-id="forward-share-modal"class="bottom-hr">Forward this Share</a></li>
+		  <li><a href="javascript:void(0);" data-reveal-id="change-expiration-modal"class="bottom-hr">Change Expiration</a></li>
+		  <li><a href="javascript:void(0);">Unshare this Share</a></li>
+		</ul>
+	</script>
+	
+	<script id="user-inbox-template" type="text/x-kendo-template">
+		<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
+		<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+		  <li><a href="javascript:void(0);">Download</a></li>
+		  <li><a href="6-share-details.html">View Details</a></li>
+		  <li><a href="javascript:void(0);" data-reveal-id="forward-share-modal"class="bottom-hr">Forward this Share</a></li>
+		  <li><a href="javascript:void(0);">Remove from Inbox</a></li>
+		</ul>		
+	</script>
+	
 
 	<script type="text/javascript" src="js/jquery.js"></script> 
 	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script> 
@@ -132,8 +190,29 @@
 
 	<script type="text/javascript" src="js/app.js"></script>
 
-	<div id="UserProfileModal" class="reveal-modal" data-reveal>
-	  <h2>Awesome. I have it.</h2>
+	<div id="manage-recipient-modal" class="reveal-modal" data-reveal>
+	  <h2>Manage Recipient(s)</h2>
+	  <p class="lead">Your couch.  It is mine.</p>
+	  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+	  <a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+	<div id="forward-share-modal" class="reveal-modal" data-reveal>
+	  <h2>Forward this Share</h2>
+	  <p class="lead">Your couch.  It is mine.</p>
+	  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+	  <a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+	<div id="change-expiration-modal" class="reveal-modal" data-reveal>
+	  <h2>Change Expiration</h2>
+	  <p class="lead">Your couch.  It is mine.</p>
+	  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+	  <a class="close-reveal-modal">&#215;</a>
+	</div>
+
+	<div id="user-profile-modal" class="reveal-modal" data-reveal>
+	  <h2>User Profile Modal</h2>
 	  <p class="lead">Your couch.  It is mine.</p>
 	  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
 	  <a class="close-reveal-modal">&#215;</a>

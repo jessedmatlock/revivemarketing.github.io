@@ -154,7 +154,7 @@ $(document).ready(function() {
 		    title: "<input type='checkbox' class='checkbox' />",
 		    filterable: false
 		},{
-		    template: kendo.template($("#command-template").html()),
+		    template: kendo.template($("#user-inbox-template").html()),
 			width: 50,
 			title: " ",
 			filterable: false

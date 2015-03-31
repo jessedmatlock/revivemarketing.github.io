@@ -284,12 +284,12 @@ use this Syntax:
       	right: .35rem;
       }
       
-      .switch input ~ .positive,
+      .switch input:not(:checked) ~ .positive,
       .switch input:checked ~ .negative {
       	display: none;
       }
       
-    .switch input ~ .negative,
+    .switch input:not(:checked) ~ .negative,
 	.switch input:checked ~ .positive {
 		display: block !important;
 	}

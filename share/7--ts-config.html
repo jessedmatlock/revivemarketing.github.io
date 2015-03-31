@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Evidence Library Share : </title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link href="css/jquery.msgbox.css" rel="stylesheet" />
+	<link href="css/chosen.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
+<link rel="stylesheet" href="css/kendo-theme.css" />
+<link rel="stylesheet" href="css/app.css" />
+
+	<script src="js/modernizr.js"></script>
+
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {filter: none;}
+	  </style>
+	<![endif]-->
+
+</head>
+<body class="">	
+	<header id="header" class="">
+		<nav class="top-bar" data-topbar="">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#" data-msgbox="error"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon">
+					<a href="javascript:void(0);"><span>Menu</span></a>
+				</li>
+			</ul>
+
+			<section class="top-bar-section">
+				<ul class="right">
+					<li class=""><a href="4-share-inbox.html">Inbox</a></li>
+					<li><a href="4--dashboard.html">Dashboard</a></li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Page</a>
+						<ul class="dropdown">
+							<li class=""><a href="0-register.html"><i class="fa fa-cogs"></i> Register</a> </li>
+							<li class=""><a href="1-confirm-reg.html"><i class="fa fa-cogs"></i> Confirm Reg.</a> </li>
+							<li class=""><a href="2-login.html"><i class="fa fa-cogs"></i> Login</a> </li>
+							<li class=""><a href="2b-login.html"><i class="fa fa-cogs"></i> Login 2</a> </li>
+							<li class=""><a href="3-forgot-password.html"><i class="fa fa-cogs"></i> Forgot Password</a> </li>
+							<li class=""><a href="3b-reset-password.html"><i class="fa fa-cogs"></i> Reset Password</a> </li>
+							<li class=""><a href="4--dashboard.html"><i class="fa fa-cogs"></i> Dashboard</a> </li>
+		                    <li  class=""><a href="4-share-inbox.html"><i class="fa fa-cogs"></i> Share Inbox</a> </li>
+		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Mgmt.</a> </li>
+		                    <li  class=""><a href="6-share-details.html"><i class="fa fa-cogs"></i> Share Details</a> </li>
+		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Org. Config</a> </li>
+		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>
+		                    
+		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> User Profile (Admin)</a> </li>
+		                    
+		                    <li  class=""><a href="10-link-share.html"><i class="fa fa-cogs"></i> Link Share</a> </li>
+		                    <li  class=""><a href="11-passcoded-share.html"><i class="fa fa-cogs"></i> Access Code Share</a> </li>
+		                    <li  class=""><a href="12-secured-share.html"><i class="fa fa-cogs"></i> Secured Share</a> </li>
+		                    <li  class=""><a href="javascript:void(0);" data-reveal-id="global-modal" data-modal="partials/forward-share.html" class="global-modal"><i class="fa fa-cogs"></i> Forward Share</a> </li>
+		
+		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/support.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> Support Details</a> </li>
+		
+						</ul>
+					</li>
+		            <li class="user-profile">
+		                <a href="javascript:void(0);" data-modal="partials/user-profile.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><img src="images/avatar-icon.png" class="user-avatar"/>Username</a>
+		            </li>
+		            <li class="user-logout"><a href="2-login.html" class="has-tip tip-top" title="Logout"><i class="fa fa-power-off fa-lg"></i></a></li>
+				</ul>
+				<!--ul class="left">
+					<li>
+						<a href="#">Left Nav</a>
+					</li>
+				</ul-->
+			</section>
+		</nav>	
+	</header><!-- end header #header. -->
+	
+	<section id="main-section" class="clearfix">
+		<div class="row" id="content">
+		    <div class="small-12 medium-12 large-12 columns">
+				<h4 class="panel-top-title dark-title"><i class="fa fa-cogs"></i> Organization Management</h4>												
+				<div class="panel radius">													
+						
+							<div class="row">
+							    <div class="small-12 medium-4 large-3 columns">
+							        <div id="upload-logo">
+							        	<img src="http://placehold.it/180x115/aaa/fff.png&text=logo" class="" alt="alt" />
+									
+							        </div><!-- end div#upload-logo -->
+									<a href="javascript:void(0);" class="button success anim-button small" id="upload-logo-button" data-original="Upload Logo" data-active="Uploading ..."><i class="fa fa-cloud-upload"></i> Upload Logo</a>											                	
+									
+							    </div><!-- end columns -->
+								<div class="small-12 medium-8 large-9 columns">
+									<div class="panel radius">
+									
+										<div class="row">
+										    <div class="small-12 medium-12 large-4 columns">
+										        <label for="active">Active</label>
+										        <div class="switch round">
+												  <input id="active" type="checkbox" name="active" checked>
+												  <label for="active"></label>
+													<div class="negative">No</div>
+													<div class="positive">Yes</div>
+												</div>							        
+										    </div><!-- end columns -->
+										    <div class="small-12 medium-12 large-4 columns">
+										        <label for="logins">Validated Org.</label>
+										        <div class="switch round">
+												  <input id="logins" type="checkbox" name="logins" checked>
+												  <label for="logins"></label>
+													<div class="negative">No</div>
+													<div class="positive">Yes</div>
+												</div>							        
+										    </div><!-- end columns -->
+                                            <div class="small-12 medium-12 large-4 columns">
+                                            </div><!-- end columns -->
+										</div><!-- end row -->
+										<div class="row">
+										    <div class="small-12 medium-12 large-4 columns">
+										        <label for="">Contract Type</label>
+												<select name="contract-type" id="contract-type" class="select">
+													<option value="1">...</option>
+													<option value="2">...</option>
+													<option value="3">...</option>
+												</select>
+										    </div><!-- end columns -->
+										    <div class="small-12 medium-12 large-4 columns">
+										        <label for="">Contract End Date</label>
+										        <input type="text" name="" id="" tabindex="" value="" readonly/>
+										    </div><!-- end columns -->
+										    <div class="small-12 medium-12 large-4 columns">
+										        <label for="">Billing Interval</label>
+												<select name="billing" id="billing" class="select">
+													<option value="1">Annually</option>
+													<option value="2">Monthly</option>
+													<option value="3">...</option>
+												</select>
+										    </div><!-- end columns -->
+										</div><!-- end row -->
+                                        <div class="row">
+                                            <div class="small-12 medium-12 large-4 columns">
+                                                <div class="row collapse">
+                                                    <label for="api-key">API Key</label>
+                                                    <div class="small-10 columns">
+                                                        <input type="text" name="api-key" id="api-key" tabindex="" value="" />
+                                                    </div>
+                                                    <div class="small-2 columns">
+                                                        <span class="postfix"><a href="javascript:void(0);" id="" class=""><i class="fa fa-refresh"></i></a></span>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end columns -->
+                                            <div class="small-12 medium-12 large-4 columns">
+                                                <label for="">Organization URL</label>
+                                                <input type="text" name="" id="" tabindex="" value="" readonly />
+                                            </div><!-- end columns -->
+                                            <div class="small-12 medium-12 large-4 columns">
+                                            </div><!-- end columns -->
+                                        </div><!-- end row -->
+
+									</div>
+								</div>							
+							</div><!-- end row -->							
+					
+					        <h5 class="">Organization Details</h5>
+							<div class="panel radius">
+					
+								<div class="row">
+								    <div class="small-12 medium-12 large-3 columns">
+								        <label for="organization-name">Organization Name</label>
+								        <input type="text" name="organization-name"  id="organization-name"  tabindex="" value="" />							        
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-12 large-3 columns">
+								        <label for="organization-alias">Org. Short Name / Alias</label>
+								        <input type="text" name="organization-alias"  id="organization-alias"  tabindex="" value="" />							        
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Org. Category</label>
+										<select name="org-cat" id="org-cat" class="select">
+											<option value="1">...</option>
+											<option value="2">...</option>
+											<option value="3">...</option>
+										</select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Org. Type</label>
+										<select name="org-type" id="org-type" class="select">
+											<option value="1">...</option>
+											<option value="2">...</option>
+											<option value="3">...</option>
+										</select>
+								    </div><!-- end columns -->
+							
+								</div><!-- end row -->
+								<div class="row">
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Org. URL</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Time Zone</label>
+										<select name="timezone" id="timezone" class="select">
+											<option value="1">...</option>
+											<option value="2">...</option>
+											<option value="3">...</option>
+										</select>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Fax Number</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Max Downloads/Share</label>
+										<select name="max-dl" id="max-dl" class="select">
+											<option value="1">...</option>
+											<option value="2">...</option>
+											<option value="3">...</option>
+										</select>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								
+								<div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+								        <label for="">Address</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Address 2</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Address 3</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								
+								
+								<div class="row">
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">City</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">State</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Postal Code</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Country</label>
+										<select name="country" id="country" class="select" >
+											<option value="1">United States</option>
+											<option value="2">Canada</option>
+											<option value="3">...</option>
+										</select>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							</div>
+							
+							<h5 class="">Primary Contact Information</h5>
+					        <div class="panel radius">							
+								<div class="row">
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">First Name</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Last Name</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Email Address</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-6 large-3 columns">
+								        <label for="">Contact Number</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							</div>
+					
+					        <h5 class="">Email Configuration</h5>
+							<div class="panel radius">
+							
+								<div class="row">
+								    <div class="small-12 medium-4 large-4 columns">
+								        <label for="">Reply-To Address</label>
+								        <input type="text" name="" id="" tabindex="" value=""/>
+								
+								        <label for="">Email Template</label>
+										<select name="email-tpl" id="email-tpl" class="select" >
+											<option value="1">Password Reset - Default</option>
+											<option value="2">Secured Share - Default</option>
+                                            <option value="3">Accesscode Share - Customized</option>
+											<option value="4">...</option>
+										</select>
+								
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-4 large-3 columns text-right">
+								        <label for="" class="">Enable Whitelist?</label>
+								        <div class="switch round">
+										  <input id="whitelist" type="checkbox" name="whitelist" checked>
+										  <label for="whitelist"></label>
+											<div class="negative">No</div>
+											<div class="positive">Yes</div>
+										</div>							        
+								    </div><!-- end columns -->
+								    <div class="small-12 medium-4 large-5 columns">
+										<label for="domain-whitelist">Domain Whitelist (comma separated)</label>
+										<textarea name="domain-whitelist" id="domain-whitelist" class=""></textarea>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.panel radius -->
+							<h5 class="">User Management</h5>
+							<div class="panel radius">
+								<div class="row">
+								    <div class="small-12 medium-12 large-12 columns table-actions">
+									<a href="javascript:void(0);" data-modal="partials/invite-user.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal button success small"><i class="fa fa-user-plus"></i> Invite User</a>
+
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+
+								<div id="user-mgmt"></div><!-- end div#user-mgmt -->
+								
+							</div><!-- end div.panel radius -->
+							
+							
+							
+							<h5 class="">Distribution Groups</h5>
+
+							<div class="row">
+							    <div class="small-12 medium-12 large-12 columns">
+										<table id="" class="table">
+								          <thead>
+								            <tr>
+								              <th style="width: 250px">Group</th>
+								              <th>Members of Group</th>
+								              <th>&nbsp;</th>
+								            </tr>
+								          </thead>
+								          <tbody>
+								            <tr>
+								              <td><input type="text" name="group0"  id="group0" value="#UberGroup" tabindex="" /></td>
+								              <td>
+												<select name="group-members" id="group-members"  multiple  class="select" data-placeholder="Add Users to Group...">
+													<option value="0" selected>Jeff Schmeling</option>
+													<option value="1" selected>Christina Ye</option>
+													<option value="2" selected>Zach Bonham</option>
+												</select>
+											  </td>
+											  <td><a href="javascript:void(0);" class="button secondary hover-alert tiny delete-role"><i class="fa fa-times"></i></a></td>
+
+								            </tr>
+                                            <tr>
+                                              <td><input type="text" name="group1" id="group1" value="#Criminal Case Group" tabindex="" /></td>
+                                              <td>
+                                                  <select name="group-members1" id="group-members1" multiple class="select" data-placeholder="Add Users to Group...">
+                                                      <option value="0" selected>John Salvage</option>
+                                                      <option value="1" selected>Greg White</option>
+                                                  </select>
+                                              </td>
+                                              <td><a href="javascript:void(0);" class="button secondary hover-alert tiny delete-role"><i class="fa fa-times"></i></a></td>
+
+                                            </tr>
+                                            <tr>
+								              <td><input type="text" name="group"  id="group" value="" tabindex="" /></td>
+								              <td>
+												<select name="group-add" id="group-add"  multiple  class="select" data-placeholder="Add Users to Group...">
+													<option value="0">Jeff Schmeling</option>
+													<option value="1">Christina Ye</option>
+													<option value="2">Zach Bonham</option>
+                                                    <option value="3">John Salvage</option>
+                                                    <option value="4">Greg White</option>
+												</select>
+											  </td>
+								              <td><a href="javascript:void(0);" class="button secondary hover-alert tiny delete-role"><i class="fa fa-times"></i></a></td>
+								            </tr>
+											<tr>
+												<td><a href="javascript:void(0);" id="" class="button secondary hover-success tiny"><i class="fa fa-plus"></i> Add</a></td>
+												<td colspan="10">&nbsp;</td>
+											</tr>
+								          </tbody>
+								        </table>
+
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+
+					
+					<div class="row">
+					    <div class="small-12 medium-12 large-12 columns">
+					        <div class="panel-actions">											
+						        <a href="javascript:void(0);" class="button secondary">Cancel</a>											                	
+								<a href="javascript:void(0);" class="button success anim-button" id="save-notes" data-original="Save Changes" data-active="Saving ..."><i class="fa fa-floppy-o"></i> Save Changes</a>											                	
+						    </div><!-- end panel-actions -->
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					
+				</div><!-- end div.panel radius -->
+				
+		    </div><!-- end columns -->
+		</div><!-- end row -->
+	</section><!-- end main section --> 
+
+	<footer id="footer">
+		<div class="row">
+			<div class="small-12 medium-12 large-12 columns">
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
+			</div><!-- end columns --> 
+		</div><!-- end row --> 
+	</footer>
+	<script id="user-mgmt-template" type="text/x-kendo-template">
+		<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
+		<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+		  <li><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal bottom-hr"><i class="fa fa-pencil"></i> Edit User Details</a></li>
+		  <li><a href="javascript:void(0);" class="suspend-user"><i class="fa fa-cogs"></i> Suspend User Account</a></li>		
+		</ul>		
+	</script>
+	
+	<script id="user-role-template" type="text/x-kendo-template">
+		<select name="role" id="role-${ uid }" class="" >
+			<option value="">Super Admin</option>
+			<option value="">Originating Org</option>
+			<option value="">Receiving Org</option>
+		</select>
+	</script>
+	
+
+	<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.msgbox.js"></script> 
+	<script type="text/javascript" src="js/kendo.all.min.js"></script> 
+	<script type="text/javascript" src="js/foundation.min.js"></script> 
+	<script type="text/javascript" src="js/chosen.jquery.js"></script> 
+	<script type="text/javascript" src="tables/user-mgmt.js"></script> 
+	
+
+	<script type="text/javascript" src="js/app.js"></script>
+<div id="global-modal" class="reveal-modal" data-reveal></div>
+</body>
+</html>

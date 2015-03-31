@@ -106,12 +106,12 @@
 .jquery-msgbox.error {}
 .jquery-msgbox.error .jquery-msgbox-wrapper  {
     color: #fff;
-    background: #A50202;
+    background: #cc5555;
 }
 
 
 .jquery-msgbox.error .jquery-msgbox-wrapper .jquery-msgbox-button-submit {
-    background: #A50202;
+    background: #cc5555;
     border-color: #7a0101;
     color: #fff;
 }

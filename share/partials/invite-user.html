@@ -1,0 +1,50 @@
+<div class="modal-title">Invite User</div><!-- end div.modal-title -->
+
+	<div class="row">
+	    <div class="small-12 medium-12 large-6 columns">
+	        <label for="organization-name">Organization Name</label>
+	        <input type="text" name="organization-name"  id="organization-name"  tabindex="" value="Allen PD" readonly />
+	    </div><!-- end columns -->
+	    <div class="small-12 medium-12 large-6 columns">
+			<label for="email-address">Email Address</label>
+			<input type="text" name="email-address"  id="email-address"  tabindex="" value="email@domain.com" />
+	    </div><!-- end columns -->
+	
+	</div><!-- end row -->
+	
+	<div class="row">
+	    <div class="small-12 medium-6 large-6 columns">
+	        <label for="first-name">First Name</label>
+	        <input type="text" name="first-name"  id="first-name"  tabindex="" value="First Name" />
+	    </div><!-- end columns -->
+	    <div class="small-12 medium-6 large-6 columns">
+	        <label for="last-name">Last Name</label>
+	        <input type="text" name="last-name"  id="last-name"  tabindex="" value="Last Name" />
+	    </div><!-- end columns -->
+	</div><!-- end row -->
+	
+	<div class="row">
+	    <div class="small-12 medium-6 large-6 columns">
+	        <label for="user-role">User Role</label>
+			<select name="user-role" id="user-role" multiple class="select" data-placeholder="Choose this users Role(s)" >
+				<option value="">User</option>
+				<option value="">Admin</option>
+				<option value="">...</option>								
+			</select>
+	    </div><!-- end columns -->
+	    <div class="small-12 medium-6 large-6 columns">
+	        <label for="user-group">User Group</label>
+			<select name="user-group" id="user-group" multiple class="select" data-placeholder="Assign this user to a Group(s)" >
+				<option value="">Group1</option>
+				<option value="">Group2</option>
+				<option value="">...</option>								
+			</select>
+	    </div><!-- end columns -->
+	</div><!-- end row -->												
+
+<a class="close-reveal-modal"><i class="fa fa-times-circle"></i></a>
+
+<div class="modal-footer">
+	<a href="javascript:void(0);" class="button secondary close-modal">Cancel</a>											                	
+	<a href="javascript:void(0);" class="button success anim-button" data-original="Send Invite" data-active="Sending ..."><i class="fa fa-paper-plane"></i> Send Invite</a>											                		
+</div><!-- end div.modal-footer -->

@@ -1,16 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Evidence Library Share : </title>
-	<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
 	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/jquery.msgbox.css" />
+	<link href="css/jquery.msgbox.css" rel="stylesheet" />
+	<link href="css/chosen.css" rel="stylesheet" />
 	<link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
-<link rel="stylesheet" href="css/kendo-theme.css" />
-<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="css/kendo-theme.css" />
+	<link rel="stylesheet" href="css/app.css" />
 
 	<script src="js/modernizr.js"></script>
 
@@ -26,7 +27,7 @@
 		<nav class="top-bar" data-topbar="">
 			<ul class="title-area">
 				<li class="name">
-					<h1><a href="#"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
+					<h1><a href="#" data-msgbox="error"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
 				</li>
 				<li class="toggle-topbar menu-icon">
 					<a href="javascript:void(0);"><span>Menu</span></a>
@@ -36,11 +37,11 @@
 			<section class="top-bar-section">
 				<ul class="right">
 					<li class=""><a href="4-share-inbox.html">Inbox</a></li>
-					<li><a href="javascript:void(0);">Page <span class="label round">2</span></a></li>
+					<li><a href="4--dashboard.html">Dashboard</a></li>
 					<li class="has-dropdown"> <a href="javascript:void(0);">Page</a>
 						<ul class="dropdown">
 							<li class=""><a href="0-register.html"><i class="fa fa-cogs"></i> Register</a> </li>
-							<li class=""><a href="1-confirm-register.html"><i class="fa fa-cogs"></i> Confirm Reg.</a> </li>
+							<li class=""><a href="1-confirm-reg.html"><i class="fa fa-cogs"></i> Confirm Reg.</a> </li>
 							<li class=""><a href="2-login.html"><i class="fa fa-cogs"></i> Login</a> </li>
 							<li class=""><a href="2b-login.html"><i class="fa fa-cogs"></i> Login 2</a> </li>
 							<li class=""><a href="3-forgot-password.html"><i class="fa fa-cogs"></i> Forgot Password</a> </li>
@@ -50,16 +51,21 @@
 		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Mgmt.</a> </li>
 		                    <li  class=""><a href="6-share-details.html"><i class="fa fa-cogs"></i> Share Details</a> </li>
 		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Org. Config</a> </li>
-		                    <li  class=""><a href="7-user-profile.html"><i class="fa fa-cogs"></i> User Profile</a> </li>
-		                    <li  class=""><a href="8--user-mgmt.html"><i class="fa fa-cogs"></i> User Mgmt.</a> </li>
+		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>
+		                    
+		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> User Profile (Admin)</a> </li>
+		                    
 		                    <li  class=""><a href="10-link-share.html"><i class="fa fa-cogs"></i> Link Share</a> </li>
-		                    <li  class=""><a href="11-passcoded-share.html"><i class="fa fa-cogs"></i> Passcode Share</a> </li>
+		                    <li  class=""><a href="11-passcoded-share.html"><i class="fa fa-cogs"></i> Access Code Share</a> </li>
 		                    <li  class=""><a href="12-secured-share.html"><i class="fa fa-cogs"></i> Secured Share</a> </li>
-		                    <li  class=""><a href="forward-share.html"><i class="fa fa-cogs"></i> Forward Share</a> </li>
+		                    <li  class=""><a href="javascript:void(0);" data-reveal-id="global-modal" data-modal="partials/forward-share.html" class="global-modal"><i class="fa fa-cogs"></i> Forward Share</a> </li>
+		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/support.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> Support Details</a> </li>
+		
 						</ul>
 					</li>
 		            <li class="user-profile">
-		                <a href="javascript:void(0);" data-reveal-id="user-profile-modal"><img src="images/avatar-icon.png" class="user-avatar"/>Username</a>
+		                <a href="javascript:void(0);" data-modal="partials/user-profile.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><img src="images/avatar-icon.png" class="user-avatar"/>Username</a>
 		            </li>
 		            <li class="user-logout"><a href="2-login.html" class="has-tip tip-top" title="Logout"><i class="fa fa-power-off fa-lg"></i></a></li>
 				</ul>
@@ -78,11 +84,10 @@
 				<div id="share-header">
 					<a href="javascript:void(0);" data-options="align:left" data-dropdown="share" class="button small radius share-actions" id=""><i class="fa fa-cog"></i></a>
                     <ul id="share" data-dropdown-content class="f-dropdown">
-                      <li><a href="javascript:void(0);"><i class="fa fa-download"></i> Download</a></li>
+                      <li><a href="javascript:void(0);"><i class="fa fa-cloud-download"></i> Download</a></li>
+                      <li><a href="javascript:void(0);"><i class="fa fa-pencil"></i> Edit Details</a></li>
                       <li><a href="javascript:void(0);"><i class="fa fa-share"></i> Forward Share</a></li>
                       <li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Remove From ...</a></li>
-                      <li><a href="javascript:void(0);"><i class="fa fa-users"></i> Manage Recipients</a></li>
-                      <li><a href="javascript:void(0);"><i class="fa fa-calendar"></i> Change Expiration</a></li>
                       <li><a href="javascript:void(0);"><i class="fa fa-user-times"></i> Unshare from ...</a></li>
                     </ul>
                     
@@ -95,28 +100,47 @@
 					    </div><!-- end columns -->
 					</div><!-- end row -->
 				</div><!-- end div#share-header -->
+				<div id="share-details">
+					<div class="detail-item"><span>Originating Agency:</span> Plano PD</div>
+					<div class="detail-item"><span>From:</span> tammy.smith@collincoutyda.com</div>
+					<div class="detail-item"><span>Type:</span> SECURE SHARE</div>					
+					<div class="detail-item"><span>Shared On:</span> 04/09/15</div>					
+					<div class="detail-item"><span>Exp. On:</span> 05/09/15</div>
+					<div class="detail-item"><span>Size:</span> 728 MB</div>
+					
+				</div><!-- end div#share-details -->
+				
 				<div id="share-player">
 					<img src="images/video-player.jpg"  class="" alt="" />
 				</div><!-- end div#share-player -->
-				<div id="share-details">
-					<div class="detail-item"><span>From:</span> Org/Send Name</div>
-					<div class="detail-item"><span>Shared On:</span> 03/09/15 12:41</div>
-					<div class="detail-item"><span>Exp. On:</span> 04/09/15 12:41</div>
-					<div class="detail-item"><span>Size:</span> 728 MB</div>
-					<div class="detail-item"><span>Type:</span> SECURE SHARE</div>
-					
-				</div><!-- end div#share-details -->
 				<div id="share-items" class="clearfix">
 					<div class="share-item">
 						<div class="share-item-header clearfix">
-							<div class="detail-item"><span>Event/Case ID:</span> 00:1d:96:00:77:43-316086379</div>
-							<div class="detail-item"><span>Date:</span> 10/16/14 19:46:51</div>
-							<div class="detail-item"><span>Officer/Created By:</span> Chief. Taylor, Andy Gr.</div>
-
-							<div class="detail-item"><span>Vehicle/Device:</span> Car 54</div>
-							<div class="detail-item"><span>Category: DUI</span> </div>
-							<div class="detail-item"><span>Badge #:</span> 654684</div>
 							
+							<div class="row collapse">
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Event ID:</span> 00:1d:96:00:77:43-316086379</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Date:</span> 10/16/14 19:46:51</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Officer:</span> Chief. Taylor, Andy Gr.</div>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+							
+							<div class="row collapse">
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Vehicle/Device:</span> Car 54</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Category: </span> DUI </div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Badge #:</span> 654684</div>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+														
 						</div><!-- end div.share-item-header -->
 						<div class="share-item-streams">
 							<div class="row collapse">
@@ -153,15 +177,116 @@
 					
 					<div class="share-item">
 						<div class="share-item-header clearfix">
-							<div class="detail-item"><span>Event/Case ID:</span> 00:1d:96:00:77:43-316086379</div>
-							<div class="detail-item"><span>Date:</span> 10/16/14 19:46:51</div>
-							<div class="detail-item"><span>Officer/Created By:</span> Chief. Taylor, Andy Gr.</div>
-
-							<div class="detail-item"><span>Vehicle/Device:</span> Car 54</div>
-							<div class="detail-item"><span>Category: DUI</span> </div>
-							<div class="detail-item"><span>Badge #:</span> 654684</div>
+							<div class="row collapse">
+							    <div class="small-12 medium-12 large-4 columns">
+							        <div class="detail-item"><span>Case ID:</span> 00:1d:96:00:77:43-316086379</div>									
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+							        <div class="detail-item"><span>Created On:</span> 10/16/14 19:46:51</div>									
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+							        <div class="detail-item"><span>Created By:</span> Chief. Taylor, Andy Gr.</div>									
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+							
+							<div class="row collapse">
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Video Events:</span> 2</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 large-pull-4 columns">
+									<div class="detail-item"><span>Attachments: </span> 2 </div>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+							
+							<div class="row collapse">
+							    <div class="small-12 medium-12 large-12 columns">
+									<div class="detail-item"><span>Notes:</span> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+							
 							
 						</div><!-- end div.share-item-header -->
+						<div class="share-item-subheader clearfix">
+							<div class="row collapse">
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Event ID:</span> 00:1d:96:00:77:43-316086379</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Date:</span> 10/16/14 19:46:51</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Officer:</span> Chief. Taylor, Andy Gr.</div>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+						
+							<div class="row collapse">
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Vehicle/Device:</span> Car 54</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Category: </span> DUI </div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Badge #:</span> 654684</div>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+						</div>
+						<div class="share-item-streams">
+							<div class="row collapse">
+							    <div class="small-12 medium-6 large-3 columns">
+									<a href="javascript:void(0);" id="" class="share-stream ">	
+										<img src="images/stream1.jpg" alt="" />
+										<h6 class="">Stream 1</h6>																									        
+									</a>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-6 large-3 columns">
+									<a href="javascript:void(0);" id="" class="share-stream">	
+										<img src="images/stream2.jpg" alt="" />
+										<h6 class="">Stream 2</h6>																									        
+									</a>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-6 large-3 columns">
+									<a href="javascript:void(0);" id="" class="share-stream">	
+										<img src="images/stream1.jpg" alt="" />
+										<h6 class="">Stream 3</h6>																									        
+									</a>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-6 large-3 columns">
+									<a href="javascript:void(0);" id="" class="share-stream">	
+										<img src="images/stream2.jpg" alt="" />
+										<h6 class="">Stream 4</h6>																									        
+									</a>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+							
+						</div><!-- end div.share-item-streams -->
+						
+						<div class="share-item-subheader clearfix">
+							<div class="row collapse">
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Event ID:</span> 00:1d:96:00:77:43-316086379</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Date:</span> 10/15/14 16:32:37</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Officer:</span> Chief. Taylor, Andy Gr.</div>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+						
+							<div class="row collapse">
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Vehicle/Device:</span> Car 61</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Category: </span> Traffic Accident </div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-12 large-4 columns">
+									<div class="detail-item"><span>Badge #:</span> 554862</div>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+						</div>
+						
 						<div class="share-item-streams">
 							<div class="row collapse">
 							    <div class="small-12 medium-6 large-3 columns">
@@ -191,6 +316,39 @@
 							</div><!-- end row -->
 							
 						</div><!-- end div.share-item-streams -->
+						
+						
+						<div class="share-attachments">
+							<div class="row collapse">
+							    <div class="small-12 medium-6 large-3 columns">
+									<div class="share-attachment">	
+										<img src="images/attachment-icon.jpg" alt="" />
+										<h6 class="">evidence_notes.docx</h6>																									        
+									</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-6 large-3 columns">
+									<div class="share-attachment">	
+										<img src="images/attachment-icon.jpg" alt="" />
+										<h6 class="">evidence_notes.docx</h6>																									        
+									</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-6 large-3 columns">
+									<div class="share-attachment">	
+										<img src="images/attachment-icon.jpg" alt="" />
+										<h6 class="">evidence_notes.docx</h6>																									        
+									</div>
+							    </div><!-- end columns -->
+							    <div class="small-12 medium-6 large-3 columns">
+									<div class="share-attachment">	
+										<img src="images/attachment-icon.jpg" alt="" />
+										<h6 class="">certificate-of-whoknowswhat.pdf</h6>																									        
+									</div>
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+							
+						</div><!-- end div.share-attachments -->
+						
+						
 					</div><!-- end div.share-item -->
 					
 				</div><!-- end div#share-items -->
@@ -203,18 +361,20 @@
 	<footer id="footer">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">
-				<p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>
 
 	<script type="text/javascript" src="js/jquery.js"></script> 
-	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script> 
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
 	<script type="text/javascript" src="js/jquery.msgbox.js"></script> 
 	<script type="text/javascript" src="js/kendo.all.min.js"></script> 
 	<script type="text/javascript" src="js/foundation.min.js"></script> 
 	<script type="text/javascript" src="js/chosen.jquery.js"></script> 
 
 	<script type="text/javascript" src="js/app.js"></script>
+
+<div id="global-modal" class="reveal-modal" data-reveal></div>
 </body>
 </html>

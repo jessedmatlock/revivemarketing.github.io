@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Evidence Library Share : </title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link href="css/jquery.msgbox.css" rel="stylesheet" />
+	<link href="css/chosen.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
+	<link rel="stylesheet" href="css/kendo-theme.css" />
+	<link rel="stylesheet" href="css/app.css" />
+
+	<script src="js/modernizr.js"></script>
+
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {filter: none;}
+	  </style>
+	<![endif]-->
+
+</head>
+<body class="">	
+	<header id="header" class="">
+		<nav class="top-bar" data-topbar="">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#" data-msgbox="error"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon">
+					<a href="javascript:void(0);"><span>Menu</span></a>
+				</li>
+			</ul>
+
+			<section class="top-bar-section">
+				<ul class="right">
+					<li class=""><a href="4-share-inbox.html">Inbox</a></li>
+					<li><a href="4--dashboard.html">Dashboard</a></li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Page</a>
+						<ul class="dropdown">
+							<li class=""><a href="0-register.html"><i class="fa fa-cogs"></i> Register</a> </li>
+							<li class=""><a href="1-confirm-reg.html"><i class="fa fa-cogs"></i> Confirm Reg.</a> </li>
+							<li class=""><a href="2-login.html"><i class="fa fa-cogs"></i> Login</a> </li>
+							<li class=""><a href="2b-login.html"><i class="fa fa-cogs"></i> Login 2</a> </li>
+							<li class=""><a href="3-forgot-password.html"><i class="fa fa-cogs"></i> Forgot Password</a> </li>
+							<li class=""><a href="3b-reset-password.html"><i class="fa fa-cogs"></i> Reset Password</a> </li>
+							<li class=""><a href="4--dashboard.html"><i class="fa fa-cogs"></i> Dashboard</a> </li>
+		                    <li  class=""><a href="4-share-inbox.html"><i class="fa fa-cogs"></i> Share Inbox</a> </li>
+		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Mgmt.</a> </li>
+		                    <li  class=""><a href="6-share-details.html"><i class="fa fa-cogs"></i> Share Details</a> </li>
+		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Org. Config</a> </li>
+		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		                    
+		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> User Profile (Admin)</a> </li>
+		                    
+		                    <li  class=""><a href="10-link-share.html"><i class="fa fa-cogs"></i> Link Share</a> </li>
+		                    <li  class=""><a href="11-passcoded-share.html"><i class="fa fa-cogs"></i> Access Code Share</a> </li>
+		                    <li  class=""><a href="12-secured-share.html"><i class="fa fa-cogs"></i> Secured Share</a> </li>
+		                    <li  class=""><a href="javascript:void(0);" data-reveal-id="global-modal" data-modal="partials/forward-share.html" class="global-modal"><i class="fa fa-cogs"></i> Forward Share</a> </li>
+		
+		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/support.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> Support Details</a> </li>
+		
+						</ul>
+					</li>
+		            <li class="user-profile">
+		                <a href="javascript:void(0);" data-modal="partials/user-profile.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><img src="images/avatar-icon.png" class="user-avatar"/>Username</a>
+		            </li>
+		            <li class="user-logout"><a href="2-login.html" class="has-tip tip-top" title="Logout"><i class="fa fa-power-off fa-lg"></i></a></li>
+				</ul>
+				<!--ul class="left">
+					<li>
+						<a href="#">Left Nav</a>
+					</li>
+				</ul-->
+			</section>
+		</nav>	
+	</header><!-- end header #header. -->
+	
+	<section id="main-section" class="clearfix">
+		<div class="row" id="content">
+		    <div class="small-12 medium-12 large-12 columns">
+				<h4 class="panel-top-title dark-title"><i class="fa fa-cogs"></i> TS Settings</h4>												
+				<div class="panel radius">													
+						
+					        <h5 class="">Manage Organizations</h5>
+							<div id="manage-orgs"></div><!-- end div#manage-orgs -->		
+					
+					        <h5 class=""> Maintenance Settings</h5>
+							<div class="panel radius">
+								<div class="row">
+									<div class="small-12 medium-12 large-6 columns">
+									    <label for="maint-mode-toggle" class="switch-label">
+											<div class="switch tiny round">
+											  <input id="maint-mode-toggle" type="checkbox" name="maint-mode-toggle">
+											  <label for="maint-mode-toggle"></label>
+											<div class="negative">N</div>
+											<div class="positive">Y</div>
+											
+											</div>							        									    
+										Enable Maintenance Mode?</label>								    
+								    </div><!-- end columns -->
+									<div class="small-12 medium-12 large-6 columns">
+									    <label for="maint-mode-msg" class="switch-label">
+											<div class="switch tiny round">
+											  <input id="maint-mode-msg" type="checkbox" name="maint-mode-msg">
+											  <label for="maint-mode-msg"></label>
+											<div class="negative">N</div>
+											<div class="positive">Y</div>
+											
+											</div>							        									    
+										Show System-wide Message?</label>								    
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+								
+								<div class="row display-none" id="maint-mode">
+								    <div class="small-12 medium-12 large-12 columns">
+										<label for="maint-mode-msg">System Wide Message</label>
+										<textarea name="maint-mode-msg" id="maint-mode-msg" class=""></textarea>
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.panel radius -->
+						
+							<h5 class="">TS Users</h5>	
+							<div id="user-mgmt"></div><!-- end div#user-mgmt -->		
+							
+
+							<h5 class="">System Roles and Claims</h5>
+
+							<div class="row">
+							    <div class="small-12 medium-12 large-12 columns">
+									<div class="responsive-table">
+										<table id="" class="table">
+								          <thead>
+								            <tr>
+								              <th class="w150">Role</th>
+								              <th colspan="22">Claims</th>					
+								            </tr>
+								            <tr>
+								              <th class="w150">&nbsp;</th>
+								              <th>Claim 1</th>
+								              <th>Claim 2</th>
+								              <th>Claim 3</th>
+								              <th>Claim 4</th>
+								              <th>Claim 5</th>
+								              <th>Claim 6</th>
+								              <th>Claim 7</th>
+								              <th>Claim 8</th>
+								              <th>Claim 9</th>
+								              <th>Claim 10</th>
+								              <th>Claim 11</th>
+								              <th>Claim 12</th>
+								              <th>Claim 13</th>
+								              <th>Claim 14</th>
+								              <th>Claim 15</th>
+								              <th>Claim 16</th>
+								              <th>Claim 17</th>
+								              <th>Claim 18</th>
+								              <th>Claim 19</th>
+								              <th>Claim 20</th>
+								              <th>&nbsp;</th>
+								            </tr>
+								          </thead>
+								          <tbody>
+								            <tr>
+								              <td class="w150">Role Name</td>
+								              <td><label for="c1"><input type="checkbox" name=""  id="c1" value="" tabindex="" /></label></td>
+								              <td><label for="c2"><input type="checkbox" name=""  id="c2" value="" tabindex="" /></label></td>
+								              <td><label for="c3"><input type="checkbox" name=""  id="c3" value="" tabindex="" /></label></td>
+								              <td><label for="c4"><input type="checkbox" name=""  id="c4" value="" tabindex="" /></label></td>
+								              <td><label for="c5"><input type="checkbox" name=""  id="c5" value="" tabindex="" /></label></td>
+								              <td><label for="c6"><input type="checkbox" name=""  id="c6" value="" tabindex="" /></label></td>
+								              <td><label for="c7"><input type="checkbox" name=""  id="c7" value="" tabindex="" /></label></td>
+								              <td><label for="c8"><input type="checkbox" name=""  id="c8" value="" tabindex="" /></label></td>
+								              <td><label for="c9"><input type="checkbox" name=""  id="c9" value="" tabindex="" /></label></td>
+								              <td><label for="c10"><input type="checkbox" name=""  id="c10" value="" tabindex="" /></label></td>
+								              <td><label for="c11"><input type="checkbox" name=""  id="c11" value="" tabindex="" /></label></td>					
+								              <td><label for="c12"><input type="checkbox" name=""  id="c12" value="" tabindex="" /></label></td>
+								              <td><label for="c13"><input type="checkbox" name=""  id="c13" value="" tabindex="" /></label></td>
+								              <td><label for="c14"><input type="checkbox" name=""  id="c14" value="" tabindex="" /></label></td>
+								              <td><label for="c15"><input type="checkbox" name=""  id="c15" value="" tabindex="" /></label></td>
+								              <td><label for="c16"><input type="checkbox" name=""  id="c16" value="" tabindex="" /></label></td>
+								              <td><label for="c17"><input type="checkbox" name=""  id="c17" value="" tabindex="" /></label></td>
+								              <td><label for="c18"><input type="checkbox" name=""  id="c18" value="" tabindex="" /></label></td>
+								              <td><label for="c19"><input type="checkbox" name=""  id="c19" value="" tabindex="" /></label></td>
+								              <td><label for="c20"><input type="checkbox" name=""  id="c20" value="" tabindex="" /></label></td>
+								              <td><a href="javascript:void(0);" class="button secondary hover-alert tiny delete-role"><i class="fa fa-times"></i></a></td>
+								            </tr>
+								            <tr>
+								              <td class="w150"><input type="text" name="role"  id="role" value="" tabindex="" /></td>
+								              <td><label for="c21"><input type="checkbox" name=""  id="c21" value="" tabindex="" /></label></td>
+								              <td><label for="c22"><input type="checkbox" name=""  id="c22" value="" tabindex="" /></label></td>
+								              <td><label for="c23"><input type="checkbox" name=""  id="c23" value="" tabindex="" /></label></td>
+								              <td><label for="c24"><input type="checkbox" name=""  id="c24" value="" tabindex="" /></label></td>
+								              <td><label for="c25"><input type="checkbox" name=""  id="c25" value="" tabindex="" /></label></td>
+								              <td><label for="c26"><input type="checkbox" name=""  id="c26" value="" tabindex="" /></label></td>
+								              <td><label for="c27"><input type="checkbox" name=""  id="c27" value="" tabindex="" /></label></td>
+								              <td><label for="c28"><input type="checkbox" name=""  id="c28" value="" tabindex="" /></label></td>
+								              <td><label for="c29"><input type="checkbox" name=""  id="c29" value="" tabindex="" /></label></td>
+								              <td><label for="c210"><input type="checkbox" name=""  id="c210" value="" tabindex="" /></label></td>
+								              <td><label for="c211"><input type="checkbox" name=""  id="c211" value="" tabindex="" /></label></td>					
+								              <td><label for="c212"><input type="checkbox" name=""  id="c212" value="" tabindex="" /></label></td>
+								              <td><label for="c213"><input type="checkbox" name=""  id="c213" value="" tabindex="" /></label></td>
+								              <td><label for="c214"><input type="checkbox" name=""  id="c214" value="" tabindex="" /></label></td>
+								              <td><label for="c215"><input type="checkbox" name=""  id="c215" value="" tabindex="" /></label></td>
+								              <td><label for="c216"><input type="checkbox" name=""  id="c216" value="" tabindex="" /></label></td>
+								              <td><label for="c217"><input type="checkbox" name=""  id="c217" value="" tabindex="" /></label></td>
+								              <td><label for="c218"><input type="checkbox" name=""  id="c218" value="" tabindex="" /></label></td>
+								              <td><label for="c219"><input type="checkbox" name=""  id="c219" value="" tabindex="" /></label></td>
+								              <td><label for="c220"><input type="checkbox" name=""  id="c220" value="" tabindex="" /></label></td>
+								              <td><a href="javascript:void(0);" class="button secondary hover-alert tiny delete-role"><i class="fa fa-times"></i></a></td>
+								            </tr>
+											<tr>
+												<td colspan="22"><a href="javascript:void(0);" id="" class="button secondary hover-success tiny"><i class="fa fa-plus"></i> Add</a></td>
+											</tr>
+								          </tbody>
+								        </table>
+
+
+									</div><!-- end div.responsive-table -->
+
+							    </div><!-- end columns -->
+							</div><!-- end row -->
+					
+					<div class="row">
+					    <div class="small-12 medium-12 large-12 columns">
+					        <div class="panel-actions">											
+						        <a href="javascript:void(0);" class="button secondary">Cancel</a>											                	
+								<a href="javascript:void(0);" class="button success anim-button" id="save-notes" data-original="Save Changes" data-active="Saving ..."><i class="fa fa-floppy-o"></i> Save Changes</a>											                	
+						    </div><!-- end panel-actions -->
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					
+				</div><!-- end div.panel radius -->
+				
+		    </div><!-- end columns -->
+		</div><!-- end row -->
+	</section><!-- end main section --> 
+
+	<footer id="footer">
+		<div class="row">
+			<div class="small-12 medium-12 large-12 columns">
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
+			</div><!-- end columns --> 
+		</div><!-- end row --> 
+	</footer>
+	<script id="user-mgmt-template" type="text/x-kendo-template">
+		<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
+		<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+		  <li><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal bottom-hr"><i class="fa fa-pencil"></i> View / Edit Details</a></li>
+		  <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Disable / Enable User</a></li>
+		</ul>		
+	</script>
+	
+	<script id="user-role-template" type="text/x-kendo-template">
+		<select name="role" id="role-${ uid }" class="" >
+			<option value="">Super Admin</option>
+			<option value="">Originating Org</option>
+			<option value="">Receiving Org</option>
+		</select>
+	</script>
+		
+	<script id="manage-orgs-template" type="text/x-kendo-template">
+		<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
+		<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+		  <li><a href="7--ts-config.html" class="bottom-hr"><i class="fa fa-pencil"></i> View / Edit Org.</a></li>
+		  <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Disable / Enable Org.</a></li>
+		</ul>		
+	</script>
+
+	<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.msgbox.js"></script> 
+	<script type="text/javascript" src="js/foundation.min.js"></script> 
+	<script type="text/javascript" src="js/chosen.jquery.js"></script> 
+	
+	<script type="text/javascript" src="js/kendo.all.min.js"></script> 
+	<script type="text/javascript" src="tables/user-mgmt.js"></script> 
+	<script type="text/javascript" src="tables/manage-orgs.js"></script> 
+
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$('#maint-mode-msg').on('change', function(){
+				if (this.checked) {
+			    	$('#maint-mode').slideDown().find('textarea').focus();
+				} else {
+			    	$('#maint-mode').slideUp();			    	
+				}
+			});
+		});  // end docready
+	</script>
+<div id="global-modal" class="reveal-modal" data-reveal></div>
+</body>
+</html>

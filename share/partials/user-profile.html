@@ -1,0 +1,74 @@
+<div class="modal-title">User Profile Settings</div><!-- end div.modal-title -->
+
+<div class="row">
+    <div class="small-12 medium-6 large-6 columns">
+        <label for="organization-name">Organization Name</label>
+        <input type="text" name="organization-name"  id="organization-name"  tabindex="" value="Allen PD" readonly />
+    </div><!-- end columns -->
+    <div class="small-12 medium-6 large-6 columns text-right">
+        <span class="label radius secondary">Role: User</span>
+        <span class="label radius info">Groups: Traffic, SWAT, DUI</span>					
+        <span class="label success radius">Status: Active</span>
+    </div><!-- end columns -->
+</div><!-- end row -->
+
+<div class="row">
+    <div class="small-12 medium-6 large-6 columns">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name"  id="first-name"  tabindex="" value="First Name" />
+    </div><!-- end columns -->
+    <div class="small-12 medium-6 large-6 columns">
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name"  id="last-name"  tabindex="" value="Last Name" />
+    </div><!-- end columns -->
+</div><!-- end row -->
+<div class="row">
+    <div class="small-12 medium-6 large-6 columns">
+		<label for="email-address">Email Address</label>
+		<input type="text" name="email-address"  id="email-address"  tabindex="" value="email@domain.com" />
+    </div><!-- end columns -->
+    <div class="small-12 medium-6 large-6 columns">
+        <label for="email-preference">Email Preference</label>
+		<select name="email-preference" id="email-preference" class="select" >
+			<option value="">Receive emails for each Share</option>
+			<option value="">I prefer a Daily Summary</option>
+			<option value="">...</option>								
+		</select>
+    </div><!-- end columns -->
+</div><!-- end row -->
+
+<div class="row">
+    <div class="small-12 medium-6 large-6 columns">
+        <label for="security-question">Security Question</label>
+		<select name="security-question" id="security-question" class="select" >
+			<option value="">What city were you born in?</option>
+			<option value="">What is your mother's maiden name?</option>
+			<option value="">...</option>								
+		</select>
+    </div><!-- end columns -->
+    <div class="small-12 medium-6 large-6 columns">
+        <label for="security-question-answer">Security Question Answer</label>
+        <input type="text" name="security-question-answer"  id="security-question-answer"  tabindex="" value="" />
+    </div><!-- end columns -->
+</div><!-- end row -->
+																					
+<hr/>
+												
+<div class="row">
+    <div class="small-12 medium-6 large-6 columns">
+        <label for="change-password">Change Password</label>
+        <input type="text" name="change-password"  id="change-password"  tabindex="" value="" />					        
+    </div><!-- end columns -->
+    <div class="small-12 medium-6 large-6 columns">
+        <label for="confirm-password">Confirm password</label>
+        <input type="text" name="confirm-password"  id="confirm-password"  tabindex="" value="" />					        
+    </div><!-- end columns -->
+</div><!-- end row -->
+
+
+<a class="close-reveal-modal"><i class="fa fa-times-circle"></i></a>
+
+<div class="modal-footer">
+	<a href="javascript:void(0);" class="button secondary close-modal">Cancel</a>											                	
+	<a href="javascript:void(0);" class="button success anim-button" data-original="Save Changes" data-active="Saving ..."><i class="fa fa-floppy-o"></i> Save Changes</a>											                		
+</div><!-- end div.modal-footer -->

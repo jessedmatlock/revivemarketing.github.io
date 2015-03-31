@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <title>Evidence Library Share : Confirm Registration</title>
-<link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
-<link rel="stylesheet" href="css/kendo-theme.css" />
-<link rel="stylesheet" href="css/app.css" />
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css" />
 <link href="css/jquery.msgbox.css" rel="stylesheet" />
+<link href="css/chosen.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/app.css" />
 <script src="js/modernizr.js"></script>
 <!--[if gte IE 9]>
   <style type="text/css">
@@ -50,7 +50,17 @@
 						
 						<div class="row">
 							<div class="small-12 medium-12 large-12 columns">
-								<label for="security">What city were you born in?</label>
+								<label for="select-a-security-question">Select a Security Question</label>
+								<select name="select-a-security-question" id="select-a-security-question" class="select">
+									<option value="">What city were you born in?</option>
+									<option value="">What is your mother's maiden name?</option>
+									<option value="">...</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="small-12 medium-12 large-12 columns">
+								<label for="security-question-answer">Security Question Answer</label>
 								<input data-val="true" data-val-required="This field is required." id="security" name="security" type="text"  tabindex="3"/>
 							</div>
 						</div>
@@ -73,15 +83,9 @@
 						<hr/>
 						<div class="row">
 							<div class="small-12 medium-12 large-12 columns">
-								<span class="alert-box warning radius">I understand by accepting this invitation this will place my account under this Organization, who will then have the ability to see all my shared items.</span>
-							</div>
-						</div>
-						
-						<div class="row">
-							<div class="small-12 medium-12 large-12 columns">
 								<!--input class="login_button button success right" type="submit" value="Sign In"  tabindex="4" /-->
 								<!-- using link for demo purposes to redirect to index.html page -->
-								<a href="index.html" id="" class="login_button button success right">Sign In</a>
+								<a href="4-share-inbox.html" id="" class="login_button button success anim-button" data-original="Sign In" data-active="Processing">Sign In</a>
 							</div>
 						</div>
 					</div><!-- end div.panel radius --> 
@@ -92,18 +96,19 @@
 	<footer id="footer">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">
-				<p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>
 
 <script type="text/javascript" src="js/jquery.js"></script> 
-<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script> 
+<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
 <script type="text/javascript" src="js/jquery.msgbox.js"></script> 
 <script type="text/javascript" src="js/kendo.all.min.js"></script> 
 <script type="text/javascript" src="js/foundation.min.js"></script> 
 <script type="text/javascript" src="js/chosen.jquery.js"></script> 
 
 <script type="text/javascript" src="js/app.js"></script>
+<div id="global-modal" class="reveal-modal" data-reveal></div>
 </body>
 </html>

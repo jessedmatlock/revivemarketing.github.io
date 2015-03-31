@@ -1,24 +1,10 @@
-/*{    command: [{
-        name: 'action',
-        template: kendo.template($("#command-template").html()),
-        click: function(e) {
-            //e.preventDefault();
-            alert('Dropdown to be implemented in LIVE APP');
-        }
-    }],
-    title: " ",
-    width: 50
-}
-*/
-
-
 $(document).ready(function() {
 	var orgOutboxData = [{
 	    ShareID: "ID_21342323",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -27,8 +13,8 @@ $(document).ready(function() {
 	    ShareID: "ID_21342324",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -37,8 +23,8 @@ $(document).ready(function() {
 	    ShareID: "ID_21342325",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -47,8 +33,8 @@ $(document).ready(function() {
 	    ShareID: "ID_21342326",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -57,8 +43,8 @@ $(document).ready(function() {
 	    ShareID: "ID_21342327",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -67,8 +53,8 @@ $(document).ready(function() {
 	    ShareID: "ID_21342328",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -77,8 +63,8 @@ $(document).ready(function() {
 	    ShareID: "ID_21342329",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -87,8 +73,8 @@ $(document).ready(function() {
 	    ShareID: "654789130",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -97,8 +83,8 @@ $(document).ready(function() {
 	    ShareID: "654789131",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -107,8 +93,8 @@ $(document).ready(function() {
 	    ShareID: "654789132",  
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -117,8 +103,8 @@ $(document).ready(function() {
 	    ShareID: "654789133",
 		To: "Organization Name",
 	    ExportLabel: "Case-1234",
-	    SentOn: "01/09/2014 12:51",
-	    ExpOn: "01/09/2014 12:51",
+	    SentOn: "01/09/14",
+	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
@@ -158,6 +144,16 @@ $(document).ready(function() {
 			width: 50,
 			title: " ",
 			filterable: false
+			}, {
+	            field: "ExportLabel",
+	            title: "Export Label",
+	            width: 120,
+	            filterable: {
+	                cell: {
+	                    operator: "gte"
+	                }
+	            }
+	        
 		},{
             field: "ShareID",
             width: 120,
@@ -166,15 +162,6 @@ $(document).ready(function() {
                 cell: {
                     showOperators: false,
                     operator: "contains"
-                }
-            }
-        }, {
-            field: "ExportLabel",
-            title: "Export Label",
-            width: 120,
-            filterable: {
-                cell: {
-                    operator: "gte"
                 }
             }
         },{

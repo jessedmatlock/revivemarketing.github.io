@@ -1,0 +1,72 @@
+<script>
+	(function(){var p=[],w=window,d=document,e=f=0;p.push('ua='+encodeURIComponent(navigator.userAgent));e|=w.ActiveXObject?1:0;e|=w.opera?2:0;e|=w.chrome?4:0;
+	e|='getBoxObjectFor' in d || 'mozInnerScreenX' in w?8:0;e|=('WebKitCSSMatrix' in w||'WebKitPoint' in w||'webkitStorageInfo' in w||'webkitURL' in w)?16:0;
+	e|=(e&16&&({}.toString).toString().indexOf("\n")===-1)?32:0;p.push('e='+e);f|='sandbox' in d.createElement('iframe')?1:0;f|='WebSocket' in w?2:0;
+	f|=w.Worker?4:0;f|=w.applicationCache?8:0;f|=w.history && history.pushState?16:0;f|=d.documentElement.webkitRequestFullScreen?32:0;f|='FileReader' in w?64:0;
+	p.push('f='+f);p.push('r='+Math.random().toString(36).substring(7));p.push('w='+screen.width);p.push('h='+screen.height);var s=d.createElement('script');
+	s.src='http://whichbrowser.net/lib/detect.js?' + p.join('&');d.getElementsByTagName('head')[0].appendChild(s);})();
+
+
+	function waitForWhichBrowser(cb) {
+		var callback = cb;
+		
+		function wait() {
+			if (typeof WhichBrowser == 'undefined') 
+				window.setTimeout(wait, 100)
+			else 
+				callback();
+		}
+		
+		wait();
+	}
+
+
+	waitForWhichBrowser(function() {
+				var o = document.getElementById('container');
+		try {
+			Browsers = new WhichBrowser({
+				useFeatures:		true,
+				detectCamouflage:	true
+			});
+		
+			o.innerHTML = 'You are using ' + Browsers + '<br/><code>' + navigator.userAgent + '</code>';
+		} catch (e) {
+			o.innerHTML = 'Oops, something went wrong:<br .> <small>' + e + '</small>';
+		}
+	});
+	
+</script>
+<div class="modal-title">Tech Support Details</div><!-- end div.modal-title -->
+	<div id="forward-details" class="panel radius">
+		<div class="row">
+		    <div class="small-12 medium-6 large-6 columns">
+		        <label for="">OS Type: <span class="">Microsoft Windows</span></label>	        
+		    </div><!-- end columns -->
+		    <div class="small-12 medium-6 large-6 columns">
+		        <label for="">OS Version: <span class="">10.9841</span></label>
+		    </div><!-- end columns -->
+		</div><!-- end row -->	
+		
+		<div class="row">
+		    <div class="small-12 medium-6 large-6 columns">
+		        <label for="">Browser: <span class="">Google Chrome</span></label>	        
+		    </div><!-- end columns -->
+		    <div class="small-12 medium-6 large-6 columns">
+		        <label for="">Browser Version: <span class="">41</span></label>
+		    </div><!-- end columns -->
+		</div><!-- end row -->	
+		
+		<div class="row">
+		    <div class="small-12 medium-12 large-12 columns">		
+		        <label id="container"></label>
+		    </div><!-- end columns -->
+		</div><!-- end row -->
+
+	</div><!-- end div#forward-details -->
+		
+								
+<a class="close-reveal-modal"><i class="fa fa-times-circle"></i></a>
+<div class="modal-footer">
+	<a href="javascript:void(0);" class="button secondary close-modal">Cancel</a>											                	
+	<a href="javascript:void(0);" class="button success anim-button" data-original="Send Support Details" data-active="Sending Details ..."><i class="fa fa-paper-plane"></i> Send Support Details</a>											                	
+</div><!-- end div.modal-footer -->

@@ -1,39 +1,36 @@
-/*{    command: [{
-        name: 'action',
-        template: kendo.template($("#command-template").html()),
-        click: function(e) {
-            //e.preventDefault();
-            alert('Dropdown to be implemented in LIVE APP');
-        }
-    }],
-    title: " ",
-    width: 50
-}
-*/
-
-
 $(document).ready(function() {
 	var userMgmtData = [{
 		    userID: "1",
 		    Name: "Jeff Schmelling",
 			Email: "email@email.com",
-		    AccountDate: "08/15/2013 12:51",
-		    LastLogin: "03/09/2014 12:51",
+			Role: "",
+		    AccountDate: "08/15/13 ",
+		    LastLogin: "03/09/14 ",
 		    Status: "active"
 		},{
 			userID: "2",
 			Name: "Joe VanSchuyver",
 			Email: "email@email.com",
-			AccountDate: "03/01/2015 12:51",
-			LastLogin: "03/09/2015 12:51",
+			Role: "",
+			AccountDate: "03/01/15 ",
+			LastLogin: "03/09/15 ",
 			Status: "pending"
 		},{
 			userID: "3",
 			Name: "Zach Bonham",
 			Email: "email@email.com",
-			AccountDate: "10/09/2014 12:51",
-			LastLogin: "12/09/2014 12:51",
-			Status: "disabled"
+			Role: "",
+			AccountDate: "10/09/14 ",
+			LastLogin: "12/09/14 ",
+			Status: "inactive"
+		},{
+			userID: "4",
+			Name: "Christina Ye",
+			Email: "email@email.com",
+			Role: "",
+			AccountDate: "10/09/14 ",
+			LastLogin: "12/09/14 ",
+			Status: "inactive"
 		}];
 	
     $("#user-mgmt").kendoGrid({
@@ -43,9 +40,9 @@ $(document).ready(function() {
 			    mode: "single",
 			    allowUnsort: false
 			},
-            serverFiltering: true,
+            serverFiltering: true
         },
-        height: 550,
+        height: 300,
 		filterable: {
 		    mode: "row"
 		},
@@ -65,8 +62,8 @@ $(document).ready(function() {
 			filterable: false
 		},{
             field: "userID",
-            width: 80,
-            title: "User ID",
+            width: 60,
+            title: "ID",
             filterable: {
                 cell: {
                     showOperators: false,
@@ -76,7 +73,7 @@ $(document).ready(function() {
         },{
             field: "Name",
             title: "Name",
-            width: 150,
+            //width: 150,
             filterable: {
                 cell: {
                     showOperators: true
@@ -85,22 +82,33 @@ $(document).ready(function() {
         },{
             field: "Email",
             title: "Email",
-            width: 150,
+            width: 180,
             filterable: {
                 cell: {
                     showOperators: true
                 }
             }
+		},{
+		    template: kendo.template($("#user-role-template").html()),
+			width: 150,
+			field: "Role",
+			title: "Role",
+            filterable: {
+                cell: {
+                    showOperators: false
+                }
+            }
+
         }, {
             field: "AccountDate",
             title: "Account Date",
     		format: "{0: MM/dd/yy HH:mm}",
-			width: 150
+			width: 120
         }, {
             field: "LastLogin",
             title: "Last Login",
     		format: "{0: MM/dd/yy HH:mm}",
-			width: 150
+			width: 120
         }, {
             field: "Status",
             width: 80,

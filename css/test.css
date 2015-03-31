@@ -1441,9 +1441,11 @@ a#change-config.change + #checkout-config {
 	margin: 0 auto;
 }
 
-#video-wrapper.video-playback[data-view="native"] {
-/*	text-align: center;*/
+#video-wrapper.video-playback[data-view="native"],
+#video-wrapper.video-playback[data-view="fill"] {
+	text-align: center;
 }
+
 #video-wrapper.video-playback[data-view="native"][data-resolution="hd720"] #meta-data,
 #video-wrapper.video-playback[data-view="native"][data-resolution="hd720"] #event-video,
 #video-wrapper.video-playback[data-view="native"][data-resolution="hd720"] video {
@@ -1476,6 +1478,18 @@ a#change-config.change + #checkout-config {
 #video-wrapper.video-playback[data-view="native"][data-resolution="sd480"] #meta-data {
 	margin: 40px auto 0;
 }
+
+#video-wrapper.video-playback[data-view="fill"] #meta-data,
+#video-wrapper.video-playback[data-view="fill"] video {
+	margin: 0px auto 0;
+	float: none;
+	clear: both;
+}
+
+#video-wrapper.video-playback[data-view="fill"] #meta-data {
+	margin: 40px auto 0;
+}
+
 
 
 
@@ -1990,7 +2004,7 @@ a#change-config.change + #checkout-config {
   }
 
  #slider.ui-slider .ui-slider-handle {
-      background: url('https://revivemarketing.github.io/images/playhead_bottom.png') no-repeat 50% 50% !important;
+  background: url('../images/playhead_bottom.png') no-repeat 50% 50% !important;
       border:  none !important;
       width: 18px !important;
       height: 20px !important;
@@ -3264,7 +3278,7 @@ box-shadow: none;
     background: #000;
     z-index: 1000;
 }
-#dateWrapper .ui-datepicker {
+#dateWrapper .ui-datepicker-calendar {
     float: left;
 }
 
@@ -3428,6 +3442,7 @@ table .k-state-active {
 	border-left: 1px solid #eee;
 	border-top: 1px solid #eee;
 	border-right: 1px solid #eee;
+	overflow: visible !important;
 }
 .k-grid td:nth-child(1),
 .k-grid td:nth-child(2) {
@@ -3903,7 +3918,7 @@ label input[type=radio] {
 }
 
 
-table:not(.k-selectable) {
+table:not(.k-selectable):not(.ui-datepicker-calendar) {
     background: #fff;
     margin-bottom: 1.25rem;
     width: 100%;
@@ -3922,8 +3937,8 @@ table caption {
 
 table thead { background: whitesmoke }
 
-table:not(.k-content) thead th,
-table:not(.k-content) tfoot th {
+table:not(.k-content):not(.ui-datepicker-calendar) thead th,
+table:not(.k-content):not(.ui-datepicker-calendar) tfoot th {
 	position: relative;
 	height: 45px;
 	padding: 0 0.5em;
@@ -3948,29 +3963,29 @@ table:not(.k-content) tfoot th {
 	
 }
 
-table:not(.k-content) thead th:not(:first-child) .fa,
-table:not(.k-content) tfoot td .fa {
+table:not(.k-content):not(.ui-datepicker-calendar) thead th:not(:first-child) .fa,
+table:not(.k-content):not(.ui-datepicker-calendar) tfoot td .fa {
 	font-size: 1em;
 	margin-left: 5px;
 }
 
-table:not(.k-content) thead tr td {
+table:not(.k-content):not(.ui-datepicker-calendar) thead tr td {
     padding: 0.5em;
     font-size: 1rem;
     font-weight: normal;
     color: #555;
 }
 
-table:not(.k-content) tfoot { background: whitesmoke }
+table:not(.k-content):not(.ui-datepicker-calendar) tfoot { background: whitesmoke }
 
-table:not(.k-content) tfoot tr th,
-table:not(.k-content) tfoot tr td {
+table:not(.k-content):not(.ui-datepicker-calendar) tfoot tr th,
+table:not(.k-content):not(.ui-datepicker-calendar) tfoot tr td {
     padding: 0.5em;
     color: #222222;
     
 }
-table:not(.k-content) tfoot tr th .button,
-table:not(.k-content) tfoot tr td  .button {
+table:not(.k-content):not(.ui-datepicker-calendar) tfoot tr th .button,
+table:not(.k-content):not(.ui-datepicker-calendar) tfoot tr td  .button {
 	margin: 0;
 	text-transform: capitalize;
 	font-size: 0.85rem;
@@ -4008,7 +4023,7 @@ table .width50 {
 	width: 50px;
 }
 
-table:not(.k-content) tr td {
+table:not(.k-content):not(.ui-datepicker-calendar) tr td {
     padding: 1em 0.5em;
     font-size: 0.9em;
     color: #333;
@@ -4018,40 +4033,40 @@ table:not(.k-content) tr td {
 	border-right: 1px solid #eee;
 }
 
-table:not(.k-content) tr.exluded td {
+table:not(.k-content):not(.ui-datepicker-calendar) tr.exluded td {
 	color: #888 !important; 
 	background: #eee ;
 }
-table:not(.k-content) tr.exluded td input[type=checkbox] {
+table:not(.k-content):not(.ui-datepicker-calendar) tr.exluded td input[type=checkbox] {
 	opacity: 0.5;	
 }
 
-table:not(.k-content) tr.even td,
-table:not(.k-content) tr.alt td,
-table:not(.k-content) tr:nth-of-type(even) td { 
+table:not(.k-content):not(.ui-datepicker-calendar) tr.even td,
+table:not(.k-content):not(.ui-datepicker-calendar) tr.alt td,
+table:not(.k-content):not(.ui-datepicker-calendar) tr:nth-of-type(even) td { 
 	background: #f9f9f9;
 	box-shadow: none !important;
 	 }
 
 
-table:not(.k-content) tr.selected td {
+table:not(.k-content):not(.ui-datepicker-calendar) tr.selected td {
 	background: #BDDFFD !important;
 	border-bottom: 1px solid #608AD1;
 }
 
-table:not(.k-content) tr td.table-row-selection,
-table:not(.k-content) tr td.item-actions,
-table:not(.k-content) tr th.columns-actions-col {
+table:not(.k-content):not(.ui-datepicker-calendar) tr td.table-row-selection,
+table:not(.k-content):not(.ui-datepicker-calendar) tr td.item-actions,
+table:not(.k-content):not(.ui-datepicker-calendar) tr th.columns-actions-col {
 	text-align: center;
 	padding: 0;
 	width: 40px;
 }
 
-table:not(.k-content) tr td input {
+table:not(.k-content):not(.ui-datepicker-calendar) tr td input {
 	margin: 0 !important;
 }
 
-table:not(.k-content) tr td label {
+table:not(.k-content):not(.ui-datepicker-calendar) tr td label {
 	display: block;
 	min-height: 50px;
 	line-height: 48px;
@@ -4061,17 +4076,17 @@ table:not(.k-content) tr td label {
 	text-align: center;
 	
 }
-table:not(.k-content) tr td .fa-stack {
+table:not(.k-content):not(.ui-datepicker-calendar) tr td .fa-stack {
 	font-size: 18px;
 	color: #aaa;
 	text-align: center;
 	vertical-align: bottom;
 }
-table:not(.k-content) tr td.item-actions {
+table:not(.k-content):not(.ui-datepicker-calendar) tr td.item-actions {
 	width: 60px;
 }
 
-table:not(.k-content) tr.export-item td:nth-child(1) {
+table:not(.k-content):not(.ui-datepicker-calendar) tr.export-item td:nth-child(1) {
 	width: 45px;
 	text-align: center;
 }
@@ -4094,15 +4109,15 @@ table tr td.item-actions .button {
 	text-align: center;
 	text-indent: 0;
 }
-table:not(.k-content) tr td .button {
+table:not(.k-content):not(.ui-datepicker-calendar) tr td .button {
 	margin: 0;
 }
-table:not(.k-content) tr td.item-actions .button .fa {
+table:not(.k-content):not(.ui-datepicker-calendar) tr td.item-actions .button .fa {
 	color: #eee;
 }
 
 
-table:not(.k-content) tr.event:hover {
+table:not(.k-content):not(.ui-datepicker-calendar) tr.event:hover {
 	background: #fff;
 }
 
@@ -4181,10 +4196,11 @@ table:not(.k-content) tr.event:hover {
 .export-page-wrapper .panel-top-title .button {
 	margin: 0;
 }
-.export-page-wrapper .panel {
+.export-page-wrapper .panel:not([data-equalizer-watch]) {
 	background: #f2f2f2;
 	border-color: #222;
 	margin-bottom: 10px;
+	height: auto !important;
 }
 #export-video-options {
 	min-height: 300px;
@@ -4255,7 +4271,7 @@ table:not(.k-content) tr.event:hover {
 	font-size: .9em;
 }
 
-.export-page-wrapper .panel label + label {
+.export-page-wrapper .panel label + label:not(.onoffswitch) {
 	margin: 0 !important;
 }
 
@@ -5547,10 +5563,12 @@ textarea.auto-height {
 .onoffswitch {
     padding: 0 !important;
     overflow: hidden;
-    margin: 5px 0 0 0 !important;    
+    margin: 5px 20px 0 0 !important;    
     display: inline-block;
 }
-
+.panel label + .onoffswitch {
+	margin-top: 0 !important;
+}
 .onoffswitch-container {
     position: relative;
     width: 65px;  
@@ -5650,7 +5668,7 @@ textarea.auto-height {
 	color: #555;
 	font-weight: bold;
 	font-size: .75rem;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 .onoffswitch .toggle-msg {
 	display: none;
@@ -5822,7 +5840,7 @@ add .alert-yes or .alert-no to display .toggle-alert for specific checkbox state
 
 #case-recap > .columns {
 	padding: 0px 20px 0px;
-	background: #222 url('../images/texture-1.png') repeat left top;
+	background: #222 url('../images/checkered-bg.jpg') repeat left top;
 
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #000;
@@ -6355,4 +6373,141 @@ section.main-section {
 		font-size: 0.925em !important;
 	}
 	
+}
+
+
+
+.tabs.export-tabs {
+
+	margin: 10px 0 0px 0 !important;
+	padding: 10px 15px 0;
+	border-radius: 3px 3px 0 0;
+
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 13px inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 13px inset;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 13px inset;
+  background: #596069;
+  background: -webkit-gradient(linear, left top, left bottom, from(#596069), to(#3F454B));
+  background: -moz-linear-gradient(center top, #596069 0%, #3F454B 100%);
+  background: -moz-gradient(center top, #596069 0%, #3F454B 100%);
+  background: -webkit-linear-gradient(top, #596069 0%, #3F454B 100%);
+  background: -o-linear-gradient(top, #596069 0%, #3F454B 100%);
+  background: -ms-linear-gradient(top, #596069 0%, #3F454B 100%);
+  background: linear-gradient(to bottom, #596069 0%, #3F454B 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596069', endColorstr='#3F454B',GradientType=0 );
+  transition: none;
+  
+  border: 1px solid #393e44;
+  color: #F8FBFF;
+  transition: none;
+  text-shadow: 0 -1px 0px #000;  
+}
+
+.tabs:before, .tabs:after {
+  content: " ";
+  display: table;
+}
+
+.tabs:after {
+  clear: both;
+}
+
+.tabs-content  .alert-box {
+	border-radius: 0 !important;
+	margin: 0 !important;
+	border-left: none;
+	border-right: none;
+}
+.tabs dd,
+.tabs .tab-title {
+  position: relative;
+  margin-bottom: 0 !important;
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+
+.tabs dd > a,
+.tabs .tab-title > a {
+  outline: none;
+  display: block;
+  background: transparent;
+  color: #aaa;
+  padding: 10px 2rem 10px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 3px 3px 0 0;
+  
+}
+
+.tabs dd > a:hover, .tabs .tab-title > a:hover {
+	color: #fff;
+	background: transparent;
+}
+
+.tabs dd.active a, .tabs .tab-title.active a {
+  	color: #e69c17;
+  	background: #3F454B;
+  	box-shadow: 0px 3px 5px -1px #333 inset;
+}	
+
+.tabs.radius dd:first-child a, .tabs.radius .tab:first-child a {
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.tabs.radius dd:last-child a, .tabs.radius .tab:last-child a {
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.tabs.vertical dd, .tabs.vertical .tab-title {
+  position: inherit;
+  float: none;
+  display: block;
+  top: auto;
+}
+
+
+.tabs-content {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.panel .tabs-content {
+	margin-bottom: 0;
+}
+
+.tabs-content:before, .tabs-content:after {
+  content: " ";
+  display: table;
+}
+
+.tabs-content:after {
+  clear: both;
+}
+
+.tabs-content > .content {
+  display: none;
+  float: left;
+  padding: 0;
+  width: 100%;
+}
+.panel .tabs-content > .content {
+	padding: 0;
+}
+
+.tabs-content > .content.active {
+  display: block;
+  float: none;
+}
+.tabs-content > .content.active > .panel {
+	border-radius: 0 0 3px 3px;
+}
+.tabs-content > .content.contained {
+  padding: 0.9375rem;
 }

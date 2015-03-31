@@ -130,7 +130,7 @@
 									            <th class="columns-actions-col" colspan="2">&nbsp;</th>
 												<th title="Export Priority" class="width125">Priority <i class="fa fa-sort"></i></th>																		            
 												<th title="Export Status" class="width200">Status <i class="fa fa-sort"></i></th>																		            
-												<th title="Export Recipient">Recipient <i class="fa fa-sort"></i></th>																		            
+												<th title="Export Recipient">Export Label <i class="fa fa-sort"></i></th>																		            
 									            <th title="Export To">Exported To <i class="fa fa-sort"></i></th>
 									            <th title="Export Size">Total Size <i class="fa fa-sort"></i></th>
 									            <th title="Export Type">Export Type <i class="fa fa-sort"></i></th>
@@ -139,6 +139,32 @@
 									        </tr>
 										</thead>
 										<tbody>
+											<tr class="export-item waiting">
+												<td class="table-row-selection">
+									                <label for="item-select-checkbox0">
+									                	<input id="item-select-checkbox0" class="item-select-checkbox" type="checkbox">
+													</label>
+												</td>
+									            <td class="item-actions">
+													<a href="javascript:void(0);" data-options="align:right"  data-dropdown="drop1" class="button action radius" ><i class="fa fa-cog"></i></a>
+													<ul id="drop1" data-dropdown-content class="f-dropdown dark-dropdown">
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-arrow-up"></i> Increase Priority</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-arrow-down"></i> Decrease Priority</a></li>
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Cancel Export Job</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>														
+													</ul>
+									            </td>
+												<td>High</td>
+									            <td><i class="fa fa-clock-o status-icon"></i> Waiting</td>																		
+									            <td>Case # 6462832</td>																		
+									            <td><i class="fa fa-share"></i> Share Export</td>									
+									            <td>841.2 MB</td>									
+									            <td><i class="fa fa-film"></i> Event(s)</td>
+									            <td>01/09/14 10:13:12</td>
+									            <td>James Abernathy</td>									
+									        </tr>
+									        
+											
 									        <tr class="export-item cancelled">
 												<td class="table-row-selection">
 									                <label for="item-select-checkbox00">
@@ -173,8 +199,8 @@
 													<ul id="drop1" data-dropdown-content class="f-dropdown dark-dropdown">
 														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-arrow-up"></i> Increase Priority</a></li>
 														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-arrow-down"></i> Decrease Priority</a></li>
-														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Cancel Export Job</a></li>
-														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Exported Items</a></li>														
+														<li><a href="javascript:void(0);" class="bottom-hr"><i class="fa fa-times"></i> Unshare Export Job</a></li>
+														<li><a href="javascript:void(0);" data-reveal-id="exported-items-modal"><i class="fa fa-eye"></i> View Details</a></li>														
 													</ul>
 									            </td>
 												<td>High</td>

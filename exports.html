@@ -391,192 +391,358 @@
 							
 						</div>
 						<!-- end div.panel radius -->
+						
 						<div class="row" data-equalizer>
 							<div class="small-12 medium-7 large-9 columns">
-								<h4 class="panel-top-title dark-title"><i class="fa fa-gears"></i> Video Options</h4>
-								<div class="panel radius" id="export-video-options" data-equalizer-watch>
-									<h4 class="">Choose A Format</h4>
+								
+								<ul class="tabs export-tabs" data-tab="">
+									<li class="tab-title active">
+										<a href="#panel11"><i class="fa fa-desktop"></i> Media Export</a>
+									</li>
+									<li class="tab-title">
+										<a href="#panel21"><i class="fa fa-cloud"></i> Cloud Share</a>
+									</li>
+								</ul>		
+								<div class="tabs-content">
+								
+								<div class="content active" id="panel11">
 									
-									<div class="row">
-										<div class="small-12 medium-12 large-6 columns">											
-											<div id="export-format-default">
-												<label class="orignal-format">Original Format</label>
-												<a href="javascript:void(0);" id="change-export-format" class="button gray-gradient tiny">Change</a> </div>
-											<!-- end div#export-format-default -->
-											<div id="export-format-options">
-												
-												<select class="select " id="export-format-select">
-													<option value="1" selected>Original Format (recommended)</option>
-													<option value="2">MPEG-2</option>
-													<option value="3">WMV</option>
-													<option value="4">DVD-Video</option>
-													<option value="5">AVI</option>
-												</select>												
+									<span class="alert-box info radius"><strong>Notification Message: </strong>Content here for ...................</span>
+									
+									<div class="panel radius" id="export-video-options" data-equalizer-watch>
+										<h4 class="">Choose A Format</h4>
+
+										<div class="row">
+											<div class="small-12 medium-12 large-6 columns">											
+												<div id="export-format-default">
+													<label class="orignal-format">Original Format</label>
+													<a href="javascript:void(0);" id="change-export-format" class="button gray-gradient tiny">Change</a> </div>
+												<!-- end div#export-format-default -->
+												<div id="export-format-options">
+
+													<select class="select " id="export-format-select">
+														<option value="1" selected>Original Format (recommended)</option>
+														<option value="2">MPEG-2</option>
+														<option value="3">WMV</option>
+														<option value="4">DVD-Video</option>
+														<option value="5">AVI</option>
+													</select>												
+												</div>
+												<div id="export-option-quality" class="clearfix">							        
+													<label>Choose Video Quality</label>
+													<select class="select">
+														<option value="1">High</option>
+														<option value="2" selected>Medium</option>
+														<option value="3">Low</option>
+													</select>												
+												</div><!-- end #export-option-quality --> 
+
 											</div>
-											<div id="export-option-quality" class="clearfix">							        
-												<label>Choose Video Quality</label>
-												<select class="select">
-													<option value="1">High</option>
-													<option value="2" selected>Medium</option>
-													<option value="3">Low</option>
-												</select>												
-											</div><!-- end #export-option-quality --> 
-											
-										</div>
-										<!-- end columns -->
-										<div class="small-12 medium-12 large-6 columns">
-											<div class="input-group">
-												<label for="include-player" id="include-player-label">
-													<input type="checkbox" name="include-player" id="include-player" value="" checked/>
-													Include Video Player? <small>(recommended)</small>
-												</label>
-												<label for="include-subs" id="include-subs-label">
-													<input type="checkbox" name="include-subs" id="include-subs" value="" checked />
-													Include Subtitles? <small>(recommended)</small>
-												</label>			
-												<label for="embed-text" id="embed-text-label" class="disabled">
-													<input type="checkbox" name="embed-text" id="embed-text" value="" />
-													Permanently Embed Subs?
-												</label>
-											</div><!-- end div.input-group -->
-																					
-											
-											<!--label for="include-player" class="margin-top40">
-												<input id="include-player" type="checkbox">
-												Include Watch Guard video player</label-->
+											<!-- end columns -->
+											<div class="small-12 medium-12 large-6 columns">
+												<div class="input-group">
+													<label for="include-player" id="include-player-label">
+														<input type="checkbox" name="include-player" id="include-player" value="" checked/>
+														Include Video Player? <small>(recommended)</small>
+													</label>
+													<label for="include-subs" id="include-subs-label">
+														<input type="checkbox" name="include-subs" id="include-subs" value="" checked />
+														Include Subtitles? <small>(recommended)</small>
+													</label>			
+													<label for="embed-text" id="embed-text-label" class="disabled">
+														<input type="checkbox" name="embed-text" id="embed-text" value="" />
+														Permanently Embed Subs?
+													</label>
+												</div><!-- end div.input-group -->
 
-										</div><!-- end columns --> 
-									</div><!-- end row -->
-																		
-									<div class="row">
-										<div class="small-12 medium-12 large-12 columns">
-											<h4 class="">Select A Destination</h4>
-											<div id="export-destinations" class="clearfix">
-												<a href="javascript:void(0);" class="export-destination" data-value="1">
-													<img src="images/disk-drive.png" class="dest-icon" alt="" />
-													<div class="dest-title">Local Computer</div>
-													<div class="dest-desc">Local or Network</div>
-												</a>
-												<a href="javascript:void(0);" class="export-destination" data-value="2" >
-													<img src="images/disks.png" class="dest-icon" alt="" />
-													<div class="dest-title">Burn to Disc</div>
-													<div class="dest-desc">CD, DVD or BluRay</div>
-												</a>
-												<a href="javascript:void(0);" class="export-destination" data-value="3">
-													<img src="images/dvd-burner.png" class="dest-icon" alt="" />
-													<div class="dest-title">DVD Robot</div>
-													<div class="dest-desc">Queue for Burning</div>
-												</a>
-											</div>
-											
-											
-											<div id="export-destination-options" class="clearfix">			
-												<div class="export-destination-option option1"> 
-													
-													<label for=""><span id="download-location-label">Default</span> Download Location:</label>
-													<div class="row">
-													    <div class="small-12 medium-12 large-12 columns">
-											          		<div class="inline-block">C://usershare/My Documents/Exports/</div>
-															<a href="javascript:void(0);" id="change-download-location" class="button secondary tiny inline-block">Change Location</a>
-													    </div><!-- end columns -->
-													</div><!-- end row -->
-													
 
-													<label class="onoffswitch alert-yes" for="download-complete">
-													    <input type="checkbox" name="download-complete" class="onoffswitch-checkbox" id="download-complete" checked />
-														<div class="onoffswitch-container">
-															<div class="onoffswitch-slide">
-														        <span class="onoffswitch-active">Yes</span>
-														        <span class="onoffswitch-switch"></span>
-														        <span class="onoffswitch-inactive">No</span>
-															</div><!-- end div.onoffswitch-slide -->
-														</div><!-- end div.onoffswitch-container -->
-														<div class="label-msg"><i class="fa fa-info-circle"></i> Automatically download when the export is complete?</div>																															
-												    </label>
-													
-												</div><!-- end option -->												
-												<div class="export-destination-option option2"> 
-													<div id="media-types">
-														<label for="">Select your Media Type:</label>
-														<a href="javascript:void(0);" id="media-cd" class="media-type"><img src="images/cd-icon.png"  class="" alt="" />
-															<!-- div class="disc-count">3</div -->
-															<div class="disc-size">700 MB</div>
-														</a>
-														<a href="javascript:void(0);" id="media-dvd" class="media-type"><img src="images/dvd-icon.png"  class="" alt="" />
-															<div class="default-device"><i class="fa fa-bookmark"></i> Default</div>
-															<!-- div class="disc-count">2</div -->
-															<div class="disc-size">4.7 GB</div>
-															
-														</a>
-														<a href="javascript:void(0);" id="media-dvd-dl" class="media-type incompat"><img src="images/dvd-dl-icon.png"  class="" alt="" />
-															<!-- div class="disc-count">1</div -->
-															<div class="disc-size">8.5 GB</div>
-															
-														</a>
-														<a href="javascript:void(0);" id="media-bluray" class="media-type incompat"><img src="images/bluray-icon.png"  class="" alt="" />
-															<!-- div class="disc-count">1</div -->
-															<div class="disc-size">25 GB</div>
-														</a>
-													</div><!-- end div#media-types -->
-													
+												<!--label for="include-player" class="margin-top40">
+													<input id="include-player" type="checkbox">
+													Include Watch Guard video player</label-->
 
-													<label class="onoffswitch alert-yes" for="burn-disc" id="burn-disc-label">
-													    <input type="checkbox" name="burn-disc" class="onoffswitch-checkbox" id="burn-disc" checked />
-														<div class="onoffswitch-container">
-															<div class="onoffswitch-slide">
-														        <span class="onoffswitch-active">Yes</span>
-														        <span class="onoffswitch-switch"></span>
-														        <span class="onoffswitch-inactive">No</span>
-															</div><!-- end div.onoffswitch-slide -->
-														</div><!-- end div.onoffswitch-container -->
-														<div class="label-msg"><i class="fa fa-info-circle"></i> Automatically Burn to Disc when the export is complete?</div>																															
-												    </label>
-												
-													<div data-alert class="alert-box info radius" id="incompatible-media">
-													  Your Computer is not compatible with this Media Type.<br/> Manage this Export Job from the My Exports page.
-													</div>
-													
-													
-												</div><!-- end option -->												
-												<div class="export-destination-option option3"> 
-												
-													<div class="row">
-													    <div class="small-12 medium-12 large-12 columns">
-															<label>Select the DVD Robot to burn discs to</label>			
-															<a href="javascript:void(0);" class="checkbox-option" id="" data-checked="">
-																<div class="checked-state"></div><!-- end div.checked-state -->
-																<div class="option-text"><i class="fa fa-database"></i><br />TSROBOT</div>
+											</div><!-- end columns --> 
+										</div><!-- end row -->
+
+										<div class="row">
+											<div class="small-12 medium-12 large-12 columns">
+												<h4 class="">Select A Destination</h4>
+												<div id="export-destinations" class="clearfix">
+													<a href="javascript:void(0);" class="export-destination" data-value="1">
+														<img src="images/disk-drive.png" class="dest-icon" alt="" />
+														<div class="dest-title">Local Computer</div>
+														<div class="dest-desc">Local or Network</div>
+													</a>
+													<a href="javascript:void(0);" class="export-destination" data-value="2" >
+														<img src="images/disks.png" class="dest-icon" alt="" />
+														<div class="dest-title">Burn to Disc</div>
+														<div class="dest-desc">CD, DVD or BluRay</div>
+													</a>
+													<a href="javascript:void(0);" class="export-destination" data-value="3">
+														<img src="images/dvd-burner.png" class="dest-icon" alt="" />
+														<div class="dest-title">DVD Robot</div>
+														<div class="dest-desc">Queue for Burning</div>
+													</a>
+													<a href="javascript:void(0);" class="export-destination" data-value="4">
+														<img src="images/export-share.png" class="dest-icon" alt="" />
+														<div class="dest-title">Export Share</div>
+														<div class="dest-desc">External Cloud</div>
+													</a>
+												</div>
+
+
+												<div id="export-destination-options" class="clearfix">			
+													<div class="export-destination-option option1"> 
+
+														<label for=""><span id="download-location-label">Default</span> Download Location:</label>
+														<div class="row">
+														    <div class="small-12 medium-12 large-12 columns">
+												          		<div class="inline-block">C://usershare/My Documents/Exports/</div>
+																<a href="javascript:void(0);" id="change-download-location" class="button secondary tiny inline-block">Change Location</a>
+														    </div><!-- end columns -->
+														</div><!-- end row -->
+
+
+														<label class="onoffswitch alert-yes" for="download-complete">
+														    <input type="checkbox" name="download-complete" class="onoffswitch-checkbox" id="download-complete" checked />
+															<div class="onoffswitch-container">
+																<div class="onoffswitch-slide">
+															        <span class="onoffswitch-active">Yes</span>
+															        <span class="onoffswitch-switch"></span>
+															        <span class="onoffswitch-inactive">No</span>
+																</div><!-- end div.onoffswitch-slide -->
+															</div><!-- end div.onoffswitch-container -->
+															<div class="label-msg"><i class="fa fa-info-circle"></i> Automatically download when the export is complete?</div>																															
+													    </label>
+
+													</div><!-- end option -->												
+													<div class="export-destination-option option2"> 
+														<div id="media-types">
+															<label for="">Select your Media Type:</label>
+															<a href="javascript:void(0);" id="media-cd" class="media-type"><img src="images/cd-icon.png"  class="" alt="" />
+																<!-- div class="disc-count">3</div -->
+																<div class="disc-size">700 MB</div>
 															</a>
-															<a href="javascript:void(0);" class="checkbox-option" id="" data-checked="">
-																<div class="checked-state"></div><!-- end div.checked-state -->
-																<div class="option-text"><i class="fa fa-database"></i><br />Mr. Roboto</div>
-															</a>
-																										
-															<label>Number of Copies</label>
-															<!--select class="select inline-select">
-																<option value="1">1</option>
-																<option value="2">2</option>
-																<option value="3">3</option>
-															</select-->
-															<input type="text" name="copies"  id="copies" value="1" class="inline-input" style="width: 60px"/>
-													        
-															
-													    </div><!-- end columns -->
+															<a href="javascript:void(0);" id="media-dvd" class="media-type"><img src="images/dvd-icon.png"  class="" alt="" />
+																<div class="default-device"><i class="fa fa-bookmark"></i> Default</div>
+																<!-- div class="disc-count">2</div -->
+																<div class="disc-size">4.7 GB</div>
 
-													</div><!-- end row -->
-													
-													
-												</div><!-- end option -->												
-											</div>
-											<!-- end #export-destination-options --> 
-										</div>
-										<!-- end columns --> 
+															</a>
+															<a href="javascript:void(0);" id="media-dvd-dl" class="media-type incompat"><img src="images/dvd-dl-icon.png"  class="" alt="" />
+																<!-- div class="disc-count">1</div -->
+																<div class="disc-size">8.5 GB</div>
+
+															</a>
+															<a href="javascript:void(0);" id="media-bluray" class="media-type incompat"><img src="images/bluray-icon.png"  class="" alt="" />
+																<!-- div class="disc-count">1</div -->
+																<div class="disc-size">25 GB</div>
+															</a>
+														</div><!-- end div#media-types -->
+
+
+														<label class="onoffswitch alert-yes" for="burn-disc" id="burn-disc-label">
+														    <input type="checkbox" name="burn-disc" class="onoffswitch-checkbox" id="burn-disc" checked />
+															<div class="onoffswitch-container">
+																<div class="onoffswitch-slide">
+															        <span class="onoffswitch-active">Yes</span>
+															        <span class="onoffswitch-switch"></span>
+															        <span class="onoffswitch-inactive">No</span>
+																</div><!-- end div.onoffswitch-slide -->
+															</div><!-- end div.onoffswitch-container -->
+															<div class="label-msg"><i class="fa fa-info-circle"></i> Automatically Burn to Disc when the export is complete?</div>																															
+													    </label>
+
+														<div data-alert class="alert-box info radius" id="incompatible-media">
+														  Your Computer is not compatible with this Media Type.<br/> Manage this Export Job from the My Exports page.
+														</div>
+
+
+													</div><!-- end option -->												
+													<div class="export-destination-option option3"> 
+
+														<div class="row">
+														    <div class="small-12 medium-12 large-12 columns">
+																<label>Select the DVD Robot to burn discs to</label>			
+																<a href="javascript:void(0);" class="checkbox-option" id="" data-checked="">
+																	<div class="checked-state"></div><!-- end div.checked-state -->
+																	<div class="option-text"><i class="fa fa-database"></i><br />TSROBOT</div>
+																</a>
+																<a href="javascript:void(0);" class="checkbox-option" id="" data-checked="">
+																	<div class="checked-state"></div><!-- end div.checked-state -->
+																	<div class="option-text"><i class="fa fa-database"></i><br />Mr. Roboto</div>
+																</a>
+
+																<label>Number of Copies</label>
+																<!--select class="select inline-select">
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																</select-->
+																<input type="text" name="copies"  id="copies" value="1" class="inline-input" style="width: 60px"/>
+
+
+														    </div><!-- end columns -->
+
+														</div><!-- end row -->
+
+
+													</div><!-- end option -->	
+
+
+													<div class="export-destination-option option4"> 
+
+														<div class="row">
+														    <div class="small-12 medium-12 large-4 columns">
+																<label>Share ID</label>	
+																<input type="text" name="id"  id="id" value="" tabindex="" readonly />		
+															</div><!-- end columns -->
+														    <div class="small-12 medium-12 large-4 columns">
+																<label>Recipient(s)</label>	
+																<input type="text" name="recipient"  id="recipient" value="" tabindex="" />		
+															</div><!-- end columns -->
+															<div class="small-12 medium-12 large-4 columns">
+														        <label for="share-expiration">Share Expiration</label>
+														        <input type="text" name="share-expiration"  id="share-expiration"  tabindex="" value="03/06/2015" class="datepicker" />
+														    </div><!-- end columns -->
+														</div><!-- end row -->
+														
+														<div class="row">
+														    <div class="small-12 medium-12 large-4 columns">
+															<label for="share-security">Share Security</label>
+																<select class="select" id="share-security">
+																	<option value="1">Secured</option>
+																	<option value="2">Access Code</option>
+																	<option value="3">Unsecured</option>
+																</select>
+														    </div><!-- end columns -->
+														    <div class="small-12 medium-12 large-8 columns">
+
+															<label for="">&nbsp;</label>
+																<label class="onoffswitch alert-yes" for="forwarding" id="forwarding-label">
+																    <input type="checkbox" name="forwarding" class="onoffswitch-checkbox" id="forwarding" checked />
+																	<div class="onoffswitch-container">
+																		<div class="onoffswitch-slide">
+																	        <span class="onoffswitch-active">Yes</span>
+																	        <span class="onoffswitch-switch"></span>
+																	        <span class="onoffswitch-inactive">No</span>
+																		</div><!-- end div.onoffswitch-slide -->
+																	</div><!-- end div.onoffswitch-container -->
+																	<div class="label-msg"><i class="fa fa-share"></i> Allow Recipient(s) to Forward this Share?</div>																															
+															    </label>
+
+																<label class="onoffswitch alert-yes" for="playback" id="playback-label">
+																    <input type="checkbox" name="playback" class="onoffswitch-checkbox" id="playback" checked />
+																	<div class="onoffswitch-container">
+																		<div class="onoffswitch-slide">
+																	        <span class="onoffswitch-active">Yes</span>
+																	        <span class="onoffswitch-switch"></span>
+																	        <span class="onoffswitch-inactive">No</span>
+																		</div><!-- end div.onoffswitch-slide -->
+																	</div><!-- end div.onoffswitch-container -->
+																	<div class="label-msg"><i class="fa fa-play-circle"></i> Allow Playback?</div>																															
+															    </label>
+															
+																<div class="row" id="share-access-code">
+																    <div class="small-12 medium-12 large-6 columns">
+																		<label for="access-code-hint" class="has-tip" title="Enter the Hint for the Access Code of this Share, eg. Date Of Birth, Case #, etc.">Access Code Hint </label>
+																		<input type="text" name="access-code-hint"  id="access-code-hint"  tabindex="" value="" />
+																    </div><!-- end columns -->
+																    <div class="small-12 medium-12 large-6 columns">																
+																		<label for="access-code" class="has-tip" title="Enter the Access Code needed to download this Share">Access Code</label>
+																		<input type="text" name="access-code"  id="access-code"  tabindex="" value="" />
+																    </div><!-- end columns -->
+																</div><!-- end share-access-code -->														
+														    </div><!-- end columns -->
+														</div><!-- end row -->
+													</div><!-- end option -->												
+												</div><!-- end #export-destination-options --> 
+											</div><!-- end columns --> 
+										</div><!-- end row --> 
+									</div><!-- end div.panel radius --> 									
+								</div><!-- end .content -->
+								<div class="content" id="panel21">
+									
+									<span class="alert-box warning radius"><strong>Warning Message: </strong>Content here for ...................</span>
+									
+									<div class="panel radius" data-equalizer-watch>
+										<div class="row">
+										    <div class="small-12 medium-12 large-4 columns">
+												<label>Share ID</label>	
+												<input type="text" name="id"  id="id2" value="share241sd" tabindex="" readonly />		
+											</div><!-- end columns -->
+										    <div class="small-12 medium-12 large-4 columns">
+												<label>Recipient(s)</label>	
+												<input type="text" name="recipient"  id="recipient2" value="" tabindex="" />		
+											</div><!-- end columns -->
+											<div class="small-12 medium-12 large-4 columns">
+										        <label for="share-expiration">Share Expiration</label>
+												<select class="select" id="share-expiration">
+													<option value="1">1 Day</option>
+													<option value="3">3 Days</option>
+													<option value="4">5 Days</option>
+													<option value="7">7 Days</option>
+													<option value="14">14 Days</option>
+												</select>
+										
+										    </div><!-- end columns -->
+										</div><!-- end row -->
+										
+										<div class="row">
+										    <div class="small-12 medium-12 large-4 columns">
+											<label for="share-security2">Share Security</label>
+												<select class="select" id="share-security2">
+													<option value="1">Secured</option>
+													<option value="2">Access Code</option>
+													<option value="3">Unsecured</option>
+												</select>
+										    </div><!-- end columns -->
+										    <div class="small-12 medium-12 large-8 columns">
+
+											<label for="">&nbsp;</label>
+												<label class="onoffswitch alert-yes" for="forwarding2" id="forwarding-label2">
+												    <input type="checkbox" name="forwarding2" class="onoffswitch-checkbox" id="forwarding2" checked />
+													<div class="onoffswitch-container">
+														<div class="onoffswitch-slide">
+													        <span class="onoffswitch-active">Yes</span>
+													        <span class="onoffswitch-switch"></span>
+													        <span class="onoffswitch-inactive">No</span>
+														</div><!-- end div.onoffswitch-slide -->
+													</div><!-- end div.onoffswitch-container -->
+													<div class="label-msg"><i class="fa fa-share"></i> Allow Recipient(s) to Forward this Share?</div>																															
+											    </label>
+
+												<label class="onoffswitch alert-yes" for="playback2" id="playback-label2">
+												    <input type="checkbox" name="playback2" class="onoffswitch-checkbox" id="playback2" checked />
+													<div class="onoffswitch-container">
+														<div class="onoffswitch-slide">
+													        <span class="onoffswitch-active">Yes</span>
+													        <span class="onoffswitch-switch"></span>
+													        <span class="onoffswitch-inactive">No</span>
+														</div><!-- end div.onoffswitch-slide -->
+													</div><!-- end div.onoffswitch-container -->
+													<div class="label-msg"><i class="fa fa-play-circle"></i> Allow Playback?</div>																															
+											    </label>
+											
+												<div class="row" id="share-access-code2">
+												    <div class="small-12 medium-12 large-6 columns">
+														<label for="access-code-hint2" class="has-tip" title="Enter the Hint for the Access Code of this Share, eg. Date Of Birth, Case #, etc.">Access Code Hint </label>
+														<input type="text" name="access-code-hint"  id="access-code-hint2"  tabindex="" value="" />
+												    </div><!-- end columns -->
+												    <div class="small-12 medium-12 large-6 columns">																
+														<label for="access-code2" class="has-tip" title="Enter the Access Code needed to download this Share">Access Code</label>
+														<input type="text" name="access-code2"  id="access-code2"  tabindex="" value="" />
+												    </div><!-- end columns -->
+												</div><!-- end share-access-code -->
+											
+										    </div><!-- end columns -->
+										</div><!-- end row -->
+										
+									
 									</div>
-									<!-- end row --> 
-								</div>
-								<!-- end div.panel radius --> 
-							</div>
-							<!-- end columns -->
+								</div><!-- end .content -->
+								</div> <!-- end tabs-content -->
+							</div><!-- end columns -->
+							
 							<div class="small-12 medium-5 large-3 columns">
 								<h4 class="panel-top-title dark-title"><i class="fa fa-list-ul"></i> Export Summary</h4>
 								<div class="panel radius"  data-equalizer-watch>
@@ -658,14 +824,15 @@
 <script type="text/javascript" src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script> 
 <script type="text/javascript" src="js/chosen.jquery.js"></script> 
 <script type="text/javascript" src="js/jquery.qtip.js"></script> 
-<script type="text/javascript"src="js/responsive-tables.js"></script> 
+<script type="text/javascript" src="js/responsive-tables.js"></script> 
 <!--script type="text/javascript" src="http://cdn.kendostatic.com/2014.3.1119/js/kendo.all.min.js"></script-->
 <script type="text/javascript" src="js/kendo.all.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script> 
 
 <script type="text/javascript">
         $(document).ready(function() {
-	
+			$( ".datepicker" ).datepicker();
+			
 			// toggle linked events/items -- replace with binding
 			$('.export-item .button.gray-gradient').click(function(){
 					var toggleThis = $(this).closest('.export-item').next('.linked-events');
@@ -797,8 +964,6 @@
                 }
                 updateSpeed();
             }).change();
-
-
 			
             $('#export-destination').on('change', function() {
                 var exportDestination = $(this).find("option:selected").val();
@@ -811,6 +976,26 @@
                 }
             }).change();
 
+			
+            $('#share-access-code, #share-access-code2').hide();
+
+            $('#share-security, #share-security2').on('change', function() {
+                var shareSec = $(this).find("option:selected").val();
+
+                if (shareSec === '1') {	
+					$('#forwarding-label, #playback-label, #forwarding-label2, #playback-label2').show();
+					$('#share-access-code, #share-access-code2').hide();                    
+                } else if (shareSec === '2') {	
+                    $('#share-access-code, #share-access-code2').show();
+					$('#forwarding-label, #playback-label, #forwarding-label2, #playback-label2').show();
+
+                } else {
+                    $('#share-access-code, #share-access-code2').hide();
+					$('#forwarding-label, #playback-label, #forwarding-label2, #playback-label2').hide();
+                }
+            }).change();
+
+			
                
 
 			$('#export-disc-type').hide();

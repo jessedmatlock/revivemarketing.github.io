@@ -1,7 +1,8 @@
 $(document).ready(function() {
 	
 	var manageOrgsData = [{
-	    OrgID: "ID_21342323",
+	    Organization: "Plano PD",
+		OrgID: "ID_21342323",
 		Organization: "Organization Name",
 	    City: "Plano",
 	    State: "TX",
@@ -13,7 +14,8 @@ $(document).ready(function() {
 	    EndDate: "01/09/14",
 	    Type: "paying"
 	},{
-	    OrgID: "ID_21342323",
+	    Organization: "Plano PD",
+		OrgID: "ID_21342323",
 		Organization: "Organization Name",
 	    City: "Plano",
 	    State: "TX",
@@ -25,7 +27,8 @@ $(document).ready(function() {
 	    EndDate: "01/09/14",
 	    Type: "paying"
 	},{
-	    OrgID: "ID_21342323",
+		Organization: "Plano PD",
+		OrgID: "ID_21342323",
 		Organization: "Organization Name",
 	    City: "Plano",
 	    State: "TX",
@@ -57,15 +60,20 @@ $(document).ready(function() {
         },
         pageable: true,
         columns: [{
-            template: "<input type='checkbox' class='checkbox' />",
-            width: 30,
-            title: "<input type='checkbox' class='checkbox' />",
-            filterable: false
-        }, {
             template: kendo.template($("#manage-orgs-template").html()),
             width: 50,
             title: " ",
             filterable: false
+        }, {
+            field: "Organization",
+            width: 150,
+            title: "Organization",
+            filterable: {
+                cell: {
+                    showOperators: false,
+                    operator: "contains"
+                }
+            }
         }, {
             field: "OrgID",
             width: 100,
@@ -116,7 +124,7 @@ $(document).ready(function() {
         }, {
             field: "ContactName",
             title: "Contact Name",
-            width: 150,
+            width: 120,
             filterable: {
                 cell: {
                     operator: "gte"
@@ -125,7 +133,7 @@ $(document).ready(function() {
         }, {
             field: "ContactPhone",
             title: "Contact Phone",
-            width: 150,
+            width: 120,
             filterable: {
                 cell: {
                     operator: "gte"
@@ -134,7 +142,7 @@ $(document).ready(function() {
         }, {
             field: "ContactEmail",
             title: "Contact Email",
-            width: 180,
+            width: 150,
             filterable: {
                 cell: {
                     operator: "gte"

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Evidence Library Share : </title>
+	<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jquery.msgbox.css" />
+	<link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
+	<link rel="stylesheet" href="css/kendo-theme.css" />
+	<link href="css/chosen.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/app.css" />
+
+	<script src="js/modernizr.js"></script>
+
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {filter: none;}
+	  </style>
+	<![endif]-->
+
+</head>
+<body class="">	
+	<header id="header" class="">
+		<nav class="top-bar" data-topbar="">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#" data-msgbox="error"><img id="logo" src="images/WG_ELW_logo.png" /></a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon">
+					<a href="javascript:void(0);"><span>Menu</span></a>
+				</li>
+			</ul>
+
+			<section class="top-bar-section">
+				<ul class="right">
+					<li class=""><a href="4-share-inbox.html">Inbox</a></li>
+					<li><a href="4--dashboard.html">Dashboard</a></li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Page</a>
+						<ul class="dropdown">
+							<li class=""><a href="0-register.html"><i class="fa fa-cogs"></i> Register</a> </li>
+							<li class=""><a href="1-confirm-reg.html"><i class="fa fa-cogs"></i> Confirm Reg.</a> </li>
+							<li class=""><a href="2-login.html"><i class="fa fa-cogs"></i> Login</a> </li>
+							<li class=""><a href="2b-login.html"><i class="fa fa-cogs"></i> Login 2</a> </li>
+							<li class=""><a href="3-forgot-password.html"><i class="fa fa-cogs"></i> Forgot Password</a> </li>
+							<li class=""><a href="3b-reset-password.html"><i class="fa fa-cogs"></i> Reset Password</a> </li>
+							<li class=""><a href="4--dashboard.html"><i class="fa fa-cogs"></i> Dashboard</a> </li>
+		                    <li  class=""><a href="4-share-inbox.html"><i class="fa fa-cogs"></i> Share Inbox</a> </li>
+		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Mgmt.</a> </li>
+		                    <li  class=""><a href="6-share-details.html"><i class="fa fa-cogs"></i> Share Details</a> </li>
+		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Org. Config</a> </li>
+		                    <li  class=""><a href="7-user-profile.html"><i class="fa fa-cogs"></i> User Profile</a> </li>
+		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> User Profile (Admin)</a> </li>
+		                    <li  class=""><a href="8--user-mgmt.html"><i class="fa fa-cogs"></i> User Mgmt.</a> </li>
+		                    <li  class=""><a href="10-link-share.html"><i class="fa fa-cogs"></i> Link Share</a> </li>
+		                    <li  class=""><a href="11-passcoded-share.html"><i class="fa fa-cogs"></i> Passcode Share</a> </li>
+		                    <li  class=""><a href="12-secured-share.html"><i class="fa fa-cogs"></i> Secured Share</a> </li>
+		                    <li  class=""><a href="forward-share.html"><i class="fa fa-cogs"></i> Forward Share</a> </li>
+						</ul>
+					</li>
+		            <li class="user-profile">
+		                <a href="javascript:void(0);" data-modal="partials/user-profile.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><img src="images/avatar-icon.png" class="user-avatar"/>Username</a>
+		            </li>
+		            <li class="user-logout"><a href="2-login.html" class="has-tip tip-top" title="Logout"><i class="fa fa-power-off fa-lg"></i></a></li>
+				</ul>
+				<!--ul class="left">
+					<li>
+						<a href="#">Left Nav</a>
+					</li>
+				</ul-->
+			</section>
+		</nav>	
+	</header><!-- end header #header. -->
+	
+	<section id="main-section" class="clearfix">		
+		<div class="row" id="content">
+		    <div class="small-12 medium-12 large-12 columns">
+				<h4 class="panel-top-title dark-title"><i class="fa fa-cogs"></i> User Profile</h4>												
+				<div class="panel radius">	
+					
+					<div class="row">
+					    <div class="small-12 medium-6 large-6 columns">
+					        <label for="organization-name">Organization Name</label>
+					        <input type="text" name="organization-name"  id="organization-name"  tabindex="" value="Allen PD" />
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-6 large-6 columns text-right">
+					        <span class="label radius">ID #: 12312</span>
+					        <label for="status-switch" class="label success radius"><input id="status-switch" type="checkbox" name="status-switch" checked> <span>Status: Active</span><!-- end div# --></label>
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					
+					<div class="row">
+					    <div class="small-12 medium-6 large-6 columns">
+					        <label for="first-name">First Name</label>
+					        <input type="text" name="first-name"  id="first-name"  tabindex="" value="First Name" />
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-6 large-6 columns">
+					        <label for="last-name">Last Name</label>
+					        <input type="text" name="last-name"  id="last-name"  tabindex="" value="Last Name" />
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					<div class="row">
+					    <div class="small-12 medium-12 large-6 columns">
+							<label for="email-address">Email Address</label>
+							<input type="text" name="email-address"  id="email-address"  tabindex="" value="email@domain.com" readonly />
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					
+					<div class="row">
+					    <div class="small-12 medium-6 large-6 columns">
+					        <label for="user-role">User Role</label>
+							<select name="user-role" id="user-role" multiple class="select" data-placeholder="Choose this users Role(s)" >
+								<option value="">User</option>
+								<option value="">Admin</option>
+								<option value="">...</option>								
+							</select>
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-6 large-6 columns">
+					        <label for="user-group">User Group</label>
+							<select name="user-group" id="user-group" multiple class="select" data-placeholder="Assign this user to a Group(s)" >
+								<option value="">Group1</option>
+								<option value="">Group2</option>
+								<option value="">...</option>								
+							</select>
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					
+					<hr/>
+																	
+					<div class="row">
+					    <div class="small-12 medium-12 large-12 columns">
+							<a href="javascript:void(0);" id="" class="button secondary small anim-button" data-active="Sending ...">Send Password Reset</a>
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					<div class="panel-actions">																	
+				        <a href="javascript:void(0);" class="button secondary">Cancel</a>											                	
+						<a href="javascript:void(0);" class="button success anim-button" id="save-notes" data-original="Save Changes" data-active="Saving ...">Save Changes</a>											                	
+				    </div><!-- end columns -->																
+				</div><!-- end div.panel radius -->
+								
+		    </div><!-- end columns -->
+		</div><!-- end row -->
+	</section><!-- end main section --> 
+
+	<footer id="footer">
+		<div class="row">
+			<div class="small-12 medium-12 large-12 columns">
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
+			</div><!-- end columns --> 
+		</div><!-- end row --> 
+	</footer>
+	<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.msgbox.js"></script> 
+	<script type="text/javascript" src="js/kendo.all.min.js"></script> 
+	<script type="text/javascript" src="js/foundation.min.js"></script> 
+	<script type="text/javascript" src="js/chosen.jquery.js"></script> 
+
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$('#status-switch').on('change', function(){
+				var label = $(this).closest('.label');
+
+				if (!this.checked) {
+			    	label.removeClass('success').addClass('alert').find('span').text('Status: Inactive');
+				} else {
+			    	label.removeClass('alert').addClass('success').find('span').text('Status: Active');
+				}
+				
+			}).change();
+		});  // end docready
+	</script>
+<div id="global-modal" class="reveal-modal" data-reveal></div>
+</body>
+</html>

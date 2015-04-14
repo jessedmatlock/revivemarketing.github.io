@@ -1,9 +1,17 @@
 <div class="modal-title">User Profile Settings</div><!-- end div.modal-title -->
 	
 	<div class="row">
-	    <div class="small-12 medium-6 large-6 columns">
+	    <div class="small-12 medium-6 large-3 columns">
 	        <label for="organization-name">Organization Name</label>
-	        <input type="text" name="organization-name"  id="organization-name"  tabindex="" value="Allen PD (not shown for TS users)" />
+	        <input type="text" name="organization-name"  id="organization-name"  tabindex="" value="Allen PD" readonly />
+	    </div><!-- end columns -->
+	    <div class="small-12 medium-6 large-3 columns">
+	        <label for="">Time Zone</label>
+			<select name="timezone" id="timezone" class="select">
+				<option value="1">...</option>
+				<option value="2">...</option>
+				<option value="3">...</option>
+			</select>
 	    </div><!-- end columns -->
 	    <div class="small-12 medium-6 large-6 columns text-right">
 	        <label for="whitelist" class="">
@@ -15,7 +23,6 @@
 				<div class="negative">N</div>
 				<div class="positive">Y</div>
 			</div>							        
-	        
 	    </div><!-- end columns -->
 	</div><!-- end row -->
 	

@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	var userMgmtData = [{
-		    userID: "1",
 		    Name: "Jeff Schmelling",
 			Email: "email@email.com",
 			Role: "",
@@ -8,7 +7,6 @@ $(document).ready(function() {
 		    LastLogin: "03/09/14 ",
 		    Status: "active"
 		},{
-			userID: "2",
 			Name: "Joe VanSchuyver",
 			Email: "email@email.com",
 			Role: "",
@@ -16,7 +14,6 @@ $(document).ready(function() {
 			LastLogin: "03/09/15 ",
 			Status: "pending"
 		},{
-			userID: "3",
 			Name: "Zach Bonham",
 			Email: "email@email.com",
 			Role: "",
@@ -24,7 +21,6 @@ $(document).ready(function() {
 			LastLogin: "12/09/14 ",
 			Status: "inactive"
 		},{
-			userID: "4",
 			Name: "Christina Ye",
 			Email: "email@email.com",
 			Role: "",
@@ -51,25 +47,10 @@ $(document).ready(function() {
 		},	
         pageable: true,
         columns: [{
-		    template: "<input type='checkbox' class='checkbox' />",
-		    width: 30,
-		    title: "<input type='checkbox' class='checkbox' />",
-		    filterable: false
-		},{
 		    template: kendo.template($("#user-mgmt-template").html()),
 			width: 50,
 			title: " ",
 			filterable: false
-		},{
-            field: "userID",
-            width: 60,
-            title: "ID",
-            filterable: {
-                cell: {
-                    showOperators: false,
-                    operator: "contains"
-                }
-            }
         },{
             field: "Name",
             title: "Name",

@@ -35,9 +35,9 @@
                     'background-color': '#000000',
                     'opacity': 0.75
                 },
-                showDuration: 200,
+                showDuration: 100,
                 closeDuration: 100,
-                moveDuration: 550,
+                moveDuration: 250,
                 form: {
                     'active': false,
                     'action': '#',
@@ -379,8 +379,8 @@
 
                 if (this.options.emergefrom == "bottom") {
                     x = (scroll.y + size.y + 80);
-                } else // top
-                {
+                } else { 
+					// top                
                     x = (scroll.y - height) - 80;
                 }
 

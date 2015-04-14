@@ -3,122 +3,122 @@ $(document).ready(function() {
 		ExportLabel: "Case-1234",	    
 	    ShareID: "654789123",
 	    From: "Plano PD",
-		To: "Patrick Mills",
+		To: "7 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789124",
 	    From: "McKinney PD",
-		To: "Patrick Mills",
+		To: "4 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789125",
 	    From: "Plano PD",
-		To: "Patrick Mills",
+		To: "1 Recipient",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789126",
 	    From: "Celina PD",
-		To: "Patrick Mills",
+		To: "1 Recipient",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789127",
 	    From: "Celina PD",
-		To: "Patrick Mills",
+		To: "3 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789128",
 	    From: "Plano PD",
-		To: "Patrick Mills",
+		To: "1 Recipient",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789129",
 	    From: "Celina PD",
-		To: "Patrick Mills",
+		To: "8 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789130",
 	    From: "Plano PD",
-		To: "Patrick Mills",
+		To: "3 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789131",
 	    From: "McKinney PD",
-		To: "Patrick Mills",
+		To: "2 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789132",
 	    From: "McKinney PD",
-		To: "Patrick Mills",
+		To: "5 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ExportLabel: "Case-1234",	    
 	    ShareID: "654789133",
 	    From: "Plano PD",
-		To: "Patrick Mills",
+		To: "3 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	}];
 	
@@ -214,16 +214,6 @@ $(document).ready(function() {
                 cell: {
                     showOperators: false,
                     operator: "contains"
-                }
-            }
-        }, {
-            field: "Forwarded",
-            width: 80,
-            title: "Forwarded",
-            filterable: {
-                cell: {
-                    operator: "gte",
-                    showOperators: false
                 }
             }
         }, {

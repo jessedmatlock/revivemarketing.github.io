@@ -7,7 +7,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789124",
@@ -17,7 +17,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789125",
@@ -27,7 +27,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789126",
@@ -37,7 +37,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789127",
@@ -47,7 +47,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789128",
@@ -57,7 +57,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789129",
@@ -67,7 +67,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789130",
@@ -77,7 +77,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789131",
@@ -87,7 +87,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789132",
@@ -97,7 +97,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	},{
 	    ShareID: "654789133",
@@ -107,7 +107,7 @@ $(document).ready(function() {
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
 	    Type: "Secure",
-	    Forwarded: "1",
+	    
 	    Downloads: "4"
 	}];
 	
@@ -200,16 +200,6 @@ $(document).ready(function() {
                 cell: {
                     showOperators: false,
                     operator: "contains"
-                }
-            }
-        }, {
-            field: "Forwarded",
-            width: 80,
-            title: "Forwarded",
-            filterable: {
-                cell: {
-                    operator: "gte",
-                    showOperators: false
                 }
             }
         }, {

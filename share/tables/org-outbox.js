@@ -8,7 +8,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "ID_21342324",
 		To: "Organization Name",
@@ -18,7 +18,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "ID_21342325",
 		To: "Organization Name",
@@ -28,7 +28,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "ID_21342326",
 		To: "Organization Name",
@@ -38,7 +38,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "ID_21342327",
 		To: "Organization Name",
@@ -48,7 +48,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "ID_21342328",
 		To: "Organization Name",
@@ -58,7 +58,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "ID_21342329",
 		To: "Organization Name",
@@ -68,7 +68,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "654789130",
 		To: "Organization Name",
@@ -78,7 +78,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "654789131",
 		To: "Organization Name",
@@ -88,7 +88,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "654789132",  
 		To: "Organization Name",
@@ -98,7 +98,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	},{
 	    ShareID: "654789133",
 		To: "Organization Name",
@@ -108,7 +108,7 @@ $(document).ready(function() {
 	    Size: "892MB",
 	    Type: "Secure",
 	    Forwarded: "1",
-	    Downloads: "4"
+	    
 	}];
 	
     $("#org-outbox").kendoGrid({
@@ -213,16 +213,6 @@ $(document).ready(function() {
                     showOperators: false
                 }
             }
-        }, {
-           field: "Downloads",
-           width: 80,
-           title: "Downloads",
-           filterable: {
-               cell: {
-                   operator: "gte",
-                   showOperators: false
-               }
-           }
 		}]
 		
     }).data("kendoGrid");  

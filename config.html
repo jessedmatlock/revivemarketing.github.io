@@ -142,12 +142,14 @@
 							    <tr>
 							      <td>Traffic Accident</td>
 							      <td>
-									<select name="cat-expiration" class="select" >
+									<select name="" class="select" >
 										<option value="">1 day</option>
 										<option value="">3 days</option>
 										<option value="">5 days</option>
 										<option value="">7 days</option>
 										<option value="">14 days</option>
+										<option value="">30 days</option>
+										<option value="">45 days</option>
 									</select>
 
 							      </td>
@@ -155,12 +157,74 @@
 							    <tr>
 							      <td>Traffic Citation</td>
 							      <td>
-									<select name="cat2-expiration" class="select" >
+									<select name="" class="select" >
 										<option value="">1 day</option>
 										<option value="">3 days</option>
 										<option value="">5 days</option>
 										<option value="">7 days</option>
 										<option value="">14 days</option>
+										<option value="">30 days</option>
+										<option value="">45 days</option>
+									</select>
+								
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>DUI</td>
+							      <td>
+									<select name="" class="select" >
+										<option value="">1 day</option>
+										<option value="">3 days</option>
+										<option value="">5 days</option>
+										<option value="">7 days</option>
+										<option value="">14 days</option>
+										<option value="">30 days</option>
+										<option value="">45 days</option>
+									</select>
+								
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Domestic Incident</td>
+							      <td>
+									<select name="" class="select" >
+										<option value="">1 day</option>
+										<option value="">3 days</option>
+										<option value="">5 days</option>
+										<option value="">7 days</option>
+										<option value="">14 days</option>
+										<option value="">30 days</option>
+										<option value="">45 days</option>
+									</select>
+								
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Drug Incident</td>
+							      <td>
+									<select name="" class="select" >
+										<option value="">1 day</option>
+										<option value="">3 days</option>
+										<option value="">5 days</option>
+										<option value="">7 days</option>
+										<option value="">14 days</option>
+										<option value="">30 days</option>
+										<option value="">45 days</option>
+									</select>
+								
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Other Category</td>
+							      <td>
+									<select name="" class="select" >
+										<option value="">1 day</option>
+										<option value="">3 days</option>
+										<option value="">5 days</option>
+										<option value="">7 days</option>
+										<option value="">14 days</option>
+										<option value="">30 days</option>
+										<option value="">45 days</option>
 									</select>
 								
 							      </td>
@@ -170,7 +234,7 @@
 					    </div><!-- end columns -->
 					    <div class="small-12 medium-12 large-4 columns">
 					        <label for="domain-whitelist">Domain Whitelist (comma separated)</label>
-							<textarea name="domain-whitelist" id="domain-whitelist" class="" rows="6"></textarea>
+							<textarea name="domain-whitelist" id="domain-whitelist" class="" rows="6" disabled></textarea>
 					    </div><!-- end columns -->
 					    <div class="small-12 medium-12 large-4 columns">
 				        <div class="row collapse">
@@ -181,14 +245,11 @@
 				                            <input type="text" name="api-key" id="api-key" tabindex="" value="" />
 				                        </div>
 				                        <div class="small-2 columns">
-				                            <span class="suffix has-tip" title="Click to validate your API value" data-tooltip><a href="javascript:void(0);"  class="button">Test</a></span>
+				                            <span class="suffix has-tip" title="Click to validate your API value" data-tooltip><a href="javascript:void(0);"  class="button secondary">Test</a></span>
 				                        </div>
-				                    </div>
-								    
+				                    </div>								    
 					            </div><!-- end columns -->
 					        </div><!-- end row -->
-					
-							
 					        <div class="row collapse">
 					            <div class="small-12 medium-12 large-12 columns">
 					                <label for="allowed-share-types">Allowed Share Types</label>
@@ -196,15 +257,11 @@
 										<option value="1" selected>Secured</option>
 										<option value="2">Access Code</option>
 										<option value="3">Unsecured</option>
-									</select>
-									
-									
+									</select>									
 					            </div><!-- end columns -->
-					        </div><!-- end row -->
-					        
+					        </div><!-- end row -->					      
 					    </div><!-- end columns -->
-					</div><!-- end row -->
-						
+					</div><!-- end row -->						
 
 				<hr />
 
@@ -216,24 +273,13 @@
 						    </div><!-- end panel-actions -->
 					    </div><!-- end columns -->
 					</div><!-- end row -->
-
-
-                </div>
-                <!-- end div.panel radius --> 
-              
-            </div>
-            <!-- end div.panel radius --> 
-          </div>
-          <!-- end columns --> 
-        </div>
-        <!-- end row -->
-         
-      </div>
-      <!-- end columns --> 
-    </div>
-    <!-- end main row #content-wrapper --> 
-  </div>
-  <!-- end div#content-outer-wrapper -->
+               </div><!-- end div.panel radius -->              
+            </div><!-- end div.panel radius --> 
+          </div><!-- end columns --> 
+        </div><!-- end row -->        
+      </div><!-- end columns --> 
+    </div><!-- end main row #content-wrapper --> 
+  </div><!-- end div#content-outer-wrapper -->
   <footer>
     <div class="row">
       <div class="small-12 medium-3 large-4 columns show-for-medium-up">
@@ -248,9 +294,7 @@
         <p class="muted">BuildNumber: 1.248</p>
       </div>
       <!-- end columns --> 
-    </div>
-    <!-- end row --> 
-    
+    </div><!-- end row --> 
   </footer>
 </section>
 <!-- end main section --> 
@@ -294,8 +338,7 @@
         <!-- end div#new-item-type-link --> 
       </div>
       <!-- end columns --> 
-    </div>
-    <!-- end row --> 
+    </div><!-- end row --> 
   </div>
   <div class="modal-footer">
     <button class="button secondary" data-dismiss="modal" id="cancel" aria-hidden="true">Close</button>
@@ -331,8 +374,7 @@
           <option value="">Officer Tracy, Spencer</option>
           <option value="">Officer Olivier, Laurence</option>
         </select>
-      </div>
-      <!-- end columns -->
+      </div><!-- end columns -->
       <div class="small-12 medium-6 large-6 columns">
         <label for="new_case_imte-upload">Assign Permissions</label>
         <select class="select case-worker-perms-select">
@@ -340,10 +382,8 @@
           <option value="">Read Only</option>
           <option value="">Other ?</option>
         </select>
-      </div>
-      <!-- end columns --> 
-    </div>
-    <!-- end row --> 
+      </div><!-- end columns --> 
+    </div><!-- end row --> 
   </div>
   <div class="modal-footer">
     <button class="button secondary" data-dismiss="modal" id="cancel" aria-hidden="true">Cancel</button>
@@ -365,14 +405,6 @@
   <a class="close-reveal-modal">×</a> </div>
 <script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){																																												
-			$('.edit-panel-section, .edit-buttons, #save-editing').on('click', function(){				
-				var parent = $(this).closest('.item-details-section').find('.panel'),
-					inputs = parent.find('.editable');	
-					parent.toggleClass('editing');			
-				$(inputs).each(function(){
-					$(this).prop("disabled", !$(this).prop("disabled")).trigger("chosen:updated");
-		        });
-			});
 
 			$('.right-offcanvas-toggle').click(function(){
 				$('.row-offcanvas').toggleClass('menu-active');		
@@ -380,15 +412,12 @@
 			$('.exit-off-canvas').click(function(){
 				$('.row-offcanvas').removeClass('menu-active search-active');		
 			});
+			$('#allow-forward').change(function() {
+				// nothing to see here folks....
+			});
 			
-			$('#audit-filter').change(function() {
-				var filtered = $(this).find('option:selected').val();
-				    if(filtered == "ALL"){
-						$(".audit-event").removeClass('active').show();
-					} else {
-						$(".audit-event").removeClass('active').show();						
-						$(".audit-event").not('.'+filtered).hide();
-					}
+			$('#enable-whitelist').change(function() {
+					$('#domain-whitelist').attr('disabled', !this.checked)
 			}).change();
 			
 		});  // end docready

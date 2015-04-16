@@ -37,6 +37,11 @@ $(document).ready(function(){
 		}
 	});
 	
+	// for dropdown menus ITEMS, that won't close the dropdown on click
+	$('[data-dropdown-content] a').on('click', function() {
+		var id = $(this).closest('ul').attr('id');
+		$('[data-dropdown=' + id + ']').trigger('click');
+	});
 	
 	// lazy loading code for TABS
 //	$('.tabs dd a').on('click', function(e){
@@ -1794,5 +1799,3 @@ function onDataBound(e) {
 
   	}
 })(jQuery);
-
-

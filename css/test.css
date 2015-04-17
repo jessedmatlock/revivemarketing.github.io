@@ -1711,9 +1711,10 @@ a#change-config.change + #checkout-config {
     position: absolute;
     left: 50%;
     top: 18px;
-    margin-left: -115px;
+    margin-left: -150px;
     text-align: center;
     color: #aaa;
+    width: 300px;
 }
 .video-trim #playhead-controls #fader-wrapper {
     margin-left: -300px;
@@ -1770,10 +1771,10 @@ a#change-config.change + #checkout-config {
     }
 }
 .slider-wrap {
-    width: 290px;
+    width: 340px;
     height: 18px;
     position: relative;
-    padding: 0 70px !important;
+    padding: 0 100px !important;
     clear: both;
 }
 #fader {
@@ -1784,7 +1785,7 @@ a#change-config.change + #checkout-config {
     height: 1em;
     text-align: center;
     padding: 0;
-    width: 150px;
+    width: 160px;
     margin: 0 0 6px 70px;
 }
 #slider-dots .fa:first-child {
@@ -1796,7 +1797,7 @@ a#change-config.change + #checkout-config {
 .slider-wrap .slider-prefix,
 .slider-wrap .slider-postfix {
     display: block;
-    width: 65px;
+    width: 100px;
     position: absolute;
     top: 0;
     font-size: 12px;
@@ -1819,10 +1820,12 @@ a#change-config.change + #checkout-config {
 .slider-wrap .slider-prefix {
     left: 0;
     padding-right: 5px;
+    text-align: right;
 }
 .slider-wrap .slider-postfix {
     right: 0;
     padding-left: 5px;
+    text-align: left;
 }
 #fader-wrapper .ui-slider .ui-slider-handle {
     background: url('http://improvingclients.com/wg/EL_web/elw_proto_1/images/slidehead.png') no-repeat 50% 50% !important;
@@ -3293,7 +3296,7 @@ table .k-state-active {
 }
 .k-grid td:nth-child(1),
 .k-grid td:nth-child(2) {
-    overflow: visible;
+    overflow: visible !important;
 }
 #grid table tr.k-state-selected td > * {
     color: #fff !important;
@@ -3998,7 +4001,7 @@ table#simple {
 table#simple thead tr th {
 	height: 30px;
 	background: #ccc;
-	border-color: #aaa;
+	border-color: #bbb;
 	color: #555;
 	text-shadow: none;
 }

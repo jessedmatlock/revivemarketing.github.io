@@ -397,10 +397,13 @@
 								
 								<ul class="tabs export-tabs" data-tab="">
 									<li class="tab-title active">
-										<a href="#panel11"><i class="fa fa-desktop"></i> Media Export</a>
+										<a href="#panel11" id="tab-1"><i class="fa fa-desktop"></i> Media Export</a>
 									</li>
 									<li class="tab-title">
-										<a href="#panel21"><i class="fa fa-cloud"></i> Cloud Share</a>
+										<a href="#panel21" id="tab-2"><i class="fa fa-cloud"></i> Cloud Share</a>
+									</li>
+									<li class="tab-title">
+										<a href="#panel22" id="tab-3"><i class="fa fa-cloud"></i> Cloud Share</a>
 									</li>
 								</ul>		
 								<div class="tabs-content">
@@ -701,38 +704,53 @@
 														<option value="3">Unsecured</option>
 													</select>
 											</div><!-- end columns -->
+										</div><!-- end row -->
 										
+										<div class="row">											    
+											<div class="small-12 medium-12 large-12 columns">
+												<label for="include-subs2" id="include-subs-label2">
+													<input type="checkbox" name="include-subs2" id="include-subs2" value="" checked />
+													Include Subtitles? <small>(recommended)</small>
+												</label>			
+										    </div><!-- end columns -->
 										</div><!-- end row -->
 										
 										<div class="row">
-
 										    <div class="small-12 medium-12 large-12 columns">
-
-											<label for="">&nbsp;</label>
-												<label class="onoffswitch alert-yes" for="forwarding2" id="forwarding-label2">
-												    <input type="checkbox" name="forwarding2" class="onoffswitch-checkbox" id="forwarding2" checked />
-													<div class="onoffswitch-container">
-														<div class="onoffswitch-slide">
-													        <span class="onoffswitch-active">Yes</span>
-													        <span class="onoffswitch-switch"></span>
-													        <span class="onoffswitch-inactive">No</span>
-														</div><!-- end div.onoffswitch-slide -->
-													</div><!-- end div.onoffswitch-container -->
-													<div class="label-msg"><i class="fa fa-share"></i> Allow Recipient(s) to Forward this Share?</div>																															
-											    </label>
-
-												<label class="onoffswitch alert-yes" for="playback2" id="playback-label2">
-												    <input type="checkbox" name="playback2" class="onoffswitch-checkbox" id="playback2" checked />
-													<div class="onoffswitch-container">
-														<div class="onoffswitch-slide">
-													        <span class="onoffswitch-active">Yes</span>
-													        <span class="onoffswitch-switch"></span>
-													        <span class="onoffswitch-inactive">No</span>
-														</div><!-- end div.onoffswitch-slide -->
-													</div><!-- end div.onoffswitch-container -->
-													<div class="label-msg"><i class="fa fa-play-circle"></i> Allow Playback?</div>																															
-											    </label>
+											<div class="row">
+											    <div class="small-12 medium-6 large-6 columns">
+													<label for="">&nbsp;</label>
+														<label class="onoffswitch alert-yes" for="forwarding2" id="forwarding-label2">
+														    <input type="checkbox" name="forwarding2" class="onoffswitch-checkbox" id="forwarding2" checked />
+															<div class="onoffswitch-container">
+																<div class="onoffswitch-slide">
+															        <span class="onoffswitch-active">Yes</span>
+															        <span class="onoffswitch-switch"></span>
+															        <span class="onoffswitch-inactive">No</span>
+																</div><!-- end div.onoffswitch-slide -->
+															</div><!-- end div.onoffswitch-container -->
+															<div class="label-msg"><i class="fa fa-share"></i> Allow Recipient(s) to Forward this Share?</div>																															
+													    </label>
+											    </div><!-- end columns -->
+											    <div class="small-12 medium-6 large-6 columns">
+													<label for="">&nbsp;</label>
+												
+													<label class="onoffswitch alert-yes" for="playback2" id="playback-label2">
+													    <input type="checkbox" name="playback2" class="onoffswitch-checkbox" id="playback2" checked />
+														<div class="onoffswitch-container">
+															<div class="onoffswitch-slide">
+														        <span class="onoffswitch-active">Yes</span>
+														        <span class="onoffswitch-switch"></span>
+														        <span class="onoffswitch-inactive">No</span>
+															</div><!-- end div.onoffswitch-slide -->
+														</div><!-- end div.onoffswitch-container -->
+														<div class="label-msg"><i class="fa fa-play-circle"></i> Allow Playback?</div>																															
+												    </label>
+											    </div><!-- end columns -->
+											</div><!-- end row -->
 											
+
+												
 												<div class="row" id="share-access-code2">
 												    <div class="small-12 medium-12 large-6 columns">
 														<label for="access-code-hint2" class="has-tip" title="Enter the Hint for the Access Code of this Share, eg. Date Of Birth, Case #, etc.">Access Code Hint </label>
@@ -750,13 +768,18 @@
 														<input type="text" name="access-code2"  id="access-code2"  tabindex="" value="" />
 												    </div><!-- end columns -->
 												</div><!-- end share-access-code -->
-											
+												
 										    </div><!-- end columns -->
 										</div><!-- end row -->
 										
 									
 									</div>
 								</div><!-- end .content -->
+								<div class="content" id="panel22">
+									<div class="panel">
+										<span class="alert-box info radius"><strong>NOTICE: </strong>The SHARE feature has not been enabled on your system or .... Please contact... (insert crafty message here)</span>
+									</div><!-- end div.panel -->
+								</div><!-- end div #panel22.content -->
 								</div> <!-- end tabs-content -->
 							</div><!-- end columns -->
 							
@@ -789,14 +812,17 @@
 										<!-- end div.export-disc-bluray -->
 									</div>
 									<!-- end div#export-disc-type -->
+									
+									<div id="cloud"><i class="fa fa-cloud-upload"></i></div>
+									
 									<div class="export-data-block export-speed">
 										<div class="export-data">Fast</div>
 										<!--div class="export-label">Export Speed</div-->
-										<id id="gauge"></id>
+										<div id="gauge"></div>
 									</div><!-- end .export-data-block export-speed --> 
 									<div id="export-label">
-										<label for="export-label-name" class="required">Export Label (required)</label>
-											<input type="text" name="export-label-name" id="export-label-name" value="" class="required" placeholder="Enter an Export Label or Recipient" class="" />
+										<label for="export-label-name" class="required">Reference Label (required)</label>
+											<input type="text" name="export-label-name" id="export-label-name" value="" class="required" placeholder="Enter a Reference Label or Recipient" class="" />
 									</div><!-- end div#export-recipient-other --> 
 									<a href="queue.html" class="button primary large radius block-button" id="export-submit" disabled>Prepare Export</a>
 									<a href="javascript:void(0);" class="button small secondary radius no-margin">Cancel Export</a> </div>
@@ -869,6 +895,7 @@
 					$(this).next('.linked-events').hide();
 				});					
 			});
+
 
 			$("#gauge").kendoRadialGauge({
 
@@ -1128,7 +1155,7 @@
                 }
 
             }
-
+			
 			// simulate changing the Default Download Location label, when clicking the Change Location Button
 			$('#change-download-location').on('click', function(){
 				$(this).toggleClass('default-loc');
@@ -1137,6 +1164,20 @@
 				} else {
 					$('#download-location-label').html('Default');
 				}
+			});
+			
+			// toggle the graph and cloud image based on tab clicked
+			$('.export-tabs a').on('click', function(){
+				var id = $(this).attr('id');
+				
+				if(id === 'tab-1'){
+					$('#cloud').hide();
+					$(".export-speed").show();
+				} else if (id === 'tab-2' || id === 'tab-3'){
+					$('#cloud').show();
+					$(".export-speed").hide();
+				}
+								
 			});
             
         }); // end docready

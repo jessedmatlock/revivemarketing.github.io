@@ -85,33 +85,38 @@
             <div class="panel radius">
                 <h4 class="panel-top-title dark-title"><i class="fa fa-cogs"></i> Share Configuration</h4>
                 <div class="panel radius">
+				
+				
 					<div class="row">
-					    <div class="small-12 medium-12 large-4 columns">
-					        <label for="default-expiration">Default Expiration</label>
-							<select name="default-expiration" id="default-expiration" class="select" >
-								<option value="">1 day</option>
-								<option value="">3 days</option>
-								<option value="">5 days</option>
-								<option value="">7 days</option>
-								<option value="">14 days</option>
-							</select>
-					    </div><!-- end columns -->
-					    <div class="small-12 medium-12 large-4 columns">
-							<label for="">&nbsp;</label>
-							
-					        <label class="onoffswitch alert-yes" for="enable-whitelist">
-							    <input type="checkbox" name="enable-whitelist" class="onoffswitch-checkbox" id="enable-whitelist" />
-								<div class="onoffswitch-container">
-									<div class="onoffswitch-slide">
-								        <span class="onoffswitch-active">Yes</span>
-								        <span class="onoffswitch-switch"></span>
-								        <span class="onoffswitch-inactive">No</span>
-									</div><!-- end div.onoffswitch-slide -->
-								</div><!-- end div.onoffswitch-container -->
-								<div class="label-msg"><i class="fa fa-info-circle"></i> Enable Domain Whitelist?</div>																															
-						    </label>			                
-					    </div><!-- end columns -->
-					    <div class="small-12 medium-12 large-4 columns">
+						<div class="small-12 medium-12 large-4 columns">
+						
+				        	<div class="row collapse">
+					            <div class="small-12 medium-12 large-12 columns">
+						            <label for="api-url" class="">API URL</label>
+			                        <input type="text" name="api-url" id="api-url" value="" />
+		                
+									<div class="row collapse">
+				                        <label for="api-key" class="">API Key</label>
+				                        <div class="small-10 columns">
+				                            <input type="text" name="api-key" id="api-key" tabindex="" value="" />
+				                        </div>
+				                        <div class="small-2 columns">
+				                            <span class="suffix has-tip" title="Click to validate your API value" data-tooltip><a href="javascript:alert('Your API Key is valid');"  class="button expand secondary">Test</a></span>
+				                        </div>
+				                    </div>								    
+					            </div><!-- end columns -->
+					        </div><!-- end row -->
+					        <div class="row collapse">
+					            <div class="small-12 medium-12 large-12 columns">
+					                <label for="allowed-share-types">Allowed Share Types</label>
+									<select name="allowed-share-types" id="allowed-share-types" multiple  class="select" >
+										<option value="1" selected>Secured</option>
+										<option value="2">Access Code</option>
+										<option value="3">Unsecured</option>
+									</select>									
+					            </div><!-- end columns -->
+					        </div><!-- end row -->	
+					
 							<label for="">&nbsp;</label>
 			                <label class="onoffswitch alert-yes" for="allow-forward">
 							    <input type="checkbox" name="allow-forward" class="onoffswitch-checkbox" id="allow-forward" />
@@ -124,12 +129,19 @@
 								</div><!-- end div.onoffswitch-container -->
 								<div class="label-msg"><i class="fa fa-info-circle"></i> Enable Share Forwarding?</div>																															
 						    </label>
-				    
+									      
 					    </div><!-- end columns -->
-					</div><!-- end row -->
-					
-					<div class="row">
+					    
 					    <div class="small-12 medium-12 large-4 columns">
+						    <label for="default-expiration">Default Expiration</label>
+							<select name="default-expiration" id="default-expiration" class="select margin-bottom" >
+								<option value="">1 day</option>
+								<option value="">3 days</option>
+								<option value="">5 days</option>
+								<option value="">7 days</option>
+								<option value="">14 days</option>
+							</select>
+					    
 					        <label for="category-expiration">Category Expiration</label>
 							<table id="simple">
 							  <thead>
@@ -233,33 +245,64 @@
 							</table>
 					    </div><!-- end columns -->
 					    <div class="small-12 medium-12 large-4 columns">
+							<label for="">&nbsp;</label>
+							
+					        <label class="onoffswitch alert-yes" for="enable-whitelist">
+							    <input type="checkbox" name="enable-whitelist" class="onoffswitch-checkbox" id="enable-whitelist" />
+								<div class="onoffswitch-container">
+									<div class="onoffswitch-slide">
+								        <span class="onoffswitch-active">Yes</span>
+								        <span class="onoffswitch-switch"></span>
+								        <span class="onoffswitch-inactive">No</span>
+									</div><!-- end div.onoffswitch-slide -->
+								</div><!-- end div.onoffswitch-container -->
+								<div class="label-msg"><i class="fa fa-info-circle"></i> Enable Domain Whitelist?</div>																															
+						    </label>			                
+						
 					        <label for="domain-whitelist">Domain Whitelist (comma separated)</label>
-							<textarea name="domain-whitelist" id="domain-whitelist" class="" rows="6" disabled></textarea>
-					    </div><!-- end columns -->
-					    <div class="small-12 medium-12 large-4 columns">
-				        <div class="row collapse">
-					            <div class="small-12 medium-12 large-12 columns">
-									<div class="row collapse">
-				                        <label for="api-key" class="text-left">API Key</label>
-				                        <div class="small-10 columns">
-				                            <input type="text" name="api-key" id="api-key" tabindex="" value="" />
-				                        </div>
-				                        <div class="small-2 columns">
-				                            <span class="suffix has-tip" title="Click to validate your API value" data-tooltip><a href="javascript:void(0);"  class="button expand secondary">Test</a></span>
-				                        </div>
-				                    </div>								    
-					            </div><!-- end columns -->
-					        </div><!-- end row -->
-					        <div class="row collapse">
-					            <div class="small-12 medium-12 large-12 columns">
-					                <label for="allowed-share-types">Allowed Share Types</label>
-									<select name="allowed-share-types" id="allowed-share-types" multiple  class="select" >
-										<option value="1" selected>Secured</option>
-										<option value="2">Access Code</option>
-										<option value="3">Unsecured</option>
-									</select>									
-					            </div><!-- end columns -->
-					        </div><!-- end row -->					      
+							<textarea name="domain-whitelist" id="domain-whitelist" class="" rows="6" disabled>*.gmail.com, *.hotmail.com, *.yahoo.com</textarea>
+							
+							<div id="access-codes-wrapper">
+								<table class="access-codes" id="simple">
+								  <thead>
+								    <tr>
+								      <th>Hint</th>
+								      <th>Format</th>
+								      <th>&nbsp;</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+									<tr id="table-inputs">
+								      <td><input type="text" name="access-code-hint"  id="access-code-hint" value="" placeholder="Access Code Hint" /></td>
+								      <td>
+										<select name="access-code-format" id="access-code-format" class="select" >
+											<option value="">Numeric</option>
+											<option value="">Alpha</option>
+											<option value="">Alpha-Numeric</option>
+											<option value="">Date</option>
+										</select>										
+								      </td>
+								      <td><a href="javascript:void(0);" id="add-access-code" class="button success tiny"><i class="fa fa-plus"></i></a></td>
+								    </tr>
+								    <tr>
+								      <td>Case #</td>
+								      <td>Numeric</td>
+								      <td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td>
+								    </tr>
+								    <tr>
+								      <td>Ticket #</td>
+								      <td>Numeric</td>
+								      <td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td>
+								    </tr>
+								    <tr>
+								      <td>Secret Code</td>
+								      <td>Alpha-Numeric</td>
+								      <td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td>
+								    </tr>
+								  </tbody>
+								</table>
+							</div><!-- end div#access-codes-wrapper -->
+							
 					    </div><!-- end columns -->
 					</div><!-- end row -->						
 
@@ -422,6 +465,15 @@
 					$('#domain-whitelist').attr('disabled', !this.checked)
 			}).change();
 			
+			// add row to access code table
+			$('#add-access-code').on('click', function(){
+    			$("#simple.access-codes").find('tbody').append($('<tr><td>DOB</td><td>Date</td><td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td></tr>'));
+			});										
+    		
+			// delete row from access code table
+			$('body').on('click', '#simple.access-codes .delete-row',function(){
+				$(this).closest('tr').remove();
+			});
 		});  // end docready
 		
 	</script>

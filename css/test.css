@@ -4018,15 +4018,6 @@ table#simple td .chosen-container {
 	width: 100%;
 }
 
-table#simple {
-	
-}
-
-table#simple {
-	
-}
-
-
 
 .checkered-background #main-content {
     background: none;
@@ -6194,4 +6185,13 @@ section.main-section {
 }
 .tabs-content > .content.contained {
     padding: 0.9375rem;
+}
+
+#cloud {
+	text-align: center;
+	color: #ccc;
+	display: none;
+}
+#cloud .fa {
+	font-size: 130px;
 }

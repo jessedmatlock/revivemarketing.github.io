@@ -46,7 +46,7 @@
 	                <li><a href="case-exports.html">Case Exports <span class="label round">2</span></a></li-->
         <li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
         <li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
-        <li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+        <li class="has-dropdown"> <a href="javascript:void(0);">Manage</a>
           <ul class="dropdown">
 				<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
 				<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
@@ -130,6 +130,19 @@
 								<div class="label-msg"><i class="fa fa-info-circle"></i> Enable Share Forwarding?</div>																															
 						    </label>
 									      
+							<label for="">&nbsp;</label>
+			                <label class="onoffswitch alert-yes" for="allow-playback">
+							    <input type="checkbox" name="allow-playback" class="onoffswitch-checkbox" id="allow-playback" />
+								<div class="onoffswitch-container">
+									<div class="onoffswitch-slide">
+								        <span class="onoffswitch-active">Yes</span>
+								        <span class="onoffswitch-switch"></span>
+								        <span class="onoffswitch-inactive">No</span>
+									</div><!-- end div.onoffswitch-slide -->
+								</div><!-- end div.onoffswitch-container -->
+								<div class="label-msg"><i class="fa fa-info-circle"></i> Allow Video Playback?</div>																															
+						    </label>
+									      
 					    </div><!-- end columns -->
 					    
 					    <div class="small-12 medium-12 large-4 columns">
@@ -143,7 +156,7 @@
 							</select>
 					    
 					        <label for="category-expiration">Category Expiration</label>
-							<table id="simple">
+							<table class="simple">
 							  <thead>
 							    <tr>
 							      <th>Category</th>
@@ -263,7 +276,7 @@
 							<textarea name="domain-whitelist" id="domain-whitelist" class="" rows="6" disabled>*.gmail.com, *.hotmail.com, *.yahoo.com</textarea>
 							
 							<div id="access-codes-wrapper">
-								<table class="access-codes" id="simple">
+								<table class="access-codes simple">
 								  <thead>
 								    <tr>
 								      <th>Hint</th>
@@ -279,7 +292,12 @@
 											<option value="">Numeric</option>
 											<option value="">Alpha</option>
 											<option value="">Alpha-Numeric</option>
-											<option value="">Date</option>
+											<optgroup label="Date">
+												<option value="">mm/dd/yyyy</option>
+												<option value="">dd/mm/yyyy</option>
+												<option value="">etc..</option>
+												
+											</optgroup>
 										</select>										
 								      </td>
 								      <td><a href="javascript:void(0);" id="add-access-code" class="button success tiny"><i class="fa fa-plus"></i></a></td>
@@ -467,11 +485,11 @@
 			
 			// add row to access code table
 			$('#add-access-code').on('click', function(){
-    			$("#simple.access-codes").find('tbody').append($('<tr><td>DOB</td><td>Date</td><td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td></tr>'));
+    			$(".simple.access-codes").find('tbody').append($('<tr><td>DOB</td><td>Date</td><td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td></tr>'));
 			});										
     		
 			// delete row from access code table
-			$('body').on('click', '#simple.access-codes .delete-row',function(){
+			$('body').on('click', '.simple.access-codes .delete-row',function(){
 				$(this).closest('tr').remove();
 			});
 		});  // end docready

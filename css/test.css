@@ -1786,7 +1786,7 @@ a#change-config.change + #checkout-config {
     text-align: center;
     padding: 0;
     width: 160px;
-    margin: 0 0 6px 70px;
+    margin: 0 0 6px 90px;
 }
 #slider-dots .fa:first-child {
     float: left;
@@ -1898,8 +1898,9 @@ a#change-config.change + #checkout-config {
     box-shadow: 0px 1px 0px 0px #202020 inset !important;
     height: 18px;
     border-radius: 0;
-    margin: 0 5px 0 95px;
+    margin: 0 10px 0 65px;
 }
+
 #slider.ui-slider .ui-slider-handle {
     background: url('../images/playhead_bottom.png') no-repeat 50% 50% !important;
     border: none !important;
@@ -1922,10 +1923,7 @@ a#change-config.change + #checkout-config {
     pointer-events: none;
     box-shadow: 1px 0 0 0 #000;
 }
-#trim-slider.ui-slider {
-    margin: 0 5px 0 95px;
 
-}
 #trim-slider.ui-slider .ui-slider-handle {
     background: url('https://revivemarketing.github.io/images/playhead_top.png') no-repeat 50% 50% !important;
     border: none !important;
@@ -3717,7 +3715,7 @@ label input[type=radio] {
     box-shadow: 0 1px 0px 0px #505050 inset;
     border-radius: 3px 3px 0 0;
 }
-table:not(.k-selectable):not(.ui-datepicker-calendar) {
+table:not(.k-selectable):not(.ui-datepicker-calendar):not(.month1):not(.month2) {
     background: #fff;
     margin-bottom: 1.25rem;
     width: 100%;
@@ -3725,17 +3723,17 @@ table:not(.k-selectable):not(.ui-datepicker-calendar) {
     -webkit-box-shadow: 0 2px 53px 1px rgba(0, 0, 0, .45);
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .45);
 }
-table caption {
+table:not(.month1):not(.month2) caption {
     background: transparent;
     color: #222222;
     font-size: 1em;
     font-weight: bold;
 }
-table thead {
+table:not(.month1):not(.month2) thead {
     background: whitesmoke
 }
-table:not(.k-content):not(.ui-datepicker-calendar) thead th,
-table:not(.k-content):not(.ui-datepicker-calendar) tfoot th {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) thead th,
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tfoot th {
     position: relative;
     height: 45px;
     padding: 0 0.5em;
@@ -3756,27 +3754,27 @@ table:not(.k-content):not(.ui-datepicker-calendar) tfoot th {
     font: bold .75rem/1.85em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     text-transform: uppercase;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) thead th:not(:first-child) .fa,
-table:not(.k-content):not(.ui-datepicker-calendar) tfoot td .fa {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) thead th:not(:first-child) .fa,
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tfoot td .fa {
     font-size: 1em;
     margin-left: 5px;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) thead tr td {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) thead tr td {
     padding: 0.5em;
     font-size: 1rem;
     font-weight: normal;
     color: #555;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tfoot {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tfoot {
     background: whitesmoke
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tfoot tr th,
-table:not(.k-content):not(.ui-datepicker-calendar) tfoot tr td {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tfoot tr th,
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tfoot tr td {
     padding: 0.5em;
     color: #222222;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tfoot tr th .button,
-table:not(.k-content):not(.ui-datepicker-calendar) tfoot tr td .button {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tfoot tr th .button,
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tfoot tr td .button {
     margin: 0;
     text-transform: capitalize;
     font-size: 0.85rem;
@@ -3805,7 +3803,7 @@ table .width250 {
 table .width50 {
     width: 50px;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr td {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr td {
     padding: 1em 0.5em;
     font-size: 0.9em;
     color: #333;
@@ -3814,34 +3812,34 @@ table:not(.k-content):not(.ui-datepicker-calendar) tr td {
     border-bottom: 1px solid #eee;
     border-right: 1px solid #eee;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr.exluded td {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr.exluded td {
     color: #888 !important;
     background: #eee;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr.exluded td input[type=checkbox] {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr.exluded td input[type=checkbox] {
     opacity: 0.5;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr.even td,
-table:not(.k-content):not(.ui-datepicker-calendar) tr.alt td,
-table:not(.k-content):not(.ui-datepicker-calendar) tr:nth-of-type(even) td {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr.even td,
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr.alt td,
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr:nth-of-type(even) td {
     background: #f9f9f9;
     box-shadow: none !important;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr.selected td {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr.selected td {
     background: #BDDFFD !important;
     border-bottom: 1px solid #608AD1;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr td.table-row-selection,
-table:not(.k-content):not(.ui-datepicker-calendar) tr td.item-actions,
-table:not(.k-content):not(.ui-datepicker-calendar) tr th.columns-actions-col {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr td.table-row-selection,
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr td.item-actions,
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr th.columns-actions-col {
     text-align: center;
     padding: 0;
     width: 40px;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr td input {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr td input {
     margin: 0 !important;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr td label {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr td label {
     display: block;
     min-height: 50px;
     line-height: 48px;
@@ -3850,16 +3848,16 @@ table:not(.k-content):not(.ui-datepicker-calendar) tr td label {
     position: relative;
     text-align: center;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr td .fa-stack {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr td .fa-stack {
     font-size: 18px;
     color: #aaa;
     text-align: center;
     vertical-align: bottom;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr td.item-actions {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr td.item-actions {
     width: 60px;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr.export-item td:nth-child(1) {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr.export-item td:nth-child(1) {
     width: 45px;
     text-align: center;
 }
@@ -3881,13 +3879,13 @@ table tr td.item-actions .button {
     text-align: center;
     text-indent: 0;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr td .button {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr td .button {
     margin: 0;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr td.item-actions .button .fa {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr td.item-actions .button .fa {
     color: #eee;
 }
-table:not(.k-content):not(.ui-datepicker-calendar) tr.event:hover {
+table:not(.k-content):not(.ui-datepicker-calendar):not(.month1):not(.month2) tr.event:hover {
     background: #fff;
 }
 
@@ -3995,25 +3993,29 @@ section.table div.table-row div.table-cell {
         display: none
     }
 }
-table#simple {
+#content-wrapper table.simple {
 	box-shadow: none;
+	width: 100%;
+	max-width: 100%;
 }
-table#simple thead tr th {
+#content-wrapper table.simple thead tr th {
 	height: 30px;
 	background: #ccc;
 	border-color: #bbb;
 	color: #555;
 	text-shadow: none;
+	height: 40px;
 }
 
-table#simple tbody td {
+#content-wrapper table.simple tbody td {
 	padding: 5px;
 	width: 50%;
 	border: 1px solid #ddd;
 	color: #555;
+	height: 40px;
 }
 
-table#simple td .chosen-container {
+#content-wrapper table.simple td .chosen-container {
 	display: block !important;
 	width: 100%;
 }
@@ -4120,6 +4122,7 @@ table#simple td .chosen-container {
     display: block;
     height: 100%;
 }
+
 .export-page-wrapper #main-content .linked-events .export-item:not(.selected) {
     background-color: #ddd;
 }
@@ -4619,16 +4622,15 @@ body.kiosk .panel label .fa {
     font-size: 1em;
     text-shadow: 0 1px 0 #111;
 }
-body.login label.small,
-body.kiosk label.small {
-    color: #aaa;
+label.small {
+    color: #999;
     font-size: .75em;
+    line-height: 1.25;
     font-style: italic;
     margin: 0;
 }
-small {
-    font-size: 75%;
-    line-height: inherit;
+input + label.small {
+	margin-top: -0.9rem;
 }
 body.login input[type=text],
 body.login input[type=password],
@@ -6193,5 +6195,5 @@ section.main-section {
 	display: none;
 }
 #cloud .fa {
-	font-size: 130px;
+	font-size: 150px;
 }

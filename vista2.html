@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
 <meta charset="utf-8" />
@@ -51,7 +51,7 @@
 	                <li><a href="case-javascript:void(0);">Case Exports <span class="label round">2</span></a></li-->
 				<li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
 				<li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
-				<li  class="active has-dropdown"> <a href="javascript:void(0);">Admin</a>
+				<li  class="active has-dropdown"> <a href="javascript:void(0);">Manage</a>
 					<ul class="dropdown">
 						<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
 						<li class="active"><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
@@ -129,7 +129,7 @@
 									<ul class="device-info-list clearfix">
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Vehicle: </span><strong>Car 54</strong></li>
-										<li><span>Events: </span><strong>12</strong></li>
+										<li><span>Importing: </span><strong>12</strong></li>
 									</ul>									
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="80">
@@ -153,7 +153,7 @@
 									<ul class="device-info-list clearfix">
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Vehicle: </span><strong>Car 54</strong></li>
-										<li><span>Events: </span><strong>3/12</strong></li>
+										<li><span>Importing: </span><strong>3 of 12</strong></li>
 									</ul>									
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="100">
@@ -176,7 +176,7 @@
 									<ul class="device-info-list clearfix">
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Vehicle: </span><strong>Car 54</strong></li>
-										<li><span>Events: </span><strong>12/12</strong></li>
+										<li><span>Importing: </span><strong>12 of 12</strong></li>
 									</ul>									
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="67">
@@ -194,7 +194,7 @@
 									<ul class="device-info-list clearfix">
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Vehicle: </span><strong>Car 54</strong></li>
-										<li><span>Events: </span><strong>12/12</strong></li>
+										<li><span>Importing: </span><strong>12 of 12</strong></li>
 									</ul>									
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="67">
@@ -220,7 +220,7 @@
 									<ul class="device-info-list clearfix">
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Device ID: </span><strong>546846541681</strong></li>
-										<li><span>Events: </span><strong>12</strong></li>
+										<li><span>Importing: </span><strong>12</strong></li>
 									</ul>		
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="80">
@@ -246,7 +246,7 @@
 									<ul class="device-info-list clearfix">
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Device ID: </span><strong>546846541681</strong></li>
-										<li><span>Importing Events: </span><strong>3/12</strong></li>
+										<li><span>Importing Events: </span><strong>3 of 12</strong></li>
 									</ul>			
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="100">
@@ -274,7 +274,7 @@
 									<ul class="device-info-list clearfix">
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Device ID: </span><strong>546846541681</strong></li>
-										<li><span>Imported Events: </span><strong>12/12</strong></li>
+										<li><span>Imported Events: </span><strong>12 of 12</strong></li>
 									</ul>	
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="67">
@@ -300,7 +300,7 @@
 									<ul class="device-info-list clearfix">
 										<li><span>Assigned To: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Device ID: </span><strong>546846541681</strong></li>
-										<li><span>Imported Events: </span><strong>12/12</strong></li>
+										<li><span>Imported Events: </span><strong>12 of 12</strong></li>
 									</ul>	
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="13">
@@ -1197,94 +1197,97 @@
 	  <div class="modal-header">
 	    <div class="modal-title">Checkout Device</div>
 	  </div>
-	  <div class="modal-body">
-	    <div class="row">
-	      <div class="small-12 medium-12 large-12 columns">
-				<div class="row">
-				    <div class="small-12 medium-6 large-6 columns">
-		    	        <label for="" class="">Select an Officer</label>
-						<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field" class="" />
-				    </div><!-- end columns -->
-				    <div class="small-12 medium-6 large-6 columns">
-		    	        <label for="" class="">Camera Setting</label>
-						<select class="select select-searchable" id="">
-							<option value="">Default</option>
-							<option value="1">K9 Unit</option>
-							<option value="2">Drug Task Force</option>
-							<option value="3">Night Patrol</option>
-						</select>				    	
-				    </div><!-- end columns -->
-				</div><!-- end row -->				
+        <div class="modal-body">
+            <div class="row">
+                <div class="small-12 medium-12 large-12 columns">
+                    <div class="row">
+                        <div class="small-12 medium-6 large-6 columns">
+                            <label for="" class="">Select an Officer</label>
+                            <input type="text" name="select-officer" id="select-officer" value="" placeholder="autocomplete field" class="label-below" />
+							<label class="small">Only Officers with a Valid Configuration will be available for selection</label>
 
-				<a href="javascript:void(0);" id="change-config">Change Officer Preferences</a>
-			    <div id="checkout-config">				
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">Device ID</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-			    	        <input type="text" value="WGPD-01">
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">Serial Number</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-			    	        <input type="text" value="510056" disabled>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">LED Brightness</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-							<select class="select">
-								<option value="">Dim</option>								
-								<option value="" selected>Normal</option>
-								<option value="">Bright</option>
-							</select>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">Alert Notifications</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-							<select class="select">
-								<option value="">Audio &amp; Vibration</option>								
-								<option value="">Audio Only</option>
-								<option value="">Vibration Only</option>
-							</select>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-7 medium-push-5 large-8 large-push-4 columns">
-			    	        <label for="auto-reduce" class="inline"><input type="checkbox" name="auto-reduce"  id="auto-reduce" value="" /><small>Auto reduce LED brightness between 8pm - 8am</small></label>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">Audio Alert Levels</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-							<select class="select">
-								<option value="">Low</option>								
-								<option value="" selected>Normal</option>
-								<option value="">High</option>
-							</select>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->			    				    	
-			    </div><!-- end div#checkout-config -->
-			
-	    	</div><!-- end row --> 
-	  </div>
+                        </div><!-- end columns -->
+                        <div class="small-12 medium-6 large-6 columns">
+                            <label for="" class="">Camera Setting</label>
+                            <select class="select select-searchable" id="">
+                                <option value="">Default</option>
+                                <option value="1">K9 Unit</option>
+                                <option value="2">Drug Task Force</option>
+                                <option value="3">Night Patrol</option>
+                            </select>
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+
+                    <a href="javascript:void(0);" id="change-config">Change Officer Preferences</a>
+                    <div id="checkout-config">
+
+                        <div class="row">
+                            <div class="small-12 medium-5 large-4 columns">
+                                <label for="" class="right inline">Device ID</label>
+                            </div><!-- end columns -->
+                            <div class="small-12 medium-7 large-8 columns">
+                                <input type="text" value="WGPD-01">
+                            </div><!-- end columns -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="small-12 medium-5 large-4 columns">
+                                <label for="" class="right inline">Serial Number</label>
+                            </div><!-- end columns -->
+                            <div class="small-12 medium-7 large-8 columns">
+                                <input type="text" value="510056" disabled>
+                            </div><!-- end columns -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="small-12 medium-5 large-4 columns">
+                                <label for="" class="right inline">LED Brightness</label>
+                            </div><!-- end columns -->
+                            <div class="small-12 medium-7 large-8 columns">
+                                <select class="select">
+                                    <option value="">Dim</option>
+                                    <option value="" selected>Normal</option>
+                                    <option value="">Bright</option>
+                                </select>
+                            </div><!-- end columns -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="small-12 medium-5 large-4 columns">
+                                <label for="" class="right inline">Alert Notifications</label>
+                            </div><!-- end columns -->
+                            <div class="small-12 medium-7 large-8 columns">
+                                <select class="select">
+                                    <option value="">Audio &amp; Vibration</option>
+                                    <option value="">Audio Only</option>
+                                    <option value="">Vibration Only</option>
+                                </select>
+                            </div><!-- end columns -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="small-12 medium-7 medium-push-5 large-8 large-push-4 columns">
+                                <label for="auto-reduce" class="inline"><input type="checkbox" name="auto-reduce" id="auto-reduce" value="" /><small>Auto reduce LED brightness between 8pm - 8am</small></label>
+                            </div><!-- end columns -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="small-12 medium-5 large-4 columns">
+                                <label for="" class="right inline">Audio Alert Levels</label>
+                            </div><!-- end columns -->
+                            <div class="small-12 medium-7 large-8 columns">
+                                <select class="select">
+                                    <option value="">Low</option>
+                                    <option value="" selected>Normal</option>
+                                    <option value="">High</option>
+                                </select>
+                            </div><!-- end columns -->
+                        </div><!-- end row -->
+                    </div><!-- end div#checkout-config -->
+
+                </div><!-- end row -->
+            </div>
+        </div>
 	  <div class="modal-footer shaded-footer">
 	    <button class="button secondary close-modal">Cancel</button>
 	    <button class="button success modalsave"  data-reveal-id="rapid-checkout-modal">Checkout Device</button>

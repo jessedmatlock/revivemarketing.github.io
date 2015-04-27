@@ -667,6 +667,7 @@ $(function() {
                 text: '' // title above chart
             },
             xAxis: {
+				ordinal: false,
                 type: 'datetime',
                 labels: {
                     enabled: false

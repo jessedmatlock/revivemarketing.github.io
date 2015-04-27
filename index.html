@@ -54,7 +54,7 @@
 	                <li><a href="case-exports.html">Case Exports <span class="label round">2</span></a></li-->
 				<li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
 				<li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
-				<li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+				<li class="has-dropdown"> <a href="javascript:void(0);">Manage</a>
 					<ul class="dropdown">
 						<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
 						<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
@@ -1669,8 +1669,28 @@
 			
 			$('a[data-msgbox]').on('click', function(){
 				var msgtype = $(this).attr('data-msgbox');
-				$.msgbox('This is a '+msgtype+ ' type msg box example', {type:msgtype}); 
 				
+				if(msgtype === 'confirm'){
+
+					$.msgbox('This is a '+msgtype+ ' type msg box example', {
+						type:msgtype,
+						buttons : [
+					    {type: "submit", value: "Yes"},
+					    {type: "submit", value: "No"},
+					    {type: "cancel", value: "Cancel"}
+					  ]
+					}, function(result) {
+						if(!result){
+							$.msgbox("And so it is Cancelled!", {type: "alert"});
+						} else if(result === 'Yes') {
+							$.msgbox("We have a 'Yes'!", {type: "info"});
+						} else if(result === 'No'){
+							$.msgbox("Oh, no you didn't!!", {type: "error"});
+						}
+					}); 
+				} else {
+					$.msgbox('This is a '+msgtype+ ' type msg box example', {type:msgtype}); 
+				}
 			});
 			
 			$('.left-offcanvas-toggle').click(function(){

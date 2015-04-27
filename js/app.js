@@ -184,16 +184,7 @@ $(document).ready(function(){
 	$(document).on('click', '[data-tooltip]', function(event) {
 		$(".qtip").hide();
 	});
-	
-	
-	
-	// init spinner inputs
-	if($('input.spinner').length){
-		$('input.spinner').spinner();
-		//$('input.timespinner').timespinner();
 		
-	}
-	
 	
 		// disable Bulk Actions drop down
 		// capture checkbox change events and trigger selection of events/cases
@@ -216,9 +207,10 @@ $(document).ready(function(){
 //				$(this).closest('.export-item').next('.linked-events').find('.item-select-checkbox').prop('checked', this.checked).change();
 //			}
 			
-			if(checkboxes.filter(':checked').length > 1){				$("#bulkActions").removeAttr('disabled').trigger("chosen:updated");
+			if(checkboxes.filter(':checked').length > 1){				
+				$("#bulkActions").removeAttr('disabled').trigger("chosen:updated");
 			} else {
-			$("#bulkActions").attr('disabled','disabled').trigger("chosen:updated");
+				$("#bulkActions").attr('disabled','disabled').trigger("chosen:updated");
 			}
 			
 		}).change();
@@ -230,7 +222,7 @@ $(document).ready(function(){
 		});
 		
 		 $(".item.event-item .button.action, .item.case-item .button.action").click(function(event) {  //on click
-				$('#select-all').removeAttr('checked').change();					
+			$('#select-all').removeAttr('checked').change();					
 		});			
 		
 		

@@ -42,7 +42,7 @@
 		                <li><a href="case-exports.html">Case Exports <span class="label round">2</span></a></li-->
 					<li class="active"><a href="exports.html">Export Worksheet <span class="label round">2</span></a> </li>
 					<li><a href="queue.html">My Exports <span class="label round">2</span></a> </li>
-					<li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Manage</a>
 						<ul class="dropdown">
 							<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
 							<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
@@ -402,9 +402,7 @@
 									<li class="tab-title">
 										<a href="#panel21" id="tab-2"><i class="fa fa-cloud"></i> Cloud Share</a>
 									</li>
-									<li class="tab-title">
-										<a href="#panel22" id="tab-3"><i class="fa fa-cloud"></i> Cloud Share</a>
-									</li>
+
 								</ul>		
 								<div class="tabs-content">
 								
@@ -485,11 +483,7 @@
 														<div class="dest-title">DVD Robot</div>
 														<div class="dest-desc">Queue for Burning</div>
 													</a>
-													<a href="javascript:void(0);" class="export-destination" data-value="4">
-														<img src="images/export-share.png" class="dest-icon" alt="" />
-														<div class="dest-title">Export Share</div>
-														<div class="dest-desc">External Cloud</div>
-													</a>
+
 												</div>
 
 
@@ -775,11 +769,7 @@
 									
 									</div>
 								</div><!-- end .content -->
-								<div class="content" id="panel22">
-									<div class="panel">
-										<span class="alert-box info radius"><strong>NOTICE: </strong>The SHARE feature has not been enabled on your system or .... Please contact... (insert crafty message here)</span>
-									</div><!-- end div.panel -->
-								</div><!-- end div #panel22.content -->
+								
 								</div> <!-- end tabs-content -->
 							</div><!-- end columns -->
 							
@@ -824,7 +814,7 @@
 										<label for="export-label-name" class="required">Reference Label (required)</label>
 											<input type="text" name="export-label-name" id="export-label-name" value="" class="required" placeholder="Enter a Reference Label or Recipient" class="" />
 									</div><!-- end div#export-recipient-other --> 
-									<a href="queue.html" class="button primary large radius block-button" id="export-submit" disabled>Prepare Export</a>
+									<a href="queue.html" class="button primary large radius block-button disabled" id="export-submit">Prepare Export</a>
 									<a href="javascript:void(0);" class="button small secondary radius no-margin">Cancel Export</a> </div>
 								<!-- end div.panel radius --> 
 							</div>
@@ -1091,7 +1081,6 @@
 					} else {
 						$('#burn-disc-label').show();
 						$('#incompatible-media').hide();
-						
 					}
 			});
 			
@@ -1104,7 +1093,6 @@
 				}
 				updateSpeed();
 			});			
-			
 			
 			function updateSpeed() {
 						
@@ -1169,6 +1157,7 @@
 			// toggle the graph and cloud image based on tab clicked
 			$('.export-tabs a').on('click', function(){
 				var id = $(this).attr('id');
+				$('#export-disc-type').hide();
 				
 				if(id === 'tab-1'){
 					$('#cloud').hide();

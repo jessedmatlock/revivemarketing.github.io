@@ -319,7 +319,7 @@
                     $.each(types, $.proxy(function(i, e) {
                         this.skeleton.msgbox.removeClass('error alert confirm info');
 //                        this.skeleton.wrapper.removeClass(this.options.name + '-' + e);
-                        this.skeleton.wrapper.find('.fa').removeClass('fa-' + options.type);
+                        this.skeleton.wrapper.find('.fa').removeClass('fa-info fa-confirm fa-alert fa-error');
                     }, this));
 
                     this.skeleton.msgbox.addClass(options.type);
@@ -387,7 +387,10 @@
 				this.skeleton.msgbox.addClass('show');
                 this.skeleton.msgbox.css({
                     left: y,
-                    top: scroll.y + ((size.y - height) / 2)
+//                    top: scroll.y + ((size.y - height) / 2)
+// only allow msgbox to drop 100px from top
+					top: scroll.y + 100
+
                 });
 
             },

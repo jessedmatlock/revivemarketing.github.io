@@ -92,8 +92,9 @@
 						<div class="row" id="content-header">
 	                          <div class="small-12 medium-12 large-8 columns">
 	                              <div class="left-controls">
-									<a href="event-details2.html" id="" class="button success back-button"><i class="fa fa-list"></i> Event Details</a>
-	                               <h1 class="recap-title">03/27/13 9:38 <span class="vert-seperator-small"></span> Car 54 <span class="vert-seperator-small"></span> Andy Williams Bellefleur <span class="vert-seperator-small"></span> Drug Seizure / Arrest</h1>
+									<a href="event-details2.html" class="button success back-button has-tip tip-right" title="This is a Partial Event"><i class="fa fa-list"></i> Event Details 
+										<img src="images/warning-icon.png" alt="" /></a>
+	                               <h1 class="recap-title">03/27/13 9:38 <span class="vert-seperator-small"></span> Car 54 <span class="vert-seperator-small"></span> Andy Williams Bellefleur <span class="vert-seperator-small"></span> Drug Seizure / Arrest </h1>
 
 	                              </div><!-- end div.left-controls -->
 	                          </div><!-- end columns -->
@@ -121,9 +122,8 @@
 					    <div class="small-12 medium-6 large-6 columns">
 						
 						
-					
 					        <a href="javascript:void(0);" class="playlist-button" data-options="align:left" data-dropdown="playlist-drop"><i class="fa fa-video-camera"></i> Camera Views</a>
-							<ul id="playlist-drop" class="f-dropdown" data-dropdown-content>
+							<ul id="playlist-drop" class="f-dropdown dark-dropdown" data-dropdown-content>
 
 								<!-- FOREACH camera views -->
 							  <li>
@@ -200,8 +200,7 @@
 								</li><!-- end div.linked-event -->											
 							
 							</ul>		
-						    																			
-																				
+						    																																						
 					    </div><!-- end columns -->
 					</div><!-- end row -->
 					
@@ -427,7 +426,10 @@
 							<li><button class="playback-full-screen button gray-gradient  has-tip tip-top active" data-tooltip title="Full Screen"><i class="fa fa-arrows-alt"></i> <span>Full Screen</span></button></li>
 							</ul>
 						</div><!-- end div#left-controls-wrapper -->
-						<div id="fader-wrapper" class="show-for-large-up">
+					    <div id="fader-wrapper" class="show-for-large-up" data-dropdown="faderpop" data-options="is_hover:true; hover_timeout:5000; align:top">
+							<div id="faderpop" class="f-dropdown content" data-dropdown-content>
+								<p>The Desktop App is required in order to access the Fader Control. Please download the Desktop App <a href="/client/setup.exe"  class="">here.</a></p>
+							</div>
 							<div class="slider-wrap">
 						        <div class="slider-prefix active">
 						            Wireless <i class="fa fa-volume-off fa-rotate-180"></i>

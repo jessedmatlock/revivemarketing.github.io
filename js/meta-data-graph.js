@@ -616,7 +616,8 @@ $(function() {
        $('#meta-data-graph').highcharts('StockChart', {
             chart: {
                 renderTo: 'container',
-                marginTop: 40
+                marginTop: 40,
+				marginLeft: 120
             },
             credits: {
                 enabled: false

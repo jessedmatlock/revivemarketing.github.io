@@ -1161,97 +1161,120 @@
 	  <div class="modal-header">
 	    <div class="modal-title">Checkout Device</div>
 	  </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="small-12 medium-12 large-12 columns">
+                    <div class="row">
+                        <div class="small-12 medium-6 large-6 columns">
+                            <label for="" class="">Select an Officer</label>
+                            <input type="text" name="select-officer" id="select-officer" value="" placeholder="autocomplete field" class="label-below" />
+							<label class="small">Only Officers with a Valid Configuration will be available for selection</label>
+
+                        </div><!-- end columns -->
+                        <div class="small-12 medium-6 large-6 columns">
+                            <label for="" class="">Camera Setting</label>
+                            <select class="select select-searchable" id="">
+                                <option value="">Default</option>
+                                <option value="1">K9 Unit</option>
+                                <option value="2">Drug Task Force</option>
+                                <option value="3">Night Patrol</option>
+                            </select>
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+
+                    <a href="javascript:void(0);" id="change-config">Change Preferences</a>
+                    <div id="checkout-config">
+	
+						<h6>Officer Preferences</h6>
+						<div class="panel radius">                            
+							<div class="row">
+	                            <div class="small-12 medium-5 large-4 columns">
+	                                <label for="" class="right inline">LED Brightness</label>
+	                            </div><!-- end columns -->
+	                            <div class="small-12 medium-7 large-8 columns">
+	                                <select class="select">
+	                                    <option value="">Dim</option>
+	                                    <option value="" selected>Normal</option>
+	                                    <option value="">Bright</option>
+	                                </select>
+	                            </div><!-- end columns -->
+	                        </div><!-- end row -->
+	                        <div class="row">
+	                            <div class="small-12 medium-7 medium-push-5 large-8 large-push-4 columns">
+	                                <label for="auto-reduce" class="inline"><input type="checkbox" name="" id="" value="" /><small>Auto reduce LED brightness between 8pm - 8am</small></label>
+	                            </div><!-- end columns -->
+	                        </div><!-- end row -->
+
+	                        <div class="row">
+	                            <div class="small-12 medium-5 large-4 columns">
+	                                <label for="" class="right inline">Alert Notifications</label>
+	                            </div><!-- end columns -->
+	                            <div class="small-12 medium-7 large-8 columns">
+	                                <select class="select">
+	                                    <option value="">Audio &amp; Vibration</option>
+	                                    <option value="">Audio Only</option>
+	                                    <option value="">Vibration Only</option>
+	                                </select>
+	                            </div><!-- end columns -->
+	                        </div><!-- end row -->
+	                        <div class="row">
+	                            <div class="small-12 medium-5 large-4 columns">
+	                                <label for="" class="right inline">Audio Alert Levels</label>
+	                            </div><!-- end columns -->
+	                            <div class="small-12 medium-7 large-8 columns">
+	                                <select class="select">
+	                                    <option value="">Low</option>
+	                                    <option value="" selected>Normal</option>
+	                                    <option value="">High</option>
+	                                </select>
+	                            </div><!-- end columns -->
+	                        </div><!-- end row -->                        
+						</div><!-- end div.panel radius -->
+						
+						<h6>Device Preferences</h6>					
+						<div class="panel radius">							
+							<div class="row">
+	                            <div class="small-12 medium-5 large-4 columns">
+	                                <label for="" class="right inline">Device ID</label>
+	                            </div><!-- end columns -->
+	                            <div class="small-12 medium-7 large-8 columns">
+	                                <input type="text" value="WGPD-01">
+	                            </div><!-- end columns -->
+	                        </div><!-- end row -->
+	                        <div class="row">
+	                            <div class="small-12 medium-5 large-4 columns">
+	                                <label for="" class="right inline">Serial Number</label>
+	                            </div><!-- end columns -->
+	                            <div class="small-12 medium-7 large-8 columns">
+	                                <input type="text" value="510056" disabled>
+	                            </div><!-- end columns -->
+	                        </div><!-- end row -->	                        
+						</div><!-- end div.panel radius -->
+                    </div><!-- end div#checkout-config -->
+                </div><!-- end row -->
+            </div>
+        </div>
+	  <div class="modal-footer shaded-footer">
+	    <button class="button secondary close-modal">Cancel</button>
+	    <button class="button success modalsave"  data-reveal-id="confirm-checkout-modal">Checkout Device</button>
+	  </div>
+	  <a class="close-reveal-modal">×</a>
+	</div>
+	
+	<div id="confirm-checkout-modal" class="reveal-modal fixed-modal small show-footer" data-reveal>
+	  <div class="modal-header">
+	    <div class="modal-title">Checkout Device</div>
+	  </div>
 	  <div class="modal-body">
 	    <div class="row">
 	      <div class="small-12 medium-12 large-12 columns">
-				<div class="row">
-				    <div class="small-12 medium-6 large-6 columns">
-		    	        <label for="" class="">Select an Officer</label>
-						<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field" class="" />
-				    </div><!-- end columns -->
-				    <div class="small-12 medium-6 large-6 columns">
-		    	        <label for="" class="">Camera Setting</label>
-						<select class="select select-searchable" id="">
-							<option value="">Default</option>
-							<option value="1">K9 Unit</option>
-							<option value="2">Drug Task Force</option>
-							<option value="3">Night Patrol</option>
-						</select>				    	
-				    </div><!-- end columns -->
-				</div><!-- end row -->				
-
-				<a href="javascript:void(0);" id="change-config">Change Officer Preferences</a>
-			    <div id="checkout-config">				
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">Device ID</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-			    	        <input type="text" value="WGPD-01">
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">Serial Number</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-			    	        <input type="text" value="510056" disabled>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">LED Brightness</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-							<select class="select">
-								<option value="">Dim</option>								
-								<option value="" selected>Normal</option>
-								<option value="">Bright</option>
-							</select>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">Alert Notifications</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-							<select class="select">
-								<option value="">Audio &amp; Vibration</option>								
-								<option value="">Audio Only</option>
-								<option value="">Vibration Only</option>
-							</select>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-7 medium-push-5 large-8 large-push-4 columns">
-			    	        <label for="auto-reduce" class="inline"><input type="checkbox" name="auto-reduce"  id="auto-reduce" value="" /><small>Auto reduce LED brightness between 8pm - 8am</small></label>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->
-			    	
-			    	<div class="row">
-			    	    <div class="small-12 medium-5 large-4 columns">
-			    	        <label for="" class="right inline">Audio Alert Levels</label>
-			    	    </div><!-- end columns -->
-			    	    <div class="small-12 medium-7 large-8 columns">
-							<select class="select">
-								<option value="">Low</option>								
-								<option value="" selected>Normal</option>
-								<option value="">High</option>
-							</select>
-			    	    </div><!-- end columns -->
-			    	</div><!-- end row -->			    				    	
-			    </div><!-- end div#checkout-config -->
-			
-	    	</div><!-- end row --> 
+			You have assigned <strong> Officer Pitcher, Matthew</strong> to the device in <strong>Slot 3</strong> of Gang Station <strong>B21</strong>
+	    </div>
+	    <!-- end row --> 
 	  </div>
 	  <div class="modal-footer shaded-footer">
-	    <button class="button secondary close-modal">Cancel</button>
-	    <button class="button success modalsave"  data-reveal-id="rapid-checkout-modal">Checkout Device</button>
+	    <button class="button secondary close-modal">Close</button>
+	    <button class="button success modalsave close-modal">Done</button>
 	  </div>
 	  <a class="close-reveal-modal">×</a>
 	</div>
@@ -1310,8 +1333,7 @@
 				</div>
 			
 			</div><!-- end div#report-checkout-list -->
-	    </div>
-	    <!-- end row --> 
+	    </div><!-- end row --> 
 	  </div>
 	  <div class="modal-footer shaded-footer">
 	    <button class="button secondary close-modal" tabindex="6">Close</button>

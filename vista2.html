@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Evidence Library : Web</title>
+<title>Evidence Library 4 Web</title>
 <link rel="stylesheet" href="css/app.css" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic" />
@@ -347,7 +347,6 @@
 <script type="text/javascript" src="js/jquery.daterangepicker.js"></script> 
 <script type="text/javascript" src="js/isotope.pkgd.js"></script> 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js" charset="utf-8"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script>
 
 <script type="text/javascript" src="js/app.js"></script>
 
@@ -504,20 +503,14 @@
 
 					// add the .preview class to the modal for CSS control of other elements			
 					$('#import-modal').addClass('preview');
-					// init fotorama image slider and slide down the parent element to reveal it
+					
+					// init image slider and slide down the parent element to reveal it
 					$('#import-slideshow-wrapper').slideDown('fast', function(){
-						$('#import-slideshow').on('fotorama:ready', function (e, fotorama) {
-							$(this).show();
-						}).fotorama({
-					        autoplay: true,
-					        arrows: 'always',
-					      	nav: 'thumbs',
-					        thumbheight: '75px',
-					        transition: 'crossfade',
-					        transitionduration: 100,
-						    width: '100%',
-						    maxwidth: '1080'
-					      });								
+						$('#import-thumbs').show();		
+						
+						var thumbsWidth = $('#import-thumbs').find('img').length * 242 + 'px';
+						$('#import-thumbs').css('width',thumbsWidth);
+						
 					});														
 				});
 				$('#import-slideshow-close').click(function(){
@@ -527,7 +520,11 @@
 //						$('#import-slideshow').fotorama('destroy');					
 					});
 				});
-				
+						
+				// toggle state of mark for deletion button
+				$('.import-delete-button').on('click', function(){
+					$(this).toggleClass('alert').closest('.import-item').toggleClass('delete');
+				});
 	});	
 	</script>
 	
@@ -564,35 +561,38 @@
 				
 			    </div><!-- end columns -->
 			</div><!-- end row -->
-			<div id="import-slideshow-wrapper" class="">
-				<div id="import-slideshow-close">Close Preview <i class="fa fa-times-circle"></i></div>
-				<div id="import-caption">Use your mouse to click &amp; drag the thumbnails above to the left/right</div>
-				  <div id="import-slideshow">
-					<img src="images/video-preivew.jpg" class="first">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				    <img src="images/video-preivew.jpg">
-				</div>
+			<div id="import-slideshow-wrapper">
+				<div id="import-slideshow-close"><i class="fa fa-times-circle fa-lg"></i> Close</div>
+				<div id="import-thumbs-wrapper">
+					  <div id="import-thumbs">
+						<img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					    <img src="images/video-preivew.jpg">
+					</div>
+				</div><!-- end div#import-thumbs-wrapper -->
 			</div><!-- end div #import-slideshow-wrapper. -->
-			
+					<div class="alert-box warning radius" id="import-validation">
+						Place validation error message(s) here 
+					</div><!-- end div.alert-box error -->
 					<div id="import-list">
 					
 						<div class="import-item" id="item1">
@@ -612,7 +612,7 @@
 						
 							<div class="import-options">
 								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
-								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Mark Event for Deletion"><i class="fa fa-trash-o"></i></a>								
 							</div><!-- end div.import-options -->
 						
 							<div class="import-content clearfix">
@@ -696,7 +696,7 @@
 						
 							<div class="import-options">
 								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
-								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Mark Event for Deletion"><i class="fa fa-trash-o"></i></a>								
 							</div><!-- end div.import-options -->
 						
 							<div class="import-content clearfix">
@@ -780,7 +780,7 @@
 						
 							<div class="import-options">
 								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
-								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Mark Event for Deletion"><i class="fa fa-trash-o"></i></a>								
 							</div><!-- end div.import-options -->
 						
 							<div class="import-content clearfix">
@@ -864,7 +864,7 @@
 						
 							<div class="import-options">
 								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
-								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Mark Event for Deletion"><i class="fa fa-trash-o"></i></a>								
 							</div><!-- end div.import-options -->
 						
 							<div class="import-content clearfix">
@@ -948,7 +948,7 @@
 
 							<div class="import-options">
 								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
-								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Mark Event for Deletion"><i class="fa fa-trash-o"></i></a>								
 							</div><!-- end div.import-options -->
 						
 							<div class="import-content clearfix">
@@ -1032,7 +1032,7 @@
 						
 							<div class="import-options">
 								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
-								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Mark Event for Deletion"><i class="fa fa-trash-o"></i></a>								
 							</div><!-- end div.import-options -->
 						
 							<div class="import-content clearfix">
@@ -1115,7 +1115,7 @@
 													
 							<div class="import-options">
 								<a href="javascript:void(0);" class="import-toggle-button button secondary radius has-tip tip-left" title="View Secondary Tags"><i class="fa fa-tags"></i></a>
-								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Delete Event"><i class="fa fa-trash-o"></i></a>								
+								<a href="javascript:void(0);" class="import-delete-button button secondary radius has-tip tip-left" title="Mark Event for Deletion"><i class="fa fa-trash-o"></i></a>								
 							</div><!-- end div.import-options -->
 							
 						
@@ -1188,7 +1188,7 @@
 	  </div>
 	  <div class="modal-footer shaded-footer">
 	    <button class="button secondary close-modal">Close</button>
-	    <button class="button success modalsave close-modal">Import Events</button>
+	    <button class="button success modalsave close-modal">Process Events</button>
 	  </div>
 	  <a class="close-reveal-modal">×</a>
 	</div>

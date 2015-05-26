@@ -1,6 +1,7 @@
 /* @override 
 	http://10.1.18.4:90/assets/css/test.css
-	http://elweb.com/css/test.css */
+	http://elweb.com/css/test.css
+	http://mars:90/assets/css/test.css */
 
 .offcanvas-sidebar .sidebar-footer,
 .oncanvas-sidebar .sidebar-footer {
@@ -237,6 +238,7 @@
     padding: 5px 5px 5px 10px;
     height: auto;
     position: relative;
+    cursor: auto;
 }
 #playlist-drop .linked-stream-count {
     display: inline-block;
@@ -249,7 +251,7 @@
     font-size: .85em;
 }
 #playlist-drop .linked-streams-title {
-    color: #eee;
+    color: #eee;    
 }
 #playlist-drop li:last-child {
     border-bottom: none !important;
@@ -332,6 +334,7 @@
     margin: 0;
     width: 80px;
     padding: 0.125rem 0.25rem !important;
+    color: #555;
 }
 #playlist-drop .item-thumb .thumb-overlay {
     position: absolute;
@@ -837,53 +840,75 @@ table .info .status-icon,
 .reveal-modal.fixed-modal {
     top: 5px !important;
 }
-#import-slideshow {
-    display: block;
-    max-width: 100%;
-    width: auto;
-}
-#import-modal.preview #import-list {
-    max-height: 100%;
-    position: relative;
-    overflow-y: scroll;
-}
-#import-modal.preview #import-list {
-    max-height: 250px;
-    overflow-y: scroll;
-}
+
+
 #import-slideshow-wrapper {
     display: none;
     background: #111;
     margin: 0px -20px 10px;
-    padding: 20px 20px 15px;
+    padding: 02px 0px 0px;
     position: relative;
     overflow: hidden;
+    height: 158px;
+    z-index: 1;
+    
 }
 #import-modal.preview #import-slideshow-wrapper {
     display: block;
 }
 #import-slideshow-close {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 20px;
-    text-align: right;
-    color: #ff0000;
-    font: bold 12px/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    top: 2px;
+    right: 0px;
+    height: 29px;
+    text-align: center;
+    color: #eee;
+    font: bold 13px/25px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     cursor: pointer;
+    z-index: 1;
+    background: #000;
+    padding:0px 8px;
+    border-radius: 0 0 0 3px;
 }
 #import-slideshow-close:hover {
     color: #fff;
+    background: #cc3333;
 }
-#import-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: #aaa;
-    font: bold 12px/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+
+
+#import-slideshow {
+    display: block;
 }
+#import-thumbs-wrapper {
+	display: block;
+	position: relative;
+	overflow-x: scroll;
+	overflow-y: hidden;
+    white-space: nowrap;
+	height: 154px;
+}
+#import-thumbs {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 154px;	
+}
+#import-thumbs img {
+	width: 240px;
+	height: 144px;
+	display: block;
+	float: left;
+	margin:0 1px;
+}
+#import-modal.preview #import-list {
+    position: relative;
+    overflow-y: scroll;
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+
+
 .fotorama__arr {
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.75);
@@ -933,6 +958,15 @@ table .info .status-icon,
     box-shadow: 0px 1px 5px #888;
     border: 1px solid #aaa;
     position: relative;
+}
+#import-modal .alert-box {
+	margin-bottom: 10px;
+}
+#import-modal .import-item.delete {
+	border-color: #cc5555 !important;
+}
+#import-modal .import-item.delete label.import-select {
+	background-color: #cc5555;
 }
 #import-modal .import-item.showing {
     border-color: #3C89B6;
@@ -1011,7 +1045,7 @@ table .info .status-icon,
     visibility: visible;
 }
 #import-modal .import-thumb-preview {
-    color: #7bca23;
+    color: #fff;
     line-height: 65px;
     font-weight: bold;
 }
@@ -1376,7 +1410,7 @@ a#change-config.change + #checkout-config {
     bottom: 0px;
     right: 0;
     position: absolute !important;
-    pointer-events: none;
+/*    pointer-events: none;*/
     width: 100%;
 }
 .video-playback #meta-data #meta-data-top > .columns {
@@ -2384,7 +2418,6 @@ input.copy-text::-o-selection {
 
     }
 }
-#main-content .item.partial-event .item-select:after,
 #main-content .item.device-4re .item-select:before,
 #main-content .item.device-vista .item-select:before {
 	content: "";
@@ -2397,10 +2430,30 @@ input.copy-text::-o-selection {
 	opacity: 0.75;
 }
 
-#main-content .item.partial-event .item-select:after {
-	bottom: 14px;
-	height: 16px;
-	background: transparent url('../images/icon-partial.png') no-repeat left top;
+#main-content .item.partial-event:before,
+#content-wrapper.partial-event #content-header:before {
+	position: absolute;
+	pointer-events: none;
+	display: block;
+	content: "";
+	top: 0;
+	left: 35px;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(255, 255, 255, 0.00001);
+	background: transparent url('../images/partial-event-ribbon.png') no-repeat left top;
+	z-index: 2;
+}
+#content-wrapper.partial-event #content-header {
+	padding-left: 10px;
+}
+#content-wrapper.partial-event #content-header:before {
+	left: 0;
+}
+@media screen and (max-width: 640px) {
+	#main-content .item.partial-event {
+		padding-left: 85px !important;
+	}
 }
 #main-content .item.device-4re .item-select:before {
 	height: 14px;
@@ -2528,7 +2581,7 @@ input.copy-text::-o-selection {
 }
 .f-dropdown.controls-list li > a:hover,
 .f-dropdown.controls-list li > a:hover .fa {
-    color: #FFDD45;
+    color: #888;
 }
 .f-dropdown.controls-list li > a {
     font-size: .95em;
@@ -2561,6 +2614,8 @@ input.copy-text::-o-selection {
     border-radius: 30px;
     background: #252525;
     padding: 5px;
+    border: none;
+    color: #fff;
 }
 .f-dropdown.controls-list li:hover .list-links {
     display: block;
@@ -2589,11 +2644,12 @@ input.copy-text::-o-selection {
     background: green;
 }
 .f-dropdown.controls-list li .list-links a.unlink-event:hover,
-.f-dropdown.controls-list li .list-links a.unlink-event:hover .fa,
-.f-dropdown.controls-list li .list-links a.delete-link:hover,
-.f-dropdown.controls-list li .list-links a.delete-link:hover .fa {
-    color: #fff;
+.f-dropdown.controls-list li .list-links a.delete-link:hover{
     background: #cc5555;
+}
+.f-dropdown.controls-list li .list-links a.unlink-event:hover .fa,
+.f-dropdown.controls-list li .list-links a.delete-link:hover .fa {
+	color: #fff;
 }
 .joyride-content-wrapper .button {
     border-color: #000 !important;
@@ -4212,8 +4268,12 @@ section.table div.table-row div.table-cell {
 .export-page-wrapper .panel label + label:not(.onoffswitch) {
     margin: 0 !important;
 }
-.export-page-wrapper .panel .input-group label {
-    margin: 0 0 5px 0 !important;
+#export-video-options .input-group label {
+    margin-bottom: 5px !important;
+    margin-top: 0;
+}
+#export-video-options .input-group label#embed-text-label {
+	margin-left: 10px !important;
 }
 .export-page-wrapper #main-content .export-item {
     margin-left: 0px;
@@ -4848,7 +4908,7 @@ footer {
     background: #191919;
     color: #fff;
     text-align: center;
-    height: 35px;
+    min-height: 35px;
     margin: 0;
     z-index: 50;
     padding-top: 5px;
@@ -4947,7 +5007,7 @@ textarea {
 }
 textarea.auto-height {
     resize: vertical;
-    max-height: 600px;
+    max-height: 400px;
     height: auto;
     overflow-y: auto;
     word-wrap: break-word;
@@ -5605,7 +5665,7 @@ add .alert-yes or .alert-no to display .toggle-alert for specific checkbox state
     /*     border-color: #55a12c;*/
 }
 #results-msg {
-    display: block !important;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -5886,7 +5946,11 @@ add .alert-yes or .alert-no to display .toggle-alert for specific checkbox state
 }
 section.main-section {
     background: #303030;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
 }
+
 .nav-bar-section ul li.user-profile,
 .nav-bar-section ul li.user-logout a,
 .nav-bar-section ul li.user-profile a,
@@ -6102,7 +6166,7 @@ section.main-section {
 .controls .control .chosen-container a span {
     height: 2rem !important;
     line-height: 1.9rem;
-    min-width: 100px;
+    min-width: 110px;
 }
 .controls .control .chosen-container a {} .controls .control .button-group {
     clear: both;

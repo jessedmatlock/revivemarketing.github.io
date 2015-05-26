@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<title>Evidence Library : Web</title>
+<title>Evidence Library 4 Web</title>
 <link rel="stylesheet" href="css/app.css" />
 <link href="css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic" />
@@ -864,6 +864,17 @@
 <script type="text/javascript">
         $(document).ready(function() {
 			$( ".datepicker" ).datepicker();
+			
+			$('#include-subs').change(function() {
+				if(this.checked){
+					$('#embed-text-label').removeClass('disabled')
+					$('#embed-text').attr('disabled', false)					
+				} else {
+					$('#embed-text-label').addClass('disabled')
+					$('#embed-text').attr('disabled', true)					
+				}
+			}).change();
+			
 			
 			// toggle linked events/items -- replace with binding
 			$('.export-item .button.gray-gradient').click(function(){

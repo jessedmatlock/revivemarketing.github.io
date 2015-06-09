@@ -25,10 +25,14 @@ $(document).ready(function(){
 			}
 		},
 		tab: {
-			callback : function (tab) {},
+			callback : function (tab) {			
+			},
 			toggled: function(){
-				$(document).foundation('reflow');			
-			}
+				$(document).foundation('reflow');					
+			},
+	        //deep_linking:true,
+	        //scroll_to_content: false			
+			
 		},
 		reveal: {
 			close_on_background_click: false,
@@ -36,6 +40,22 @@ $(document).ready(function(){
 		    dismiss_modal_class: 'close-reveal-modal, .close-modal'
 		}
 	});
+	
+	// scroll tabs to top after opening via hashtag
+	// check for hashtag
+	if(window.location.hash){
+		// save it ti a var
+		hash = window.location.hash,
+		// assign tab that matched hashtag to var
+		tabber = $('dl.tabs dd').find('a[href='+hash+']');
+		// if we've got a tab with the hashtag as href
+		if(tabber.length){
+			// CLICK IT !
+            tabber.click();
+			// Then, scroll the window to it, minus 65px to account for the fixed header
+			$(window).scrollTo(tabber, 500, {offset: -65});
+		}
+	}
 	
 	// for dropdown menus ITEMS, that won't close the dropdown on click
 	$('[data-dropdown-content] a').on('click', function() {
@@ -244,11 +264,11 @@ $(document).ready(function(){
 				    $('#content-wrapper').removeClass('sticky');  			     
 				}  
 			};  
-				fixedHeader();  
-		
-				$(window).scroll(function() {  
-				    fixedHeader();  
-				});  					
+			fixedHeader();  
+	
+			$(window).scroll(function() {  
+			    fixedHeader();  
+			});  					
 		}
 	
 			// adjust height of textarea.auto-height
@@ -310,10 +330,6 @@ $(document).ready(function(){
 		}
 	});
 	
-//	// stop propagation of clicks on select options WHY ??????
-//	$('.select, .select-searchable').on('click', function(e){
-//		e.stopPropagation();
-//	});
 	// init global modal code, controlled by data attr of link element
 	$('body').on('click','.open-modal',function(e) {
 		e.preventDefault();
@@ -1404,7 +1420,7 @@ $(document).on("click","#select_officer_search_chosen li.result-selected",functi
 	});
 	
 	$('.select-records-count').click(function(){
-		$('#system-msg').removeClass().addClass('info').slideDown();
+		$('#system-msg').removeClass().addClass('info show');
 	});
 	
 	$('#system-msg').on('click', function(){
@@ -1415,7 +1431,7 @@ $(document).on("click","#select_officer_search_chosen li.result-selected",functi
 		} else if($(this).hasClass('warning') ) {
 			$(this).removeClass('warning').addClass('success');
 		} else {
-			$(this).slideUp();
+			$(this).removeClass('show').removeClass();
 		}
 	});
 		

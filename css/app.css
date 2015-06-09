@@ -8250,7 +8250,7 @@ button:hover,
 button:focus,
 .button:focus {
   background: #ececec;
-  border-color: #5897fb;
+  border-color: #ececec;
   color: #333;
 }
 /* line 531, ../scss/app.scss */
@@ -8757,7 +8757,7 @@ button.secondary:active,
 .button.secondary:active, dialog
 .button.secondary:active {
   background: #ececec;
-  border-color: #5897fb;
+  border-color: #bbb;
   color: #333;
 }
 /* line 754, ../scss/app.scss */
@@ -11559,7 +11559,7 @@ label.required {
 @media screen and (min-width: 1025px) {
   /* line 2601, ../scss/app.scss */
   #content-wrapper.sticky {
-    padding-top: 55px;
+    padding-top: 110px;
   }
   /* line 2603, ../scss/app.scss */
   #content-wrapper.sticky #fixed-header {

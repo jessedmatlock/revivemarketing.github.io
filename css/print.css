@@ -17,10 +17,13 @@
 	table {
 	    border-collapse: collapse;
 	    border-spacing: 0;
+	    margin: 0;
+	    padding: 0;	    
 	}
 	td,
 	th {}
 	thead { display: table-header-group } 
+
 	tr,
 	img { page-break-inside: avoid;	max-width: 100% !important }
 	
@@ -36,10 +39,7 @@
 	}
 	a,
 	a:visited { text-decoration: underline }
-	img {
-	    page-break-inside: avoid;
-	    max-width: 100%!important;
-	}
+
 	h1 { padding: 1em 0 0 }
 	h2,
 	h3,
@@ -90,13 +90,14 @@
 	#main-content .item,
 	#event-cases .item {
 	    min-height: 100px;
+	    height: auto;
 	    background-color: #f5f5f5;
-	    margin: 10px;
+	    margin: 10px 0;
 	    padding: 10px 10px 35px 210px;
 	    box-shadow: none;
 	    border: 1px solid #ddd;
 	    position: relative;
-	    page-break-before: avoid;
+	    page-break-inside: avoid;
 	}
 	
 	#main-content .item .case-title,
@@ -140,8 +141,7 @@
 	    clear: both;
 	}
 	
-	#main-content .item .item-list >
-	    li,
+	#main-content .item .item-list > li,
 	#event-cases .item .item-list >
 	    li {
 	    font-size: 14px;
@@ -155,15 +155,11 @@
 	    white-space: nowrap;
 	}
 	
-	#main-content .item .item-list >
-	    li span,
-	#event-cases .item .item-list >
-	    li span { display: inline }
+	#main-content .item .item-list > li span,
+	#event-cases .item .item-list > li span { display: inline }
 	
-	#main-content .item .item-list >
-	    li strong,
-	#event-cases .item .item-list >
-	    li strong {
+	#main-content .item .item-list > li strong,
+	#event-cases .item .item-list > li strong {
 	    font-weight: bold;
 	    display: inline;
 	    margin-left: 5px;
@@ -179,54 +175,42 @@
 	    z-index: 1;
 	    text-align: center;
 	    background: #aaa;
+	    border: none;
+	    margin: 0;
+	    padding: 0;	    
 	}
 	
 	#main-content .item .item-thumb img,
 	#event-cases .item .item-thumb img {
 	    display: block;
 	    margin: 0;
+	    padding: 0;
 	    width: 100%;
 	    height: 100%;
+	    border: none;
 	}
 	
-	#main-content .item .item-thumb >
-	    i.fa,
-	#event-cases .item .item-thumb >
-	    i.fa {
+	#main-content .item .item-thumb > i.fa,
+	#event-cases .item .item-thumb > i.fa {
 	    font-size: 80px;
 	    color: #aaa;
 	    text-align: center;
 	    margin-top: 5px;
 	}
 	
-	#main-content .item .item-thumb .thumb-overlay,
-	#event-cases .item .item-thumb .thumb-overlay {
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    right: 0;
-	    z-index: 115;
-	    background: #fff !important;
-	    color: #fff;
-	    text-align: center;
-	    display: block;
-	    font-size: .75rem;
-	    padding: 5px 0;
-	    font-weight: bold;
+	.item .item-thumb .thumb-overlay {
+	    display: none;
 	}
 	
-	#main-content .item.archived-item,
-	#event-cases .item.archived-item {
+	.item.archived-item {
 	    background-image: url(../images/bg_archive.png);
 	    background-position: 0 0;
 	    background-repeat: repeat;
 	}
 	
-	#main-content .item.archived-item .item-thumb img,
-	#event-cases .item.archived-item .item-thumb img { display: none }
+	.item.archived-item .item-thumb img { display: none }
 	
-	#main-content .item.archived-item .item-thumb:before,
-	#event-cases .item.archived-item .item-thumb:before {
+	.item.archived-item .item-thumb:before {
 	    font-family: 'FontAwesome';
 	    color: #fff;
 	    content: '\f187';
@@ -237,8 +221,7 @@
 	    display: block;
 	}
 	
-	#main-content .item.archived-item.selected .item-thumb:before,
-	#event-cases .item.archived-item.selected .item-thumb:before { color: #31599d }
+	.item.archived-item.selected .item-thumb:before { color: #31599d }
 	
 	
 	#main-content .item .item-select input,
@@ -268,12 +251,8 @@
 	.view-small-thumbs
 	    #event-cases .item .item-select .count-wrap { display: none !important }
 	
-	#main-content .item .action,
-	#event-cases .item .action {
-	    position: absolute;
-	    top: 10px;
-	    right: 10px;
-	    margin: 0;
+	.item .button.action {
+		display: none;
 	}
 	
 	#main-content .item .action.cases,
@@ -548,8 +527,9 @@
 	    }
 	    .k-grid,
 	    .k-grid-content {
-	    	width: 90% !important;
-			margin: 0 auto;
+	    	width: 100%;
+			margin: 0;
+			padding: 0;
 	    }
 	    .k-link {
 	    	text-decoration: none;

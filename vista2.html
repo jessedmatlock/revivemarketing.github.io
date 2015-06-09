@@ -75,10 +75,10 @@
 			<div class="small-12 medium-12 large-12 columns">
 				<div id="fixed-header">
 				    <div class="row" id="content-header">
-				        <div class="small-12 medium-8 large-6 columns">
+				        <div class="small-12 medium-6 large-6 columns">
 				            <h3><i class="fa fa-desktop"></i> <strong>USB</strong> Connected Devices</h3>
 				        </div>
-						<div class="small-12 medium-4 large-6 columns">
+						<div class="small-12 medium-6 large-6 columns">
 							<div class="controls right-controls">
 								<div class="control">
 									<ul class="button-group radius bordered select-data-options">
@@ -121,7 +121,7 @@
 							
 
 						        <div class="usb-device waiting type-4re">
-									<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb1" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+									<!--a href="javascript:void(0);" data-options="align:left" data-dropdown="usb1" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a-->
 									<ul id="usb1" data-dropdown-content class="f-dropdown dark-dropdown">
 										<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
 										<li><a href="javascript:void(0);" class="eject-device"><i class="fa fa-eject"></i> Eject Device</a></li>
@@ -130,7 +130,16 @@
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Vehicle: </span><strong>Car 54</strong></li>
 										<li><span>Importing: </span><strong>12</strong></li>
-									</ul>									
+									</ul>					
+									<div class="row collapse">
+									    <div class="small-12 medium-12 large-6 columns">
+									        <a href="javascript:void(0);" data-reveal-id="import-modal" class="button secondary"><i class="fa fa-download"></i> Import Events</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-6 columns">
+									        <a href="javascript:void(0);" class="button secondary eject-device"><i class="fa fa-eject"></i> Eject Device</a>
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+													
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="80">
 											<div class="progress-wrapper">
@@ -144,9 +153,9 @@
 
 
 								<div class="usb-device processing type-4re">
-									<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb2" class="button success gear-button radius" >
+									<!--a href="javascript:void(0);" data-options="align:left" data-dropdown="usb2" class="button success gear-button radius" >
 										<i class="fa fa-circle-o-notch fa-spin"></i>
-									</a>
+									</a-->
 									<ul id="usb2" data-dropdown-content class="f-dropdown dark-dropdown">
 										<li><a href="javascript:void(0);"><i class="fa fa-times-circle"></i> Cancel Import</a></li>									
 									</ul>
@@ -154,7 +163,13 @@
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Vehicle: </span><strong>Car 54</strong></li>
 										<li><span>Importing: </span><strong>3 of 12</strong></li>
-									</ul>									
+									</ul>				
+									<div class="row collapse">
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary"><i class="fa fa-times-circle"></i> Cancel Import</a>
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+														
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="100">
 											<div class="progress-wrapper">
@@ -172,12 +187,18 @@
 
 
 								<div class="usb-device complete type-4re">
-									<a href="javascript:void(0);" class="button secondary gear-button radius eject-device" ><i class="fa fa-eject"></i></a>
+									<!--a href="javascript:void(0);" class="button secondary gear-button radius eject-device" ><i class="fa fa-eject"></i></a-->
 									<ul class="device-info-list clearfix">
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Vehicle: </span><strong>Car 54</strong></li>
 										<li><span>Importing: </span><strong>12 of 12</strong></li>
-									</ul>									
+									</ul>	
+									<div class="row collapse">
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary eject-device"><i class="fa fa-eject"></i> Eject Device</a>
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+																	
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="67">
 											<div class="progress-wrapper">
@@ -190,12 +211,18 @@
 
 
 								<div class="usb-device error type-4re">
-									<a href="javascript:void(0);" class="button secondary gear-button radius eject-device" ><i class="fa fa-eject"></i></a>
+									<!--a href="javascript:void(0);" class="button secondary gear-button radius eject-device" ><i class="fa fa-eject"></i></a-->
 									<ul class="device-info-list clearfix">
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Vehicle: </span><strong>Car 54</strong></li>
 										<li><span>Importing: </span><strong>12 of 12</strong></li>
-									</ul>									
+									</ul>		
+									<div class="row collapse">
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary eject-device"><i class="fa fa-eject"></i> Eject Device</a>
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+																
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="67">
 											<div class="progress-wrapper">
@@ -209,7 +236,7 @@
 
 
 						        <div class="usb-device type-vista waiting">
-									<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb5" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+									<!--a href="javascript:void(0);" data-options="align:left" data-dropdown="usb5" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a-->
 									<ul id="usb5" data-dropdown-content class="f-dropdown dark-dropdown">
 										<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
 										<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>											
@@ -222,6 +249,26 @@
 										<li><span>Device ID: </span><strong>546846541681</strong></li>
 										<li><span>Importing: </span><strong>12</strong></li>
 									</ul>		
+									<div class="row collapse">
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" data-reveal-id="import-modal" class="button secondary"><i class="fa fa-download"></i> Import Events</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary eject-device"><i class="fa fa-eject"></i> Eject Device</a>
+									    </div><!-- end columns -->
+									
+									</div><!-- end row -->
+									
+									
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="80">
 											<div class="progress-wrapper">
@@ -235,7 +282,7 @@
 								
 								
 								<div class="usb-device type-vista processing">
-									<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb6" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+									<!--a href="javascript:void(0);" data-options="align:left" data-dropdown="usb6" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a-->
 									<ul id="usb6" data-dropdown-content class="f-dropdown dark-dropdown">
 										<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
 										<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>											
@@ -247,7 +294,27 @@
 										<li><span>Officer: </span><strong class="officer">Johnny B. Good</strong></li>
 										<li><span>Device ID: </span><strong>546846541681</strong></li>
 										<li><span>Importing Events: </span><strong>3 of 12</strong></li>
-									</ul>			
+									</ul>	
+									<div class="row collapse">
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" data-reveal-id="import-modal" class="button secondary"><i class="fa fa-download"></i> Import Events</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary eject-device"><i class="fa fa-eject"></i> Eject Device</a>
+									    </div><!-- end columns -->
+									
+									</div><!-- end row -->
+									
+											
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="100">
 											<div class="progress-wrapper">
@@ -263,7 +330,7 @@
 								
 								
 								<div class="usb-device type-vista complete">
-									<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb7" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+									<!--a href="javascript:void(0);" data-options="align:left" data-dropdown="usb7" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a-->
 									<ul id="usb7" data-dropdown-content class="f-dropdown dark-dropdown">
 										<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
 										<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>											
@@ -276,6 +343,24 @@
 										<li><span>Device ID: </span><strong>546846541681</strong></li>
 										<li><span>Imported Events: </span><strong>12 of 12</strong></li>
 									</ul>	
+									<div class="row collapse">
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" data-reveal-id="import-modal" class="button secondary"><i class="fa fa-download"></i> Import Events</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary eject-device"><i class="fa fa-eject"></i> Eject Device</a>
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+									
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="67">
 											<div class="progress-wrapper">
@@ -289,7 +374,7 @@
 
 
 								<div class="usb-device type-vista assigned">
-									<a href="javascript:void(0);" data-options="align:left" data-dropdown="usb8" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a>
+									<!--a href="javascript:void(0);" data-options="align:left" data-dropdown="usb8" class="button secondary gear-button radius" ><i class="fa fa-cog"></i></a-->
 									<ul id="usb8" data-dropdown-content class="f-dropdown dark-dropdown">
 										<li><a href="javascript:void(0);" data-reveal-id="import-modal"><i class="fa fa-download"></i> Import Events</a></li>
 										<li><a href="javascript:void(0);" class="bottom-hr" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a></li>											
@@ -302,6 +387,24 @@
 										<li><span>Device ID: </span><strong>546846541681</strong></li>
 										<li><span>Imported Events: </span><strong>12 of 12</strong></li>
 									</ul>	
+									<div class="row collapse">
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" data-reveal-id="import-modal" class="button secondary"><i class="fa fa-download"></i> Import Events</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="ratf-modal"><i class="fa fa-film"></i> Record After the Fact</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="checkout-modal"><i class="fa fa-user"></i> Checkout Device</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary" data-reveal-id="firmware-modal"><i class="fa fa-code"></i> Update Firmware</a>
+									    </div><!-- end columns -->
+									    <div class="small-12 medium-12 large-12 columns">
+									        <a href="javascript:void(0);" class="button secondary eject-device"><i class="fa fa-eject"></i> Eject Device</a>
+									    </div><!-- end columns -->
+									</div><!-- end row -->
+																		
 									<div class="device-status-wrapper">
 										<div class="device-import-progress clearfix" data-percent="13">
 											<div class="progress-wrapper">
@@ -388,7 +491,7 @@
 			
 			$container.isotope({
 				itemSelector: '.usb-device',
-				layoutMode: 'fitRows',
+				layoutMode: 'masonry',
 				getSortData: {
 			      	officer: '.officer',
 			      	status: '.progress-msg'
@@ -396,7 +499,7 @@
 				sortBy: 'original-order'
 			}).isotope('bindResize');
 			
-		/* disabled since SUB devices do not have locations				
+		/* disabled since USB devices do not have locations				
 			$('#filter-devices').on('change', function() {
 					//alert(this.value);
 		    	$container.isotope({ filter: this.value });
@@ -481,6 +584,7 @@
 				});
 
 				// toggle secondary tags
+				$('.import-toggle').hide();
 				$('.import-toggle-button').click(function(){
 					$(this).closest('.import-item').find('.import-toggle').toggle();
 				});
@@ -525,6 +629,28 @@
 				$('.import-delete-button').on('click', function(){
 					$(this).toggleClass('alert').closest('.import-item').toggleClass('delete');
 				});
+				
+				$('#select-officer').on('keyup', function(){
+					if( $(this).val() !== ''){
+						$('#checkout-device-button').prop('disabled', false);
+					} else {
+						$('#checkout-device-button').prop('disabled', true);
+					}
+				});
+
+				$('#checkout-device-button').on('click', function(){
+
+					$('#camera-setting')[0].selectedIndex = 0;
+					$('#camera-setting').trigger('chosen:updated');
+
+					$('#select-officer').val('').focus();
+
+					$(this).prop('disabled', true);
+
+					$('#rapid-checkout-modal').foundation('reveal','open');
+				});
+				
+				
 	});	
 	</script>
 	
@@ -539,18 +665,18 @@
 			</div-->
 		
 			<div class="row collapse" id="import-topbar">
-			    <div class="small-12 medium-4 large-4 columns">
+			    <div class="small-12 medium-12 large-4 columns">
 			        <label for="select-all" class="hide-for-small-only">
 						<input id="select-all" type="checkbox">
 						Select All </label>
 				
 			    </div><!-- end columns -->
-			    <div class="small-12 medium-4 large-4 columns">						
+			    <div class="small-12 medium-12 large-4 columns">						
 					<div id="import-count">
 						Importing 1 of 4 Events
 					</div><!-- end div#import-count -->
 			    </div><!-- end columns -->
-			    <div class="small-12 medium-4 large-4 columns">
+			    <div class="small-12 medium-12 large-4 columns">
 			        <div id="import-size-wrapper">
 						6.81GB
 						<div id="import-size-title">
@@ -598,9 +724,7 @@
 						<div class="import-item" id="item1">
 						
 							<label for="checkbox1" class="import-select">
-								<input type="checkbox" name="checkbox1"  id="checkbox1" value="" />
-															
-							
+								<input type="checkbox" name="checkbox1"  id="checkbox1" value="" />							
 							</label>
 						
 							<a href="javascript:void(0);" class="import-thumb-wrapper">
@@ -624,7 +748,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -708,7 +832,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -792,7 +916,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -876,7 +1000,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -960,7 +1084,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -1044,7 +1168,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -1128,7 +1252,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -1200,21 +1324,23 @@
         <div class="modal-body">
             <div class="row">
                 <div class="small-12 medium-12 large-12 columns">
+	
                     <div class="row">
-                        <div class="small-12 medium-6 large-6 columns">
+                        <div class="small-12 medium-6 large-7 columns">
                             <label for="" class="">Select an Officer</label>
                             <input type="text" name="select-officer" id="select-officer" value="" placeholder="autocomplete field" class="label-below" />
 							<label class="small">Only Officers with a Valid Configuration will be available for selection</label>
-
-                        </div><!-- end columns -->
-                        <div class="small-12 medium-6 large-6 columns">
-                            <label for="" class="">Camera Setting</label>
-                            <select class="select select-searchable" id="">
+							<br/>
+							<label for="" class="">Camera Setting</label>
+                            <select class="select select-searchable" id="camera-setting">
                                 <option value="">Default</option>
                                 <option value="1">K9 Unit</option>
                                 <option value="2">Drug Task Force</option>
                                 <option value="3">Night Patrol</option>
                             </select>
+                        </div><!-- end columns -->
+                        <div class="small-12 medium-6 large-5 columns hide-for-small-only">
+							<img src="images/vista-camera.jpg"  class="margin-auto"  alt="" />
                         </div><!-- end columns -->
                     </div><!-- end row -->
 
@@ -1292,7 +1418,7 @@
         </div>
 	  <div class="modal-footer shaded-footer">
 	    <button class="button secondary close-modal">Cancel</button>
-	    <button class="button success modalsave"  data-reveal-id="rapid-checkout-modal">Checkout Device</button>
+	    <button class="button success modalsave" id="checkout-device-button" disabled>Checkout Device</button>
 	  </div>
 	  <a class="close-reveal-modal">×</a>
 	</div>
@@ -1304,7 +1430,7 @@
 	  <div class="modal-body">
 	    <div class="row">
 	      <div class="small-12 medium-12 large-12 columns">
-			You have assigned <strong> Officer Pitcher, Matthew</strong> to the device in <strong>Slot 3</strong> of Gang Station <strong>B21</strong>
+			You have assigned <strong> Officer Pitcher, Matthew</strong> to the device in <strong>Slot 3</strong> of Transfer Station <strong>B21</strong>
 	    </div>
 	    <!-- end row --> 
 	  </div>

@@ -581,7 +581,7 @@
 								<option value="1">Add Selected to Exports</option>
 								<option value="2">Share Selected Events</option>
 								<option value="3">Add Selected to Case</option>
-								<option value="4">Link Selected to Event</option>
+								<option value="4">Link Selected Events</option>
 								<option value="5">Archive Selected Events</option>
 							</select>
 						</div>
@@ -992,27 +992,8 @@
 								<li><a href="javascript:void(0);">Case # 65965168468</a></li>
 								<li><a href="javascript:void(0);">Case # 74695123683</a></li>
 							</ul>
-							<a href="javascript:void(0);" data-options="align:left" data-dropdown="drop18" class="button action links radius"><i class="fa fa-files-o"></i></a>
-							<ul id="drop18" data-dropdown-content class="f-dropdown controls-list">
-								<li>
-									<a href="javascript:void(0);" class="linked-event">Event: 872-2341-6234</a>
-									<div class="list-links single-link">
-										<a href="javascript:void(0);" class="has-tip tip-right unlink-event" title="Unlink from this Event"><i class="fa fa-unlink"></i></a>											
-									</div><!-- end div.list-links -->
-								</li>
-								<li> <a href="javascript:void(0);" class="linked-event">Event: 354-9412-2459</a>
-									<div class="list-links single-link">
-										<a href="javascript:void(0);" class="has-tip tip-right unlink-event" title="Unlink from this Event"><i class="fa fa-unlink"></i></a>											
-									</div><!-- end div.list-links -->
-									
-								</li>
-								<li> <a href="javascript:void(0);" class="linked-event">Event: 02-3485-5142</a>
-									<div class="list-links single-link">
-										<a href="javascript:void(0);" class="has-tip tip-right unlink-event" title="Unlink from this Event"><i class="fa fa-unlink"></i></a>											
-									</div><!-- end div.list-links -->
-									
-								 </li>
-							</ul>
+							<a href="event-details2.html#linked-events" class="button action links radius"><i class="fa fa-link"></i></a>
+
 							<div class="data-icon-group">
 								<div class="data-icon has-tip tip-top" data-tooltip title="3 Cameras Captured"><i class="fa fa-video-camera"></i> <span>3</span></div>
 								<div class="data-icon has-tip tip-top" data-tooltip title="Badge #3948"><i class="fa fa-shield"></i> <span>#3948</span></div>
@@ -1318,30 +1299,8 @@
 		<div class="modal-title">Link to Event</div>
 	</div>
 	<div class="modal-body">
-		<label>Select Event to Link To:</label>
-		<select class="select select-searchable">
-			<option value="" selected disabled>Select Event</option>
-			<optgroup label="Recent Events">
-			<option value="">123456-907</option>
-			<option value="">133749-908</option>
-			<option value="">123958-909</option>
-			</optgroup>
-			<optgroup label="All Events"> 
-			<!-- ko foreach: casenumber -->
-			<option value="123345-017" >123345-017</option>
-			<option value="123459-018" >123459-018</option>
-			<option value="123454-019" >123454-019</option>
-			<option value="125498-020" >125498-020</option>
-			<option value="133289-021" >133289-021</option>
-			<option value="124458-022" >124458-022</option>
-			<option value="143356-023" >143356-023</option>
-			<option value="176542-024" >176542-024</option>
-			<option value="123456-099" >123456-099</option>
-			<option value="123445-254" >123445-254</option>
-			<option value="123876-099" >123876-099</option>
-			<!-- /ko --> 
-			</optgroup>
-		</select>
+		<label>Search for an Event to Link To:</label>
+		<input type="text" name="linkme"  id="linkme" value="" placeholder="Enter an Event REID, ID, ??" />
 	</div>
 	<div class="modal-footer">
 		<button class="button secondary" data-dismiss="modal" id="cancel" aria-hidden="true">Close</button>
@@ -1713,7 +1672,7 @@
 			$('#bulkActions').change(function(){
 				var selection = $(this).find('option:selected').val();				
 				if (selection == 4){
-					$('#link-to-event-modal').foundation('reveal','open');
+				//$('#link-to-event-modal').foundation('reveal','open');
 				}				
 			});
 			$('.action.links + .f-dropdown.controls-list .unlink-event').click(function(){

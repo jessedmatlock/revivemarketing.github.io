@@ -38,7 +38,7 @@
 			</div>
 			<div class="row">
 				<div class="small-12 medium-12 large-12 columns">
-					<select class="select dark-style" id="rapid-config">
+					<select class="select dark-style" id="rapid-config" tabindex="2">
 						<option value="">Select A Configuration</option>
 						<option value="">Config. 1</option>											
 						<option value="">Config. 2</option>
@@ -99,7 +99,7 @@
 			</div>
 			<div class="row">
 				<div class="small-12 medium-12 large-12 columns">
-					<a href="javascript:void(0);" id="" class="button success right" data-reveal-id="rapid-checkout-modal">Checkout</a>
+					<a href="javascript:void(0);" class="button success right" id="checkout-kiosk-button" tabindex="3">Checkout</a>
 					
 				</div>
 			</div>
@@ -108,8 +108,9 @@
 		
 	</div>
 	<!-- end div#login-wrapper -->	
-	<a href="javascript:void(0);" id="fullscreen-toggle" class="">Fullscreen</a>
-	<a href="javascript:void(0);" id="kiosk-options" class="button radius" data-reveal-id="kiosk-options-modal"><i class="fa fa-cog"></i></a>
+	<a href="javascript:void(0);" id="fullscreen-toggle" class="has-tip" title="Show Kiosk in Full Screen">Fullscreen</a>
+	<a href="javascript:void(0);" id="kiosk-options" class="button radius has-tip" title="Kiosk Mode Settings" data-reveal-id="kiosk-options-modal"><i class="fa fa-cog"></i></a>
+	<a href="javascript:void(0);" id="kiosk-logout" class="button radius has-tip" title="Logout of Kiosk Mode"><i class="fa fa-power-off"></i></a>
 	
 	
 </section>
@@ -165,6 +166,20 @@
 		$('.checkout-report').on('click', function(){
 			openWindowReport();
 		});
+		
+		
+		$('#checkout-kiosk-button').on('click', function(){
+
+			$('#rapid-config')[0].selectedIndex = 0;
+			$('#rapid-config').trigger('chosen:updated');
+
+			$('#UserName').val('').focus();
+
+			$(this).prop('disabled', true);
+
+			$('#rapid-checkout-modal').foundation('reveal','open');
+		});
+		
 
 	});  // end docready
 	var windowReport = null; // global variable
@@ -191,7 +206,7 @@
   <div class="modal-body">
     <div class="row">
       <div class="small-12 medium-12 large-12 columns">
-		You have assigned <strong> Officer Pitcher, Matthew</strong> to the device in <strong>Slot 3</strong> of Gang Station <strong>B21</strong>
+		You have assigned <strong> Officer Pitcher, Matthew</strong> to the device in <strong>Slot 3</strong> of Transfer Station <strong>B21</strong>
     </div>
     <!-- end row --> 
   </div>
@@ -215,7 +230,7 @@
 				<div class="checkout-report-detail checkout-report-detail-header">
 					<div class="checkout-assignee">Officer Name</div>
 					<div class="checkout-device-config">Config.</div>					
-					<div class="checkout-device-location">Location, Gang Station/Slot</div>
+					<div class="checkout-device-location">Location, Transfer Station/Slot</div>
 					<div class="checkout-device-name">Device Name</div>		
 				</div>
 				<div class="checkout-report-detail">
@@ -254,8 +269,8 @@
 	
   </div><!-- /modal-body -->
   <div class="modal-footer shaded-footer">
-    <button class="button secondary close-modal" tabindex="2">Close</button>
-    <button class="button success modalsave checkout-report" tabindex="1">Print Checkout Report</button>
+    <button class="button secondary close-modal" >Close</button>
+    <button class="button success modalsave checkout-report" >Print Checkout Report</button>
   </div>
   <a class="close-reveal-modal">×</a>
 </div>
@@ -283,7 +298,7 @@
 	<div class="row">
 	    <div class="small-12 medium-12 large-12 columns">
 			<a href="javascript:void(0);" id="select-checkout-report" data-dropdown="print" class="button radius gray-gradient dropdown display-block">Print Checkout Report</a>
-			<ul id="print" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+			<ul id="print" data-dropdown-content class="f-dropdown" aria-hidden="true" >
 				<li><a href="#" data-reveal-id="checkout-report-modal">Print Last 1 Hours</a></li>
 				<li><a href="#" data-reveal-id="checkout-report-modal">Print Last 3 Hours</a></li>
 				<li><a href="#" data-reveal-id="checkout-report-modal">Print Last 5 Hours</a></li>

@@ -76,7 +76,7 @@
 				<div id="fixed-header">
 				    <div class="row" id="content-header">
 				        <div class="small-12 medium-12 large-3 columns">
-				            <h3><i class="fa fa-exchange"></i> <strong>Gang</strong> Station Devices</h3>
+				            <h3><i class="fa fa-exchange"></i> <strong>Transfer</strong> Station Devices</h3>
 				        </div>
 						<div class="large-9 hide-for-medium-down columns">
 							<div class="controls right-controls">
@@ -123,7 +123,7 @@
 							
 							            <td><i class="fa fa-clock-o status-icon"></i> Waiting for Import</td>
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -141,7 +141,7 @@
 							            <td><div class="charge-wrapper"><div class="charge-level" data-charge-level="2"><div class="level"></div></div></div></td>							
 										<td><i class="fa fa-refresh fa-spin status-icon"></i> Importing</td>																											
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -162,7 +162,7 @@
 							
 										<td><i class="fa fa-check-circle status-icon"></i> Import Successful</td>																																				
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -184,7 +184,7 @@
 							
 										<td><i class="fa fa-user status-icon"></i> Assigned To User</td>																																				
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -203,7 +203,7 @@
 							
 										<td><i class="fa fa-warning status-icon"></i> Error</td>																																				
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -223,7 +223,7 @@
 							
 							            <td><i class="fa fa-clock-o status-icon"></i> Waiting for Import</td>																									            
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -242,7 +242,7 @@
 							
 										<td><i class="fa fa-refresh fa-spin status-icon"></i> Importing</td>																											
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -263,7 +263,7 @@
 							
 										<td><i class="fa fa-check-circle status-icon"></i> Import Successful</td>																																				
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -285,7 +285,7 @@
 							
 										<td><i class="fa fa-user status-icon"></i> Assigned To User</td>																																				
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -304,7 +304,7 @@
 							
 										<td><i class="fa fa-warning status-icon"></i> Error</td>																																				
 										<td>Device Name 1 - #280</td>
-										<td>Bldg. 1 Rm. 211, Gang #: 2</td>
+										<td>Bldg. 1 Rm. 211, Transfer #: 2</td>
 										<td>01/09/2014 11:03:40</td>
 							            <td>Johnny B. Good</td>									
 							            <td>12 Events</td>									
@@ -464,25 +464,64 @@
 				$('.checkout-report').on('click', function(){
 					openWindowReport();
 				});
-				var count='1', gang='1';
+				
+				$('#select-officer').on('keyup', function(){
+					if( $(this).val() !== ''){
+						$('#checkout-device-button').prop('disabled', false);
+					} else {
+						$('#checkout-device-button').prop('disabled', true);
+					}
+				});
+
+				$('#checkout-device-button').on('click', function(){
+
+					$('#camera-setting')[0].selectedIndex = 0;
+					$('#camera-setting').trigger('chosen:updated');
+
+					$('#select-officer').val('').focus();
+
+					$(this).prop('disabled', true);
+
+					$('#confirm-checkout-modal').foundation('reveal','open');
+				});
+				
+				
+				
+				
+				$('#rapid-officer').on('keyup', function(){
+					if( $(this).val() !== ''){
+						$('#rapid-assign-device').prop('disabled', false);
+					} else {
+						$('#rapid-assign-device').prop('disabled', true);
+					}
+				});
+				
+				var count='1', transfer='1';
 				$('#rapid-assign-device').on('click', function(){
+					$(this).prop('disabled', true);
 					$('#checkout-report-wrapper').show();
 					var assignment = '<div class="checkout-report-detail">'+
 						'<div class="checkout-assignee">Johnny B. Good</div>'+
 						'<div class="checkout-device-config">Config. 1</div>'+						
-						'<div class="checkout-device-location">Building 1, Gang '+gang+'/'+count+'</div>'+
+						'<div class="checkout-device-location">Building 1, Transfer '+transfer+'/'+count+'</div>'+
 						'<div class="checkout-device-name">Vista VL-168</div>'+
 					'</div>';
 					
+					var alert = '<div class="alert-box radius warning">Johnny B. Good has already been assigned a Device, click Assign Device to assign another device to this officer or enter a different Officer to checkout a device to. etc. etc. etc. </div>';
+					
 					
 					$('#checkout-report-details').append(assignment);
-					$('#rapid-officer').focus();
+					$('#rapid-config')[0].selectedIndex = 0;
+					$('#rapid-config').trigger('chosen:updated');
+					$('#rapid-officer').val('').focus();
 					if(count < 8){
-						count++;						
-					} else {
+						if(count === 3){$(this).closest('.modal-body').prepend(alert);}
+						count++;																		
+					} else {						
 						count = '1';
-						gang++;
+						transfer++;
 					}
+									
 				});
 				
 		});// end docready
@@ -583,7 +622,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -667,7 +706,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -751,7 +790,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -835,7 +874,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -919,7 +958,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -1003,7 +1042,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -1088,7 +1127,7 @@
 								        </select>
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-6 columns">
-										<input type="text" name="select-officer"  id="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
+										<input type="text" name="select-officer" value="" placeholder="autocomplete field with Officers Name" class="" />
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								<div class="row">
@@ -1173,7 +1212,7 @@
                         </div><!-- end columns -->
                         <div class="small-12 medium-6 large-6 columns">
                             <label for="" class="">Camera Setting</label>
-                            <select class="select select-searchable" id="">
+                            <select class="select select-searchable" id="camera-setting">
                                 <option value="">Default</option>
                                 <option value="1">K9 Unit</option>
                                 <option value="2">Drug Task Force</option>
@@ -1256,7 +1295,7 @@
         </div>
 	  <div class="modal-footer shaded-footer">
 	    <button class="button secondary close-modal">Cancel</button>
-	    <button class="button success modalsave"  data-reveal-id="confirm-checkout-modal">Checkout Device</button>
+	    <button class="button success modalsave" id="checkout-device-button" disabled>Checkout Device</button>
 	  </div>
 	  <a class="close-reveal-modal">×</a>
 	</div>
@@ -1268,7 +1307,7 @@
 	  <div class="modal-body">
 	    <div class="row">
 	      <div class="small-12 medium-12 large-12 columns">
-			You have assigned <strong> Officer Pitcher, Matthew</strong> to the device in <strong>Slot 3</strong> of Gang Station <strong>B21</strong>
+			You have assigned <strong> Officer Pitcher, Matthew</strong> to the device in <strong>Slot 3</strong> of Transfer Station <strong>B21</strong>
 	    </div>
 	    <!-- end row --> 
 	  </div>
@@ -1287,38 +1326,43 @@
 	  <div class="modal-body">
 		<div class="row">
 		    <div class="small-12 medium-6 large-6 columns">
+				<label for="location">Location</label>
 		        <select class="select" id="rapid-loc" tabindex="1" >
 					<option value="">Location</option>
 					<optgroup label="Building 1">
 						<option value="">All Bldg. 1</option>											
-						<option value="">Gang 1</option>
-						<option value="">Gang 2</option>
-						<option value="">Gang 3</option>
+						<option value="">Transfer 1</option>
+						<option value="">Transfer 2</option>
+						<option value="">Transfer 3</option>
 					</optgroup>
 					<optgroup label="Building 2">
 						<option value="">All Bldg. 2</option>											
-						<option value="">Gang 4</option>
-						<option value="">Gang 5</option>
+						<option value="">Transfer 4</option>
+						<option value="">Transfer 5</option>
 					</optgroup>
 				</select>									
 				
 		    </div><!-- end columns -->
 		    <div class="small-12 medium-6 large-6 columns">
-				<input type="text" name="rapid-officer"  id="rapid-officer" tabindex="2" class="" placeholder="Officer Name" />									
+				<label for="rapid-officer">Officer Name</label>
+				<input type="text" name="rapid-officer"  id="rapid-officer" tabindex="2" class="" placeholder="" />									
 		    </div><!-- end columns -->
 		</div><!-- end row -->
 
 		<div class="row">
 		    <div class="small-12 medium-6 large-6 columns">
+				<label for="rapid-config">Officer Configuration</label>
+			
 		        <select class="select" id="rapid-config" tabindex="3" >
-					<option value="">Select Config</option>
+					<option value="">Select A Config.</option>
 					<option value="">Config. 1</option>											
 					<option value="">Config. 2</option>
 					<option value="">Config. 3</option>
 				</select>									
 		    </div><!-- end columns -->
 		    <div class="small-12 medium-6 large-6 columns">
-		        <button id="rapid-assign-device" class="button secondary block-button" tabindex="4">Assign Device</button>									
+				<label for="">&nbsp;</label>
+		        <button id="rapid-assign-device" class="button secondary block-button" tabindex="4" disabled>Assign Device</button>									
 		    </div><!-- end columns -->
 		</div><!-- end row -->
 		
@@ -1328,7 +1372,7 @@
 				<div class="checkout-report-detail checkout-report-detail-header">
 					<div class="checkout-assignee">Officer Name</div>
 					<div class="checkout-device-config">Config.</div>					
-					<div class="checkout-device-location">Location, Gang Station/Slot</div>
+					<div class="checkout-device-location">Location, Transfer Station/Slot</div>
 					<div class="checkout-device-name">Device Name</div>		
 				</div>
 			

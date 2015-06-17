@@ -1427,9 +1427,9 @@ $(document).on("click","#select_officer_search_chosen li.result-selected",functi
 		if( $(this).hasClass('info') ){
 			$(this).removeClass('info').addClass('error');
 		} else if($(this).hasClass('error') ) {
-			$(this).removeClass('error').addClass('warning');
-		} else if($(this).hasClass('warning') ) {
-			$(this).removeClass('warning').addClass('success');
+			$(this).removeClass('error').addClass('alert');
+		} else if($(this).hasClass('alert') ) {
+			$(this).removeClass('alert').addClass('success');
 		} else {
 			$(this).removeClass('show').removeClass();
 		}

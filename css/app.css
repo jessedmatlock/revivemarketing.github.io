@@ -8927,8 +8927,8 @@ button.soft-alert:hover, button.soft-alert:focus, button.soft-alert:active,
 button[disabled], button.disabled,
 .button[disabled],
 .button.disabled {
-  background: #ddd;
-  color: #aaa;
+  background: #ddd !important;
+  color: #aaa !important;
   text-shadow: none;
   border-color: #aaa !important;
 }
@@ -8938,7 +8938,7 @@ button[disabled]:hover, button[disabled]:focus, button.disabled:hover, button.di
 .button[disabled]:focus,
 .button.disabled:hover,
 .button.disabled:focus {
-  background: #ddd;
+  background: #ddd !important;
 }
 /* line 808, ../scss/app.scss */
 button[disabled] .fa, button.disabled .fa,

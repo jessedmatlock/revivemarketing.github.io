@@ -2555,6 +2555,13 @@ input.copy-text::-o-selection {
     font-weight: normal !important;
     white-space: nowrap;
 }
+.chosen-results li.disabled,
+.f-dropdown li a.disabled {
+	text-decoration: line-through;
+	color: #aaa;
+	text-shadow: none !important;
+	pointer-events: none;
+}
 .f-dropdown.dark-dropdown li a {
     color: #eee;
     text-shadow: none;
@@ -5702,7 +5709,8 @@ add .alert-yes or .alert-no to display .toggle-alert for specific checkbox state
 #system-msg.error {
     background-color: #A50202;
 }
-#system-msg.warning {
+
+#system-msg.alert {
     background-color: #EBA018;
 }
 #system-msg.success {

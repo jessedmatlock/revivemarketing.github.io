@@ -2,6 +2,7 @@
 	http://10.1.18.4:90/assets/css/test.css
 	http://elweb.com/css/test.css
 	http://mars:90/assets/css/test.css */
+
 .no-margin {
 	margin: 0;
 }
@@ -1284,67 +1285,11 @@ table .info .status-icon,
 	}
 }*/
 /* CHECKOUT PROCESS */
-.kiosk #checkout-config .panel {
-	background: #eee;
-	border-color: #404040;
-}
-a#change-config {
-    font: bold 12px/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    display: block;
-    margin: 20px 0;
-    color: #aaa;
-}
-.kiosk #change-config {
-	margin: 10px 0 20px;
-}
-a#change-config:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f1db";
-    margin-right: 3px;
-}
-a#change-config + #checkout-config {
-    max-height: 0;
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden;
-    transition: all 250ms ease-out;
-}
-#checkout-config label {
-    color: #707070;
-}
-.kiosk #checkout-config label,
-.kiosk #checkout-config label small {
-    color: #555;
-    text-shadow: none;
-}
+	
 
-#checkout-config h6 {
-	font-size: 0.85rem;
-    color: #777;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.kiosk #checkout-config  h6 {
-	color: #eee;
-}
 
-a#change-config.change {
-    color: #6e9f2a;
-}
-a#change-config.change:before {
-    content: "\f058";
-}
-a#change-config.change + #checkout-config {
-    visibility: visible;
-    max-height: none;
-    overflow: visible;
-    margin-bottom: 20px;
-}
+
+
 
 
 
@@ -4762,8 +4707,7 @@ section.table div.table-row div.table-cell {
 }*/
 /* SIGN IN FORM */
 
-body.login:before,
-body.kiosk:before {
+body.login:before {
     content: "";
     display: block;
     height: 10px;
@@ -4778,12 +4722,7 @@ body.login {
     background: #222 url(../images/login-bg.png) 0 0 repeat;
     height: 100vh !important;
 }
-body.kiosk {
-    background: #222 url('../images/checkered-bg.jpg') repeat left top;
-    min-height: 100vh;
-}
-body.login .panel-top-title,
-body.kiosk .panel-top-title {
+body.login .panel-top-title {
     border-color: #111 #111 #222 #111;
     background: #434345;
     color: #eee;
@@ -4792,39 +4731,29 @@ body.kiosk .panel-top-title {
     -moz-box-shadow: rgba(255, 255, 255, 0.1) 0px 6px 13px inset;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 6px 13px inset;
 }
-body.login .panel,
-body.kiosk .panel {
+body.login .panel{
     border-color: #111;
     background: #505050;
 }
-body.login .main-section,
-body.kiosk .main-section {
+body.login .main-section {
     padding-top: 60px;
     height: 100vh;
     background: transparent;
-}
-body.kiosk .main-section {
     padding-top: 5vh;
 }
-body.login .logo,
-body.kiosk .logo {
+
+body.login .logo {
     margin: 0px auto 40px;
     display: block;
     width: 236px;
     height: 94px;
 }
-body.kiosk .logo {
-    width: 301px;
-    height: 67px;
-}
-body.login .panel label,
-body.kiosk .panel label {
+
+body.login .panel label {
     margin-bottom: 5px;
 }
 body.login .panel label,
-body.login .panel label .fa,
-body.kiosk .panel label,
-body.kiosk .panel label .fa {
+body.login .panel label .fa {
     color: #ccc;
     font-size: 1em;
     text-shadow: 0 1px 0 #111;
@@ -4840,45 +4769,18 @@ input + label.small {
 	margin-top: -0.9rem;
 }
 body.login input[type=text],
-body.login input[type=password],
-body.kiosk input[type=text] {
+body.login input[type=password]{
     border-radius: 3px;
     border-color: #202020;
     background: #434345;
     color: #fff;
     margin-bottom: 10px;
 }
-body.kiosk input[type=text] {
-    margin-bottom: 40px;
-}
-body.kiosk .select {
-    margin-bottom: 10px;
-}
-
-body.kiosk input[type=text],
-body.kiosk .chosen-container a,
-body.kiosk .chosen-container a span {
-    height: 3rem;
-    line-height: 2.8rem;
-}
-body.kiosk .chosen-container .chosen-single div b {
-    background-position: 3px 1em;
-}
 body.login #login-wrapper {
     width: 360px;
     max-width: 100%;
     margin: 20px auto !important;
     box-shadow: 0px 3px 15px 5px rgba(0, 0, 0, 0.25);
-    color: #aaa;
-}
-body.kiosk .reveal-modal .modal-body {
-    padding: 20px !important;
-}
-body.kiosk #form-wrapper {
-    width: 600px;
-    max-width: 100%;
-    margin: 20px auto !important;
-    box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.25);
     color: #aaa;
 }
 .login form {
@@ -4893,13 +4795,240 @@ body.login #login-wrapper .button {
     border-radius: 3px;
     border-color: #333 !important;
 }
-body.kiosk #form-wrapper .button {
-    display: block;
-    width: 100%;
-    border-radius: 3px;
-    padding: 20px;
-    border-color: #333 !important;
+
+/* KIOSK STYLING */
+body.kiosk {
+    background: #3d3c44 url('../images/kiosk-bg.png') repeat left top;
+    min-height: 100vh;
 }
+body.kiosk .main-section {
+    min-height: 100vh;
+    background: transparent;
+    padding-top: 0;
+}
+body.kiosk #kiosk-header {
+	background: transparent url('../images/header-decor.png') repeat 0 85px;
+	height: 85px;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 1;
+}
+body.kiosk #kiosk-header:before {
+	position: absolute;
+	display: block;
+	content: " ";
+	background: #0a0a0a;
+	height: 80px;
+	width: 100%;
+	z-index: 0;
+}
+body.kiosk #kiosk-logo {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+.kiosk h2 {
+	color: #eee;
+}
+.kiosk #officername {
+	max-width: 100%;
+	width: 640px;
+	margin: 0 auto;
+	padding-left: 20px;
+	height: 50px;
+	border-radius: 50px;
+	font-size: 20px;
+	color: #fff;
+	background: #777;
+	border-color: #777;
+	text-transform: capitalize;
+}
+
+.kiosk a#change-config + #checkout-config-wrapper {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    transition: all 250ms ease-out;
+}
+
+.kiosk #checkout-config-wrapper label,
+.kiosk #checkout-config-wrapper label small {
+    color: #555;
+}
+
+
+.kiosk #checkout-config-wrapper {
+	background: #eee;
+	padding: 20px 0 60px;
+	border-top: 5px solid #0a0a0a;
+	border-bottom: 5px solid #0a0a0a;
+	display: none;
+}
+.kiosk a#change-config {
+    font: normal 20px/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    display: block;
+    color: #aaa;
+    text-shadow: 0px 1px 0 #000;
+	max-width: 100%;
+	width: 640px;
+	height: 54px;
+	margin: 10px auto 40px;
+	background: #202022;
+	padding: 12px 10px 12px 55px;
+	position: relative;
+	border-radius: 40px;
+}
+.kiosk a#change-config .fa {
+	text-shadow: none;
+}
+.kiosk a#change-config .fa-stack {
+	font-size: 25px;
+	display: block;
+	position: absolute;
+	left: 2px;
+	top: 3px;
+}
+.kiosk a#change-config .fa-circle {
+    color: #333;
+}
+
+.kiosk a#change-config.change .fa-circle {
+    color: #E1A100;
+}
+.kiosk a#change-config.change .fa-cogs:before {
+    content: "\f107";
+}
+
+
+.kiosk #kiosk-submit {
+	background: #252525;
+	border: none;
+	height: 90px;
+	margin: 0px auto 0;
+	display: block;
+	padding: 20px 40px 20px 100px;
+	border-radius: 85px;
+	position: relative;
+}
+
+.kiosk #kiosk-submit .fa-stack {
+	font-size: 44px;
+	display: block;
+	position: absolute;
+	left: -8px;
+	top: 3px;
+}
+.kiosk #kiosk-submit .fa-circle {
+	color: #E1A100;
+}
+
+.kiosk #kiosk-submit img {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.kiosk #kiosk-submit span {
+	color: #eee;
+	text-shadow: none;
+	font-size: 48px;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+
+
+	
+	.kiosk #kiosk-submit:hover {
+		background: -moz-linear-gradient(top, #96C300 0%, #769B00 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #96C300), color-stop(100%, #769B00));
+		background: -webkit-linear-gradient(top, #96C300 0%, #769B00 100%);
+		background: -o-linear-gradient(top, #96C300 0%, #769B00 100%);
+		background: -ms-linear-gradient(top, #96C300 0%, #769B00 100%);
+		background: linear-gradient(to bottom, #96C300 0%, #769B00 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96C300', endColorstr='#769B00', GradientType=0);
+	}
+	.kiosk #kiosk-submit:hover .fa-stack {
+		font-size: 44px;
+		display: block;
+		position: absolute;
+		left: -8px;
+		top: 3px;
+	}
+	.kiosk #kiosk-submit:hover .fa-circle {
+		color: #29282D;
+	}
+	
+	.kiosk #kiosk-submit:hover .fa-angle-double-right:before {
+	    content: "\f00c";
+	    font-size: 1.4em;
+	}
+body.kiosk #assigned-devices-wrapper {
+	display: none;
+}
+body.kiosk #assigned-devices {
+	width: 660px;
+	max-width: 100%;
+	margin: 40px auto 0;
+	
+	max-height: 80px;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: max-height 1s; 
+	-moz-transition: max-height 1s; 
+	-ms-transition: max-height 1s; 
+	-o-transition: max-height 1s; 
+	transition: max-height 1s;  
+	
+}
+body.kiosk #toggle-assigned {
+	width: 600px;
+	max-width: 100%;
+	margin: 10px auto;
+	display: block;
+	text-align: center;
+	border-top: 2px solid #505356;
+}
+body.kiosk #toggle-assigned span {
+	background: #505356;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #3A3C41;	
+	color: #aaa;	
+	text-transform: uppercase;
+	font-size: 12px;
+	border-radius: 0 0 3px 3px;
+}
+body.kiosk #assigned-devices.expand {
+	max-height: 100vh;
+}
+body.kiosk #assigned-devices .assigned-device {
+	padding: 10px 30px;
+	height: 80px;
+	background: #505356;
+	border-radius: 70px;
+	margin-bottom: 10px;
+}
+body.kiosk #assigned-devices .assigned-device .name {
+	color: #aaa;
+}
+
+body.kiosk #assigned-devices .assigned-device .location {
+	color: #eee;
+	font-size: 24px;
+}
+
+
+body.kiosk .select {
+    margin-bottom: 10px;
+    display: block;
+    width: 100% !important;
+}
+
+
+body.kiosk .reveal-modal .modal-body {
+    padding: 20px !important;
+}
+
 .kiosk #fullscreen-toggle,
 .kiosk #kiosk-options,
 .kiosk #kiosk-logout {

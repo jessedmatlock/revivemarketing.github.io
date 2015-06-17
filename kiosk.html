@@ -26,88 +26,132 @@
 
 <body class="kiosk">
 <section class="main-section clearfix"> 
-	<img src="images/kiosk-logo.png" class="logo"  alt="" />
-	<div id="form-wrapper">
-		<h4 class="panel-top-title dark-title"><i class="fa fa-sign-in"></i> Checkout Kiosk</h4>
-		<div class="panel radius">
-			<div class="row">
-				<div class="small-12 medium-12 large-12 columns">
-					<label for="UserName">Officer</label>
-					<input data-val="true" data-val-required="The User name field is required." id="UserName" name="UserName" type="text" value=""  tabindex="1"/>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-12 medium-12 large-12 columns">
-					<select class="select dark-style" id="rapid-config" tabindex="2">
-						<option value="">Select A Configuration</option>
-						<option value="">Config. 1</option>											
-						<option value="">Config. 2</option>
-						<option value="">Config. 3</option>
-					</select>
-					
-					<a href="javascript:void(0);" id="change-config">Change Preferences</a>
-                    <div id="checkout-config">
+	<header id="kiosk-header" class="">
+		<img src="images/kiosk-logo.png"  id="kiosk-logo" alt="" />
+	</header><!-- end header #kiosk-header. -->
+	<div class="row">
+	    <div class="small-12 medium-12 large-12 columns">
+			<h2 class="select-officer text-centered"><i class="fa fa-users"></i> Select an Officer</h2>
+			<input data-val="true" data-val-required="The User name field is required." id="officername" name="officername" type="text" value="" placeholder="Enter an Officer Name" tabindex="1"/>
+			
+			<a href="javascript:void(0);" id="change-config">
+				<span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x"></i>
+				  <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+				</span>
+				Change Officer Preferences / Device Settings</a>
+			
+	    </div><!-- end columns -->
+	</div><!-- end row -->
 	
-						<h6>Officer Preferences</h6>
-						<div class="panel radius">                            
-							<div class="row">
-	                            <div class="small-12 medium-5 large-4 columns">
-	                                <label for="" class="right inline">LED Brightness</label>
-	                            </div><!-- end columns -->
-	                            <div class="small-12 medium-7 large-8 columns">
-	                                <select class="select">
-	                                    <option value="">Dim</option>
-	                                    <option value="" selected>Normal</option>
-	                                    <option value="">Bright</option>
-	                                </select>
-	                            </div><!-- end columns -->
-	                        </div><!-- end row -->
-	                        <div class="row">
-	                            <div class="small-12 medium-7 medium-push-5 large-8 large-push-4 columns">
-	                                <label for="auto-reduce" class="inline"><input type="checkbox" name="" id="" value="" /><small>Auto reduce LED brightness between 8pm - 8am</small></label>
-	                            </div><!-- end columns -->
-	                        </div><!-- end row -->
+	
+	
+	
+    <div id="checkout-config-wrapper">
+		<div class="row">
+		    <div class="small-12 medium-12 large-12 columns">
+				<h5>Officer Preferences</h5>
+		    </div><!-- end columns -->
+		</div><!-- end row -->
+	
+	
+		<div class="row">
+		    <div class="small-12 medium-6 large-6 columns">
+                <label for="" class=""><i class="fa fa-sun-o"></i> LED Brightness</label>
+                <select class="select">
+                    <option value="">Dim</option>
+                    <option value="" selected>Normal</option>
+                    <option value="">Bright</option>
+                </select>
+                <label for="auto-reduce">
+					<input type="checkbox" name="auto-reduce" id="auto-reduce" />
+					<small>Auto reduce LED brightness between 8pm - 8am</small>
+				</label>
+				<br/>
+		    </div><!-- end columns -->
+		    <div class="small-12 medium-6 large-6 columns">
+                <label for="" class=""><i class="fa fa-volume-up"></i> Alert Notifications</label>
+                <select class="select">
+                    <option value="">Audio &amp; Vibration</option>
+                    <option value="">Audio Only</option>
+                    <option value="">Vibration Only</option>
+                </select>
+		    </div><!-- end columns -->
+		</div><!-- end row -->
+		<div class="row">
+		    <div class="small-12 medium-6 large-6 columns">
+                <label for="" class=""><i class="fa fa-signal"></i> Audio Alert Levels</label>
+                <select class="select">
+                    <option value="">Low</option>
+                    <option value="" selected>Normal</option>
+                    <option value="">High</option>
+                </select>
+		    </div><!-- end columns -->
+		    <div class="small-12 medium-6 large-6 columns">
+			    <label for="" class=""><i class="fa fa-wrench"></i> Select A Configuration</label>
+				<select class="select" id="rapid-config" tabindex="">
+					<option value="">Config. 1</option>											
+					<option value="">Config. 2</option>
+					<option value="">Config. 3</option>
+				</select>
+		    </div><!-- end columns -->
+		</div><!-- end row -->
+    </div><!-- end div#checkout-config-wrapper -->
 
-	                        <div class="row">
-	                            <div class="small-12 medium-5 large-4 columns">
-	                                <label for="" class="right inline">Alert Notifications</label>
-	                            </div><!-- end columns -->
-	                            <div class="small-12 medium-7 large-8 columns">
-	                                <select class="select">
-	                                    <option value="">Audio &amp; Vibration</option>
-	                                    <option value="">Audio Only</option>
-	                                    <option value="">Vibration Only</option>
-	                                </select>
-	                            </div><!-- end columns -->
-	                        </div><!-- end row -->
-	                        <div class="row">
-	                            <div class="small-12 medium-5 large-4 columns">
-	                                <label for="" class="right inline">Audio Alert Levels</label>
-	                            </div><!-- end columns -->
-	                            <div class="small-12 medium-7 large-8 columns">
-	                                <select class="select">
-	                                    <option value="">Low</option>
-	                                    <option value="" selected>Normal</option>
-	                                    <option value="">High</option>
-	                                </select>
-	                            </div><!-- end columns -->
-	                        </div><!-- end row -->                        
-						</div><!-- end div.panel radius -->
-                    </div><!-- end div#checkout-config -->
-                    
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-12 medium-12 large-12 columns">
-					<a href="javascript:void(0);" class="button success right" id="checkout-kiosk-button" tabindex="3">Checkout</a>
-					
-				</div>
-			</div>
-		</div>
-		<!-- end div.panel radius --> 
+<button class="button" id="kiosk-submit">
+	<span class="fa-stack fa-lg">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+	</span>
 		
-	</div>
-	<!-- end div#login-wrapper -->	
+	<img src="images/vista-button-text.png"  class="button-img" alt="" />
+	<span class="">Checkout</span>
+</button>
+
+<div id="assigned-devices-wrapper">
+	<div id="assigned-devices">
+		<div class="assigned-device">
+			<div class="name">Officer Marshall, P. Thurgood</div>
+			<div class="location">
+				Transfer Station 40B, Slot 7
+			</div><!-- end span.location -->
+		</div><!-- end div.assigned-device -->
+
+		<div class="assigned-device">
+			<div class="name">Officer Johnny, B. Good</div>
+			<div class="location">
+				Transfer Station 40A, Slot 5
+			</div><!-- end span.location -->
+		</div><!-- end div.assigned-device -->
+
+		<div class="assigned-device">
+			<div class="name">Officer VanDyke, Richard</div>
+			<div class="location">
+				Transfer Station 40A, Slot 3
+			</div><!-- end span.location -->
+		</div><!-- end div.assigned-device -->
+
+		<div class="assigned-device">
+			<div class="name">Officer Schmeling, Jeff</div>
+			<div class="location">
+				Transfer Station 40B, Slot 2
+			</div><!-- end span.location -->
+		</div><!-- end div.assigned-device -->
+
+		<div class="assigned-device">
+			<div class="name">Officer Vanman, Robert</div>
+			<div class="location">
+				Transfer Station 40B, Slot 6
+			</div><!-- end span.location -->
+		</div><!-- end div.assigned-device -->
+	</div><!-- end div#assigned-devices -->
+
+	<a href="javascript:void(0);" id="toggle-assigned" class=""><span>Show History <i class="fa  fa-angle-double-down"></i></span></a>
+	
+</div><!-- end div#assigned-devices-wrapper -->
+	
+
+	
 	<a href="javascript:void(0);" id="fullscreen-toggle" class="has-tip" title="Show Kiosk in Full Screen">Fullscreen</a>
 	<a href="javascript:void(0);" id="kiosk-options" class="button radius has-tip" title="Kiosk Mode Settings" data-reveal-id="kiosk-options-modal"><i class="fa fa-cog"></i></a>
 	<a href="javascript:void(0);" id="kiosk-logout" class="button radius has-tip" title="Logout of Kiosk Mode"><i class="fa fa-power-off"></i></a>
@@ -160,6 +204,31 @@
 		
 		$('#change-config').on('click', function(){
 			$(this).toggleClass('change');
+			if($(this).hasClass('change')){
+				$('#checkout-config-wrapper').slideDown();
+				$('#kiosk-submit').css('margin-top', '-42px');
+			} else {
+				$('#checkout-config-wrapper').slideUp();
+				$('#kiosk-submit').css('margin-top', '0');
+				
+			}
+		});
+		
+		$('#kiosk-submit').click(function(){
+			$('#assigned-devices-wrapper').fadeIn();
+		});
+		
+		var active;
+		
+		$('#toggle-assigned').on('click', function(){
+			if(active === true){
+				$(this).html('<span>Show History <i class="fa  fa-angle-double-down"></i></span>');
+				active = false;
+			} else {
+				$(this).html('<span>Hide History <i class="fa  fa-angle-double-up"></i></span>');				
+				active = true;
+			}
+			$('#assigned-devices').toggleClass('expand');
 		});
 		
 		

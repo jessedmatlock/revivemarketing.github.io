@@ -4947,7 +4947,7 @@ body.kiosk #kiosk-logo {
 		background: linear-gradient(to bottom, #96C300 0%, #769B00 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96C300', endColorstr='#769B00', GradientType=0);
 	}
-	.kiosk #kiosk-submit:hover .fa-stack {
+	.kiosk #kiosk-submit:focus .fa-stack {
 		font-size: 44px;
 		display: block;
 		position: absolute;
@@ -4958,7 +4958,8 @@ body.kiosk #kiosk-logo {
 		color: #29282D;
 	}
 	
-	.kiosk #kiosk-submit:hover .fa-angle-double-right:before {
+	.kiosk #kiosk-submit:focus .fa-angle-double-right:before ,
+	.kiosk #kiosk-submit:active .fa-angle-double-right:before {
 	    content: "\f00c";
 	    font-size: 1.4em;
 	}

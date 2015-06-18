@@ -206,7 +206,7 @@
 				$('#kiosk-submit').removeClass('pressed');
 			}, 1000);
 			
-			var officername = $('#officername').val() !=='' ? $('#officername').val() : 'Officer LastName, FirstName',
+			var officername = $('#officername').val() !=='' ? 'Officer '+$('#officername').val() : 'Officer LastName, FirstName',
 				station = Math.ceil(Math.random() * 12),
 				slot = Math.ceil(Math.random() * 8);
 

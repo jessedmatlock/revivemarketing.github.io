@@ -32,14 +32,14 @@
 	<div class="row">
 	    <div class="small-12 medium-12 large-12 columns">
 			<h2 class="select-officer text-centered"><i class="fa fa-users"></i> Select an Officer</h2>
-			<input data-val="true" data-val-required="The User name field is required." id="officername" name="officername" type="text" value="" placeholder="Enter an Officer Name" tabindex="1"/>
+			<input id="officername" name="officername" type="text" value="" placeholder="Enter an Officer Name" tabindex="1"/>
 			
-			<a href="javascript:void(0);" id="change-config">
+			<button id="change-config" tabindex="2">
 				<span class="fa-stack fa-lg">
 				  <i class="fa fa-circle fa-stack-2x"></i>
 				  <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
 				</span>
-				Change Officer Preferences / Device Settings</a>
+				Change Officer Preferences / Device Settings</button>
 			
 	    </div><!-- end columns -->
 	</div><!-- end row -->
@@ -58,20 +58,20 @@
 		<div class="row">
 		    <div class="small-12 medium-6 large-6 columns">
                 <label for="" class=""><i class="fa fa-sun-o"></i> LED Brightness</label>
-                <select class="select">
+                <select class="select"  tabindex="3">
                     <option value="">Dim</option>
                     <option value="" selected>Normal</option>
                     <option value="">Bright</option>
                 </select>
                 <label for="auto-reduce">
-					<input type="checkbox" name="auto-reduce" id="auto-reduce" />
+					<input type="checkbox" name="auto-reduce" id="auto-reduce"  tabindex="4"/>
 					<small>Auto reduce LED brightness between 8pm - 8am</small>
 				</label>
 				<br/>
 		    </div><!-- end columns -->
 		    <div class="small-12 medium-6 large-6 columns">
                 <label for="" class=""><i class="fa fa-volume-up"></i> Alert Notifications</label>
-                <select class="select">
+                <select class="select"  tabindex="5">
                     <option value="">Audio &amp; Vibration</option>
                     <option value="">Audio Only</option>
                     <option value="">Vibration Only</option>
@@ -81,7 +81,7 @@
 		<div class="row">
 		    <div class="small-12 medium-6 large-6 columns">
                 <label for="" class=""><i class="fa fa-signal"></i> Audio Alert Levels</label>
-                <select class="select">
+                <select class="select"  tabindex="6">
                     <option value="">Low</option>
                     <option value="" selected>Normal</option>
                     <option value="">High</option>
@@ -89,7 +89,7 @@
 		    </div><!-- end columns -->
 		    <div class="small-12 medium-6 large-6 columns">
 			    <label for="" class=""><i class="fa fa-wrench"></i> Select A Configuration</label>
-				<select class="select" id="rapid-config" tabindex="">
+				<select class="select" id="rapid-config" tabindex="7">
 					<option value="">Config. 1</option>											
 					<option value="">Config. 2</option>
 					<option value="">Config. 3</option>
@@ -98,7 +98,7 @@
 		</div><!-- end row -->
     </div><!-- end div#checkout-config-wrapper -->
 
-<button class="button" id="kiosk-submit">
+<button id="kiosk-submit" tabindex="8">
 	<span class="fa-stack fa-lg">
 	  <i class="fa fa-circle fa-stack-2x"></i>
 	  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
@@ -110,43 +110,10 @@
 
 <div id="assigned-devices-wrapper">
 	<div id="assigned-devices">
-		<div class="assigned-device">
-			<div class="name">Officer Marshall, P. Thurgood</div>
-			<div class="location">
-				Transfer Station 40B, Slot 7
-			</div><!-- end span.location -->
-		</div><!-- end div.assigned-device -->
-
-		<div class="assigned-device">
-			<div class="name">Officer Johnny, B. Good</div>
-			<div class="location">
-				Transfer Station 40A, Slot 5
-			</div><!-- end span.location -->
-		</div><!-- end div.assigned-device -->
-
-		<div class="assigned-device">
-			<div class="name">Officer VanDyke, Richard</div>
-			<div class="location">
-				Transfer Station 40A, Slot 3
-			</div><!-- end span.location -->
-		</div><!-- end div.assigned-device -->
-
-		<div class="assigned-device">
-			<div class="name">Officer Schmeling, Jeff</div>
-			<div class="location">
-				Transfer Station 40B, Slot 2
-			</div><!-- end span.location -->
-		</div><!-- end div.assigned-device -->
-
-		<div class="assigned-device">
-			<div class="name">Officer Vanman, Robert</div>
-			<div class="location">
-				Transfer Station 40B, Slot 6
-			</div><!-- end span.location -->
-		</div><!-- end div.assigned-device -->
+		<!-- Officers appended here -->
 	</div><!-- end div#assigned-devices -->
 
-	<a href="javascript:void(0);" id="toggle-assigned" class=""><span>Show History <i class="fa  fa-angle-double-down"></i></span></a>
+	<a href="javascript:void(0);" id="toggle-history" class=""><span>Show History <i class="fa  fa-angle-double-down"></i></span></a>
 	
 </div><!-- end div#assigned-devices-wrapper -->
 	
@@ -198,10 +165,12 @@
 	}
 
 	$(document).ready(function(){
+		// toggle Fullscreen funtion
 		$('#fullscreen-toggle').on('click', function(){
 			toggleFullScreen();
 		});
 		
+		// show change config options 
 		$('#change-config').on('click', function(){
 			$(this).toggleClass('change');
 			if($(this).hasClass('change')){
@@ -214,13 +183,46 @@
 			}
 		});
 		
+		// Submit device assignment
 		$('#kiosk-submit').click(function(){
+			// show the assigned device info (officer, location)
 			$('#assigned-devices-wrapper').fadeIn();
+			setTimeout(function() {
+				$('#assigned-devices-wrapper').removeClass('pressed');
+			}, 1000);
+			
+			// hide the config options and prep for another officer
+			$('#change-config').removeClass('change');
+			$('#checkout-config-wrapper').slideUp();
+			// focus cursor in Officer Name field
+			// we need to reset the options in the config form to default
+			$('#checkout-config-wrapper .select').each(function(){
+				$(this)[0].selectedIndex = 0;
+				$(this).trigger('chosen:updated');
+			});
+			// show the check mark for a second or so, then reset button
+			$(this).addClass('pressed');
+			setTimeout(function() {
+				$('#kiosk-submit').removeClass('pressed');
+			}, 1000);
+			
+			var officername = $('#officername').val() !=='' ? $('#officername').val() : 'Officer LastName, FirstName',
+				station = Math.ceil(Math.random() * 12),
+				slot = Math.ceil(Math.random() * 8);
+
+			$('#assigned-devices').append('<div class="assigned-device">'+
+				'<div class="name">'+officername+'</div>'+
+				'<div class="location">'+
+					'Transfer Station '+station+'A, Slot '+slot+
+				'</div><!-- end span.location -->'+
+			'</div><!-- end div.assigned-device -->');
+			$('#officername').val('').focus();
+			
 		});
 		
-		var active;
-		
-		$('#toggle-assigned').on('click', function(){
+		// toggle class on Show/Hide Assigned History
+		var active;		
+		$('#toggle-history').on('click', function(){
 			if(active === true){
 				$(this).html('<span>Show History <i class="fa  fa-angle-double-down"></i></span>');
 				active = false;
@@ -228,38 +230,32 @@
 				$(this).html('<span>Hide History <i class="fa  fa-angle-double-up"></i></span>');				
 				active = true;
 			}
+			// expands the height of the Device History div
 			$('#assigned-devices').toggleClass('expand');
 		});
 		
-		
+
+		// pop print report modal on selection of an option in #select-checkout-report
+		$('#select-checkout-report').on('change', function(){
+			$('#checkout-report-modal').foundation('reveal', 'open');
+		});
+
+		// display the selected print report in new window
 		$('.checkout-report').on('click', function(){
 			openWindowReport();
-		});
-		
-		
-		$('#checkout-kiosk-button').on('click', function(){
-
-			$('#rapid-config')[0].selectedIndex = 0;
-			$('#rapid-config').trigger('chosen:updated');
-
-			$('#UserName').val('').focus();
-
-			$(this).prop('disabled', true);
-
-			$('#rapid-checkout-modal').foundation('reveal','open');
-		});
-		
+		});	
 
 	});  // end docready
+	
+	
 	var windowReport = null; // global variable
 	function openWindowReport() {
 	  if(windowReport == null || windowReport.closed) {
-	    windowReport = window.open('checkout-report.html', '_blank', 'toolbar=0,titlebar=0,status=0,location=0,menubar=0,height=640,width=800');
+	    windowReport = window.open('checkout-report.html', '_blank', 'toolbar=0,titlebar=0,status=0,location=0,menubar=0,height=640,width=1024');
 	  } else {
 	    windowReport.focus();
 	  };
 	}
-
 	document.addEventListener('keydown', function(e) {
 	  if (e.altKey && e.keyCode == 70 ) { // ALT + F   ---------- and/or ------ e.keyCode == 13 (ENTER KEY)
 	    toggleFullScreen();
@@ -367,14 +363,14 @@
 	</div><!-- end row -->
 	<div class="row">
 	    <div class="small-12 medium-12 large-12 columns">
-			<a href="javascript:void(0);" id="select-checkout-report" data-dropdown="print" class="button radius gray-gradient dropdown display-block">Print Checkout Report</a>
-			<ul id="print" data-dropdown-content class="f-dropdown" aria-hidden="true" >
-				<li><a href="#" data-reveal-id="checkout-report-modal">Print Last 1 Hours</a></li>
-				<li><a href="#" data-reveal-id="checkout-report-modal">Print Last 3 Hours</a></li>
-				<li><a href="#" data-reveal-id="checkout-report-modal">Print Last 5 Hours</a></li>
-				<li><a href="#" data-reveal-id="checkout-report-modal">Print Last 7 Hours</a></li>
-				<li><a href="#" data-reveal-id="checkout-report-modal">Print Last 12 Hours</a></li>
-			</ul>
+			<label for="select-checkout-report">Kiosk Service Location</label>
+			<select class="select" id="select-checkout-report">
+				<option value="">Print Last 1 Hours</option>
+				<option value="">Print Last 3 Hours</option>											
+				<option value="">Print Last 5 Hours</option>
+				<option value="">Print Last 7 Hours</option>
+				<option value="">Print Last 12 Hours</option>
+			</select>		
 	    </div><!-- end columns -->
 	</div><!-- end row -->
 

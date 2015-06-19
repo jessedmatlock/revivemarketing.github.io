@@ -5025,6 +5025,7 @@ body.kiosk #toggle-history span {
 }
 body.kiosk #assigned-devices.expand {
 	max-height: 100vh;
+	overflow: auto;
 }
 body.kiosk #assigned-devices .assigned-device {
 	padding: 10px 30px;

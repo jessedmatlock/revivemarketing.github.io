@@ -187,13 +187,10 @@
 				$('#checkout-config-outer-wrapper').slideUp();				
 			}
 		});
-<<<<<<< HEAD
 		
 		$('#officername').val('').focus();
 		
 		var items = 1;
-=======
->>>>>>> origin/master
 		// Submit device assignment
 		$('#kiosk-submit').click(function(){
 			// collapse the history list, if shown
@@ -220,17 +217,10 @@
 				$('#kiosk-submit').removeClass('pressed');
 			}, 1000);
 			
-			var officername = $('#officername').val() !=='' ? 'Officer '+$('#officername').val() : 'Officer LastName, FirstName',				
+			var officername = $('#officername').val() !=='' ? 'Officer '+$('#officername').val() : 'Officer LastName, FirstName',
 				station = Math.ceil(Math.random() * 12),
 				slot = Math.ceil(Math.random() * 8);
-				html = '<div class="assigned-device">'+
-					'<div class="name">'+officername+'</div>'+
-					'<div class="location">'+
-						'Transfer Station '+station+'A, Slot '+slot+
-					'</div><!-- end span.location -->'+
-				'</div><!-- end div.assigned-device -->';
 
-<<<<<<< HEAD
 			$('#assigned-devices').append('<div class="assigned-device">'+
 				'<div class="name">'+officername+'</div>'+
 				'<div class="location">'+
@@ -239,12 +229,6 @@
 			'</div><!-- end div.assigned-device -->');
 			$('#officername').val('').focus();
 			items++;
-=======
-				$(html).hide().appendTo("#assigned-devices").fadeIn(1000);				
-				// if more than one item, show the Toggle link
-				$('#officername').val('').focus();
-				
->>>>>>> origin/master
 			
 			if(items > 2){
 				$('#toggle-history').show();
@@ -256,7 +240,6 @@
 		// toggle class on Show/Hide Assigned History
 		$('#toggle-history').hide();
 		var active;		
-		
 		$('#toggle-history').on('click', function(){
 			if(active === true){
 				$(this).html('<span>Show History <i class="fa  fa-angle-double-down"></i></span>');

@@ -31,8 +31,13 @@
 	</header><!-- end header #kiosk-header. -->
 	<div class="row">
 	    <div class="small-12 medium-12 large-12 columns">
-			<h2 class="select-officer text-centered"><i class="fa fa-users"></i> Select an Officer</h2>
-			<input id="officername" name="officername" type="text" value="" placeholder="Enter an Officer Name" tabindex="1"/>
+			<h2 class="select-officer text-centered"><i class="fa fa-user"></i> Select an Officer</h2>
+			
+			<div id="officername-wrapper">
+				<input id="officername" name="officername" type="text" value="" placeholder="Enter an Officer Name" tabindex="1"/>
+				<a href="javascript:void(0);" class="toggle"><i class="fa fa-chevron-down"></i></a>
+			</div><!-- end div#input-wrapper -->
+					
 			
 			<button id="change-config" tabindex="2">
 				<span class="fa-stack fa-lg">
@@ -46,67 +51,70 @@
 	
 	
 	
+	<div id="checkout-config-outer-wrapper">
 	
-    <div id="checkout-config-wrapper">
-		<div class="row">
-		    <div class="small-12 medium-12 large-12 columns">
-				<h5>Officer Preferences</h5>
-		    </div><!-- end columns -->
-		</div><!-- end row -->
-	
-	
-		<div class="row">
-		    <div class="small-12 medium-6 large-6 columns">
-                <label for="" class=""><i class="fa fa-sun-o"></i> LED Brightness</label>
-                <select class="select"  tabindex="3">
-                    <option value="">Dim</option>
-                    <option value="" selected>Normal</option>
-                    <option value="">Bright</option>
-                </select>
-                <label for="auto-reduce">
-					<input type="checkbox" name="auto-reduce" id="auto-reduce"  tabindex="4"/>
-					<small>Auto reduce LED brightness between 8pm - 8am</small>
-				</label>
-				<br/>
-		    </div><!-- end columns -->
-		    <div class="small-12 medium-6 large-6 columns">
-                <label for="" class=""><i class="fa fa-volume-up"></i> Alert Notifications</label>
-                <select class="select"  tabindex="5">
-                    <option value="">Audio &amp; Vibration</option>
-                    <option value="">Audio Only</option>
-                    <option value="">Vibration Only</option>
-                </select>
-		    </div><!-- end columns -->
-		</div><!-- end row -->
-		<div class="row">
-		    <div class="small-12 medium-6 large-6 columns">
-                <label for="" class=""><i class="fa fa-signal"></i> Audio Alert Levels</label>
-                <select class="select"  tabindex="6">
-                    <option value="">Low</option>
-                    <option value="" selected>Normal</option>
-                    <option value="">High</option>
-                </select>
-		    </div><!-- end columns -->
-		    <div class="small-12 medium-6 large-6 columns">
-			    <label for="" class=""><i class="fa fa-wrench"></i> Select A Configuration</label>
-				<select class="select" id="rapid-config" tabindex="7">
-					<option value="">Config. 1</option>											
-					<option value="">Config. 2</option>
-					<option value="">Config. 3</option>
-				</select>
-		    </div><!-- end columns -->
-		</div><!-- end row -->
-    </div><!-- end div#checkout-config-wrapper -->
-
-<button id="kiosk-submit" tabindex="8">
-	<span class="fa-stack fa-lg">
-	  <i class="fa fa-circle fa-stack-2x"></i>
-	  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-	</span>
+	    <div id="checkout-config-wrapper">
 		
-	<img src="images/vista-button-text.png"  class="button-img" alt="" />
-	<span class="">Checkout</span>
-</button>
+
+			<div class="row">
+			    <div class="small-12 medium-12 large-12 columns">
+					<h5>Officer Preferences</h5>
+			    </div><!-- end columns -->
+			</div><!-- end row -->
+
+
+			<div class="row">
+			    <div class="small-12 medium-6 large-6 columns">
+	                <label for="" class=""><i class="fa fa-sun-o"></i> LED Brightness</label>
+	                <select class="select"  tabindex="3">
+	                    <option value="">Dim</option>
+	                    <option value="" selected>Normal</option>
+	                    <option value="">Bright</option>
+	                </select>
+	                <label for="auto-reduce">
+						<input type="checkbox" name="auto-reduce" id="auto-reduce"  tabindex="4"/>
+						<small>Auto reduce LED brightness between 8pm - 8am</small>
+					</label>
+					<br/>
+			    </div><!-- end columns -->
+			    <div class="small-12 medium-6 large-6 columns">
+	                <label for="" class=""><i class="fa fa-volume-up"></i> Alert Notifications</label>
+	                <select class="select"  tabindex="5">
+	                    <option value="">Audio &amp; Vibration</option>
+	                    <option value="">Audio Only</option>
+	                    <option value="">Vibration Only</option>
+	                </select>
+			    </div><!-- end columns -->
+			</div><!-- end row -->
+			<div class="row">
+			    <div class="small-12 medium-6 large-6 columns">
+	                <label for="" class=""><i class="fa fa-signal"></i> Audio Alert Levels</label>
+	                <select class="select"  tabindex="6">
+	                    <option value="">Low</option>
+	                    <option value="" selected>Normal</option>
+	                    <option value="">High</option>
+	                </select>
+			    </div><!-- end columns -->
+			    <div class="small-12 medium-6 large-6 columns">
+				    <label for="" class=""><i class="fa fa-wrench"></i> Select A Configuration</label>
+					<select class="select" id="rapid-config" tabindex="7">
+						<option value="">Config. 1</option>											
+						<option value="">Config. 2</option>
+						<option value="">Config. 3</option>
+					</select>
+			    </div><!-- end columns -->
+			</div><!-- end row -->
+	    </div><!-- end div#checkout-config-wrapper -->
+	</div><!-- end div#checkout-config-outer-wrapper -->
+
+	<button id="kiosk-submit" tabindex="8">
+		<div class="circle">
+		  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+		</div>
+		
+		<img src="images/vista-button-text.png"  class="button-img" alt="" />
+		<span class="">Checkout</span>
+	</button>
 
 <div id="assigned-devices-wrapper">
 	<div id="assigned-devices">
@@ -174,17 +182,20 @@
 		$('#change-config').on('click', function(){
 			$(this).toggleClass('change');
 			if($(this).hasClass('change')){
-				$('#checkout-config-wrapper').slideDown();
-				$('#kiosk-submit').css('margin-top', '-42px');
+				$('#checkout-config-outer-wrapper').slideDown();
 			} else {
-				$('#checkout-config-wrapper').slideUp();
-				$('#kiosk-submit').css('margin-top', '0');
-				
+				$('#checkout-config-outer-wrapper').slideUp();				
 			}
 		});
 		
+		$('#officername').val('').focus();
+		
+		var items = 1;
 		// Submit device assignment
 		$('#kiosk-submit').click(function(){
+			// collapse the history list, if shown
+			$('#assigned-devices').removeClass('expand');
+			
 			// show the assigned device info (officer, location)
 			$('#assigned-devices-wrapper').fadeIn();
 			setTimeout(function() {
@@ -193,10 +204,10 @@
 			
 			// hide the config options and prep for another officer
 			$('#change-config').removeClass('change');
-			$('#checkout-config-wrapper').slideUp();
+			$('#checkout-config-outer-wrapper').slideUp();
 			// focus cursor in Officer Name field
 			// we need to reset the options in the config form to default
-			$('#checkout-config-wrapper .select').each(function(){
+			$('#checkout-config-outer-wrapper .select').each(function(){
 				$(this)[0].selectedIndex = 0;
 				$(this).trigger('chosen:updated');
 			});
@@ -217,10 +228,17 @@
 				'</div><!-- end span.location -->'+
 			'</div><!-- end div.assigned-device -->');
 			$('#officername').val('').focus();
+			items++;
 			
+			if(items > 2){
+				$('#toggle-history').show();
+			} else {
+				$('#toggle-history').hide();
+			}
 		});
 		
 		// toggle class on Show/Hide Assigned History
+		$('#toggle-history').hide();
 		var active;		
 		$('#toggle-history').on('click', function(){
 			if(active === true){
@@ -235,9 +253,12 @@
 		});
 		
 
-		// pop print report modal on selection of an option in #select-checkout-report
-		$('#select-checkout-report').on('change', function(){
+		// pop print report modal on submit of selected option in #select-checkout-report,
+		// reset the #select-checkout-report to first option
+		$('#submit-checkout-report').on('click', function(){
 			$('#checkout-report-modal').foundation('reveal', 'open');
+			$('#select-checkout-report')[0].selectedIndex = 0;
+			$('#select-checkout-report').trigger('chosen:updated');
 		});
 
 		// display the selected print report in new window
@@ -284,7 +305,7 @@
 </div>
 
 
-<div id="checkout-report-modal" class="reveal-modal fixed-modal large show-footer" data-reveal>
+<div id="checkout-report-modal" class="reveal-modal fixed-modal xlarge show-footer" data-reveal>
   <div class="modal-header">
     <div class="modal-title">Checkout Report</div>
   </div>
@@ -296,37 +317,43 @@
 				<div class="checkout-report-detail checkout-report-detail-header">
 					<div class="checkout-assignee">Officer Name</div>
 					<div class="checkout-device-config">Config.</div>					
-					<div class="checkout-device-location">Location, Transfer Station/Slot</div>
+					<div class="checkout-device-location">Location</div>
+					<div class="checkout-device-station">Station/Slot</div>
 					<div class="checkout-device-name">Device Name</div>		
 				</div>
 				<div class="checkout-report-detail">
 					<div class="checkout-assignee">Johnny B. Good</div>
 					<div class="checkout-device-config">Config. 1</div>						
-					<div class="checkout-device-location">Building 1, Station #/slot</div>
+					<div class="checkout-device-location">Building 1</div>
+					<div class="checkout-device-station">Station #/slot</div>
 					<div class="checkout-device-name">Vista VL-167</div>
 				</div>
 				<div class="checkout-report-detail">
 					<div class="checkout-assignee">Johnny B. Good</div>
 					<div class="checkout-device-config">Config. 1</div>						
-					<div class="checkout-device-location">Building 1, Station #/slot</div>
+					<div class="checkout-device-location">Building 1</div>
+					<div class="checkout-device-station">Station #/slot</div>
 					<div class="checkout-device-name">Vista VL-169</div>
 				</div>
 				<div class="checkout-report-detail">
 					<div class="checkout-assignee">Johnny B. Good</div>
 					<div class="checkout-device-config">Config. 1</div>						
-					<div class="checkout-device-location">Building 1, Station #/slot</div>
+					<div class="checkout-device-location">Building 1</div>
+					<div class="checkout-device-station">Station #/slot</div>
 					<div class="checkout-device-name">Vista VL-185</div>
 				</div>
 				<div class="checkout-report-detail">
 					<div class="checkout-assignee">Johnny B. Good</div>
 					<div class="checkout-device-config">Config. 1</div>						
-					<div class="checkout-device-location">Building 1, Station #/slot</div>
+					<div class="checkout-device-location">Building 1</div>
+					<div class="checkout-device-station">Station #/slot</div>
 					<div class="checkout-device-name">Vista VL-144</div>
 				</div>
 				<div class="checkout-report-detail">
 					<div class="checkout-assignee">Johnny B. Good</div>
 					<div class="checkout-device-config">Config. 1</div>						
-					<div class="checkout-device-location">Building 1, Station #/slot</div>
+					<div class="checkout-device-location">Building 1</div>
+					<div class="checkout-device-station">Station #/slot</div>
 					<div class="checkout-device-name">Vista VL-201</div>
 				</div>			
 			</div><!-- #checkout-report-details -->
@@ -348,36 +375,44 @@
     <div class="modal-title">Kiosk Options</div>
   </div>
   <div class="modal-body">
-    <div class="row">
-      <div class="small-12 medium-12 large-12 columns">
-		<form action="" method="POST" accept-charset="utf-8"  >
-			<label for="select-location">Kiosk Service Location</label>
-			<select class="select" id="select-location">
-				<option value="">Select A Location</option>
-				<option value="">Building 1</option>											
-				<option value="">Building 2</option>
-				<option value="">Annex 3</option>
-			</select>
-		</form>
-	    </div><!-- end columns -->
-	</div><!-- end row -->
-	<div class="row">
-	    <div class="small-12 medium-12 large-12 columns">
-			<label for="select-checkout-report">Kiosk Service Location</label>
-			<select class="select" id="select-checkout-report">
-				<option value="">Print Last 1 Hours</option>
-				<option value="">Print Last 3 Hours</option>											
-				<option value="">Print Last 5 Hours</option>
-				<option value="">Print Last 7 Hours</option>
-				<option value="">Print Last 12 Hours</option>
-			</select>		
-	    </div><!-- end columns -->
-	</div><!-- end row -->
+		<div class="panel radius">
+			<div class="row">
+		      <div class="small-12 medium-12 large-12 columns">
+				<form action="" method="POST" accept-charset="utf-8"  >
+					<label for="select-location">Kiosk Service Location</label>
+					<select class="select" id="select-location">
+						<option value="">Select A Location</option>
+						<option value="">Building 1</option>											
+						<option value="">Building 2</option>
+						<option value="">Annex 3</option>
+					</select>
+				</form>
+				<button class="button success close-modal no-margin">Save Location</button>
+			    </div><!-- end columns -->
+			</div><!-- end row -->
+		    
+		</div><!-- end div.panel radius -->
+		<div class="panel radius">
+			<div class="row">
+			    <div class="small-12 medium-12 large-12 columns">
+					<label for="select-checkout-report">Print Checkout Report</label>
+					<select class="select" id="select-checkout-report">
+						<option value="">- Select Reporting Period -</option>
+						<option value="">Print Last 1 Hours</option>
+						<option value="">Print Last 3 Hours</option>											
+						<option value="">Print Last 5 Hours</option>
+						<option value="">Print Last 7 Hours</option>
+						<option value="">Print Last 12 Hours</option>
+					</select>		
+					<button class="button success no-margin" id="submit-checkout-report">Print Checkout Report</button>
+					
+			    </div><!-- end columns -->
+			</div><!-- end row -->			
+		</div><!-- end div.panel radius -->
 
   </div><!-- / modal-body -->
   <div class="modal-footer shaded-footer">
     <button class="button secondary close-modal">Close</button>
-    <button class="button success modalsave close-modal">Save Changes</button>
   </div>
   <a class="close-reveal-modal">×</a>
 </div>

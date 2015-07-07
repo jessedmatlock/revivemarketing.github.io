@@ -8928,8 +8928,8 @@ button[disabled], button.disabled,
 .button[disabled],
 .button.disabled {
   background: #ddd !important;
-  color: #aaa !important;
-  text-shadow: none;
+  color: #888 !important;
+  text-shadow: none !important;
   border-color: #aaa !important;
 }
 /* line 807, ../scss/app.scss */
@@ -11504,64 +11504,89 @@ input[type=text].error + small.error,
 textarea.required,
 input[type=text].required,
 .select.required .chosen-single {
-  color: #2573BC !important;
-  border-color: #6DB2F6 !important;
-  background: rgba(109, 178, 246, 0.25);
   color: #de770f !important;
   border-color: #de770f !important;
   background: rgba(240, 138, 36, 0.25);
   margin-bottom: 1rem;
 }
-/* line 2576, ../scss/app.scss */
+/* line 2573, ../scss/app.scss */
 textarea.required[placeholder],
 input[type=text].required[placeholder],
 .select.required .chosen-single[placeholder] {
   color: #de770f;
 }
-/* line 2579, ../scss/app.scss */
+/* line 2576, ../scss/app.scss */
 textarea.required::-webkit-input-placeholder,
 input[type=text].required::-webkit-input-placeholder,
 .select.required .chosen-single::-webkit-input-placeholder {
   color: #de770f;
 }
-/* line 2583, ../scss/app.scss */
+/* line 2580, ../scss/app.scss */
 textarea.required:-moz-placeholder,
 input[type=text].required:-moz-placeholder,
 .select.required .chosen-single:-moz-placeholder {
   /* Firefox 18- */
   color: #de770f;
 }
-/* line 2587, ../scss/app.scss */
+/* line 2584, ../scss/app.scss */
 textarea.required::-moz-placeholder,
 input[type=text].required::-moz-placeholder,
 .select.required .chosen-single::-moz-placeholder {
   /* Firefox 19+ */
   color: #de770f;
 }
-/* line 2591, ../scss/app.scss */
+/* line 2588, ../scss/app.scss */
 textarea.required:-ms-input-placeholder,
 input[type=text].required:-ms-input-placeholder,
 .select.required .chosen-single:-ms-input-placeholder {
   color: #de770f;
 }
-/* line 2594, ../scss/app.scss */
+/* line 2591, ../scss/app.scss */
 textarea.required + small.error,
 input[type=text].required + small.error,
 .select.required .chosen-single + small.error {
   margin-top: -1rem;
 }
 
+/* line 2593, ../scss/app.scss */
+.selected .select.required .chosen-single,
+.showing .select.required .chosen-single,
+.delete .select.required .chosen-single {
+  color: #fff;
+  border-color: #cc5555 !important;
+  background: #cc8888;
+}
 /* line 2596, ../scss/app.scss */
+.selected .select.required .chosen-single span,
+.showing .select.required .chosen-single span,
+.delete .select.required .chosen-single span {
+  color: #fff;
+}
+
+/* line 2601, ../scss/app.scss */
+.selected .select.required .chosen-single,
+.showing .select.required .chosen-single {
+  color: #fff;
+  border-color: #cc5555 !important;
+  background: #cc8888;
+}
+/* line 2603, ../scss/app.scss */
+.selected .select.required .chosen-single span,
+.showing .select.required .chosen-single span {
+  color: #fff;
+}
+
+/* line 2609, ../scss/app.scss */
 label.required {
   color: #de770f !important;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 2601, ../scss/app.scss */
+  /* line 2614, ../scss/app.scss */
   #content-wrapper.sticky {
     padding-top: 110px;
   }
-  /* line 2603, ../scss/app.scss */
+  /* line 2616, ../scss/app.scss */
   #content-wrapper.sticky #fixed-header {
     position: fixed;
     left: 241px;
@@ -11569,17 +11594,17 @@ label.required {
     top: 0;
     z-index: 10;
   }
-  /* line 2609, ../scss/app.scss */
+  /* line 2622, ../scss/app.scss */
   .no-sidebar #content-wrapper.sticky #fixed-header {
     left: 0;
     right: 0;
   }
-  /* line 2613, ../scss/app.scss */
+  /* line 2626, ../scss/app.scss */
   .wide-sidebar #content-wrapper.sticky #fixed-header {
     left: 310px;
   }
 
-  /* line 2619, ../scss/app.scss */
+  /* line 2632, ../scss/app.scss */
   .search-sidebar-offcanvas.sticky {
     position: fixed !important;
     left: 0px;
@@ -11587,7 +11612,7 @@ label.required {
     z-index: 10;
   }
 }
-/* line 2626, ../scss/app.scss */
+/* line 2639, ../scss/app.scss */
 .panel-top-title {
   margin: 10px 0 0px 0 !important;
   padding: 10px 15px;
@@ -11598,19 +11623,19 @@ label.required {
   box-shadow: none;
   color: #444;
 }
-/* line 2635, ../scss/app.scss */
+/* line 2648, ../scss/app.scss */
 .modal-body .panel-top-title {
   font-size: 16px;
   padding: 8px 10px;
   font-weight: bold;
 }
-/* line 2640, ../scss/app.scss */
+/* line 2653, ../scss/app.scss */
 .panel-top-title ~ .panel {
   border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 2645, ../scss/app.scss */
+/* line 2658, ../scss/app.scss */
 .panel-top-title.dark-title {
   -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 13px inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 13px inset;
@@ -11631,14 +11656,14 @@ label.required {
   text-shadow: 0 -1px 0px #000;
 }
 
-/* line 2668, ../scss/app.scss */
+/* line 2681, ../scss/app.scss */
 .preloader {
   background: #fff url(../images/bg_diagonal_noise.png) 0 0 repeat !important;
   position: relative;
   height: 100vh;
   margin: 0 !important;
 }
-/* line 2673, ../scss/app.scss */
+/* line 2686, ../scss/app.scss */
 .preloader img {
   display: block;
   position: absolute;
@@ -11646,7 +11671,7 @@ label.required {
   left: 50%;
   margin: -32px 0 0 -32px;
 }
-/* line 2680, ../scss/app.scss */
+/* line 2693, ../scss/app.scss */
 .preloader p {
   text-align: center;
   display: block;

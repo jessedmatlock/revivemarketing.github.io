@@ -206,6 +206,23 @@ $(document).ready(function(){
 	});
 		
 	
+		var importCheckboxes = $('#import-modal .import-select input[type=checkbox]');
+			importCheckboxes.change(function(event) {
+				var parentItem = $(this).closest('.import-item');
+			
+				if (this.checked) {
+					parentItem.addClass('selected');
+				} else {
+					parentItem.removeClass('selected');
+					$(this).prop('checked', false);
+				}
+				
+			});
+		
+		
+		
+		
+	
 		// disable Bulk Actions drop down
 		// capture checkbox change events and trigger selection of events/cases
 		var checkboxes = $("#main-content .item-select-checkbox");

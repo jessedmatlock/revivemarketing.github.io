@@ -231,13 +231,14 @@
 }
 #playlist-drop > li {
     display: block;
-    height: 85px;
+    min-height: 85px;
     position: relative;
     padding: 5px 5px 5px 110px;
     border-bottom: 1px solid #393b3f;
     border-top: 1px solid #596069;
     background: #3b3b3b;
 	text-shadow: none;
+	cursor: auto;
 }
 #playlist-drop .linked-streams {
     background: #101010;
@@ -245,8 +246,8 @@
     border-bottom-color: #000;
     padding: 5px 5px 5px 10px;
     height: auto;
+    min-height: 0;
     position: relative;
-    cursor: auto;
 }
 #playlist-drop .linked-stream-count {
     display: inline-block;
@@ -603,6 +604,8 @@
     width: 13px;
     height: 22px;
     position: relative;
+    display: inline-block;
+    vertical-align: middle;
 }
 #gang-devices .charge-level .level {
     background: #aaa;
@@ -678,37 +681,31 @@
 #gang-devices th .storage-wrapper {
     display: inline-block;
     margin: 0 0 0 10px;
-    vertical-align: text-bottom;
-    font-size: 20px;
 }
 
 #gang-devices .storage-wrapper {
 	text-align: center;
-    font-size: 20px;
-}
-
-#gang-devices .storage-wrapper .fa {
-    color: #eee;
+	height: 24px;
 }
 
 /* 25% charge - add data attr value to .charge-level div */
-#gang-devices .storage-wrapper[data-storage-level='1'] .fa {
-    color: #4F8A10;
+#gang-devices .storage-wrapper[data-storage-level='1'] {
+    background: url('../images/vista-hdd-1.png') no-repeat center top;
 }
 
 /* 50% charge - add data attr value to .charge-level div */
-#gang-devices .storage-wrapper[data-storage-level='2'] .fa {
-    color: #e1b90f;
+#gang-devices .storage-wrapper[data-storage-level='2'] {
+    background: url('../images/vista-hdd-2.png') no-repeat center top;
 }
 
 /* 75% charge - add data attr value to .charge-level div */
-#gang-devices .storage-wrapper[data-storage-level='3'] .fa {
-    color: #D08B05;
+#gang-devices .storage-wrapper[data-storage-level='3'] {
+    background: url('../images/vista-hdd-3.png') no-repeat center top;
 }
 
 /* 100% charge - add data attr value to .charge-level div */
-#gang-devices .storage-wrapper[data-storage-level='4'] .fa {
-    color: #cc5555;
+#gang-devices .storage-wrapper[data-storage-level='4'] {
+    background: url('../images/vista-hdd-4.png') no-repeat center top;
 }
 
 
@@ -1380,7 +1377,7 @@ table .info .status-icon,
     width: 200px;
     margin: 10px 0 10px;
     text-align: left;
-    color: #888;
+    color: #555;
 }
 
 .modal-body a#change-config:before {
@@ -2403,6 +2400,16 @@ input.copy-text::-o-selection {
     padding: 0.5rem 0px 0.5rem 0;
     text-align: right;
 }
+.item-details-section .panel .chosen-container {
+	width: 100% !important;
+}
+@media screen and (max-width: 640px) {
+	.item-details-section .panel label {
+	    text-align: left;
+	    margin-left: 5px;
+	    padding-bottom: 0;
+	}	
+}
 .item-details-section .panel label .icon-tip {
     color: #777;
     font-size: .85em;
@@ -2417,11 +2424,10 @@ input.copy-text::-o-selection {
     color: #555;
     padding: 0.35rem 0;
     font-size: .9em;
+	line-height: 1.25;
     margin: 0;
     font-weight: bold;
-    white-space: nowrap;
 	word-wrap: break-word;
-	overflow: hidden;
 }
 .item-details-section .panel input[type=text],
 .item-details-section .panel .chosen-container {
@@ -2436,6 +2442,7 @@ input.copy-text::-o-selection {
 .item-details-section .panel.editing .edit-buttons,
 .item-details-section .edit-panel-section {
     display: inline-block;
+    margin-top: 10px;
 }
 .item-details-section .button.right {
     margin-bottom: 0;
@@ -3421,9 +3428,19 @@ only screen and (min-resolution: 144dpi) {
 #gridContainer {
     padding: 0;
 }
-#grid.k-grid,
-#grid.k-grid .k-grid-content {
+
+#grid.k-grid {
 	min-height: 70vh;
+	height: 100%;
+	
+}
+#grid.k-grid .k-grid-content {
+	min-height: 65vh !important;
+	height: auto;
+}
+#grid.k-grid .k-grid-content table,
+#grid.k-grid .k-grid-content tbody {
+	height: 100% !important;
 }
 #main-content .k-grid-button-wrap,
 #main-content .k-grid-button-wrap {
@@ -5106,7 +5123,7 @@ body.kiosk #kiosk-logo {
 	top: 3px;
 }
 .kiosk #change-config .fa-circle {
-    color: #E1A100;
+    color: #555;
 }
 
 /* hover */
@@ -5116,6 +5133,11 @@ body.kiosk #kiosk-logo {
 		text-shadow: none;
 		color: #fff;
 	}
+	.kiosk #change-config:hover .fa-circle,
+	.kiosk #change-config:focus .fa-circle  { 
+		color: #E1A100;
+	}
+	
 	
 /* focus & active */
 
@@ -5160,7 +5182,7 @@ body.kiosk #kiosk-logo {
 	top: 5px;
 	height: 80px;
 	width: 80px;
-	background: #E1A100;
+	background: #555;
 	border-radius: 40px;
 	line-height: 78px;
 	text-align: center;
@@ -5194,6 +5216,11 @@ body.kiosk #kiosk-logo {
 .kiosk #kiosk-submit:focus  {
 	background: #101010;
 }
+.kiosk #kiosk-submit:hover .circle,
+.kiosk #kiosk-submit:focus .circle  {
+	background: #E1A100;
+}
+
 
 .kiosk #kiosk-submit:not(:disabled):active,
 .kiosk #kiosk-submit:not(:disabled).pressed  {
@@ -5268,11 +5295,14 @@ body.kiosk #assigned-devices .assigned-device {
 }
 body.kiosk #assigned-devices .assigned-device .name {
 	color: #aaa;
+	font-size: 20px;
+	line-height: 1.4;
 }
 
 body.kiosk #assigned-devices .assigned-device .location {
 	color: #eee;
 	font-size: 24px;
+	line-height: 1;
 }
 
 
@@ -6360,6 +6390,8 @@ add .alert-yes or .alert-no to display .toggle-alert for specific checkbox state
 }
 .modal-body p {
     white-space: normal !important;
+    line-height: 1.3;
+    font-size: 15px;
 }
 .modal-body p.text-center {
     margin: 0;
@@ -6367,7 +6399,8 @@ add .alert-yes or .alert-no to display .toggle-alert for specific checkbox state
 .wgv-tooltip {
     background: #222;
     color: #eee;
-    border-color: #000;
+    border-color: #222;
+    border-radius: 0 !important;
 }
 .wgv-tooltip .qtip-content {
     color: #eee;
@@ -6406,14 +6439,14 @@ add .alert-yes or .alert-no to display .toggle-alert for specific checkbox state
     text-align: center;
 }
 .mask-msg {
-    position: relative;
-    width: 225px;
+    position: fixed;
+    width: 240px;
     height: 165px;
     max-width: 100%;
-    margin: -165px auto 0;
     text-align: center;
     z-index: 1120;
-    top: 50vh;
+    top: 35vh;
+    left: 50%;
     display: block;
     background: #fff;
     padding: 25px 0px;
@@ -6908,7 +6941,7 @@ section.main-section {
 #cloud {
 	text-align: center;
 	color: #ccc;
-	display: none;
+/*	display: none;*/
 }
 #cloud .fa {
 	font-size: 150px;

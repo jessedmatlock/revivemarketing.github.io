@@ -5010,11 +5010,11 @@ dialog[open] {
 }
 /* line 44, ../scss/components/_tooltips.scss */
 .has-tip:hover, .has-tip:focus {
-  border-bottom: dotted 1px #122a40;
   color: #285E8E;
+  cursor: pointer;
 }
 
-/* line 54, ../scss/components/_tooltips.scss */
+/* line 55, ../scss/components/_tooltips.scss */
 .tooltip {
   display: none;
   position: absolute;
@@ -5029,7 +5029,7 @@ dialog[open] {
   color: #FFFFFF;
   background: #333333;
 }
-/* line 68, ../scss/components/_tooltips.scss */
+/* line 69, ../scss/components/_tooltips.scss */
 .tooltip > .nub {
   display: block;
   left: 5px;
@@ -5041,30 +5041,30 @@ dialog[open] {
   top: -10px;
   pointer-events: none;
 }
-/* line 79, ../scss/components/_tooltips.scss */
+/* line 80, ../scss/components/_tooltips.scss */
 .tooltip > .nub.rtl {
   left: auto;
   right: 5px;
 }
-/* line 85, ../scss/components/_tooltips.scss */
+/* line 86, ../scss/components/_tooltips.scss */
 .tooltip.radius {
   border-radius: 3px;
 }
-/* line 88, ../scss/components/_tooltips.scss */
+/* line 89, ../scss/components/_tooltips.scss */
 .tooltip.round {
   border-radius: 1000px;
 }
-/* line 90, ../scss/components/_tooltips.scss */
+/* line 91, ../scss/components/_tooltips.scss */
 .tooltip.round > .nub {
   left: 2rem;
 }
-/* line 95, ../scss/components/_tooltips.scss */
+/* line 96, ../scss/components/_tooltips.scss */
 .tooltip.opened {
   color: #285E8E !important;
   border-bottom: dotted 1px #122a40 !important;
 }
 
-/* line 101, ../scss/components/_tooltips.scss */
+/* line 102, ../scss/components/_tooltips.scss */
 .tap-to-close {
   display: block;
   font-size: 0.625rem;
@@ -5073,22 +5073,22 @@ dialog[open] {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 110, ../scss/components/_tooltips.scss */
+  /* line 111, ../scss/components/_tooltips.scss */
   .tooltip > .nub {
     border-color: transparent transparent #333333 transparent;
     top: -10px;
   }
-  /* line 114, ../scss/components/_tooltips.scss */
+  /* line 115, ../scss/components/_tooltips.scss */
   .tooltip.tip-top > .nub {
     border-color: #333333 transparent transparent transparent;
     top: auto;
     bottom: -10px;
   }
-  /* line 120, ../scss/components/_tooltips.scss */
+  /* line 121, ../scss/components/_tooltips.scss */
   .tooltip.tip-left, .tooltip.tip-right {
     float: none !important;
   }
-  /* line 123, ../scss/components/_tooltips.scss */
+  /* line 124, ../scss/components/_tooltips.scss */
   .tooltip.tip-left > .nub {
     border-color: transparent transparent transparent #333333;
     right: -10px;
@@ -5096,7 +5096,7 @@ dialog[open] {
     top: 50%;
     margin-top: -5px;
   }
-  /* line 130, ../scss/components/_tooltips.scss */
+  /* line 131, ../scss/components/_tooltips.scss */
   .tooltip.tip-right > .nub {
     border-color: transparent #333333 transparent transparent;
     right: auto;
@@ -11137,7 +11137,7 @@ form.k-filter-menu input.k-textbox {
 .page-host,
 .durandal-wrapper {
   height: auto !important;
-  min-height: 100%;
+  min-height: 100vh;
   position: relative;
 }
 

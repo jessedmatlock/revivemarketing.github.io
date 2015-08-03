@@ -454,24 +454,24 @@
 			});
 			
 			$("#ratf-range").kendoDateTimePicker({
-		        value:new Date(),
-		        close: onClose,
-                open: onOpen
-		    });
-		
-		    function onOpen(e) {
-			    var thisObj = this;
-		        window.setTimeout(function(){
-		            thisObj.dateView.popup.element.parent().addClass("kendoSilver");
-		        }, 1);
+				value:new Date(),
+				close: onClose,
+				open: onOpen
+			});
 
-            }
+			function onOpen(e) {
+				var thisObj = this;
+				window.setTimeout(function(){
+					thisObj.dateView.popup.element.parent().addClass("kendoSilver");
+				}, 1);
 
-            function onClose(e) {
-		        window.setTimeout(function(){
-		            thisObj.dateView.popup.element.parent().removeClass("kendoSilver");
-		        }, 1);
-            }
+			}
+
+			function onClose(e) {
+				window.setTimeout(function(){
+					thisObj.dateView.popup.element.parent().removeClass("kendoSilver");
+				}, 1);
+			}
 			
 
 			$('.checkout-report').on('click', function(){

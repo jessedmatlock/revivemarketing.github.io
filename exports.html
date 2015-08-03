@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="css/app.css" />
 <link href="css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic" />
+<link href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.silver.min.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
 <link href="css/jquery.qtip.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/test.css" />
@@ -48,14 +51,14 @@
 							<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
 	                        <li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
 							
-				            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Config</a> </li>
+				            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Configuration</a> </li>
 							<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
 						</ul>
 					</li>
                     <li class="user-profile">
                         <a href="javascript:void(0);"><img src="images/avatar-icon.png" class="user-avatar" alt="" />Officer Lastname</a>
                     </li>
-                    <li class="user-logout"><a href="login.html" class="has-tip tip-top" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
+                    <li class="user-logout"><a href="login.html" class="has-tip tip-left" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
 				</ul>
 			</section>
 		</nav>
@@ -408,9 +411,10 @@
 								
 								<div class="content active" id="panel11">
 									
-									<span class="alert-box info radius"><strong>Notification Message: </strong>Content here for ...................</span>
 									
 									<div class="panel radius" id="export-video-options" data-equalizer-watch>
+										<span class="alert-box info radius"><strong>Notification Message: </strong>Content here for ...................</span>
+										
 										<h4 class="">Choose A Format</h4>
 
 										<div class="row">
@@ -673,13 +677,16 @@
 								</div><!-- end .content -->
 								<div class="content" id="panel21">
 									
-									<span class="alert-box info radius"><strong>NOTICE: </strong>Your Share ID will be generated once your Share has been processed. You can view the ID from your My Exports page.</span>
 									
 									<div class="panel radius" data-equalizer-watch>
+										<span class="alert-box info radius"><strong>NOTICE: </strong>Your Share ID will be generated once your Share has been processed. You can view the ID from your My Exports page.</span>
+										
 										<div class="row">
 										    <div class="small-12 medium-12 large-4 columns">
 												<label>Recipient(s)</label>	
-												<input type="text" name="recipient"  id="recipient2" value="" tabindex="" />		
+												<div class="kendoSilver">
+													<input type="text" name="recipient"  id="recipient2" value="" tabindex="" />															
+												</div><!-- end div.kendo-silver -->
 											</div><!-- end columns -->
 											<div class="small-12 medium-12 large-4 columns">
 										        <label for="share-expiration">Share Expiration</label>

@@ -63,7 +63,7 @@
 							<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
 	                        <li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
 							
-				            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Config</a> </li>
+				            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Configuration</a> </li>
 	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
 	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
 	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
@@ -72,7 +72,7 @@
                     <li class="user-profile">
                         <a href="javascript:void(0);"><img src="images/avatar-icon.png" class="user-avatar" alt="" />Officer Lastname</a>
                     </li>
-                    <li class="user-logout"><a href="login.html" class="has-tip tip-top" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
+                    <li class="user-logout"><a href="login.html" class="has-tip tip-left" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
 	            </ul>
 	        </section>
 	    </nav>
@@ -418,10 +418,7 @@
 							<li><button class="playback-full-screen button gray-gradient  has-tip tip-top active" data-tooltip title="Full Screen"><i class="fa fa-arrows-alt"></i> <span>Full Screen</span></button></li>
 							</ul>
 						</div><!-- end div#left-controls-wrapper -->
-					    <div id="fader-wrapper" class="show-for-large-up" data-dropdown="faderpop" data-options="is_hover:true; hover_timeout:5000; align:top">
-							<div id="faderpop" class="f-dropdown content" data-dropdown-content>
-								<p>The Desktop App is required in order to access the Fader Control. Please download the Desktop App <a href="/client/setup.exe"  class="">here.</a></p>
-							</div>
+					    <div id="fader-wrapper" class="show-for-large-up" data-dropdown="faderpop" data-options="align:top">
 							<div class="slider-wrap">
 						        <div class="slider-prefix active">
 						            Wireless <i class="fa fa-volume-off fa-rotate-180"></i>
@@ -436,6 +433,10 @@
 						        <i class="fa fa-circle"></i> <i class="fa fa-circle"></i> <i class="fa fa-circle"></i>
 						    </div>
 						</div><!-- end div#name -->
+						<div id="faderpop" class="f-dropdown content" data-dropdown-content>
+							<p>The Desktop App is required in order to access the Fader Control. Please download the Desktop App <a href="/client/setup.exe"  class="">here.</a></p>
+						</div>
+						
 						<div id="right-controls-wrapper">
 							<button id="trim-video" class="button yellow-gradient hide-for-trim"><i class="fa fa-scissors"></i> Trim</button>
 							<button id="cancel-trim" class="button red-gradient hide-for-playback">Cancel Trim</button>

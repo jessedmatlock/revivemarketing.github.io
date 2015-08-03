@@ -1,5 +1,6 @@
 /* @override 
-	http://elweb.com/css/print.css */
+	http://elweb.com/css/print.css
+	http://mars:90/assets/css/print.css */
 .print-page,
 .print-page body {
 	background: #fff !important;
@@ -582,7 +583,48 @@
 
 	#item-details-tabs .item + .attachment-note textarea,
 	#content-wrapper textarea.right-buttons {
-		padding-right: 0px !;
+		padding-right: 0px !important;
+	}
+	
+	/* AUDIT */
+	.audit-event {
+		page-break-inside: avoid;
+	}
+	.audit-event .audit-detail-list:before,
+	.audit-event .audit-type,
+	.audit-event .audit-toggle,
+	.audit-event .audit-date,
+	.audit-event .audit-timeline:before,
+	.audit-event .content:before {
+		display: none;
+	}
+	.audit-event .content-perspective {
+		margin: 0 15px;
+	}
+	
+	.audit-event .content .audit-detail li {
+	    display: block;
+	    float: left;
+	    width: 33%;
+	    padding: 0 10px 0 0;
+	    font-size: 13px;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+	
+	.audit-event .content {
+		border-color: #aaa;
+	}
+	
+	.audit-event .content .audit-detail-list,
+	.audit-event .content .audit-detail-list li,
+	.audit-event .content .audit-detail-list li strong,
+	.audit-event .content .audit-detail-list li a {
+		background: none;
+		color: #777;
+		box-shadow: none;
+		text-shadow: none;
+		border-color: #aaa;
 	}
 	
 

@@ -52,7 +52,7 @@
 				<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
               	<li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
 			
-            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Config</a> </li>
+            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Configuration</a> </li>
             <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
             <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
           </ul>
@@ -60,7 +60,7 @@
         <li class="user-profile">
             <a href="javascript:void(0);"><img src="images/avatar-icon.png" class="user-avatar" alt="" />Officer Lastname</a>
         </li>
-        <li class="user-logout"><a href="login.html" class="has-tip tip-top" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
+        <li class="user-logout"><a href="login.html" class="has-tip tip-left" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
       </ul>
     </section>
   </nav>
@@ -70,7 +70,7 @@
         <div id="fixed-header">
           <div class="row" id="content-header">
             <div class="small-12 medium-12 large-12 columns">
-              <div class="left-controls"> <a href="javascript:void(0);" onclick="javascript:alert('need to implement Durandal history function to go back one page: https://groups.google.com/d/msg/durandaljs/D9lZfnZBu8k/cc5o_hQJiAUJ')" id="" class="button gray-gradient back-button"><i class="fa fa-long-arrow-left"></i> Back</a> </div>
+	            <h3><i class="fa fa-cloud"></i> <strong>Cloud-SHARE</strong> Configuration</h3>
               <!-- end div.left-controls --> 
             </div>
             <!-- end columns -->
@@ -82,7 +82,6 @@
         
         <div class="row intro-section">
           <div class="small-12 medium-12 large-12 columns">
-                <h4 class="panel-top-title dark-title"><i class="fa fa-cogs"></i> Share Configuration</h4>
                 <div class="panel radius">
 				
 				
@@ -91,11 +90,9 @@
 						
 				        	<div class="row collapse">
 					            <div class="small-12 medium-12 large-12 columns">
-						            <label for="api-url" class="">API URL</label>
-			                        <input type="text" name="api-url" id="api-url" value="" />
 		                
 									<div class="row collapse">
-				                        <label for="api-key" class="">API Key</label>
+				                        <label for="api-key" class="">Storage Connection String</label>
 				                        <div class="small-10 columns">
 				                            <input type="text" name="api-key" id="api-key" tabindex="" value="" />
 				                        </div>
@@ -117,6 +114,7 @@
 					        </div><!-- end row -->	
 					
 							<label for="">&nbsp;</label>
+							
 			                <label class="onoffswitch alert-yes" for="allow-forward">
 							    <input type="checkbox" name="allow-forward" class="onoffswitch-checkbox" id="allow-forward" />
 								<div class="onoffswitch-container">
@@ -126,7 +124,10 @@
 								        <span class="onoffswitch-inactive">No</span>
 									</div><!-- end div.onoffswitch-slide -->
 								</div><!-- end div.onoffswitch-container -->
-								<div class="label-msg"><i class="fa fa-info-circle"></i> Enable Share Forwarding?</div>																															
+								<div class="label-msg">
+									<i class="fa fa-info-circle fa-lg has-tip icon-tip tip-right" 
+									   data-tooltip title="Enabling this option allows the forwarding of Shares to other recipients"></i> Enable Share Forwarding?
+								</div>																															
 						    </label>
 									      
 							<label for="">&nbsp;</label>
@@ -139,7 +140,10 @@
 								        <span class="onoffswitch-inactive">No</span>
 									</div><!-- end div.onoffswitch-slide -->
 								</div><!-- end div.onoffswitch-container -->
-								<div class="label-msg"><i class="fa fa-info-circle"></i> Allow Video Playback?</div>																															
+								<div class="label-msg">
+									<i class="fa fa-info-circle fa-lg has-tip icon-tip tip-right" 
+									   data-tooltip title="Enabling this option allows the user to view share video(s)"></i> Allow Video Playback?
+								</div>																																																																					
 						    </label>
 									      
 					    </div><!-- end columns -->
@@ -157,106 +161,230 @@
 							</select>
 					    
 					        <label for="category-expiration">Category Expiration</label>
-							<table class="simple">
-							  <thead>
-							    <tr>
-							      <th>Category</th>
-							      <th>Expiration</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr>
-							      <td>Traffic Accident</td>
-							      <td>
-									<select name="" class="select" >
-										<option value="">15 days</option>
-										<option value="">30 days</option>
-										<option value="">45 days</option>
-										<option value="">60 days</option>
-										<option value="">90 days</option>
-										<option value="">120 days</option>
-										<option value="">180 days</option>
-									</select>
+					
+							<div class="table-overflow-wrapper">
+								<table class="simple">
+								  <thead>
+								    <tr>
+								      <th>Category</th>
+								      <th>Expiration</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td>Traffic Accident</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
 
-							      </td>
-							    </tr>
-							    <tr>
-							      <td>Traffic Citation</td>
-							      <td>
-									<select name="" class="select" >
-										<option value="">15 days</option>
-										<option value="">30 days</option>
-										<option value="">45 days</option>
-										<option value="">60 days</option>
-										<option value="">90 days</option>
-										<option value="">120 days</option>
-										<option value="">180 days</option>
-									</select>
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Traffic Citation</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>DUI</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Domestic Incident</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Drug Incident</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Other Category</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Other Category</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Other Category</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Other Category</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Other Category</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Other Category</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Other Category</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Other Category</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								    <tr>
+								      <td>Other Category</td>
+								      <td>
+										<select name="" class="select" >
+											<option value="">15 days</option>
+											<option value="">30 days</option>
+											<option value="">45 days</option>
+											<option value="">60 days</option>
+											<option value="">90 days</option>
+											<option value="">120 days</option>
+											<option value="">180 days</option>
+										</select>
+
+								      </td>
+								    </tr>
+								  </tbody>
+								</table>
 								
-							      </td>
-							    </tr>
-							    <tr>
-							      <td>DUI</td>
-							      <td>
-									<select name="" class="select" >
-										<option value="">15 days</option>
-										<option value="">30 days</option>
-										<option value="">45 days</option>
-										<option value="">60 days</option>
-										<option value="">90 days</option>
-										<option value="">120 days</option>
-										<option value="">180 days</option>
-									</select>
-								
-							      </td>
-							    </tr>
-							    <tr>
-							      <td>Domestic Incident</td>
-							      <td>
-									<select name="" class="select" >
-										<option value="">15 days</option>
-										<option value="">30 days</option>
-										<option value="">45 days</option>
-										<option value="">60 days</option>
-										<option value="">90 days</option>
-										<option value="">120 days</option>
-										<option value="">180 days</option>
-									</select>
-								
-							      </td>
-							    </tr>
-							    <tr>
-							      <td>Drug Incident</td>
-							      <td>
-									<select name="" class="select" >
-										<option value="">15 days</option>
-										<option value="">30 days</option>
-										<option value="">45 days</option>
-										<option value="">60 days</option>
-										<option value="">90 days</option>
-										<option value="">120 days</option>
-										<option value="">180 days</option>
-									</select>
-								
-							      </td>
-							    </tr>
-							    <tr>
-							      <td>Other Category</td>
-							      <td>
-									<select name="" class="select" >
-										<option value="">15 days</option>
-										<option value="">30 days</option>
-										<option value="">45 days</option>
-										<option value="">60 days</option>
-										<option value="">90 days</option>
-										<option value="">120 days</option>
-										<option value="">180 days</option>
-									</select>
-								
-							      </td>
-							    </tr>
-							  </tbody>
-							</table>
+							</div><!-- end div.table-overflow-wrapper -->
 					    </div><!-- end columns -->
 					    <div class="small-12 medium-12 large-4 columns">
 							<label for="">&nbsp;</label>
@@ -270,57 +398,62 @@
 								        <span class="onoffswitch-inactive">No</span>
 									</div><!-- end div.onoffswitch-slide -->
 								</div><!-- end div.onoffswitch-container -->
-								<div class="label-msg"><i class="fa fa-info-circle"></i> Enable Domain Whitelist?</div>																															
+								<div class="label-msg">
+									<i class="fa fa-info-circle fa-lg has-tip icon-tip tip-right" 
+									   data-tooltip title="Enabling this option restricts the domains that Shares can be forwarded to."></i> Enable Domain Whitelist?
+								</div>																																																																					
+								
 						    </label>			                
 						
 					        <label for="domain-whitelist">Domain Whitelist (comma separated)</label>
 							<textarea name="domain-whitelist" id="domain-whitelist" class="" rows="6" disabled>*.gmail.com, *.hotmail.com, *.yahoo.com</textarea>
-							
-							<div id="access-codes-wrapper">
-								<table class="access-codes simple">
-								  <thead>
-								    <tr>
-								      <th>Hint</th>
-								      <th>Format</th>
-								      <th>&nbsp;</th>
-								    </tr>
-								  </thead>
-								  <tbody>
-									<tr id="table-inputs">
-								      <td><input type="text" name="access-code-hint"  id="access-code-hint" value="" placeholder="Access Code Hint" /></td>
-								      <td>
-										<select name="access-code-format" id="access-code-format" class="select" >
-											<option value="">Numeric</option>
-											<option value="">Alpha</option>
-											<option value="">Alpha-Numeric</option>
-											<optgroup label="Date">
-												<option value="">mm/dd/yyyy</option>
-												<option value="">dd/mm/yyyy</option>
-												<option value="">etc..</option>
+													
+								<div class="table-overflow-wrapper">
+								
+									<table class="access-codes simple">
+									  <thead>
+									    <tr>
+									      <th>Hint</th>
+									      <th>Format</th>
+									      <th>&nbsp;</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+										<tr id="table-inputs">
+									      <td><input type="text" name="access-code-hint"  id="access-code-hint" value="" placeholder="Access Code Hint" /></td>
+									      <td>
+											<select name="access-code-format" id="access-code-format" class="select" >
+												<option value="">Numeric</option>
+												<option value="">Alpha</option>
+												<option value="">Alpha-Numeric</option>
+												<optgroup label="Date">
+													<option value="">mm/dd/yyyy</option>
+													<option value="">dd/mm/yyyy</option>
+													<option value="">etc..</option>
 												
-											</optgroup>
-										</select>										
-								      </td>
-								      <td><a href="javascript:void(0);" id="add-access-code" class="button success tiny"><i class="fa fa-plus"></i></a></td>
-								    </tr>
-								    <tr>
-								      <td>Case #</td>
-								      <td>Numeric</td>
-								      <td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td>
-								    </tr>
-								    <tr>
-								      <td>Ticket #</td>
-								      <td>Numeric</td>
-								      <td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td>
-								    </tr>
-								    <tr>
-								      <td>Secret Code</td>
-								      <td>Alpha-Numeric</td>
-								      <td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td>
-								    </tr>
-								  </tbody>
-								</table>
-							</div><!-- end div#access-codes-wrapper -->
+												</optgroup>
+											</select>										
+									      </td>
+									      <td><a href="javascript:void(0);" id="add-access-code" class="button success tiny"><i class="fa fa-plus"></i></a></td>
+									    </tr>
+									    <tr>
+									      <td>Case #</td>
+									      <td>Numeric</td>
+									      <td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td>
+									    </tr>
+									    <tr>
+									      <td>Ticket #</td>
+									      <td>Numeric</td>
+									      <td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td>
+									    </tr>
+									    <tr>
+									      <td>Secret Code</td>
+									      <td>Alpha-Numeric</td>
+									      <td><a href="javascript:void(0);" id="" class="button secondary tiny delete-row"><i class="fa fa-times"></i></a></td>
+									    </tr>
+									  </tbody>
+									</table>
+								</div><!-- end div.table-overflow-wrapper -->								
 							
 					    </div><!-- end columns -->
 					</div><!-- end row -->						
@@ -328,7 +461,7 @@
 				<hr />
 
 					<div class="row">
-					    <div class="small-12 medium-12 large-12 columns">
+					    <div class="small-12 medium-12 large-12 columns text-right">
 					        <div class="panel-actions">											
 						        <a href="javascript:void(0);" class="button secondary">Cancel</a>											                	
 								<a href="javascript:void(0);" class="button success anim-button" id="save-notes" data-original="Save Changes" data-active="Saving ..."><i class="fa fa-floppy-o"></i> Save Changes</a>											                	

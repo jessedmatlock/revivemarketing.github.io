@@ -60,7 +60,7 @@
 							<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
 	                        <li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
 							
-				            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Config</a> </li>
+				            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Configuration</a> </li>
 	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
 	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
 	                        <li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a></li>
@@ -69,7 +69,7 @@
                     <li class="user-profile">
                         <a href="javascript:void(0);"><img src="images/avatar-icon.png" class="user-avatar" alt="" />Officer Lastname</a>
                     </li>
-                    <li class="user-logout"><a href="login.html" class="has-tip tip-top" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
+                    <li class="user-logout"><a href="login.html" class="has-tip tip-left" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
 	            </ul>
 	        </section>
 	    </nav>
@@ -178,7 +178,7 @@
 																						
 									<div class="row">
 									    <div class="small-4 medium-3 large-2 columns">
-									        <label for="" class="inline">Prevent Archive?
+									        <label for="preventArchive" class="inline">Prevent Archive?
 												<a href="javascript:void(0);" class="has-tip icon-tip tip-right" data-tooltip title="Enabling this option allows the Data Cleanup process to archive this event when the recorded event's retention period is reached.">
 													<i class="fa fa-info-circle"></i>
 												</a>
@@ -202,7 +202,7 @@
 											
 									    </div><!-- end columns -->
 									    <div class="small-4 medium-3 large-2 columns medium-left">
-										    <label for="" class="inline">Restrict Access? 
+										    <label for="restricted" class="inline">Restrict Access? 
 												<a href="javascript:void(0);" class="has-tip icon-tip tip-right" data-tooltip title="If enabled, Restricted Access prevents users without the appropriate permissions from reviewing the recorded event.">
 													<i class="fa fa-info-circle"></i>
 												</a>
@@ -228,10 +228,10 @@
 									
 									<div class="row">
 									    <div class="small-4 medium-3 large-2 columns">
-									        <label for="" class="inline">Prevent Purge?
-												<a href="javascript:void(0);" class="has-tip icon-tip tip-right" data-tooltip title="Enabling this option allows the recorded event to be purged from the online storage when the recorded event's retention period is reached.<strong></strong>">
+									        <label for="preventPurge" class="inline">Prevent Purge?
+												<span class="has-tip icon-tip tip-right" data-tooltip title="Enabling this option allows the recorded event to be purged from the online storage when the recorded event's retention period is reached.<strong></strong>">
 													<i class="fa fa-info-circle"></i>
-												</a>
+												</span>
 												
 											</label>
 									        
@@ -281,7 +281,7 @@
 										    <label for="" class="inline">Incident Number</label>
 									    </div><!-- end columns -->
 									    <div class="small-12 medium-3 large-3 columns">
-									        <input type="text" placeholder="Enter Tag Value" value="" class="editable" disabled>																												
+									        <input type="text" placeholder="Enter Tag Value" value="" class="editable has-tip tip-left" data-tooltip title="Alpha-Numeric Characters Only" disabled>																												
 									    </div><!-- end columns -->
 									</div><!-- end row -->
 
@@ -290,7 +290,7 @@
 										    <label for="" class="inline">Case Number</label>
 									    </div><!-- end columns -->
 									    <div class="small-12 medium-3 large-3 columns">
-									        <input type="text" placeholder="Enter Tag Value" value="" class="editable" disabled>																												
+									        <input type="text" placeholder="Enter Tag Value" value="" class="editable has-tip tip-left" data-tooltip title="Numbers Only" disabled >																												
 									    </div><!-- end columns -->
 									    <div class="small-12 medium-3 large-3 columns">
 										    <label for="" class="inline">Gender</label>
@@ -305,14 +305,6 @@
 									    </div><!-- end columns -->
 									
 									</div><!-- end row -->
-									<div class="row">
-									    <div class="small-12 medium-12 large-12 columns">
-									        <label for="comments" class="text-left">Comments</label>
-											<textarea name="comments" id="comments" class="editable auto-height" disabled></textarea>
-									    </div><!-- end columns -->
-									</div><!-- end row -->
-															
-																
 									
 									<div class="row">
 									    <div class="small-12 medium-12 large-12 columns text-right">

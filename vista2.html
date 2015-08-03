@@ -5,15 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <title>Evidence Library 4 Web</title>
-<link rel="stylesheet" href="css/app.css" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic" />
+<link href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="http://cdn.kendostatic.com/2014.3.1411/styles/kendo.silver.min.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
 
 <link href="css/jquery.qtip.css" rel="stylesheet" />
 <link href="css/dateRangePicker.css" rel="stylesheet" />
 
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css" />
 
 <link rel="stylesheet" href="css/test.css" />
 <link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
@@ -36,40 +39,41 @@
 			</section>
 			<section class="right-small show-for-medium-down"> <a class="right-offcanvas-toggle menu-icon" href="javascript:void(0);"><i class="fa fa-bars fa-lg"></i></a> </section>
 		</nav>
+		<nav class="nav-bar menu-sidebar-offcanvas offcanvas-sidebar">
+			<section class="nav-bar-section clearfix">
+				<h3 class="show-for-medium-down">Main Menu</h3>
+
+				<!-- Right Nav Section -->
+				<ul class="right">
+					<li><a href="index.html">Events</a></li>
+					<li><a href="cases.html">Cases</a></li>
+					<!--li><a href="event-javascript:void(0);">Event Exports <span class="label round">1</span></a></li>
+		                <li><a href="case-javascript:void(0);">Case Exports <span class="label round">2</span></a></li-->
+					<li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
+					<li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
+					<li  class="active has-dropdown"> <a href="javascript:void(0);">Manage</a>
+						<ul class="dropdown">
+							<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
+							<li class="active"><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
+							<li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
+
+				            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Configuration</a> </li>
+							<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+							<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+							<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+						</ul>
+					</li>
+	                <li class="user-profile">
+	                    <a href="javascript:void(0);"><img src="images/avatar-icon.png" class="user-avatar" alt="" />Officer Lastname</a>
+	                </li>
+	                <li class="user-logout"><a href="login.html" class="has-tip tip-left" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
+				</ul>
+			</section>
+		</nav>
+		
 	</header>
 	<!-- end header #head.class_name -->
 	
-	<nav class="nav-bar menu-sidebar-offcanvas offcanvas-sidebar">
-		<section class="nav-bar-section clearfix">
-			<h3 class="show-for-medium-down">Main Menu</h3>
-			
-			<!-- Right Nav Section -->
-			<ul class="right">
-				<li><a href="index.html">Events</a></li>
-				<li><a href="cases.html">Cases</a></li>
-				<!--li><a href="event-javascript:void(0);">Event Exports <span class="label round">1</span></a></li>
-	                <li><a href="case-javascript:void(0);">Case Exports <span class="label round">2</span></a></li-->
-				<li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
-				<li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
-				<li  class="active has-dropdown"> <a href="javascript:void(0);">Manage</a>
-					<ul class="dropdown">
-						<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
-						<li class="active"><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
-						<li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
-                        
-			            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Config</a> </li>
-						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
-						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
-						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
-					</ul>
-				</li>
-                <li class="user-profile">
-                    <a href="javascript:void(0);"><img src="images/avatar-icon.png" class="user-avatar" alt="" />Officer Lastname</a>
-                </li>
-                <li class="user-logout"><a href="login.html" class="has-tip tip-top" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
-			</ul>
-		</section>
-	</nav>
     <div id="content-outer-wrapper" class="no-sidebar checkered-background">
 		<div class="row" id="content-wrapper">
 			<div class="small-12 medium-12 large-12 columns">
@@ -447,9 +451,9 @@
 <script type="text/javascript" src="js/chosen.jquery.js"></script> 
 <script type="text/javascript" src="js/jquery.qtip.js"></script> 
 <script type="text/javascript" src="js/moment.js"></script> 
-<script type="text/javascript" src="js/jquery.daterangepicker.js"></script> 
 <script type="text/javascript" src="js/isotope.pkgd.js"></script> 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/kendo.all.min.js"></script>
 
 <script type="text/javascript" src="js/app.js"></script>
 
@@ -553,35 +557,25 @@
 				$(this).animate({ width: '100%' }, 4500);
 			});
 			
-			$('#ratf-range').dateRangePicker({
-				startOfWeek: 'monday',
-				separator : ' ~ ',
-				format: 'DD/MM/YYYY HH:mm',
-				autoClose: false,
-				time: {
-					enabled: true
-				},    
-				shortcuts: {
-				        'prev-days': [1,3,5,7],
-				        'next-days': false,
-				        'prev' : ['week','month','year'],
-				        'next' : false
-				    },
-			}).bind('datepicker-change',function(event,obj)	{
-					//console.log(obj['date1']);
-					var a = moment(obj['date2']);
-					var b = moment(obj['date1']);
-					a.diff(b);
-					
-					// simulates change of export size based on date range selection 
-					$('#ratf-size, #ratf-confirm-size').html(a.diff(b)/1000000 );
-					// obj will be something like this:
-					// {
-					// 		date1: (Date object of the earlier date),
-					// 		date2: (Date object of the later date),
-					//	 	value: "2013-06-05 to 2013-06-07"
-					// }
-				});
+			$("#ratf-range").kendoDateTimePicker({
+		        value:new Date(),
+		        close: onClose,
+                open: onOpen
+		    });
+		
+		    function onOpen(e) {
+			    var thisObj = this;
+		        window.setTimeout(function(){
+		            thisObj.dateView.popup.element.parent().addClass("kendoSilver");
+		        }, 1);
+
+            }
+
+            function onClose(e) {
+		        window.setTimeout(function(){
+		            thisObj.dateView.popup.element.parent().removeClass("kendoSilver");
+		        }, 1);
+            }
 
 				// toggle secondary tags
 				$('.import-toggle').hide();
@@ -1468,7 +1462,9 @@
 			<div class="panel radius">
 				<div class="row">
 				    <div class="small-12 medium-4 large-4 columns">					
-						<input class="" id="ratf-range" placeholder="mm/dd/yyyy" type="text">
+						<div class="kendoSilver">
+							<input class="" id="ratf-range" placeholder="mm/dd/yyyy" type="text">
+						</div><!-- end div.kendoSilver -->
 				    </div><!-- end columns -->
 				    <div class="small-12 medium-4 large-4 columns">					
 						Estimate Size: <strong><span id="ratf-size">398</span>MB</strong>

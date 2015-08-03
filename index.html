@@ -39,39 +39,40 @@
 			</section>
 			<section class="right-small show-for-medium-down"> <a class="right-offcanvas-toggle menu-icon" href="javascript:void(0);"><i class="fa fa-bars fa-lg"></i></a> </section>
 		</nav>
+		<nav class="nav-bar menu-sidebar-offcanvas offcanvas-sidebar">
+			<section class="nav-bar-section clearfix">
+				<h3 class="show-for-medium-down">Main Menu</h3>
+
+				<!-- Right Nav Section -->
+				<ul class="right" id="joyride-main-nav">
+					<li class="active"><a href="index.html">Events</a></li>
+					<li><a href="cases.html">Cases</a></li>
+					<!--li><a href="event-exports.html">Event Exports <span class="label round">1</span></a></li>
+		                <li><a href="case-exports.html">Case Exports <span class="label round">2</span></a></li-->
+					<li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
+					<li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Manage</a>
+						<ul class="dropdown">
+							<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
+							<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
+	                        <li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
+
+				            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Configuration</a> </li>
+							<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+							<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
+						</ul>
+					</li>
+	                <li class="user-profile">
+	                    <a href="javascript:void(0);"><img src="images/avatar-icon.png" class="user-avatar" alt="" />Officer Lastname</a>
+	                </li>
+	                <li class="user-logout"><a href="login.html" class="has-tip tip-left" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
+				</ul>
+			</section>
+		</nav>
+		
 	</header>
 	<!-- end header #head.class_name -->
 	
-	<nav class="nav-bar menu-sidebar-offcanvas offcanvas-sidebar">
-		<section class="nav-bar-section clearfix">
-			<h3 class="show-for-medium-down">Main Menu</h3>
-			
-			<!-- Right Nav Section -->
-			<ul class="right" id="joyride-main-nav">
-				<li class="active"><a href="index.html">Events</a></li>
-				<li><a href="cases.html">Cases</a></li>
-				<!--li><a href="event-exports.html">Event Exports <span class="label round">1</span></a></li>
-	                <li><a href="case-exports.html">Case Exports <span class="label round">2</span></a></li-->
-				<li><a href="exports.html">Export Worksheet <span class="label round">2</span></a></li>
-				<li><a href="queue.html">My Exports <span class="label round">2</span></a></li>
-				<li class="has-dropdown"> <a href="javascript:void(0);">Manage</a>
-					<ul class="dropdown">
-						<li class=""><a href="vista.html"><i class="fa fa-cogs"></i> VISTA Dashboard</a> </li>
-						<li class=""><a href="vista2.html"><i class="fa fa-cogs"></i> USB Dashboard</a> </li>
-                        <li  class=""><a href="kiosk.html"><i class="fa fa-cogs"></i> Kiosk Mode</a> </li>
-						
-			            <li><a href="config.html"><i class="fa fa-cogs"></i> Share Config</a> </li>
-						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
-						<li><a href="javascript:void(0);"><i class="fa fa-cogs"></i> Submenu Item</a> </li>
-					</ul>
-				</li>
-                <li class="user-profile">
-                    <a href="javascript:void(0);"><img src="images/avatar-icon.png" class="user-avatar" alt="" />Officer Lastname</a>
-                </li>
-                <li class="user-logout"><a href="login.html" class="has-tip tip-top" title="Logout of ELWeb"><i class="fa fa-power-off fa-lg"></i></a></li>
-			</ul>
-		</section>
-	</nav>
 	<div id="content-outer-wrapper" class="">
 		<a class="exit-off-canvas"></a>
 		<div class="search-sidebar-offcanvas offcanvas-sidebar">
@@ -556,10 +557,11 @@
 						
 					<!-- for demo purposes ONLY -->	
 					<br/>		
-					<a class="button small secondary radius mask-it" data-msgbox="info" href="javascript:void(0);">Info Message</a>
-					<a class="button small secondary radius mask-it" data-msgbox="alert" href="javascript:void(0);">Alert Message</a>
-					<a class="button small secondary radius mask-it" data-msgbox="confirm" href="javascript:void(0);">Confirm Message</a>
-					<a class="button small secondary radius mask-it" data-msgbox="error" href="javascript:void(0);">Error Message</a>
+					<a class="button small secondary radius mask-it" data-mask-target="#content-wrapper" href="javascript:void(0);">Loading Mask</a>
+					<a class="button small secondary radius" data-msgbox="info" href="javascript:void(0);">Info Message</a>
+					<a class="button small secondary radius" data-msgbox="alert" href="javascript:void(0);">Alert Message</a>
+					<a class="button small secondary radius" data-msgbox="confirm" href="javascript:void(0);">Confirm Message</a>
+					<a class="button small secondary radius" data-msgbox="error" href="javascript:void(0);">Error Message</a>
 					<!-- end demo buttons -->
 				</div>
 			<!-- end div#form-controls -->
@@ -797,6 +799,8 @@
 										<li class="hide-for-large-thumbs"><span>Badge #: </span><strong>#3948</strong></li>
 										<li class="hide-for-large-thumbs"><span>Filesize: </span><strong>198.74MB</strong></li>
 										<li><span>Event ID: </span><strong>2406a6178a6747a59b75d93fca2c8a17</strong></li>
+										<li class="has-tip tip-top" data-tooltip title="Split Event: 1 of 6"><span class="label info radius"><span>Split Event: </span> <strong>1</strong><span class="fancy"> of </span><strong>6</strong></span></li>
+										
 									</ul>
 								</div>
 								<!-- end columns --> 
@@ -810,6 +814,7 @@
 									<li><a href="javascript:void(0);" class="link-to-event" data-reveal-id="link-to-event-modal"><i class="fa fa-files-o"></i> Link to Event</a></li>
 									<li><a href="javascript:void(0);" class="archive-event"><i class="fa fa-archive"></i> Archive Event</a></li>
 									<li><a href="javascript:void(0);" class="top-hr delete-event"><i class="fa fa-trash-o"></i> Purge Event</a></li>
+									
 								</ul>
 							</div>
 							<!-- end row -->
@@ -822,7 +827,6 @@
 								<div class="data-icon has-tip tip-top" data-tooltip title="Prevent Archive: No"><i class="fa fa-folder-open"></i></div>
 								<div class="data-icon has-tip tip-top" data-tooltip title="Event Tags <br/>Tag: Value<br/>Tag: Value<br/>Tag: Value<br/>"><i class="fa fa-tags"></i></div>
 								<a href="#" onclick="alert('Pop modal with complete Notes content')" class="data-icon has-tip tip-top" data-tooltip title="NOTES: Here is where the comment for this event would be displayed, or you can view them in the Event Detail page."><i class="fa fa-comment"></i></a> 
-								<div class="data-icon has-tip tip-top" data-tooltip title="Split Event: 1 of 6"><i class="fa fa-th"></i> 1 <span class="fancy">of</span> 6</div>
 								
 							</div>
 								
@@ -920,8 +924,9 @@
 									</ul>
 								</div>
 								<!-- end columns --> 
-								<a href="javascript:void(0);" data-options="align:left" data-dropdown="drop4" class="button action radius"><i class="fa fa-cog"></i></a>
+								<a href="javascript:void(0);" data-options="align:left" data-dropdown="drop4" class="button action radius alert"><i class="fa fa-warning"></i></a>
 								<ul id="drop4" data-dropdown-content class="f-dropdown action-dropdown">
+									<li><p><strong>ERROR:</strong> This event has failed to .......... (fill in the blank). Please select an action below to remedy this horrible situation.</p></li>									
 									<li><a href="event-details.html"><i class="fa fa-play-circle"></i> Playback Event</a></li>
 									<li><a href="event-details.html#event-details-tabs" class="bottom-hr"><i class="fa fa-list"></i> Event Details</a></li>
 									<li><a href="exports.html"><i class="fa fa-upload"></i> Add to Exports</a></li>

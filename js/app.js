@@ -1,9 +1,54 @@
+  function showViewPortSize(display) {
+    if(display) {
+	
+		var viewPortWidth;
+		var viewPortHeight;
+		var innerHeight = jQuery(window).innerHeight();
+		var innerWidth = jQuery(window).innerWidth();
+
+		// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+		if (typeof window.innerWidth != 'undefined') {
+			viewPortWidth = window.innerWidth,
+			viewPortHeight = window.innerHeight
+		}
+		// older versions of IE
+		else {
+			viewPortWidth = document.getElementsByTagName('body')[0].clientWidth,
+			viewPortHeight = document.getElementsByTagName('body')[0].clientHeight
+		}
+	
+
+		jQuery('body').prepend('<div id="viewportsize" style="z-index:9999;position:fixed;bottom: 5px;left:5px;color:#fff;background:rgba(0,0,0,0.35);padding:10px;pointer-events:none;">Height: '+viewPortHeight+'<br/>Width: '+viewPortWidth+'<br/><br/>innerHeight: '+innerHeight+'<br>innerWidth: '+innerWidth+'</div>');
+      
+		jQuery(window).resize(function() {
+			innerHeight = jQuery(window).innerHeight();
+			innerWidth = jQuery(window).innerWidth();	    
+
+		jQuery('#viewportsize').html('Height: '+viewPortHeight+'<br/>Width: '+viewPortWidth+'<br/><br/>innerHeight: '+innerHeight+'<br>innerWidth: '+innerWidth+'</div>');
+		});
+	}
+}
+showViewPortSize(true);
+
 $(document).ready(function(){
+/*	
+	var today = kendo.date.today();
+
+    $("#recipient2").kendoDateTimePicker({
+        value: today,
+        parseFormats: ["MM/dd/yyyy"]
+    }).data("kendoDateTimePicker");
+
+*/
+
+
+
+
 //
 // GLOBAL CONFIG 
 //
 	//$('html, body').height($(document).height());
-
+	$('body').addClass('demo');
 	$(document).foundation({
 		accordion : {
 			active_class: 'open',
@@ -142,7 +187,7 @@ $(document).ready(function(){
 		    opacity: 1,
 	        func: function(){
 	            maskTimeout = setTimeout(function(){
-	                //$(target).hideMask();	                
+	                $(target).hideMask();	                
 	                //window.location.href = href;
 	                
             }, 3000);
@@ -150,9 +195,6 @@ $(document).ready(function(){
 	    });  
 	    
 	});
-	
-
-	
 	// QTIP INIT AND CONFIG
 	
 	// init tooltips and positioning classes

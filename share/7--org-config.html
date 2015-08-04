@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="//cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
 <link rel="stylesheet" href="css/kendo-theme.css" />
 <link rel="stylesheet" href="css/app.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
 	<script src="js/modernizr.js"></script>
 
@@ -37,8 +38,18 @@
 			<section class="top-bar-section">
 				<ul class="right">
 					<li class=""><a href="4-share-inbox.html">Inbox</a></li>
-					<li><a href="4--dashboard.html">Dashboard</a></li>
-					<li class="has-dropdown"> <a href="javascript:void(0);">Page</a>
+					<li class=""><a href="5--share-mgmt.html">Share Management</a></li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+						<ul class="dropdown">
+							<li  class=""><a href="#"> For Orgs:</a> </li>		                    
+							<li  class="active"><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
+		                    <li  class=""><a href="#"> For TS:</a> </li>	
+		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
+						</ul>
+					</li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Pages</a>
 						<ul class="dropdown">
 							<li class=""><a href="0-register.html"><i class="fa fa-cogs"></i> Register</a> </li>
 							<li class=""><a href="1-confirm-reg.html"><i class="fa fa-cogs"></i> Confirm Reg.</a> </li>
@@ -48,11 +59,12 @@
 							<li class=""><a href="3b-reset-password.html"><i class="fa fa-cogs"></i> Reset Password</a> </li>
 							<li class=""><a href="4--dashboard.html"><i class="fa fa-cogs"></i> Dashboard</a> </li>
 		                    <li  class=""><a href="4-share-inbox.html"><i class="fa fa-cogs"></i> Share Inbox</a> </li>
-		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Mgmt.</a> </li>
+		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Management</a> </li>
 		                    <li  class=""><a href="6-share-details.html"><i class="fa fa-cogs"></i> Share Details</a> </li>
-		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Org. Config</a> </li>
+		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
 		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
-		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
 		                    
 		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> User Profile (Admin)</a> </li>
 		                    
@@ -60,7 +72,6 @@
 		                    <li  class=""><a href="11-passcoded-share.html"><i class="fa fa-cogs"></i> Access Code Share</a> </li>
 		                    <li  class=""><a href="12-secured-share.html"><i class="fa fa-cogs"></i> Secured Share</a> </li>
 		                    <li  class=""><a href="javascript:void(0);" data-reveal-id="global-modal" data-modal="partials/forward-share.html" class="global-modal"><i class="fa fa-cogs"></i> Forward Share</a> </li>
-		
 		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/support.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> Support Details</a> </li>
 		
 						</ul>
@@ -70,11 +81,6 @@
 		            </li>
 		            <li class="user-logout"><a href="2-login.html" class="has-tip tip-top" title="Logout"><i class="fa fa-power-off fa-lg"></i></a></li>
 				</ul>
-				<!--ul class="left">
-					<li>
-						<a href="#">Left Nav</a>
-					</li>
-				</ul-->
 			</section>
 		</nav>	
 	</header><!-- end header #header. -->
@@ -103,7 +109,7 @@
 												<span class="label success radius">ACTIVE</span>
 										    </div><!-- end columns -->
 										    <div class="small-12 medium-12 large-4 columns">
-										        <label for="logins">Org. Status</label>
+										        <label for="logins">Organization Status</label>
 												<span class="label info radius">VALIDATED</span>
 										    </div><!-- end columns -->
                                             <div class="small-12 medium-12 large-4 columns">
@@ -113,9 +119,9 @@
 										    <div class="small-12 medium-12 large-4 columns">
 										        <label for="">Contract Type</label>
 												<select name="contract-type" id="contract-type" class="select" disabled>
-													<option value="1">...</option>
-													<option value="2">...</option>
-													<option value="3">...</option>
+													<option value="1">Basic</option>
+													<option value="2">Full</option>
+													<option value="3">Unlimited</option>
 												</select>
 										    </div><!-- end columns -->
 										    <div class="small-12 medium-12 large-4 columns">
@@ -139,12 +145,24 @@
                                                         <span class="prefix has-tip" title="info here re: use of API Key" data-tooltip><i class="fa fa-info-circle"></i></span>
                                                     </div>
                                                     <div class="small-10 columns">
-                                                        <input type="text" name="api-key" id="api-key" tabindex="" value="" />
+                                                        <input type="text" name="api-key" id="api-key" tabindex="" value="" readonly />
                                                     </div>
                                                 </div>
                                             </div><!-- end columns -->
-
-                                        </div><!-- end row -->
+										    <div class="small-12 medium-12 large-4 columns">
+												<label for="">Vehicles/Devices Under Warranty</label>
+										         <input type="text" name=""  id="" value="840" readonly/>
+										    </div><!-- end columns -->
+										    <div class="small-12 medium-12 large-4 columns">
+										        <label for="">Max Downloads/Share</label>
+												<select name="max-dl" id="max-dl" class="select">
+													<option value="1">3 downloads</option>
+													<option value="2">5 downloads</option>
+													<option value="3">10 downloads</option>
+												</select>
+										        </div><!-- end div.alert-box info radius -->
+										    </div><!-- end columns -->
+										</div><!-- end row -->
 									</div>
 								</div>							
 							</div><!-- end row -->							
@@ -154,14 +172,14 @@
 								<div class="row">
 								    <div class="small-12 medium-12 large-3 columns">
 								        <label for="organization-name">Organization Name</label>
-								        <input type="text" name="organization-name"  id="organization-name"  tabindex="" value=""  readonly />							        
+								        <input type="text" name="organization-name"  id="organization-name"  tabindex="" value="" readonly />							        
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-12 large-3 columns">
-								        <label for="organization-alias">Org. Short Name / Alias</label>
+								        <label for="organization-alias">Organization Short Name / Alias</label>
 								        <input type="text" name="organization-alias"  id="organization-alias"  tabindex="" value="" readonly />							        
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-3 columns">
-								        <label for="">Org. URL</label>
+								        <label for="">Organization URL</label>
 								        <input type="text" name="" id="" tabindex="" value="" readonly />
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-3 columns">
@@ -172,7 +190,6 @@
 											<option value="3">...</option>
 										</select>
 								    </div><!-- end columns -->
-							
 								</div><!-- end row -->
 								
 								<div class="row">
@@ -190,7 +207,6 @@
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 								
-								
 								<div class="row">
 								    <div class="small-12 medium-6 large-3 columns">
 								        <label for="">City</label>
@@ -198,7 +214,59 @@
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-3 columns">
 								        <label for="">State</label>
-								        <input type="text" name="" id="" tabindex="" value=""/>
+										<select name="state" id="state" class="select" >
+												<option value="AL">Alabama</option>
+												<option value="AK">Alaska</option>
+												<option value="AZ">Arizona</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="DC">District Of Columbia</option>
+												<option value="FL">Florida</option>
+												<option value="GA">Georgia</option>
+												<option value="HI">Hawaii</option>
+												<option value="ID">Idaho</option>
+												<option value="IL">Illinois</option>
+												<option value="IN">Indiana</option>
+												<option value="IA">Iowa</option>
+												<option value="KS">Kansas</option>
+												<option value="KY">Kentucky</option>
+												<option value="LA">Louisiana</option>
+												<option value="ME">Maine</option>
+												<option value="MD">Maryland</option>
+												<option value="MA">Massachusetts</option>
+												<option value="MI">Michigan</option>
+												<option value="MN">Minnesota</option>
+												<option value="MS">Mississippi</option>
+												<option value="MO">Missouri</option>
+												<option value="MT">Montana</option>
+												<option value="NE">Nebraska</option>
+												<option value="NV">Nevada</option>
+												<option value="NH">New Hampshire</option>
+												<option value="NJ">New Jersey</option>
+												<option value="NM">New Mexico</option>
+												<option value="NY">New York</option>
+												<option value="NC">North Carolina</option>
+												<option value="ND">North Dakota</option>
+												<option value="OH">Ohio</option>
+												<option value="OK">Oklahoma</option>
+												<option value="OR">Oregon</option>
+												<option value="PA">Pennsylvania</option>
+												<option value="RI">Rhode Island</option>
+												<option value="SC">South Carolina</option>
+												<option value="SD">South Dakota</option>
+												<option value="TN">Tennessee</option>
+												<option value="TX">Texas</option>
+												<option value="UT">Utah</option>
+												<option value="VT">Vermont</option>
+												<option value="VA">Virginia</option>
+												<option value="WA">Washington</option>
+												<option value="WV">West Virginia</option>
+												<option value="WI">Wisconsin</option>
+												<option value="WY">Wyoming</option>
+											</select>										
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-6 large-3 columns">
 								        <label for="">Postal Code</label>
@@ -212,21 +280,7 @@
 											<option value="3">...</option>
 										</select>
 								    </div><!-- end columns -->
-								</div><!-- end row -->
-								
-								<div class="row">
-								    <div class="small-12 medium-6 large-3 columns end">
-								        <label for="">Max Downloads/Share</label>
-										<select name="max-dl" id="max-dl" class="select">
-											<option value="1">3 downloads</option>
-											<option value="2">5 downloads</option>
-											<option value="3">7 downloads</option>
-											<option value="3">10 downloads</option>
-										</select>
-								    </div><!-- end columns -->
-								</div><!-- end row -->
-								
-								
+								</div><!-- end row -->															
 							</div>
 							
 							<h5 class="">Primary Contact Information</h5>
@@ -257,12 +311,10 @@
 					
 					        <h5 class="">Email Configuration</h5>
 							<div class="panel radius">
-							
 								<div class="row">
 								    <div class="small-12 medium-4 large-4 columns">
 								        <label for="">Reply-To Address</label>
 								        <input type="text" name="" id="" tabindex="" value=""/>
-								
 								    </div><!-- end columns -->
 								    <div class="small-12 medium-4 large-3 columns text-right">
 								        <label for="" class="">Enable Whitelist?</label>
@@ -278,23 +330,17 @@
 										<textarea name="domain-whitelist" id="domain-whitelist" class=""></textarea>
 								    </div><!-- end columns -->
 								</div><!-- end row -->
-							
-							</div><!-- end div.panel radius -->
-							
+							</div><!-- end div.panel radius -->							
 							
 							<h5 class="">User Management</h5>
 							<div class="panel radius">
 								<div class="row">
 								    <div class="small-12 medium-12 large-12 columns table-actions">
 									<a href="javascript:void(0);" data-modal="partials/invite-user.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal button success small"><i class="fa fa-user-plus"></i> Invite User</a>
-
 								    </div><!-- end columns -->
 								</div><!-- end row -->
-
-								<div id="user-mgmt"></div><!-- end div#user-mgmt -->
-								
-							</div><!-- end div.panel radius -->
-							
+								<div id="user-mgmt"></div><!-- end div#user-mgmt -->								
+							</div><!-- end div.panel radius -->							
 							
 					
 					<h5 class="">Distribution Groups</h5>
@@ -379,7 +425,7 @@
 	<footer id="footer">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">
-				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved. <a href="javascript:alert('help docs linked here');">Need Help?</a></p>
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>

@@ -2,7 +2,7 @@ $(document).ready(function() {
 	var inboxData = [{
 	    ShareID: "654789123",
 	    From: "Plano PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789124",
 	    From: "McKinney PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -22,7 +22,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789125",
 	    From: "Celina PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789126",
 	    From: "McKinney PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -42,7 +42,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789127",
 	    From: "McKinney PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -52,7 +52,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789128",
 	    From: "Plano PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -62,7 +62,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789129",
 	    From: "Celina PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -72,7 +72,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789130",
 	    From: "Plano PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -82,7 +82,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789131",
 	    From: "Celina PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -92,7 +92,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789132",
 	    From: "McKinney PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -102,7 +102,7 @@ $(document).ready(function() {
 	},{
 	    ShareID: "654789133",
 	    From: "Plano PD",
-	    ExportLabel: "Case-1234",
+	    ExportLabel: "13-2015-CF-000001-0001-XX",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
@@ -133,6 +133,7 @@ $(document).ready(function() {
 		sortable: {
 		    mode: "single"
 		},	
+		scrollable : true,
         pageable: true,
         columns: [{
 		    template: "<input type='checkbox' class='checkbox' />",
@@ -146,8 +147,8 @@ $(document).ready(function() {
 			filterable: false
 			}, {
 	            field: "ExportLabel",
-	            title: "Export Label",
-	            width: 120,
+	            title: "Reference Label",
+	            width: 180,
 	            filterable: {
 	                cell: {
 	                    operator: "gte"
@@ -156,7 +157,7 @@ $(document).ready(function() {
 	        
 		},{
             field: "ShareID",
-            width: 120,
+            width: 110,
             title: "Share ID",
             filterable: {
                 cell: {

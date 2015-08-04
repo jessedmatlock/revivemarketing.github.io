@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="//cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
 	<link rel="stylesheet" href="css/kendo-theme.css" />
 	<link rel="stylesheet" href="css/app.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
 	<script src="js/modernizr.js"></script>
 
@@ -37,8 +38,18 @@
 			<section class="top-bar-section">
 				<ul class="right">
 					<li class=""><a href="4-share-inbox.html">Inbox</a></li>
-					<li><a href="4--dashboard.html">Dashboard</a></li>
-					<li class="has-dropdown"> <a href="javascript:void(0);">Page</a>
+					<li class=""><a href="5--share-mgmt.html">Share Management</a></li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+						<ul class="dropdown">
+							<li  class=""><a href="#"> For Orgs:</a> </li>		                    
+							<li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
+		                    <li  class=""><a href="#"> For TS:</a> </li>	
+		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
+						</ul>
+					</li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Pages</a>
 						<ul class="dropdown">
 							<li class=""><a href="0-register.html"><i class="fa fa-cogs"></i> Register</a> </li>
 							<li class=""><a href="1-confirm-reg.html"><i class="fa fa-cogs"></i> Confirm Reg.</a> </li>
@@ -48,11 +59,12 @@
 							<li class=""><a href="3b-reset-password.html"><i class="fa fa-cogs"></i> Reset Password</a> </li>
 							<li class=""><a href="4--dashboard.html"><i class="fa fa-cogs"></i> Dashboard</a> </li>
 		                    <li  class=""><a href="4-share-inbox.html"><i class="fa fa-cogs"></i> Share Inbox</a> </li>
-		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Mgmt.</a> </li>
+		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Management</a> </li>
 		                    <li  class=""><a href="6-share-details.html"><i class="fa fa-cogs"></i> Share Details</a> </li>
-		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Org. Config</a> </li>
+		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
 		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
-		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
 		                    
 		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> User Profile (Admin)</a> </li>
 		                    
@@ -69,11 +81,6 @@
 		            </li>
 		            <li class="user-logout"><a href="2-login.html" class="has-tip tip-top" title="Logout"><i class="fa fa-power-off fa-lg"></i></a></li>
 				</ul>
-				<!--ul class="left">
-					<li>
-						<a href="#">Left Nav</a>
-					</li>
-				</ul-->
 			</section>
 		</nav>	
 	</header><!-- end header #header. -->
@@ -81,73 +88,134 @@
 	<div class="clearfix" id="content-header">	
 		<div class="row">
 		    <div class="small-12 medium-12 large-12 columns">
-		        <h3 class="">Dashboard</h3>				
+		        <h3 class="">Sugarland PD : Dashboard</h3>				
 		    </div><!-- end columns -->
 		</div><!-- end row -->							
 	</div><!-- end #content-header -->
 	
-	<section id="main-section" class="clearfix">
-		<div class="row">
-		    <div class="small-12 medium-12 large-12 columns">
-		        <div class="table-wrapper">
-					<div class="row">
-					    <div class="small-12 medium-6 large-6 columns">
-					        <div class="table-title">Org. Inbox</div>
+		<section id="main-section" class="clearfix">
+			<div class="row">
+			    <div class="small-12 medium-12 large-12 columns">
+
+
+
+					<ul class="tabs" data-tab="">
+						<li class="tab-title active">
+							<a href="#panel11">Organization Inbox</a>
+						</li>
+						<li class="tab-title">
+							<a href="#panel21">Organization Outbox</a>
+						</li>
+					</ul>				
+					<div class="panel radius">													
+						<div class="row">
+							<div class="tabs-content">
+								<div class="content active" id="panel11">
+									<div class="table-wrapper">
+										<div class="row">
+										    <div class="small-12 medium-6 large-6 columns">
+										        <!--div class="table-title">Organization Inbox</div-->
+										    </div><!-- end columns -->
+										    <div class="small-12 medium-6 large-6 columns table-actions">
+										        <button class="button small anim-button" data-original="Download Selected" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download Selected</button>
+												<button class="button small anim-button" data-original="Remove Selected" data-active="Removing"><i class="fa fa-trash"></i> Remove Selected</button>														
+										    </div><!-- end columns -->
+										</div><!-- end row -->
+										<div id="org-inbox"></div><!-- end div#org-inbox -->		
+									</div><!-- end div.table-wrapper -->
+								</div>
+								<div class="content" id="panel21">
+									<div class="table-wrapper">
+										<div class="row">
+										    <div class="small-12 medium-6 large-6 columns">
+										        <!--div class="table-title">Organization Outbox</div-->
+										    </div><!-- end columns -->
+										    <div class="small-12 medium-6 large-6 columns table-actions">
+										        <button class="button small anim-button" data-original="Download Selected" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download Selected</button>
+												<button class="button small anim-button" data-original="Unshare Selected" data-active="Unsharing"><i class="fa fa-share"></i> Unshare Selected</button>														
+										    </div><!-- end columns -->
+										</div><!-- end row -->
+
+										<div id="org-outbox"></div><!-- end div#org-outbox -->					
+									</div><!-- end div.table-wrapper -->
+								</div>
+							</div>
+
+
 					    </div><!-- end columns -->
-					    <div class="small-12 medium-6 large-6 columns table-actions">
-					        <a href="#" class="button small anim-button" data-original="Download Selected" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download Selected</a>
-							<a href="#" class="button small anim-button" data-original="Remove Selected" data-active="Removing"><i class="fa fa-trash"></i> Remove Selected</a>														
-					    </div><!-- end columns -->
-					</div><!-- end row -->
-					<!--div id="user-mgmt"></div-->		
-				</div><!-- end div.table-wrapper -->
-		    </div><!-- end columns -->
-		</div><!-- end row -->
-		
+					</div><!-- end row -->													
+				</div><!-- end div.panel radius -->
 
 
-		
-		<div class="row" id="content">
-		    <div class="small-12 medium-12 large-12 columns">
 
-		    </div><!-- end columns -->
-		</div><!-- end row -->
-	</section><!-- end main section --> 
 
-	<footer id="footer">
-		<div class="row">
-			<div class="small-12 medium-12 large-12 columns">
-				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
-			</div><!-- end columns --> 
-		</div><!-- end row --> 
-	</footer>
-	<script id="user-mgmt-template" type="text/x-kendo-template">
-		<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
-		<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
-		  <li><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal bottom-hr">View / Edit Details</a></li>
-		  <li><a href="javascript:void(0);">Disable / Enable User</a></li>
-		</ul>		
-	</script>
-	<script id="user-role-template" type="text/x-kendo-template">
-		<select name="role" id="role-${ uid }" class="" >
-			<option value="">Super Admin</option>
-			<option value="">Originating Org</option>
-			<option value="">Receiving Org</option>
-		</select>
-	</script>
-	
-	
-	<script type="text/javascript" src="js/jquery.js"></script> 
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
-	<script type="text/javascript" src="js/jquery.msgbox.js"></script> 
-	<script type="text/javascript" src="js/foundation.min.js"></script> 
-	<script type="text/javascript" src="js/chosen.jquery.js"></script> 
-	
-	<script type="text/javascript" src="js/kendo.all.min.js"></script> 
-	<!--script type="text/javascript" src="tables/user-mgmt.js"></script--> 
 
-	<script type="text/javascript" src="js/app.js"></script>
-	
-<div id="global-modal" class="reveal-modal" data-reveal></div>
-</body>
-</html>
+
+
+			    </div><!-- end columns -->
+			</div><!-- end row -->
+
+
+
+			<div class="row" id="content">
+			    <div class="small-12 medium-12 large-12 columns">
+
+			    </div><!-- end columns -->
+			</div><!-- end row -->
+
+		</section><!-- end main section --> 
+
+		<footer id="footer">
+			<div class="row">
+				<div class="small-12 medium-12 large-12 columns">
+					<p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved. <a href="javascript:alert('help docs linked here');">Need Help?</a></p>
+				</div><!-- end columns --> 
+			</div><!-- end row --> 
+		</footer>
+		<script id="org-inbox-template" type="text/x-kendo-template">
+			<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
+			<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+			  <li><a href="javascript:void(0);"><i class="fa fa-cloud-download"></i> Download</a></li>
+			  <li><a href="6-share-details.html"><i class="fa fa-eye"></i> View Share</a></li>
+				  <li><a href="javascript:void(0);" data-reveal-id="global-modal" data-modal="partials/forward-share.html" class="bottom-hr global-modal disabled" ><i class="fa fa-share"></i> Forward this Share</a></li>
+			  <li><a href="javascript:void(0);"><i class="fa fa-remove"></i> Remove from All</a></li>
+			</ul>		
+		</script>
+
+		<script id="org-outbox-template" type="text/x-kendo-template">
+			<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
+			<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+			  <li><a href="javascript:void(0);"><i class="fa fa-cloud-download"></i> Download</a></li>
+			  <li><a href="6-share-details.html"><i class="fa fa-eye"></i> View Share</a></li>
+			  <li><a href="javascript:void(0);" data-reveal-id="global-modal" data-modal="partials/edit-share.html" class="global-modal"><i class="fa fa-pencil"></i> Edit Details</a></li>		
+			  <li><a href="javascript:void(0);" data-reveal-id="global-modal" data-modal="partials/forward-share.html" class="bottom-hr global-modal"><i class="fa fa-share"></i> Forward this Share</a></li>
+			  <li><a href="javascript:void(0);"><i class="fa fa-user-times"></i> Unshare from All</a></li>
+			</ul>
+		</script>
+
+		<script id="user-inbox-template" type="text/x-kendo-template">
+			<a href="javascript:void(0);" data-dropdown="drop-${ uid }" data-options="align:right" class="button action radius"><i class="fa fa-cog"></i></a>	
+			<ul id="drop-${ uid }" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+			  <li><a href="javascript:void(0);"><i class="fa fa-cloud-download"></i> Download</a></li>
+			  <li><a href="6-share-details.html"><i class="fa fa-eye"></i> View Share</a></li>
+			  <li><a href="javascript:void(0);" data-reveal-id="global-modal" data-modal="partials/forward-share.html" class="bottom-hr global-modal"><i class="fa fa-share"></i> Forward this Share</a></li>
+			  <li><a href="javascript:void(0);"><i class="fa fa-remove"></i> Remove from Inbox</a></li>
+			</ul>		
+		</script>
+
+
+		<script type="text/javascript" src="js/jquery.js"></script> 
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+		<script type="text/javascript" src="js/jquery.msgbox.js"></script> 
+		<script type="text/javascript" src="js/foundation.min.js"></script> 
+		<script type="text/javascript" src="js/chosen.jquery.js"></script> 
+
+		<script type="text/javascript" src="js/kendo.all.min.js"></script> 
+
+		<script type="text/javascript" src="tables/org-inbox.js"></script> 
+		<script type="text/javascript" src="tables/org-outbox.js"></script> 
+		<script type="text/javascript" src="tables/user-inbox.js"></script> 
+
+		<script type="text/javascript" src="js/app.js"></script>
+
+	<div id="global-modal" class="reveal-modal" data-reveal></div>

@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="//cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
 	<link rel="stylesheet" href="css/kendo-theme.css" />
 	<link rel="stylesheet" href="css/app.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
 	<script src="js/modernizr.js"></script>
 
@@ -37,8 +38,18 @@
 			<section class="top-bar-section">
 				<ul class="right">
 					<li class=""><a href="4-share-inbox.html">Inbox</a></li>
-					<li><a href="4--dashboard.html">Dashboard</a></li>
-					<li class="has-dropdown"> <a href="javascript:void(0);">Page</a>
+					<li class=""><a href="5--share-mgmt.html">Share Management</a></li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+						<ul class="dropdown">
+							<li  class=""><a href="#"> For Orgs:</a> </li>		                    
+							<li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
+		                    <li  class=""><a href="#"> For TS:</a> </li>	
+		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
+						</ul>
+					</li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Pages</a>
 						<ul class="dropdown">
 							<li class=""><a href="0-register.html"><i class="fa fa-cogs"></i> Register</a> </li>
 							<li class=""><a href="1-confirm-reg.html"><i class="fa fa-cogs"></i> Confirm Reg.</a> </li>
@@ -48,11 +59,12 @@
 							<li class=""><a href="3b-reset-password.html"><i class="fa fa-cogs"></i> Reset Password</a> </li>
 							<li class=""><a href="4--dashboard.html"><i class="fa fa-cogs"></i> Dashboard</a> </li>
 		                    <li  class=""><a href="4-share-inbox.html"><i class="fa fa-cogs"></i> Share Inbox</a> </li>
-		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Mgmt.</a> </li>
+		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Management</a> </li>
 		                    <li  class=""><a href="6-share-details.html"><i class="fa fa-cogs"></i> Share Details</a> </li>
-		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Org. Config</a> </li>
+		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
 		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
-		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
 		                    
 		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> User Profile (Admin)</a> </li>
 		                    
@@ -69,16 +81,11 @@
 		            </li>
 		            <li class="user-logout"><a href="2-login.html" class="has-tip tip-top" title="Logout"><i class="fa fa-power-off fa-lg"></i></a></li>
 				</ul>
-				<!--ul class="left">
-					<li>
-						<a href="#">Left Nav</a>
-					</li>
-				</ul-->
 			</section>
 		</nav>	
 	</header><!-- end header #header. -->
 	
-	<section id="main-section" class="clearfix dark">
+	<section id="main-section" class="clearfix dark no-top-padding">
 		<div class="row">
 		    <div class="small-12 medium-12 large-12 columns">
 				<div id="share-header">
@@ -92,31 +99,52 @@
                     </ul>
                     
 					<div class="row">
-					    <div class="small-12 medium-6 large-6 columns">
-					        <h4 class="">Export Label: Collin-DA-Case-412312</h4>
+					    <div class="small-12 medium-6 large-7 columns">
+					        <h4 class="">Reference Label: Collin-DA-Case-412312 <span>(1.28GB)</span></h4>
 					    </div><!-- end columns -->
-					    <div class="small-12 medium-6 large-6 columns">
-					        <h4 class="text-right">ID: 5123123123</h4>
+					    <div class="small-12 medium-6 large-5 columns">
+					        <h4 class="text-right">
+								<span class="has-tip tip-left" title="Secured Share" data-tooltip><i class="fa fa-lock"></i></span> 
+								<!--span class="has-tip tip-left" title="Access Code Share" data-tooltip><i class="fa fa-key"></i></span>
+								<span class="has-tip tip-left" title="Un-Secured Share" data-tooltip><i class="fa fa-unlock-alt"></i></span-->
+								ID: 5123123123</h4>
 					    </div><!-- end columns -->
 					</div><!-- end row -->
 				</div><!-- end div#share-header -->
 				<div id="share-details">
-					<div class="detail-item"><span>Originating Agency:</span> Plano PD</div>
-					<div class="detail-item"><span>From:</span> tammy.smith@collincoutyda.com</div>
-					<div class="detail-item"><span>Type:</span> SECURE SHARE</div>					
-					<div class="detail-item"><span>Shared On:</span> 04/09/15</div>					
-					<div class="detail-item"><span>Exp. On:</span> 05/09/15</div>
-					<div class="detail-item"><span>Size:</span> 728 MB</div>
-					
+					<div class="row collapse">
+					    <div class="small-12 medium-12 large-7 columns">
+							<span>Originating Agency:</span> Plano PD
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-12 large-5 columns text-right">
+							<span>From:</span> tammy.smith@collincoutyda.com
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+					<div class="row collapse">
+					    <div class="small-12 medium-12 large-4 columns">
+							<span>Shared On:</span> 04/09/15				
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-12 large-4 columns text-centered">
+							<span>Sent On:</span> 04/11/15
+					    </div><!-- end columns -->
+					    <div class="small-12 medium-12 large-4 columns text-right">
+							<span>Exp. On:</span> 05/09/15
+					    </div><!-- end columns -->
+					</div><!-- end row -->
+									
 				</div><!-- end div#share-details -->
 				
 				<div id="share-player">
-					<img src="images/video-player.jpg"  class="" alt="" />
+					<div id="player-msg" class="alert-box warning">
+						Click a Video Steam below to begin playback.<br/>
+						This is an example message, for use when a Share doesn't contain a video event OR if an error occurs during playback, etc.
+					</div><!-- end div #player-msg.alert-box radius warning -->
+					<img src="images/video-player.jpg"  id="player-img" alt="" />
+					<button id="captions" class="secondary has-tip tip-right" title="Closed Captions" data-tooltip><i class="fa fa-cc"></i></button>
 				</div><!-- end div#share-player -->
 				<div id="share-items" class="clearfix">
 					<div class="share-item">
 						<div class="share-item-header clearfix">
-							
 							<div class="row collapse">
 							    <div class="small-12 medium-12 large-4 columns">
 									<div class="detail-item"><span>Event ID:</span> 00:1d:96:00:77:43-316086379</div>
@@ -142,34 +170,27 @@
 							</div><!-- end row -->
 														
 						</div><!-- end div.share-item-header -->
-						<div class="share-item-streams">
-							<div class="row collapse">
-							    <div class="small-12 medium-6 large-3 columns">
-									<a href="javascript:void(0);" id="" class="share-stream active">	
+						<div class="share-item-streams">							
+							<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+								<li>
+									<a href="javascript:void(0);" id="" class="share-stream">	
 										<img src="images/stream1.jpg" alt="" />
 										<h6 class="">Stream 1</h6>																									        
-									</a>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
+									</a>										
+								</li>
+								<li>
 									<a href="javascript:void(0);" id="" class="share-stream">	
 										<img src="images/stream2.jpg" alt="" />
 										<h6 class="">Stream 2</h6>																									        
-									</a>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
+									</a>										
+								</li>
+								<li>
 									<a href="javascript:void(0);" id="" class="share-stream">	
 										<img src="images/stream1.jpg" alt="" />
 										<h6 class="">Stream 3</h6>																									        
-									</a>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
-									<a href="javascript:void(0);" id="" class="share-stream">	
-										<img src="images/stream2.jpg" alt="" />
-										<h6 class="">Stream 4</h6>																									        
-									</a>
-							    </div><!-- end columns -->
-							</div><!-- end row -->
-							
+									</a>										
+								</li>
+							</ul>														
 						</div><!-- end div.share-item-streams -->
 					</div><!-- end div.share-item -->
 					
@@ -232,33 +253,33 @@
 							</div><!-- end row -->
 						</div>
 						<div class="share-item-streams">
-							<div class="row collapse">
-							    <div class="small-12 medium-6 large-3 columns">
-									<a href="javascript:void(0);" id="" class="share-stream ">	
-										<img src="images/stream1.jpg" alt="" />
-										<h6 class="">Stream 1</h6>																									        
-									</a>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
+							<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+								<li>	
 									<a href="javascript:void(0);" id="" class="share-stream">	
 										<img src="images/stream2.jpg" alt="" />
-										<h6 class="">Stream 2</h6>																									        
+										<h6 class="">Stream 1</h6>																									        
 									</a>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
+								</li>
+								<li>	
+									<a href="javascript:void(0);" id="" class="share-stream pano">	
+										<img src="images/panoramic.jpg" alt="" />
+										<h6 class="">Stream 2 (panoramic)</h6>																									        
+									</a>
+								</li>
+								
+								<li>	
 									<a href="javascript:void(0);" id="" class="share-stream">	
 										<img src="images/stream1.jpg" alt="" />
 										<h6 class="">Stream 3</h6>																									        
 									</a>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
+								</li>
+								<li>	
 									<a href="javascript:void(0);" id="" class="share-stream">	
 										<img src="images/stream2.jpg" alt="" />
 										<h6 class="">Stream 4</h6>																									        
 									</a>
-							    </div><!-- end columns -->
-							</div><!-- end row -->
-							
+								</li>
+							</ul>							
 						</div><!-- end div.share-item-streams -->
 						
 						<div class="share-item-subheader clearfix">
@@ -288,63 +309,57 @@
 						</div>
 						
 						<div class="share-item-streams">
-							<div class="row collapse">
-							    <div class="small-12 medium-6 large-3 columns">
-									<a href="javascript:void(0);" id="" class="share-stream">	
+							<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+								<li>	
+									<a href="javascript:void(0);" id="" class="share-stream ">	
 										<img src="images/stream1.jpg" alt="" />
 										<h6 class="">Stream 1</h6>																									        
 									</a>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
+								</li>
+								<li>	
 									<a href="javascript:void(0);" id="" class="share-stream">	
 										<img src="images/stream2.jpg" alt="" />
 										<h6 class="">Stream 2</h6>																									        
 									</a>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
+								</li>
+								<li>	
 									<a href="javascript:void(0);" id="" class="share-stream">	
 										<img src="images/stream1.jpg" alt="" />
 										<h6 class="">Stream 3</h6>																									        
 									</a>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
+								</li>
+								<li>	
 									<a href="javascript:void(0);" id="" class="share-stream">	
 										<img src="images/stream2.jpg" alt="" />
 										<h6 class="">Stream 4</h6>																									        
 									</a>
-							    </div><!-- end columns -->
-							</div><!-- end row -->
-							
+								</li>
+							</ul>							
 						</div><!-- end div.share-item-streams -->
 						
 						
 						<div class="share-attachments">
-							<div class="row collapse">
-							    <div class="small-12 medium-6 large-3 columns">
-									<div class="share-attachment">	
+							<h4 class="">Attachments</h4>
+							<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+								<li>	
+									<a href="javascript:void(0);" class="share-attachment">	
 										<img src="images/attachment-icon.jpg" alt="" />
 										<h6 class="">evidence_notes.docx</h6>																									        
-									</div>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
-									<div class="share-attachment">	
-										<img src="images/attachment-icon.jpg" alt="" />
-										<h6 class="">evidence_notes.docx</h6>																									        
-									</div>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
-									<div class="share-attachment">	
-										<img src="images/attachment-icon.jpg" alt="" />
-										<h6 class="">evidence_notes.docx</h6>																									        
-									</div>
-							    </div><!-- end columns -->
-							    <div class="small-12 medium-6 large-3 columns">
-									<div class="share-attachment">	
+									</a>
+								</li>
+								<li>	
+									<a href="javascript:void(0);" class="share-attachment">	
+										<img src="images/link-icon.jpg" alt="" />
+										<h6 class="">http://google.com</h6>																									        
+									</a>
+								</li>
+								<li>	
+									<a href="javascript:void(0);" class="share-attachment">	
 										<img src="images/attachment-icon.jpg" alt="" />
 										<h6 class="">certificate-of-whoknowswhat.pdf</h6>																									        
-									</div>
-							    </div><!-- end columns -->
-							</div><!-- end row -->
+									</a>
+								</li>
+							</ul>							
 							
 						</div><!-- end div.share-attachments -->
 						
@@ -361,7 +376,7 @@
 	<footer id="footer">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">
-				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved. <a href="javascript:alert('help docs linked here');">Need Help?</a></p>
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>

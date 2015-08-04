@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="//cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
 	<link rel="stylesheet" href="css/kendo-theme.css" />
 <link rel="stylesheet" href="css/app.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
 	<script src="js/modernizr.js"></script>
 
@@ -48,11 +49,12 @@
 							<li class=""><a href="3b-reset-password.html"><i class="fa fa-cogs"></i> Reset Password</a> </li>
 							<li class=""><a href="4--dashboard.html"><i class="fa fa-cogs"></i> Dashboard</a> </li>
 		                    <li  class=""><a href="4-share-inbox.html"><i class="fa fa-cogs"></i> Share Inbox</a> </li>
-		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Mgmt.</a> </li>
+		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Management</a> </li>
 		                    <li  class=""><a href="6-share-details.html"><i class="fa fa-cogs"></i> Share Details</a> </li>
-		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Org. Config</a> </li>
+		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
 		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
-		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
 
 		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> User Profile (Admin)</a> </li>
 		                    
@@ -80,7 +82,7 @@
 	<div class="clearfix" id="content-header">	
 		<div class="row">
 		    <div class="small-12 medium-12 large-12 columns">
-		        <h3 class="">Share Evidence</h3>				
+		        <h3 class="">Sugarland PD : Share Evidence</h3>				
 		    </div><!-- end columns -->
 		</div><!-- end row -->							
 	</div><!-- end #content-header -->
@@ -93,29 +95,41 @@
 						<div class="small-12 medium-12 large-12 columns">
 							<div class="panel radius">
 								<div class="row">
-								    <div class="small-12 medium-6 large-6 columns">		
-								        <label for="">Originating Agency: <span class="">Plano PD</span></label>
+								    <div class="small-12 medium-12 large-12 columns">
+								        <label for=""><strong>Reference Label:</strong> <span class="">Case 735728</span></label>	        
 								    </div><!-- end columns -->
-								    <div class="small-12 medium-6 large-6 columns">
-								        <label for="">Forwarded By: <span class="">Jack Dawson, D.A.</span></label>
+								</div><!-- end row -->	
+								
+								<div class="row">
+									<div class="small-12 medium-6 large-6 columns">
+								        <label for=""><strong>Share ID:</strong> <span class="">22155</span></label>
+								    </div><!-- end columns -->
+								    
+								    <div class="small-12 medium-6 large-6 columns">		
+								        <label><strong>From:</strong> <span class="">Plano PD</span></label>
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 
 								<div class="row">
-								    <div class="small-12 medium-6 large-6 columns">
-								        <label for="">Shared On: <span class="">01/16/15</span></label>	        
+									<div class="small-12 medium-6 large-6 columns">
+								        <label><strong>To:</strong> <span class="">Jack Dawson, D.A.</span></label>
 								    </div><!-- end columns -->
+								    
 								    <div class="small-12 medium-6 large-6 columns">
-								        <label for="">Expires On: <span class="">04/16/15</span></label>
+								        <label><strong>Sent On:</strong> <span class="">01/16/15</span></label>	        
 								    </div><!-- end columns -->
 								</div><!-- end row -->	
 
                                 <div class="row">
+								    <div class="small-12 medium-6 large-6 columns">
+								        <label><strong>Expires On:</strong> <span class="">04/16/15</span></label>
+								    </div><!-- end columns -->
+
                                     <div class="small-12 medium-6 large-6 columns">
-                                        <label for="">Total Size: <span class="">780 MB</span></label>
+                                        <label for=""><strong>Total Size:</strong> <span class="">780 MB</span></label>
                                     </div><!-- end columns -->
                                 </div><!-- end row -->	
-							</div><!-- end div#forward-details -->
+							</div><!-- end panel -->
 						</div>
 					</div>
 					<div class="row">
@@ -125,14 +139,14 @@
 					</div>
 
 					<div class="row">
-						<div class="small-12 medium-12 large-6 columns">
-							<a href="javascript:void(0);" id="" class="button secondary small" ><i class="fa fa-"></i> Cancel & Go to My Inbox</a>
+						<div class="small-12 medium-12 large-4 columns">
+							<a href="4--dashboard.html" id="" class="button secondary small" ><i class="fa fa-"></i> Cancel & Go to My Inbox</a>
 							
 						</div><!-- end columns -->					    
-						<div class="small-12 medium-12 large-6 columns">							
+						<div class="small-12 medium-12 large-8 columns">							
 							<!--input class="login_button button success right" type="submit" value="Sign In"  tabindex="4" /-->
 							<!-- using link for demo purposes to redirect to index.html page -->
-							<a href="javascript:void(0);" id="" class="button success right anim-button" data-original="Download" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download</a>
+							<a href="javascript:void(0);" id="" class="download-button button success right" data-original="Download" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download</a>
 						</div>
 					</div>
 				</div><!-- end div.panel radius --> 
@@ -146,7 +160,7 @@
 	<footer id="footer">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">
-				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved. <a href="javascript:alert('help docs linked here');">Need Help?</a></p>
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>	

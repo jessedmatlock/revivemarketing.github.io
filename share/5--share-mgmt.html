@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="//cdn.kendostatic.com/2014.3.1411/styles/kendo.common.min.css" type="text/css" media="screen" title="" charset="utf-8">
 	<link rel="stylesheet" href="css/kendo-theme.css" />
 	<link rel="stylesheet" href="css/app.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
 	<script src="js/modernizr.js"></script>
 
@@ -37,8 +38,18 @@
 			<section class="top-bar-section">
 				<ul class="right">
 					<li class=""><a href="4-share-inbox.html">Inbox</a></li>
-					<li><a href="4--dashboard.html">Dashboard</a></li>
-					<li class="has-dropdown"> <a href="javascript:void(0);">Page</a>
+					<li class="active"><a href="5--share-mgmt.html">Share Management</a></li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Admin</a>
+						<ul class="dropdown">
+							<li  class=""><a href="#"> For Orgs:</a> </li>		                    
+							<li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
+		                    <li  class=""><a href="#"> For TS:</a> </li>	
+		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
+						</ul>
+					</li>
+					<li class="has-dropdown"> <a href="javascript:void(0);">Pages</a>
 						<ul class="dropdown">
 							<li class=""><a href="0-register.html"><i class="fa fa-cogs"></i> Register</a> </li>
 							<li class=""><a href="1-confirm-reg.html"><i class="fa fa-cogs"></i> Confirm Reg.</a> </li>
@@ -48,11 +59,12 @@
 							<li class=""><a href="3b-reset-password.html"><i class="fa fa-cogs"></i> Reset Password</a> </li>
 							<li class=""><a href="4--dashboard.html"><i class="fa fa-cogs"></i> Dashboard</a> </li>
 		                    <li  class=""><a href="4-share-inbox.html"><i class="fa fa-cogs"></i> Share Inbox</a> </li>
-		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Mgmt.</a> </li>
+		                    <li  class=""><a href="5--share-mgmt.html"><i class="fa fa-cogs"></i> Share Management</a> </li>
 		                    <li  class=""><a href="6-share-details.html"><i class="fa fa-cogs"></i> Share Details</a> </li>
-		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Org. Config</a> </li>
+		                    <li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
 		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
-		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
 		                    
 		                    <li  class=""><a href="javascript:void(0);" data-modal="partials/user-profile-admin.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal"><i class="fa fa-cogs"></i> User Profile (Admin)</a> </li>
 		                    
@@ -69,11 +81,6 @@
 		            </li>
 		            <li class="user-logout"><a href="2-login.html" class="has-tip tip-top" title="Logout"><i class="fa fa-power-off fa-lg"></i></a></li>
 				</ul>
-				<!--ul class="left">
-					<li>
-						<a href="#">Left Nav</a>
-					</li>
-				</ul-->
 			</section>
 		</nav>	
 	</header><!-- end header #header. -->
@@ -81,7 +88,7 @@
 	<div class="clearfix" id="content-header">	
 		<div class="row">
 		    <div class="small-12 medium-12 large-12 columns">
-				<h3 class="">Share Management</h3>
+				<h3 class="">Sugarland PD : Share Management</h3>
 		    </div><!-- end columns -->
 		</div><!-- end row -->							
 	</div><!-- end #content-header -->
@@ -94,10 +101,10 @@
 				
 				<ul class="tabs" data-tab="">
 					<li class="tab-title active">
-						<a href="#panel11">Org. Inbox</a>
+						<a href="#panel11">Organization Inbox</a>
 					</li>
 					<li class="tab-title">
-						<a href="#panel21">Org. Outbox</a>
+						<a href="#panel21">Organization Outbox</a>
 					</li>
 				</ul>				
 				<div class="panel radius">													
@@ -107,11 +114,11 @@
 								<div class="table-wrapper">
 									<div class="row">
 									    <div class="small-12 medium-6 large-6 columns">
-									        <!--div class="table-title">Org. Inbox</div-->
+									        <!--div class="table-title">Organization Inbox</div-->
 									    </div><!-- end columns -->
 									    <div class="small-12 medium-6 large-6 columns table-actions">
-									        <a href="#" class="button small anim-button" data-original="Download Selected" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download Selected</a>
-											<a href="#" class="button small anim-button" data-original="Remove Selected" data-active="Removing"><i class="fa fa-trash"></i> Remove Selected</a>														
+									        <button class="button small anim-button" data-original="Download Selected" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download Selected</button>
+											<button class="button small anim-button" data-original="Remove Selected" data-active="Removing"><i class="fa fa-trash"></i> Remove Selected</button>														
 									    </div><!-- end columns -->
 									</div><!-- end row -->
 									<div id="org-inbox"></div><!-- end div#org-inbox -->		
@@ -121,11 +128,11 @@
 								<div class="table-wrapper">
 									<div class="row">
 									    <div class="small-12 medium-6 large-6 columns">
-									        <!--div class="table-title">Org. Outbox</div-->
+									        <!--div class="table-title">Organization Outbox</div-->
 									    </div><!-- end columns -->
 									    <div class="small-12 medium-6 large-6 columns table-actions">
-									        <a href="#" class="button small anim-button" data-original="Download Selected" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download Selected</a>
-											<a href="#" class="button small anim-button" data-original="Unshare Selected" data-active="Unsharing"><i class="fa fa-share"></i> Unshare Selected</a>														
+									        <button class="button small anim-button" data-original="Download Selected" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download Selected</button>
+											<button class="button small anim-button" data-original="Unshare Selected" data-active="Unsharing"><i class="fa fa-share"></i> Unshare Selected</button>														
 									    </div><!-- end columns -->
 									</div><!-- end row -->
 
@@ -161,7 +168,7 @@
 	<footer id="footer">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">
-				<p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>
+				<p>Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved. <a href="javascript:alert('help docs linked here');">Need Help?</a></p>
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>

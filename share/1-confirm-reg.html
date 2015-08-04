@@ -11,6 +11,7 @@
 <link href="css/chosen.css" rel="stylesheet" />
 
 <link rel="stylesheet" href="css/app.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 <script src="js/modernizr.js"></script>
 <!--[if gte IE 9]>
   <style type="text/css">
@@ -30,26 +31,24 @@
 					<h4 class="panel-top-title dark-title"><i class="fa fa-sign-in"></i> Confirm Registration</h4>
 					<div class="panel radius">
 						<div class="row">
-							<div class="small-12 medium-12 large-6 columns">
+							<div class="small-12 medium-12 large-3 columns">
 								<label for="fname">First Name</label>
-								<input data-val="true" data-val-required="The First Name field is required." id="fname" name="fname" type="text" value="First Name"  tabindex="1"/>
+								<input data-val="true" data-val-required="The First Name field is required." id="fname" name="fname" type="text" value="First Name" tabindex="1"/>
+							</div>
+							<div class="small-12 medium-12 large-3 columns">
+								<label for="lname">Last Name</label>
+								<input data-val="true" data-val-required="The Last Name field is required." id="lname" name="lname" type="text" value="Last Name" tabindex="2"/>
 							</div>
 							<div class="small-12 medium-12 large-6 columns">
-								<label for="lname">Last Name</label>
-								<input data-val="true" data-val-required="The Last Name field is required." id="lname" name="lname" type="text" value="Last Name"  tabindex="2"/>
-							</div>
-						</div>
-						<div class="row">
-							<div class="small-12 medium-12 large-12 columns">
 								<label for="email">Email Address</label>
-								<input data-val="true" data-val-required="The email field is required." id="email" name="email" type="text" value="email@domain.com"  tabindex="3"/>
+								<input data-val="true" data-val-required="The email field is required." id="email" name="email" type="text" value="email@domain.com" readonly tabindex="3"/>
 							</div>
 						</div>
 						
 						<hr/>
 						
 						<div class="row">
-							<div class="small-12 medium-12 large-12 columns">
+							<div class="small-12 medium-12 large-6 columns">
 								<label for="select-a-security-question">Select a Security Question</label>
 								<select name="select-a-security-question" id="select-a-security-question" class="select">
 									<option value="">What city were you born in?</option>
@@ -57,9 +56,7 @@
 									<option value="">...</option>
 								</select>
 							</div>
-						</div>
-						<div class="row">
-							<div class="small-12 medium-12 large-12 columns">
+							<div class="small-12 medium-12 large-6 columns">
 								<label for="security-question-answer">Security Question Answer</label>
 								<input data-val="true" data-val-required="This field is required." id="security" name="security" type="text"  tabindex="3"/>
 							</div>
@@ -68,13 +65,11 @@
 						<hr/>
 
 						<div class="row">
-							<div class="small-12 medium-12 large-12 columns">
+							<div class="small-12 medium-12 large-6 columns">
 								<label for="password">Password</label>
 								<input data-val="true" data-val-required="The Password field is required." id="password" name="password" type="password"  tabindex="4"/>
 							</div>
-						</div>
-						<div class="row">
-							<div class="small-12 medium-12 large-12 columns">
+							<div class="small-12 medium-12 large-6 columns">
 								<label for="cpassword">Confirm Password</label>
 								<input data-val="true" data-val-required="The Password field is required." id="cpassword" name="cpassword" type="password"  tabindex="5"/>
 							</div>
@@ -96,7 +91,7 @@
 	<footer id="footer">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">
-				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved. <a href="javascript:alert('help docs linked here');">Need Help?</a></p>
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>

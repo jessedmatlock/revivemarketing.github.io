@@ -55,6 +55,7 @@ $(document).ready(function() {
         filterable: {
             mode: "row"
         },
+		scrollable : true,
         sortable: {
             mode: "single"
         },
@@ -82,14 +83,6 @@ $(document).ready(function() {
                 cell: {
                     showOperators: false,
                     operator: "contains"
-                }
-            }
-        },{
-            field: "Organization",
-            title: "Organization",
-            filterable: {
-                cell: {
-                    showOperators: false
                 }
             }
         }, {

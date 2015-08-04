@@ -1,123 +1,123 @@
 $(document).ready(function() {
 	var orgInboxData = [{
-		ExportLabel: "Case-1234",	    
+		ExportLabel: "Case-54654451654641",	    
 	    ShareID: "654789123",
-	    From: "Plano PD",
+	    From: "Plano Police Department",
 		To: "7 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Link Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "Case-105461530",	    
 	    ShareID: "654789124",
-	    From: "McKinney PD",
+	    From: "McKinney Police Department",
 		To: "4 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Passcoded Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "Case-a54sa56d456a",	    
 	    ShareID: "654789125",
-	    From: "Plano PD",
+	    From: "Plano Police Department",
 		To: "1 Recipient",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Secure Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "13-2015-CF-000001-0001-XX",	    
 	    ShareID: "654789126",
-	    From: "Celina PD",
+	    From: "Celina Police Department",
 		To: "1 Recipient",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Passcoded Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "13-2015-CF-000001-0001-XX",	    
 	    ShareID: "654789127",
-	    From: "Celina PD",
+	    From: "Celina Police Department",
 		To: "3 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Secure Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "13-2015-CF-000001-0001-XX",	    
 	    ShareID: "654789128",
-	    From: "Plano PD",
+	    From: "Plano Police Department",
 		To: "1 Recipient",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Passcoded Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "13-2015-CF-000001-0001-XX",	    
 	    ShareID: "654789129",
-	    From: "Celina PD",
+	    From: "Celina Police Department",
 		To: "8 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Link Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "13-2015-CF-000001-0001-XX",	    
 	    ShareID: "654789130",
-	    From: "Plano PD",
+	    From: "Plano Police Department",
 		To: "3 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Secure Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "13-2015-CF-000001-0001-XX",	    
 	    ShareID: "654789131",
-	    From: "McKinney PD",
+	    From: "McKinney Police Department",
 		To: "2 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Secure Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "13-2015-CF-000001-0001-XX",	    
 	    ShareID: "654789132",
-	    From: "McKinney PD",
+	    From: "McKinney Police Department",
 		To: "5 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Secure Share",
 	    
 	    Downloads: "4"
 	},{
-	    ExportLabel: "Case-1234",	    
+	    ExportLabel: "13-2015-CF-000001-0001-XX",	    
 	    ShareID: "654789133",
-	    From: "Plano PD",
+	    From: "Plano Police Department",
 		To: "3 Recipients",
 	    SentOn: "01/09/14",
 	    ExpOn: "02/09/14",
 	    Size: "892MB",
-	    Type: "Secure",
+	    Type: "Secure Share",
 	    
 	    Downloads: "4"
 	}];
@@ -138,6 +138,7 @@ $(document).ready(function() {
         sortable: {
             mode: "single"
         },
+		scrollable: true,
         pageable: true,
         columns: [{
             template: "<input type='checkbox' class='checkbox' />",
@@ -151,8 +152,8 @@ $(document).ready(function() {
             filterable: false
         }, {
             field: "ExportLabel",
-            title: "Export Label",
-            width: 120,
+            title: "Reference Label",
+            width: 220,
             filterable: {
                 cell: {
                     operator: "gte"
@@ -172,7 +173,7 @@ $(document).ready(function() {
         }, {
             field: "From",
             title: "From",
-            width: 150,
+            width: 220,
             filterable: {
                 cell: {
                     showOperators: true
@@ -181,7 +182,7 @@ $(document).ready(function() {
         }, {
             field: "To",
             title: "To",
-            width: 150,
+            width: 120,
             filterable: {
                 cell: {
                     showOperators: true
@@ -191,12 +192,12 @@ $(document).ready(function() {
             field: "SentOn",
             title: "Sent On",
             format: "{0: MM/dd/yy HH:mm}",
-            width: 150
+            width: 100
         }, {
             field: "ExpOn",
             title: "Expires On",
             format: "{0: MM/dd/yy HH:mm}",
-            width: 150
+            width: 100
         }, {
             field: "Size",
             width: 80,
@@ -209,7 +210,7 @@ $(document).ready(function() {
         }, {
             field: "Type",
             title: "Type",
-            width: 80,
+            width: 150,
             filterable: {
                 cell: {
                     showOperators: false,
@@ -218,7 +219,7 @@ $(document).ready(function() {
             }
         }, {
             field: "Downloads",
-            width: 80,
+            width: 150,
             title: "Downloads",
             filterable: {
                 cell: {

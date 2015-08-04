@@ -10,6 +10,7 @@
 <link href="css/jquery.msgbox.css" rel="stylesheet" />
 
 <link rel="stylesheet" href="css/app.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
 <script src="js/modernizr.js"></script>
 <!--[if gte IE 9]>
@@ -33,38 +34,41 @@
 							<div class="small-12 medium-12 large-12 columns">
 									<div class="panel radius">
 										<div class="row">
-										    <div class="small-12 medium-6 large-6 columns">
-										        <label for="">Export Label: <span class="">Case 735728</span></label>	        
-										    </div><!-- end columns -->
-										    <div class="small-12 medium-6 large-6 columns">
-										        <label for="">Share ID: <span class="">22155</span></label>
+										    <div class="small-12 medium-12 large-12 columns">
+										        <label for=""><strong>Reference Label:</strong> <span class="">Case 735728</span></label>	        
 										    </div><!-- end columns -->
 										</div><!-- end row -->	
 										
 										<div class="row">
-										    <div class="small-12 medium-6 large-6 columns">		
-										        <label>From: <span class="">Plano PD</span></label>
+											<div class="small-12 medium-6 large-6 columns">
+										        <label for=""><strong>Share ID:</strong> <span class="">22155</span></label>
 										    </div><!-- end columns -->
-										    <div class="small-12 medium-6 large-6 columns">
-										        <label>To: <span class="">Jack Dawson, D.A.</span></label>
+										    
+										    <div class="small-12 medium-6 large-6 columns">		
+										        <label><strong>From:</strong> <span class="">Plano PD</span></label>
 										    </div><!-- end columns -->
 										</div><!-- end row -->
 
 										<div class="row">
-										    <div class="small-12 medium-6 large-6 columns">
-										        <label>Shared On: <span class="">01/16/15</span></label>	        
+											<div class="small-12 medium-6 large-6 columns">
+										        <label><strong>To:</strong> <span class="">Jack Dawson, D.A.</span></label>
 										    </div><!-- end columns -->
+										    
 										    <div class="small-12 medium-6 large-6 columns">
-										        <label>Expires On: <span class="">04/16/15</span></label>
+										        <label><strong>Sent On:</strong> <span class="">01/16/15</span></label>	        
 										    </div><!-- end columns -->
 										</div><!-- end row -->	
 
                                         <div class="row">
+										    <div class="small-12 medium-6 large-6 columns">
+										        <label><strong>Expires On:</strong> <span class="">04/16/15</span></label>
+										    </div><!-- end columns -->
+	
                                             <div class="small-12 medium-6 large-6 columns">
-                                                <label for="">Total Size: <span class="">780 MB</span></label>
+                                                <label for=""><strong>Total Size:</strong> <span class="">780 MB</span></label>
                                             </div><!-- end columns -->
                                         </div><!-- end row -->	
-									</div><!-- end div#forward-details -->
+									</div><!-- end panel -->
 								</div>
 						</div>
 						
@@ -78,13 +82,21 @@
 							<div class="small-12 medium-12 large-4 columns">
 								<label for="access-code" class="inline right">Enter Your Access Code</label>
 							</div><!-- end columns -->						    
-							<div class="small-12 medium-12 large-4 columns">
-								<input type="text" name="access-code"  id="access-code"  tabindex="" value="" />
+							<!--	To use the input error styling make sure you:
+								1) Add the error class to the parent .column of the input (this controls styling of the message)
+								2) Add the .error class to the input itself (this styles the input and removes the margin-bottom value)
+								3) Inject/Add/Show a small.error element below the input (this is where the message content is displayed)
+								reference: http://foundation.zurb.com/docs/components/forms.html								
+							 -->
+							<div class="small-12 medium-12 large-4 columns error">
+								<input type="text" name="access-code"  id="access-code"  class="error" value="" />
+								<small class="error">Error message example</small>
+								
 							</div><!-- end columns -->						    
 							<div class="small-12 medium-12 large-4 columns">
 								<!--input class="login_button button success right" type="submit" value="Sign In"  tabindex="4" /-->
 								<!-- using link for demo purposes to redirect to index.html page -->
-								<a href="javascript:void(0);" id="" class="download-button button success anim-button" data-original="Download" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download</a>
+								<a href="javascript:void(0);" id="" class="download-button button success" data-original="Download" data-active="Downloading"><i class="fa fa-cloud-download"></i> Download</a>
 							</div>
 						</div>
 					</div><!-- end div.panel radius --> 
@@ -95,7 +107,7 @@
 	<footer id="footer">
 		<div class="row">
 			<div class="small-12 medium-12 large-12 columns">
-				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved.</p>
+				<p>Copyright <sup>&reg;</sup> 2015 WatchGuard Video. All rights reserved. <a href="javascript:alert('help docs linked here');">Need Help?</a></p>
 			</div><!-- end columns --> 
 		</div><!-- end row --> 
 	</footer>

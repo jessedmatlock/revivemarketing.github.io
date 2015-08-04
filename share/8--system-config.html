@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="css/kendo-theme.css" />
 	<link rel="stylesheet" href="css/app.css" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-	
 
 	<script src="js/modernizr.js"></script>
 
@@ -46,8 +45,8 @@
 							<li  class=""><a href="7--org-config.html"><i class="fa fa-cogs"></i> Organization Config</a> </li>
 		                    <li  class=""><a href="#"> For TS:</a> </li>	
 		                    <li  class=""><a href="7--ts-config.html"><i class="fa fa-cogs"></i> TS Config</a> </li>		                    
-		                    <li  class="active"><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
-		                    <li  class=""><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
+		                    <li  class=""><a href="7--ts-settings.html"><i class="fa fa-cogs"></i> TS Settings</a> </li>		              
+		                    <li  class="active"><a href="8--system-config.html"><i class="fa fa-cogs"></i> System Config</a> </li>
 						</ul>
 					</li>
 					<li class="has-dropdown"> <a href="javascript:void(0);">Pages</a>
@@ -89,47 +88,10 @@
 	<section id="main-section" class="clearfix">
 		<div class="row" id="content">
 		    <div class="small-12 medium-12 large-12 columns">
-				<h4 class="panel-top-title dark-title"><i class="fa fa-cogs"></i> TS Settings</h4>												
-				<div class="panel radius">		
-					
-						<div class="row">
-						    <div class="small-12 medium-6 large-4 columns">
-								<label for="cs-reply-to-email-address">CS Reply-To Email Address</label>
-								<input type="text" name="CS Reply-To Email Address"  value="" tabindex="" />
-						    </div><!-- end columns -->
-								<div class="small-12 medium-12 large-8 columns text-right">
-									<br/>
-								    <label for="maint-mode-msg" class="switch-label">
-										<div class="switch tiny round">
-										  	<input id="maint-mode-msg" type="checkbox" name="maint-mode-msg">
-										  	<label for="maint-mode-msg"></label>
-											<div class="negative">N</div>
-											<div class="positive">Y</div>
-										</div>							        									    
-									Show System-wide Message?</label>								    
-							    </div><!-- end columns -->
-							</div><!-- end row -->
-							<div class="row display-none collapse" id="maint-mode">
-							    <div class="small-12 medium-12 large-12 columns">
-									<label for="maint-mode-msg">System Wide Message</label>
-									<textarea name="maint-mode-msg" id="maint-mode-msg" class=""></textarea>
-							    </div><!-- end columns -->
-							</div><!-- end row -->
-							<hr/>
-							
-							<div class="row">
-							    <div class="small-12 medium-12 large-12 columns">
-							        <div class="panel-actions">											
-								        <a href="javascript:void(0);" class="button secondary">Cancel</a>											                	
-										<a href="javascript:void(0);" class="button success anim-button" id="save-notes" data-original="Save" data-active="Saving ..."><i class="fa fa-floppy-o"></i> Save</a>											                	
-								    </div><!-- end panel-actions -->
-							    </div><!-- end columns -->
-							</div><!-- end row -->
-						</div><!-- end row -->
+				<h4 class="panel-top-title dark-title"><i class="fa fa-cogs"></i> System Configuration</h4>												
+				<div class="panel radius">													
 						
-																
-						
-					        <h5 class="">Manage Organizations</h5>
+					        <h5 class="">Section Heading</h5>
 							<div class="panel radius">
 								<div class="row">
 								    <div class="small-12 medium-12 large-12 columns table-actions">
@@ -137,14 +99,24 @@
 
 								    </div><!-- end columns -->
 								</div><!-- end row -->
-								<div id="manage-orgs"></div><!-- end div#manage-orgs -->		
 								
 							</div><!-- end div.panel radius -->
 					
-						
-							<h5 class="">TS Users</h5>	
+					        <h5 class="">Section Heading</h5>
 							<div class="panel radius">
-								
+								<div class="row">
+								    <div class="small-12 medium-12 large-12 columns">
+								        <div class="panel-actions">											
+									        <a href="javascript:void(0);" class="button secondary">Cancel</a>											                	
+											<a href="javascript:void(0);" class="button success anim-button" id="save-notes" data-original="Save Changes" data-active="Saving ..."><i class="fa fa-floppy-o"></i> Save Changes</a>											                	
+									    </div><!-- end panel-actions -->
+								    </div><!-- end columns -->
+								</div><!-- end row -->
+							
+							</div><!-- end div.panel radius -->
+						
+					        <h5 class="">Section Heading</h5>
+							<div class="panel radius">
 								<div class="row">
 								    <div class="small-12 medium-12 large-12 columns table-actions">
 									<a href="javascript:void(0);" data-modal="partials/invite-user.html" data-reveal-id="global-modal" data-reveal-ajax="true" class="global-modal button success small"><i class="fa fa-user-plus"></i> Invite User</a>
@@ -152,12 +124,11 @@
 								    </div><!-- end columns -->
 								</div><!-- end row -->
 
-								<div id="user-mgmt"></div><!-- end div#user-mgmt -->
 								
 							</div><!-- end div.panel radius -->
 														
 
-							<h5 class="">System Roles and Claims</h5>
+					        <h5 class="">Section Heading</h5>
 							<div class="panel radius">
 								<div class="row">
 								    <div class="small-12 medium-12 large-12 columns table-actions">
@@ -251,7 +222,7 @@
 							    <div class="small-12 medium-12 large-12 columns">
 							        <div class="panel-actions">											
 								        <a href="javascript:void(0);" class="button secondary">Cancel</a>											                	
-										<a href="javascript:void(0);" class="button success anim-button" id="save-notes" data-original="Save" data-active="Saving ..."><i class="fa fa-floppy-o"></i> Save</a>											                	
+										<a href="javascript:void(0);" class="button success anim-button" id="save-notes" data-original="Save Changes" data-active="Saving ..."><i class="fa fa-floppy-o"></i> Save Changes</a>											                	
 								    </div><!-- end panel-actions -->
 							    </div><!-- end columns -->
 							</div><!-- end row -->

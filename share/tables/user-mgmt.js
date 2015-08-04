@@ -45,6 +45,7 @@ $(document).ready(function() {
 		sortable: {
 		    mode: "single"
 		},	
+		scrollable : true,
         pageable: true,
         columns: [{
 		    template: kendo.template($("#user-mgmt-template").html()),
@@ -54,7 +55,7 @@ $(document).ready(function() {
         },{
             field: "Name",
             title: "Name",
-            //width: 150,
+            width: 200,
             filterable: {
                 cell: {
                     showOperators: true

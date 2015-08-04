@@ -30,6 +30,9 @@ jQuery(document).ready(function($){
 	// highlight the selected stream and scroll window to top and play it.
 	var timer;
 	$('.share-stream').on('click', function(){
+		$('#player-msg').hide();
+		$('#player-img').slideDown();
+		
 		item = $(this);
 		clearTimeout(timer);
 		// clear .active class from all others, apply to clicked - provides styling for actively playing stream
@@ -38,7 +41,7 @@ jQuery(document).ready(function($){
 		
 		// wait until our classes are applied and then scroll the window, just so the top of the player is at top of screen
 		timer = setTimeout(function() {
-			  $("html, body").animate({ scrollTop: 220 }, "slow");
+			  $("html, body").animate({ scrollTop: 205 }, "slow");
 		}, 250);					
 	});
 	
@@ -51,9 +54,26 @@ jQuery(document).ready(function($){
 				// set original content to data attr
 				button.data("original", button.html());		
 			if(original !== ''){
-				button.html('<i class="fa fa-refresh fa-spin"></i> '+ active);
+				button.html('<i class="fa fa-refresh fa-spin"></i> '+ active).attr('disabled', true);
 				setTimeout(function() {
-					button.html(button.data("original"));
+					button.attr('disabled', false).html(button.data("original"));
+				}, 2000);				
+			}
+		});
+		
+	
+		$(document).on('click', '.download-button', function(){
+			// apply the data attributes to the button, eg. data-original="Save Changes" data-active="Saving ..." and add the class .anim-button to init the function
+			var button = $(this),
+				original = button.attr('data-original', button.html()),
+				active = $(this).data('active') ? $(this).data('active') : 'Processing';
+				// set original content to data attr
+				button.data("original", button.html());		
+			if(original !== ''){
+				button.attr('disabled', false).html('<i class="fa fa-refresh fa-spin"></i> '+ active).attr('disabled', true);
+				setTimeout(function() {
+					$('<div class="alert-box radius success">Your download is being prepared. If you download does not start within 30 seconds, please click <a href="#">here</a> to restart it.</div>').insertAfter( button );
+					button.remove();
 				}, 2000);				
 			}
 		});
@@ -100,3 +120,9 @@ jQuery(document).ready(function($){
 	});
 
 }); // end docready
+
+$(window).on('resize load', function() {
+	var windowHeight = $(window).outerHeight(),
+		contentHeight = windowHeight - 185;
+	$('#main-section').css('min-height', contentHeight+'px');
+});

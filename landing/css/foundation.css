@@ -1698,7 +1698,8 @@ meta.foundation-mq-topbar {
   width: 58.75em; }
 
 /* Wrapped around .top-bar to contain to grid width */
-.contain-to-grid {
+.contain-to-grid,
+.nav-wrap {
   width: 100%;
   border-bottom: 1px solid #111;
   

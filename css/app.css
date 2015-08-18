@@ -6,22 +6,22 @@
 * http://www.telerik.com/purchase/license-agreement/kendo-ui-complete
 * If you do not own a commercial license, this file shall be governed by the trial license terms.
 */
-/* line 9, ../scss/kendoSilver.scss */
+/* line 9, ../scss/_kendoSilver.scss */
 .kendoSilver {
   font-size: 13px;
 }
-/* line 11, ../scss/kendoSilver.scss */
+/* line 11, ../scss/_kendoSilver.scss */
 .kendoSilver .k-in,
 .kendoSilver .k-item,
 .kendoSilver .k-window-action {
   border-color: transparent;
 }
-/* line 14, ../scss/kendoSilver.scss */
+/* line 14, ../scss/_kendoSilver.scss */
 .kendoSilver .k-block,
 .kendoSilver .k-widget {
   background: #fff;
 }
-/* line 16, ../scss/kendoSilver.scss */
+/* line 16, ../scss/_kendoSilver.scss */
 .kendoSilver .k-block,
 .kendoSilver .k-widget,
 .kendoSilver .k-input,
@@ -72,7 +72,7 @@
 .kendoSilver .k-upload-files {
   border-color: #dbdbde;
 }
-/* line 64, ../scss/kendoSilver.scss */
+/* line 64, ../scss/_kendoSilver.scss */
 .kendoSilver .k-group,
 .kendoSilver .k-toolbar,
 .kendoSilver .k-grouping-header,
@@ -86,18 +86,18 @@
 .kendoSilver .k-widget.k-popup {
   background: #fff;
 }
-/* line 75, ../scss/kendoSilver.scss */
+/* line 75, ../scss/_kendoSilver.scss */
 .kendoSilver .k-grouping-row td,
 .kendoSilver td.k-group-cell,
 .kendoSilver .k-resize-handle-inner {
   background: #f3f3f4;
 }
-/* line 78, ../scss/kendoSilver.scss */
+/* line 78, ../scss/_kendoSilver.scss */
 .kendoSilver .k-list-container {
   border-color: #dbdbde;
   background: #f3f3f4;
 }
-/* line 82, ../scss/kendoSilver.scss */
+/* line 82, ../scss/_kendoSilver.scss */
 .kendoSilver .k-content,
 .kendoSilver .k-editable-area,
 .kendoSilver .k-panelbar > li.k-item,
@@ -105,19 +105,19 @@
 .kendoSilver .k-tiles {
   background: #fff;
 }
-/* line 87, ../scss/kendoSilver.scss */
+/* line 87, ../scss/_kendoSilver.scss */
 .kendoSilver .k-alt,
 .kendoSilver .k-separator,
 .kendoSilver .k-resource.k-alt,
 .kendoSilver .k-pivot-layout > tbody > tr:first-child > td:first-child {
   background: #f9f9f9;
 }
-/* line 91, ../scss/kendoSilver.scss */
+/* line 91, ../scss/_kendoSilver.scss */
 .kendoSilver .k-pivot-rowheaders .k-alt .k-alt,
 .kendoSilver .k-header.k-alt {
   background: #e5e5e5;
 }
-/* line 93, ../scss/kendoSilver.scss */
+/* line 93, ../scss/_kendoSilver.scss */
 .kendoSilver .k-textbox,
 .kendoSilver .k-autocomplete.k-header,
 .kendoSilver .k-dropdown-wrap.k-state-active,
@@ -126,7 +126,7 @@
   border-color: #dbdbde;
   background: #f3f3f4;
 }
-/* line 101, ../scss/kendoSilver.scss */
+/* line 101, ../scss/_kendoSilver.scss */
 .kendoSilver .k-textbox > input,
 .kendoSilver .k-autocomplete .k-input,
 .kendoSilver .k-dropdown-wrap .k-input,
@@ -142,7 +142,7 @@
   border: 0;
   margin: 0;
 }
-/* line 116, ../scss/kendoSilver.scss */
+/* line 116, ../scss/_kendoSilver.scss */
 .kendoSilver input.k-textbox,
 .kendoSilver textarea.k-textbox,
 .kendoSilver input.k-textbox:hover,
@@ -150,7 +150,7 @@
 .kendoSilver .k-textbox > input {
   background: 0;
 }
-/* line 121, ../scss/kendoSilver.scss */
+/* line 121, ../scss/_kendoSilver.scss */
 .kendoSilver .k-input,
 .kendoSilver input.k-textbox,
 .kendoSilver textarea.k-textbox,
@@ -162,12 +162,12 @@
   color: #515967;
   min-height: 30px;
 }
-/* line 133, ../scss/kendoSilver.scss */
+/* line 133, ../scss/_kendoSilver.scss */
 .kendoSilver .k-input[readonly] {
   background: #fff;
   color: #515967;
 }
-/* line 137, ../scss/kendoSilver.scss */
+/* line 137, ../scss/_kendoSilver.scss */
 .kendoSilver .k-block,
 .kendoSilver .k-widget,
 .kendoSilver .k-popup,
@@ -176,32 +176,32 @@
 .kendoSilver .k-dropdown .k-input {
   color: #515967;
 }
-/* line 143, ../scss/kendoSilver.scss */
+/* line 143, ../scss/_kendoSilver.scss */
 .kendoSilver .k-inverse {
   color: #fff;
 }
-/* line 144, ../scss/kendoSilver.scss */
+/* line 144, ../scss/_kendoSilver.scss */
 .kendoSilver .k-block {
   color: #515967;
 }
-/* line 145, ../scss/kendoSilver.scss */
+/* line 145, ../scss/_kendoSilver.scss */
 .kendoSilver .k-link:link,
 .kendoSilver .k-link:visited,
 .kendoSilver .k-nav-current.k-state-hover .k-link {
   color: #515967;
 }
-/* line 148, ../scss/kendoSilver.scss */
+/* line 148, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tabstrip-items .k-link,
 .kendoSilver .k-panelbar > li > .k-link {
   color: #515967;
 }
-/* line 150, ../scss/kendoSilver.scss */
+/* line 150, ../scss/_kendoSilver.scss */
 .kendoSilver .k-header,
 .kendoSilver .k-treemap-title,
 .kendoSilver .k-grid-header .k-header > .k-link {
   color: #515967;
 }
-/* line 153, ../scss/kendoSilver.scss */
+/* line 153, ../scss/_kendoSilver.scss */
 .kendoSilver .k-header,
 .kendoSilver .k-grid-header,
 .kendoSilver .k-toolbar,
@@ -221,11 +221,11 @@
 .kendoSilver .km-pane-wrapper > .km-pane > .km-view > .km-content {
   background: #f3f3f4;
 }
-/* line 172, ../scss/kendoSilver.scss */
+/* line 172, ../scss/_kendoSilver.scss */
 .kendoSilver .k-widget.k-tooltip {
   background-image: url("textures/highlight.png");
 }
-/* line 173, ../scss/kendoSilver.scss */
+/* line 173, ../scss/_kendoSilver.scss */
 .kendoSilver .k-block,
 .kendoSilver .k-header,
 .kendoSilver .k-grid-header,
@@ -238,7 +238,7 @@
 .kendoSilver html .km-pane-wrapper .k-header {
   background: #f3f3f4;
 }
-/* line 183, ../scss/kendoSilver.scss */
+/* line 183, ../scss/_kendoSilver.scss */
 .kendoSilver .k-icon:hover,
 .kendoSilver .k-state-hover
 .k-state-selected .k-icon,
@@ -247,23 +247,23 @@
 .kendoSilver .k-column-menu .k-state-active .k-sprite {
   opacity: 1;
 }
-/* line 190, ../scss/kendoSilver.scss */
+/* line 190, ../scss/_kendoSilver.scss */
 .kendoSilver .k-icon,
 .kendoSilver .k-state-disabled .k-icon,
 .kendoSilver .k-column-menu .k-sprite {
   opacity: 0.9;
 }
-/* line 193, ../scss/kendoSilver.scss */
+/* line 193, ../scss/_kendoSilver.scss */
 .kendoSilver .k-mobile-list .k-check:checked,
 .kendoSilver .k-mobile-list .k-edit-field [type=checkbox]:checked,
 .kendoSilver .k-mobile-list .k-edit-field [type=radio]:checked {
   opacity: 0.9;
 }
-/* line 196, ../scss/kendoSilver.scss */
+/* line 196, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tool {
   border-color: transparent;
 }
-/* line 197, ../scss/kendoSilver.scss */
+/* line 197, ../scss/_kendoSilver.scss */
 .kendoSilver .k-icon,
 .kendoSilver .k-tool-icon,
 .kendoSilver .k-grouping-dropclue,
@@ -277,56 +277,56 @@
   background-image: url("../images/silver/sprite.png");
   border-color: transparent;
 }
-/* line 210, ../scss/kendoSilver.scss */
+/* line 210, ../scss/_kendoSilver.scss */
 .kendoSilver .k-loading,
 .kendoSilver .k-state-hover .k-loading {
   background-image: url("../images/silver/loading.gif");
   background-position: 50% 50%;
 }
-/* line 215, ../scss/kendoSilver.scss */
+/* line 215, ../scss/_kendoSilver.scss */
 .kendoSilver .k-loading-image {
   background-image: url("../images/silver/loading-image.gif");
 }
-/* line 216, ../scss/kendoSilver.scss */
+/* line 216, ../scss/_kendoSilver.scss */
 .kendoSilver .k-loading-color {
   background: #fff;
 }
-/* line 217, ../scss/kendoSilver.scss */
+/* line 217, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button {
   color: #515967;
   border-color: #dbdbde;
   background: #f3f3f4;
 }
-/* line 222, ../scss/kendoSilver.scss */
+/* line 222, ../scss/_kendoSilver.scss */
 .kendoSilver .k-draghandle {
   border-color: #dbdbde;
   background: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 228, ../scss/kendoSilver.scss */
+/* line 228, ../scss/_kendoSilver.scss */
 .kendoSilver .k-draghandle:hover {
   border-color: #b6bdca;
   background: #b6bdca;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 234, ../scss/kendoSilver.scss */
+/* line 234, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler {
   color: #515967;
   background: #fff;
 }
-/* line 238, ../scss/kendoSilver.scss */
+/* line 238, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-layout {
   color: #515967;
 }
-/* line 239, ../scss/kendoSilver.scss */
+/* line 239, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-datecolumn,
 .kendoSilver .k-scheduler-groupcolumn {
   background: #fff;
   color: #515967;
 }
-/* line 244, ../scss/kendoSilver.scss */
+/* line 244, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-times tr,
 .kendoSilver .k-scheduler-times th,
 .kendoSilver .k-scheduler-table td,
@@ -335,60 +335,60 @@
 .kendoSilver .k-scheduler-times {
   border-color: #dbdbde;
 }
-/* line 250, ../scss/kendoSilver.scss */
+/* line 250, ../scss/_kendoSilver.scss */
 .kendoSilver .k-nonwork-hour {
   background: #f7f7f7;
 }
-/* line 251, ../scss/kendoSilver.scss */
+/* line 251, ../scss/_kendoSilver.scss */
 .kendoSilver .k-gantt .k-nonwork-hour {
   background: rgba(0, 0, 0, 0.02);
 }
-/* line 252, ../scss/kendoSilver.scss */
+/* line 252, ../scss/_kendoSilver.scss */
 .kendoSilver .k-gantt .k-header.k-nonwork-hour {
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 253, ../scss/kendoSilver.scss */
+/* line 253, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-table .k-today,
 .kendoSilver .k-today > .k-scheduler-datecolumn,
 .kendoSilver .k-today > .k-scheduler-groupcolumn {
   background: #fbfbfb;
 }
-/* line 256, ../scss/kendoSilver.scss */
+/* line 256, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-now-arrow {
   border-left-color: #f00;
 }
-/* line 257, ../scss/kendoSilver.scss */
+/* line 257, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-now-line {
   background: #f00;
 }
-/* line 258, ../scss/kendoSilver.scss */
+/* line 258, ../scss/_kendoSilver.scss */
 .kendoSilver .k-event,
 .kendoSilver .k-task-complete {
   border-color: #b2e1ff;
   background: #b2e1ff 0 -257px url("textures/highlight.png") repeat-x;
   color: #515967;
 }
-/* line 264, ../scss/kendoSilver.scss */
+/* line 264, ../scss/_kendoSilver.scss */
 .kendoSilver .k-event-inverse {
   color: #fff;
 }
-/* line 265, ../scss/kendoSilver.scss */
+/* line 265, ../scss/_kendoSilver.scss */
 .kendoSilver .k-event.k-state-selected {
   background-position: 0 0;
 }
-/* line 266, ../scss/kendoSilver.scss */
+/* line 266, ../scss/_kendoSilver.scss */
 .kendoSilver .k-ie7 .k-event .k-resize-handle,
 .kendoSilver .k-event .k-resize-handle:after,
 .kendoSilver .k-ie7 .k-task-single .k-resize-handle,
 .kendoSilver .k-task-single .k-resize-handle:after {
   background: #285E8E;
 }
-/* line 270, ../scss/kendoSilver.scss */
+/* line 270, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-marquee:before,
 .kendoSilver .k-scheduler-marquee:after {
   border-color: #1984c8;
 }
-/* line 272, ../scss/kendoSilver.scss */
+/* line 272, ../scss/_kendoSilver.scss */
 .kendoSilver .k-panelbar .k-content,
 .kendoSilver .k-panelbar .k-panel,
 .kendoSilver .k-panelbar .k-item {
@@ -396,19 +396,19 @@
   color: #515967;
   border-color: #dbdbde;
 }
-/* line 279, ../scss/kendoSilver.scss */
+/* line 279, ../scss/_kendoSilver.scss */
 .kendoSilver .k-panelbar > li > .k-link {
   color: #515967;
 }
-/* line 280, ../scss/kendoSilver.scss */
+/* line 280, ../scss/_kendoSilver.scss */
 .kendoSilver .k-panelbar > .k-item > .k-link {
   border-color: #dbdbde;
 }
-/* line 281, ../scss/kendoSilver.scss */
+/* line 281, ../scss/_kendoSilver.scss */
 .kendoSilver .k-panel > li.k-item {
   background: #fff;
 }
-/* line 282, ../scss/kendoSilver.scss */
+/* line 282, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-active,
 .kendoSilver .k-state-active:hover,
 .kendoSilver .k-active-filter,
@@ -417,37 +417,37 @@
   border-color: #a6afbe;
   color: #515967;
 }
-/* line 290, ../scss/kendoSilver.scss */
+/* line 290, ../scss/_kendoSilver.scss */
 .kendoSilver .k-fieldselector .k-list-container {
   background: #fff;
 }
-/* line 291, ../scss/kendoSilver.scss */
+/* line 291, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button:focus,
 .kendoSilver .k-button.k-state-focused {
   border-color: #dbdbde;
 }
-/* line 293, ../scss/kendoSilver.scss */
+/* line 293, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button:hover,
 .kendoSilver .k-button.k-state-hover {
   color: #263248;
   border-color: #b6bdca;
   background: #b6bdca;
 }
-/* line 299, ../scss/kendoSilver.scss */
+/* line 299, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button:active,
 .kendoSilver .k-button.k-state-active {
   color: #fff;
   background: #285E8E;
   border-color: #285E8E;
 }
-/* line 305, ../scss/kendoSilver.scss */
+/* line 305, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button:active:hover,
 .kendoSilver .k-button.k-state-active:hover {
   color: #fff;
   border-color: #285E8E;
   background: #285E8E;
 }
-/* line 311, ../scss/kendoSilver.scss */
+/* line 311, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button[disabled],
 .kendoSilver .k-button.k-state-disabled,
 .kendoSilver .k-state-disabled .k-button,
@@ -459,83 +459,83 @@
   border-color: #dbdbde;
   background: #f3f3f4;
 }
-/* line 322, ../scss/kendoSilver.scss */
+/* line 322, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button:focus:not(.k-state-disabled):not([disabled]) {
   -webkit-box-shadow: inset 0 0 6px 0 #b6bdca;
   box-shadow: inset 0 0 6px 0 #b6bdca;
 }
-/* line 326, ../scss/kendoSilver.scss */
+/* line 326, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button:focus:active:not(.k-state-disabled):not([disabled]) {
   box-shadow: none;
   background: #285E8E;
   color: #fff;
 }
-/* line 331, ../scss/kendoSilver.scss */
+/* line 331, ../scss/_kendoSilver.scss */
 .kendoSilver .k-menu .k-state-hover > .k-state-active {
   background: transparent;
 }
-/* line 332, ../scss/kendoSilver.scss */
+/* line 332, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-highlight {
   background: #fff;
   color: #515967;
 }
-/* line 336, ../scss/kendoSilver.scss */
+/* line 336, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-focused,
 .kendoSilver .k-grouping-row .k-state-focused {
   border-color: #b6bdca;
 }
-/* line 338, ../scss/kendoSilver.scss */
+/* line 338, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar .k-link {
   color: #515967;
 }
-/* line 339, ../scss/kendoSilver.scss */
+/* line 339, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar .k-footer {
   padding: 0;
 }
-/* line 340, ../scss/kendoSilver.scss */
+/* line 340, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar .k-footer .k-nav-today {
   color: #515967;
   text-decoration: none;
   background: #fff;
 }
-/* line 345, ../scss/kendoSilver.scss */
+/* line 345, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar .k-footer .k-nav-today:hover,
 .kendoSilver .k-calendar .k-footer .k-nav-today.k-state-hover {
   background: #fff;
   text-decoration: underline;
 }
-/* line 350, ../scss/kendoSilver.scss */
+/* line 350, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar .k-footer .k-nav-today:active {
   background: #fff;
 }
-/* line 351, ../scss/kendoSilver.scss */
+/* line 351, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar .k-link.k-nav-fast {
   color: #515967;
 }
-/* line 352, ../scss/kendoSilver.scss */
+/* line 352, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar .k-nav-fast.k-state-hover {
   text-decoration: none;
   background: #b6bdca;
   color: #263248;
 }
-/* line 357, ../scss/kendoSilver.scss */
+/* line 357, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar .k-link.k-state-hover,
 .kendoSilver .k-window-titlebar .k-link {
   border-radius: 3px;
 }
-/* line 359, ../scss/kendoSilver.scss */
+/* line 359, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar .k-footer .k-link {
   border-radius: 0;
 }
-/* line 360, ../scss/kendoSilver.scss */
+/* line 360, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar th {
   background: #fff;
 }
-/* line 361, ../scss/kendoSilver.scss */
+/* line 361, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar-container.k-group {
   border-color: #dbdbde;
 }
-/* line 362, ../scss/kendoSilver.scss */
+/* line 362, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-selected,
 .kendoSilver .k-state-selected:link,
 .kendoSilver .k-state-selected:visited,
@@ -552,11 +552,11 @@
   background: #285E8E !important;
   border-color: #285E8E !important;
 }
-/* line 378, ../scss/kendoSilver.scss */
+/* line 378, ../scss/_kendoSilver.scss */
 .kendoSilver .k-marquee-text {
   color: #fff;
 }
-/* line 379, ../scss/kendoSilver.scss */
+/* line 379, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-focused,
 .kendoSilver .k-list > .k-state-focused,
 .kendoSilver .k-listview > .k-state-focused,
@@ -566,7 +566,7 @@
   -webkit-box-shadow: inset 0 0 6px 0 #b6bdca;
   box-shadow: inset 0 0 6px 0 #b6bdca;
 }
-/* line 388, ../scss/kendoSilver.scss */
+/* line 388, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-focused.k-state-selected,
 .kendoSilver .k-list > .k-state-focused.k-state-selected,
 .kendoSilver .k-listview > .k-state-focused.k-state-selected,
@@ -575,7 +575,7 @@
   box-shadow: none !important;
   color: #fff !important;
 }
-/* line 397, ../scss/kendoSilver.scss */
+/* line 397, ../scss/_kendoSilver.scss */
 .kendoSilver .k-ie8 .k-panelbar span.k-state-focused,
 .kendoSilver .k-ie8 .k-menu li.k-state-focused,
 .kendoSilver .k-ie8 .k-listview > .k-state-focused,
@@ -595,18 +595,18 @@
   background: #b6bdca;
   box-shadow: none !important;
 }
-/* line 413, ../scss/kendoSilver.scss */
+/* line 413, ../scss/_kendoSilver.scss */
 .kendoSilver .k-list > .k-state-selected.k-state-focused {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 417, ../scss/kendoSilver.scss */
+/* line 417, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-selected > .k-link,
 .kendoSilver .k-panelbar > li > .k-state-selected,
 .kendoSilver .k-panelbar > li.k-state-default > .k-link.k-state-selected {
   color: #fff;
 }
-/* line 420, ../scss/kendoSilver.scss */
+/* line 420, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-hover,
 .kendoSilver .k-state-hover:hover,
 .kendoSilver .k-splitbar-horizontal-hover:hover,
@@ -624,23 +624,23 @@
   background: #b6bdca;
   border-color: #b6bdca;
 }
-/* line 437, ../scss/kendoSilver.scss */
+/* line 437, ../scss/_kendoSilver.scss */
 .kendoSilver .k-mobile-list .k-scheduler-timezones .k-edit-field:nth-child(2):active {
   color: #263248;
   background: #b6bdca;
   border-color: #b6bdca;
 }
-/* line 442, ../scss/kendoSilver.scss */
+/* line 442, ../scss/_kendoSilver.scss */
 .kendoSilver .k-ie7 .k-window-titlebar .k-state-hover,
 .kendoSilver .k-ie8 .k-window-titlebar .k-state-hover {
   border-color: #b6bdca;
 }
-/* line 444, ../scss/kendoSilver.scss */
+/* line 444, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-hover > .k-select,
 .kendoSilver .k-state-focused > .k-select {
   border-color: #b6bdca;
 }
-/* line 446, ../scss/kendoSilver.scss */
+/* line 446, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button:hover,
 .kendoSilver .k-button.k-state-hover,
 .kendoSilver .k-button:focus,
@@ -654,12 +654,12 @@
 .kendoSilver .k-draghandle:hover {
   background: #b6bdca;
 }
-/* line 459, ../scss/kendoSilver.scss */
+/* line 459, ../scss/_kendoSilver.scss */
 .kendoSilver .k-pager-wrap {
   background: #f3f3f4;
   color: #515967;
 }
-/* line 463, ../scss/kendoSilver.scss */
+/* line 463, ../scss/_kendoSilver.scss */
 .kendoSilver .k-autocomplete.k-state-active,
 .kendoSilver .k-picker-wrap.k-state-active,
 .kendoSilver .k-numeric-wrap.k-state-active,
@@ -671,30 +671,30 @@
 .kendoSilver .k-panelbar > .k-item > .k-state-focused {
   background-image: none;
 }
-/* line 472, ../scss/kendoSilver.scss */
+/* line 472, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-selected,
 .kendoSilver .k-button:active,
 .kendoSilver .k-button.k-state-active,
 .kendoSilver .k-draghandle.k-state-selected:hover {
   background: #f3f3f4;
 }
-/* line 478, ../scss/kendoSilver.scss */
+/* line 478, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button:active,
 .kendoSilver .k-button.k-state-active,
 .kendoSilver .k-draghandle.k-state-selected:hover {
   background-position: 50% 50%;
 }
-/* line 481, ../scss/kendoSilver.scss */
+/* line 481, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tool-icon {
   background-image: url("../images/silver/sprite.png");
 }
-/* line 482, ../scss/kendoSilver.scss */
+/* line 482, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-hover > .k-link,
 .kendoSilver .k-other-month.k-state-hover .k-link,
 .kendoSilver div.k-filebrowser-dropzone em {
   color: #263248;
 }
-/* line 485, ../scss/kendoSilver.scss */
+/* line 485, ../scss/_kendoSilver.scss */
 .kendoSilver .k-autocomplete.k-state-hover,
 .kendoSilver .k-autocomplete.k-state-focused,
 .kendoSilver .k-picker-wrap.k-state-hover,
@@ -706,40 +706,40 @@
   background: #b6bdca;
   border-color: #b6bdca;
 }
-/* line 496, ../scss/kendoSilver.scss */
+/* line 496, ../scss/_kendoSilver.scss */
 .kendoSilver .km-pane-wrapper .k-mobile-list input:not([type="checkbox"]):not([type="radio"]),
 .kendoSilver .km-pane-wrapper .km-pane .k-mobile-list select:not([multiple]),
 .kendoSilver .km-pane-wrapper .k-mobile-list textarea,
 .kendoSilver .k-dropdown .k-state-focused .k-input {
   color: #515967;
 }
-/* line 500, ../scss/kendoSilver.scss */
+/* line 500, ../scss/_kendoSilver.scss */
 .kendoSilver .k-dropdown .k-state-hover .k-input {
   color: #263248;
 }
-/* line 501, ../scss/kendoSilver.scss */
+/* line 501, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-error {
   border-color: #f00;
   background: #fff;
   color: #f00;
 }
-/* line 506, ../scss/kendoSilver.scss */
+/* line 506, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-disabled {
   opacity: 0.7;
 }
-/* line 507, ../scss/kendoSilver.scss */
+/* line 507, ../scss/_kendoSilver.scss */
 .kendoSilver .k-ie7 .k-state-disabled,
 .kendoSilver .k-ie8 .k-state-disabled {
   filter: alpha(opacity=70);
 }
-/* line 509, ../scss/kendoSilver.scss */
+/* line 509, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tile-empty.k-state-selected,
 .kendoSilver .k-loading-mask.k-state-selected {
   border-width: 0;
   background-image: none;
   background: transparent;
 }
-/* line 515, ../scss/kendoSilver.scss */
+/* line 515, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-disabled,
 .kendoSilver .k-state-disabled .k-link,
 .kendoSilver .k-state-disabled .k-button,
@@ -751,143 +751,143 @@
 .kendoSilver .k-slider .k-draghandle {
   color: #b3bac7;
 }
-/* line 525, ../scss/kendoSilver.scss */
+/* line 525, ../scss/_kendoSilver.scss */
 .kendoSilver .k-widget.k-tooltip {
   border-color: #285E8E;
   background: #285E8E;
   color: #fff;
 }
-/* line 530, ../scss/kendoSilver.scss */
+/* line 530, ../scss/_kendoSilver.scss */
 .kendoSilver .k-widget.k-tooltip-validation {
   border-color: #ffe79e;
   background: #fff4c9;
   color: #263248;
 }
-/* line 535, ../scss/kendoSilver.scss */
+/* line 535, ../scss/_kendoSilver.scss */
 .kendoSilver .input-prepend .k-tooltip-validation,
 .kendoSilver .input-append .k-tooltip-validation {
   font-size: 12px;
   position: relative;
   top: 3px;
 }
-/* line 541, ../scss/kendoSilver.scss */
+/* line 541, ../scss/_kendoSilver.scss */
 .kendoSilver .k-callout-n {
   border-bottom-color: #1984c8;
 }
-/* line 542, ../scss/kendoSilver.scss */
+/* line 542, ../scss/_kendoSilver.scss */
 .kendoSilver .k-callout-w {
   border-right-color: #1984c8;
 }
-/* line 543, ../scss/kendoSilver.scss */
+/* line 543, ../scss/_kendoSilver.scss */
 .kendoSilver .k-callout-s {
   border-top-color: #1984c8;
 }
-/* line 544, ../scss/kendoSilver.scss */
+/* line 544, ../scss/_kendoSilver.scss */
 .kendoSilver .k-callout-e {
   border-left-color: #1984c8;
 }
-/* line 545, ../scss/kendoSilver.scss */
+/* line 545, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tooltip-validation .k-callout-n {
   border-bottom-color: #ffe79e;
 }
-/* line 546, ../scss/kendoSilver.scss */
+/* line 546, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tooltip-validation .k-callout-w {
   border-right-color: #ffe79e;
 }
-/* line 547, ../scss/kendoSilver.scss */
+/* line 547, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tooltip-validation .k-callout-s {
   border-top-color: #ffe79e;
 }
-/* line 548, ../scss/kendoSilver.scss */
+/* line 548, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tooltip-validation .k-callout-e {
   border-left-color: #ffe79e;
 }
-/* line 549, ../scss/kendoSilver.scss */
+/* line 549, ../scss/_kendoSilver.scss */
 .kendoSilver .k-splitbar {
   background: #f3f3f4;
 }
-/* line 550, ../scss/kendoSilver.scss */
+/* line 550, ../scss/_kendoSilver.scss */
 .kendoSilver .k-restricted-size-vertical,
 .kendoSilver .k-restricted-size-horizontal {
   background: #f00;
 }
-/* line 552, ../scss/kendoSilver.scss */
+/* line 552, ../scss/_kendoSilver.scss */
 .kendoSilver .k-file {
   background: #fff;
   border-color: #dbdbde;
 }
-/* line 556, ../scss/kendoSilver.scss */
+/* line 556, ../scss/_kendoSilver.scss */
 .kendoSilver .k-file-progress {
   color: #06c;
 }
-/* line 557, ../scss/kendoSilver.scss */
+/* line 557, ../scss/_kendoSilver.scss */
 .kendoSilver .k-file-progress .k-progress {
   background: #d0f8ff;
 }
-/* line 558, ../scss/kendoSilver.scss */
+/* line 558, ../scss/_kendoSilver.scss */
 .kendoSilver .k-file-success {
   color: #28760b;
 }
-/* line 559, ../scss/kendoSilver.scss */
+/* line 559, ../scss/_kendoSilver.scss */
 .kendoSilver .k-file-success .k-progress {
   background: #ddffd0;
 }
-/* line 560, ../scss/kendoSilver.scss */
+/* line 560, ../scss/_kendoSilver.scss */
 .kendoSilver .k-file-error {
   color: #c00;
 }
-/* line 561, ../scss/kendoSilver.scss */
+/* line 561, ../scss/_kendoSilver.scss */
 .kendoSilver .k-file-error .k-progress {
   background: #ffded7;
 }
-/* line 562, ../scss/kendoSilver.scss */
+/* line 562, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tile {
   border-color: #fff;
 }
-/* line 563, ../scss/kendoSilver.scss */
+/* line 563, ../scss/_kendoSilver.scss */
 .kendoSilver .k-textbox:hover,
 .kendoSilver .k-tiles li.k-state-hover {
   border-color: #b6bdca;
 }
-/* line 565, ../scss/kendoSilver.scss */
+/* line 565, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tiles li.k-state-selected {
   border-color: #1984c8;
 }
-/* line 566, ../scss/kendoSilver.scss */
+/* line 566, ../scss/_kendoSilver.scss */
 .kendoSilver .k-filebrowser .k-tile .k-folder,
 .kendoSilver .k-filebrowser .k-tile .k-file {
   background-image: url("../images/silver/imagebrowser.png");
   background-size: auto auto;
 }
-/* line 571, ../scss/kendoSilver.scss */
+/* line 571, ../scss/_kendoSilver.scss */
 .kendoSilver .k-leaf,
 .kendoSilver .k-leaf.k-state-hover:hover {
   color: #fff;
 }
-/* line 573, ../scss/kendoSilver.scss */
+/* line 573, ../scss/_kendoSilver.scss */
 .kendoSilver .k-leaf.k-inverse,
 .kendoSilver .k-leaf.k-inverse.k-state-hover:hover {
   color: #000;
 }
-/* line 575, ../scss/kendoSilver.scss */
+/* line 575, ../scss/_kendoSilver.scss */
 .kendoSilver .k-widget,
 .kendoSilver .k-button {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 580, ../scss/kendoSilver.scss */
+/* line 580, ../scss/_kendoSilver.scss */
 .kendoSilver .k-slider,
 .kendoSilver .k-treeview,
 .kendoSilver .k-upload {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 586, ../scss/kendoSilver.scss */
+/* line 586, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-hover {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 590, ../scss/kendoSilver.scss */
+/* line 590, ../scss/_kendoSilver.scss */
 .kendoSilver .k-autocomplete.k-state-focused,
 .kendoSilver .k-dropdown-wrap.k-state-focused,
 .kendoSilver .k-picker-wrap.k-state-focused,
@@ -895,22 +895,22 @@
   -webkit-box-shadow: 0 0 3px 0 rgba(82, 90, 104, 0.2);
   box-shadow: 0 0 3px 0 rgba(82, 90, 104, 0.2);
 }
-/* line 597, ../scss/kendoSilver.scss */
+/* line 597, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-selected {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 601, ../scss/kendoSilver.scss */
+/* line 601, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-active {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 605, ../scss/kendoSilver.scss */
+/* line 605, ../scss/_kendoSilver.scss */
 .kendoSilver .k-grid td.k-state-selected.k-state-focused {
   background: #285E8E;
   color: #fff;
 }
-/* line 607, ../scss/kendoSilver.scss */
+/* line 607, ../scss/_kendoSilver.scss */
 .kendoSilver .k-popup,
 .kendoSilver .k-menu .k-menu-group,
 .kendoSilver .k-grid .k-filter-options,
@@ -926,147 +926,147 @@
   -webkit-box-shadow: 0 2px 2px 0 rgba(82, 90, 104, 0.2);
   box-shadow: 0 2px 2px 0 rgba(82, 90, 104, 0.2);
 }
-/* line 622, ../scss/kendoSilver.scss */
+/* line 622, ../scss/_kendoSilver.scss */
 .kendoSilver .k-treemap-tile.k-state-hover {
   -webkit-box-shadow: inset 0 0 0 3px #dbdbde;
   box-shadow: inset 0 0 0 3px #dbdbde;
 }
-/* line 626, ../scss/kendoSilver.scss */
+/* line 626, ../scss/_kendoSilver.scss */
 .kendoSilver .k-window {
   border-color: rgba(82, 90, 104, 0.2);
   -webkit-box-shadow: 0 0 6px 0 rgba(216, 219, 225, 0.2);
   box-shadow: 0 0 6px 0 rgba(216, 219, 225, 0.2);
   background: #fff;
 }
-/* line 632, ../scss/kendoSilver.scss */
+/* line 632, ../scss/_kendoSilver.scss */
 .kendoSilver .k-window.k-state-focused {
   border-color: rgba(82, 90, 104, 0.2);
   -webkit-box-shadow: 0 0 6px 0 rgba(82, 90, 104, 0.2);
   box-shadow: 0 0 6px 0 rgba(82, 90, 104, 0.2);
 }
-/* line 637, ../scss/kendoSilver.scss */
+/* line 637, ../scss/_kendoSilver.scss */
 .kendoSilver .k-window.k-window-maximized,
 .kendoSilver .k-window-maximized .k-window-titlebar,
 .kendoSilver .k-window-maximized .k-window-content {
   border-radius: 0;
 }
-/* line 640, ../scss/kendoSilver.scss */
+/* line 640, ../scss/_kendoSilver.scss */
 .kendoSilver .k-shadow {
   -webkit-box-shadow: 0 1px 2px 0 rgba(82, 90, 104, 0.2);
   box-shadow: 0 1px 2px 0 rgba(82, 90, 104, 0.2);
 }
-/* line 644, ../scss/kendoSilver.scss */
+/* line 644, ../scss/_kendoSilver.scss */
 .kendoSilver .k-inset {
   -webkit-box-shadow: inset 0 1px 1px rgba(82, 90, 104, 0.2);
   box-shadow: inset 0 1px 1px rgba(82, 90, 104, 0.2);
 }
-/* line 648, ../scss/kendoSilver.scss */
+/* line 648, ../scss/_kendoSilver.scss */
 .kendoSilver .k-editor-inline ::selection {
   background: #285E8E;
   text-shadow: none;
   color: #fff;
 }
-/* line 653, ../scss/kendoSilver.scss */
+/* line 653, ../scss/_kendoSilver.scss */
 .kendoSilver .k-editor-inline ::-moz-selection {
   background: #285E8E;
   text-shadow: none;
   color: #fff;
 }
-/* line 658, ../scss/kendoSilver.scss */
+/* line 658, ../scss/_kendoSilver.scss */
 .kendoSilver .k-notification.k-notification-info {
   background: #e5f5fa;
   color: #0487c4;
   border-color: #b7e1f0;
 }
-/* line 663, ../scss/kendoSilver.scss */
+/* line 663, ../scss/_kendoSilver.scss */
 .kendoSilver .k-notification.k-notification-success {
   background: #eaf7ec;
   color: #349946;
   border-color: #c3e8ca;
 }
-/* line 668, ../scss/kendoSilver.scss */
+/* line 668, ../scss/_kendoSilver.scss */
 .kendoSilver .k-notification.k-notification-warning {
   background: #fff4d9;
   color: #0487c4;
   border-color: #fff0c8;
 }
-/* line 673, ../scss/kendoSilver.scss */
+/* line 673, ../scss/_kendoSilver.scss */
 .kendoSilver .k-notification.k-notification-error {
   background: #ffe0d9;
   color: #ef470a;
   border-color: #ffb7a8;
 }
-/* line 678, ../scss/kendoSilver.scss */
+/* line 678, ../scss/_kendoSilver.scss */
 .kendoSilver .k-gantt .k-treelist {
   background: #f9f9f9;
 }
-/* line 679, ../scss/kendoSilver.scss */
+/* line 679, ../scss/_kendoSilver.scss */
 .kendoSilver .k-gantt .k-treelist .k-alt {
   background: #e0e0e0;
 }
-/* line 680, ../scss/kendoSilver.scss */
+/* line 680, ../scss/_kendoSilver.scss */
 .kendoSilver .k-gantt .k-treelist .k-state-selected,
 .kendoSilver .k-gantt .k-treelist .k-state-selected td,
 .kendoSilver .k-gantt .k-treelist .k-alt.k-state-selected,
 .kendoSilver .k-gantt .k-treelist .k-alt.k-state-selected > td {
   background: #285E8E;
 }
-/* line 684, ../scss/kendoSilver.scss */
+/* line 684, ../scss/_kendoSilver.scss */
 .kendoSilver .k-task-dot:after {
   background: #515967;
   border-color: #515967;
 }
-/* line 688, ../scss/kendoSilver.scss */
+/* line 688, ../scss/_kendoSilver.scss */
 .kendoSilver .k-task-dot:hover:after {
   background: #fff;
 }
-/* line 689, ../scss/kendoSilver.scss */
+/* line 689, ../scss/_kendoSilver.scss */
 .kendoSilver .k-task-summary {
   border-color: #9099a8;
   background: #9099a8;
 }
-/* line 693, ../scss/kendoSilver.scss */
+/* line 693, ../scss/_kendoSilver.scss */
 .kendoSilver .k-task-milestone,
 .kendoSilver .k-task-summary-complete {
   border-color: #515967;
   background: #515967;
 }
-/* line 698, ../scss/kendoSilver.scss */
+/* line 698, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-selected.k-task-summary {
   border-color: #73beee;
   background: #73beee;
 }
-/* line 702, ../scss/kendoSilver.scss */
+/* line 702, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-selected.k-task-milestone,
 .kendoSilver .k-state-selected .k-task-summary-complete {
   border-color: #285E8E;
   background: #285E8E;
 }
-/* line 707, ../scss/kendoSilver.scss */
+/* line 707, ../scss/_kendoSilver.scss */
 .kendoSilver .k-task-single {
   background: #d6efff;
   border-color: #b2e1ff;
   color: #515967;
 }
-/* line 712, ../scss/kendoSilver.scss */
+/* line 712, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-selected.k-task-single {
   border-color: #1984c8;
 }
-/* line 713, ../scss/kendoSilver.scss */
+/* line 713, ../scss/_kendoSilver.scss */
 .kendoSilver .k-line {
   background: #515967;
   color: #fff;
 }
-/* line 717, ../scss/kendoSilver.scss */
+/* line 717, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-selected.k-line {
   background: #285E8E;
   color: #fff;
 }
-/* line 721, ../scss/kendoSilver.scss */
+/* line 721, ../scss/_kendoSilver.scss */
 .kendoSilver .k-resource {
   background: #fff;
 }
-/* line 722, ../scss/kendoSilver.scss */
+/* line 722, ../scss/_kendoSilver.scss */
 .kendoSilver .k-i-kpi-decrease,
 .kendoSilver .k-i-kpi-denied,
 .kendoSilver .k-i-kpi-equal,
@@ -1075,7 +1075,7 @@
 .kendoSilver .k-i-kpi-open {
   background-image: url("../images/silver/sprite_kpi.png");
 }
-/* line 728, ../scss/kendoSilver.scss */
+/* line 728, ../scss/_kendoSilver.scss */
 .kendoSilver .k-block,
 .kendoSilver .k-button,
 .kendoSilver .k-textbox,
@@ -1114,40 +1114,40 @@
 .kendoSilver .k-upload {
   border-radius: 4px;
 }
-/* line 764, ../scss/kendoSilver.scss */
+/* line 764, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tool {
   text-align: center;
   vertical-align: middle;
 }
-/* line 768, ../scss/kendoSilver.scss */
+/* line 768, ../scss/_kendoSilver.scss */
 .kendoSilver .k-datetimepicker {
   width: 100%;
 }
-/* line 772, ../scss/kendoSilver.scss */
+/* line 772, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tool.k-group-start,
 .kendoSilver .k-toolbar .k-split-button .k-button,
 .kendoSilver .k-toolbar .k-button-group .k-group-start {
   border-radius: 3px 0 0 3px;
 }
-/* line 775, ../scss/kendoSilver.scss */
+/* line 775, ../scss/_kendoSilver.scss */
 .kendoSilver .k-rtl .k-tool.k-group-start {
   border-radius: 0 3px 3px 0;
 }
-/* line 776, ../scss/kendoSilver.scss */
+/* line 776, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tool.k-group-end,
 .kendoSilver .k-toolbar .k-button-group .k-group-end,
 .kendoSilver .k-toolbar .k-split-button .k-split-button-arrow {
   border-radius: 0 3px 3px 0;
 }
-/* line 779, ../scss/kendoSilver.scss */
+/* line 779, ../scss/_kendoSilver.scss */
 .kendoSilver .k-rtl .k-tool.k-group-end {
   border-radius: 3px 0 0 3px;
 }
-/* line 780, ../scss/kendoSilver.scss */
+/* line 780, ../scss/_kendoSilver.scss */
 .kendoSilver .k-group-start.k-group-end.k-tool {
   border-radius: 3px;
 }
-/* line 781, ../scss/kendoSilver.scss */
+/* line 781, ../scss/_kendoSilver.scss */
 .kendoSilver .k-calendar-container.k-state-border-up,
 .kendoSilver .k-list-container.k-state-border-up,
 .kendoSilver .k-autocomplete.k-state-border-up,
@@ -1159,7 +1159,7 @@
 .kendoSilver .k-filter-menu {
   border-radius: 0 0 3px 3px;
 }
-/* line 790, ../scss/kendoSilver.scss */
+/* line 790, ../scss/_kendoSilver.scss */
 .kendoSilver .k-autocomplete.k-state-border-up .k-input,
 .kendoSilver .k-dropdown-wrap.k-state-border-up .k-input,
 .kendoSilver .k-picker-wrap.k-state-border-up .k-input,
@@ -1167,11 +1167,11 @@
 .kendoSilver .k-numeric-wrap.k-state-border-up .k-input {
   border-radius: 0 0 0 3px;
 }
-/* line 795, ../scss/kendoSilver.scss */
+/* line 795, ../scss/_kendoSilver.scss */
 .kendoSilver .k-multiselect.k-state-border-up .k-multiselect-wrap {
   border-radius: 0 0 3px 3px;
 }
-/* line 796, ../scss/kendoSilver.scss */
+/* line 796, ../scss/_kendoSilver.scss */
 .kendoSilver .k-window-titlebar,
 .kendoSilver .k-block > .k-header,
 .kendoSilver .k-tabstrip-items .k-item,
@@ -1186,70 +1186,70 @@
 .kendoSilver .k-numeric-wrap.k-state-border-down {
   border-radius: 3px 3px 0 0;
 }
-/* line 808, ../scss/kendoSilver.scss */
+/* line 808, ../scss/_kendoSilver.scss */
 .kendoSilver .k-split-button.k-state-border-down > .k-button {
   border-radius: 3px 0 0 0;
 }
-/* line 809, ../scss/kendoSilver.scss */
+/* line 809, ../scss/_kendoSilver.scss */
 .kendoSilver .k-split-button.k-state-border-up > .k-button {
   border-radius: 0 0 0 3px;
 }
-/* line 810, ../scss/kendoSilver.scss */
+/* line 810, ../scss/_kendoSilver.scss */
 .kendoSilver .k-split-button.k-state-border-down > .k-split-button-arrow {
   border-radius: 0 3px 0 0;
 }
-/* line 811, ../scss/kendoSilver.scss */
+/* line 811, ../scss/_kendoSilver.scss */
 .kendoSilver .k-split-button.k-state-border-up > .k-split-button-arrow {
   border-radius: 0 0 3px 0;
 }
-/* line 812, ../scss/kendoSilver.scss */
+/* line 812, ../scss/_kendoSilver.scss */
 .kendoSilver .k-dropdown-wrap .k-input,
 .kendoSilver .k-picker-wrap .k-input,
 .kendoSilver .k-numeric-wrap .k-input {
   border-radius: 3px 0 0 3px;
 }
-/* line 815, ../scss/kendoSilver.scss */
+/* line 815, ../scss/_kendoSilver.scss */
 .kendoSilver .k-rtl .k-dropdown-wrap .k-input,
 .kendoSilver .k-rtl .k-picker-wrap .k-input,
 .kendoSilver .k-rtl .k-numeric-wrap .k-input {
   border-radius: 0 3px 3px 0;
 }
-/* line 818, ../scss/kendoSilver.scss */
+/* line 818, ../scss/_kendoSilver.scss */
 .kendoSilver .k-numeric-wrap .k-link {
   border-radius: 0 3px 0 0;
 }
-/* line 819, ../scss/kendoSilver.scss */
+/* line 819, ../scss/_kendoSilver.scss */
 .kendoSilver .k-numeric-wrap .k-link + .k-link {
   border-radius: 0 0 3px 0;
 }
-/* line 820, ../scss/kendoSilver.scss */
+/* line 820, ../scss/_kendoSilver.scss */
 .kendoSilver .k-colorpicker .k-selected-color {
   border-radius: 3px 0 0 3px;
 }
-/* line 821, ../scss/kendoSilver.scss */
+/* line 821, ../scss/_kendoSilver.scss */
 .kendoSilver .k-rtl .k-colorpicker .k-selected-color {
   border-radius: 0 3px 3px 0;
 }
-/* line 822, ../scss/kendoSilver.scss */
+/* line 822, ../scss/_kendoSilver.scss */
 .kendoSilver .k-autocomplete.k-state-border-down .k-input {
   border-radius: 3px 3px 0 0;
 }
-/* line 823, ../scss/kendoSilver.scss */
+/* line 823, ../scss/_kendoSilver.scss */
 .kendoSilver .k-dropdown-wrap.k-state-border-down .k-input,
 .kendoSilver .k-picker-wrap.k-state-border-down .k-input,
 .kendoSilver .k-picker-wrap.k-state-border-down .k-selected-color,
 .kendoSilver .k-numeric-wrap.k-state-border-down .k-input {
   border-radius: 3px 0 0 0;
 }
-/* line 827, ../scss/kendoSilver.scss */
+/* line 827, ../scss/_kendoSilver.scss */
 .kendoSilver .k-numeric-wrap .k-link.k-state-selected {
   background: #285E8E;
 }
-/* line 828, ../scss/kendoSilver.scss */
+/* line 828, ../scss/_kendoSilver.scss */
 .kendoSilver .k-multiselect.k-state-border-down .k-multiselect-wrap {
   border-radius: 3px 3px 0 0;
 }
-/* line 829, ../scss/kendoSilver.scss */
+/* line 829, ../scss/_kendoSilver.scss */
 .kendoSilver .k-dropdown-wrap .k-select,
 .kendoSilver .k-picker-wrap .k-select,
 .kendoSilver .k-numeric-wrap .k-select,
@@ -1257,7 +1257,7 @@
 .kendoSilver .k-list-container.k-state-border-right {
   border-radius: 0 3px 3px 0;
 }
-/* line 834, ../scss/kendoSilver.scss */
+/* line 834, ../scss/_kendoSilver.scss */
 .kendoSilver .k-rtl .k-dropdown-wrap .k-select,
 .kendoSilver .k-rtl .k-picker-wrap .k-select,
 .kendoSilver .k-rtl .k-numeric-wrap .k-select,
@@ -1265,17 +1265,17 @@
 .kendoSilver .k-rtl .k-list-container.k-state-border-right {
   border-radius: 3px 0 0 3px;
 }
-/* line 839, ../scss/kendoSilver.scss */
+/* line 839, ../scss/_kendoSilver.scss */
 .kendoSilver .k-numeric-wrap.k-expand-padding .k-input {
   border-radius: 3px;
 }
-/* line 840, ../scss/kendoSilver.scss */
+/* line 840, ../scss/_kendoSilver.scss */
 .kendoSilver .k-textbox > input,
 .kendoSilver .k-autocomplete .k-input,
 .kendoSilver .k-multiselect-wrap {
   border-radius: 3px;
 }
-/* line 843, ../scss/kendoSilver.scss */
+/* line 843, ../scss/_kendoSilver.scss */
 .kendoSilver .k-list .k-state-hover,
 .kendoSilver .k-list .k-state-focused,
 .kendoSilver .k-list .k-state-highlight,
@@ -1284,34 +1284,34 @@
 .kendoSilver .k-dropzone {
   border-radius: 3px;
 }
-/* line 849, ../scss/kendoSilver.scss */
+/* line 849, ../scss/_kendoSilver.scss */
 .kendoSilver .k-slider .k-button,
 .kendoSilver .k-grid .k-slider .k-button {
   border-radius: 13px;
 }
-/* line 851, ../scss/kendoSilver.scss */
+/* line 851, ../scss/_kendoSilver.scss */
 .kendoSilver .k-draghandle {
   border-radius: 7px;
 }
-/* line 852, ../scss/kendoSilver.scss */
+/* line 852, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-toolbar > ul li:first-child,
 .kendoSilver .k-scheduler-toolbar > ul li:first-child .k-link {
   border-radius: 3px 0 0 3px;
 }
-/* line 854, ../scss/kendoSilver.scss */
+/* line 854, ../scss/_kendoSilver.scss */
 .kendoSilver .k-rtl .k-scheduler-toolbar > ul li:first-child,
 .kendoSilver .k-rtl .k-scheduler-toolbar > ul li:first-child .k-link,
 .kendoSilver .km-view.k-popup-edit-form .k-scheduler-toolbar > ul li:last-child,
 .kendoSilver .km-view.k-popup-edit-form .k-scheduler-toolbar > ul li:last-child .k-link {
   border-radius: 0 3px 3px 0;
 }
-/* line 858, ../scss/kendoSilver.scss */
+/* line 858, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-phone .k-scheduler-toolbar > ul li.k-nav-today,
 .kendoSilver .k-scheduler-phone .k-scheduler-toolbar > ul li.k-nav-today .k-link,
 .kendoSilver .k-edit-field > .k-scheduler-navigation {
   border-radius: 3px;
 }
-/* line 861, ../scss/kendoSilver.scss */
+/* line 861, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-toolbar .k-nav-next,
 .kendoSilver .k-scheduler-toolbar ul + ul li:last-child,
 .kendoSilver .k-scheduler-toolbar .k-nav-next .k-link,
@@ -1319,19 +1319,19 @@
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 868, ../scss/kendoSilver.scss */
+/* line 868, ../scss/_kendoSilver.scss */
 .kendoSilver .k-rtl .k-scheduler-toolbar .k-nav-next,
 .kendoSilver .k-rtl .k-scheduler-toolbar ul + ul li:last-child,
 .kendoSilver .k-rtl .k-scheduler-toolbar .k-nav-next .k-link,
 .kendoSilver .k-rtl .k-scheduler-toolbar ul + ul li:last-child .k-link {
   border-radius: 3px 0 0 3px;
 }
-/* line 872, ../scss/kendoSilver.scss */
+/* line 872, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler div.k-scheduler-footer ul li,
 .kendoSilver .k-scheduler div.k-scheduler-footer .k-link {
   border-radius: 3px;
 }
-/* line 874, ../scss/kendoSilver.scss */
+/* line 874, ../scss/_kendoSilver.scss */
 .kendoSilver .k-more-events,
 .kendoSilver .k-event,
 .kendoSilver .k-task-single,
@@ -1339,15 +1339,15 @@
 .kendoSilver .k-event .k-link {
   border-radius: 3px;
 }
-/* line 879, ../scss/kendoSilver.scss */
+/* line 879, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-mobile .k-event {
   border-radius: 2px;
 }
-/* line 880, ../scss/kendoSilver.scss */
+/* line 880, ../scss/_kendoSilver.scss */
 .kendoSilver .k-grid-mobile .k-column-active + th.k-header {
   border-left-color: #515967;
 }
-/* line 881, ../scss/kendoSilver.scss */
+/* line 881, ../scss/_kendoSilver.scss */
 .kendoSilver html .km-pane-wrapper .km-widget,
 .kendoSilver .k-ie .km-pane-wrapper .k-widget,
 .kendoSilver .k-ie .km-pane-wrapper .k-group,
@@ -1360,57 +1360,57 @@
   color: #515967;
 }
 @media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
-  /* line 891, ../scss/kendoSilver.scss */
+  /* line 891, ../scss/_kendoSilver.scss */
   .kendoSilver div.km-pane-wrapper a {
     color: #515967;
   }
-  /* line 892, ../scss/kendoSilver.scss */
+  /* line 892, ../scss/_kendoSilver.scss */
   .kendoSilver .km-pane-wrapper .k-icon {
     background-image: url("../images/silver/sprite_2x.png");
     background-size: 21.2em 21em;
   }
 }
-/* line 897, ../scss/kendoSilver.scss */
+/* line 897, ../scss/_kendoSilver.scss */
 .kendoSilver .km-pane-wrapper .k-mobile-list .k-item,
 .kendoSilver .km-pane-wrapper .k-mobile-list .k-edit-field,
 .kendoSilver .km-pane-wrapper .k-mobile-list .k-recur-view > .k-edit-field .k-check {
   background: #fff;
   border-top: 1px solid #dbdbde;
 }
-/* line 903, ../scss/kendoSilver.scss */
+/* line 903, ../scss/_kendoSilver.scss */
 .kendoSilver .km-pane-wrapper .k-mobile-list .k-edit-field textarea {
   outline-width: 0;
 }
-/* line 904, ../scss/kendoSilver.scss */
+/* line 904, ../scss/_kendoSilver.scss */
 .kendoSilver .km-pane-wrapper .k-mobile-list .k-item.k-state-selected {
   background: #285E8E;
   border-top-color: #285E8E;
 }
-/* line 908, ../scss/kendoSilver.scss */
+/* line 908, ../scss/_kendoSilver.scss */
 .kendoSilver .km-pane-wrapper .k-mobile-list .k-recur-view > .k-edit-field .k-check:first-child {
   border-top-color: transparent;
 }
-/* line 909, ../scss/kendoSilver.scss */
+/* line 909, ../scss/_kendoSilver.scss */
 .kendoSilver .km-pane-wrapper .k-mobile-list .k-item:last-child {
   -webkit-box-shadow: inset 0 -1px 0 #dbdbde;
   box-shadow: inset 0 -1px 0 #dbdbde;
 }
-/* line 913, ../scss/kendoSilver.scss */
+/* line 913, ../scss/_kendoSilver.scss */
 .kendoSilver .km-pane-wrapper .k-mobile-list > ul > li > .k-link,
 .kendoSilver .km-pane-wrapper .k-mobile-list .k-recur-view > .k-edit-label:nth-child(3),
 .kendoSilver .km-pane-wrapper #recurrence .km-scroll-container > .k-edit-label:first-child {
   color: #8b8b95;
 }
-/* line 916, ../scss/kendoSilver.scss */
+/* line 916, ../scss/_kendoSilver.scss */
 .kendoSilver .km-pane-wrapper .k-mobile-list > ul > li > .k-link {
   border-bottom: 1px solid #dbdbde;
 }
-/* line 917, ../scss/kendoSilver.scss */
+/* line 917, ../scss/_kendoSilver.scss */
 .kendoSilver .km-pane-wrapper .k-mobile-list .k-edit-field {
   -webkit-box-shadow: 0 1px 1px #dbdbde;
   box-shadow: 0 1px 1px #dbdbde;
 }
-/* line 921, ../scss/kendoSilver.scss */
+/* line 921, ../scss/_kendoSilver.scss */
 .kendoSilver .km-actionsheet .k-grid-delete,
 .kendoSilver .km-actionsheet .k-scheduler-delete,
 .kendoSilver .km-pane-wrapper .k-scheduler-delete,
@@ -1419,14 +1419,14 @@
   border-color: #f00;
   background: red;
 }
-/* line 929, ../scss/kendoSilver.scss */
+/* line 929, ../scss/_kendoSilver.scss */
 .kendoSilver .km-actionsheet .k-grid-delete:active,
 .kendoSilver .km-actionsheet .k-scheduler-delete:active,
 .kendoSilver .km-pane-wrapper .k-scheduler-delete:active,
 .kendoSilver .km-pane-wrapper .k-filter-menu .k-button[type=reset]:active {
   background: #900;
 }
-/* line 933, ../scss/kendoSilver.scss */
+/* line 933, ../scss/_kendoSilver.scss */
 .kendoSilver .k-autocomplete.k-state-default,
 .kendoSilver .k-picker-wrap.k-state-default,
 .kendoSilver .k-numeric-wrap.k-state-default,
@@ -1435,7 +1435,7 @@
   border-color: #dbdbde;
   min-height: 30px;
 }
-/* line 942, ../scss/kendoSilver.scss */
+/* line 942, ../scss/_kendoSilver.scss */
 .kendoSilver .k-autocomplete.k-state-hover,
 .kendoSilver .k-picker-wrap.k-state-hover,
 .kendoSilver .k-numeric-wrap.k-state-hover,
@@ -1443,15 +1443,15 @@
   background: #b6bdca;
   border-color: #b6bdca;
 }
-/* line 949, ../scss/kendoSilver.scss */
+/* line 949, ../scss/_kendoSilver.scss */
 .kendoSilver .k-multiselect.k-header {
   border-color: #dbdbde;
 }
-/* line 950, ../scss/kendoSilver.scss */
+/* line 950, ../scss/_kendoSilver.scss */
 .kendoSilver .k-multiselect.k-header.k-state-hover {
   border-color: #b6bdca;
 }
-/* line 951, ../scss/kendoSilver.scss */
+/* line 951, ../scss/_kendoSilver.scss */
 .kendoSilver .k-autocomplete.k-state-focused,
 .kendoSilver .k-picker-wrap.k-state-focused,
 .kendoSilver .k-numeric-wrap.k-state-focused,
@@ -1462,41 +1462,41 @@
   -webkit-box-shadow: 0 0 3px 0 rgba(82, 90, 104, 0.2);
   box-shadow: 0 0 3px 0 rgba(82, 90, 104, 0.2);
 }
-/* line 961, ../scss/kendoSilver.scss */
+/* line 961, ../scss/_kendoSilver.scss */
 .kendoSilver .k-list-container {
   color: #515967;
 }
-/* line 962, ../scss/kendoSilver.scss */
+/* line 962, ../scss/_kendoSilver.scss */
 .kendoSilver .k-dropdown .k-input,
 .kendoSilver .k-dropdown .k-state-focused .k-input,
 .kendoSilver .k-menu .k-popup {
   color: #515967;
 }
-/* line 965, ../scss/kendoSilver.scss */
+/* line 965, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-default > .k-select {
   border-color: #dbdbde;
   line-height: 30px;
   height: 30px;
 }
-/* line 966, ../scss/kendoSilver.scss */
+/* line 966, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-hover > .k-select {
   border-color: #b6bdca;
 }
-/* line 967, ../scss/kendoSilver.scss */
+/* line 967, ../scss/_kendoSilver.scss */
 .kendoSilver .k-state-focused > .k-select {
   border-color: #b6bdca;
 }
-/* line 968, ../scss/kendoSilver.scss */
+/* line 968, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tabstrip:focus {
   -webkit-box-shadow: 0 0 3px 0 rgba(82, 90, 104, 0.2);
   box-shadow: 0 0 3px 0 rgba(82, 90, 104, 0.2);
 }
-/* line 972, ../scss/kendoSilver.scss */
+/* line 972, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tabstrip-items .k-state-default .k-link,
 .kendoSilver .k-panelbar > li.k-state-default > .k-link {
   color: #515967;
 }
-/* line 974, ../scss/kendoSilver.scss */
+/* line 974, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tabstrip-items .k-state-hover .k-link,
 .kendoSilver .k-panelbar > li.k-state-hover > .k-link,
 .kendoSilver .k-panelbar > li.k-state-default > .k-link.k-state-hover {
@@ -1504,23 +1504,23 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 977, ../scss/kendoSilver.scss */
+/* line 977, ../scss/_kendoSilver.scss */
 .kendoSilver .k-panelbar .k-state-focused.k-state-hover {
   background: #b6bdca;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 982, ../scss/kendoSilver.scss */
+/* line 982, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tabstrip-items .k-state-default,
 .kendoSilver .k-ie7 .k-tabstrip-items .k-state-default .k-loading {
   border-color: #dbdbde;
 }
-/* line 984, ../scss/kendoSilver.scss */
+/* line 984, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tabstrip-items .k-state-hover,
 .kendoSilver .k-ie7 .k-tabstrip-items .k-state-hover .k-loading {
   border-color: #b6bdca;
 }
-/* line 986, ../scss/kendoSilver.scss */
+/* line 986, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tabstrip-items .k-state-active,
 .kendoSilver .k-panelbar .k-tabstrip-items .k-state-active,
 .kendoSilver .k-ie7 .k-tabstrip-items .k-state-active .k-loading {
@@ -1528,49 +1528,49 @@
   background-image: none;
   border-color: #a6afbe;
 }
-/* line 993, ../scss/kendoSilver.scss */
+/* line 993, ../scss/_kendoSilver.scss */
 .kendoSilver .k-tabstrip .k-content.k-state-active {
   background: #fff;
   color: #515967;
 }
-/* line 997, ../scss/kendoSilver.scss */
+/* line 997, ../scss/_kendoSilver.scss */
 .kendoSilver .k-menu.k-header,
 .kendoSilver .k-menu .k-item {
   border-color: #dbdbde;
 }
-/* line 999, ../scss/kendoSilver.scss */
+/* line 999, ../scss/_kendoSilver.scss */
 .kendoSilver .k-column-menu,
 .kendoSilver .k-column-menu .k-item,
 .kendoSilver .k-overflow-container .k-overflow-group {
   border-color: #dbdbde;
 }
-/* line 1002, ../scss/kendoSilver.scss */
+/* line 1002, ../scss/_kendoSilver.scss */
 .kendoSilver .k-overflow-container .k-overflow-group {
   box-shadow: inset 0 1px 0 #fff, 0 1px 0 #fff;
 }
-/* line 1003, ../scss/kendoSilver.scss */
+/* line 1003, ../scss/_kendoSilver.scss */
 .kendoSilver .k-toolbar-first-visible.k-overflow-group,
 .kendoSilver .k-overflow-container .k-overflow-group + .k-overflow-group {
   box-shadow: 0 1px 0 #fff;
 }
-/* line 1005, ../scss/kendoSilver.scss */
+/* line 1005, ../scss/_kendoSilver.scss */
 .kendoSilver .k-toolbar-last-visible.k-overflow-group {
   box-shadow: inset 0 1px 0 #fff;
 }
-/* line 1006, ../scss/kendoSilver.scss */
+/* line 1006, ../scss/_kendoSilver.scss */
 .kendoSilver .k-column-menu .k-separator {
   border-color: #dbdbde;
   background: transparent;
 }
-/* line 1010, ../scss/kendoSilver.scss */
+/* line 1010, ../scss/_kendoSilver.scss */
 .kendoSilver .k-menu .k-group {
   border-color: #dbdbde;
 }
-/* line 1011, ../scss/kendoSilver.scss */
+/* line 1011, ../scss/_kendoSilver.scss */
 .kendoSilver .k-grid-filter.k-state-active {
   background: #fff;
 }
-/* line 1012, ../scss/kendoSilver.scss */
+/* line 1012, ../scss/_kendoSilver.scss */
 .kendoSilver .k-grouping-row td,
 .kendoSilver .k-group-footer td,
 .kendoSilver .k-grid-footer td {
@@ -1578,16 +1578,16 @@
   border-color: #dbdbde;
   font-weight: bold;
 }
-/* line 1019, ../scss/kendoSilver.scss */
+/* line 1019, ../scss/_kendoSilver.scss */
 .kendoSilver .k-grouping-header {
   color: #515967;
 }
-/* line 1020, ../scss/kendoSilver.scss */
+/* line 1020, ../scss/_kendoSilver.scss */
 .kendoSilver .k-grid td.k-state-focused {
   -webkit-box-shadow: inset 0 0 0 1px inset 0 0 6px 0 #b6bdca;
   box-shadow: inset 0 0 0 1px inset 0 0 6px 0 #b6bdca;
 }
-/* line 1024, ../scss/kendoSilver.scss */
+/* line 1024, ../scss/_kendoSilver.scss */
 .kendoSilver .k-header,
 .kendoSilver .k-grid-header-wrap,
 .kendoSilver .k-grid .k-grouping-header,
@@ -1599,7 +1599,7 @@
 .kendoSilver .k-gantt-toolbar .k-state-default {
   border-color: #dbdbde;
 }
-/* line 1033, ../scss/kendoSilver.scss */
+/* line 1033, ../scss/_kendoSilver.scss */
 .kendoSilver .k-primary,
 .kendoSilver .k-overflow-container .k-primary {
   color: #fff;
@@ -1608,7 +1608,7 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 1041, ../scss/kendoSilver.scss */
+/* line 1041, ../scss/_kendoSilver.scss */
 .kendoSilver .k-primary:focus,
 .kendoSilver .k-primary.k-state-focused {
   color: #263248;
@@ -1616,7 +1616,7 @@
   -webkit-box-shadow: 0 0 3px 0 #85b7d9;
   box-shadow: 0 0 3px 0 #85b7d9;
 }
-/* line 1048, ../scss/kendoSilver.scss */
+/* line 1048, ../scss/_kendoSilver.scss */
 .kendoSilver .k-primary:hover {
   color: #fff;
   border-color: #285E8E;
@@ -1624,13 +1624,13 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 1055, ../scss/kendoSilver.scss */
+/* line 1055, ../scss/_kendoSilver.scss */
 .kendoSilver .k-primary:focus:active:not(.k-state-disabled):not([disabled]),
 .kendoSilver .k-primary:focus:not(.k-state-disabled):not([disabled]) {
   -webkit-box-shadow: 0 0 3px 0 #85b7d9;
   box-shadow: 0 0 3px 0 #85b7d9;
 }
-/* line 1060, ../scss/kendoSilver.scss */
+/* line 1060, ../scss/_kendoSilver.scss */
 .kendoSilver .k-primary:active {
   color: #fff;
   border-color: #1a84c8;
@@ -1638,7 +1638,7 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 1067, ../scss/kendoSilver.scss */
+/* line 1067, ../scss/_kendoSilver.scss */
 .kendoSilver .k-primary.k-state-disabled,
 .kendoSilver .k-state-disabled .k-primary,
 .kendoSilver .k-primary.k-state-disabled:hover,
@@ -1652,92 +1652,92 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 1080, ../scss/kendoSilver.scss */
+/* line 1080, ../scss/_kendoSilver.scss */
 .kendoSilver .k-pager-numbers .k-link,
 .kendoSilver .k-treeview .k-in {
   border-color: transparent;
 }
-/* line 1082, ../scss/kendoSilver.scss */
+/* line 1082, ../scss/_kendoSilver.scss */
 .kendoSilver .k-treeview .k-icon,
 .kendoSilver .k-scheduler-table .k-icon,
 .kendoSilver .k-grid .k-hierarchy-cell .k-icon {
   background-color: transparent;
   border-radius: 3px;
 }
-/* line 1088, ../scss/kendoSilver.scss */
+/* line 1088, ../scss/_kendoSilver.scss */
 .kendoSilver .k-scheduler-table .k-state-hover .k-icon {
   background-color: transparent;
 }
-/* line 1089, ../scss/kendoSilver.scss */
+/* line 1089, ../scss/_kendoSilver.scss */
 .kendoSilver .k-button:focus {
   outline: 0;
 }
-/* line 1090, ../scss/kendoSilver.scss */
+/* line 1090, ../scss/_kendoSilver.scss */
 .kendoSilver .k-editor .k-tool:focus {
   outline: 0;
   border-color: #dbdbde;
   -webkit-box-shadow: inset 0 0 6px 0 #b6bdca;
   box-shadow: inset 0 0 6px 0 #b6bdca;
 }
-/* line 1096, ../scss/kendoSilver.scss */
+/* line 1096, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox-label:before {
   border-color: transparent;
   border-radius: 3px;
 }
-/* line 1100, ../scss/kendoSilver.scss */
+/* line 1100, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox-label:after {
   border-color: #dbdbde;
   background: #fff;
   border-radius: 3px;
 }
-/* line 1105, ../scss/kendoSilver.scss */
+/* line 1105, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox-label:hover:after,
 .kendoSilver .k-checkbox:checked + .k-checkbox-label:hover:after {
   border-color: #a6afbe;
   box-shadow: none;
 }
-/* line 1110, ../scss/kendoSilver.scss */
+/* line 1110, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox:checked + .k-checkbox-label:after {
   background: #fff;
   border-color: #dbdbde;
   border-radius: 3px;
   color: #0a7ac1;
 }
-/* line 1116, ../scss/kendoSilver.scss */
+/* line 1116, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox-label:active:before {
   box-shadow: 0 0 3px 0 #0a7ac1;
   border-color: transparent;
   border-radius: 3px;
 }
-/* line 1121, ../scss/kendoSilver.scss */
+/* line 1121, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox-label:active:after {
   border-color: #0a7ac1;
   border-radius: 3px;
 }
-/* line 1125, ../scss/kendoSilver.scss */
+/* line 1125, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox:checked + .k-checkbox-label:active:after {
   border-color: #0a7ac1;
 }
-/* line 1126, ../scss/kendoSilver.scss */
+/* line 1126, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox:checked + .k-checkbox-label:active:before {
   box-shadow: 0 0 3px 0 #0a7ac1;
   border-radius: 3px;
 }
-/* line 1130, ../scss/kendoSilver.scss */
+/* line 1130, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox:disabled + .k-checkbox-label {
   color: #b3bac7;
 }
-/* line 1131, ../scss/kendoSilver.scss */
+/* line 1131, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox:disabled + .k-checkbox-label:hover:after,
 .kendoSilver .k-checkbox:disabled + .k-checkbox-label:active:before {
   box-shadow: none;
 }
-/* line 1133, ../scss/kendoSilver.scss */
+/* line 1133, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox:checked:disabled + .k-checkbox-label:after {
   background: #f4f4f5;
   color: #b3bac7;
 }
-/* line 1137, ../scss/kendoSilver.scss */
+/* line 1137, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox:disabled + .k-checkbox-label:after,
 .kendoSilver .k-checkbox:checked:disabled + .k-checkbox-label:active:after,
 .kendoSilver .k-checkbox:disabled + .k-checkbox-label:hover:before,
@@ -1746,70 +1746,70 @@
   border-color: #dbdbde;
   border-radius: 3px;
 }
-/* line 1145, ../scss/kendoSilver.scss */
+/* line 1145, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio-label:before {
   border-color: #dbdbde;
   border-radius: 50%;
   background: #fff;
   border-width: 1px;
 }
-/* line 1151, ../scss/kendoSilver.scss */
+/* line 1151, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio-label:hover:before,
 .kendoSilver .k-radio:checked + .k-radio-label:hover:before {
   border-color: #a6afbe;
   box-shadow: none;
 }
-/* line 1156, ../scss/kendoSilver.scss */
+/* line 1156, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio:checked + .k-radio-label:before {
   border-color: #dbdbde;
 }
-/* line 1157, ../scss/kendoSilver.scss */
+/* line 1157, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio:checked + .k-radio-label:after {
   background: #285E8E;
   border-radius: 50%;
 }
-/* line 1161, ../scss/kendoSilver.scss */
+/* line 1161, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio-label:active:before {
   box-shadow: 0 0 3px 0 #0a7ac1;
   border-radius: 50%;
   border-color: #0a7ac1;
 }
-/* line 1166, ../scss/kendoSilver.scss */
+/* line 1166, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio:checked + .k-radio-label:active:before {
   box-shadow: 0 0 3px 0 #0a7ac1;
   border-radius: 50%;
   border-color: #0a7ac1;
 }
-/* line 1171, ../scss/kendoSilver.scss */
+/* line 1171, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio:disabled + .k-radio-label {
   color: #b3bac7;
 }
-/* line 1172, ../scss/kendoSilver.scss */
+/* line 1172, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio:disabled + .k-radio-label:before {
   border-color: #bfbfbf;
 }
-/* line 1173, ../scss/kendoSilver.scss */
+/* line 1173, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio:disabled + .k-radio-label:active:before {
   box-shadow: none;
   background: #f4f4f5;
 }
-/* line 1177, ../scss/kendoSilver.scss */
+/* line 1177, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio:disabled + .k-radio-label:before {
   background: #f4f4f5;
 }
-/* line 1178, ../scss/kendoSilver.scss */
+/* line 1178, ../scss/_kendoSilver.scss */
 .kendoSilver .k-radio:disabled + .k-radio-label:hover:after,
 .kendoSilver .k-radio:disabled + .k-radio-label:hover:before {
   box-shadow: none;
 }
-/* line 1180, ../scss/kendoSilver.scss */
+/* line 1180, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox:focus + .k-checkbox-label:after,
 .kendoSilver .k-radio:focus + .k-radio-label:before {
   border-color: #0a7ac1;
   box-shadow: 0 0 3px 0 #0a7ac1;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 1186, ../scss/kendoSilver.scss */
+  /* line 1186, ../scss/_kendoSilver.scss */
   .kendoSilver .k-icon:not(.k-loading),
   .kendoSilver .k-grouping-dropclue,
   .kendoSilver .k-drop-hint,
@@ -1827,13 +1827,13 @@
     background-image: url("../images/silver/sprite_2x.png");
     background-size: 340px 336px;
   }
-  /* line 1203, ../scss/kendoSilver.scss */
+  /* line 1203, ../scss/_kendoSilver.scss */
   .kendoSilver .k-dropdown-wrap .k-input,
   .kendoSilver .k-picker-wrap .k-input,
   .kendoSilver .k-numeric-wrap .k-input {
     border-radius: 3px 0 0 3px;
   }
-  /* line 1206, ../scss/kendoSilver.scss */
+  /* line 1206, ../scss/_kendoSilver.scss */
   .kendoSilver .k-i-kpi-decrease,
   .kendoSilver .k-i-kpi-denied,
   .kendoSilver .k-i-kpi-equal,
@@ -1845,38 +1845,38 @@
   }
 }
 @media screen and (-ms-high-contrast: active) {
-  /* line 1217, ../scss/kendoSilver.scss */
+  /* line 1217, ../scss/_kendoSilver.scss */
   .kendoSilver .k-editor-toolbar-wrap .k-dropdown-wrap.k-state-focused,
   .kendoSilver .k-editor-toolbar-wrap .k-button-group .k-tool:focus {
     border-color: #fff;
   }
 }
-/* line 1220, ../scss/kendoSilver.scss */
+/* line 1220, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-checkbox-label-after {
   border-color: #dbdbde;
   background: #fff;
 }
-/* line 1224, ../scss/kendoSilver.scss */
+/* line 1224, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-checkbox-label-hover-after,
 .kendoSilver .ktb-checkbox-checked + .ktb-checkbox-label-hover-after {
   border-color: #a6afbe;
 }
-/* line 1226, ../scss/kendoSilver.scss */
+/* line 1226, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-checkbox-checked + .ktb-checkbox-label-after {
   background: #fff;
   border-color: #dbdbde;
   color: #0a7ac1;
 }
-/* line 1231, ../scss/kendoSilver.scss */
+/* line 1231, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-checkbox-label-hover-after,
 .kendoSilver .ktb-checkbox-checked + .ktb-checkbox-label-hover-after {
   border-color: #a6afbe;
 }
-/* line 1233, ../scss/kendoSilver.scss */
+/* line 1233, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-checkbox-label-active-after {
   border-color: #0a7ac1;
 }
-/* line 1234, ../scss/kendoSilver.scss */
+/* line 1234, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-checkbox-checked-disabled + .ktb-checkbox-label-after,
 .kendoSilver .ktb-checkbox-disabled + .ktb-checkbox-label-after,
 .kendoSilver .ktb-checkbox-checked-disabled + .ktb-checkbox-label-active-after,
@@ -1886,39 +1886,39 @@
   color: #b3bac7;
   border-color: #dbdbde;
 }
-/* line 1243, ../scss/kendoSilver.scss */
+/* line 1243, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-radio-label-before {
   border-color: #dbdbde;
   background: #fff;
 }
-/* line 1247, ../scss/kendoSilver.scss */
+/* line 1247, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-radio-checked + .ktb-radio-label-after {
   background: #3f9dd9;
 }
-/* line 1248, ../scss/kendoSilver.scss */
+/* line 1248, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-radio-checked + .ktb-radio-label-before {
   border-color: #dbdbde;
 }
-/* line 1249, ../scss/kendoSilver.scss */
+/* line 1249, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-radio-label-hover-before,
 .kendoSilver .ktb-radio-checked + .ktb-radio-label-hover-before {
   border-color: #a6afbe;
 }
-/* line 1251, ../scss/kendoSilver.scss */
+/* line 1251, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-radio-label-active-before {
   border-color: #0a7ac1;
 }
-/* line 1252, ../scss/kendoSilver.scss */
+/* line 1252, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-radio-checked + .ktb-radio-label-after {
   background: #3f9dd9;
 }
-/* line 1253, ../scss/kendoSilver.scss */
+/* line 1253, ../scss/_kendoSilver.scss */
 .kendoSilver .ktb-radio-disabled + .ktb-radio-label-before,
 .kendoSilver .ktb-radio-disabled + .ktb-radio-label-active-before {
   background: #f4f4f5;
   border-color: #dbdbde;
 }
-/* line 1258, ../scss/kendoSilver.scss */
+/* line 1258, ../scss/_kendoSilver.scss */
 .kendoSilver .k-checkbox:checked + .k-checkbox-label:hover:after {
   border-color: #dbdbde;
 }
@@ -11447,20 +11447,21 @@ button[disabled] .fa, button.disabled .fa,
 }
 /* line 1256, ../scss/app.scss */
 .nav-bar .nav-bar-section ul li a:hover, .nav-bar .nav-bar-section ul li a:focus {
-  background: #000 !important;
+  background: #262B31 !important;
   color: #fff !important;
+  box-shadow: none;
 }
-/* line 1264, ../scss/app.scss */
+/* line 1265, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li {
   float: left;
   margin-left: 5px;
 }
-/* line 1267, ../scss/app.scss */
+/* line 1268, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li:not(.active):not(.has-dropdown) > a:hover {
   color: #fff !important;
   background: #596069 !important;
 }
-/* line 1271, ../scss/app.scss */
+/* line 1272, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li.user-profile .user-avatar {
   display: inline-block;
   margin-right: 10px;
@@ -11468,7 +11469,7 @@ button[disabled] .fa, button.disabled .fa,
   height: 22px;
   opacity: 0.75;
 }
-/* line 1279, ../scss/app.scss */
+/* line 1280, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li > a {
   font-size: 14px;
   font-weight: 700;
@@ -11494,7 +11495,7 @@ button[disabled] .fa, button.disabled .fa,
   text-shadow: 0 -1px 0px #000;
   border-radius: 5px;
 }
-/* line 1310, ../scss/app.scss */
+/* line 1311, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li > a .label {
   background: #e69c17;
   color: #333;
@@ -11503,7 +11504,7 @@ button[disabled] .fa, button.disabled .fa,
   text-align: center;
   text-shadow: 0 1px 0 #efba5b;
 }
-/* line 1319, ../scss/app.scss */
+/* line 1320, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li.active > a, .nav-bar .nav-bar-section > ul > li.active > a:hover {
   border-radius: 3px 3px 0 0;
   text-shadow: 0 1px 0 #fff;
@@ -11517,7 +11518,7 @@ button[disabled] .fa, button.disabled .fa,
   border-bottom-color: #f0f0f0 !important;
   border-radius: 5px 5px 0 0;
 }
-/* line 1347, ../scss/app.scss */
+/* line 1348, ../scss/app.scss */
 .nav-bar .nav-bar-section > ul > li.active2 > a {
   background: #FBDC00;
   background: -webkit-gradient(linear, left top, left bottom, from(#FBDC00), to(#E29E00));
@@ -11538,15 +11539,15 @@ button[disabled] .fa, button.disabled .fa,
   box-shadow: 0 1px 0px 0px #F7E8C3 inset;
   border-radius: 3px 3px 0 0;
 }
-/* line 1358, ../scss/app.scss */
+/* line 1359, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown {
   position: relative;
 }
-/* line 1360, ../scss/app.scss */
+/* line 1361, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > a {
   padding-right: 42px !important;
 }
-/* line 1362, ../scss/app.scss */
+/* line 1363, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > a:after {
   content: "";
   display: block;
@@ -11561,12 +11562,13 @@ button[disabled] .fa, button.disabled .fa,
   top: 24px;
   right: 0;
 }
-/* line 1377, ../scss/app.scss */
+/* line 1378, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown a .fa {
   margin-right: 10px;
 }
-/* line 1380, ../scss/app.scss */
-.nav-bar .nav-bar-section .has-dropdown:hover > a, .nav-bar .nav-bar-section .has-dropdown.active > a:hover {
+/* line 1381, ../scss/app.scss */
+.nav-bar .nav-bar-section .has-dropdown:hover > a, .nav-bar .nav-bar-section .has-dropdown.active > a:hover, .nav-bar .nav-bar-section .has-dropdown.active > a:focus {
+  background: #262b31;
   background: #262b31 !important;
   border-bottom-color: #262b31 !important;
   color: #eee !important;
@@ -11575,7 +11577,7 @@ button[disabled] .fa, button.disabled .fa,
   box-shadow: none;
   padding-bottom: 6px;
 }
-/* line 1393, ../scss/app.scss */
+/* line 1395, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown {
   position: absolute;
   left: 100%;
@@ -11588,7 +11590,7 @@ button[disabled] .fa, button.disabled .fa,
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 1404, ../scss/app.scss */
+/* line 1406, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown li {
   display: block;
   position: relative;
@@ -11597,7 +11599,7 @@ button[disabled] .fa, button.disabled .fa,
   margin: 0;
   float: none;
 }
-/* line 1411, ../scss/app.scss */
+/* line 1413, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown li a {
   font-weight: normal;
   padding: 0 22px 0 12px;
@@ -11608,17 +11610,17 @@ button[disabled] .fa, button.disabled .fa,
   width: 100%;
   background: #262b31;
 }
-/* line 1421, ../scss/app.scss */
+/* line 1423, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown li:last-child a {
   border-radius: 0 0 3px 3px;
   overflow: hidden;
 }
-/* line 1425, ../scss/app.scss */
+/* line 1427, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown > .dropdown li.active a {
   background: #000 !important;
   color: #e69c17 !important;
 }
-/* line 1432, ../scss/app.scss */
+/* line 1434, ../scss/app.scss */
 .nav-bar .nav-bar-section .has-dropdown:hover > .dropdown {
   display: block;
   position: static !important;
@@ -11634,13 +11636,13 @@ button[disabled] .fa, button.disabled .fa,
   background: transparent;
 }
 
-/* line 1453, ../scss/app.scss */
+/* line 1455, ../scss/app.scss */
 #main-content {
   min-height: 75vh;
   background: #999;
 }
 
-/* line 1458, ../scss/app.scss */
+/* line 1460, ../scss/app.scss */
 #main-content,
 #event-cases,
 #case-items,
@@ -11648,7 +11650,7 @@ button[disabled] .fa, button.disabled .fa,
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
-/* line 1464, ../scss/app.scss */
+/* line 1466, ../scss/app.scss */
 #main-content .item,
 #event-cases .item,
 #case-items .item,
@@ -11662,7 +11664,7 @@ button[disabled] .fa, button.disabled .fa,
   position: relative;
   padding-left: 160px;
 }
-/* line 1473, ../scss/app.scss */
+/* line 1475, ../scss/app.scss */
 #main-content .item.case-item,
 #event-cases .item.case-item,
 #case-items .item.case-item,
@@ -11670,7 +11672,7 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 130px;
 }
 @media screen and (max-width: 640px) {
-  /* line 1464, ../scss/app.scss */
+  /* line 1466, ../scss/app.scss */
   #main-content .item,
   #event-cases .item,
   #case-items .item,
@@ -11679,7 +11681,7 @@ button[disabled] .fa, button.disabled .fa,
     padding-bottom: 10px !important;
   }
 }
-/* line 1480, ../scss/app.scss */
+/* line 1482, ../scss/app.scss */
 #main-content .item .case-title,
 #event-cases .item .case-title,
 #case-items .item .case-title,
@@ -11689,7 +11691,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #555;
   margin: 0 0 10px;
 }
-/* line 1487, ../scss/app.scss */
+/* line 1489, ../scss/app.scss */
 #main-content .item .inline-item-list,
 #event-cases .item .inline-item-list,
 #case-items .item .inline-item-list,
@@ -11702,7 +11704,7 @@ button[disabled] .fa, button.disabled .fa,
   float: none;
   clear: both;
 }
-/* line 1495, ../scss/app.scss */
+/* line 1497, ../scss/app.scss */
 #main-content .item .inline-item-list li,
 #event-cases .item .inline-item-list li,
 #case-items .item .inline-item-list li,
@@ -11716,7 +11718,7 @@ button[disabled] .fa, button.disabled .fa,
   white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
-  /* line 1505, ../scss/app.scss */
+  /* line 1507, ../scss/app.scss */
   #main-content .item .inline-item-list li,
   #event-cases .item .inline-item-list li,
   #case-items .item .inline-item-list li,
@@ -11728,7 +11730,7 @@ button[disabled] .fa, button.disabled .fa,
     width: 24%;
   }
 }
-/* line 1514, ../scss/app.scss */
+/* line 1516, ../scss/app.scss */
 #main-content .item .item-list,
 #event-cases .item .item-list,
 #case-items .item .item-list,
@@ -11741,7 +11743,7 @@ button[disabled] .fa, button.disabled .fa,
   float: none;
   clear: both;
 }
-/* line 1522, ../scss/app.scss */
+/* line 1524, ../scss/app.scss */
 #main-content .item .item-list > li,
 #event-cases .item .item-list > li,
 #case-items .item .item-list > li,
@@ -11756,7 +11758,7 @@ button[disabled] .fa, button.disabled .fa,
   line-height: 1.75;
   white-space: normal;
 }
-/* line 1532, ../scss/app.scss */
+/* line 1534, ../scss/app.scss */
 #main-content .item .item-list > li.br,
 #event-cases .item .item-list > li.br,
 #case-items .item .item-list > li.br,
@@ -11765,14 +11767,14 @@ button[disabled] .fa, button.disabled .fa,
   float: none;
   clear: both;
 }
-/* line 1536, ../scss/app.scss */
+/* line 1538, ../scss/app.scss */
 #main-content .item .item-list > li span,
 #event-cases .item .item-list > li span,
 #case-items .item .item-list > li span,
 #linked-events .item .item-list > li span {
   display: inline;
 }
-/* line 1539, ../scss/app.scss */
+/* line 1541, ../scss/app.scss */
 #main-content .item .item-list > li strong,
 #event-cases .item .item-list > li strong,
 #case-items .item .item-list > li strong,
@@ -11782,7 +11784,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-left: 5px;
 }
 @media screen and (max-width: 768px) {
-  /* line 1546, ../scss/app.scss */
+  /* line 1548, ../scss/app.scss */
   #main-content .item .item-list > li,
   #event-cases .item .item-list > li,
   #case-items .item .item-list > li,
@@ -11791,7 +11793,7 @@ button[disabled] .fa, button.disabled .fa,
     width: 99%;
   }
 }
-/* line 1553, ../scss/app.scss */
+/* line 1555, ../scss/app.scss */
 #main-content .item .item-thumb,
 #event-cases .item .item-thumb,
 #case-items .item .item-thumb,
@@ -11808,7 +11810,7 @@ button[disabled] .fa, button.disabled .fa,
   height: 108px;
 }
 @media screen and (max-width: 640px) {
-  /* line 1553, ../scss/app.scss */
+  /* line 1555, ../scss/app.scss */
   #main-content .item .item-thumb,
   #event-cases .item .item-thumb,
   #case-items .item .item-thumb,
@@ -11816,7 +11818,7 @@ button[disabled] .fa, button.disabled .fa,
     display: none !important;
   }
 }
-/* line 1568, ../scss/app.scss */
+/* line 1570, ../scss/app.scss */
 #main-content .item .item-thumb img,
 #event-cases .item .item-thumb img,
 #case-items .item .item-thumb img,
@@ -11826,7 +11828,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 100%;
   height: 100%;
 }
-/* line 1574, ../scss/app.scss */
+/* line 1576, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-overlay,
 #event-cases .item .item-thumb .thumb-overlay,
 #case-items .item .item-thumb .thumb-overlay,
@@ -11846,7 +11848,7 @@ button[disabled] .fa, button.disabled .fa,
   font-weight: bold;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 1591, ../scss/app.scss */
+/* line 1593, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask,
 #event-cases .item .item-thumb .thumb-mask,
 #case-items .item .item-thumb .thumb-mask,
@@ -11868,7 +11870,7 @@ button[disabled] .fa, button.disabled .fa,
   opacity: 0;
   z-index: 111;
 }
-/* line 1608, ../scss/app.scss */
+/* line 1610, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask > .fa,
 #event-cases .item .item-thumb .thumb-mask > .fa,
 #case-items .item .item-thumb .thumb-mask > .fa,
@@ -11878,7 +11880,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: 1.25rem;
   font-size: 60px;
 }
-/* line 1614, ../scss/app.scss */
+/* line 1616, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon,
 #case-items .item .item-thumb .thumb-mask .thumb-icon,
@@ -11890,14 +11892,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 4em;
   display: block;
 }
-/* line 1621, ../scss/app.scss */
+/* line 1623, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.play-icon,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.play-icon,
 #case-items .item .item-thumb .thumb-mask .thumb-icon.play-icon,
 #linked-events .item .item-thumb .thumb-mask .thumb-icon.play-icon {
   left: 1.25em;
 }
-/* line 1623, ../scss/app.scss */
+/* line 1625, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa,
 #case-items .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa,
@@ -11905,7 +11907,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 1626, ../scss/app.scss */
+/* line 1628, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:hover, #main-content .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:focus,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:hover,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:focus,
@@ -11915,14 +11917,14 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item .item-thumb .thumb-mask .thumb-icon.play-icon .fa:focus {
   color: #7bca23;
 }
-/* line 1629, ../scss/app.scss */
+/* line 1631, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.details-icon,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.details-icon,
 #case-items .item .item-thumb .thumb-mask .thumb-icon.details-icon,
 #linked-events .item .item-thumb .thumb-mask .thumb-icon.details-icon {
   right: 1.25em;
 }
-/* line 1631, ../scss/app.scss */
+/* line 1633, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa,
 #case-items .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa,
@@ -11930,7 +11932,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 1634, ../scss/app.scss */
+/* line 1636, ../scss/app.scss */
 #main-content .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:hover, #main-content .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:focus,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:hover,
 #event-cases .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:focus,
@@ -11940,14 +11942,14 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item .item-thumb .thumb-mask .thumb-icon.details-icon .fa:focus {
   color: #7bca23;
 }
-/* line 1639, ../scss/app.scss */
+/* line 1641, ../scss/app.scss */
 #main-content .item .item-thumb:hover,
 #event-cases .item .item-thumb:hover,
 #case-items .item .item-thumb:hover,
 #linked-events .item .item-thumb:hover {
   border-color: #333;
 }
-/* line 1641, ../scss/app.scss */
+/* line 1643, ../scss/app.scss */
 #main-content .item .item-thumb:hover .thumb-mask,
 #event-cases .item .item-thumb:hover .thumb-mask,
 #case-items .item .item-thumb:hover .thumb-mask,
@@ -11955,14 +11957,14 @@ button[disabled] .fa, button.disabled .fa,
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.90;
 }
-/* line 1648, ../scss/app.scss */
+/* line 1650, ../scss/app.scss */
 #main-content .item.event-item,
 #event-cases .item.event-item,
 #case-items .item.event-item,
 #linked-events .item.event-item {
   padding-left: 250px;
 }
-/* line 1651, ../scss/app.scss */
+/* line 1653, ../scss/app.scss */
 #main-content .item.archived-item,
 #event-cases .item.archived-item,
 #case-items .item.archived-item,
@@ -11971,7 +11973,7 @@ button[disabled] .fa, button.disabled .fa,
   background-position: 0 0;
   background-repeat: repeat;
 }
-/* line 1656, ../scss/app.scss */
+/* line 1658, ../scss/app.scss */
 #main-content .item.archived-item .item-thumb img,
 #event-cases .item.archived-item .item-thumb img,
 #case-items .item.archived-item .item-thumb img,
@@ -11979,14 +11981,14 @@ button[disabled] .fa, button.disabled .fa,
   display: block;
   margin: 0 auto 0;
 }
-/* line 1660, ../scss/app.scss */
+/* line 1662, ../scss/app.scss */
 #main-content .item.archived-item .item-thumb .thumb-mask .fa:before,
 #event-cases .item.archived-item .item-thumb .thumb-mask .fa:before,
 #case-items .item.archived-item .item-thumb .thumb-mask .fa:before,
 #linked-events .item.archived-item .item-thumb .thumb-mask .fa:before {
   display: none;
 }
-/* line 1664, ../scss/app.scss */
+/* line 1666, ../scss/app.scss */
 #main-content .item.archived-item .item-thumb:hover .thumb-mask,
 #event-cases .item.archived-item .item-thumb:hover .thumb-mask,
 #case-items .item.archived-item .item-thumb:hover .thumb-mask,
@@ -11995,14 +11997,14 @@ button[disabled] .fa, button.disabled .fa,
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: .5;
 }
-/* line 1674, ../scss/app.scss */
+/* line 1676, ../scss/app.scss */
 #main-content .item.archived-item.selected .item-thumb:before,
 #event-cases .item.archived-item.selected .item-thumb:before,
 #case-items .item.archived-item.selected .item-thumb:before,
 #linked-events .item.archived-item.selected .item-thumb:before {
   color: #31599d;
 }
-/* line 1682, ../scss/app.scss */
+/* line 1684, ../scss/app.scss */
 #main-content .item.shared-item .item-select .count-wrap,
 #event-cases .item.shared-item .item-select .count-wrap,
 #case-items .item.shared-item .item-select .count-wrap,
@@ -12010,14 +12012,14 @@ button[disabled] .fa, button.disabled .fa,
   text-shadow: 0 1px 0 #5b8225 !important;
   color: #fff;
 }
-/* line 1686, ../scss/app.scss */
+/* line 1688, ../scss/app.scss */
 #main-content .item.shared-item.expired .item-select .count-wrap,
 #event-cases .item.shared-item.expired .item-select .count-wrap,
 #case-items .item.shared-item.expired .item-select .count-wrap,
 #linked-events .item.shared-item.expired .item-select .count-wrap {
   text-shadow: 0 1px 0 #cc0000 !important;
 }
-/* line 1691, ../scss/app.scss */
+/* line 1693, ../scss/app.scss */
 #main-content .item .item-select,
 #event-cases .item .item-select,
 #case-items .item .item-select,
@@ -12034,7 +12036,7 @@ button[disabled] .fa, button.disabled .fa,
   bottom: 0;
   z-index: 2;
 }
-/* line 1703, ../scss/app.scss */
+/* line 1705, ../scss/app.scss */
 #main-content .item .item-select .fa,
 #event-cases .item .item-select .fa,
 #case-items .item .item-select .fa,
@@ -12047,7 +12049,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #fff;
   z-index: 1;
 }
-/* line 1711, ../scss/app.scss */
+/* line 1713, ../scss/app.scss */
 #main-content .item .item-select .fa.success,
 #event-cases .item .item-select .fa.success,
 #case-items .item .item-select .fa.success,
@@ -12055,35 +12057,35 @@ button[disabled] .fa, button.disabled .fa,
   color: #6e9f2a;
   font-size: 1.9em;
 }
-/* line 1712, ../scss/app.scss */
+/* line 1714, ../scss/app.scss */
 #main-content .item .item-select .fa.error,
 #event-cases .item .item-select .fa.error,
 #case-items .item .item-select .fa.error,
 #linked-events .item .item-select .fa.error {
   color: #aaa;
 }
-/* line 1713, ../scss/app.scss */
+/* line 1715, ../scss/app.scss */
 #main-content .item .item-select .fa.error:hover,
 #event-cases .item .item-select .fa.error:hover,
 #case-items .item .item-select .fa.error:hover,
 #linked-events .item .item-select .fa.error:hover {
   color: #B23535;
 }
-/* line 1717, ../scss/app.scss */
+/* line 1719, ../scss/app.scss */
 #main-content .item .item-select .linked-events-delete .fa.error,
 #event-cases .item .item-select .linked-events-delete .fa.error,
 #case-items .item .item-select .linked-events-delete .fa.error,
 #linked-events .item .item-select .linked-events-delete .fa.error {
   color: #aaa;
 }
-/* line 1720, ../scss/app.scss */
+/* line 1722, ../scss/app.scss */
 #main-content .item .item-select .linked-events-delete:hover .fa.error,
 #event-cases .item .item-select .linked-events-delete:hover .fa.error,
 #case-items .item .item-select .linked-events-delete:hover .fa.error,
 #linked-events .item .item-select .linked-events-delete:hover .fa.error {
   color: #B23535;
 }
-/* line 1724, ../scss/app.scss */
+/* line 1726, ../scss/app.scss */
 #main-content .item .item-select input,
 #event-cases .item .item-select input,
 #case-items .item .item-select input,
@@ -12093,7 +12095,7 @@ button[disabled] .fa, button.disabled .fa,
   margin: -5px 0 0 -5px;
   left: 50%;
 }
-/* line 1730, ../scss/app.scss */
+/* line 1732, ../scss/app.scss */
 #main-content .item .item-select .count-wrap,
 #event-cases .item .item-select .count-wrap,
 #case-items .item .item-select .count-wrap,
@@ -12110,14 +12112,14 @@ button[disabled] .fa, button.disabled .fa,
   color: #555;
   text-shadow: 0 1px 0 #fff !important;
 }
-/* line 1742, ../scss/app.scss */
+/* line 1744, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-select .count-wrap, .view-small-thumbs
 #event-cases .item .item-select .count-wrap, .view-small-thumbs
 #case-items .item .item-select .count-wrap, .view-small-thumbs
 #linked-events .item .item-select .count-wrap {
   display: none !important;
 }
-/* line 1748, ../scss/app.scss */
+/* line 1750, ../scss/app.scss */
 #main-content .item .action,
 #event-cases .item .action,
 #case-items .item .action,
@@ -12127,14 +12129,14 @@ button[disabled] .fa, button.disabled .fa,
   right: 10px;
   margin: 0;
 }
-/* line 1753, ../scss/app.scss */
+/* line 1755, ../scss/app.scss */
 #main-content .item .action.alert,
 #event-cases .item .action.alert,
 #case-items .item .action.alert,
 #linked-events .item .action.alert {
   background: #cc4444;
 }
-/* line 1755, ../scss/app.scss */
+/* line 1757, ../scss/app.scss */
 #main-content .item .action.alert:hover, #main-content .item .action.alert:focus,
 #event-cases .item .action.alert:hover,
 #event-cases .item .action.alert:focus,
@@ -12145,7 +12147,7 @@ button[disabled] .fa, button.disabled .fa,
   background: #cc5555 !important;
   border-color: #cc3333 !important;
 }
-/* line 1761, ../scss/app.scss */
+/* line 1763, ../scss/app.scss */
 #main-content .item .action.links,
 #event-cases .item .action.links,
 #case-items .item .action.links,
@@ -12154,7 +12156,7 @@ button[disabled] .fa, button.disabled .fa,
   right: 50px;
   font-size: .85em;
 }
-/* line 1766, ../scss/app.scss */
+/* line 1768, ../scss/app.scss */
 #main-content .item .action.cases,
 #event-cases .item .action.cases,
 #case-items .item .action.cases,
@@ -12163,7 +12165,7 @@ button[disabled] .fa, button.disabled .fa,
   right: 50px;
   font-size: .85em;
 }
-/* line 1770, ../scss/app.scss */
+/* line 1772, ../scss/app.scss */
 #main-content .item .action.cases + ul + .action.links,
 #event-cases .item .action.cases + ul + .action.links,
 #case-items .item .action.cases + ul + .action.links,
@@ -12173,6 +12175,13 @@ button[disabled] .fa, button.disabled .fa,
   font-size: .85em;
 }
 /* line 1777, ../scss/app.scss */
+#main-content .item .action.cases:not([style*="display: none"]) + .action.links,
+#event-cases .item .action.cases:not([style*="display: none"]) + .action.links,
+#case-items .item .action.cases:not([style*="display: none"]) + .action.links,
+#linked-events .item .action.cases:not([style*="display: none"]) + .action.links {
+  right: 93px;
+}
+/* line 1783, ../scss/app.scss */
 #main-content .item .data-icon-group,
 #event-cases .item .data-icon-group,
 #case-items .item .data-icon-group,
@@ -12200,7 +12209,7 @@ button[disabled] .fa, button.disabled .fa,
   padding: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 1777, ../scss/app.scss */
+  /* line 1783, ../scss/app.scss */
   #main-content .item .data-icon-group,
   #event-cases .item .data-icon-group,
   #case-items .item .data-icon-group,
@@ -12209,7 +12218,7 @@ button[disabled] .fa, button.disabled .fa,
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 1777, ../scss/app.scss */
+  /* line 1783, ../scss/app.scss */
   #main-content .item .data-icon-group,
   #event-cases .item .data-icon-group,
   #case-items .item .data-icon-group,
@@ -12217,7 +12226,7 @@ button[disabled] .fa, button.disabled .fa,
     display: none;
   }
 }
-/* line 1795, ../scss/app.scss */
+/* line 1801, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon,
 #event-cases .item .data-icon-group .data-icon,
 #case-items .item .data-icon-group .data-icon,
@@ -12234,7 +12243,7 @@ button[disabled] .fa, button.disabled .fa,
   height: 29px;
   border-radius: 0;
 }
-/* line 1807, ../scss/app.scss */
+/* line 1813, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon strong,
 #main-content .item .data-icon-group .data-icon > span,
 #event-cases .item .data-icon-group .data-icon strong,
@@ -12245,14 +12254,14 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item .data-icon-group .data-icon > span {
   display: inline-block;
 }
-/* line 1809, ../scss/app.scss */
+/* line 1815, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon > span[data-dropdown],
 #event-cases .item .data-icon-group .data-icon > span[data-dropdown],
 #case-items .item .data-icon-group .data-icon > span[data-dropdown],
 #linked-events .item .data-icon-group .data-icon > span[data-dropdown] {
   cursor: pointer;
 }
-/* line 1812, ../scss/app.scss */
+/* line 1818, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon .data-icon-drop,
 #event-cases .item .data-icon-group .data-icon .data-icon-drop,
 #case-items .item .data-icon-group .data-icon .data-icon-drop,
@@ -12261,14 +12270,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 20px;
   color: #000;
 }
-/* line 1817, ../scss/app.scss */
+/* line 1823, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon:not(.button),
 #event-cases .item .data-icon-group .data-icon:not(.button),
 #case-items .item .data-icon-group .data-icon:not(.button),
 #linked-events .item .data-icon-group .data-icon:not(.button) {
   color: #555;
 }
-/* line 1819, ../scss/app.scss */
+/* line 1825, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon:not(.button):hover,
 #event-cases .item .data-icon-group .data-icon:not(.button):hover,
 #case-items .item .data-icon-group .data-icon:not(.button):hover,
@@ -12276,14 +12285,14 @@ button[disabled] .fa, button.disabled .fa,
   color: #222;
   background: #fff;
 }
-/* line 1827, ../scss/app.scss */
+/* line 1833, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon .fa,
 #event-cases .item .data-icon-group .data-icon .fa,
 #case-items .item .data-icon-group .data-icon .fa,
 #linked-events .item .data-icon-group .data-icon .fa {
   font-size: 14px;
 }
-/* line 1829, ../scss/app.scss */
+/* line 1835, ../scss/app.scss */
 #main-content .item .data-icon-group .data-icon.linked-toggle,
 #event-cases .item .data-icon-group .data-icon.linked-toggle,
 #case-items .item .data-icon-group .data-icon.linked-toggle,
@@ -12291,7 +12300,7 @@ button[disabled] .fa, button.disabled .fa,
   border-bottom: none;
   border-left: none;
 }
-/* line 1836, ../scss/app.scss */
+/* line 1842, ../scss/app.scss */
 #main-content .item.case-item .item-thumb,
 #event-cases .item.case-item .item-thumb,
 #case-items .item.case-item .item-thumb,
@@ -12301,7 +12310,7 @@ button[disabled] .fa, button.disabled .fa,
   opacity: .5;
   background: transparent;
 }
-/* line 1842, ../scss/app.scss */
+/* line 1848, ../scss/app.scss */
 #main-content .item.case-item .item-thumb:hover,
 #event-cases .item.case-item .item-thumb:hover,
 #case-items .item.case-item .item-thumb:hover,
@@ -12309,7 +12318,7 @@ button[disabled] .fa, button.disabled .fa,
   opacity: 1;
   background: transparent;
 }
-/* line 1846, ../scss/app.scss */
+/* line 1852, ../scss/app.scss */
 #main-content .item.case-item .item-thumb > .fa,
 #event-cases .item.case-item .item-thumb > .fa,
 #case-items .item.case-item .item-thumb > .fa,
@@ -12319,7 +12328,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: .75rem;
   font-size: 60px;
 }
-/* line 1855, ../scss/app.scss */
+/* line 1861, ../scss/app.scss */
 #main-content .item.event-item .data-icon-group,
 #event-cases .item.event-item .data-icon-group,
 #case-items .item.event-item .data-icon-group,
@@ -12328,7 +12337,7 @@ button[disabled] .fa, button.disabled .fa,
   border-radius: 3px 0 0 0;
   border-left: 1px solid #ddd;
 }
-/* line 1860, ../scss/app.scss */
+/* line 1866, ../scss/app.scss */
 #main-content .item.event-item .item-thumb,
 #event-cases .item.event-item .item-thumb,
 #case-items .item.event-item .item-thumb,
@@ -12338,7 +12347,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 180px;
   height: 108px;
 }
-/* line 1869, ../scss/app.scss */
+/* line 1875, ../scss/app.scss */
 #main-content .item.export-item .data-icon-group,
 #event-cases .item.export-item .data-icon-group,
 #case-items .item.export-item .data-icon-group,
@@ -12347,7 +12356,7 @@ button[disabled] .fa, button.disabled .fa,
   border-radius: 3px 0 0 0;
   border-left: 1px solid #ddd;
 }
-/* line 1874, ../scss/app.scss */
+/* line 1880, ../scss/app.scss */
 #main-content .item.export-item .item-thumb,
 #event-cases .item.export-item .item-thumb,
 #case-items .item.export-item .item-thumb,
@@ -12357,7 +12366,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 180px;
   height: 120px;
 }
-/* line 1879, ../scss/app.scss */
+/* line 1885, ../scss/app.scss */
 #main-content .item.export-item .item-thumb > .fa,
 #event-cases .item.export-item .item-thumb > .fa,
 #case-items .item.export-item .item-thumb > .fa,
@@ -12367,7 +12376,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: .25rem;
   font-size: 60px;
 }
-/* line 1889, ../scss/app.scss */
+/* line 1895, ../scss/app.scss */
 #main-content .item.selected .item-select,
 #event-cases .item.selected .item-select,
 #case-items .item.selected .item-select,
@@ -12375,35 +12384,35 @@ button[disabled] .fa, button.disabled .fa,
   background-color: #a3d2fb;
   border-color: #3573dc !important;
 }
-/* line 1892, ../scss/app.scss */
+/* line 1898, ../scss/app.scss */
 #main-content .item.selected .item-select .count-wrap,
 #event-cases .item.selected .item-select .count-wrap,
 #case-items .item.selected .item-select .count-wrap,
 #linked-events .item.selected .item-select .count-wrap {
   color: #31599d !important;
 }
-/* line 1896, ../scss/app.scss */
+/* line 1902, ../scss/app.scss */
 #main-content .item.selected .action,
 #event-cases .item.selected .action,
 #case-items .item.selected .action,
 #linked-events .item.selected .action {
   border-color: #77a0e4 !important;
 }
-/* line 1898, ../scss/app.scss */
+/* line 1904, ../scss/app.scss */
 #main-content .item.selected .action.alert,
 #event-cases .item.selected .action.alert,
 #case-items .item.selected .action.alert,
 #linked-events .item.selected .action.alert {
   border-color: #cc0000 !important;
 }
-/* line 1904, ../scss/app.scss */
+/* line 1910, ../scss/app.scss */
 #main-content .item.item-error .item-select,
 #event-cases .item.item-error .item-select,
 #case-items .item.item-error .item-select,
 #linked-events .item.item-error .item-select {
   background-color: #cc5555 !important;
 }
-/* line 1906, ../scss/app.scss */
+/* line 1912, ../scss/app.scss */
 #main-content .item.item-error .item-select:before,
 #event-cases .item.item-error .item-select:before,
 #case-items .item.item-error .item-select:before,
@@ -12417,7 +12426,7 @@ button[disabled] .fa, button.disabled .fa,
   bottom: 10px;
   font-weight: normal;
 }
-/* line 1916, ../scss/app.scss */
+/* line 1922, ../scss/app.scss */
 #main-content .item.item-error .item-select .count-wrap,
 #event-cases .item.item-error .item-select .count-wrap,
 #case-items .item.item-error .item-select .count-wrap,
@@ -12425,7 +12434,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #fff !important;
   text-shadow: none !important;
 }
-/* line 1922, ../scss/app.scss */
+/* line 1928, ../scss/app.scss */
 #main-content .item.selected:not(.export-item),
 #event-cases .item.selected:not(.export-item),
 #case-items .item.selected:not(.export-item),
@@ -12440,7 +12449,7 @@ button[disabled] .fa, button.disabled .fa,
   				}				
   			}*/
 }
-/* line 1925, ../scss/app.scss */
+/* line 1931, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon-group,
 #event-cases .item.selected:not(.export-item) .data-icon-group,
 #case-items .item.selected:not(.export-item) .data-icon-group,
@@ -12448,7 +12457,7 @@ button[disabled] .fa, button.disabled .fa,
   background: #a3d2fb !important;
   border-color: #80abf3 !important;
 }
-/* line 1929, ../scss/app.scss */
+/* line 1935, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon:not(.button),
 #event-cases .item.selected:not(.export-item) .data-icon:not(.button),
 #case-items .item.selected:not(.export-item) .data-icon:not(.button),
@@ -12458,14 +12467,14 @@ button[disabled] .fa, button.disabled .fa,
   color: #31599d !important;
   text-shadow: none;
 }
-/* line 1934, ../scss/app.scss */
+/* line 1940, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon:not(.button):hover,
 #event-cases .item.selected:not(.export-item) .data-icon:not(.button):hover,
 #case-items .item.selected:not(.export-item) .data-icon:not(.button):hover,
 #linked-events .item.selected:not(.export-item) .data-icon:not(.button):hover {
   background: #BDDFFD	!important;
 }
-/* line 1938, ../scss/app.scss */
+/* line 1944, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon.button,
 #event-cases .item.selected:not(.export-item) .data-icon.button,
 #case-items .item.selected:not(.export-item) .data-icon.button,
@@ -12475,7 +12484,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #e5eefd;
   text-shadow: none;
 }
-/* line 1944, ../scss/app.scss */
+/* line 1950, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .data-icon.button:hover, #main-content .item.selected:not(.export-item) .data-icon.button:focus,
 #event-cases .item.selected:not(.export-item) .data-icon.button:hover,
 #event-cases .item.selected:not(.export-item) .data-icon.button:focus,
@@ -12487,7 +12496,7 @@ button[disabled] .fa, button.disabled .fa,
   border-color: #31599d !important;
   color: #e5eefd;
 }
-/* line 1958, ../scss/app.scss */
+/* line 1964, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .item-thumb,
 #event-cases .item.selected:not(.export-item) .item-thumb,
 #case-items .item.selected:not(.export-item) .item-thumb,
@@ -12495,21 +12504,21 @@ button[disabled] .fa, button.disabled .fa,
   background-color: #BDDFFD;
   border-color: #80abf3;
 }
-/* line 1961, ../scss/app.scss */
+/* line 1967, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .item-thumb > i.fa,
 #event-cases .item.selected:not(.export-item) .item-thumb > i.fa,
 #case-items .item.selected:not(.export-item) .item-thumb > i.fa,
 #linked-events .item.selected:not(.export-item) .item-thumb > i.fa {
   color: #31599d;
 }
-/* line 1965, ../scss/app.scss */
+/* line 1971, ../scss/app.scss */
 #main-content .item.selected:not(.export-item) .item-list li,
 #event-cases .item.selected:not(.export-item) .item-list li,
 #case-items .item.selected:not(.export-item) .item-list li,
 #linked-events .item.selected:not(.export-item) .item-list li {
   color: #24395c;
 }
-/* line 1968, ../scss/app.scss */
+/* line 1974, ../scss/app.scss */
 #main-content .item.selected:not(.export-item):hover,
 #event-cases .item.selected:not(.export-item):hover,
 #case-items .item.selected:not(.export-item):hover,
@@ -12517,7 +12526,7 @@ button[disabled] .fa, button.disabled .fa,
   background-color: #BDDFFD;
   border-color: #3573dc;
 }
-/* line 1974, ../scss/app.scss */
+/* line 1980, ../scss/app.scss */
 #main-content .item:hover,
 #event-cases .item:hover,
 #case-items .item:hover,
@@ -12527,7 +12536,7 @@ button[disabled] .fa, button.disabled .fa,
   -webkit-box-shadow: 0px 1px 8px #222;
   box-shadow: 0px 1px 8px #222;
 }
-/* line 1981, ../scss/app.scss */
+/* line 1987, ../scss/app.scss */
 .view-medium-thumbs #main-content .item, .view-medium-thumbs
 #event-cases .item, .view-medium-thumbs
 #case-items .item, .view-medium-thumbs
@@ -12537,14 +12546,14 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 100px;
   margin: 10px 0;
 }
-/* line 1986, ../scss/app.scss */
+/* line 1992, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .data-icon-group, .view-medium-thumbs
 #event-cases .item .data-icon-group, .view-medium-thumbs
 #case-items .item .data-icon-group, .view-medium-thumbs
 #linked-events .item .data-icon-group {
   display: none;
 }
-/* line 1989, ../scss/app.scss */
+/* line 1995, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item, .view-medium-thumbs
 #event-cases .item.event-item, .view-medium-thumbs
 #case-items .item.event-item, .view-medium-thumbs
@@ -12553,7 +12562,7 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 90px;
   position: relative;
 }
-/* line 1993, ../scss/app.scss */
+/* line 1999, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb, .view-medium-thumbs
 #case-items .item.event-item .item-thumb, .view-medium-thumbs
@@ -12561,7 +12570,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 100px;
   height: 67px;
 }
-/* line 1998, ../scss/app.scss */
+/* line 2004, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask > .fa, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask > .fa, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask > .fa, .view-medium-thumbs
@@ -12571,7 +12580,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: .75rem;
   font-size: 40px;
 }
-/* line 2004, ../scss/app.scss */
+/* line 2010, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-medium-thumbs
@@ -12582,7 +12591,7 @@ button[disabled] .fa, button.disabled .fa,
   display: block;
   width: auto;
 }
-/* line 2010, ../scss/app.scss */
+/* line 2016, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-medium-thumbs
@@ -12591,7 +12600,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 2014, ../scss/app.scss */
+/* line 2020, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:hover, .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:hover, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus, .view-medium-thumbs
@@ -12601,21 +12610,21 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus {
   color: #7bca23;
 }
-/* line 2016, ../scss/app.scss */
+/* line 2022, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-medium-thumbs
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon {
   left: .75em;
 }
-/* line 2019, ../scss/app.scss */
+/* line 2025, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-medium-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-medium-thumbs
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon {
   right: .75em;
 }
-/* line 2025, ../scss/app.scss */
+/* line 2031, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.event-item .item-thumb img, .view-medium-thumbs
 #event-cases .item.event-item .item-thumb img, .view-medium-thumbs
 #case-items .item.event-item .item-thumb img, .view-medium-thumbs
@@ -12623,21 +12632,21 @@ button[disabled] .fa, button.disabled .fa,
   width: 100%;
   height: 100%;
 }
-/* line 2031, ../scss/app.scss */
+/* line 2037, ../scss/app.scss */
 .view-medium-thumbs #main-content .item.archived-item .item-thumb img, .view-medium-thumbs
 #event-cases .item.archived-item .item-thumb img, .view-medium-thumbs
 #case-items .item.archived-item .item-thumb img, .view-medium-thumbs
 #linked-events .item.archived-item .item-thumb img {
   margin: 0px auto;
 }
-/* line 2034, ../scss/app.scss */
+/* line 2040, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .item-list, .view-medium-thumbs
 #event-cases .item .item-list, .view-medium-thumbs
 #case-items .item .item-list, .view-medium-thumbs
 #linked-events .item .item-list {
   margin-right: 50px;
 }
-/* line 2036, ../scss/app.scss */
+/* line 2042, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .item-list li, .view-medium-thumbs
 #event-cases .item .item-list li, .view-medium-thumbs
 #case-items .item .item-list li, .view-medium-thumbs
@@ -12645,7 +12654,7 @@ button[disabled] .fa, button.disabled .fa,
   font-size: .75em;
   line-height: 1.5;
 }
-/* line 2042, ../scss/app.scss */
+/* line 2048, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .item-thumb,
 .view-medium-thumbs #main-content .item .item-thumb img, .view-medium-thumbs
 #event-cases .item .item-thumb,
@@ -12660,14 +12669,14 @@ button[disabled] .fa, button.disabled .fa,
   height: 75px;
   width: 75px;
 }
-/* line 2047, ../scss/app.scss */
+/* line 2053, ../scss/app.scss */
 .view-medium-thumbs #main-content .item .thumb-overlay, .view-medium-thumbs
 #event-cases .item .thumb-overlay, .view-medium-thumbs
 #case-items .item .thumb-overlay, .view-medium-thumbs
 #linked-events .item .thumb-overlay {
   display: none;
 }
-/* line 2051, ../scss/app.scss */
+/* line 2057, ../scss/app.scss */
 .view-small-thumbs #main-content .item, .view-small-thumbs
 #event-cases .item, .view-small-thumbs
 #case-items .item, .view-small-thumbs
@@ -12676,14 +12685,14 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 60px;
   margin: 5px 0;
 }
-/* line 2055, ../scss/app.scss */
+/* line 2061, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item, .view-small-thumbs
 #event-cases .item.event-item, .view-small-thumbs
 #case-items .item.event-item, .view-small-thumbs
 #linked-events .item.event-item {
   padding-left: 130px;
 }
-/* line 2057, ../scss/app.scss */
+/* line 2063, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb, .view-small-thumbs
 #event-cases .item.event-item .item-thumb, .view-small-thumbs
 #case-items .item.event-item .item-thumb, .view-small-thumbs
@@ -12691,7 +12700,7 @@ button[disabled] .fa, button.disabled .fa,
   height: 40px;
   width: 60px;
 }
-/* line 2061, ../scss/app.scss */
+/* line 2067, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask > .fa, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask > .fa, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask > .fa, .view-small-thumbs
@@ -12701,7 +12710,7 @@ button[disabled] .fa, button.disabled .fa,
   margin-top: 3px;
   font-size: 30px;
 }
-/* line 2067, ../scss/app.scss */
+/* line 2073, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon, .view-small-thumbs
@@ -12712,7 +12721,7 @@ button[disabled] .fa, button.disabled .fa,
   display: block;
   width: auto;
 }
-/* line 2073, ../scss/app.scss */
+/* line 2079, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon .fa, .view-small-thumbs
@@ -12721,7 +12730,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 2077, ../scss/app.scss */
+/* line 2083, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:hover, .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:hover, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus, .view-small-thumbs
@@ -12731,21 +12740,21 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon .fa:focus {
   color: #7bca23;
 }
-/* line 2079, ../scss/app.scss */
+/* line 2085, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon, .view-small-thumbs
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon.play-icon {
   left: .25em;
 }
-/* line 2082, ../scss/app.scss */
+/* line 2088, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-small-thumbs
 #event-cases .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-small-thumbs
 #case-items .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon, .view-small-thumbs
 #linked-events .item.event-item .item-thumb .thumb-mask .thumb-icon.details-icon {
   right: .25em;
 }
-/* line 2087, ../scss/app.scss */
+/* line 2093, ../scss/app.scss */
 .view-small-thumbs #main-content .item.event-item .item-thumb img, .view-small-thumbs
 #event-cases .item.event-item .item-thumb img, .view-small-thumbs
 #case-items .item.event-item .item-thumb img, .view-small-thumbs
@@ -12753,28 +12762,28 @@ button[disabled] .fa, button.disabled .fa,
   height: 100%;
   width: 100%;
 }
-/* line 2093, ../scss/app.scss */
+/* line 2099, ../scss/app.scss */
 .view-small-thumbs #main-content .item.archived-item .item-thumb img, .view-small-thumbs
 #event-cases .item.archived-item .item-thumb img, .view-small-thumbs
 #case-items .item.archived-item .item-thumb img, .view-small-thumbs
 #linked-events .item.archived-item .item-thumb img {
   margin: 0 auto;
 }
-/* line 2097, ../scss/app.scss */
+/* line 2103, ../scss/app.scss */
 .view-small-thumbs #main-content .item .data-icon-group, .view-small-thumbs
 #event-cases .item .data-icon-group, .view-small-thumbs
 #case-items .item .data-icon-group, .view-small-thumbs
 #linked-events .item .data-icon-group {
   display: none;
 }
-/* line 2100, ../scss/app.scss */
+/* line 2106, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-list, .view-small-thumbs
 #event-cases .item .item-list, .view-small-thumbs
 #case-items .item .item-list, .view-small-thumbs
 #linked-events .item .item-list {
   margin-right: 50px;
 }
-/* line 2102, ../scss/app.scss */
+/* line 2108, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-list li, .view-small-thumbs
 #event-cases .item .item-list li, .view-small-thumbs
 #case-items .item .item-list li, .view-small-thumbs
@@ -12783,7 +12792,7 @@ button[disabled] .fa, button.disabled .fa,
   line-height: 1.4;
   width: 32%;
 }
-/* line 2115, ../scss/app.scss */
+/* line 2121, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-thumb,
 .view-small-thumbs #main-content .item .item-thumb img, .view-small-thumbs
 #event-cases .item .item-thumb,
@@ -12799,7 +12808,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 40px;
   top: 8px;
 }
-/* line 2123, ../scss/app.scss */
+/* line 2129, ../scss/app.scss */
 .view-small-thumbs #main-content .item .item-thumb .thumb-overlay,
 .view-small-thumbs #main-content .item .item-thumb img .thumb-overlay, .view-small-thumbs
 #event-cases .item .item-thumb .thumb-overlay,
@@ -12813,7 +12822,7 @@ button[disabled] .fa, button.disabled .fa,
 #linked-events .item .item-thumb img .thumb-overlay {
   display: none;
 }
-/* line 2127, ../scss/app.scss */
+/* line 2133, ../scss/app.scss */
 .view-small-thumbs #main-content .item.case-item .item-thumb, .view-small-thumbs
 #event-cases .item.case-item .item-thumb, .view-small-thumbs
 #case-items .item.case-item .item-thumb, .view-small-thumbs
@@ -12821,14 +12830,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 60px;
   left: 45px;
 }
-/* line 2130, ../scss/app.scss */
+/* line 2136, ../scss/app.scss */
 .view-small-thumbs #main-content .item.case-item .item-thumb .fa, .view-small-thumbs
 #event-cases .item.case-item .item-thumb .fa, .view-small-thumbs
 #case-items .item.case-item .item-thumb .fa, .view-small-thumbs
 #linked-events .item.case-item .item-thumb .fa {
   font-size: 40px !important;
 }
-/* line 2136, ../scss/app.scss */
+/* line 2142, ../scss/app.scss */
 .export-page-wrapper #main-content .item, .export-page-wrapper
 #event-cases .item, .export-page-wrapper
 #case-items .item, .export-page-wrapper
@@ -12838,7 +12847,7 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 120px;
   margin: 10px 0;
 }
-/* line 2141, ../scss/app.scss */
+/* line 2147, ../scss/app.scss */
 .export-page-wrapper #main-content .item .data-icon-group, .export-page-wrapper
 #event-cases .item .data-icon-group, .export-page-wrapper
 #case-items .item .data-icon-group, .export-page-wrapper
@@ -12848,7 +12857,7 @@ button[disabled] .fa, button.disabled .fa,
   border-radius: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 2141, ../scss/app.scss */
+  /* line 2147, ../scss/app.scss */
   .export-page-wrapper #main-content .item .data-icon-group, .export-page-wrapper
   #event-cases .item .data-icon-group, .export-page-wrapper
   #case-items .item .data-icon-group, .export-page-wrapper
@@ -12856,7 +12865,7 @@ button[disabled] .fa, button.disabled .fa,
     display: none;
   }
 }
-/* line 2149, ../scss/app.scss */
+/* line 2155, ../scss/app.scss */
 .export-page-wrapper #main-content .item.export-item, .export-page-wrapper
 #event-cases .item.export-item, .export-page-wrapper
 #case-items .item.export-item, .export-page-wrapper
@@ -12864,7 +12873,7 @@ button[disabled] .fa, button.disabled .fa,
   padding-left: 165px;
   min-height: 120px;
 }
-/* line 2152, ../scss/app.scss */
+/* line 2158, ../scss/app.scss */
 .export-page-wrapper #main-content .item.export-item .item-thumb, .export-page-wrapper
 #event-cases .item.export-item .item-thumb, .export-page-wrapper
 #case-items .item.export-item .item-thumb, .export-page-wrapper
@@ -12872,7 +12881,7 @@ button[disabled] .fa, button.disabled .fa,
   width: 100px;
   height: 67px;
 }
-/* line 2155, ../scss/app.scss */
+/* line 2161, ../scss/app.scss */
 .export-page-wrapper #main-content .item.export-item .item-thumb .thumb-mask .fa, .export-page-wrapper
 #event-cases .item.export-item .item-thumb .thumb-mask .fa, .export-page-wrapper
 #case-items .item.export-item .item-thumb .thumb-mask .fa, .export-page-wrapper
@@ -12880,7 +12889,7 @@ button[disabled] .fa, button.disabled .fa,
   color: #ccc;
   display: block;
 }
-/* line 2160, ../scss/app.scss */
+/* line 2166, ../scss/app.scss */
 .export-page-wrapper #main-content .item.export-item .item-thumb img, .export-page-wrapper
 #event-cases .item.export-item .item-thumb img, .export-page-wrapper
 #case-items .item.export-item .item-thumb img, .export-page-wrapper
@@ -12888,14 +12897,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 100px;
   height: 67px;
 }
-/* line 2166, ../scss/app.scss */
+/* line 2172, ../scss/app.scss */
 .export-page-wrapper #main-content .item .item-list, .export-page-wrapper
 #event-cases .item .item-list, .export-page-wrapper
 #case-items .item .item-list, .export-page-wrapper
 #linked-events .item .item-list {
   margin-right: 50px;
 }
-/* line 2168, ../scss/app.scss */
+/* line 2174, ../scss/app.scss */
 .export-page-wrapper #main-content .item .item-list li, .export-page-wrapper
 #event-cases .item .item-list li, .export-page-wrapper
 #case-items .item .item-list li, .export-page-wrapper
@@ -12904,7 +12913,7 @@ button[disabled] .fa, button.disabled .fa,
   line-height: 1.5;
   width: 32%;
 }
-/* line 2176, ../scss/app.scss */
+/* line 2182, ../scss/app.scss */
 .export-page-wrapper #main-content .item .item-thumb,
 .export-page-wrapper #main-content .item .item-thumb img, .export-page-wrapper
 #event-cases .item .item-thumb,
@@ -12920,14 +12929,14 @@ button[disabled] .fa, button.disabled .fa,
   width: 75px;
   margin: 0;
 }
-/* line 2182, ../scss/app.scss */
+/* line 2188, ../scss/app.scss */
 .export-page-wrapper #main-content .item .thumb-overlay, .export-page-wrapper
 #event-cases .item .thumb-overlay, .export-page-wrapper
 #case-items .item .thumb-overlay, .export-page-wrapper
 #linked-events .item .thumb-overlay {
   display: none;
 }
-/* line 2188, ../scss/app.scss */
+/* line 2194, ../scss/app.scss */
 #main-content.export-queue .item,
 #event-cases.export-queue .item,
 #case-items.export-queue .item,
@@ -12937,7 +12946,7 @@ button[disabled] .fa, button.disabled .fa,
   min-height: 110px;
 }
 @media screen and (min-width: 1025px) {
-  /* line 2194, ../scss/app.scss */
+  /* line 2200, ../scss/app.scss */
   #main-content.export-queue .item.export-item:nth-child(even),
   #event-cases.export-queue .item.export-item:nth-child(even),
   #case-items.export-queue .item.export-item:nth-child(even),
@@ -12946,7 +12955,7 @@ button[disabled] .fa, button.disabled .fa,
     margin: 10px 1% 10px 0 !important;
     float: left !important;
   }
-  /* line 2199, ../scss/app.scss */
+  /* line 2205, ../scss/app.scss */
   #main-content.export-queue .item.export-item:nth-child(odd),
   #event-cases.export-queue .item.export-item:nth-child(odd),
   #case-items.export-queue .item.export-item:nth-child(odd),
@@ -12957,12 +12966,12 @@ button[disabled] .fa, button.disabled .fa,
   }
 }
 
-/* line 2208, ../scss/app.scss */
+/* line 2214, ../scss/app.scss */
 #case-items .item-thumb {
   background: none !important;
 }
 
-/* line 2212, ../scss/app.scss */
+/* line 2218, ../scss/app.scss */
 .view-table #main-content > .columns > .item,
 .show-for-large-thumbs,
 .show-for-medium-thumbs,
@@ -12980,7 +12989,7 @@ button[disabled] .fa, button.disabled .fa,
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 2230, ../scss/app.scss */
+/* line 2236, ../scss/app.scss */
 .view-large-thumbs .show-for-large-thumbs,
 .view-medium-thumbs .show-for-medium-thumbs,
 .view-small-thumbs .show-for-small-thumbs,
@@ -12996,12 +13005,12 @@ button[disabled] .fa, button.disabled .fa,
   clip: auto;
 }
 
-/* line 2245, ../scss/app.scss */
+/* line 2251, ../scss/app.scss */
 #grid {
   display: none;
 }
 
-/* line 2248, ../scss/app.scss */
+/* line 2254, ../scss/app.scss */
 .view-table #grid {
   display: block;
   width: 100%;
@@ -13009,7 +13018,7 @@ button[disabled] .fa, button.disabled .fa,
   background: #fff;
 }
 
-/* line 2255, ../scss/app.scss */
+/* line 2261, ../scss/app.scss */
 form.k-filter-menu input.k-textbox {
   background: #2d2d2d;
   background: -webkit-gradient(linear, left top, left bottom, from(#2d2d2d), to(#393b3f));
@@ -13032,7 +13041,7 @@ form.k-filter-menu input.k-textbox {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 2267, ../scss/app.scss */
+  /* line 2273, ../scss/app.scss */
   #main-content div.item .item-list li {
     font-size: .75em;
     margin: 0 0.5%;
@@ -13041,7 +13050,7 @@ form.k-filter-menu input.k-textbox {
     line-height: 1.5;
   }
 
-  /* line 2275, ../scss/app.scss */
+  /* line 2281, ../scss/app.scss */
   .export-page-wrapper #main-content div.item .item-list li {
     margin: 0 1% 0 0;
     width: 48% !important;
@@ -13049,7 +13058,7 @@ form.k-filter-menu input.k-textbox {
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 2282, ../scss/app.scss */
+  /* line 2288, ../scss/app.scss */
   .export-page-wrapper #main-content div.item .item-list li {
     font-size: .75em;
     margin: 0 0.5%;
@@ -13058,7 +13067,7 @@ form.k-filter-menu input.k-textbox {
   }
 }
 @media screen and (min-width: 1921px) {
-  /* line 2291, ../scss/app.scss */
+  /* line 2297, ../scss/app.scss */
   #main-content div.item:not(.export-item),
   #event-cases div.item:not(.export-item) {
     width: 49%;
@@ -13066,19 +13075,19 @@ form.k-filter-menu input.k-textbox {
     float: left;
   }
 
-  /* line 2297, ../scss/app.scss */
+  /* line 2303, ../scss/app.scss */
   #main-content div.item .show-for-large-up {
     display: none !important;
   }
 
-  /* line 2300, ../scss/app.scss */
+  /* line 2306, ../scss/app.scss */
   #main-content div.item .item-list li {
     font-size: 12px;
     margin: 0 1% 0 0;
     width: 48% !important;
   }
 }
-/* line 2310, ../scss/app.scss */
+/* line 2316, ../scss/app.scss */
 .main-section {
   position: relative;
 }
@@ -13092,7 +13101,7 @@ form.k-filter-menu input.k-textbox {
   clear: both;
 }
 
-/* line 2314, ../scss/app.scss */
+/* line 2320, ../scss/app.scss */
 #applicationHost,
 .page-host {
   height: auto !important;
@@ -13100,7 +13109,7 @@ form.k-filter-menu input.k-textbox {
   position: relative;
 }
 
-/* line 2323, ../scss/app.scss */
+/* line 2329, ../scss/app.scss */
 .search-active .exit-off-canvas,
 .menu-active .exit-off-canvas {
   -webkit-backface-visibility: hidden;
@@ -13118,13 +13127,13 @@ form.k-filter-menu input.k-textbox {
   width: 100%;
   -webkit-tap-highlight-color: transparent;
 }
-/* line 2339, ../scss/app.scss */
+/* line 2345, ../scss/app.scss */
 .search-active .exit-off-canvas:hover,
 .menu-active .exit-off-canvas:hover {
   background: rgba(0, 0, 0, 0.05) !important;
 }
 
-/* line 2346, ../scss/app.scss */
+/* line 2352, ../scss/app.scss */
 #content-outer-wrapper {
   position: relative;
   min-height: 100%;
@@ -13142,12 +13151,12 @@ form.k-filter-menu input.k-textbox {
 #content-outer-wrapper:after {
   clear: both;
 }
-/* line 2355, ../scss/app.scss */
+/* line 2361, ../scss/app.scss */
 #content-outer-wrapper.wide-sidebar-oncanvas {
   padding-left: 300px;
 }
 
-/* line 2364, ../scss/app.scss */
+/* line 2370, ../scss/app.scss */
 #content-wrapper {
   position: relative;
   z-index: 1;
@@ -13171,46 +13180,46 @@ form.k-filter-menu input.k-textbox {
 #content-wrapper:after {
   clear: both;
 }
-/* line 2378, ../scss/app.scss */
+/* line 2384, ../scss/app.scss */
 #content-wrapper .row {
   width: auto;
   max-width: none;
 }
 
-/* line 2383, ../scss/app.scss */
+/* line 2389, ../scss/app.scss */
 .wide-sidebar #content-wrapper {
   margin-left: 300px;
 }
 
-/* line 2386, ../scss/app.scss */
+/* line 2392, ../scss/app.scss */
 .wide-sidebar-oncanvas #content-wrapper {
   margin-left: 0px;
 }
 
-/* line 2390, ../scss/app.scss */
+/* line 2396, ../scss/app.scss */
 .no-sidebar #content-wrapper {
   margin-left: 0 !important;
   background: #303030;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 2396, ../scss/app.scss */
+  /* line 2402, ../scss/app.scss */
   #content-wrapper {
     margin: auto !important;
   }
 }
-/* line 2401, ../scss/app.scss */
+/* line 2407, ../scss/app.scss */
 .row-offcanvas .offcanvas-sidebar {
   float: left;
 }
 
-/* line 2404, ../scss/app.scss */
+/* line 2410, ../scss/app.scss */
 .row-offcanvas .search-sidebar-offcanvas {
   width: 225px;
   height: 100vh;
 }
 
-/* line 2408, ../scss/app.scss */
+/* line 2414, ../scss/app.scss */
 .row-offcanvas .wide-sidebar-oncanvas {
   width: 300px;
   position: absolute;
@@ -13220,13 +13229,13 @@ form.k-filter-menu input.k-textbox {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 2417, ../scss/app.scss */
+  /* line 2423, ../scss/app.scss */
   html {
     overflow-y: auto !important;
     /* remove scrollbar in non-IE */
   }
 
-  /* line 2421, ../scss/app.scss */
+  /* line 2427, ../scss/app.scss */
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
@@ -13236,7 +13245,7 @@ form.k-filter-menu input.k-textbox {
     overflow-x: hidden;
     max-height: 100vh;
   }
-  /* line 2429, ../scss/app.scss */
+  /* line 2435, ../scss/app.scss */
   .row-offcanvas .offcanvas-sidebar {
     position: absolute !important;
     top: 0 !important;
@@ -13244,60 +13253,60 @@ form.k-filter-menu input.k-textbox {
     min-height: 100vh;
     background: #303030;
   }
-  /* line 2436, ../scss/app.scss */
+  /* line 2442, ../scss/app.scss */
   .row-offcanvas .menu-sidebar-offcanvas {
     width: 250px !important;
     right: -250px;
   }
-  /* line 2440, ../scss/app.scss */
+  /* line 2446, ../scss/app.scss */
   .row-offcanvas .search-sidebar-offcanvas {
     top: -60px !important;
     left: -225px;
     width: 225px !important;
   }
-  /* line 2451, ../scss/app.scss */
+  /* line 2457, ../scss/app.scss */
   .row-offcanvas .wide-sidebar-oncanvas {
     top: -60px !important;
     left: -300px;
     width: 300px !important;
   }
-  /* line 2456, ../scss/app.scss */
+  /* line 2462, ../scss/app.scss */
   .row-offcanvas.search-active #content-outer-wrapper {
     left: 225px;
     overflow: visible;
   }
-  /* line 2459, ../scss/app.scss */
+  /* line 2465, ../scss/app.scss */
   .row-offcanvas.search-active #content-outer-wrapper.wide-sidebar {
     left: 300px;
   }
-  /* line 2464, ../scss/app.scss */
+  /* line 2470, ../scss/app.scss */
   .row-offcanvas.menu-active {
     right: 250px;
     overflow: visible;
   }
-  /* line 2467, ../scss/app.scss */
+  /* line 2473, ../scss/app.scss */
   .row-offcanvas.menu-active #content-outer-wrapper {
     /*				overflow-x: hidden;*/
   }
 
-  /* line 2479, ../scss/app.scss */
+  /* line 2485, ../scss/app.scss */
   .nav-bar .nav-bar-section {
     left: 0;
   }
-  /* line 2482, ../scss/app.scss */
+  /* line 2488, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul ul li a {
     padding: 0.66667rem;
     color: white;
     border-bottom: 1px solid #393b3f;
     transition: background 300ms ease;
   }
-  /* line 2490, ../scss/app.scss */
+  /* line 2496, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li {
     display: block;
     float: none;
     margin: 0;
   }
-  /* line 2494, ../scss/app.scss */
+  /* line 2500, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li > a {
     border-radius: 0;
     border-bottom: 1px solid #393b3f;
@@ -13305,11 +13314,11 @@ form.k-filter-menu input.k-textbox {
     color: #eee;
     box-shadow: none;
   }
-  /* line 2500, ../scss/app.scss */
+  /* line 2506, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li > a:hover {
     border-color: #000;
   }
-  /* line 2503, ../scss/app.scss */
+  /* line 2509, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown.active > a {
     background: #262b31 !important;
     border-bottom-color: #262b31 !important;
@@ -13318,11 +13327,11 @@ form.k-filter-menu input.k-textbox {
     border-radius: 3px 3px 0 0;
     box-shadow: none;
   }
-  /* line 2511, ../scss/app.scss */
+  /* line 2517, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown .fa {
     margin-right: 10px;
   }
-  /* line 2514, ../scss/app.scss */
+  /* line 2520, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown > .dropdown {
     height: auto;
     width: auto;
@@ -13335,7 +13344,7 @@ form.k-filter-menu input.k-textbox {
     min-width: 100%;
     background: transparent;
   }
-  /* line 2525, ../scss/app.scss */
+  /* line 2531, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown > .dropdown li {
     display: block;
     position: relative;
@@ -13343,14 +13352,14 @@ form.k-filter-menu input.k-textbox {
     margin: 0;
     float: none;
   }
-  /* line 2531, ../scss/app.scss */
+  /* line 2537, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown > .dropdown li a {
     font-weight: normal;
     padding: 0 22px 0 42px;
     display: block;
     float: none;
   }
-  /* line 2540, ../scss/app.scss */
+  /* line 2546, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.has-dropdown:hover > .dropdown {
     display: block;
     height: auto;
@@ -13364,7 +13373,7 @@ form.k-filter-menu input.k-textbox {
     min-width: 100%;
     background: transparent;
   }
-  /* line 2555, ../scss/app.scss */
+  /* line 2561, ../scss/app.scss */
   .nav-bar .nav-bar-section > ul > li.active > a {
     background: #000;
     color: #e69c17;
@@ -13374,7 +13383,7 @@ form.k-filter-menu input.k-textbox {
     border-radius: 0;
   }
 }
-/* line 2571, ../scss/app.scss */
+/* line 2577, ../scss/app.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -13401,23 +13410,23 @@ footer:after {
   clear: both;
 }
 
-/* line 2591, ../scss/app.scss */
+/* line 2597, ../scss/app.scss */
 label.error {
   color: #ff5555 !important;
 }
 
-/* line 2595, ../scss/app.scss */
+/* line 2601, ../scss/app.scss */
 small.error {
   display: none;
 }
 
-/* line 2598, ../scss/app.scss */
+/* line 2604, ../scss/app.scss */
 label.error + small.error,
 input.error + small.error {
   display: block;
 }
 
-/* line 2605, ../scss/app.scss */
+/* line 2611, ../scss/app.scss */
 textarea.error,
 input[type=text].error,
 .select.error .chosen-single {
@@ -13426,52 +13435,52 @@ input[type=text].error,
   background: rgba(255, 85, 85, 0.125);
   margin-bottom: 1rem;
 }
-/* line 2612, ../scss/app.scss */
+/* line 2618, ../scss/app.scss */
 textarea.error[placeholder],
 input[type=text].error[placeholder],
 .select.error .chosen-single[placeholder] {
   color: #ff5555;
 }
-/* line 2615, ../scss/app.scss */
+/* line 2621, ../scss/app.scss */
 textarea.error::-webkit-input-placeholder,
 input[type=text].error::-webkit-input-placeholder,
 .select.error .chosen-single::-webkit-input-placeholder {
   color: #ff5555;
 }
-/* line 2619, ../scss/app.scss */
+/* line 2625, ../scss/app.scss */
 textarea.error:-moz-placeholder,
 input[type=text].error:-moz-placeholder,
 .select.error .chosen-single:-moz-placeholder {
   /* Firefox 18- */
   color: #ff5555;
 }
-/* line 2623, ../scss/app.scss */
+/* line 2629, ../scss/app.scss */
 textarea.error::-moz-placeholder,
 input[type=text].error::-moz-placeholder,
 .select.error .chosen-single::-moz-placeholder {
   /* Firefox 19+ */
   color: #ff5555;
 }
-/* line 2627, ../scss/app.scss */
+/* line 2633, ../scss/app.scss */
 textarea.error:-ms-input-placeholder,
 input[type=text].error:-ms-input-placeholder,
 .select.error .chosen-single:-ms-input-placeholder {
   color: #ff5555;
 }
-/* line 2630, ../scss/app.scss */
+/* line 2636, ../scss/app.scss */
 .sidebar-form textarea.error, .sidebar-form
 input[type=text].error, .sidebar-form
 .select.error .chosen-single {
   color: #ff5555 !important;
 }
-/* line 2633, ../scss/app.scss */
+/* line 2639, ../scss/app.scss */
 textarea.error + small.error,
 input[type=text].error + small.error,
 .select.error .chosen-single + small.error {
   margin-top: -1rem;
 }
 
-/* line 2635, ../scss/app.scss */
+/* line 2641, ../scss/app.scss */
 textarea.required,
 input[type=text].required,
 .select.required .chosen-single {
@@ -13480,46 +13489,46 @@ input[type=text].required,
   background: rgba(240, 138, 36, 0.25);
   margin-bottom: 1rem;
 }
-/* line 2644, ../scss/app.scss */
+/* line 2650, ../scss/app.scss */
 textarea.required[placeholder],
 input[type=text].required[placeholder],
 .select.required .chosen-single[placeholder] {
   color: #de770f;
 }
-/* line 2647, ../scss/app.scss */
+/* line 2653, ../scss/app.scss */
 textarea.required::-webkit-input-placeholder,
 input[type=text].required::-webkit-input-placeholder,
 .select.required .chosen-single::-webkit-input-placeholder {
   color: #de770f;
 }
-/* line 2651, ../scss/app.scss */
+/* line 2657, ../scss/app.scss */
 textarea.required:-moz-placeholder,
 input[type=text].required:-moz-placeholder,
 .select.required .chosen-single:-moz-placeholder {
   /* Firefox 18- */
   color: #de770f;
 }
-/* line 2655, ../scss/app.scss */
+/* line 2661, ../scss/app.scss */
 textarea.required::-moz-placeholder,
 input[type=text].required::-moz-placeholder,
 .select.required .chosen-single::-moz-placeholder {
   /* Firefox 19+ */
   color: #de770f;
 }
-/* line 2659, ../scss/app.scss */
+/* line 2665, ../scss/app.scss */
 textarea.required:-ms-input-placeholder,
 input[type=text].required:-ms-input-placeholder,
 .select.required .chosen-single:-ms-input-placeholder {
   color: #de770f;
 }
-/* line 2662, ../scss/app.scss */
+/* line 2668, ../scss/app.scss */
 textarea.required + small.error,
 input[type=text].required + small.error,
 .select.required .chosen-single + small.error {
   margin-top: -1rem;
 }
 
-/* line 2664, ../scss/app.scss */
+/* line 2670, ../scss/app.scss */
 .selected .select.required .chosen-single,
 .showing .select.required .chosen-single,
 .delete .select.required .chosen-single {
@@ -13527,37 +13536,37 @@ input[type=text].required + small.error,
   border-color: #cc5555 !important;
   background: #cc8888;
 }
-/* line 2667, ../scss/app.scss */
+/* line 2673, ../scss/app.scss */
 .selected .select.required .chosen-single span,
 .showing .select.required .chosen-single span,
 .delete .select.required .chosen-single span {
   color: #fff;
 }
 
-/* line 2672, ../scss/app.scss */
+/* line 2678, ../scss/app.scss */
 .selected .select.required .chosen-single,
 .showing .select.required .chosen-single {
   color: #fff;
   border-color: #cc5555 !important;
   background: #cc8888;
 }
-/* line 2674, ../scss/app.scss */
+/* line 2680, ../scss/app.scss */
 .selected .select.required .chosen-single span,
 .showing .select.required .chosen-single span {
   color: #fff;
 }
 
-/* line 2680, ../scss/app.scss */
+/* line 2686, ../scss/app.scss */
 label.required {
   color: #de770f !important;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 2685, ../scss/app.scss */
+  /* line 2691, ../scss/app.scss */
   #content-wrapper.sticky {
     padding-top: 110px;
   }
-  /* line 2687, ../scss/app.scss */
+  /* line 2693, ../scss/app.scss */
   #content-wrapper.sticky #fixed-header {
     position: fixed;
     left: 241px;
@@ -13565,17 +13574,17 @@ label.required {
     top: 0;
     z-index: 10;
   }
-  /* line 2693, ../scss/app.scss */
+  /* line 2699, ../scss/app.scss */
   .no-sidebar #content-wrapper.sticky #fixed-header {
     left: 0;
     right: 0;
   }
-  /* line 2697, ../scss/app.scss */
+  /* line 2703, ../scss/app.scss */
   .wide-sidebar #content-wrapper.sticky #fixed-header {
     left: 310px;
   }
 
-  /* line 2703, ../scss/app.scss */
+  /* line 2709, ../scss/app.scss */
   .search-sidebar-offcanvas.sticky {
     position: fixed !important;
     left: 0px;
@@ -13583,7 +13592,7 @@ label.required {
     z-index: 10;
   }
 }
-/* line 2710, ../scss/app.scss */
+/* line 2716, ../scss/app.scss */
 .panel-top-title {
   margin: 10px 0 0px 0 !important;
   padding: 10px 15px;
@@ -13594,19 +13603,19 @@ label.required {
   box-shadow: none;
   color: #444;
 }
-/* line 2719, ../scss/app.scss */
+/* line 2725, ../scss/app.scss */
 .modal-body .panel-top-title {
   font-size: 16px;
   padding: 8px 10px;
   font-weight: bold;
 }
-/* line 2724, ../scss/app.scss */
+/* line 2730, ../scss/app.scss */
 .panel-top-title ~ .panel {
   border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 2729, ../scss/app.scss */
+/* line 2735, ../scss/app.scss */
 .panel-top-title.dark-title {
   -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 13px inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 13px inset;
@@ -13627,14 +13636,14 @@ label.required {
   text-shadow: 0 -1px 0px #000;
 }
 
-/* line 2752, ../scss/app.scss */
+/* line 2758, ../scss/app.scss */
 .preloader {
   background: #fff url(../images/bg_diagonal_noise.png) 0 0 repeat !important;
   position: relative;
   height: 100vh;
   margin: 0 !important;
 }
-/* line 2757, ../scss/app.scss */
+/* line 2763, ../scss/app.scss */
 .preloader img {
   display: block;
   position: absolute;
@@ -13642,7 +13651,7 @@ label.required {
   left: 50%;
   margin: -32px 0 0 -32px;
 }
-/* line 2764, ../scss/app.scss */
+/* line 2770, ../scss/app.scss */
 .preloader p {
   text-align: center;
   display: block;
@@ -13653,98 +13662,98 @@ label.required {
   color: #888;
 }
 
-/* line 2776, ../scss/app.scss */
+/* line 2782, ../scss/app.scss */
 .kendo-datepicker .k-widget,
 .kendo-datepicker .k-content,
 .kendo-datepicker .k-calendar .k-footer .k-nav-today:active {
   background-color: #fff;
 }
-/* line 2781, ../scss/app.scss */
+/* line 2787, ../scss/app.scss */
 .kendo-datepicker .k-calendar th,
 .kendo-datepicker .k-calendar-container.k-group,
 .kendo-datepicker .k-state-default > .k-select {
   border-color: #ceced2;
 }
-/* line 2786, ../scss/app.scss */
+/* line 2792, ../scss/app.scss */
 .kendo-datepicker .k-state-hover > .k-select {
   border-color: #bebec3;
 }
-/* line 2789, ../scss/app.scss */
+/* line 2795, ../scss/app.scss */
 .kendo-datepicker .k-state-focused > .k-select {
   border-color: #bdbdbd;
 }
-/* line 2793, ../scss/app.scss */
+/* line 2799, ../scss/app.scss */
 .kendo-datepicker .k-group,
 .kendo-datepicker .k-calendar th,
 .kendo-datepicker .k-header,
 .kendo-datepicker .k-button {
   background-color: #f5f5f5;
 }
-/* line 2799, ../scss/app.scss */
+/* line 2805, ../scss/app.scss */
 .kendo-datepicker .k-list-container,
 .kendo-datepicker .k-picker-wrap.k-state-default {
   border-color: #ceced2;
   background-color: #f3f3f4;
 }
-/* line 2805, ../scss/app.scss */
+/* line 2811, ../scss/app.scss */
 .kendo-datepicker .k-calendar .k-link,
 .kendo-datepicker .k-calendar .k-link.k-nav-fast,
 .kendo-datepicker .k-list-container {
   color: #515967;
 }
-/* line 2812, ../scss/app.scss */
+/* line 2818, ../scss/app.scss */
 .kendo-datepicker .k-icon,
 .kendo-datepicker .k-tool-icon {
-  background-image: url("silver/sprite.png");
+  background-image: url("../images/silver/sprite.png");
   border-color: transparent;
 }
-/* line 2819, ../scss/app.scss */
+/* line 2825, ../scss/app.scss */
 .kendo-datepicker .k-calendar .k-footer {
   padding: 0;
 }
-/* line 2822, ../scss/app.scss */
+/* line 2828, ../scss/app.scss */
 .kendo-datepicker .k-calendar .k-footer .k-nav-today {
   color: #505968;
   text-decoration: none;
   background-color: #fff;
 }
-/* line 2827, ../scss/app.scss */
+/* line 2833, ../scss/app.scss */
 .kendo-datepicker .k-calendar .k-footer .k-nav-today:hover,
 .kendo-datepicker .k-calendar .k-footer .k-nav-today.k-state-hover {
   background-color: #fff;
   text-decoration: underline;
 }
-/* line 2833, ../scss/app.scss */
+/* line 2839, ../scss/app.scss */
 .kendo-datepicker .k-calendar .k-nav-fast.k-state-hover {
   text-decoration: none;
   background-color: #b6bdca;
   color: #263248;
 }
-/* line 2838, ../scss/app.scss */
+/* line 2844, ../scss/app.scss */
 .kendo-datepicker .k-calendar .k-link.k-state-hover {
   border-radius: 4px;
 }
-/* line 2841, ../scss/app.scss */
+/* line 2847, ../scss/app.scss */
 .kendo-datepicker .k-calendar .k-footer .k-link {
   border-radius: 0;
 }
-/* line 2846, ../scss/app.scss */
+/* line 2852, ../scss/app.scss */
 .kendo-datepicker .k-state-selected > .k-link {
   color: #fff;
 }
-/* line 2849, ../scss/app.scss */
+/* line 2855, ../scss/app.scss */
 .kendo-datepicker .k-state-hover,
 .kendo-datepicker .k-state-hover:hover {
   color: #263248;
   background-color: #b6bdca;
   border-color: #bebec3;
 }
-/* line 2856, ../scss/app.scss */
+/* line 2862, ../scss/app.scss */
 .kendo-datepicker .k-state-hover > .k-select,
 .kendo-datepicker .k-state-focused > .k-select {
   border-color: #bebec3;
 }
-/* line 2861, ../scss/app.scss */
+/* line 2867, ../scss/app.scss */
 .kendo-datepicker .k-widget,
 .kendo-datepicker .k-button,
 .kendo-datepicker .k-state-hover,
@@ -13753,7 +13762,7 @@ label.required {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 2870, ../scss/app.scss */
+/* line 2876, ../scss/app.scss */
 .kendo-datepicker .k-datetimepicker,
 .kendo-datepicker .k-list-container,
 .kendo-datepicker .k-calendar-container,
@@ -13762,7 +13771,7 @@ label.required {
   border-radius: 4px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 2880, ../scss/app.scss */
+  /* line 2886, ../scss/app.scss */
   .kendo-datepicker .k-icon:not(.k-loading),
   .kendo-datepicker .k-tool-icon,
   .kendo-datepicker .k-state-hover .k-tool-icon,
@@ -13770,7 +13779,7 @@ label.required {
   .kendo-datepicker .k-state-active.k-state-hover .k-tool-icon,
   .kendo-datepicker .k-state-selected .k-tool-icon,
   .kendo-datepicker .k-state-selected.k-state-hover .k-tool-icon {
-    background-image: url("silver/sprite_2x.png");
+    background-image: url("../images/silver/sprite_2x.png");
     background-size: 340px 336px;
   }
 }

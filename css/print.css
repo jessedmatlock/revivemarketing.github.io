@@ -1,9 +1,14 @@
 /* @override 
 	http://elweb.com/css/print.css
 	http://mars:90/assets/css/print.css */
+
 .print-page,
 .print-page body {
 	background: #fff !important;
+}
+#header,
+nav.nav-bar {
+	display: none;
 }
 @media print { 
 	#content-wrapper {

@@ -3,7 +3,7 @@
 	http://elweb.com/css/test.css
 	http://mars:90/assets/css/test.css */
 
-input [type=text]::-ms-clear { display: none; }
+input[type=text]::-ms-clear { display: none; }
 
 .no-margin {
 	margin: 0;
@@ -1246,12 +1246,12 @@ table .info .status-icon,
 }
 #checkout-report-details .checkout-assignee {
     font-weight: bold;
-    width: 25%;
+    width: 15%;
     border-right: 1px solid #ddd;
 }
 #checkout-report-details .checkout-device-location {
     font-weight: bold;
-    width: 20%;
+    width: 50%;
     border-right: 1px solid #ddd;
 }
 #checkout-report-details .checkout-device-station {
@@ -1844,7 +1844,6 @@ table .info .status-icon,
 #playhead-controls .button-group {
     margin-bottom: 0;
     border-color: #000;
-    color: #888;
     font-size: 1.1em;
     display: block;
     float: left;
@@ -1910,6 +1909,12 @@ table .info .status-icon,
 
 .video-trim #playhead-controls #fader-wrapper {
     margin-left: -300px;
+}
+@media screen and (max-width: 1440px) {
+	#playhead-controls #fader-wrapper {
+        margin-left: 0px;
+	    
+	}	
 }
 @media screen and (max-width: 640px) {
     .video-trim #playhead-controls #fader-wrapper {
@@ -2020,7 +2025,7 @@ table .info .status-icon,
     text-align: left;
 }
 #fader-wrapper .ui-slider .ui-slider-handle {
-    background: url('/images/slidehead.png') no-repeat 50% 50% !important;
+    background: url('../images/slidehead.png') no-repeat 50% 50% !important;
     border: none !important;
     width: 18px !important;
     height: 20px !important;
@@ -4393,7 +4398,14 @@ section.table div.table-row div.table-cell {
 }
 #export-video-options {
     min-height: 300px;
-    padding: 15px 10px 0px;
+    padding: 0px 10px 0px;
+    border-top: none !important;
+    border-radius: 0 0 3px 3px !important;    
+}
+#share-options {
+	border-top: none !important;
+	border-radius: 0 0 3px 3px !important;
+	
 }
 #export-video-options .alert-box,
 #export-video-options .alert-box a {
@@ -5017,7 +5029,7 @@ body.kiosk .main-section {
 }
 body.kiosk #kiosk-header {
 	background: transparent url('../images/header-decor.png') repeat-x 0 100%;
-	height: 85px;
+	height: 105px;
 	margin-bottom: 40px;
 	position: relative;
 	z-index: 1;
@@ -5027,7 +5039,7 @@ body.kiosk #kiosk-header:before {
 	display: block;
 	content: " ";
 	background: #0a0a0a;
-	height: 80px;
+	height: 100px;
 	width: 100%;
 	z-index: 0;
 }
@@ -6592,12 +6604,13 @@ section.main-section {
     width: 100%;
 }
 
-#header .nav-bar-section ul li.user-profile,
-#header .nav-bar-section ul li.user-logout a,
-#header .nav-bar-section ul li.user-profile a,
-#header .nav-bar-section ul li.user-profile a:hover,
-#header .nav-bar-section ul li.user-profile a:focus {
-    background: transparent !important;
+.nav-bar-section ul li.user-profile,
+.nav-bar-section ul li.user-profile a,
+.nav-bar-section ul li.user-logout,
+.nav-bar-section ul li.user-logout a,
+.nav-bar-section ul li.user-profile a:hover,
+.nav-bar-section ul li.user-profile a:focus {
+    background: none !important;
     box-shadow: none;
     border: none;
 }
@@ -6919,7 +6932,7 @@ section.main-section {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596069', endColorstr='#3F454B', GradientType=0);
     transition: none;
     border: 1px solid #393e44;
-    border-bottom-color: #eee;
+    border-bottom: none;
     color: #F8FBFF;
     transition: none;
     text-shadow: 0 -1px 0px #000;

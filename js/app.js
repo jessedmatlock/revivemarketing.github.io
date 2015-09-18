@@ -215,7 +215,7 @@ $(document).ready(function(){
 	
 	
 	    $(this).qtip({
-	        style: { classes: 'wgv-tooltip' },
+	        style: { classes: 'qtip-tipsy' },
 	        overwrite: false, // Don't overwrite tooltips already bound
 	        show: {
 	            event: event.type, // Use the same show event as the one that triggered the event handler
@@ -1500,7 +1500,34 @@ $(document).on("click","#select_officer_search_chosen li.result-selected",functi
 		showCount = '<div class="count-wrap">'+count+'</div>';
 		$(this).find('.item-select').disableSelection().prepend(showCount);
 	});		
-			
+		
+		
+	$('.ui-dropper').each(function () {
+
+	    $(this).closest('body').find($('#' + $(this).attr('data-drop'))).menu().hide();
+
+	    $(this).click(function () {
+	        // data-drop value and create ID to target dropdown
+	        var dropdown = $('#' + $(this).attr('data-drop'));
+	        // hide all OTHER dropdowns when we open one
+	        $('.ui-menu:visible').not(dropdown).hide();
+	        // position the dropdown to the right, so it works on all buttons
+	        // buttons at far right of screen will have menus flipped inward to avoid viewport collision
+	        dropdown.toggle().position({
+	            my: "left top",
+	            at: "right top",
+	            of: this,
+	            collision: 'flipfit',
+	            //within: '#gridContainer'
+	        });
+	        // on click of the document, close the menus
+	        $(document).one("click", function () {
+	            dropdown.hide();
+	            $('.ui-menu:visible').hide();
+	        });
+	        return false;
+	    });
+	});
 }); // end docready
 
 

@@ -1,16 +1,24 @@
 /* @override 
 	http://elweb.com/css/print.css
 	http://mars:90/assets/css/print.css */
-
 .print-page,
 .print-page body {
 	background: #fff !important;
 }
-#header,
-nav.nav-bar {
-	display: none;
-}
 @media print { 
+	html,
+	body,
+	#content-wrapper,
+	section.main-section,
+	#main-content {
+		background: #fff !important;
+	}
+	#header,
+	nav.nav-bar,
+	.hide-for-print {
+		display: none;
+	}
+
 	#content-wrapper {
 		margin: 0 !important;
 	}
@@ -175,15 +183,16 @@ nav.nav-bar {
 	#event-cases .item .item-thumb {
 	    display: block;
 	    position: absolute;
-	    left: 10px;
-	    top: 10px;
+	    left: 0px;
+	    top: 0px;
 	    float: none;
 	    z-index: 1;
 	    text-align: center;
 	    background: #aaa;
 	    border: none;
 	    margin: 0;
-	    padding: 0;	    
+	    padding: 0;	 
+	    max-height: 100%;   
 	}
 	
 	#main-content .item .item-thumb img,
@@ -205,7 +214,7 @@ nav.nav-bar {
 	}
 	
 	.item .item-thumb .thumb-overlay {
-	    display: none;
+	    display: none !important;
 	}
 	
 	.item.archived-item {
@@ -214,7 +223,7 @@ nav.nav-bar {
 	    background-repeat: repeat;
 	}
 	
-	.item.archived-item .item-thumb img { display: none }
+	.item.archived-item .item-thumb img { display: none !important }
 	
 	.item.archived-item .item-thumb:before {
 	    font-family: 'FontAwesome';
@@ -275,7 +284,7 @@ nav.nav-bar {
 	    left: 35px;
 	    right: 0;
 	    border-top: 1px solid #ccc;
-	    border-left: none;
+	    border-left: 1px solid #ccc !important;
 	    min-height: 30px;
 	    max-height: 58px;
 	    padding: 0;
@@ -529,7 +538,7 @@ nav.nav-bar {
 	        display: none;
 	    }
 	    .k-header {
-	    	font-size: 14px;;
+	    	font-size: 14px;
 	    }
 	    .k-grid,
 	    .k-grid-content {
@@ -578,7 +587,13 @@ nav.nav-bar {
 	.hide-for-small-thumbs,
 	.hide-for-table,
 	.k-pager-wrap,
-	.k-grid-pager { display: none !important; visibility: hidden !important;}
+	.k-grid-pager,
+	#viewportsize,
+	#main-content .item.partial-event:before,
+	#content-wrapper.partial-event #content-header:before,
+	#main-content .item.importing-event:before,
+	#content-wrapper.importing-event #content-header:before {
+		display: none !important; visibility: hidden !important;}
 	
 	.view-table .show-for-table { display: inherit !important }
 	

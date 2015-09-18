@@ -366,7 +366,7 @@
 	<footer>
 		<div class="row">
 		    <div class="small-12 medium-12 large-6 columns">			
-		        <p class="muted">Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>			
+		        <p class="muted">Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved. <a href="javascript:void(0);" class="">Need Help?</a></p>			
 		    </div><!-- end columns -->		
 		    <div class="small-12 medium-12 large-6 columns show-for-medium-up">
 				<div class="row collapse text-centered">
@@ -509,7 +509,7 @@
 				var assignment = '<div class="checkout-report-detail">'+
 					'<div class="checkout-assignee">Johnny B. Good</div>'+
 					'<div class="checkout-device-config">Config. 1</div>'+						
-					'<div class="checkout-device-location">Building 1, Transfer '+transfer+'/'+count+'</div>'+
+					'<div class="checkout-device-location">Innas_desk_this_station_is_loc, this_station_is_located_in_bldg'+transfer+'/'+count+'</div>'+
 					'<div class="checkout-device-name">Vista VL-168</div>'+
 				'</div>';
 				
@@ -531,7 +531,7 @@
 		var windowReport = null; // global variable
 		function openWindowReport() {
 		  if(windowReport == null || windowReport.closed) {
-		    windowReport = window.open('checkout-report.html', '_blank', 'toolbar=0,titlebar=0,status=0,location=0,menubar=0,height=640,width=640');
+		    windowReport = window.open('checkout-report.html', '_blank', 'toolbar=0,titlebar=0,status=0,location=0,menubar=0,height=640,width=1024');
 		  } else {
 		    windowReport.focus();
 		  };

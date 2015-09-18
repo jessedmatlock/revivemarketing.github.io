@@ -91,15 +91,16 @@
 				        	<div class="row collapse">
 					            <div class="small-12 medium-12 large-12 columns">
 		                
-									<div class="row collapse">
-				                        <label for="api-key" class="">Storage Connection String</label>
-				                        <div class="small-10 columns">
-				                            <input type="text" name="api-key" id="api-key" tabindex="" value="" />
-				                        </div>
-				                        <div class="small-2 columns">
-				                            <span class="suffix has-tip" title="Click to validate your API value" data-tooltip><a href="javascript:alert('Your API Key is valid');"  class="button expand secondary">Test</a></span>
-				                        </div>
-				                    </div>								    
+                                	<label for="api-key">Share Connection String <abutton data-tooltip class="right button tiny secondary has-tip anim-button" title="Click to validate your API Connection" data-original="Test Connection" data-active="Testing"><i class="fa fa-refresh"></i> Test Connection</button></label>
+                                    <textarea name="api-key" id="api-key" tabindex="" rows="6">
+{
+	"organizationId": "00000000-0000-0000-0000-000000000005",
+	"appId": "EL4_19F05CEF-9D46-4F13-BA27-E168CE541D95",
+	"appKey": "ad7004e4a11e87e927abf370a7348d07e0ad5bc1",
+	"uri": "api.evidencelibrary.com"
+}									</textarea>
+					
+
 					            </div><!-- end columns -->
 					        </div><!-- end row -->
 					        <div class="row collapse">
@@ -112,8 +113,6 @@
 									</select>									
 					            </div><!-- end columns -->
 					        </div><!-- end row -->	
-					
-							<label for="">&nbsp;</label>
 							
 			                <label class="onoffswitch alert-yes" for="allow-forward">
 							    <input type="checkbox" name="allow-forward" class="onoffswitch-checkbox" id="allow-forward" />
@@ -130,7 +129,6 @@
 								</div>																															
 						    </label>
 									      
-							<label for="">&nbsp;</label>
 			                <label class="onoffswitch alert-yes" for="allow-playback">
 							    <input type="checkbox" name="allow-playback" class="onoffswitch-checkbox" id="allow-playback" />
 								<div class="onoffswitch-container">
@@ -477,7 +475,7 @@
 	<footer>
 		<div class="row">
 		    <div class="small-12 medium-12 large-6 columns">			
-		        <p class="muted">Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved.</p>			
+		        <p class="muted">Copyright <sup>&reg;</sup> 2014 WatchGuard Video. All rights reserved. <a href="javascript:void(0);" class="">Need Help?</a></p>			
 		    </div><!-- end columns -->		
 		    <div class="small-12 medium-12 large-6 columns show-for-medium-up">
 				<div class="row collapse text-centered">
